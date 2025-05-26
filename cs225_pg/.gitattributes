@@ -1,0 +1,8 @@
+# Ignore Xmake-related files from GitHub language statistics
+xmake.lua linguist-vendored
+xmake/** linguist-vendored
+
+# Treat C++ files as the primary language
+*.cpp linguist-language=C++
+*.hpp linguist-language=C++
+*.h   linguist-language=C++
