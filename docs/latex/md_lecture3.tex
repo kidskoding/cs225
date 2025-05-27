@@ -1,0 +1,321 @@
+\chapter{Lecture 3 -\/ Linked List Implementation }
+\hypertarget{md_lecture3}{}\label{md_lecture3}\index{Lecture 3 -\/ Linked List Implementation@{Lecture 3 -\/ Linked List Implementation}}
+\hypertarget{md_lecture3_autotoc_md9}{}\doxysubsection{\texorpdfstring{List ADT}{List ADT}}\label{md_lecture3_autotoc_md9}
+{\bfseries{\doxylink{class_list}{List} ADT Goals}}
+\begin{DoxyItemize}
+\item {\ttfamily insert} -\/ Done via front/back, at index, or at pointer
+\item {\ttfamily delete} -\/ Done via front/back, at index, or at pointer
+\item {\ttfamily get\+Data} -\/ Done via front/back, at index or at pointer
+\item {\ttfamily is\+Empty}
+\item {\ttfamily size}
+\item {\bfseries{Store any necessary constructor, destructors, copy constructors, etc. so that it behaves like any basic variable}}
+\end{DoxyItemize}
+
+The goal is to have every data structure behave like a fancy interface, but at a fundamental level act exactly the same as a basic data type! They should also behave like {\bfseries{templates}} so that they can store anything (integers, pictures, imaginary numbers, etc.). We just want one generic data structure!
+
+This is done via generics and templates!
+
+There are two main implementations of a list
+\begin{DoxyEnumerate}
+\item vector or array (store a list by allocating a chunk of data!)
+\item linked list (allocate every element in a list separately and link them together via pointers or references)
+\end{DoxyEnumerate}
+
+Data structures can be best shown as diagrams, like the example below, which shows a linked list
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{graph\ LR}
+\DoxyCodeLine{\ \ \ \ A[10]\ -\/-\/>\ B[20]}
+\DoxyCodeLine{\ \ \ \ B\ -\/-\/>\ C[30]}
+
+\end{DoxyCode}
+
+
+In this example (shown above), the {\bfseries{head}} is the {\bfseries{first node}} in the linked list, and is in fact a {\bfseries{pointer}} that points to the first node in the linked list.
+
+Similarly, the {\bfseries{tail}} is the {\bfseries{last node}} in the linked list and it points to {\bfseries{nothing}} (null pointer)!
+
+This means that our \doxylink{class_list}{List} ADT must contain
+\begin{DoxyItemize}
+\item {\ttfamily head} -\/ a pointer to a {\ttfamily \doxylink{struct_list_node}{List\+Node}}
+\end{DoxyItemize}
+
+Intuitively this also shows that the linked list that contains several nodes, which begin with the value {\ttfamily 10}, where then points to the next node of the linked list with value {\ttfamily 20}, and so on
+\begin{DoxyItemize}
+\item From a C++ standpoint, this means that our \doxylink{class_list}{List} ADT must chain nodes together via {\bfseries{pointers}}
+\begin{DoxyItemize}
+\item Each node contain its own data along with a {\bfseries{pointer}} that points to the next node in the List!
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+This is shown in the code below. This code represents a generic {\ttfamily \doxylink{struct_list_node}{List\+Node}}, {\ttfamily \doxylink{struct_list_node}{List\+Node}\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}}. In this {\ttfamily \doxylink{struct_list_node}{List\+Node}} representation, each {\ttfamily \doxylink{struct_list_node}{List\+Node}} holds a generic type of data notated as {\ttfamily T}
+
+Additionally, there is a pointer to the next {\ttfamily \doxylink{struct_list_node}{List\+Node}} in the \doxylink{class_list}{List} along with a copy constructor that can be used to copy data into the List!
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{struct\ ListNode\ \{}
+\DoxyCodeLine{\ \ \ \ T\ data;}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ next;}
+\DoxyCodeLine{\ \ \ \ ListNode(const\ T\&\ data)\ :\ data(data),\ next(nullptr)\ \{\ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+To start our \doxylink{class_list}{List} ADT, we need to achieve our first functionality, {\ttfamily insert\+At\+Front}, which will insert a node into the front of the {\ttfamily \doxylink{class_list}{List}}. This is reflected in our {\ttfamily \doxylink{class_list}{List}} class below, recall that {\ttfamily \doxylink{class_list}{List}} needs to track the {\ttfamily head} of the list, which gives us the starting point of the list
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{struct\ ListNode\ \{}
+\DoxyCodeLine{\ \ \ \ T\ data;}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ next;}
+\DoxyCodeLine{\ \ \ \ ListNode(const\ T\&\ data)\ :\ data(data),\ next(nullptr)\ \{\ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{class\ List\ \{}
+\DoxyCodeLine{private:}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ head;}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{public:}
+\DoxyCodeLine{\ \ \ \ void\ insertAtFront(const\ T\&\ data);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_lecture3_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{insert\+At\+Front algorithm}{insert\+At\+Front algorithm}}\label{md_lecture3_autotoc_md10}
+The {\ttfamily .hpp} extension is used to define functionality of templates defined in a {\ttfamily .h}. It typically contains the full definitions of template functions, enabling the compiler to generate code for each type instantiation based on the defined type
+
+One of the functions that a good \doxylink{class_list}{List} data structure must implement is {\ttfamily insert\+At\+Front}, which as the name suggests inserts a node to the front of the List!
+
+To understand this better, lets use a concrete example, where {\ttfamily 3} will be inserted at the front of the following \doxylink{class_list}{List}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{graph\ LR}
+\DoxyCodeLine{\ \ \ \ A[10]\ -\/-\/>\ B[20]}
+\DoxyCodeLine{\ \ \ \ B\ -\/-\/>\ C[30]}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item In order to insert {\ttfamily 3} at the front of the \doxylink{class_list}{List}, we need to create a new {\ttfamily \doxylink{struct_list_node}{List\+Node}} type! However, the data cannot get destroyed after the function ends because the \doxylink{class_list}{List} type needs to store this value for as long as it needs to
+\begin{DoxyEnumerate}
+\item Therefore, we must dynamically allocate this newly created {\ttfamily \doxylink{struct_list_node}{List\+Node}} via the heap, where we will receive a pointer to that data on the stack!
+\end{DoxyEnumerate}
+\item Once we dynamically allocate the new {\ttfamily \doxylink{struct_list_node}{List\+Node}}, we must reassign the {\ttfamily next} pointer to the head of the \doxylink{class_list}{List} because it will be inserted at the front!
+\begin{DoxyEnumerate}
+\item In other words, the pointer to the next node is no longer null, like it was when newly created. Now it will point to the {\ttfamily head}!
+\end{DoxyEnumerate}
+\item Make {\ttfamily head} point to the newly created {\ttfamily \doxylink{struct_list_node}{List\+Node}}
+\end{DoxyEnumerate}
+
+In C++, this is what the {\ttfamily insert\+At\+Front} algorithm would look like
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.hpp}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#include\ "{}List.h"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{/**\ Inserts\ data\ at\ the\ front\ of\ a\ List}
+\DoxyCodeLine{\ \ *\ Runtime:\ O(1)}
+\DoxyCodeLine{\ */}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{void\ List<T>::insertAtFront(const\ T\&\ data)\ \{}
+\DoxyCodeLine{\ \ \ \ //\ Dynamically\ allocate\ the\ data\ to\ the\ heap}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ newNode\ =\ new\ ListNode(data);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Reassign\ the\ next\ pointer\ to\ the\ head}
+\DoxyCodeLine{\ \ \ \ temp-\/>next\ =\ head;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Reassign\ the\ head\ pointer\ to\ the\ newly\ created\ node}
+\DoxyCodeLine{\ \ \ \ head\ =\ newNode;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+This algorithm has a runtime of \$\+O(1)\$, due to three simple operations and doesn\textquotesingle{}t loop or scale through a list size!
+
+Recall what {\ttfamily -\/\texorpdfstring{$>$}{>}} (arrow operator) does in C++. Its a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! {\ttfamily temp-\/\texorpdfstring{$>$}{>}next} is the mere equivalent of {\ttfamily (\texorpdfstring{$\ast$}{*}temp).next} \hypertarget{md_lecture3_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{insert algorithm}{insert algorithm}}\label{md_lecture3_autotoc_md11}
+The previous algorithm only inserted nodes at the front of the \doxylink{class_list}{List}. However a more general insert algorithm is recommended to insert nodes in more places than just the front!
+
+To solve this problem, the best thing to do is to create a {\ttfamily insert} algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated {\ttfamily \doxylink{class_list}{List}} ADT code below
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{struct\ ListNode\ \{}
+\DoxyCodeLine{\ \ \ \ T\ data;}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ next;}
+\DoxyCodeLine{\ \ \ \ ListNode(const\ T\&\ data)\ :\ data(data),\ next(nullptr)\ \{\ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{class\ List\ \{}
+\DoxyCodeLine{private:}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ head;}
+\DoxyCodeLine{}
+\DoxyCodeLine{public:}
+\DoxyCodeLine{\ \ \ \ void\ insertAtFront(const\ T\&\ data);}
+\DoxyCodeLine{\ \ \ \ void\ insert(const\ T\&\ data,\ int\ index);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+When the index is 0, {\ttfamily insert} would behave exactly how {\ttfamily insert\+At\+Front} works
+
+To understand this much trickier algorithm, we can use the same concrete \doxylink{class_list}{List} example from {\ttfamily insert\+At\+Front}, with example function call {\ttfamily insert(3, 1)}
+
+To make this call take place, we need to find the node at the first index and insert the newly created node before that. To do this, our insert algorithm must do two following steps
+
+
+\begin{DoxyEnumerate}
+\item Allocate the given data onto the heap
+\item Find the place to insert the newly created node (typically the code semantics are before)
+\begin{DoxyEnumerate}
+\item Therefore, we need a helper {\ttfamily find} function to return the node by reference at the given index. Our updated {\ttfamily \doxylink{class_list}{List}} ADT is represented in the code below
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{struct\ ListNode\ \{}
+\DoxyCodeLine{\ \ \ \ T\ data;}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ next;}
+\DoxyCodeLine{\ \ \ \ ListNode(const\ T\&\ data)\ :\ data(data),\ next(nullptr)\ \{\ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{class\ List\ \{}
+\DoxyCodeLine{private:}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ head;}
+\DoxyCodeLine{}
+\DoxyCodeLine{public:}
+\DoxyCodeLine{\ \ \ \ void\ insertAtFront(const\ T\&\ data);}
+\DoxyCodeLine{\ \ \ \ void\ insert(const\ T\&\ data,\ int\ index);}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\&\ find(int\ index);}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+\begin{DoxyEnumerate}
+\item To do this, we need the {\ttfamily find} function to return a {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}\&}, which is {\bfseries{a {\ttfamily \doxylink{struct_list_node}{List\+Node}} pointer by reference}}
+\begin{DoxyEnumerate}
+\item Recall that with return type semantics in C++, returning just a {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}} won\textquotesingle{}t actually allow us to change the original {\ttfamily Listnode\texorpdfstring{$\ast$}{*}}. Doing so will create a copy of the {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}} and instead modify the {\bfseries{copy}} instead of the original pointer. Therefore, we need to return a {\bfseries{reference}} to the original pointer, which is a type {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}\&}
+\item Recall that {\ttfamily insert\+At\+Front} changed our {\ttfamily head} member variable. Therefore, {\ttfamily head} needs to be the pointer pointing at the given index needed to be inserted
+\item Implement this {\bfseries{iteratively}}. Implementing {\bfseries{recursively}} will cause a {\bfseries{Stack Overflow Error}}, where no more stack frames can be placed on the call stack, resulting in {\bfseries{stack memory overflow}}
+\begin{DoxyEnumerate}
+\item Regardless, thinking about the recursive solution can still be a good thing to do
+\begin{DoxyEnumerate}
+\item When {\ttfamily index} == 0, we know that this is the {\ttfamily head} of the \doxylink{class_list}{List}, or simply the first node, otherwise we return a recursive function call, which subtracts the index by 1, and then passes in the next node of the \doxylink{class_list}{List}. This recursive algorithm is shown in the first code snippet below
+\end{DoxyEnumerate}
+\item To implement find iteratively, we can follow a fixed algorithmic step
+\begin{DoxyEnumerate}
+\item Return the {\ttfamily head} \doxylink{struct_list_node}{List\+Node} if the index is {\ttfamily 0}. We can do this because we know the {\ttfamily head} is always at index {\ttfamily 0}
+\begin{DoxyEnumerate}
+\item Recall that this method returns a {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}\&}, which is a {\bfseries{pointer reference}}. {\ttfamily head} is in fact a {\bfseries{reference to a pointer}}!
+\end{DoxyEnumerate}
+\item Create a temporary {\ttfamily \doxylink{struct_list_node}{List\+Node}}, {\ttfamily curr} that is assigned to head. This represents the current node being referenced in the {\ttfamily \doxylink{class_list}{List}}
+\item Otherwise, loop till {\ttfamily x} is less than {\ttfamily index -\/ 1}, and reassign {\ttfamily curr} to the next node in the {\ttfamily \doxylink{class_list}{List}}
+\item Then return {\ttfamily curr-\/\texorpdfstring{$>$}{>}next} because we know that once {\ttfamily x} becomes {\ttfamily index -\/ 1}, we can stop and just return the a reference to the next node in the {\ttfamily \doxylink{class_list}{List}}, hence {\ttfamily curr-\/\texorpdfstring{$>$}{>}next}
+\begin{DoxyEnumerate}
+\item Recall that {\ttfamily curr} is a {\bfseries{copy}} of head! We don\textquotesingle{}t want to return a copy {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}}, but rather a reference {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}}, which is simply a type {\ttfamily List\+Node\texorpdfstring{$\ast$}{*}\&}
+\item Therefore, we return {\ttfamily curr-\/\texorpdfstring{$>$}{>}next} and loop from {\ttfamily x} to {\ttfamily index -\/ 1}, instead of looping from {\ttfamily x} to {\ttfamily index} and returning just {\ttfamily curr}
+\end{DoxyEnumerate}
+\item This process is shown in the second code snippet below!
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\item Runtime for find is \$\+O(n)\$ because we have to traverse up to \$n\$ nodes in the {\ttfamily \doxylink{class_list}{List}} to find the node at the given {\ttfamily index}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.hpp}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#include\ "{}List.h"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ RECURSIVE\ IMPLEMENTATION\ OF\ FIND!}
+\DoxyCodeLine{}
+\DoxyCodeLine{/**\ Finds\ the\ ListNode\ at\ the\ given\ index!}
+\DoxyCodeLine{\ *\ \ Runtime:\ O(n)}
+\DoxyCodeLine{\ */}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{ListNode*\&\ List<T>::find(int\ index)\ \{}
+\DoxyCodeLine{\ \ \ \ return\ find(index,\ head);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{ListNode*\&\ List<T>::find(int\ index,\ ListNode*\&\ head)\ \{}
+\DoxyCodeLine{\ \ \ \ //\ we\ know\ that\ the\ head\ is\ always\ the\ starting\ point\ at\ index\ 0\ of\ the\ list,\ so\ we\ can\ just\ simply\ return\ the\ head}
+\DoxyCodeLine{\ \ \ \ if(index\ ==\ 0)\ \{\ return\ head;\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Return\ a\ recursive\ method\ call\ passing\ in\ the\ next\ node\ and\ decrement\ the\ given\ index!}
+\DoxyCodeLine{\ \ \ \ return\ find(index\ -\/\ 1,\ head-\/>next);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ List.hpp}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#include\ "{}List.h"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ ITERATIVE\ IMPLEMENTATION\ OF\ FIND!}
+\DoxyCodeLine{}
+\DoxyCodeLine{/**\ Finds\ the\ ListNode\ at\ the\ given\ index!}
+\DoxyCodeLine{\ *\ \ Runtime:\ O(n)}
+\DoxyCodeLine{\ */}
+\DoxyCodeLine{template\ <typename\ T>}
+\DoxyCodeLine{ListNode<T>*\&\ List<T>::find(int\ index)\ \{}
+\DoxyCodeLine{\ \ \ \ //\ Return\ the\ head\ if\ the\ index\ is\ 0}
+\DoxyCodeLine{\ \ \ \ //\ We\ know\ that\ the\ first\ node\ in\ the\ list\ is\ always\ the\ head!}
+\DoxyCodeLine{\ \ \ \ if(index\ ==\ 0)\ \{\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ head;\ }
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Create\ a\ copy\ pointer\ of\ the\ head\ to\ traverse\ through\ the\ list!}
+\DoxyCodeLine{\ \ \ \ ListNode<T>*\ curr\ =\ head;}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ //\ Traverse\ through\ the\ list\ to\ find\ the\ node\ right\ before\ the\ given\ index}
+\DoxyCodeLine{\ \ \ \ int\ x\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ while(x\ <\ index\ -\/\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ curr\ =\ curr-\/>next;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ x\ +=\ 1;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Return\ the\ next\ node\ in\ the\ list,\ since\ that\ matches\ the\ node\ at\ the\ given\ index}
+\DoxyCodeLine{\ \ \ \ return\ curr-\/>next;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Next lecture, lecture 4, will expand on this ADT, and finish the implementation of the generic {\ttfamily insert} function! 

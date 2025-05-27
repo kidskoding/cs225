@@ -1,0 +1,61 @@
+\doxysection{List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_list}{}\label{class_list}\index{List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_list_aa8f047d6fa06aecc4282f70bac37e95a}{insert\+At\+Front}} (const T \&data)
+\item 
+void \mbox{\hyperlink{class_list_a5d6d7e2a473a131eb0315b4e622817c6}{insert}} (const T \&data, int index)
+\item 
+\mbox{\hyperlink{struct_list_node}{List\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}\& \mbox{\hyperlink{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a}{find}} (int index)
+\item 
+T \& \mbox{\hyperlink{class_list_ac50384b081f5fd87aeb34b98c138efc1}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\item 
+T \mbox{\hyperlink{class_list_aade3bbd6b083162ee910fc64b0725c6c}{remove}} (int index)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_list_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a}\index{List$<$ T $>$@{List$<$ T $>$}!find@{find}}
+\index{find@{find}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{struct_list_node}{List\+Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}\& \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Finds the {\ttfamily \doxylink{struct_list_node}{List\+Node}} at the given index! Runtime\+: O(n) \Hypertarget{class_list_a5d6d7e2a473a131eb0315b4e622817c6}\index{List$<$ T $>$@{List$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{class_list_a5d6d7e2a473a131eb0315b4e622817c6} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{data}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Inserts data in the given index of a list Runtime\+: O(n) \Hypertarget{class_list_aa8f047d6fa06aecc4282f70bac37e95a}\index{List$<$ T $>$@{List$<$ T $>$}!insertAtFront@{insertAtFront}}
+\index{insertAtFront@{insertAtFront}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertAtFront()}{insertAtFront()}}
+{\footnotesize\ttfamily \label{class_list_aa8f047d6fa06aecc4282f70bac37e95a} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::insert\+At\+Front (\begin{DoxyParamCaption}\item[{const T \&}]{data}{}\end{DoxyParamCaption})}
+
+Inserts data at the front of a \doxylink{class_list}{List} Runtime\+: O(1) \Hypertarget{class_list_ac50384b081f5fd87aeb34b98c138efc1}\index{List$<$ T $>$@{List$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_list_ac50384b081f5fd87aeb34b98c138efc1} 
+template$<$typename T$>$ \\
+T \& \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Returns the data by reference of the {\ttfamily \doxylink{struct_list_node}{List\+Node}} at the given index Runtime\+: O(n) \Hypertarget{class_list_aade3bbd6b083162ee910fc64b0725c6c}\index{List$<$ T $>$@{List$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_list_aade3bbd6b083162ee910fc64b0725c6c} 
+template$<$typename T$>$ \\
+T \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Removes a {\ttfamily \doxylink{struct_list_node}{List\+Node}} by index and returns its associated data! Runtime\+: O(n) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cs225\+\_\+pg/include/List.\+h\item 
+cs225\+\_\+pg/include/List.\+hpp\end{DoxyCompactItemize}

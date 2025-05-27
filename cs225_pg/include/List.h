@@ -4,15 +4,21 @@
 
 template <typename T>
 struct ListNode {
-    T data; // the current data in the linked list
-    ListNode<T>* next; // a pointer to the next node in the linked list
+    // the current data in the list 
+    T data;
+    
+    // a pointer to the next node in the linked list
+    ListNode<T>* next;
+
+    // a copy constructor for the list
     ListNode(const T& data) : data(data), next(nullptr) { }
 };
 
 template<typename T>
 class List {
 private:
-    ListNode<T>* head; // a pointer to the head of the linked list
+    // a pointer to the head of the linked list
+    ListNode<T>* head;
 
 public:
     void insertAtFront(const T& data);

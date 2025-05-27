@@ -1,0 +1,86 @@
+\doxysection{List.\+hpp}
+\hypertarget{_list_8hpp_source}{}\label{_list_8hpp_source}\index{cs225\_pg/include/List.hpp@{cs225\_pg/include/List.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ List.hpp}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}List.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00009\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_aa8f047d6fa06aecc4282f70bac37e95a}{List<T>::insertAtFront}}(\textcolor{keyword}{const}\ T\&\ data)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ Dynamically\ allocate\ the\ data\ to\ the\ heap}}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\ newNode\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_list_node}{ListNode}}(data);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Reassign\ the\ next\ pointer\ to\ the\ head}}
+\DoxyCodeLine{00014\ \ \ \ \ newNode-\/>next\ =\ head;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Reassign\ the\ head\ pointer\ to\ the\ newly\ created\ node}}
+\DoxyCodeLine{00017\ \ \ \ \ head\ =\ newNode;}
+\DoxyCodeLine{00018\ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_a5d6d7e2a473a131eb0315b4e622817c6}{List<T>::insert}}(\textcolor{keyword}{const}\ T\&\ data,\ \textcolor{keywordtype}{int}\ index)\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Call\ \`{}find`\ to\ find\ the\ \`{}ListNode`\ at\ the\ given\ index}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\&\ nodeAtIndex\ =\ \mbox{\hyperlink{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a}{find}}(index);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Dynamically\ allocate\ the\ data\ to\ the\ heap}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\ newNode\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_list_node}{ListNode}}(data);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Reassign\ the\ next\ node\ of\ the\ newly\ created\ node\ to\ be\ the\ \`{}ListNode`\ found\ at\ the\ given\ index}}
+\DoxyCodeLine{00032\ \ \ \ \ newNode-\/>next\ =\ nodeAtIndex;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Reassign\ the\ found\ \`{}ListNode`\ at\ the\ given\ index's\ pointer\ to\ the\ newly\ created\ node\ from\ the\ given\ data}}
+\DoxyCodeLine{00035\ \ \ \ \ nodeAtIndex\ =\ newNode;}
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00042\ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\&\ \mbox{\hyperlink{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a}{List<T>::find}}(\textcolor{keywordtype}{int}\ index)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Return\ the\ head\ if\ the\ index\ is\ 0}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ We\ know\ that\ the\ first\ node\ in\ the\ list\ is\ always\ the\ head!}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{if}(index\ ==\ 0)\ \{\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ head;\ }
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ copy\ pointer\ of\ the\ head\ to\ traverse\ through\ the\ list!}}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\ curr\ =\ head;}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ Traverse\ through\ the\ list\ to\ find\ the\ node\ right\ before\ the\ given\ index}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ 0;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{while}(curr\ !=\ \textcolor{keyword}{nullptr}\ \&\&\ x\ <\ index\ -\/\ 1)\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ curr\ =\ curr-\/>next;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ x\ +=\ 1;}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Return\ the\ next\ node\ in\ the\ list,\ since\ that\ matches\ the\ node\ at\ the\ given\ index}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{return}\ curr-\/>next;}
+\DoxyCodeLine{00061\ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00067\ T\&\ \mbox{\hyperlink{class_list_ac50384b081f5fd87aeb34b98c138efc1}{List<T>::operator[]}}(\textcolor{keywordtype}{int}\ index)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{//\ Call\ \`{}find`\ to\ find\ the\ \`{}ListNode`\ at\ the\ given\ index\ \ \ \ }}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\&\ loc\ =\ \mbox{\hyperlink{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a}{find}}(index);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//\ Return\ the\ data\ that\ the\ \`{}ListNode`\ at\ the\ given\ index\ holds}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordflow}{return}\ loc-\/>data;}
+\DoxyCodeLine{00073\ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00079\ T\ \mbox{\hyperlink{class_list_aade3bbd6b083162ee910fc64b0725c6c}{List<T>::remove}}(\textcolor{keywordtype}{int}\ index)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//\ Find\ the\ \`{}ListNode`\ to\ be\ removed}}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\&\ toRemove\ =\ \mbox{\hyperlink{class_list_a3a2167c7e3d8c0f9b00521c0ca2b2a0a}{find}}(index);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ temporary\ \`{}ListNode`\ containing\ what\ should\ be\ removed}}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{struct_list_node}{ListNode<T>}}*\ temp\ =\ toRemove;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ \`{}val`\ variable\ to\ store\ temp's\ data}}
+\DoxyCodeLine{00087\ \ \ \ \ T\ val\ =\ temp-\/>data;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{//\ Reassign\ \`{}toRemove`\ to\ the\ next\ node\ in\ the\ \`{}ListNode`}}
+\DoxyCodeLine{00090\ \ \ \ \ toRemove\ =\ toRemove-\/>next;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//\ Delete\ \`{}temp`\ from\ memory\ since\ we\ no\ longer\ need\ it}}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{delete}\ temp;}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00095\ \}}
+
+\end{DoxyCode}

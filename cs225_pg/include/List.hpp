@@ -35,7 +35,7 @@ void List<T>::insert(const T& data, int index) {
 	nodeAtIndex = newNode;
 }
 
-/** Finds the ListNode at the given index!
+/** Finds the `ListNode` at the given index!
  *  Runtime: O(n)
  */
 template <typename T>
@@ -76,7 +76,7 @@ T& List<T>::operator[](int index) {
  * 	Runtime: O(n)
  */
 template <typename T>
-T remove(int index) {
+T List<T>::remove(int index) {
 	// Find the `ListNode` to be removed
 	ListNode<T>*& toRemove = find(index);
 

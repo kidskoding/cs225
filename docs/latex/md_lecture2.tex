@@ -1,0 +1,69 @@
+\chapter{Lecture 2 -\/ C++ and Lists }
+\hypertarget{md_lecture2}{}\label{md_lecture2}\index{Lecture 2 -\/ C++ and Lists@{Lecture 2 -\/ C++ and Lists}}
+Contacting the CS 225 course -\/ \href{mailto:cs225admin@lists.cs.illinois.edu}{\texttt{cs225admin@lists.\+cs.\+illinois.\+edu}}\hypertarget{md_lecture2_autotoc_md5}{}\doxysubsection{\texorpdfstring{Encapsulation}{Encapsulation}}\label{md_lecture2_autotoc_md5}
+Encapsulation in C++ is primarily distinguished via two things\+: {\bfseries{header}} and {\bfseries{code}}. In C/\+C++, code is separated into two files, one which we call the {\bfseries{header}} and one which we call the {\bfseries{code segment}}
+\begin{DoxyItemize}
+\item {\bfseries{header files}} -\/ Describes how the code is used, or how people should use this specific data structure
+\begin{DoxyItemize}
+\item has a {\ttfamily .h} or {\ttfamily .hpp} extension. Mostly {\ttfamily .h}, but {\ttfamily .hpp} is used for {\bfseries{templates}}, which help write {\bfseries{generic}} code that supports any data type
+\end{DoxyItemize}
+\item {\bfseries{code files}} -\/ Describes how the code works, or how the data structure is implemented!
+\begin{DoxyItemize}
+\item has a {\ttfamily .cpp} file extension
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Object Oriented languages also provide with two main things, a {\bfseries{constructor}}, which initializes the necessary data for us in a object and a {\bfseries{destructor}} which gets rid of any necessary data for us in an object\hypertarget{md_lecture2_autotoc_md6}{}\doxysubsection{\texorpdfstring{Memory Management -\/ Ownership}{Memory Management -\/ Ownership}}\label{md_lecture2_autotoc_md6}
+Someone or some code owns everything, which simply means that {\bfseries{one part of the program is responsible}} for
+\begin{DoxyItemize}
+\item Creating an object in memory ({\bfseries{Constructor}})
+\item Keeping track of it
+\item Deleting (freeing) it when it\textquotesingle{}s no longer needed ({\bfseries{Destructor}})
+\end{DoxyItemize}
+
+This essentially means that the programmer is responsible for managing memory, which can both be powerful and dangerous. Forgetting to free allocated memory can cause {\bfseries{memory leaks}}, or program crashes. In contrast, {\bfseries{freeing}} memory too early can cause {\bfseries{dangling pointers}} and {\bfseries{undefined behavior (segfaults)}}.
+
+Ownership is tracked carefully using {\ttfamily new} and {\ttfamily delete}, or use smart pointers like {\ttfamily std\+::unique\+\_\+ptr}, {\ttfamily std\+::shared\+\_\+ptr}, {\ttfamily std\+::weak\+\_\+ptr}\hypertarget{md_lecture2_autotoc_md7}{}\doxysubsection{\texorpdfstring{Rule of Zero/\+Three/\+Five}{Rule of Zero/\+Three/\+Five}}\label{md_lecture2_autotoc_md7}
+When your class manages resources ({\bfseries{dynamic memory}}, file handles, etc.), you need to define how it is {\bfseries{copied}}, {\bfseries{moved}}, and {\bfseries{destroyed}} in order to avoid issues like memory leaks or double deletes
+
+The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class
+
+{\bfseries{Rule of Zero}} -\/ If your class doesn\textquotesingle{}t manage resources directly, do not define the {\bfseries{big five}}
+\begin{DoxyItemize}
+\item Destructor
+\item Copy Constructor
+\item Copy Assignment
+\item Move Constructor
+\item Move Assignment
+\end{DoxyItemize}
+
+{\bfseries{Rule of Three}} -\/ If you define one of a {\bfseries{destructor}}, {\bfseries{copy constructor}}, or {\bfseries{copy assignment operator}}, {\bfseries{you should define ALL three of them!}}
+\begin{DoxyItemize}
+\item This is because handling one implies your class is managing a resource that needs careful copying and cleanup
+\end{DoxyItemize}
+
+{\bfseries{Rule of Five}} -\/ Applies to modern C++, where if you plan on managing resources with move semantics, define {\bfseries{all 5}} (this is the opposite of the {\bfseries{rule of zero}})
+\begin{DoxyItemize}
+\item Destructor
+\item Copy Constructor
+\item Copy Assignment
+\item Move Constructor
+\item Move Assignment
+\end{DoxyItemize}
+
+Use this rule when you need to {\bfseries{avoid deep copying}} and allow your class to be efficiently moved\hypertarget{md_lecture2_autotoc_md8}{}\doxysubsection{\texorpdfstring{Introduction to List ADT}{Introduction to List ADT}}\label{md_lecture2_autotoc_md8}
+{\bfseries{ADT}} -\/ Abstract Data Type
+\begin{DoxyItemize}
+\item ADTs are conceptual models that define a set of operations and behaviors for a data structure
+\end{DoxyItemize}
+
+For a \doxylink{class_list}{List}, we know our ADT should at a minimum do these following things
+
+
+\begin{DoxyItemize}
+\item insert a node at the back
+\item read data from the back
+\item delete data at the back
+\item create an empty list
+\item check if list is empty 
+\end{DoxyItemize}
