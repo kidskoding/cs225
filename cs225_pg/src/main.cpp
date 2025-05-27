@@ -3,15 +3,10 @@
 
 int main(int argc, char** argv) {
     List<int> list;
-    
     list.insertAtFront(10);
     list.insertAtFront(20);
-    list.insert(1, 30);
-
-    ListNode<int>* node = list.find(1);
-    if (node != nullptr) {
-        std::cout << "Node at index 1: " << node->data << '\n';
-    } else {
-        std::cout << "Node at index 1 not found.\n";
-    }
+    list.insert(30, 1);
+    
+    std::cout << list[1] << std::endl;
+    return 0;
 }

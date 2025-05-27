@@ -1,3 +1,5 @@
+// List.hpp
+
 #include "List.h"
 
 /** Inserts data at the front of a List
@@ -16,11 +18,21 @@ void List<T>::insertAtFront(const T& data) {
 }
 
 /** Inserts data in the given index of a list
- *  
+ *  Runtime: O(n)
  */
 template <typename T>
-ListNode<T>*& List<T>::insert(const T& data, int index) {
-    
+void List<T>::insert(const T& data, int index) {
+	// Call `find` to find the `ListNode` at the given index
+	ListNode<T>*& nodeAtIndex = find(index);
+
+	// Dynamically allocate the data to the heap
+	ListNode<T>* newNode = new ListNode(data);
+
+	// Reassign the next node of the newly created node to be the `ListNode` found at the given index
+	newNode->next = nodeAtIndex;
+
+	// Reassign the found `ListNode` at the given index's pointer to the newly created node from the given data
+	nodeAtIndex = newNode;
 }
 
 /** Finds the ListNode at the given index!
@@ -28,15 +40,56 @@ ListNode<T>*& List<T>::insert(const T& data, int index) {
  */
 template <typename T>
 ListNode<T>*& List<T>::find(int index) {
+	// Return the head if the index is 0
+	// We know that the first node in the list is always the head!
 	if(index == 0) { 
         return head; 
     }
 
+	// Create a copy pointer of the head to traverse through the list!
 	ListNode<T>* curr = head;
+	
+	// Traverse through the list to find the node right before the given index
 	int x = 0;
-	while(x < index - 1) {
+	while(curr != nullptr && x < index - 1) {
 		curr = curr->next;
         x += 1;
 	}
+
+	// Return the next node in the list, since that matches the node at the given index
 	return curr->next;
+}
+
+/** Returns the data by reference of the `ListNode` at the given index 
+ *	Runtime: O(n)
+ */
+template <typename T>
+T& List<T>::operator[](int index) {
+	// Call `find` to find the `ListNode` at the given index	
+	ListNode<T>*& loc = find(index);
+
+	// Return the data that the `ListNode` at the given index holds
+	return loc->data;
+}
+
+/** Removes a `ListNode` by index and returns its associated data! 
+ * 	Runtime: O(n)
+ */
+template <typename T>
+T remove(int index) {
+	// Find the `ListNode` to be removed
+	ListNode<T>*& toRemove = find(index);
+
+	// Create a temporary `ListNode` containing what should be removed
+	ListNode<T>* temp = toRemove;
+
+	// Create a `val` variable to store temp's data
+	T val = temp->data;
+
+	// Reassign `toRemove` to the next node in the `ListNode`
+	toRemove = toRemove->next;
+
+	// Delete `temp` from memory since we no longer need it
+	delete temp;
+	return val;
 }

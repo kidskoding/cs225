@@ -1,3 +1,5 @@
+// List.h
+
 #pragma once
 
 template <typename T>
@@ -14,6 +16,8 @@ private:
 
 public:
     void insertAtFront(const T& data);
-    ListNode<T>*& insert(const T& data, int index);
+    void insert(const T& data, int index);
     ListNode<T>*& find(int index);
+    T& operator[](int index);
+    T remove(int index);
 };
