@@ -1,1 +1,1 @@
-notes for CS 225!
+compiled notes for CS 225!
