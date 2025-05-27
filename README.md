@@ -1,5 +1,7 @@
 /*! \page md_readme CS 225 - Introduction
 
+## All references/notes are compiled in **Doxygen**. View [here](http://kidskoding.github.io/cs225-notes/index.html)!
+
 > **CS 225** - Covers the fundamental **data structures** (list, stack, queue, tree, etc.) and their implementations using C++ and object oriented programming along with an **introductory analysis to algorithms**
 
 > **🚨 Prereqs** - Must have credit in both **CS 173/MATH 213** (Discrete Math) and **CS 128** (Introduction to Computer Science II in C++) 
