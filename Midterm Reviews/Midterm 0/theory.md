@@ -1,4 +1,4 @@
-/*! \page md_theory - Theory Review
+/*! \page md_theory Theory Review
 
 ### Recursive Definitions
 - **Recursive definitions** contain formulas where each term is based on one or more preceding terms
