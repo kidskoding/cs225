@@ -91,7 +91,7 @@ $(function(){initNavTree('md_programming.html','',''); });
   <div class="headertitle"><div class="title">Programming Review </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h3 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<div class="textblock"><h3 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
 Public vs Private</h3>
 <p>Each member of a class in C++ has a specific <b>access level</b> that determines how that member can be accessed</p>
 <p>A member can be one of three types: <b>public</b>, <b>private</b>, or <b>protected</b></p><ul>
@@ -109,7 +109,7 @@ Public vs Private</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">private</span>  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">No  </td><td class="markdownTableBodyNone">No  </td></tr>
 </table>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
 Classes vs Structs</h4>
 <blockquote class="doxtable">
 <p>Members of a <span class="tt">struct</span> are <span class="tt">public</span> by default Members of a <span class="tt">class</span> are <span class="tt">private</span> by default </p>
@@ -123,7 +123,7 @@ Classes vs Structs</h4>
 <li>Structs should be aggregates by convention, where direct initialization of members are allowed through an initializer list <span class="tt">{ }</span> and there are no <b>constructors</b>, no <b>private/protected access members</b>, no <b>virtual functions</b>, and no <b>base classes</b></li>
 </ul>
 <p>Otherwise, just use classes</p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 Member Functions</h4>
 <p><b>Member functions</b> are functions that belong to a class type. This means that they can be called on an instance of that class type (e.g. <span class="tt">e.getData()</span> , where <span class="tt">getData()</span> is a member function of object type <span class="tt">e</span>)</p><ul>
 <li>This means they are declared in the class definition!</li>
@@ -134,7 +134,7 @@ Member Functions</h4>
 <p>Functions that don't belong to a class are <b>non-member functions</b> or simply <b>free functions</b>.</p>
 <p>With free functions, the object must be explicitly passed into the function, while with member functions, the object is implicitly passed and accessed through that object with the dot operator (<span class="tt">.</span>)</p>
 <p>Member functions can sometimes create more clarity on what is doing the action!</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 Constructors</h3>
 <p><b>Constructors</b> are special functions automatically called after a non-aggeregate class type is created</p><ul>
 <li>If an accessible matching constructor is found, then memory for the object is allocated and the constructor function is called. Otherwise, a compilation error is generated</li>
@@ -176,7 +176,7 @@ Constructors</h3>
 <div class="line">};</div>
 </div><!-- fragment --><p>With a user defined constructor, member variables are not automatically initialized (you need to do it yourself). However, with compiler provided constructors (either <span class="tt">= default</span> or implicitly provided), the compiler will zero initialize member variables before running the constructor</p>
 <p>Therefore, only create a default constructor when it makes sense for objects of a class type to be created using all default values</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Namespaces</h3>
 <p><b>Namespaces</b> group together related code (variables, functions, classes, etc.) under a name to avoid naming conflicts.</p>
 <ul>
@@ -186,7 +186,7 @@ Namespaces</h3>
 </ul>
 </li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 References and Pointers</h2>
 <p>A <b>reference</b> is an alias of an existing object. It refers to the same object in memory with a different <b>name</b>. References are notated with an <span class="tt">&amp;</span></p>
 <div class="fragment"><div class="line">int x = 10;</div>
@@ -219,10 +219,10 @@ References and Pointers</h2>
 <li><b>Dangling reference:</b> A reference refers to an object that no longer exists (e.g., a local variable that went out of scope)</li>
 </ul>
 <p>These can be <b>dangerous</b> because they can lead to <b>undefined behavior</b>, <b>crashes</b>, or <b>data corruption</b></p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 Dynamic Memory Allocation</h2>
 <p><b>Dynamic Memory Allocation</b> assigns memory space during a program's execution rather than compile time. This memory that the program uses is generally divided into the <b>stack</b> and the <b>heap</b>. </p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 <span class="tt">new</span> and <span class="tt">delete</span></h3>
 <p>C++ supports static and automatic memory allocation. <b>Automatic allocation</b> creates variables that live only while the function runs (on the stack), while <b>static allocation</b> creates variables that stay alive for the whole program (in static memory). The period in which a variable stays alive is known as its <b>lifetime</b></p>
 <p>Lifetime based on allocation type</p><ul>
@@ -249,7 +249,7 @@ Dynamic Memory Allocation</h2>
 <p>In other words, when creating memory calls with <span class="tt">new</span> they <b>must</b> be freed with <span class="tt">delete</span>. </p>
 </blockquote>
 <p>Otherwise, a <b>memory leak</b> happens. <b>Memory leaks</b> occur when a program allocates memory via <span class="tt">new</span>, but never frees it via <span class="tt">delete</span>. This causes unused memory, which can eventually exhaust available memory if it happens repeatedly</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Destructors</h3>
 <p>A <b>destructor</b> is another special kind of class member function that runs when an object of that class is <b>destroyed</b>, using <span class="tt">delete</span>. While constructors initialize instances of a class, destructors help clean them up</p>
 <p>When objects go out of scope via RAII, or a dynamically allocated object is explicitly deleted using <span class="tt">delete</span>, the class destructor (if it exists) is automatically called to do any necessary clean up of the object before it is freed from memory</p>
@@ -263,7 +263,7 @@ Destructors</h3>
 <div class="fragment"><div class="line">~Foo() {</div>
 <div class="line"> </div>
 <div class="line">}</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 RAII</h3>
 <p><b>Resource Acquisition Is Initialization</b>, or RAII, is a C++ programming design pattern that explains how to manage resources safely in a class through a constructor and a destructor. RAII is used heavily in the C++ STL (standard template library) for efficient resource management in objects.</p>
 <blockquote class="doxtable">
@@ -279,7 +279,7 @@ RAII</h3>
 <p>RAII is a basic technique that explains best practices towards writing a class by <b>tying an object's resources to its lifetime</b></p><ul>
 <li>An object acquires a resource in its constructor, and releases it via its destructor when its lifetime ends</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 Heap</h3>
 <p>The heap, also known as the <b>free store</b>, <b>tracks memory used for dynamic memory allocation</b></p>
 <p>Recall that <span class="tt">new</span> allocates memory and returns a pointer that points to that allocated memory. In contrast, <span class="tt">delete</span> frees the allocated memory towards the operating system to decide what to do with that memory next.</p>
@@ -296,7 +296,7 @@ Heap</h3>
 <li>Dynamically allocated memory must be accessed through a pointer. Therefore, dereferencing a pointer is slower than accessing a variable directly</li>
 <li>Because the heap is a big pool of memory, large arrays, structures, or classes can be allocated here</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Stack</h3>
 <p>The <b>stack</b>, formally referred to as the <b>call stack</b>, keeps track of all active functions (ones that have been called and not terminated) from the start of the program to the current point of execution. It also handles allocation of all function parameters and local variables</p>
 <p>It stores</p><ul>
@@ -320,7 +320,7 @@ Stack</h3>
 </ul>
 </li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 Passing Arguments</h3>
 <p>There are three ways to pass arguments into a function</p><ol type="1">
 <li><b>By Value</b> - A copy of the argument is made; changes inside the function do <b>not</b> affect the original</li>
@@ -343,7 +343,7 @@ Passing Arguments</h3>
 <div class="line">    *x = 10; </div>
 <div class="line">}</div>
 </div><!-- fragment --><p>In the example above, the function receives a pointer to the original parameter of <span class="tt">x</span>, which must be dereferenced with <span class="tt">*</span> to modify the original parameter</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 Returning Values</h3>
 <p>Same three ways variables are passed into a function, are the same three ways variables are returned in a function</p>
 <ol type="1">
@@ -368,7 +368,7 @@ Returning Values</h3>
 <div class="line">    return x;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>In the example above, <span class="tt">x</span> is simply returned as a pointer to an existing variable. Be careful! Like references, pointing to a local variable that goes out of scope can lead to undefined behaviors!</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 Copy Semantics</h2>
 <p><b>Copy Semantics</b> refers to how objects are copied when they are passed as arguments to functions, returned from functions, or assigned to other objects. Copy semantics dictate the rules for creating new objects that are copies of existing ones. Simply speaking, they <b>define</b> how objects are copied</p>
 <p>A <b>copy constructor</b> is used to initialize an object with an existing object of the same type. After the copy constructor executes, the newly created object becomes a copy of the object passed in the initializer</p>
@@ -383,7 +383,7 @@ Copy Semantics</h2>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>where <span class="tt">Foo a; Foo b = a</span> implicitly calls the copy constructor on <span class="tt">b</span>.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
 Shallow and Deep Copies</h3>
 <p><b>Shallow</b> and <b>deep</b> copies define how objects are copied!</p>
 <p>A <b>shallow copy</b> occurs where an object's <b>pointers</b> are copied, but <b>not</b> <b>the data they point to</b></p><ul>
@@ -396,7 +396,7 @@ Shallow and Deep Copies</h3>
 </ul>
 </li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 Copy Assignment Operator</h3>
 <p>The Copy Assignment Operator can be overloaded to define copy semantics <b>after</b> objects have been constructed. An example looks like such code below</p>
 <p>However, multiple checks that are typically implemented include</p><ul>
@@ -413,20 +413,20 @@ Copy Assignment Operator</h3>
 <li>You want to <b>avoid shallow copies</b> that lead to double frees or dangling pointers</li>
 <li>You want to implement <b>deep copying</b> semantics</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 Default and Delete on Copy constructors</h3>
 <p>Just like a regular constructor, we can have the compiler explicitly generate a <span class="tt">default</span> copy constructor, <span class="tt">Foo(const Foo&amp; foo) = default</span></p><ul>
 <li>Note that this will perform a <b>shallow copy</b></li>
 </ul>
 <p><span class="tt">= delete</span> on a copy constructor will prevent objects of a certain class from being copied</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 Move Semantics</h2>
 <p><b>Move semantics</b> allow the resources owned by one object to be <b>moved</b> or <b>transferred</b> to another object <b>without copying</b> the underlying data. They simply define how objects are moved!</p>
 <p>Deep copies can be expensive, especially when objects manage dynamic memory or other expensive resources. Therefore, move semantics come in handy and avoid a deep copy when necessary</p><ul>
 <li>Simply use move semantics when you want to avoid copying expensive resources and instead transfer ownership to another object!</li>
 </ul>
 <p>They are defined like copy semantics, including a <b>move constructor</b> and <b>move semantics</b></p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 rvalue references</h3>
 <p>An rvalue is a temporary object or value that <b>does not</b> have a persistent memory address. This is the opposite of an lvalue, which has a persistent memory address</p>
 <p><span class="tt">int x = 1</span></p>
@@ -436,7 +436,7 @@ rvalue references</h3>
 <p>In contrast, <span class="tt">1</span> is an rvalue. It is a temporary value used to initialize <span class="tt">x</span></p>
 <p><b>rvalue references</b> (right-value references) are references that bind to <b>rvalues</b>, temporary objects or literals that are about to expire. They enable <b>move semantics</b> by allowing the program to <b>take ownership</b> of resources from these temporary objects, avoiding expensive copies</p>
 <p>Understanding these make understanding move semantics much more easier because ultimately what happens is the rvalue of one object is being moved to another object via a rvalue reference of the other object</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md35"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
 Move Constructor</h3>
 <p>A <b>move constructor</b> defines how objects should be moved once initialized</p>
 <p>The code below defines a move constructor. Suppose class <span class="tt">Foo</span> contains two variables <span class="tt">data</span> and <span class="tt">size</span> and we want to move it to an rvalue reference called <span class="tt">other</span></p><ul>
@@ -452,7 +452,7 @@ Move Constructor</h3>
 <div class="line">    other.data = nullptr;</div>
 <div class="line">    other.size = 0;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md36"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
 Move Assignment Operator</h3>
 <p>The <b>move assignment operator</b> defines how objects should be moved after being initialized</p>
 <p>The code below defines a move assignment operator, but typical operations that are implemented include</p><ul>
@@ -470,7 +470,7 @@ Move Assignment Operator</h3>
 <div class="line">Foo b = std::move(a);</div>
 </div><!-- fragment --><p><span class="tt">b</span> will call its move semantics into <span class="tt">a</span>, effectively moving <span class="tt">a</span>'s resources into <span class="tt">b</span></p>
 <p>Simply speaking, move semantics are triggered when an object is treated as an rvalue (like the example above), either because it’s a temporary (like <span class="tt">Foo a = Foo()</span>) or explicitly calling <span class="tt">std::move</span> (which converts an <span class="tt">lvalue</span> into an <span class="tt">rvalue</span>)</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md37"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
 Rule of Zero/Three/Five</h2>
 <p>When a class manages resources (<b>dynamic memory</b>, file handles, etc.), it <b>must</b> define how it is <b>copied</b>, <b>moved</b>, and <b>destroyed</b> in order to avoid issues like memory leaks or double deletes</p>
 <p>The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class</p>

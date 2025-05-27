@@ -91,7 +91,7 @@ $(function(){initNavTree('md_lecture3.html','',''); });
   <div class="headertitle"><div class="title">Lecture 3 - Linked List Implementation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 List ADT</h2>
 <p><b><a class="el" href="class_list.html">List</a> ADT Goals</b></p><ul>
 <li><span class="tt">insert</span> - Done via front/back, at index, or at pointer</li>
@@ -154,7 +154,7 @@ List ADT</h2>
 <div class="line">public:</div>
 <div class="line">    void insertAtFront(const T&amp; data);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 insertAtFront algorithm</h3>
 <p>The <span class="tt">.hpp</span> extension is used to define functionality of templates defined in a <span class="tt">.h</span>. It typically contains the full definitions of template functions, enabling the compiler to generate code for each type instantiation based on the defined type</p>
 <p>One of the functions that a good <a class="el" href="class_list.html">List</a> data structure must implement is <span class="tt">insertAtFront</span>, which as the name suggests inserts a node to the front of the List!</p>
@@ -194,7 +194,7 @@ insertAtFront algorithm</h3>
 <div class="line">}</div>
 </div><!-- fragment --><p>This algorithm has a runtime of $O(1)$, due to three simple operations and doesn't loop or scale through a list size!</p>
 <p>Recall what <span class="tt">-&gt;</span> (arrow operator) does in C++. Its a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! <span class="tt">temp-&gt;next</span> is the mere equivalent of <span class="tt">(*temp).next</span> </p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 insert algorithm</h3>
 <p>The previous algorithm only inserted nodes at the front of the <a class="el" href="class_list.html">List</a>. However a more general insert algorithm is recommended to insert nodes in more places than just the front!</p>
 <p>To solve this problem, the best thing to do is to create a <span class="tt">insert</span> algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated <span class="tt"><a class="el" href="class_list.html">List</a></span> ADT code below</p>

@@ -32,7 +32,7 @@ var menudata={children:[
 {text:"Functions",url:"functions_func.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"}]},
-{text:"CS 225 - Introduction",url:"md_cs225.html"},
+{text:"README",url:"md_readme.html"},
 {text:"Lecture Notes",url:"usergroup0.html",children:[
 {text:"Lecture 2 - C++ and Lists",url:"md_lecture2.html"},
 {text:"Lecture 3 - Linked List Implementation",url:"md_lecture3.html"},

@@ -36,7 +36,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
     ] ],
-    [ "CS 225 - Introduction", "md_cs225.html", null ],
+    [ "README", "md_readme.html", null ],
     [ "Lecture Notes", "usergroup0.html", [
       [ "Lecture 2 - C++ and Lists", "md_lecture2.html", null ],
       [ "Lecture 3 - Linked List Implementation", "md_lecture3.html", null ],

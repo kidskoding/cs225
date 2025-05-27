@@ -156,7 +156,7 @@ $(function(){initNavTree('md_lecture4.html','',''); });
 <div class="line">    nodeAtIndex = newNode;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>This function has a $O(n)$ runtime, since it needs to traverse to the given position/index and then insert the newly created node of the given data</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 operator[]</h2>
 <p>The next function our <span class="tt"><a class="el" href="class_list.html">List</a></span> ADT function must have is the operator <span class="tt">[ ]</span>. Recall that in C++ we can operator overload with a function that changes the behavior of the <span class="tt">[ ]</span> operator.</p>
 <p>The brackets operator will behave very similarly to the <span class="tt">find</span> function, but rather return the <span class="tt">data</span> by reference that the <span class="tt"><a class="el" href="struct_list_node.html">ListNode</a></span> at the given index contains. This updates our <span class="tt"><a class="el" href="class_list.html">List</a></span> class like this (shown below)</p>
@@ -204,7 +204,7 @@ operator[]</h2>
 <div class="line">    return loc-&gt;data;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>This runtime is also $O(n)$ because it takes $n$ times to traverse through the list to find the <span class="tt"><a class="el" href="struct_list_node.html">ListNode</a></span> at the given index to then return its data!</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 remove</h2>
 <p>The next function is to remove data from our <span class="tt"><a class="el" href="class_list.html">List</a></span> at a given index. This updates our <span class="tt"><a class="el" href="class_list.html">List</a></span> class structure!</p>
 <div class="fragment"><div class="line">// List.h</div>

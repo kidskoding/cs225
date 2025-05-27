@@ -42,7 +42,7 @@
     </tab>
     <tab type="examples" visible="yes" title="" intro=""/>
     
-    <tab type="user" url="\ref md_cs225" title="CS 225 - Introduction" />
+    <tab type="user" url="\ref md_readme" title="README" />
     <tab type="usergroup" title="Lecture Notes">
       <tab type="user" url="\ref md_lecture2" title="Lecture 2 - C++ and Lists" />
       <tab type="user" url="\ref md_lecture3" title="Lecture 3 - Linked List Implementation" />

@@ -1,6 +1,6 @@
 \chapter{Lecture 3 -\/ Linked List Implementation }
 \hypertarget{md_lecture3}{}\label{md_lecture3}\index{Lecture 3 -\/ Linked List Implementation@{Lecture 3 -\/ Linked List Implementation}}
-\hypertarget{md_lecture3_autotoc_md9}{}\doxysubsection{\texorpdfstring{List ADT}{List ADT}}\label{md_lecture3_autotoc_md9}
+\hypertarget{md_lecture3_autotoc_md4}{}\doxysubsection{\texorpdfstring{List ADT}{List ADT}}\label{md_lecture3_autotoc_md4}
 {\bfseries{\doxylink{class_list}{List} ADT Goals}}
 \begin{DoxyItemize}
 \item {\ttfamily insert} -\/ Done via front/back, at index, or at pointer
@@ -94,7 +94,7 @@ To start our \doxylink{class_list}{List} ADT, we need to achieve our first funct
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
-\hypertarget{md_lecture3_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{insert\+At\+Front algorithm}{insert\+At\+Front algorithm}}\label{md_lecture3_autotoc_md10}
+\hypertarget{md_lecture3_autotoc_md5}{}\doxysubsubsection{\texorpdfstring{insert\+At\+Front algorithm}{insert\+At\+Front algorithm}}\label{md_lecture3_autotoc_md5}
 The {\ttfamily .hpp} extension is used to define functionality of templates defined in a {\ttfamily .h}. It typically contains the full definitions of template functions, enabling the compiler to generate code for each type instantiation based on the defined type
 
 One of the functions that a good \doxylink{class_list}{List} data structure must implement is {\ttfamily insert\+At\+Front}, which as the name suggests inserts a node to the front of the List!
@@ -151,7 +151,7 @@ In C++, this is what the {\ttfamily insert\+At\+Front} algorithm would look like
 
 This algorithm has a runtime of \$\+O(1)\$, due to three simple operations and doesn\textquotesingle{}t loop or scale through a list size!
 
-Recall what {\ttfamily -\/\texorpdfstring{$>$}{>}} (arrow operator) does in C++. Its a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! {\ttfamily temp-\/\texorpdfstring{$>$}{>}next} is the mere equivalent of {\ttfamily (\texorpdfstring{$\ast$}{*}temp).next} \hypertarget{md_lecture3_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{insert algorithm}{insert algorithm}}\label{md_lecture3_autotoc_md11}
+Recall what {\ttfamily -\/\texorpdfstring{$>$}{>}} (arrow operator) does in C++. Its a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! {\ttfamily temp-\/\texorpdfstring{$>$}{>}next} is the mere equivalent of {\ttfamily (\texorpdfstring{$\ast$}{*}temp).next} \hypertarget{md_lecture3_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{insert algorithm}{insert algorithm}}\label{md_lecture3_autotoc_md6}
 The previous algorithm only inserted nodes at the front of the \doxylink{class_list}{List}. However a more general insert algorithm is recommended to insert nodes in more places than just the front!
 
 To solve this problem, the best thing to do is to create a {\ttfamily insert} algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated {\ttfamily \doxylink{class_list}{List}} ADT code below

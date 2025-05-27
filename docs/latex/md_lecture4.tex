@@ -89,7 +89,7 @@ This algorithm is shown in the code below
 \end{DoxyCode}
 
 
-This function has a \$\+O(n)\$ runtime, since it needs to traverse to the given position/index and then insert the newly created node of the given data\hypertarget{md_lecture4_autotoc_md12}{}\doxysubsection{\texorpdfstring{operator\mbox{[}\mbox{]}}{operator\mbox{[}\mbox{]}}}\label{md_lecture4_autotoc_md12}
+This function has a \$\+O(n)\$ runtime, since it needs to traverse to the given position/index and then insert the newly created node of the given data\hypertarget{md_lecture4_autotoc_md7}{}\doxysubsection{\texorpdfstring{operator\mbox{[}\mbox{]}}{operator\mbox{[}\mbox{]}}}\label{md_lecture4_autotoc_md7}
 The next function our {\ttfamily \doxylink{class_list}{List}} ADT function must have is the operator {\ttfamily \mbox{[} \mbox{]}}. Recall that in C++ we can operator overload with a function that changes the behavior of the {\ttfamily \mbox{[} \mbox{]}} operator.
 
 The brackets operator will behave very similarly to the {\ttfamily find} function, but rather return the {\ttfamily data} by reference that the {\ttfamily \doxylink{struct_list_node}{List\+Node}} at the given index contains. This updates our {\ttfamily \doxylink{class_list}{List}} class like this (shown below)
@@ -153,7 +153,7 @@ And the code for this function is below
 \end{DoxyCode}
 
 
-This runtime is also \$\+O(n)\$ because it takes \$n\$ times to traverse through the list to find the {\ttfamily \doxylink{struct_list_node}{List\+Node}} at the given index to then return its data!\hypertarget{md_lecture4_autotoc_md13}{}\doxysubsection{\texorpdfstring{remove}{remove}}\label{md_lecture4_autotoc_md13}
+This runtime is also \$\+O(n)\$ because it takes \$n\$ times to traverse through the list to find the {\ttfamily \doxylink{struct_list_node}{List\+Node}} at the given index to then return its data!\hypertarget{md_lecture4_autotoc_md8}{}\doxysubsection{\texorpdfstring{remove}{remove}}\label{md_lecture4_autotoc_md8}
 The next function is to remove data from our {\ttfamily \doxylink{class_list}{List}} at a given index. This updates our {\ttfamily \doxylink{class_list}{List}} class structure!
 
 

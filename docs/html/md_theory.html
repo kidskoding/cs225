@@ -94,7 +94,7 @@ $(function(){initNavTree('md_theory.html','',''); });
 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h3 class="doxsection"><a class="anchor" id="autotoc_md38"></a>
+<div class="textblock"><h3 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
 Recursive Definitions</h3>
 <ul>
 <li><b>Recursive definitions</b> contain formulas where each term is based on one or more preceding terms<ul>
@@ -127,7 +127,7 @@ Recursive Definitions</h3>
 <li>Unroll the first couple terms of the sequence $$ \begin{aligned} T(n) &amp;= 2T(\frac{n}{2}) + n \ &amp;= 2(2T(\frac{n}{4}) + \frac{n}{2}) + n = 4T(\frac{n}{4}) + 2n \ &amp;= 2(2(2T(\frac{n}{8}) + \frac{n}{4}) + n) + n = 8T(\frac{n}{8}) + 3n\ &amp;\dots \ &amp;= 2^kT(\frac{n}{2^k}) + kn \end{aligned} $$</li>
 <li>where $\frac{n}{2^k} = 1 \rightarrow n = 2^k \rightarrow k = \log_2n$ and $$ \begin{aligned} T(n) &amp;= 2^{\log_2n} \cdot T(1) + n \cdot \log_2n \ &amp;= n \cdot T(1) + n\log_2n \ &amp;= 3n + n\log_2n \end{aligned} $$</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md39"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
 Proofs by Induction</h3>
 <p><b>Induction</b> is a technique used to prove recursive definitions/ formulas, indicating that it does match its respective closed form solution</p><ul>
 <li>Includes a <b>base case</b>, <b>inductive hypothesis</b>, and <b>inductive step</b><ul>
@@ -151,7 +151,7 @@ Proofs by Induction</h3>
 </ul>
 </li>
 </ol>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md40"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md35"></a>
 Big-O</h3>
 <p>Big-O describes how fast a function grows as its input size, $n$, increases. It observes the asymptomatic behavior as $n$ gets large.</p><ul>
 <li>measures the efficiency of algorithms</li>
@@ -179,7 +179,7 @@ Big-O</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">$O(n!)$  </td><td class="markdownTableBodyNone">Factorial Time  </td><td class="markdownTableBodyNone">Permutation-Based Solutions  </td></tr>
 </table>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md41"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md36"></a>
 Big-O of Common Algorithms</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -201,12 +201,12 @@ Big-O of Common Algorithms</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Heap Sort  </td><td class="markdownTableBodyNone">$O(n \log n)$  </td><td class="markdownTableBodyNone">Organizes elements in an array using a binary heap, by repeatedly swapping the root node (whether its the maximum or minimum element for max/min heap respectively) with the last element of the heap  </td></tr>
 </table>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md37"></a>
 Graphs</h3>
 <p>Graphs consist of a set of nodes (points/vertices), $V$, and a set of edges, $E$, where the graph is commonly referred to as a pair of sets $(V, E)$.</p>
 <p>Each edge in $E$ joints two nodes in $V$, where two nodes connected by an edge are <b>adjacent</b> or <b>neighbors</b></p>
 <p>Edges can have direction, where graphs with these edges are known as <b>directed graphs</b>. This is useful when discussing relations between vertices with contexts to their edges. In contrast, edges that can be traversed in both directions are known as <b>undirected graphs</b></p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md38"></a>
 Additional Graph terminology</h4>
 <ul>
 <li><b>Loops</b> - a node where an edge connects to itself</li>
@@ -222,7 +222,7 @@ Additional Graph terminology</h4>
 </ul>
 <p><b>Subgraphs</b> - A smaller graph made from a subset of vertices and edges of a bigger graph</p>
 <p>A graph is <b>simple</b> if it does not contain <b>loops</b> or <b>multiple edges</b></p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md39"></a>
 Degree</h4>
 <p>The degree of a node $v$, notated as $deg(v)$, is the number of edges that are connected to $v$. Loops count <b>twice</b> towards the degree of a node.</p>
 <p>Each edge contributes to two degrees of a node. Therefore, the <b>sum of the degrees of all nodes in a graph</b> is <b>twice</b> the number of edges, which can be mathematically expressed as</p>
@@ -230,7 +230,7 @@ Degree</h4>
 <p>or</p>
 <p>$$ \sum_{k = 1}^nv_k \in Vdeg(v) = 2|E| $$</p>
 <p>This is known as the <b>Handshaking Theorem</b></p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md40"></a>
 Isomorphism</h4>
 <p>Isomorphism exists when two graphs have the same structure, albeit the drawings may be different</p>
 <p>Two graphs, $G_1$ and $G_2$ are isomorphic when there exists a bijection of $$ f : V_1 \rightarrow V_2 $$</p>
@@ -239,13 +239,13 @@ Isomorphism</h4>
 <li>For any node degree $k$, the two graphs must have the same number of nodes of degree $k$. For example, they must have the same number of nodes with degree $3$</li>
 <li>Given a subgraph of $G_1$, that subgraph must also exist in $G_2$</li>
 </ul>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md41"></a>
 Connectivity</h4>
 <p>A graph is <b>connected</b> when there exists a walk between every pair of nodes in $G$, or simply you can get from <b>any node to any other node</b></p>
 <p>Sometimes removing an edge from a connected graph will completely lose its connectivity. We refer to such edge as a <b>cut edge</b> when if removed, the graph would be disconnected. Similarly, a <b>cut vertex</b> exists when removing such</p>
 <p>An <b>Euler Circuit</b> exists when there is a closed walk (circuit) that uses every edge of the graph once. This can only occur when <b>all degrees of the nodes are even</b></p>
 <p>This is because in order to complete the circuit, you must leave each node that you enter. This means that the graph is <b>connected</b> and therefore exists a closed walk that uses every edge of the graph once.</p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
 Graph Coloring</h4>
 <p>Graph coloring is a <b>technique</b> used to assign colors to a node of a graph, where two adjacent vertices <b>cannot</b> share the same color</p>
 <p><b>Graph Coloring Steps</b></p><ol type="1">
@@ -254,15 +254,15 @@ Graph Coloring</h4>
 <li>Repeat steps 1 and 2 for all non-colored nodes until <b>all nodes in the graph are colored</b></li>
 </ol>
 <p>The number of colors it takes to color a graph, is known as the <b>chromatic number</b>, mathematically notated as $\chi(G)$</p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
 Bipartite Graphs</h4>
 <p>A graph, $G = (V, E)$ is <b>bipartite</b>, such that $V$ can be split into two non-overlapping subsets $V_1$ and $V_2$, where every edge connects to an element of $V_1$ in $V_2$.</p>
 <p>What this simply means is that <b>a graph can only be bipartite when its</b> $\chi(G) = 2$. This means that a graph can only be colored with <b>two colors</b></p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
 Trees</h3>
 <p><b>Trees</b> are undirected graphs with a special node called the <b>root</b>, where every node is connected to the root via one exact <b>path</b></p>
 <p>They are also <b>acyclic</b>, <b>connected</b>, and have $n$ <b>vertices</b> with $n - 1$ <b>edges</b></p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md50"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
 Tree Vocabulary</h4>
 <ul>
 <li><b>Parent</b> - A node that is directly above another node in a tree</li>
@@ -275,7 +275,7 @@ Tree Vocabulary</h4>
 <li><b>Ancestor</b> - The ancestor of a node is one that lies on the path from the root to such node</li>
 <li><b>Descendant</b> - The descendant of a node is one that lies on the path from such node to a leaf node</li>
 </ul>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
 m-ary Trees</h4>
 <p>$m$-ary trees are trees that can have at most $m$ children. A common type of tree is a <b>Binary Search Tree</b>, where each node has at most $2$ children.</p><ul>
 <li><b>Full</b> trees exist when each node has either $0$ or $m$ children</li>
@@ -286,7 +286,7 @@ m-ary Trees</h4>
 <li><b>Balanced</b> trees exist when the heights of its left and right subtrees <b>differ by at most</b> $1$</li>
 </ul>
 <p>There are $mi + 1$ nodes total in a $m$-ary tree. This means a binary tree has $2i + 1$ nodes total.</p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md52"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
 Height and number of nodes</h4>
 <p>There is no exact formula to find the number of nodes and leaves in an $m$-ary tree. This is because some trees are more bushier (have more children) than others.</p>
 <p>However, there are some patterns <b>(assuming that a given tree is binary)</b></p><ul>

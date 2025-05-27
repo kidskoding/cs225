@@ -1,4 +1,4 @@
-# CS 225 - Introduction
+/*! \page md_readme CS 225 - Introduction
 
 > **CS 225** - Covers the fundamental **data structures** (list, stack, queue, tree, etc.) and their implementations using C++ and object oriented programming along with an **introductory analysis to algorithms**
 
