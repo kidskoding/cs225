@@ -28,4 +28,4 @@ This course is crucial as it provides the foundation for writing efficient softw
 * C++ Reference Links
 	* http://en.cppreference.com/
 	* **Tutorial Based Approach** - http://www.learncpp.com/
-	* Official C++ Reference Textbook - [[cs225-textbook.pdf]]
+	* [Official C++ Reference Textbook](./cs225-textbook.pdf)
