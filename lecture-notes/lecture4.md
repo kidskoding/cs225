@@ -1,6 +1,6 @@
 /*! \page md_lecture4 Lecture 4 - Linked List and List <vector>
 
-Continuing off of [[Lecture 3 - Lists and List ADT]], we will expand on our List ADT, which in this scenario is an implementation of a **Linked List**
+Continuing off of [Lecture 3 - Lists and List ADT](\ref md_lecture3), we will expand on our List ADT, which in this scenario is an implementation of a **Linked List**
 
 Recall the following characteristics of a `LinkedList`
 - Stores `ListNode`s that are chained together via pointers
