@@ -9,7 +9,7 @@ var searchData=
   ['remove_6',['remove',['../classList.html#aade3bbd6b083162ee910fc64b0725c6c',1,'List::remove()'],['../md_lecture4.html#autotoc_md8',1,'remove']]],
   ['resources_7',['Course Info and Resources',['../md_readme.html#autotoc_md51',1,'']]],
   ['returning_20values_8',['Returning Values',['../md_programming.html#autotoc_md23',1,'']]],
-  ['review_9',['Review',['../md_theory.html',1,'- Theory Review'],['../md_programming.html',1,'Programming Review']]],
+  ['review_9',['Review',['../md_programming.html',1,'Programming Review'],['../md_theory.html',1,'Theory Review']]],
   ['review_20of_20prerequisite_20courses_10',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
   ['rule_20of_20zero_20three_20five_11',['Rule of Zero Three Five',['../md_lecture2.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md_programming.html#autotoc_md32',1,'Rule of Zero/Three/Five']]],
   ['rvalue_20references_12',['rvalue references',['../md_programming.html#autotoc_md29',1,'']]]
