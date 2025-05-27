@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['m_20ary_20trees_0',['m-ary Trees',['../md_theory.html#autotoc_md46',1,'']]],
-  ['management_20ownership_1',['Memory Management - Ownership',['../md_lecture2.html#autotoc_md1',1,'']]],
-  ['member_20functions_2',['Member Functions',['../md_programming.html#autotoc_md12',1,'']]],
-  ['memory_20allocation_3',['Dynamic Memory Allocation',['../md_programming.html#autotoc_md16',1,'']]],
-  ['memory_20management_20ownership_4',['Memory Management - Ownership',['../md_lecture2.html#autotoc_md1',1,'']]],
-  ['midterm_200_20review_20of_20prerequisite_20courses_5',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
-  ['midterm0_6',['midterm0',['../md_Midterm_01Reviews_2Midterm_010_2midterm0.html',1,'']]],
-  ['move_20assignment_20operator_7',['Move Assignment Operator',['../md_programming.html#autotoc_md31',1,'']]],
-  ['move_20constructor_8',['Move Constructor',['../md_programming.html#autotoc_md30',1,'']]],
-  ['move_20semantics_9',['Move Semantics',['../md_programming.html#autotoc_md28',1,'']]]
+  ['lecture_202_20c_20and_20lists_0',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]],
+  ['lecture_203_20linked_20list_20implementation_1',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
+  ['lecture_204_20linked_20list_20and_20list_20vector_2',['Lecture 4 - Linked List and List &lt;vector&gt;',['../md_lecture4.html',1,'']]],
+  ['lecture2_3',['lecture2',['../md_lecture-notes_2lecture2.html',1,'']]],
+  ['lecture3_4',['lecture3',['../md_lecture-notes_2lecture3.html',1,'']]],
+  ['lecture4_5',['lecture4',['../md_lecture-notes_2lecture4.html',1,'']]],
+  ['linked_20list_20and_20list_20vector_6',['Lecture 4 - Linked List and List &lt;vector&gt;',['../md_lecture4.html',1,'']]],
+  ['linked_20list_20implementation_7',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
+  ['list_8',['List',['../classList.html',1,'']]],
+  ['list_20adt_9',['List ADT',['../md_lecture2.html#autotoc_md3',1,'Introduction to List ADT'],['../md_lecture3.html#autotoc_md4',1,'List ADT']]],
+  ['list_20and_20list_20vector_10',['Lecture 4 - Linked List and List &lt;vector&gt;',['../md_lecture4.html',1,'']]],
+  ['list_20implementation_11',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
+  ['list_20vector_12',['Lecture 4 - Linked List and List &lt;vector&gt;',['../md_lecture4.html',1,'']]],
+  ['listnode_13',['ListNode',['../structListNode.html',1,'']]],
+  ['lists_14',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]]
 ];
