@@ -110,31 +110,6 @@ With a user defined constructor, member variables are not automatically initiali
 
 Therefore, only create a default constructor when it makes sense for objects of a class type to be created using all default values
 
-A **copy constructor** is used to initialize an object with an existing object of the same type. After the copy constructor executes, the newly created object becomes a copy of the object passed in the initializer
-
-- **Implicit Copy Constructor** - If a copy constructor is not provided for a class, the compiler will create a public **implicit copy constructor** for you
-
-An explicit copy constructor can also be created, by taking in an referenced object type of that class
-
-```
-class Foo {
-public:
-	Foo(const Foo& foo) {
-		
-	}
-};
-```
-
-where `Foo a; Foo b = a` implicitly calls the copy constructor on `b`. 
-
-Just like a regular constructor, we can have the compiler explicitly generate a `default` copy constructor, `Foo(const Foo& foo) = default`
-
-`= delete` on a copy constructor will prevent objects of a certain class from being copied
-
-### RAII
-
-**Resource Acquisition Is Initialization**, or RAII, is a C++ programming design pattern that explains how to 
-
 ### Namespaces
 
 **Namespaces** group together related code (variables, functions, classes, etc.) under a name to avoid naming conflicts. 
@@ -184,6 +159,7 @@ A pointer is **very similar** to a reference. However, a **reference** is an ali
 - **Dangling reference:** A reference refers to an object that no longer exists (e.g., a local variable that went out of scope)
 
 These can be **dangerous** because they can lead to **undefined behavior**, **crashes**, or **data corruption**
+
 ## Dynamic Memory Allocation
 
 **Dynamic Memory Allocation** assigns memory space during a program's execution rather than compile time. This memory that the program uses is generally divided into the **stack** and the **heap**.
@@ -222,6 +198,7 @@ While static and automatic memory management free variables from memory its life
 > In other words, when creating memory calls with `new` they **must** be freed with `delete`. 
 
 Otherwise, a **memory leak** happens. **Memory leaks** occur when a program allocates memory via `new`, but never frees it via `delete`.  This causes unused memory, which can eventually exhaust available memory if it happens repeatedly
+
 ### Destructors
 
 A **destructor** is another special kind of class member function that runs when an object of that class is **destroyed**, using `delete`. While constructors initialize instances of a class, destructors help clean them up
@@ -259,6 +236,7 @@ These resources can include anything the class owns or manages
 
 RAII is a basic technique that explains best practices towards writing a class by **tying an object's resources to its lifetime** 
 	- An object acquires a resource in its constructor, and releases it via its destructor when its lifetime ends
+
 ### Heap
 
 The heap, also known as the **free store**, **tracks memory used for dynamic memory allocation**
@@ -364,3 +342,161 @@ int* foo(int* x) {
 ```
 
 In the example above, `x` is simply returned as a pointer to an existing variable. Be careful! Like references, pointing to a local variable that goes out of scope can lead to undefined behaviors!
+
+## Copy Semantics
+
+**Copy Semantics** refers to how objects are copied when they are passed as arguments to functions, returned from functions, or assigned to other objects. Copy semantics dictate the rules for creating new objects that are copies of existing ones. Simply speaking, they **define** how objects are copied
+
+A **copy constructor** is used to initialize an object with an existing object of the same type. After the copy constructor executes, the newly created object becomes a copy of the object passed in the initializer
+
+- **Implicit Copy Constructor** - If a copy constructor is not provided for a class, the compiler will create a public **implicit copy constructor** for you
+
+An explicit copy constructor can also be created, by taking in an referenced object type of that class
+
+```
+class Foo {
+public:
+	Foo(const Foo& foo) {
+		
+	}
+};
+```
+
+where `Foo a; Foo b = a` implicitly calls the copy constructor on `b`. 
+
+### Shallow and Deep Copies
+
+**Shallow** and **deep** copies define how objects are copied!
+
+A **shallow copy** occurs where an object's **pointers** are copied, but **not** **the data they point to**
+- Both the object and the copied object share the same underlying data, which means that changing one pointer affects both objects
+- If one object deletes or modifies the pointer, the other may be left with invalid data, causing crashes and segmentation faults resulting in undefined behavior or unexpected data, which may contain varied data than what was ideal
+
+A **deep copy** is a completely independent copy of all data, including an object's pointers and the memory they point to
+- Unlike a shallow copy, the object and the copied object **do not share the same data**
+	- Instead, the copied object **allocates new memory** and copies the actual data, so they’re fully independent
+
+### Copy Assignment Operator
+
+The Copy Assignment Operator can be overloaded to define copy semantics **after** objects have been constructed. An example looks like such code below
+
+However, multiple checks that are typically implemented include
+- Self assignment check (`this != &other`)  to ensure that an object is not copying itself!
+- Frees or cleans up resources that the current object owns
+- Deep copies data from the source object
+- Returns `*this`, a reference to the current object to allow assignment chaining (recall that `this` is an implicit pointer to the current object in a class)
+
+```
+Foo& operator=(const Foo& other) {
+    return *this;
+}
+```
+
+Typically, you need to overload it when
+- Your class owns dynamically allocated memory or other resources.
+- You want to **avoid shallow copies** that lead to double frees or dangling pointers
+- You want to implement **deep copying** semantics
+
+### Default and Delete on Copy constructors
+
+Just like a regular constructor, we can have the compiler explicitly generate a `default` copy constructor, `Foo(const Foo& foo) = default`
+- Note that this will perform a **shallow copy**
+
+`= delete` on a copy constructor will prevent objects of a certain class from being copied
+
+## Move Semantics
+
+**Move semantics** allow the resources owned by one object to be **moved** or **transferred** to another object **without copying** the underlying data. They simply define how objects are moved!
+
+Deep copies can be expensive, especially when objects manage dynamic memory or other expensive resources. Therefore, move semantics come in handy and avoid a deep copy when necessary
+- Simply use move semantics when you want to avoid copying expensive resources and instead transfer ownership to another object!
+
+They are defined like copy semantics, including a **move constructor** and **move semantics**
+
+### rvalue references
+
+An rvalue is a temporary object or value that **does not** have a persistent memory address. This is the opposite of an lvalue, which has a persistent memory address
+
+`int x = 1`
+
+In the code snippet above, `x` is an lvalue (left value) because it is stored in memory with a persistent memory address
+- Recall that a pointer will store this memory address and an lvalue reference - sometimes simply called a reference - is a reference or alias to an existing value in memory
+
+In contrast, `1` is an rvalue. It is a temporary value used to initialize `x`
+
+**rvalue references** (right-value references) are references that bind to **rvalues**, temporary objects or literals that are about to expire. They enable **move semantics** by allowing the program to **take ownership** of resources from these temporary objects, avoiding expensive copies
+
+Understanding these make understanding move semantics much more easier because ultimately what happens is the rvalue of one object is being moved to another object via a rvalue reference of the other object
+
+### Move Constructor
+
+A **move constructor** defines how objects should be moved once initialized
+
+The code below defines a move constructor. Suppose class `Foo` contains two variables `data` and `size` and we want to move it to an rvalue reference called `other`
+- `data` is a dynamically allocated int and `size` is an int
+- An example of moving the data from `other` to the current object `this` is shown below by using an object's rvalue reference, `other`
+
+```
+Foo(Foo&& other) {
+	// Move the data of the other object to this object
+	this->data = other.data;
+	this->size = other.size;
+
+	// Set data pointer to null and size to 0
+	other.data = nullptr;
+	other.size = 0;
+}
+```
+
+### Move Assignment Operator
+
+The **move assignment operator** defines how objects should be moved after being initialized
+
+The code below defines a move assignment operator, but typical operations that are implemented include
+- **Self-assignment check** (`this != &other`) - ensures that an object is not moving into itself
+- Free or clean up any resources that the current object owns (like deleting dynamically allocated memory)
+- **Stealing resources from the source** - transfer the ownership of the resources from the `other` rvalue object to the current object by copying pointers or handles
+- **Leave the source in a valid, but empty state** - Set the `other` object pointers or resource handles to `nullptr` or equivalent so that destructor won't free the resources again (double free - free what has already been freed)!
+- Return `*this`, a reference to the current object!
+
+```
+Foo& operator=(Foo&& other) {
+	return *this;
+}
+```
+
+`std::move()` will trigger move semantics! For example, in the code below
+
+```
+Foo a;
+Foo b = std::move(a);
+```
+
+`b` will call its move semantics into `a`, effectively moving `a`'s resources into `b`
+
+Simply speaking, move semantics are triggered when an object is treated as an rvalue (like the example above), either because it’s a temporary (like `Foo a = Foo()`) or explicitly calling `std::move` (which converts an `lvalue` into an `rvalue`)
+
+## Rule of Zero/Three/Five
+
+When a class manages resources (**dynamic memory**, file handles, etc.), it **must** define how it is **copied**, **moved**, and **destroyed** in order to avoid issues like memory leaks or double deletes
+
+The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class
+
+**Rule of Zero** - If your class doesn't manage resources directly, **DO NOT** define the **big five**
+- Destructor
+- Copy Constructor
+- Copy Assignment
+- Move Constructor
+- Move Assignment
+
+**Rule of Three** - If you define one of a **destructor**, **copy constructor**, or **copy assignment operator**, **you should define ALL three of them!**
+- This is because handling one implies your class is managing a resource that needs careful copying and cleanup
+
+**Rule of Five** - Applies to modern C++, where if you plan on managing resources with move semantics, define **all 5 of the following** (this is the opposite of the **rule of zero**)
+- Destructor
+- Copy Constructor
+- Copy Assignment
+- Move Constructor
+- Move Assignment
+
+Use this rule when you need to **avoid deep copying** and allow your class to be efficiently moved
