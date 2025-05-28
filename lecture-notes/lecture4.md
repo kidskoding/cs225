@@ -204,5 +204,74 @@ T remove(int index) {
 	- We need the original node that was stored in `toRemove` in order to be able to return the data that was removed from the `List`, which is why we store it in `temp!
 - `delete temp`, ensures the memory allocated to `temp` is freed. We do this call because we know that the `List` no longer needs this `temp` `ListNode` (**`List` no longer needs to track it!**)
 
-This wraps up the first implementation of `List`, which is a `LinkedList`
+This wraps up the first implementation of `List`, which is a LinkedList
 
+## Representing a `List` as a `std::vector`
+
+Now onto the array implementation of a `List`. In this array implementation, we are really just implementing a C++ `std::vector` or `ArrayList`
+
+The primitive foundation of an `ArrayList` is based on the idea of storing elements in a chunk of contiguous memory, allowing efficient access and manipulation. The list starts with a raw array and builds abstraction over it to support dynamic resizing, safe memory handling, and user-friendly operations, like the ones covered in LinkedList
+
+We begin by figuring out what we need to store the list. In the `List` approach by using a LinkedList, we stored individual `ListNodes`, where they each held data along with a pointer to the next node, which allowed for easy chaining access between the nodes
+
+However, in an `ArrayList` approach, we need to simply store a chunk of memory somehow, while this is typically a `std::vector` in C++, we are actually implementing this, so we need a primitive array, as mentioned previously. Therefore, a chunk of memory is allocated using a **pointer**, where we can call this a generic type `T`. This is reflected in our `ArrayList` class below
+
+```
+// ArrayList.h
+
+#pragma once
+
+template<typename T>
+class ArrayList {
+public:
+
+private:
+	// A pointer to the start of a chunk of memory
+    T* data;
+};
+```
+`data` is a pointer to a chunk of memory that will be allocated to the heap
+
+In addition to this, we need to store the **size** and **capacity**, where the **size** represents how many items are actually in the list and the **capacity** represents how much space is available in the memory block
+
+These both could be ints, or they could be pointers, where `size` represents a pointer to the end of the used portion of the array and `capacity` represents a pointer to the end of the allocated chunk of memory, or buffer. This approach is reflected in our code below,
+
+```
+// ArrayList.h
+
+#pragma once
+
+template<typename T>
+class ArrayList {
+public:
+
+private:
+    T* data;
+    T* size;
+    T* capacity;
+};
+```
+
+Now, the next idea to think about this `ArrayList` implementation is how do we add more space to the buffer? If the capacity is full, meaning that size and capacity both point to the same area in the buffer, then how would I resize the buffer to add additional data into the buffer?
+
+The solution is to allocate some new buffer somewhere with a bigger space. Then, copy the data from the previous buffer along with its pointers (`size`, `capacity`, and `data`). This approach will be done with a private method, `addSpace()`. Our `ArrayList` ADT is updated below. Recall that this is a helper method that resizes the buffer, so therefore, it should be private.
+
+```
+// ArrayList.h
+
+#pragma once
+
+template<typename T>
+class ArrayList {
+public:
+
+private:
+    T* data;
+    T* size;
+    T* capacity;
+
+    void addSpace();
+};
+```
+
+Notice that this is very expensive, which is why the `LinkedList` approach is often much more recommended
