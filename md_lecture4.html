@@ -280,7 +280,59 @@ remove</h2>
 </ul>
 </li>
 </ul>
-<p>This wraps up the first implementation of <code><a class="el" href="classList.html">List</a></code>, which is a <code>LinkedList</code> </p>
+<p>This wraps up the first implementation of <code><a class="el" href="classList.html">List</a></code>, which is a LinkedList</p>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Representing a <code>List</code> as a <code>std::vector</code></h2>
+<p>Now onto the array implementation of a <code><a class="el" href="classList.html">List</a></code>. In this array implementation, we are really just implementing a C++ <code>std::vector</code> or <code><a class="el" href="classArrayList.html">ArrayList</a></code></p>
+<p>The primitive foundation of an <code><a class="el" href="classArrayList.html">ArrayList</a></code> is based on the idea of storing elements in a chunk of contiguous memory, allowing efficient access and manipulation. The list starts with a raw array and builds abstraction over it to support dynamic resizing, safe memory handling, and user-friendly operations, like the ones covered in LinkedList</p>
+<p>We begin by figuring out what we need to store the list. In the <code><a class="el" href="classList.html">List</a></code> approach by using a LinkedList, we stored individual <code>ListNodes</code>, where they each held data along with a pointer to the next node, which allowed for easy chaining access between the nodes</p>
+<p>However, in an <code><a class="el" href="classArrayList.html">ArrayList</a></code> approach, we need to simply store a chunk of memory somehow, while this is typically a <code>std::vector</code> in C++, we are actually implementing this, so we need a primitive array, as mentioned previously. Therefore, a chunk of memory is allocated using a <b>pointer</b>, where we can call this a generic type <code>T</code>. This is reflected in our <code><a class="el" href="classArrayList.html">ArrayList</a></code> class below</p>
+<div class="fragment"><div class="line">// ArrayList.h</div>
+<div class="line"> </div>
+<div class="line">#pragma once</div>
+<div class="line"> </div>
+<div class="line">template&lt;typename T&gt;</div>
+<div class="line">class ArrayList {</div>
+<div class="line">public:</div>
+<div class="line"> </div>
+<div class="line">private:</div>
+<div class="line">    // A pointer to the start of a chunk of memory</div>
+<div class="line">    T* data;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p> <code>data</code> is a pointer to a chunk of memory that will be allocated to the heap</p>
+<p>In addition to this, we need to store the <b>size</b> and <b>capacity</b>, where the <b>size</b> represents how many items are actually in the list and the <b>capacity</b> represents how much space is available in the memory block</p>
+<p>These both could be ints, or they could be pointers, where <code>size</code> represents a pointer to the end of the used portion of the array and <code>capacity</code> represents a pointer to the end of the allocated chunk of memory, or buffer. This approach is reflected in our code below,</p>
+<div class="fragment"><div class="line">// ArrayList.h</div>
+<div class="line"> </div>
+<div class="line">#pragma once</div>
+<div class="line"> </div>
+<div class="line">template&lt;typename T&gt;</div>
+<div class="line">class ArrayList {</div>
+<div class="line">public:</div>
+<div class="line"> </div>
+<div class="line">private:</div>
+<div class="line">    T* data;</div>
+<div class="line">    T* size;</div>
+<div class="line">    T* capacity;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>Now, the next idea to think about this <code><a class="el" href="classArrayList.html">ArrayList</a></code> implementation is how do we add more space to the buffer? If the capacity is full, meaning that size and capacity both point to the same area in the buffer, then how would I resize the buffer to add additional data into the buffer?</p>
+<p>The solution is to allocate some new buffer somewhere with a bigger space. Then, copy the data from the previous buffer along with its pointers (<code>size</code>, <code>capacity</code>, and <code>data</code>). This approach will be done with a private method, <code>addSpace()</code>. Our <code><a class="el" href="classArrayList.html">ArrayList</a></code> ADT is updated below. Recall that this is a helper method that resizes the buffer, so therefore, it should be private.</p>
+<div class="fragment"><div class="line">// ArrayList.h</div>
+<div class="line"> </div>
+<div class="line">#pragma once</div>
+<div class="line"> </div>
+<div class="line">template&lt;typename T&gt;</div>
+<div class="line">class ArrayList {</div>
+<div class="line">public:</div>
+<div class="line"> </div>
+<div class="line">private:</div>
+<div class="line">    T* data;</div>
+<div class="line">    T* size;</div>
+<div class="line">    T* capacity;</div>
+<div class="line"> </div>
+<div class="line">    void addSpace();</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>Notice that this is very expensive, which is why the <code>LinkedList</code> approach is often much more recommended </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

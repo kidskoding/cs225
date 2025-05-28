@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['c_20and_20lists_0',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]],
-  ['courses_1',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
-  ['cs_20225_20introduction_2',['CS 225 - Introduction',['../md_readme.html',1,'']]]
+  ['amortized_20analysis_0',['Lecture 5 - Amortized Analysis',['../md_lecture5.html',1,'']]],
+  ['analysis_1',['Lecture 5 - Amortized Analysis',['../md_lecture5.html',1,'']]],
+  ['and_20list_20vector_2',['Lecture 4 - Linked List and List &lt;vector&gt;',['../md_lecture4.html',1,'']]],
+  ['and_20lists_3',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]]
 ];

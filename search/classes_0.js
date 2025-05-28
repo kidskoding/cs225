@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['list_0',['List',['../classList.html',1,'']]],
-  ['listnode_1',['ListNode',['../structListNode.html',1,'']]]
+  ['arraylist_0',['ArrayList',['../classArrayList.html',1,'']]]
 ];

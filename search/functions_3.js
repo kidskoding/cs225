@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remove_0',['remove',['../classList.html#aade3bbd6b083162ee910fc64b0725c6c',1,'List']]]
+  ['pushback_0',['pushBack',['../classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
 ];

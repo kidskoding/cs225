@@ -40,7 +40,8 @@ var NAVTREE =
     [ "Lecture Notes", "usergroup0.html", [
       [ "Lecture 2 - C++ and Lists", "md_lecture2.html", null ],
       [ "Lecture 3 - Linked List Implementation", "md_lecture3.html", null ],
-      [ "Lecture 4 - Linked Lists and List <vector>", "md_lecture4.html", null ]
+      [ "Lecture 4 - Linked Lists and List <vector>", "md_lecture4.html", null ],
+      [ "Lecture 5 - Amortized Analysis", "md_lecture5.html", null ]
     ] ],
     [ "Midterm Reviews", "usergroup1.html", [
       [ "Midterm 0", "usergroup2.html", [
@@ -54,7 +55,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"List_8h_source.html"
+"ArrayList_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
