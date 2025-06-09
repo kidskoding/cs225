@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['implementation_0',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
-  ['induction_1',['Proofs by Induction',['../md_theory.html#autotoc_md34',1,'']]],
-  ['info_20and_20resources_2',['Course Info and Resources',['../md_readme.html#autotoc_md50',1,'']]],
-  ['insert_20algorithm_3',['insert algorithm',['../md_lecture3.html#autotoc_md6',1,'']]],
-  ['insertatfront_20algorithm_4',['insertAtFront algorithm',['../md_lecture3.html#autotoc_md5',1,'']]],
-  ['introduction_5',['CS 225 - Introduction',['../md_readme.html',1,'']]],
-  ['introduction_20to_20list_20adt_6',['Introduction to List ADT',['../md_lecture2.html#autotoc_md3',1,'']]],
-  ['isomorphism_7',['Isomorphism',['../md_theory.html#autotoc_md40',1,'']]]
+  ['heap_0',['Heap',['../md_programming.html#autotoc_md22',1,'']]],
+  ['height_20and_20number_20of_20nodes_1',['Height and number of nodes',['../md_theory.html#autotoc_md49',1,'']]],
+  ['here_2',['All references/notes are compiled in &lt;b&gt;Doxygen&lt;/b&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot;&gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md50',1,'']]]
 ];

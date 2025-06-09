@@ -1,6 +1,6 @@
 /*! \page md_lecture5 Lecture 5 - Amortized Analysis
 
-Continuing off of [lecture 4](./lecture4.md) about a `std::vector` implementation in C++, we defined the following things
+Continuing off of [lecture 4](\ref md_lecture4) about a `std::vector` implementation in C++, we defined the following things
 
 - `data` - a contiguous chunk of memory allocated for our custom implemented `std::vector` or `ArrayList`
     - This will be allocated onto the heap, where we get a returned generic type pointer that points to this buffer/chunk of contiguous memory

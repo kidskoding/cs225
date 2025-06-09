@@ -7,6 +7,6 @@ int main(int argc, char** argv) {
     list.insertAtFront(20);
     list.insert(30, 1);
     
-    std::cout << list[1] << std::endl;
+    std::cout << list[1] << '\n';
     return 0;
 }

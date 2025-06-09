@@ -1,9 +1,6 @@
-\chapter{
-\begin{DoxyItemize}
-\item Theory Review 
-\end{DoxyItemize}}
-\hypertarget{md_theory}{}\label{md_theory}\index{-\/ Theory Review@{-\/ Theory Review}}
-\hypertarget{md_theory_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{Recursive Definitions}{Recursive Definitions}}\label{md_theory_autotoc_md33}
+\chapter{Theory Review }
+\hypertarget{md_theory}{}\label{md_theory}\index{Theory Review@{Theory Review}}
+\hypertarget{md_theory_autotoc_md35}{}\doxysubsubsection{\texorpdfstring{Recursive Definitions}{Recursive Definitions}}\label{md_theory_autotoc_md35}
 
 \begin{DoxyItemize}
 \item {\bfseries{Recursive definitions}} contain formulas where each term is based on one or more preceding terms
@@ -42,7 +39,7 @@ therefore making the closed form for function \$\+T\$, \$2\texorpdfstring{$^\wed
 \begin{DoxyItemize}
 \item Unroll the first couple terms of the sequence \$\$ \textbackslash{}begin\{aligned\} T(n) \&= 2T(\textbackslash{}frac\{n\}\{2\}) + n \textbackslash{} \&= 2(2T(\textbackslash{}frac\{n\}\{4\}) + \textbackslash{}frac\{n\}\{2\}) + n = 4T(\textbackslash{}frac\{n\}\{4\}) + 2n \textbackslash{} \&= 2(2(2T(\textbackslash{}frac\{n\}\{8\}) + \textbackslash{}frac\{n\}\{4\}) + n) + n = 8T(\textbackslash{}frac\{n\}\{8\}) + 3n\textbackslash{} \&\textbackslash{}dots \textbackslash{} \&= 2\texorpdfstring{$^\wedge$}{\string^}kT(\textbackslash{}frac\{n\}\{2\texorpdfstring{$^\wedge$}{\string^}k\}) + kn \textbackslash{}end\{aligned\} \$\$
 \item where \$\textbackslash{}frac\{n\}\{2\texorpdfstring{$^\wedge$}{\string^}k\} = 1 \textbackslash{}rightarrow n = 2\texorpdfstring{$^\wedge$}{\string^}k \textbackslash{}rightarrow k = \textbackslash{}log\+\_\+2n\$ and \$\$ \textbackslash{}begin\{aligned\} T(n) \&= 2\texorpdfstring{$^\wedge$}{\string^}\{\textbackslash{}log\+\_\+2n\} \textbackslash{}cdot T(1) + n \textbackslash{}cdot \textbackslash{}log\+\_\+2n \textbackslash{} \&= n \textbackslash{}cdot T(1) + n\textbackslash{}log\+\_\+2n \textbackslash{} \&= 3n + n\textbackslash{}log\+\_\+2n \textbackslash{}end\{aligned\} \$\$
-\end{DoxyItemize}\hypertarget{md_theory_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{Proofs by Induction}{Proofs by Induction}}\label{md_theory_autotoc_md34}
+\end{DoxyItemize}\hypertarget{md_theory_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{Proofs by Induction}{Proofs by Induction}}\label{md_theory_autotoc_md36}
 {\bfseries{Induction}} is a technique used to prove recursive definitions/ formulas, indicating that it does match its respective closed form solution
 \begin{DoxyItemize}
 \item Includes a {\bfseries{base case}}, {\bfseries{inductive hypothesis}}, and {\bfseries{inductive step}}
@@ -65,7 +62,7 @@ therefore making the closed form for function \$\+T\$, \$2\texorpdfstring{$^\wed
 \item Assume the statement holds for \$n = k\$, where \$\$ 2\texorpdfstring{$^\wedge$}{\string^}k \textbackslash{}geq k + 1 \$\$
 \item Using this assumption, prove it holds for \$n = k + 1\$ \$\$ \textbackslash{}begin\{aligned\} \&2\texorpdfstring{$^\wedge$}{\string^}\{k + 1\} \textbackslash{}geq (k + 1) + 1 \textbackslash{} \&2\texorpdfstring{$^\wedge$}{\string^}\{k + 1\} \textbackslash{}geq k + 2 \textbackslash{} \&2\texorpdfstring{$^\wedge$}{\string^}k \textbackslash{}cdot 2 \textbackslash{}geq 2(k + 1) \textbackslash{}geq k + 2 \textbackslash{}end\{aligned\} \$\$
 \end{DoxyItemize}
-\end{DoxyEnumerate}\hypertarget{md_theory_autotoc_md35}{}\doxysubsubsection{\texorpdfstring{Big-\/O}{Big-\/O}}\label{md_theory_autotoc_md35}
+\end{DoxyEnumerate}\hypertarget{md_theory_autotoc_md37}{}\doxysubsubsection{\texorpdfstring{Big-\/O}{Big-\/O}}\label{md_theory_autotoc_md37}
 Big-\/O describes how fast a function grows as its input size, \$n\$, increases. It observes the asymptomatic behavior as \$n\$ gets large.
 \begin{DoxyItemize}
 \item measures the efficiency of algorithms
@@ -94,7 +91,7 @@ Big-\/O describes how fast a function grows as its input size, \$n\$, increases.
 \$\+O(2\texorpdfstring{$^\wedge$}{\string^}n)\$  &Exponential Time  &Typically many recursive algorithms, including brute force (attempts all possible solutions to a problem until one satisfies the problem\textquotesingle{}s conditions)  \\\cline{1-3}
 \$O(n!)\$  &Factorial Time  &Permutation-\/\+Based Solutions  \\\cline{1-3}
 \end{longtabu}
-\hypertarget{md_theory_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{Big-\/O of Common Algorithms}{Big-\/O of Common Algorithms}}\label{md_theory_autotoc_md36}
+\hypertarget{md_theory_autotoc_md38}{}\doxysubsubsection{\texorpdfstring{Big-\/O of Common Algorithms}{Big-\/O of Common Algorithms}}\label{md_theory_autotoc_md38}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
 \hline
@@ -114,12 +111,12 @@ Merge Sort  &\$O(n \textbackslash{}log n)\$  &Recursively divides an array/list 
 Quick Sort  &\$\+O(n\texorpdfstring{$^\wedge$}{\string^}2)\$ with average case of \$O(n \textbackslash{}log n)\$  &Selects a pivot element from the array and partitions the other elements into two sub-\/arrays, based on whether they are less than or greater than the pivot  \\\cline{1-3}
 Heap Sort  &\$O(n \textbackslash{}log n)\$  &Organizes elements in an array using a binary heap, by repeatedly swapping the root node (whether its the maximum or minimum element for max/min heap respectively) with the last element of the heap  \\\cline{1-3}
 \end{longtabu}
-\hypertarget{md_theory_autotoc_md37}{}\doxysubsubsection{\texorpdfstring{Graphs}{Graphs}}\label{md_theory_autotoc_md37}
+\hypertarget{md_theory_autotoc_md39}{}\doxysubsubsection{\texorpdfstring{Graphs}{Graphs}}\label{md_theory_autotoc_md39}
 Graphs consist of a set of nodes (points/vertices), \$\+V\$, and a set of edges, \$\+E\$, where the graph is commonly referred to as a pair of sets \$(\+V, E)\$.
 
 Each edge in \$\+E\$ joints two nodes in \$\+V\$, where two nodes connected by an edge are {\bfseries{adjacent}} or {\bfseries{neighbors}}
 
-Edges can have direction, where graphs with these edges are known as {\bfseries{directed graphs}}. This is useful when discussing relations between vertices with contexts to their edges. In contrast, edges that can be traversed in both directions are known as {\bfseries{undirected graphs}}\hypertarget{md_theory_autotoc_md38}{}\doxysubsubsubsection{\texorpdfstring{Additional Graph terminology}{Additional Graph terminology}}\label{md_theory_autotoc_md38}
+Edges can have direction, where graphs with these edges are known as {\bfseries{directed graphs}}. This is useful when discussing relations between vertices with contexts to their edges. In contrast, edges that can be traversed in both directions are known as {\bfseries{undirected graphs}}\hypertarget{md_theory_autotoc_md40}{}\doxysubsubsubsection{\texorpdfstring{Additional Graph terminology}{Additional Graph terminology}}\label{md_theory_autotoc_md40}
 
 \begin{DoxyItemize}
 \item {\bfseries{Loops}} -\/ a node where an edge connects to itself
@@ -136,7 +133,7 @@ Edges can have direction, where graphs with these edges are known as {\bfseries{
 
 {\bfseries{Subgraphs}} -\/ A smaller graph made from a subset of vertices and edges of a bigger graph
 
-A graph is {\bfseries{simple}} if it does not contain {\bfseries{loops}} or {\bfseries{multiple edges}}\hypertarget{md_theory_autotoc_md39}{}\doxysubsubsubsection{\texorpdfstring{Degree}{Degree}}\label{md_theory_autotoc_md39}
+A graph is {\bfseries{simple}} if it does not contain {\bfseries{loops}} or {\bfseries{multiple edges}}\hypertarget{md_theory_autotoc_md41}{}\doxysubsubsubsection{\texorpdfstring{Degree}{Degree}}\label{md_theory_autotoc_md41}
 The degree of a node \$v\$, notated as \$deg(v)\$, is the number of edges that are connected to \$v\$. Loops count {\bfseries{twice}} towards the degree of a node.
 
 Each edge contributes to two degrees of a node. Therefore, the {\bfseries{sum of the degrees of all nodes in a graph}} is {\bfseries{twice}} the number of edges, which can be mathematically expressed as
@@ -147,7 +144,7 @@ or
 
 \$\$ \textbackslash{}sum\+\_\+\{k = 1\}\texorpdfstring{$^\wedge$}{\string^}nv\+\_\+k \textbackslash{}in Vdeg(v) = 2\texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|} \$\$
 
-This is known as the {\bfseries{Handshaking Theorem}}\hypertarget{md_theory_autotoc_md40}{}\doxysubsubsubsection{\texorpdfstring{Isomorphism}{Isomorphism}}\label{md_theory_autotoc_md40}
+This is known as the {\bfseries{Handshaking Theorem}}\hypertarget{md_theory_autotoc_md42}{}\doxysubsubsubsection{\texorpdfstring{Isomorphism}{Isomorphism}}\label{md_theory_autotoc_md42}
 Isomorphism exists when two graphs have the same structure, albeit the drawings may be different
 
 Two graphs, \$\+G\+\_\+1\$ and \$\+G\+\_\+2\$ are isomorphic when there exists a bijection of \$\$ f \+: V\+\_\+1 \textbackslash{}rightarrow V\+\_\+2 \$\$
@@ -157,14 +154,14 @@ Or simply,
 \item The two graphs must have the same number of nodes and the same number of edges
 \item For any node degree \$k\$, the two graphs must have the same number of nodes of degree \$k\$. For example, they must have the same number of nodes with degree \$3\$
 \item Given a subgraph of \$\+G\+\_\+1\$, that subgraph must also exist in \$\+G\+\_\+2\$
-\end{DoxyItemize}\hypertarget{md_theory_autotoc_md41}{}\doxysubsubsubsection{\texorpdfstring{Connectivity}{Connectivity}}\label{md_theory_autotoc_md41}
+\end{DoxyItemize}\hypertarget{md_theory_autotoc_md43}{}\doxysubsubsubsection{\texorpdfstring{Connectivity}{Connectivity}}\label{md_theory_autotoc_md43}
 A graph is {\bfseries{connected}} when there exists a walk between every pair of nodes in \$\+G\$, or simply you can get from {\bfseries{any node to any other node}}
 
 Sometimes removing an edge from a connected graph will completely lose its connectivity. We refer to such edge as a {\bfseries{cut edge}} when if removed, the graph would be disconnected. Similarly, a {\bfseries{cut vertex}} exists when removing such
 
 An {\bfseries{Euler Circuit}} exists when there is a closed walk (circuit) that uses every edge of the graph once. This can only occur when {\bfseries{all degrees of the nodes are even}}
 
-This is because in order to complete the circuit, you must leave each node that you enter. This means that the graph is {\bfseries{connected}} and therefore exists a closed walk that uses every edge of the graph once.\hypertarget{md_theory_autotoc_md42}{}\doxysubsubsubsection{\texorpdfstring{Graph Coloring}{Graph Coloring}}\label{md_theory_autotoc_md42}
+This is because in order to complete the circuit, you must leave each node that you enter. This means that the graph is {\bfseries{connected}} and therefore exists a closed walk that uses every edge of the graph once.\hypertarget{md_theory_autotoc_md44}{}\doxysubsubsubsection{\texorpdfstring{Graph Coloring}{Graph Coloring}}\label{md_theory_autotoc_md44}
 Graph coloring is a {\bfseries{technique}} used to assign colors to a node of a graph, where two adjacent vertices {\bfseries{cannot}} share the same color
 
 {\bfseries{Graph Coloring Steps}}
@@ -174,13 +171,13 @@ Graph coloring is a {\bfseries{technique}} used to assign colors to a node of a 
 \item Repeat steps 1 and 2 for all non-\/colored nodes until {\bfseries{all nodes in the graph are colored}}
 \end{DoxyEnumerate}
 
-The number of colors it takes to color a graph, is known as the {\bfseries{chromatic number}}, mathematically notated as \$\textbackslash{}chi(G)\$\hypertarget{md_theory_autotoc_md43}{}\doxysubsubsubsection{\texorpdfstring{Bipartite Graphs}{Bipartite Graphs}}\label{md_theory_autotoc_md43}
+The number of colors it takes to color a graph, is known as the {\bfseries{chromatic number}}, mathematically notated as \$\textbackslash{}chi(G)\$\hypertarget{md_theory_autotoc_md45}{}\doxysubsubsubsection{\texorpdfstring{Bipartite Graphs}{Bipartite Graphs}}\label{md_theory_autotoc_md45}
 A graph, \$G = (V, E)\$ is {\bfseries{bipartite}}, such that \$\+V\$ can be split into two non-\/overlapping subsets \$\+V\+\_\+1\$ and \$\+V\+\_\+2\$, where every edge connects to an element of \$\+V\+\_\+1\$ in \$\+V\+\_\+2\$.
 
-What this simply means is that {\bfseries{a graph can only be bipartite when its}} \$\textbackslash{}chi(G) = 2\$. This means that a graph can only be colored with {\bfseries{two colors}}\hypertarget{md_theory_autotoc_md44}{}\doxysubsubsection{\texorpdfstring{Trees}{Trees}}\label{md_theory_autotoc_md44}
+What this simply means is that {\bfseries{a graph can only be bipartite when its}} \$\textbackslash{}chi(G) = 2\$. This means that a graph can only be colored with {\bfseries{two colors}}\hypertarget{md_theory_autotoc_md46}{}\doxysubsubsection{\texorpdfstring{Trees}{Trees}}\label{md_theory_autotoc_md46}
 {\bfseries{Trees}} are undirected graphs with a special node called the {\bfseries{root}}, where every node is connected to the root via one exact {\bfseries{path}}
 
-They are also {\bfseries{acyclic}}, {\bfseries{connected}}, and have \$n\$ {\bfseries{vertices}} with \$n -\/ 1\$ {\bfseries{edges}}\hypertarget{md_theory_autotoc_md45}{}\doxysubsubsubsection{\texorpdfstring{Tree Vocabulary}{Tree Vocabulary}}\label{md_theory_autotoc_md45}
+They are also {\bfseries{acyclic}}, {\bfseries{connected}}, and have \$n\$ {\bfseries{vertices}} with \$n -\/ 1\$ {\bfseries{edges}}\hypertarget{md_theory_autotoc_md47}{}\doxysubsubsubsection{\texorpdfstring{Tree Vocabulary}{Tree Vocabulary}}\label{md_theory_autotoc_md47}
 
 \begin{DoxyItemize}
 \item {\bfseries{Parent}} -\/ A node that is directly above another node in a tree
@@ -192,7 +189,7 @@ They are also {\bfseries{acyclic}}, {\bfseries{connected}}, and have \$n\$ {\bfs
 \item {\bfseries{Height}} -\/ The longest path from a node to a leaf (in terms of edges)
 \item {\bfseries{Ancestor}} -\/ The ancestor of a node is one that lies on the path from the root to such node
 \item {\bfseries{Descendant}} -\/ The descendant of a node is one that lies on the path from such node to a leaf node
-\end{DoxyItemize}\hypertarget{md_theory_autotoc_md46}{}\doxysubsubsubsection{\texorpdfstring{m-\/ary Trees}{m-\/ary Trees}}\label{md_theory_autotoc_md46}
+\end{DoxyItemize}\hypertarget{md_theory_autotoc_md48}{}\doxysubsubsubsection{\texorpdfstring{m-\/ary Trees}{m-\/ary Trees}}\label{md_theory_autotoc_md48}
 \$m\$-\/ary trees are trees that can have at most \$m\$ children. A common type of tree is a {\bfseries{Binary Search Tree}}, where each node has at most \$2\$ children.
 \begin{DoxyItemize}
 \item {\bfseries{Full}} trees exist when each node has either \$0\$ or \$m\$ children
@@ -203,7 +200,7 @@ They are also {\bfseries{acyclic}}, {\bfseries{connected}}, and have \$n\$ {\bfs
 \item {\bfseries{Balanced}} trees exist when the heights of its left and right subtrees {\bfseries{differ by at most}} \$1\$
 \end{DoxyItemize}
 
-There are \$mi + 1\$ nodes total in a \$m\$-\/ary tree. This means a binary tree has \$2i + 1\$ nodes total.\hypertarget{md_theory_autotoc_md47}{}\doxysubsubsubsection{\texorpdfstring{Height and number of nodes}{Height and number of nodes}}\label{md_theory_autotoc_md47}
+There are \$mi + 1\$ nodes total in a \$m\$-\/ary tree. This means a binary tree has \$2i + 1\$ nodes total.\hypertarget{md_theory_autotoc_md49}{}\doxysubsubsubsection{\texorpdfstring{Height and number of nodes}{Height and number of nodes}}\label{md_theory_autotoc_md49}
 There is no exact formula to find the number of nodes and leaves in an \$m\$-\/ary tree. This is because some trees are more bushier (have more children) than others.
 
 However, there are some patterns {\bfseries{(assuming that a given tree is binary)}}

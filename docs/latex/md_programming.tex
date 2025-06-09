@@ -1,6 +1,6 @@
 \chapter{Programming Review }
 \hypertarget{md_programming}{}\label{md_programming}\index{Programming Review@{Programming Review}}
-\hypertarget{md_programming_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Public vs Private}{Public vs Private}}\label{md_programming_autotoc_md10}
+\hypertarget{md_programming_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{Public vs Private}{Public vs Private}}\label{md_programming_autotoc_md12}
 Each member of a class in C++ has a specific {\bfseries{access level}} that determines how that member can be accessed
 
 A member can be one of three types\+: {\bfseries{public}}, {\bfseries{private}}, or {\bfseries{protected}}
@@ -24,7 +24,7 @@ A member can be one of three types\+: {\bfseries{public}}, {\bfseries{private}},
 {\ttfamily protected}  &Yes  &Yes  &Yes  \\\cline{1-4}
 {\ttfamily private}  &Yes  &No  &No  \\\cline{1-4}
 \end{longtabu}
-\hypertarget{md_programming_autotoc_md11}{}\doxysubsubsubsection{\texorpdfstring{Classes vs Structs}{Classes vs Structs}}\label{md_programming_autotoc_md11}
+\hypertarget{md_programming_autotoc_md13}{}\doxysubsubsubsection{\texorpdfstring{Classes vs Structs}{Classes vs Structs}}\label{md_programming_autotoc_md13}
 \begin{quote}
 Members of a {\ttfamily struct} are {\ttfamily public} by default Members of a {\ttfamily class} are {\ttfamily private} by default \end{quote}
 
@@ -42,7 +42,7 @@ A {\ttfamily struct} is typically used when
 \item Structs should be aggregates by convention, where direct initialization of members are allowed through an initializer list {\ttfamily \{ \}} and there are no {\bfseries{constructors}}, no {\bfseries{private/protected access members}}, no {\bfseries{virtual functions}}, and no {\bfseries{base classes}}
 \end{DoxyItemize}
 
-Otherwise, just use classes\hypertarget{md_programming_autotoc_md12}{}\doxysubsubsubsection{\texorpdfstring{Member Functions}{Member Functions}}\label{md_programming_autotoc_md12}
+Otherwise, just use classes\hypertarget{md_programming_autotoc_md14}{}\doxysubsubsubsection{\texorpdfstring{Member Functions}{Member Functions}}\label{md_programming_autotoc_md14}
 {\bfseries{Member functions}} are functions that belong to a class type. This means that they can be called on an instance of that class type (e.\+g. {\ttfamily e.\+get\+Data()} , where {\ttfamily get\+Data()} is a member function of object type {\ttfamily e})
 \begin{DoxyItemize}
 \item This means they are declared in the class definition!
@@ -56,7 +56,7 @@ Functions that don\textquotesingle{}t belong to a class are {\bfseries{non-\/mem
 
 With free functions, the object must be explicitly passed into the function, while with member functions, the object is implicitly passed and accessed through that object with the dot operator ({\ttfamily .})
 
-Member functions can sometimes create more clarity on what is doing the action!\hypertarget{md_programming_autotoc_md13}{}\doxysubsubsection{\texorpdfstring{Constructors}{Constructors}}\label{md_programming_autotoc_md13}
+Member functions can sometimes create more clarity on what is doing the action!\hypertarget{md_programming_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{Constructors}{Constructors}}\label{md_programming_autotoc_md15}
 {\bfseries{Constructors}} are special functions automatically called after a non-\/aggeregate class type is created
 \begin{DoxyItemize}
 \item If an accessible matching constructor is found, then memory for the object is allocated and the constructor function is called. Otherwise, a compilation error is generated
@@ -133,7 +133,7 @@ Instead of explicitly stating a default constructor, like {\ttfamily Foo() \{ \}
 
 With a user defined constructor, member variables are not automatically initialized (you need to do it yourself). However, with compiler provided constructors (either {\ttfamily = default} or implicitly provided), the compiler will zero initialize member variables before running the constructor
 
-Therefore, only create a default constructor when it makes sense for objects of a class type to be created using all default values\hypertarget{md_programming_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{Namespaces}{Namespaces}}\label{md_programming_autotoc_md14}
+Therefore, only create a default constructor when it makes sense for objects of a class type to be created using all default values\hypertarget{md_programming_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{Namespaces}{Namespaces}}\label{md_programming_autotoc_md16}
 {\bfseries{Namespaces}} group together related code (variables, functions, classes, etc.) under a name to avoid naming conflicts.
 
 
@@ -143,7 +143,7 @@ Therefore, only create a default constructor when it makes sense for objects of 
 \item This avoids naming conflicts in case we decided to make our own {\ttfamily cout} function (this actually was a thing back in old C++, where {\ttfamily cout} didnt belong to the {\ttfamily std} namespace)
 \item There is a way to get around this with {\ttfamily using namespace std}, but if we end up defining our own {\ttfamily cout} function, this causes a {\bfseries{namespacing collision}} and our code won\textquotesingle{}t compile!
 \end{DoxyItemize}
-\end{DoxyItemize}\hypertarget{md_programming_autotoc_md15}{}\doxysubsection{\texorpdfstring{References and Pointers}{References and Pointers}}\label{md_programming_autotoc_md15}
+\end{DoxyItemize}\hypertarget{md_programming_autotoc_md17}{}\doxysubsection{\texorpdfstring{References and Pointers}{References and Pointers}}\label{md_programming_autotoc_md17}
 A {\bfseries{reference}} is an alias of an existing object. It refers to the same object in memory with a different {\bfseries{name}}. References are notated with an {\ttfamily \&}
 
 
@@ -196,8 +196,8 @@ A pointer is {\bfseries{very similar}} to a reference. However, a {\bfseries{ref
 \item {\bfseries{Dangling reference\+:}} A reference refers to an object that no longer exists (e.\+g., a local variable that went out of scope)
 \end{DoxyItemize}
 
-These can be {\bfseries{dangerous}} because they can lead to {\bfseries{undefined behavior}}, {\bfseries{crashes}}, or {\bfseries{data corruption}}\hypertarget{md_programming_autotoc_md16}{}\doxysubsection{\texorpdfstring{Dynamic Memory Allocation}{Dynamic Memory Allocation}}\label{md_programming_autotoc_md16}
-{\bfseries{Dynamic Memory Allocation}} assigns memory space during a program\textquotesingle{}s execution rather than compile time. This memory that the program uses is generally divided into the {\bfseries{stack}} and the {\bfseries{heap}}. \hypertarget{md_programming_autotoc_md17}{}\doxysubsubsection{\texorpdfstring{{\ttfamily new} and {\ttfamily delete}}{{\ttfamily new} and {\ttfamily delete}}}\label{md_programming_autotoc_md17}
+These can be {\bfseries{dangerous}} because they can lead to {\bfseries{undefined behavior}}, {\bfseries{crashes}}, or {\bfseries{data corruption}}\hypertarget{md_programming_autotoc_md18}{}\doxysubsection{\texorpdfstring{Dynamic Memory Allocation}{Dynamic Memory Allocation}}\label{md_programming_autotoc_md18}
+{\bfseries{Dynamic Memory Allocation}} assigns memory space during a program\textquotesingle{}s execution rather than compile time. This memory that the program uses is generally divided into the {\bfseries{stack}} and the {\bfseries{heap}}. \hypertarget{md_programming_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{{\ttfamily new} and {\ttfamily delete}}{{\ttfamily new} and {\ttfamily delete}}}\label{md_programming_autotoc_md19}
 C++ supports static and automatic memory allocation. {\bfseries{Automatic allocation}} creates variables that live only while the function runs (on the stack), while {\bfseries{static allocation}} creates variables that stay alive for the whole program (in static memory). The period in which a variable stays alive is known as its {\bfseries{lifetime}}
 
 Lifetime based on allocation type
@@ -241,7 +241,7 @@ While static and automatic memory management free variables from memory its life
 In other words, when creating memory calls with {\ttfamily new} they {\bfseries{must}} be freed with {\ttfamily delete}. \end{quote}
 
 
-Otherwise, a {\bfseries{memory leak}} happens. {\bfseries{Memory leaks}} occur when a program allocates memory via {\ttfamily new}, but never frees it via {\ttfamily delete}. This causes unused memory, which can eventually exhaust available memory if it happens repeatedly\hypertarget{md_programming_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{Destructors}{Destructors}}\label{md_programming_autotoc_md18}
+Otherwise, a {\bfseries{memory leak}} happens. {\bfseries{Memory leaks}} occur when a program allocates memory via {\ttfamily new}, but never frees it via {\ttfamily delete}. This causes unused memory, which can eventually exhaust available memory if it happens repeatedly\hypertarget{md_programming_autotoc_md20}{}\doxysubsubsection{\texorpdfstring{Destructors}{Destructors}}\label{md_programming_autotoc_md20}
 A {\bfseries{destructor}} is another special kind of class member function that runs when an object of that class is {\bfseries{destroyed}}, using {\ttfamily delete}. While constructors initialize instances of a class, destructors help clean them up
 
 When objects go out of scope via RAII, or a dynamically allocated object is explicitly deleted using {\ttfamily delete}, the class destructor (if it exists) is automatically called to do any necessary clean up of the object before it is freed from memory
@@ -264,7 +264,7 @@ Suppose {\ttfamily Foo} is a class with a default constructor ({\ttfamily Foo() 
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
-\hypertarget{md_programming_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{RAII}{RAII}}\label{md_programming_autotoc_md19}
+\hypertarget{md_programming_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{RAII}{RAII}}\label{md_programming_autotoc_md21}
 {\bfseries{Resource Acquisition Is Initialization}}, or RAII, is a C++ programming design pattern that explains how to manage resources safely in a class through a constructor and a destructor. RAII is used heavily in the C++ STL (standard template library) for efficient resource management in objects.
 
 \begin{quote}
@@ -284,7 +284,7 @@ These resources can include anything the class owns or manages
 RAII is a basic technique that explains best practices towards writing a class by {\bfseries{tying an object\textquotesingle{}s resources to its lifetime}}
 \begin{DoxyItemize}
 \item An object acquires a resource in its constructor, and releases it via its destructor when its lifetime ends
-\end{DoxyItemize}\hypertarget{md_programming_autotoc_md20}{}\doxysubsubsection{\texorpdfstring{Heap}{Heap}}\label{md_programming_autotoc_md20}
+\end{DoxyItemize}\hypertarget{md_programming_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{Heap}{Heap}}\label{md_programming_autotoc_md22}
 The heap, also known as the {\bfseries{free store}}, {\bfseries{tracks memory used for dynamic memory allocation}}
 
 Recall that {\ttfamily new} allocates memory and returns a pointer that points to that allocated memory. In contrast, {\ttfamily delete} frees the allocated memory towards the operating system to decide what to do with that memory next.
@@ -303,7 +303,7 @@ This dynamic memory allocation behavior is all managed via the heap. This means 
 \end{DoxyItemize}
 \item Dynamically allocated memory must be accessed through a pointer. Therefore, dereferencing a pointer is slower than accessing a variable directly
 \item Because the heap is a big pool of memory, large arrays, structures, or classes can be allocated here
-\end{DoxyItemize}\hypertarget{md_programming_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{Stack}{Stack}}\label{md_programming_autotoc_md21}
+\end{DoxyItemize}\hypertarget{md_programming_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{Stack}{Stack}}\label{md_programming_autotoc_md23}
 The {\bfseries{stack}}, formally referred to as the {\bfseries{call stack}}, keeps track of all active functions (ones that have been called and not terminated) from the start of the program to the current point of execution. It also handles allocation of all function parameters and local variables
 
 It stores
@@ -333,7 +333,7 @@ All in all, the {\bfseries{stack}} is memory for {\bfseries{local variables}} th
 \begin{DoxyItemize}
 \item Use when a variable is needed to outlive the function or for large or dynamically-\/sized data
 \end{DoxyItemize}
-\end{DoxyItemize}\hypertarget{md_programming_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{Passing Arguments}{Passing Arguments}}\label{md_programming_autotoc_md22}
+\end{DoxyItemize}\hypertarget{md_programming_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{Passing Arguments}{Passing Arguments}}\label{md_programming_autotoc_md24}
 There are three ways to pass arguments into a function
 \begin{DoxyEnumerate}
 \item {\bfseries{By Value}} -\/ A copy of the argument is made; changes inside the function do {\bfseries{not}} affect the original
@@ -380,7 +380,7 @@ In the example above, assigning {\ttfamily x = 10} changes the original {\ttfami
 \end{DoxyCode}
 
 
-In the example above, the function receives a pointer to the original parameter of {\ttfamily x}, which must be dereferenced with {\ttfamily \texorpdfstring{$\ast$}{*}} to modify the original parameter\hypertarget{md_programming_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{Returning Values}{Returning Values}}\label{md_programming_autotoc_md23}
+In the example above, the function receives a pointer to the original parameter of {\ttfamily x}, which must be dereferenced with {\ttfamily \texorpdfstring{$\ast$}{*}} to modify the original parameter\hypertarget{md_programming_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Returning Values}{Returning Values}}\label{md_programming_autotoc_md25}
 Same three ways variables are passed into a function, are the same three ways variables are returned in a function
 
 
@@ -430,7 +430,7 @@ In the example above, {\ttfamily x} is simply returned as a reference to an exis
 \end{DoxyCode}
 
 
-In the example above, {\ttfamily x} is simply returned as a pointer to an existing variable. Be careful! Like references, pointing to a local variable that goes out of scope can lead to undefined behaviors!\hypertarget{md_programming_autotoc_md24}{}\doxysubsection{\texorpdfstring{Copy Semantics}{Copy Semantics}}\label{md_programming_autotoc_md24}
+In the example above, {\ttfamily x} is simply returned as a pointer to an existing variable. Be careful! Like references, pointing to a local variable that goes out of scope can lead to undefined behaviors!\hypertarget{md_programming_autotoc_md26}{}\doxysubsection{\texorpdfstring{Copy Semantics}{Copy Semantics}}\label{md_programming_autotoc_md26}
 {\bfseries{Copy Semantics}} refers to how objects are copied when they are passed as arguments to functions, returned from functions, or assigned to other objects. Copy semantics dictate the rules for creating new objects that are copies of existing ones. Simply speaking, they {\bfseries{define}} how objects are copied
 
 A {\bfseries{copy constructor}} is used to initialize an object with an existing object of the same type. After the copy constructor executes, the newly created object becomes a copy of the object passed in the initializer
@@ -454,7 +454,7 @@ An explicit copy constructor can also be created, by taking in an referenced obj
 \end{DoxyCode}
 
 
-where {\ttfamily Foo a; Foo b = a} implicitly calls the copy constructor on {\ttfamily b}.\hypertarget{md_programming_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Shallow and Deep Copies}{Shallow and Deep Copies}}\label{md_programming_autotoc_md25}
+where {\ttfamily Foo a; Foo b = a} implicitly calls the copy constructor on {\ttfamily b}.\hypertarget{md_programming_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Shallow and Deep Copies}{Shallow and Deep Copies}}\label{md_programming_autotoc_md27}
 {\bfseries{Shallow}} and {\bfseries{deep}} copies define how objects are copied!
 
 A {\bfseries{shallow copy}} occurs where an object\textquotesingle{}s {\bfseries{pointers}} are copied, but {\bfseries{not}} {\bfseries{the data they point to}}
@@ -469,7 +469,7 @@ A {\bfseries{deep copy}} is a completely independent copy of all data, including
 \begin{DoxyItemize}
 \item Instead, the copied object {\bfseries{allocates new memory}} and copies the actual data, so they’re fully independent
 \end{DoxyItemize}
-\end{DoxyItemize}\hypertarget{md_programming_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{Copy Assignment Operator}{Copy Assignment Operator}}\label{md_programming_autotoc_md26}
+\end{DoxyItemize}\hypertarget{md_programming_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{Copy Assignment Operator}{Copy Assignment Operator}}\label{md_programming_autotoc_md28}
 The Copy Assignment Operator can be overloaded to define copy semantics {\bfseries{after}} objects have been constructed. An example looks like such code below
 
 However, multiple checks that are typically implemented include
@@ -494,13 +494,13 @@ Typically, you need to overload it when
 \item Your class owns dynamically allocated memory or other resources.
 \item You want to {\bfseries{avoid shallow copies}} that lead to double frees or dangling pointers
 \item You want to implement {\bfseries{deep copying}} semantics
-\end{DoxyItemize}\hypertarget{md_programming_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Default and Delete on Copy constructors}{Default and Delete on Copy constructors}}\label{md_programming_autotoc_md27}
+\end{DoxyItemize}\hypertarget{md_programming_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{Default and Delete on Copy constructors}{Default and Delete on Copy constructors}}\label{md_programming_autotoc_md29}
 Just like a regular constructor, we can have the compiler explicitly generate a {\ttfamily default} copy constructor, {\ttfamily Foo(const Foo\& foo) = default}
 \begin{DoxyItemize}
 \item Note that this will perform a {\bfseries{shallow copy}}
 \end{DoxyItemize}
 
-{\ttfamily = delete} on a copy constructor will prevent objects of a certain class from being copied\hypertarget{md_programming_autotoc_md28}{}\doxysubsection{\texorpdfstring{Move Semantics}{Move Semantics}}\label{md_programming_autotoc_md28}
+{\ttfamily = delete} on a copy constructor will prevent objects of a certain class from being copied\hypertarget{md_programming_autotoc_md30}{}\doxysubsection{\texorpdfstring{Move Semantics}{Move Semantics}}\label{md_programming_autotoc_md30}
 {\bfseries{Move semantics}} allow the resources owned by one object to be {\bfseries{moved}} or {\bfseries{transferred}} to another object {\bfseries{without copying}} the underlying data. They simply define how objects are moved!
 
 Deep copies can be expensive, especially when objects manage dynamic memory or other expensive resources. Therefore, move semantics come in handy and avoid a deep copy when necessary
@@ -508,7 +508,7 @@ Deep copies can be expensive, especially when objects manage dynamic memory or o
 \item Simply use move semantics when you want to avoid copying expensive resources and instead transfer ownership to another object!
 \end{DoxyItemize}
 
-They are defined like copy semantics, including a {\bfseries{move constructor}} and {\bfseries{move semantics}}\hypertarget{md_programming_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{rvalue references}{rvalue references}}\label{md_programming_autotoc_md29}
+They are defined like copy semantics, including a {\bfseries{move constructor}} and {\bfseries{move semantics}}\hypertarget{md_programming_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{rvalue references}{rvalue references}}\label{md_programming_autotoc_md31}
 An rvalue is a temporary object or value that {\bfseries{does not}} have a persistent memory address. This is the opposite of an lvalue, which has a persistent memory address
 
 {\ttfamily int x = 1}
@@ -522,7 +522,7 @@ In contrast, {\ttfamily 1} is an rvalue. It is a temporary value used to initial
 
 {\bfseries{rvalue references}} (right-\/value references) are references that bind to {\bfseries{rvalues}}, temporary objects or literals that are about to expire. They enable {\bfseries{move semantics}} by allowing the program to {\bfseries{take ownership}} of resources from these temporary objects, avoiding expensive copies
 
-Understanding these make understanding move semantics much more easier because ultimately what happens is the rvalue of one object is being moved to another object via a rvalue reference of the other object\hypertarget{md_programming_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Move Constructor}{Move Constructor}}\label{md_programming_autotoc_md30}
+Understanding these make understanding move semantics much more easier because ultimately what happens is the rvalue of one object is being moved to another object via a rvalue reference of the other object\hypertarget{md_programming_autotoc_md32}{}\doxysubsubsection{\texorpdfstring{Move Constructor}{Move Constructor}}\label{md_programming_autotoc_md32}
 A {\bfseries{move constructor}} defines how objects should be moved once initialized
 
 The code below defines a move constructor. Suppose class {\ttfamily Foo} contains two variables {\ttfamily data} and {\ttfamily size} and we want to move it to an rvalue reference called {\ttfamily other}
@@ -544,7 +544,7 @@ The code below defines a move constructor. Suppose class {\ttfamily Foo} contain
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
-\hypertarget{md_programming_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{Move Assignment Operator}{Move Assignment Operator}}\label{md_programming_autotoc_md31}
+\hypertarget{md_programming_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{Move Assignment Operator}{Move Assignment Operator}}\label{md_programming_autotoc_md33}
 The {\bfseries{move assignment operator}} defines how objects should be moved after being initialized
 
 The code below defines a move assignment operator, but typical operations that are implemented include
@@ -577,7 +577,7 @@ The code below defines a move assignment operator, but typical operations that a
 
 {\ttfamily b} will call its move semantics into {\ttfamily a}, effectively moving {\ttfamily a}\textquotesingle{}s resources into {\ttfamily b}
 
-Simply speaking, move semantics are triggered when an object is treated as an rvalue (like the example above), either because it’s a temporary (like {\ttfamily Foo a = Foo()}) or explicitly calling {\ttfamily std\+::move} (which converts an {\ttfamily lvalue} into an {\ttfamily rvalue})\hypertarget{md_programming_autotoc_md32}{}\doxysubsection{\texorpdfstring{Rule of Zero/\+Three/\+Five}{Rule of Zero/\+Three/\+Five}}\label{md_programming_autotoc_md32}
+Simply speaking, move semantics are triggered when an object is treated as an rvalue (like the example above), either because it’s a temporary (like {\ttfamily Foo a = Foo()}) or explicitly calling {\ttfamily std\+::move} (which converts an {\ttfamily lvalue} into an {\ttfamily rvalue})\hypertarget{md_programming_autotoc_md34}{}\doxysubsection{\texorpdfstring{Rule of Zero/\+Three/\+Five}{Rule of Zero/\+Three/\+Five}}\label{md_programming_autotoc_md34}
 When a class manages resources ({\bfseries{dynamic memory}}, file handles, etc.), it {\bfseries{must}} define how it is {\bfseries{copied}}, {\bfseries{moved}}, and {\bfseries{destroyed}} in order to avoid issues like memory leaks or double deletes
 
 The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class

@@ -239,4 +239,79 @@ The algorithm for this is once again simple
 \item {\ttfamily }delete temp{\ttfamily , ensures the memory allocated to }temp{\ttfamily  is freed. We do this call because we know that the }\doxylink{class_list}{List}{\ttfamily  no longer needs this }temp{\ttfamily  }\doxylink{struct_list_node}{List\+Node}{\ttfamily  (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}List\`{} no longer needs to track it!\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
 \end{DoxyItemize}
 
-This wraps up the first implementation of {\ttfamily \doxylink{class_list}{List}}, which is a {\ttfamily Linked\+List} 
+This wraps up the first implementation of {\ttfamily \doxylink{class_list}{List}}, which is a Linked\+List\hypertarget{md_lecture4_autotoc_md9}{}\doxysubsection{\texorpdfstring{Representing a {\ttfamily List} as a {\ttfamily std\+::vector}}{Representing a {\ttfamily List} as a {\ttfamily std\+::vector}}}\label{md_lecture4_autotoc_md9}
+Now onto the array implementation of a {\ttfamily \doxylink{class_list}{List}}. In this array implementation, we are really just implementing a C++ {\ttfamily std\+::vector} or {\ttfamily \doxylink{class_array_list}{Array\+List}}
+
+The primitive foundation of an {\ttfamily \doxylink{class_array_list}{Array\+List}} is based on the idea of storing elements in a chunk of contiguous memory, allowing efficient access and manipulation. The list starts with a raw array and builds abstraction over it to support dynamic resizing, safe memory handling, and user-\/friendly operations, like the ones covered in Linked\+List
+
+We begin by figuring out what we need to store the list. In the {\ttfamily \doxylink{class_list}{List}} approach by using a Linked\+List, we stored individual {\ttfamily List\+Nodes}, where they each held data along with a pointer to the next node, which allowed for easy chaining access between the nodes
+
+However, in an {\ttfamily \doxylink{class_array_list}{Array\+List}} approach, we need to simply store a chunk of memory somehow, while this is typically a {\ttfamily std\+::vector} in C++, we are actually implementing this, so we need a primitive array, as mentioned previously. Therefore, a chunk of memory is allocated using a {\bfseries{pointer}}, where we can call this a generic type {\ttfamily T}. This is reflected in our {\ttfamily \doxylink{class_array_list}{Array\+List}} class below
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ ArrayList.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template<typename\ T>}
+\DoxyCodeLine{class\ ArrayList\ \{}
+\DoxyCodeLine{public:}
+\DoxyCodeLine{}
+\DoxyCodeLine{private:}
+\DoxyCodeLine{\ \ \ \ //\ A\ pointer\ to\ the\ start\ of\ a\ chunk\ of\ memory}
+\DoxyCodeLine{\ \ \ \ T*\ data;}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+ {\ttfamily data} is a pointer to a chunk of memory that will be allocated to the heap
+
+In addition to this, we need to store the {\bfseries{size}} and {\bfseries{capacity}}, where the {\bfseries{size}} represents how many items are actually in the list and the {\bfseries{capacity}} represents how much space is available in the memory block
+
+These both could be ints, or they could be pointers, where {\ttfamily size} represents a pointer to the end of the used portion of the array and {\ttfamily capacity} represents a pointer to the end of the allocated chunk of memory, or buffer. This approach is reflected in our code below,
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ ArrayList.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template<typename\ T>}
+\DoxyCodeLine{class\ ArrayList\ \{}
+\DoxyCodeLine{public:}
+\DoxyCodeLine{}
+\DoxyCodeLine{private:}
+\DoxyCodeLine{\ \ \ \ T*\ data;}
+\DoxyCodeLine{\ \ \ \ T*\ size;}
+\DoxyCodeLine{\ \ \ \ T*\ capacity;}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+Now, the next idea to think about this {\ttfamily \doxylink{class_array_list}{Array\+List}} implementation is how do we add more space to the buffer? If the capacity is full, meaning that size and capacity both point to the same area in the buffer, then how would I resize the buffer to add additional data into the buffer?
+
+The solution is to allocate some new buffer somewhere with a bigger space. Then, copy the data from the previous buffer along with its pointers ({\ttfamily size}, {\ttfamily capacity}, and {\ttfamily data}). This approach will be done with a private method, {\ttfamily add\+Space()}. Our {\ttfamily \doxylink{class_array_list}{Array\+List}} ADT is updated below. Recall that this is a helper method that resizes the buffer, so therefore, it should be private.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ ArrayList.h}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#pragma\ once}
+\DoxyCodeLine{}
+\DoxyCodeLine{template<typename\ T>}
+\DoxyCodeLine{class\ ArrayList\ \{}
+\DoxyCodeLine{public:}
+\DoxyCodeLine{}
+\DoxyCodeLine{private:}
+\DoxyCodeLine{\ \ \ \ T*\ data;}
+\DoxyCodeLine{\ \ \ \ T*\ size;}
+\DoxyCodeLine{\ \ \ \ T*\ capacity;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ void\ addSpace();}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+Notice that this is very expensive, which is why the {\ttfamily Linked\+List} approach is often much more recommended 

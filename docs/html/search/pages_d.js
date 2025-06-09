@@ -1,16 +1,12 @@
 var searchData=
 [
-  ['lecture_202_20c_20and_20lists_0',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]],
-  ['lecture_203_20linked_20list_20implementation_1',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
-  ['lecture_204_20linked_20list_20and_20list_2',['Lecture 4 - Linked List and List &amp;lt;vector&amp;gt;',['../md_lecture4.html',1,'']]],
-  ['lecture2_3',['lecture2',['../md_lecture-notes_2lecture2.html',1,'']]],
-  ['lecture3_4',['lecture3',['../md_lecture-notes_2lecture3.html',1,'']]],
-  ['lecture4_5',['lecture4',['../md_lecture-notes_2lecture4.html',1,'']]],
-  ['linked_20list_20and_20list_6',['Lecture 4 - Linked List and List &amp;lt;vector&amp;gt;',['../md_lecture4.html',1,'']]],
-  ['linked_20list_20implementation_7',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
-  ['list_8',['Lecture 4 - Linked List and List &amp;lt;vector&amp;gt;',['../md_lecture4.html',1,'']]],
-  ['list_20adt_9',['List ADT',['../md_lecture2.html#autotoc_md3',1,'Introduction to List ADT'],['../md_lecture3.html#autotoc_md4',1,'List ADT']]],
-  ['list_20and_20list_10',['Lecture 4 - Linked List and List &amp;lt;vector&amp;gt;',['../md_lecture4.html',1,'']]],
-  ['list_20implementation_11',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
-  ['lists_12',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]]
+  ['implementation_0',['Lecture 3 - Linked List Implementation',['../md_lecture3.html',1,'']]],
+  ['in_20doxygen_20view_20here_1',['All references/notes are compiled in &lt;b&gt;Doxygen&lt;/b&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot;&gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md50',1,'']]],
+  ['induction_2',['Proofs by Induction',['../md_theory.html#autotoc_md36',1,'']]],
+  ['info_20and_20resources_3',['Course Info and Resources',['../md_readme.html#autotoc_md53',1,'']]],
+  ['insert_20algorithm_4',['insert algorithm',['../md_lecture3.html#autotoc_md6',1,'']]],
+  ['insertatfront_20algorithm_5',['insertAtFront algorithm',['../md_lecture3.html#autotoc_md5',1,'']]],
+  ['introduction_6',['CS 225 - Introduction',['../md_readme.html',1,'']]],
+  ['introduction_20to_20list_20adt_7',['Introduction to List ADT',['../md_lecture2.html#autotoc_md3',1,'']]],
+  ['isomorphism_8',['Isomorphism',['../md_theory.html#autotoc_md42',1,'']]]
 ];

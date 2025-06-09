@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['terminology_0',['Additional Graph terminology',['../md_theory.html#autotoc_md38',1,'']]],
-  ['theory_1',['theory',['../md__midterm_01_reviews_2_midterm_010_2theory.html',1,'']]],
-  ['theory_20review_2',['- Theory Review',['../md_theory.html',1,'']]],
-  ['three_20five_3',['Three Five',['../md_lecture2.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md_programming.html#autotoc_md32',1,'Rule of Zero/Three/Five']]],
-  ['to_20list_20adt_4',['Introduction to List ADT',['../md_lecture2.html#autotoc_md3',1,'']]],
-  ['topics_20covered_5',['Topics Covered',['../md_midterm0.html#autotoc_md9',1,'']]],
-  ['tree_20vocabulary_6',['Tree Vocabulary',['../md_theory.html#autotoc_md45',1,'']]],
-  ['trees_7',['Trees',['../md_theory.html#autotoc_md46',1,'m-ary Trees'],['../md_theory.html#autotoc_md44',1,'Trees']]]
+  ['semantics_0',['Semantics',['../md_programming.html#autotoc_md26',1,'Copy Semantics'],['../md_programming.html#autotoc_md30',1,'Move Semantics']]],
+  ['shallow_20and_20deep_20copies_1',['Shallow and Deep Copies',['../md_programming.html#autotoc_md27',1,'']]],
+  ['stack_2',['Stack',['../md_programming.html#autotoc_md23',1,'']]],
+  ['std_3a_3avector_3',['Representing a &lt;span class=&quot;tt&quot;&gt;List&lt;/span&gt; as a &lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;',['../md_lecture4.html#autotoc_md9',1,'']]],
+  ['structs_4',['Classes vs Structs',['../md_programming.html#autotoc_md13',1,'']]]
 ];
