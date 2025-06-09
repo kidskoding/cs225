@@ -6,7 +6,6 @@ var searchData=
   ['private_3',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]],
   ['programming_4',['programming',['../md_Midterm_01Reviews_2Midterm_010_2programming.html',1,'']]],
   ['programming_20review_5',['Programming Review',['../md_programming.html',1,'']]],
-  ['proofs_20by_20induction_6',['Proofs by Induction',['../md_theory.html#autotoc_md36',1,'']]],
-  ['public_20vs_20private_7',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]],
-  ['pushback_8',['pushBack',['../classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
+  ['public_20vs_20private_6',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]],
+  ['pushback_7',['pushBack',['../classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
 ];
