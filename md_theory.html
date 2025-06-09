@@ -110,27 +110,88 @@ Recursive Definitions</h3>
 </ul>
 </li>
 </ul>
-<p>For example with the expression, $$ \begin{aligned} T(n) &amp;= 2T(n − 1) + 3 \ &amp;= 2(2T(n − 2) + 3) + 3 \ &amp;= 2(2(2T(n − 3) + 3) + 3) + 3 \ &amp;= 2^3T(n − 3) + 2^2 · 3 + 2 · 3 + 3 \ &amp;= 2^4T(n − 4) + 2^3 · 3 + 2^2 · 3 + 2 · 3 + 3 \ &amp;\dots \ &amp;= 2^kT(n − k) + 2^{k−1} · 3 + \dots+ 2^2 · 3 + 2 · 3 + 3 \end{aligned} $$</p>
-<p>we can use summation notation to represent the $k^{th}$ unrolling step, where $$ \begin{aligned} &amp;= 2^kT(n − k) + 2^k−1 · 3 + . . . + 2^2 · 3 + 2 · 3 + 3 \ &amp;=2^kT(n − k) + 3(2^k-1 + \dots + 2^2 + 2 + 1) \ &amp;=2^kT(n - k) + 3\sum^{k-1}_{i = 0}(2^i) \end{aligned} $$</p>
-<p>The input of function $T$ hits the base case when $n - k = 1$, or when $k = n - 1$. Recall that $T(1) = 1$ and substituting $n-1$ value for $k$ gives</p>
-<p>$$ \begin{aligned} T(n) &amp;= 2^kT(n - k) + 3\sum_{i = 0}^{k = 1}(2^i) \ &amp;=2^{n - 1}T(1) + 3\sum_{i = 0}^{n-2}(2^i) \ &amp;=2^{n - 1} + 3\sum_{k = 0}^{n - 2}(2^k) \ &amp;=2^{n - 1} + 3(2^{n - 1} - 1) = 4(2^{n - 1}) - 3 = 2^{n + 1} - 3 \end{aligned} $$</p>
+<p>For example with the expression,           </p><p class="formulaDsp">
+<picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[\begin{aligned}
+    T(n) &amp;= 2T(n − 1) + 3 \\ 
+        &amp;= 2(2T(n − 2) + 3) + 3 \\ 
+        &amp;= 2(2(2T(n − 3) + 3) + 3) + 3 \\ 
+        &amp;= 2^3T(n − 3) + 2^2 · 3 + 2 · 3 + 3 \\ 
+        &amp;= 2^4T(n − 4) + 2^3 · 3 + 2^2 · 3 + 2 · 3 + 3  \\
+        &amp;\dots \\
+        &amp;= 2^kT(n − k) + 2^{k−1} · 3 + \dots+ 2^2 · 3 + 2 · 3 + 3
+\end{aligned}
+\]" src="form_0.png"/></picture>
+</p>
+<p>we can use summation notation to represent the <picture><source srcset="form_1_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$k^{th}$" src="form_1.png"/></picture> unrolling step, where       </p><p class="formulaDsp">
+<picture><source srcset="form_2_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[\begin{aligned}
+    &amp;= 2^kT(n − k) + 2^k−1 · 3 + . . . + 2^2 · 3 + 2 · 3 + 3 \\
+    &amp;=2^kT(n − k) + 3(2^k-1 + \dots + 2^2 + 2 + 1) \\
+    &amp;=2^kT(n - k) + 3\sum^{k-1}_{i = 0}(2^i)
+\end{aligned}
+\]" src="form_2.png"/></picture>
+</p>
+<p>The input of function $T$ hits the base case when <picture><source srcset="form_3_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$n - k = 1$" src="form_3.png"/></picture>, or when <picture><source srcset="form_4_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$k = n - 1$" src="form_4.png"/></picture>. Recall that <picture><source srcset="form_5_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$T(1) = 1$" src="form_5.png"/></picture> and substituting <picture><source srcset="form_6_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$n-1$" src="form_6.png"/></picture> value for <picture><source srcset="form_7_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$k$" src="form_7.png"/></picture> gives</p>
+<p class="formulaDsp">
+<picture><source srcset="form_8_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[\begin{aligned}
+T(n) &amp;= 2^kT(n - k) + 3\sum_{i = 0}^{k = 1}(2^i) \\
+    &amp;=2^{n - 1}T(1) + 3\sum_{i = 0}^{n-2}(2^i) \\
+    &amp;=2^{n - 1} + 3\sum_{k = 0}^{n - 2}(2^k) \\
+    &amp;=2^{n - 1} + 3(2^{n - 1} - 1) = 4(2^{n - 1}) - 3 = 2^{n + 1} - 3
+\end{aligned}
+\]" src="form_8.png"/></picture>
+</p>
 <p>therefore making the closed form for function $T$, $2^{n + 1} - 3$</p>
 <ol type="1">
-<li>Given that $T(0) = 5$, find the closed form solution of $$ T(n) = T(n - 1) + 2 $$</li>
+<li>Given that <picture><source srcset="form_9_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$T(0) = 5$" src="form_9.png"/></picture>, find the closed form solution of   <p class="formulaDsp">
+<picture><source srcset="form_10_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[    T(n) = T(n - 1) + 2
+\]" src="form_10.png"/></picture>
+</p>
+</li>
 </ol>
 <ul>
 <li><p class="startli">Unroll the first couple of terms</p>
-<p class="startli">$$ \begin{aligned} T(n) &amp;= T(n - 1) + 2 \ &amp;= (T(n - 2) + 2) + 2 \ &amp;= ((T(n - 3) + 2) + 2) + 2 \ &amp;\dots \ &amp;= T(n - k) + 2k \end{aligned} $$</p>
+<p class="formulaDsp">
+<picture><source srcset="form_11_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[    \begin{aligned}
+        T(n) &amp;= T(n - 1) + 2 \\
+        &amp;= (T(n - 2) + 2) + 2 \\
+        &amp;= ((T(n - 3) + 2) + 2) + 2 \\ 
+        &amp;\dots \\
+        &amp;= T(n - k) + 2k
+    \end{aligned}
+\]" src="form_11.png"/></picture>
+</p>
 </li>
-<li>where $k = n$ and $T(n) = T(0) + 2n = 5 + 2n$</li>
-<li>Recall that $T(0)$ can represent any sort of numeric value, where in this case is $5$. This numeric value of $5$ is known as the <b>base case</b> and $2n$ is known as the <b>recursive case</b></li>
+<li>where <picture><source srcset="form_12_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$k = n$" src="form_12.png"/></picture> and <picture><source srcset="form_13_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$T(n) = T(0) + 2n = 5 + 2n$" src="form_13.png"/></picture></li>
+<li>Recall that <picture><source srcset="form_14_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$T(0)$" src="form_14.png"/></picture> can represent any sort of numeric value, where in this case is <picture><source srcset="form_15_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$5$" src="form_15.png"/></picture>. This numeric value of <picture><source srcset="form_15_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$5$" src="form_15.png"/></picture> is known as the <b>base case</b> and <picture><source srcset="form_16_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$2n$" src="form_16.png"/></picture> is known as the <b>recursive case</b></li>
 </ul>
 <ol type="1">
-<li>Given that $T(1) = 3$, Find the closed form solution of $$ T(n) = 2T(\frac{n}{2}) + n $$</li>
+<li>Given that <picture><source srcset="form_17_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$T(1) = 3$" src="form_17.png"/></picture>, Find the closed form solution of   <p class="formulaDsp">
+<picture><source srcset="form_18_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[    T(n) = 2T(\frac{n}{2}) + n
+\]" src="form_18.png"/></picture>
+</p>
+</li>
 </ol>
 <ul>
-<li>Unroll the first couple terms of the sequence $$ \begin{aligned} T(n) &amp;= 2T(\frac{n}{2}) + n \ &amp;= 2(2T(\frac{n}{4}) + \frac{n}{2}) + n = 4T(\frac{n}{4}) + 2n \ &amp;= 2(2(2T(\frac{n}{8}) + \frac{n}{4}) + n) + n = 8T(\frac{n}{8}) + 3n\ &amp;\dots \ &amp;= 2^kT(\frac{n}{2^k}) + kn \end{aligned} $$</li>
-<li>where $\frac{n}{2^k} = 1 \rightarrow n = 2^k \rightarrow k = \log_2n$ and $$ \begin{aligned} T(n) &amp;= 2^{\log_2n} \cdot T(1) + n \cdot \log_2n \ &amp;= n \cdot T(1) + n\log_2n \ &amp;= 3n + n\log_2n \end{aligned} $$</li>
+<li>Unroll the first couple terms of the sequence         <p class="formulaDsp">
+<picture><source srcset="form_19_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[\begin{aligned}
+T(n) &amp;= 2T(\frac{n}{2}) + n \\
+&amp;= 2(2T(\frac{n}{4}) + \frac{n}{2}) + n = 4T(\frac{n}{4}) + 2n \\
+&amp;= 2(2(2T(\frac{n}{8}) + \frac{n}{4}) + n) + n = 8T(\frac{n}{8}) + 3n\\
+&amp;\dots \\
+&amp;= 2^kT(\frac{n}{2^k}) + kn
+\end{aligned}
+\]" src="form_19.png"/></picture>
+</p>
+</li>
+<li>where <picture><source srcset="form_20_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\frac{n}{2^k} = 1 \rightarrow n = 2^k \rightarrow k = \log_2n$" src="form_20.png"/></picture> and       <p class="formulaDsp">
+<picture><source srcset="form_21_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[\begin{aligned}
+T(n) &amp;= 2^{\log_2n} \cdot T(1)  + n \cdot \log_2n \\
+&amp;= n \cdot T(1) + n\log_2n \\ 
+&amp;= 3n + n\log_2n 
+\end{aligned}
+\]" src="form_21.png"/></picture>
+</p>
+</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md36"></a>
 Proofs by Induction</h3>
@@ -143,22 +204,49 @@ Proofs by Induction</h3>
 </li>
 </ul>
 <ol type="1">
-<li>Prove that $1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}$ for $n = 1$<ul>
-<li>Let $n = 1$, then $\frac{1(1 + 1)}{2} = 1$, where $1 = 1$ (both sides are equal)</li>
-<li>Assume the formula holds true for $k \geq 1$, where $1 + 2 + 3 + \dots + k = \frac{k(k + 1)}{2}$</li>
-<li>Prove the inductive hypothesis from b. for $k + 1$, the next recurring step $$ \begin{aligned} 1 + 2 + \dots + k + (k + 1) &amp;= \frac{(k + 1)(k + 2)}{2} \ (1 + 2 + \dots + k) + (k + 1) &amp;= \frac{(k)(k + 1)}{2} + (k + 1) \ \frac{k(k + 1) + 2(k + 1)}{2} &amp;= \frac{(k + 2)(k + 1)}{2} \end{aligned} $$ where the inductive step does indeed hold</li>
+<li>Prove that <picture><source srcset="form_22_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}$" src="form_22.png"/></picture> for <picture><source srcset="form_23_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$n = 1$" src="form_23.png"/></picture><ul>
+<li>Let <picture><source srcset="form_23_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$n = 1$" src="form_23.png"/></picture>, then <picture><source srcset="form_24_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\frac{1(1 + 1)}{2} = 1$" src="form_24.png"/></picture>, where <picture><source srcset="form_25_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$1 = 1$" src="form_25.png"/></picture> (both sides are equal)</li>
+<li>Assume the formula holds true for <picture><source srcset="form_26_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$k \geq 1$" src="form_26.png"/></picture>, where <picture><source srcset="form_27_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$1 + 2 + 3 + \dots + k = \frac{k(k + 1)}{2}$" src="form_27.png"/></picture></li>
+<li>Prove the inductive hypothesis from b. for <picture><source srcset="form_28_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$k + 1$" src="form_28.png"/></picture>, the next recurring step       <p class="formulaDsp">
+<picture><source srcset="form_29_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[    \begin{aligned}
+    1 + 2 + \dots + k + (k + 1) &amp;= \frac{(k + 1)(k + 2)}{2} \\
+     (1 + 2 + \dots + k) + (k + 1) &amp;= \frac{(k)(k + 1)}{2} + (k + 1) \\
+     \frac{k(k + 1) + 2(k + 1)}{2} &amp;= \frac{(k + 2)(k + 1)}{2}
+    \end{aligned}
+\]" src="form_29.png"/></picture>
+</p>
+ where the inductive step does indeed hold</li>
 </ul>
 </li>
-<li>Prove $2^n \geq n + 1$<ul>
-<li>Check if true for $n = 0$ $$ \begin{aligned} 2^0 &amp;\geq 0 + 1 \ 1 &amp;\geq 1 \end{aligned} $$ <b>The base case does hold</b></li>
-<li>Assume the statement holds for $n = k$, where $$ 2^k \geq k + 1 $$</li>
-<li>Using this assumption, prove it holds for $n = k + 1$ $$ \begin{aligned} &amp;2^{k + 1} \geq (k + 1) + 1 \ &amp;2^{k + 1} \geq k + 2 \ &amp;2^k \cdot 2 \geq 2(k + 1) \geq k + 2 \end{aligned} $$</li>
+<li>Prove <picture><source srcset="form_30_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$2^n \geq n + 1$" src="form_30.png"/></picture><ul>
+<li>Check if true for $n = 0$      <p class="formulaDsp">
+<picture><source srcset="form_31_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[        \begin{aligned}
+        2^0 &amp;\geq 0 + 1 \\
+        1 &amp;\geq 1
+        \end{aligned}
+\]" src="form_31.png"/></picture>
+</p>
+ <b>The base case does hold</b></li>
+<li>Assume the statement holds for $n = k$, where   <p class="formulaDsp">
+<picture><source srcset="form_32_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[    2^k \geq k + 1
+\]" src="form_32.png"/></picture>
+</p>
+</li>
+<li>Using this assumption, prove it holds for <picture><source srcset="form_33_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$n = k + 1$" src="form_33.png"/></picture>       <p class="formulaDsp">
+<picture><source srcset="form_34_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[    \begin{aligned}
+    &amp;2^{k + 1} \geq (k + 1) + 1 \\
+    &amp;2^{k + 1} \geq k + 2 \\
+    &amp;2^k \cdot 2 \geq 2(k + 1) \geq  k + 2
+    \end{aligned}
+\]" src="form_34.png"/></picture>
+</p>
+</li>
 </ul>
 </li>
 </ol>
 <h3><a class="anchor" id="autotoc_md37"></a>
 Big-O</h3>
-<p>Big-O describes how fast a function grows as its input size, $n$, increases. It observes the asymptomatic behavior as $n$ gets large.</p><ul>
+<p>Big-O describes how fast a function grows as its input size, <picture><source srcset="form_35_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$n$" src="form_35.png"/></picture>, increases. It observes the asymptomatic behavior as $n$ gets large.</p><ul>
 <li>measures the efficiency of algorithms</li>
 <li>compares runtime/space usage based on large inputs</li>
 <li>describes the worst case runtime of an algorithm<ul>
@@ -170,19 +258,19 @@ Big-O</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Big-O Notation   </th><th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Typical Algorithmic Behavior    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">$O(1)$   </td><td class="markdownTableBodyNone">Constant Time   </td><td class="markdownTableBodyNone">Accessing a single array element    </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_36_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(1)$" src="form_36.png"/></picture>   </td><td class="markdownTableBodyNone">Constant Time   </td><td class="markdownTableBodyNone">Accessing a single array element    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">Logarithmic Time   </td><td class="markdownTableBodyNone">Binary Search; algorithm halves the input per iteration    </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_37_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(\log n)$" src="form_37.png"/></picture>   </td><td class="markdownTableBodyNone">Logarithmic Time   </td><td class="markdownTableBodyNone">Binary Search; algorithm halves the input per iteration    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">Linear Time   </td><td class="markdownTableBodyNone">Linear Search; looping over an array once    </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_38_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(n)$" src="form_38.png"/></picture>   </td><td class="markdownTableBodyNone">Linear Time   </td><td class="markdownTableBodyNone">Linear Search; looping over an array once    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">$O(n \log n)$   </td><td class="markdownTableBodyNone">Log-Linear Time   </td><td class="markdownTableBodyNone">Merge Sort, Quick Sort, Heap Sort; Divide and Conqueror, where problems are broken into subproblems that are solved individually    </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_39_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(n \log n)$" src="form_39.png"/></picture>   </td><td class="markdownTableBodyNone">Log-Linear Time   </td><td class="markdownTableBodyNone">Merge Sort, Quick Sort, Heap Sort; Divide and Conqueror, where problems are broken into subproblems that are solved individually    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">$O(n^2)$   </td><td class="markdownTableBodyNone">Quadratic Time   </td><td class="markdownTableBodyNone">Bubble Sort, Selection Sort, Insertion Sort; Anything involving nested for loops    </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_40_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(n^2)$" src="form_40.png"/></picture>   </td><td class="markdownTableBodyNone">Quadratic Time   </td><td class="markdownTableBodyNone">Bubble Sort, Selection Sort, Insertion Sort; Anything involving nested for loops    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">$O(2^n)$   </td><td class="markdownTableBodyNone">Exponential Time   </td><td class="markdownTableBodyNone">Typically many recursive algorithms, including brute force (attempts all possible solutions to a problem until one satisfies the problem's conditions)    </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_41_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(2^n)$" src="form_41.png"/></picture>   </td><td class="markdownTableBodyNone">Exponential Time   </td><td class="markdownTableBodyNone">Typically many recursive algorithms, including brute force (attempts all possible solutions to a problem until one satisfies the problem's conditions)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">$O(n!)$   </td><td class="markdownTableBodyNone">Factorial Time   </td><td class="markdownTableBodyNone">Permutation-Based Solutions   </td></tr>
+<td class="markdownTableBodyNone"><picture><source srcset="form_42_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(n!)$" src="form_42.png"/></picture>   </td><td class="markdownTableBodyNone">Factorial Time   </td><td class="markdownTableBodyNone">Permutation-Based Solutions   </td></tr>
 </table>
 <h3><a class="anchor" id="autotoc_md38"></a>
 Big-O of Common Algorithms</h3>
@@ -190,9 +278,9 @@ Big-O of Common Algorithms</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Algorithm   </th><th class="markdownTableHeadNone">Big-O Notation   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Linear Search   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">Checks each element one by one from beginning to end looking for the given element    </td></tr>
+<td class="markdownTableBodyNone">Linear Search   </td><td class="markdownTableBodyNone"><picture><source srcset="form_38_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(n)$" src="form_38.png"/></picture>   </td><td class="markdownTableBodyNone">Checks each element one by one from beginning to end looking for the given element    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Binary Search   </td><td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">Takes in a sorted array and iteratively halves the array that may contain the given value    </td></tr>
+<td class="markdownTableBodyNone">Binary Search   </td><td class="markdownTableBodyNone"><picture><source srcset="form_37_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$O(\log n)$" src="form_37.png"/></picture>   </td><td class="markdownTableBodyNone">Takes in a sorted array and iteratively halves the array that may contain the given value    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Bubble Sort   </td><td class="markdownTableBodyNone">$O(n^2)$   </td><td class="markdownTableBodyNone">Repeatedly steps through an array and compares adjacent elements, swapping them if they are in the wrong order    </td></tr>
 <tr class="markdownTableRowEven">
