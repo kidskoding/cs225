@@ -6,7 +6,7 @@
 		- Deriving this closed form is an act known as **unrolling**, where we substitute a recursive definition into itself until there is an explicit pattern suggesting the closed form expression
 
 For example with the expression,
-$$
+\f[
 \begin{aligned}
 	T(n) &= 2T(n − 1) + 3 \\ 
 		&= 2(2T(n − 2) + 3) + 3 \\ 
@@ -16,38 +16,38 @@ $$
 		&\dots \\
 		&= 2^kT(n − k) + 2^{k−1} · 3 + \dots+ 2^2 · 3 + 2 · 3 + 3
 \end{aligned}
-$$
+\f]
 
-we can use summation notation to represent the $k^{th}$ unrolling step, where
-$$
+we can use summation notation to represent the \f$k^{th}\f$ unrolling step, where
+\f[
 \begin{aligned}
 	&= 2^kT(n − k) + 2^k−1 · 3 + . . . + 2^2 · 3 + 2 · 3 + 3 \\
 	&=2^kT(n − k) + 3(2^k-1 + \dots + 2^2 + 2 + 1) \\
 	&=2^kT(n - k) + 3\sum^{k-1}_{i = 0}(2^i)
 \end{aligned}
-$$
+\f]
 
-The input of function $T$ hits the base case when $n - k = 1$, or when $k = n - 1$. Recall that $T(1) = 1$ and substituting $n-1$ value for $k$ gives
+The input of function $T$ hits the base case when \f$n - k = 1\f$, or when \f$k = n - 1\f$. Recall that \f$T(1) = 1\f$ and substituting \f$n-1\f$ value for \f$k\f$ gives
 
-$$
+\f[
 \begin{aligned}
 T(n) &= 2^kT(n - k) + 3\sum_{i = 0}^{k = 1}(2^i) \\
 	&=2^{n - 1}T(1) + 3\sum_{i = 0}^{n-2}(2^i) \\
 	&=2^{n - 1} + 3\sum_{k = 0}^{n - 2}(2^k) \\
 	&=2^{n - 1} + 3(2^{n - 1} - 1) = 4(2^{n - 1}) - 3 = 2^{n + 1} - 3
 \end{aligned}
-$$
+\f]
 
 therefore making the closed form for function $T$, $2^{n + 1} - 3$
 
 
-1. Given that $T(0) = 5$, find the closed form solution of
-$$
+1. Given that \f$T(0) = 5\f$, find the closed form solution of
+\f[
 	T(n) = T(n - 1) + 2
-$$
+\f]
 - Unroll the first couple of terms
 	
-	$$
+	\f[
 	\begin{aligned}
 		T(n) &= T(n - 1) + 2 \\
 		&= (T(n - 2) + 2) + 2 \\
@@ -55,18 +55,18 @@ $$
 		&\dots \\
 		&= T(n - k) + 2k
 	\end{aligned}
-	$$
+	\f]
 	
-- where $k = n$ and $T(n) = T(0) + 2n = 5 + 2n$
+- where \f$k = n\f$ and \f$T(n) = T(0) + 2n = 5 + 2n\f$
 
-- Recall that $T(0)$ can represent any sort of numeric value, where in this case is $5$. This numeric value of $5$ is known as the **base case** and $2n$ is known as the **recursive case**
+- Recall that \f$T(0)\f$ can represent any sort of numeric value, where in this case is \f$5\f$. This numeric value of \f$5\f$ is known as the **base case** and \f$2n\f$ is known as the **recursive case**
 
-2. Given that $T(1) = 3$, Find the closed form solution of 
-$$
+2. Given that \f$T(1) = 3\f$, Find the closed form solution of 
+\f[
 	T(n) = 2T(\frac{n}{2}) + n
-$$
+\f]
 - Unroll the first couple terms of the sequence
-$$
+\f[
 \begin{aligned}
 T(n) &= 2T(\frac{n}{2}) + n \\
 &= 2(2T(\frac{n}{4}) + \frac{n}{2}) + n = 4T(\frac{n}{4}) + 2n \\
@@ -74,15 +74,15 @@ T(n) &= 2T(\frac{n}{2}) + n \\
 &\dots \\
 &= 2^kT(\frac{n}{2^k}) + kn
 \end{aligned}
-$$
-- where $\frac{n}{2^k} = 1 \rightarrow n = 2^k \rightarrow k = \log_2n$ and 
-$$
+\f]
+- where \f$\frac{n}{2^k} = 1 \rightarrow n = 2^k \rightarrow k = \log_2n\f$ and 
+\f[
 \begin{aligned}
 T(n) &= 2^{\log_2n} \cdot T(1)  + n \cdot \log_2n \\
 &= n \cdot T(1) + n\log_2n \\ 
 &= 3n + n\log_2n 
 \end{aligned}
-$$
+\f]
 
 ### Proofs by Induction
 
@@ -92,49 +92,49 @@ $$
 	- **Inductive Hypothesis** - A assumption that the statement being proven is true for some value $k$
 	- **Inductive Step** - Prove the inductive hypothesis with the next step $k  + 1$
 
-1. Prove that $1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}$ for $n = 1$
+1. Prove that \f$1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}\f$ for \f$n = 1\f$
 
-	- Let $n = 1$, then $\frac{1(1 + 1)}{2} = 1$, where $1 = 1$ (both sides are equal)
+	- Let \f$n = 1\f$, then \f$\frac{1(1 + 1)}{2} = 1\f$, where \f$1 = 1\f$ (both sides are equal)
 	
-	- Assume the formula holds true for $k \geq 1$, where $1 + 2 + 3 + \dots + k = \frac{k(k + 1)}{2}$
+	- Assume the formula holds true for \f$k \geq 1\f$, where \f$1 + 2 + 3 + \dots + k = \frac{k(k + 1)}{2}\f$
 	
-	- Prove the inductive hypothesis from b. for $k + 1$, the next recurring step
-	$$
+	- Prove the inductive hypothesis from b. for \f$k + 1\f$, the next recurring step
+	\f[
 	\begin{aligned}
 	1 + 2 + \dots + k + (k + 1) &= \frac{(k + 1)(k + 2)}{2} \\
 	 (1 + 2 + \dots + k) + (k + 1) &= \frac{(k)(k + 1)}{2} + (k + 1) \\
 	 \frac{k(k + 1) + 2(k + 1)}{2} &= \frac{(k + 2)(k + 1)}{2}
 	\end{aligned}
-	$$
+	\f]
 	where the inductive step does indeed hold
 
-2. Prove $2^n \geq n + 1$
+2. Prove \f$2^n \geq n + 1\f$
 	- Check if true for $n = 0$
-		$$
+		\f[
 		\begin{aligned}
 		2^0 &\geq 0 + 1 \\
 		1 &\geq 1
 		\end{aligned}
-		$$
+		\f]
 	**The base case does hold**
 		
 	- Assume the statement holds for $n = k$, where
-	$$
+	\f[
 	2^k \geq k + 1
-	$$
+	\f]
 
-	- Using this assumption, prove it holds for $n = k + 1$
-	$$
+	- Using this assumption, prove it holds for \f$n = k + 1\f$
+	\f[
 	\begin{aligned}
 	&2^{k + 1} \geq (k + 1) + 1 \\
 	&2^{k + 1} \geq k + 2 \\
 	&2^k \cdot 2 \geq 2(k + 1) \geq  k + 2
 	\end{aligned}
-	$$
+	\f]
 	
 ### Big-O 
 
-Big-O describes how fast a function grows as its input size, $n$, increases. It observes the asymptomatic behavior as $n$ gets large.
+Big-O describes how fast a function grows as its input size, \f$n\f$, increases. It observes the asymptomatic behavior as $n$ gets large.
 - measures the efficiency of algorithms
 - compares runtime/space usage based on large inputs
 - describes the worst case runtime of an algorithm
@@ -142,20 +142,20 @@ Big-O describes how fast a function grows as its input size, $n$, increases. It 
 
 | Big-O Notation | Name | Typical Algorithmic Behavior |
 | ------------------ | ---- | --------------
-| $O(1)$ | Constant Time | Accessing a single array element
-| $O(\log n)$ | Logarithmic Time | Binary Search; algorithm halves the input per iteration 
-| $O(n)$ | Linear Time | Linear Search; looping over an array once
-| $O(n \log n)$ | Log-Linear Time | Merge Sort, Quick Sort, Heap Sort; Divide and Conqueror, where problems are broken into subproblems that are solved individually
-| $O(n^2)$ | Quadratic Time | Bubble Sort, Selection Sort, Insertion Sort; Anything involving nested for loops
-| $O(2^n)$ | Exponential Time | Typically many recursive algorithms, including brute force (attempts all possible solutions to a problem until one satisfies the problem's conditions)
-| $O(n!)$ | Factorial Time | Permutation-Based Solutions
+| \f$O(1)\f$ | Constant Time | Accessing a single array element
+| \f$O(\log n)\f$ | Logarithmic Time | Binary Search; algorithm halves the input per iteration 
+| \f$O(n)\f$ | Linear Time | Linear Search; looping over an array once
+| \f$O(n \log n)\f$ | Log-Linear Time | Merge Sort, Quick Sort, Heap Sort; Divide and Conqueror, where problems are broken into subproblems that are solved individually
+| \f$O(n^2)\f$ | Quadratic Time | Bubble Sort, Selection Sort, Insertion Sort; Anything involving nested for loops
+| \f$O(2^n)\f$ | Exponential Time | Typically many recursive algorithms, including brute force (attempts all possible solutions to a problem until one satisfies the problem's conditions)
+| \f$O(n!)\f$ | Factorial Time | Permutation-Based Solutions
 
 ### Big-O of Common Algorithms
 
 | Algorithm | Big-O Notation | Description
 | ------------------ | ---- | ------ 
-| Linear Search | $O(n)$ | Checks each element one by one from beginning to end looking for the given element |
-| Binary Search | $O(\log n)$ | Takes in a sorted array and iteratively halves the array that may contain the given value 
+| Linear Search | \f$O(n)\f$ | Checks each element one by one from beginning to end looking for the given element |
+| Binary Search | \f$O(\log n)\f$ | Takes in a sorted array and iteratively halves the array that may contain the given value 
 | Bubble Sort | $O(n^2)$ | Repeatedly steps through an array and compares adjacent elements, swapping them if they are in the wrong order
 | Insertion Sort | $O(n^2)$ | Iteratively inserts each element of an unsorted list into its correct position in a sorted portion of the list
 | Selection Sort | $O(n^2)$ | Sorts an array by repeatedly selecting the **smallest** element from the unsorted portion and swapping it with the first unsorted element
