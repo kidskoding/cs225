@@ -4,9 +4,9 @@ Continuing off of [Lecture 3 - Lists and List ADT](\ref md_lecture3), we will ex
 
 Recall the following characteristics of a `LinkedList`
 - Stores `ListNode`s that are chained together via pointers
-- Each `ListNode` contains its own data and holds a pointer to the next `ListNode` in the `List`
+- Each `ListNode` contains its own data and holds a pointer to the next `ListNode` in the `LinkedList`
 
-This is our current implementation of our `List` ADT
+This is our current implementation of our `LinkedList` ADT
 
 ```
 // List.h
@@ -34,7 +34,7 @@ public:
 
 [[Lecture 3 - Lists and List ADT]] covered two main capabilities that our List ADT must have, an `insertAtFront` function which inserts a `ListNode` at the front/head of the `LinkedList` and a `find` function which finds a `ListNode` by a given `index`
 
-We will continue our discussion with the next function, `insert`. This is a generic function which will insert data into the `List` at a given index. Recall that this algorithm is done in three steps
+We will continue our discussion with the next function, `insert`. This is a generic function which will insert data into the `LinkedList` at a given index. Recall that this algorithm is done in three steps
 
 1. Call `find` to find the `ListNode` at the given index
 	1. Recall that `find` returns a reference of a pointer to a `ListNode`, written as a type `ListNode*&`
@@ -74,9 +74,9 @@ This function has a $O(n)$ runtime, since it needs to traverse to the given posi
 
 ## operator[]
 
-The next function our `List` ADT function must have is the operator `[ ]`. Recall that in C++ we can operator overload with a function that changes the behavior of the `[ ]` operator. 
+The next function our `LinkedList` ADT function must have is the operator `[ ]`. Recall that in C++ we can operator overload with a function that changes the behavior of the `[ ]` operator. 
 
-The brackets operator will behave very similarly to the `find` function, but rather return the `data` by reference that the `ListNode` at the given index contains. This updates our `List` class like this (shown below)
+The brackets operator will behave very similarly to the `find` function, but rather return the `data` by reference that the `ListNode` at the given index contains. This updates our `LinkedList` class like this (shown below)
 
 ```
 // List.h
@@ -132,7 +132,7 @@ This runtime is also $O(n)$ because it takes $n$ times to traverse through the l
 
 ## remove
 
-The next function is to remove data from our `List` at a given index. This updates our `List` class structure!
+The next function is to remove data from our `LinkedList` at a given index. This updates our `LinkedList` class structure!
 
 ```
 // List.h
@@ -165,7 +165,7 @@ The algorithm for this is once again simple
 1. Find the `ListNode` at the given index, with our helper `find` function, lets call it `toRemove`
 2. Create a `temp` `ListNode` containing the `ListNode` to be removed, lets call it `temp`
 3. Create a variable containing `temp`'s `data`, can call this `val`
-4. Set toRemove to the next `ListNode` in the `List`
+4. Set toRemove to the next `ListNode` in the `LinkedList`
 5. delete the `temp` `ListNode` from memory (`temp` was what was removed)
 6. return `val`
 
@@ -201,18 +201,18 @@ T remove(int index) {
 - You need a pointer to the node you're removing so you can later delete it, which is what we call `toRemove`
 - Creates a copy pointer to the node being removed called `temp`. We keep a separate reference so that we can return its data in the function
 	- Without `temp`, once `toRemove = toRemove->next`, the previous node that `toRemove` stored is now lost
-	- We need the original node that was stored in `toRemove` in order to be able to return the data that was removed from the `List`, which is why we store it in `temp!
-- `delete temp`, ensures the memory allocated to `temp` is freed. We do this call because we know that the `List` no longer needs this `temp` `ListNode` (**`List` no longer needs to track it!**)
+	- We need the original node that was stored in `toRemove` in order to be able to return the data that was removed from the `LinkedList`, which is why we store it in `temp!
+- `delete temp`, ensures the memory allocated to `temp` is freed. We do this call because we know that the `LinkedList` no longer needs this `temp` `ListNode` (**`LinkedList` no longer needs to track it!**)
 
-This wraps up the first implementation of `List`, which is a LinkedList
+This wraps up the first implementation of `LinkedList`, which is a LinkedList
 
-## Representing a `List` as a `std::vector`
+## Representing a `LinkedList` as a `std::vector`
 
-Now onto the array implementation of a `List`. In this array implementation, we are really just implementing a C++ `std::vector` or `ArrayList`
+Now onto the array implementation of a `LinkedList`. In this array implementation, we are really just implementing a C++ `std::vector` or `ArrayList`
 
-The primitive foundation of an `ArrayList` is based on the idea of storing elements in a chunk of contiguous memory, allowing efficient access and manipulation. The list starts with a raw array and builds abstraction over it to support dynamic resizing, safe memory handling, and user-friendly operations, like the ones covered in LinkedList
+The primitive foundation of an `ArrayList` is based on the idea of storing elements in a chunk of contiguous memory, allowing efficient access and manipulation. The list starts with a raw array and builds abstraction over it to support dynamic resizing, safe memory handling, and user-friendly operations, like the ones covered in `LinkedList`
 
-We begin by figuring out what we need to store the list. In the `List` approach by using a LinkedList, we stored individual `ListNodes`, where they each held data along with a pointer to the next node, which allowed for easy chaining access between the nodes
+We begin by figuring out what we need to store the list. In the `LinkedList`, we stored individual `ListNodes`, where they each held data along with a pointer to the next node, which allowed for easy chaining access between the nodes
 
 However, in an `ArrayList` approach, we need to simply store a chunk of memory somehow, while this is typically a `std::vector` in C++, we are actually implementing this, so we need a primitive array, as mentioned previously. Therefore, a chunk of memory is allocated using a **pointer**, where we can call this a generic type `T`. This is reflected in our `ArrayList` class below
 
@@ -230,6 +230,7 @@ private:
     T* data;
 };
 ```
+
 `data` is a pointer to a chunk of memory that will be allocated to the heap
 
 In addition to this, we need to store the **size** and **capacity**, where the **size** represents how many items are actually in the list and the **capacity** represents how much space is available in the memory block

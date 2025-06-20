@@ -1,12 +1,12 @@
 // List.hpp
 
-#include "List.h"
+#include "LinkedList.h"
 
 /** Inserts data at the front of a List
   * Runtime: O(1)
  */
 template <typename T>
-void List<T>::insertAtFront(const T& data) {
+void LinkedList<T>::insertAtFront(const T& data) {
 	// Dynamically allocate the data to the heap
     ListNode<T>* newNode = new ListNode(data);
 
@@ -21,7 +21,7 @@ void List<T>::insertAtFront(const T& data) {
  *  Runtime: O(n)
  */
 template <typename T>
-void List<T>::insert(const T& data, int index) {
+void LinkedList<T>::insert(const T& data, int index) {
 	// Call `find` to find the `ListNode` at the given index
 	ListNode<T>*& nodeAtIndex = find(index);
 
@@ -39,7 +39,7 @@ void List<T>::insert(const T& data, int index) {
  *  Runtime: O(n)
  */
 template <typename T>
-ListNode<T>*& List<T>::find(int index) {
+ListNode<T>*& LinkedList<T>::find(int index) {
 	// Return the head if the index is 0
 	// We know that the first node in the list is always the head!
 	if(index == 0) { 
@@ -64,7 +64,7 @@ ListNode<T>*& List<T>::find(int index) {
  *	Runtime: O(n)
  */
 template <typename T>
-T& List<T>::operator[](int index) {
+T& LinkedList<T>::operator[](int index) {
 	// Call `find` to find the `ListNode` at the given index	
 	ListNode<T>*& loc = find(index);
 
@@ -76,7 +76,7 @@ T& List<T>::operator[](int index) {
  * 	Runtime: O(n)
  */
 template <typename T>
-T List<T>::remove(int index) {
+T LinkedList<T>::remove(int index) {
 	// Find the `ListNode` to be removed
 	ListNode<T>*& toRemove = find(index);
 

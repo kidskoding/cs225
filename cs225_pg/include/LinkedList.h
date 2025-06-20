@@ -1,4 +1,4 @@
-// List.h
+// LinkedList.h
 
 #pragma once
 
@@ -15,7 +15,7 @@ struct ListNode {
 };
 
 template<typename T>
-class List {
+class LinkedList {
 private:
     // a pointer to the head of the linked list
     ListNode<T>* head;

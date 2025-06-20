@@ -54,7 +54,7 @@ struct ListNode {
 }
 ```
 
-To start our List ADT, we need to achieve our first functionality, `insertAtFront`, which will insert a node into the front of the `List`. This is reflected in our `List` class below, recall that `List` needs to track the `head` of the list, which gives us the starting point of the list
+To start our List ADT, we need to achieve our first functionality, `insertAtFront`, which will insert a node into the front of the `LinkedList`. This is reflected in our `LinkedList` class below, recall that `LinkedList` needs to track the `head` of the list, which gives us the starting point of the list
 
 ```
 // List.h
@@ -128,7 +128,7 @@ Recall what `->` (arrow operator) does in C++. Its a nice operator that derefere
 
 The previous algorithm only inserted nodes at the front of the List. However a more general insert algorithm is recommended to insert nodes in more places than just the front!
 
-To solve this problem, the best thing to do is to create a `insert` algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated `List` ADT code below
+To solve this problem, the best thing to do is to create a `insert` algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated `LinkedList` ADT code below
 
 ```
 // List.h
@@ -161,7 +161,7 @@ To make this call take place, we need to find the node at the first index and in
 
 1. Allocate the given data onto the heap
 2. Find the place to insert the newly created node (typically the code semantics are before)
-	1. Therefore, we need a helper `find` function to return the node by reference at the given index. Our updated `List` ADT is represented in the code below
+	1. Therefore, we need a helper `find` function to return the node by reference at the given index. Our updated `LinkedList` ADT is represented in the code below
 
 	```
 	// List.h
@@ -196,13 +196,13 @@ To make this call take place, we need to find the node at the first index and in
 			2. To implement find iteratively, we can follow a fixed algorithmic step
 				1. Return the `head` ListNode if the index is `0`. We can do this because we know the `head` is always at index `0`
 					1. Recall that this method returns a `ListNode*&`, which is a **pointer reference**. `head` is in fact a **reference to a pointer**! 
-				2. Create a temporary `ListNode`, `curr` that is assigned to head. This represents the current node being referenced in the `List`
-				3. Otherwise, loop till `x` is less than `index - 1`, and reassign `curr` to the next node in the `List`
-				4. Then return `curr->next` because we know that once `x` becomes `index - 1`, we can stop and just return the a reference to the next node in the `List`, hence `curr->next`
+				2. Create a temporary `ListNode`, `curr` that is assigned to head. This represents the current node being referenced in the `LinkedList`
+				3. Otherwise, loop till `x` is less than `index - 1`, and reassign `curr` to the next node in the `LinkedList`
+				4. Then return `curr->next` because we know that once `x` becomes `index - 1`, we can stop and just return the a reference to the next node in the `LinkedList`, hence `curr->next`
 					1. Recall that `curr` is a **copy** of head! We don't want to return a copy `ListNode*`, but rather a reference `ListNode*`, which is simply a type `ListNode*&`
 					2. Therefore, we return `curr->next` and loop from `x` to `index - 1`, instead of looping from `x` to `index` and returning just `curr`
 				5. This process is shown in the second code snippet below!
-		4. Runtime for find is $O(n)$ because we have to traverse up to $n$ nodes in the `List` to find the node at the given `index`
+		4. Runtime for find is $O(n)$ because we have to traverse up to $n$ nodes in the `LinkedList` to find the node at the given `index`
 
 ```
 // List.hpp
