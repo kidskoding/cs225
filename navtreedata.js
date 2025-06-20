@@ -41,7 +41,8 @@ var NAVTREE =
       [ "Lecture 2 - C++ and Lists", "md_lecture2.html", null ],
       [ "Lecture 3 - Linked List Implementation", "md_lecture3.html", null ],
       [ "Lecture 4 - Linked Lists and List <vector>", "md_lecture4.html", null ],
-      [ "Lecture 5 - Amortized Analysis", "md_lecture5.html", null ]
+      [ "Lecture 5 - Amortized Analysis", "md_lecture5.html", null ],
+      [ "Lecture 6 - Stacks and Queues", "md_lecture6.html", null ]
     ] ],
     [ "Midterm Reviews", "usergroup1.html", [
       [ "Midterm 0", "usergroup2.html", [

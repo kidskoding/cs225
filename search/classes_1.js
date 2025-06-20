@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['list_0',['List',['../classList.html',1,'']]],
-  ['listnode_1',['ListNode',['../structListNode.html',1,'']]]
+  ['circularqueue_0',['CircularQueue',['../classCircularQueue.html',1,'']]]
 ];

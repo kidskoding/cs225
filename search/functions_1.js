@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['insert_0',['insert',['../classList.html#a5d6d7e2a473a131eb0315b4e622817c6',1,'List']]],
-  ['insertatfront_1',['insertAtFront',['../classList.html#aa8f047d6fa06aecc4282f70bac37e95a',1,'List']]]
+  ['insert_0',['insert',['../classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32',1,'LinkedList']]],
+  ['insertatfront_1',['insertAtFront',['../classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908',1,'LinkedList']]]
 ];

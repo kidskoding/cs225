@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['find_0',['find',['../classList.html#a3a2167c7e3d8c0f9b00521c0ca2b2a0a',1,'List']]]
+  ['find_0',['find',['../classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde',1,'LinkedList']]]
 ];

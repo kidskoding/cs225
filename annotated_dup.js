@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "ArrayList", "classArrayList.html", "classArrayList" ],
-    [ "List", "classList.html", "classList" ],
+    [ "CircularQueue", "classCircularQueue.html", null ],
+    [ "LinkedList", "classLinkedList.html", "classLinkedList" ],
     [ "ListNode", "structListNode.html", null ]
 ];

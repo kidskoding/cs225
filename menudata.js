@@ -37,7 +37,8 @@ var menudata={children:[
 {text:"Lecture 2 - C++ and Lists",url:"md_lecture2.html"},
 {text:"Lecture 3 - Linked List Implementation",url:"md_lecture3.html"},
 {text:"Lecture 4 - Linked Lists and List <vector>",url:"md_lecture4.html"},
-{text:"Lecture 5 - Amortized Analysis",url:"md_lecture5.html"}]},
+{text:"Lecture 5 - Amortized Analysis",url:"md_lecture5.html"},
+{text:"Lecture 6 - Stacks and Queues",url:"md_lecture6.html"}]},
 {text:"Midterm Reviews",url:"usergroup1.html",children:[
 {text:"Midterm 0",url:"usergroup2.html",children:[
 {text:"Midterm 0 - Review of Prerequisite Courses",url:"md_midterm0.html"},
