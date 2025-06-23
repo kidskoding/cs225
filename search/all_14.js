@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['passing_20arguments_0',['Passing Arguments',['../md_programming.html#autotoc_md31',1,'']]],
-  ['pointers_1',['References and Pointers',['../md_programming.html#autotoc_md24',1,'']]],
-  ['prerequisite_20courses_2',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
-  ['private_3',['Public vs Private',['../md_programming.html#autotoc_md19',1,'']]],
-  ['programming_4',['programming',['../md_Midterm_01Reviews_2Midterm_010_2programming.html',1,'']]],
-  ['programming_20review_5',['Programming Review',['../md_programming.html',1,'']]],
-  ['public_20vs_20private_6',['Public vs Private',['../md_programming.html#autotoc_md19',1,'']]],
-  ['pushback_7',['pushBack',['../classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
+  ['semantics_0',['Semantics',['../md_programming.html#autotoc_md26',1,'Copy Semantics'],['../md_programming.html#autotoc_md30',1,'Move Semantics']]],
+  ['shallow_20and_20deep_20copies_1',['Shallow and Deep Copies',['../md_programming.html#autotoc_md27',1,'']]],
+  ['stack_2',['Stack',['../md_programming.html#autotoc_md23',1,'']]],
+  ['std_3a_3avector_3',['Representing a &lt;span class=&quot;tt&quot;&gt;List&lt;/span&gt; as a &lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;',['../md_lecture4.html#autotoc_md9',1,'']]],
+  ['structs_4',['Classes vs Structs',['../md_programming.html#autotoc_md13',1,'']]]
 ];

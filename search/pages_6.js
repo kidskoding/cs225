@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['amortized_20analysis_0',['Lecture 5 - Amortized Analysis',['../md_lecture5.html',1,'']]],
-  ['analysis_1',['Lecture 5 - Amortized Analysis',['../md_lecture5.html',1,'']]],
-  ['and_20list_20vector_2',['Lecture 4 - Linked List and List &lt;vector&gt;',['../md_lecture4.html',1,'']]],
-  ['and_20lists_3',['Lecture 2 - C++ and Lists',['../md_lecture2.html',1,'']]],
-  ['and_20queues_4',['Lecture 6 - Stacks and Queues',['../md_lecture6.html',1,'']]]
+  ['background_0',['Background',['../md_readme.html#autotoc_md51',1,'']]],
+  ['big_20o_1',['Big-O',['../md_theory.html#autotoc_md37',1,'']]],
+  ['big_20o_20of_20common_20algorithms_2',['Big-O of Common Algorithms',['../md_theory.html#autotoc_md38',1,'']]],
+  ['bipartite_20graphs_3',['Bipartite Graphs',['../md_theory.html#autotoc_md45',1,'']]],
+  ['by_20induction_4',['Proofs by Induction',['../md_theory.html#autotoc_md36',1,'']]]
 ];

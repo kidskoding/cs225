@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['namespaces_0',['Namespaces',['../md_programming.html#autotoc_md23',1,'']]],
-  ['new_20tt_20and_20tt_20delete_20tt_1',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_programming.html#autotoc_md26',1,'']]],
-  ['notes_20are_20compiled_20in_20strong_20doxygen_20strong_20view_20a_20href_20http_3a_20kidskoding_20github_20io_20cs225_20notes_20index_20html_20here_20a_2',['All references/notes are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md42',1,'']]],
-  ['notes_20index_20html_20here_20a_3',['All references/notes are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md42',1,'']]]
+  ['passing_20arguments_0',['Passing Arguments',['../md_programming.html#autotoc_md24',1,'']]],
+  ['pointers_1',['References and Pointers',['../md_programming.html#autotoc_md17',1,'']]],
+  ['prerequisite_20courses_2',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
+  ['private_3',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]],
+  ['programming_4',['programming',['../md__midterm_01_reviews_2_midterm_010_2programming.html',1,'']]],
+  ['programming_20review_5',['Programming Review',['../md_programming.html',1,'']]],
+  ['proofs_20by_20induction_6',['Proofs by Induction',['../md_theory.html#autotoc_md36',1,'']]],
+  ['public_20vs_20private_7',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]],
+  ['pushback_8',['pushBack',['../class_array_list.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
 ];

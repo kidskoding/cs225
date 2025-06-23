@@ -25,6 +25,8 @@
 var NAVTREE =
 [
   [ "CS 225", "index.html", [
+    [ "README", "md_README.html", null ],
+    [ "CS 225 - Introduction", "md_readme.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -35,21 +37,6 @@ var NAVTREE =
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
-    ] ],
-    [ "README", "md_readme.html", null ],
-    [ "Lecture Notes", "usergroup0.html", [
-      [ "Lecture 2 - C++ and Lists", "md_lecture2.html", null ],
-      [ "Lecture 3 - Linked List Implementation", "md_lecture3.html", null ],
-      [ "Lecture 4 - Linked Lists and List <vector>", "md_lecture4.html", null ],
-      [ "Lecture 5 - Amortized Analysis", "md_lecture5.html", null ],
-      [ "Lecture 6 - Stacks and Queues", "md_lecture6.html", null ]
-    ] ],
-    [ "Midterm Reviews", "usergroup1.html", [
-      [ "Midterm 0", "usergroup2.html", [
-        [ "Midterm 0 - Review of Prerequisite Courses", "md_midterm0.html", null ],
-        [ "Theory Review", "md_theory.html", null ],
-        [ "Programming Review", "md_programming.html", null ]
-      ] ]
     ] ]
   ] ]
 ];

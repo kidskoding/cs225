@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['prerequisite_20courses_0',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
-  ['programming_1',['programming',['../md_Midterm_01Reviews_2Midterm_010_2programming.html',1,'']]],
-  ['programming_20review_2',['Programming Review',['../md_programming.html',1,'']]]
+  ['heap_0',['Heap',['../md_programming.html#autotoc_md22',1,'']]],
+  ['height_20and_20number_20of_20nodes_1',['Height and number of nodes',['../md_theory.html#autotoc_md49',1,'']]],
+  ['here_2',['All references/notes are compiled in &lt;b&gt;Doxygen&lt;/b&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot;&gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md50',1,'']]]
 ];

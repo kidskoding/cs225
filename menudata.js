@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -31,16 +32,4 @@ var menudata={children:[
 {text:"All",url:"functions.html"},
 {text:"Functions",url:"functions_func.html"}]}]},
 {text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"}]},
-{text:"README",url:"md_readme.html"},
-{text:"Lecture Notes",url:"usergroup0.html",children:[
-{text:"Lecture 2 - C++ and Lists",url:"md_lecture2.html"},
-{text:"Lecture 3 - Linked List Implementation",url:"md_lecture3.html"},
-{text:"Lecture 4 - Linked Lists and List <vector>",url:"md_lecture4.html"},
-{text:"Lecture 5 - Amortized Analysis",url:"md_lecture5.html"},
-{text:"Lecture 6 - Stacks and Queues",url:"md_lecture6.html"}]},
-{text:"Midterm Reviews",url:"usergroup1.html",children:[
-{text:"Midterm 0",url:"usergroup2.html",children:[
-{text:"Midterm 0 - Review of Prerequisite Courses",url:"md_midterm0.html"},
-{text:"Theory Review",url:"md_theory.html"},
-{text:"Programming Review",url:"md_programming.html"}]}]}]}
+{text:"File List",url:"files.html"}]}]}

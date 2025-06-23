@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['0_20review_20of_20prerequisite_20courses_0',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]]
+  ['225_20introduction_0',['CS 225 - Introduction',['../md_readme.html',1,'']]]
 ];

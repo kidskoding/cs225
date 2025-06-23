@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['background_0',['Background',['../md_readme.html#autotoc_md43',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_1',['Resizing by adding 2 elements every time',['../md_lecture5.html#autotoc_md11',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_2',['Resizing by doubling the elements every time',['../md_lecture5.html#autotoc_md12',1,'']]]
+  ['here_20a_0',['All references/notes are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]],
+  ['href_20http_3a_20kidskoding_20github_20io_20cs225_20notes_20index_20html_20here_20a_1',['All references/notes are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]],
+  ['html_20here_20a_2',['All references/notes are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]],
+  ['http_3a_20kidskoding_20github_20io_20cs225_20notes_20index_20html_20here_20a_3',['All references/notes are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]]
 ];
