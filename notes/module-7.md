@@ -5,7 +5,8 @@ One concept that is often in the scope of DSA is the **iterator**. An iterator i
 Suppose we had 3 data structures, `Array`, `LinkedList`, and a `Hypercube` (also known as a tesseract and is a 4D cube). How would we be able to traverse through every element in this data structure?
 
 The solution is simply an iterator, which provides encapsulated access to our data in a data structure. Each data structure, `Array`, `LinkedList`, and `Hypercube` has its own way of iterating through its data
-- For example, an `Arra
+- For example, an `Array` typically uses an index to iterate, where `index++` traverses through each element in an array
+- Similarly, a `LinkedList` uses a pointer to iterate, where `cur->next` represents a pointer to the next `ListNode` in a `LinkedList`. This is shown in the table below
 
 ## Iterate through data in each data structure
 
@@ -35,10 +36,11 @@ Every class that implements an iterator must have the following **two pieces**.
 	- `operator*()` to get the data, where `*it` is the data at iterator `it`
 	- `operator++()` to move/traverse through the data in a data structure
 		- This standardized approach is what allows us to iterate via a data structure regardless of whether or not we iterate via a pointer (`LinkedList`) or index (`Array`)
+	- `operator!=()`
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0Mzc2MzMyMiwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbMTcwMDg0MjMzLDIwMTg0Nzk4NjZdfQ==
 -->
