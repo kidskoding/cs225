@@ -122,9 +122,14 @@ The rest of the code in our `for` loop prints the fields of the objects being tr
 	
 This code is now great, we utilize a `std::iterator` with a `std::vector`.  We don't worry about how `std::vector` implemented the iterator.
 
+We could add some other changes to this code. One is by using the `auto` keyword to define the iterator
+
+``auto it = zoo.begin();``
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDcxMDcyMiwtMTAwNTg2NDkxMSwxOT
-EyMTE3NjY4LC05MTQ2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3
-ODQ2LDEzMjE0Mjc2MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbLTIwMDI1MTcyNTIsLTg0MDcxMDcyMiwtMT
+AwNTg2NDkxMSwxOTEyMTE3NjY4LC05MTQ2NTA4ODksLTIwMjUz
+ODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2MjAsMjAxODQ3OTg2Nl
+19
 -->
