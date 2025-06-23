@@ -28,12 +28,13 @@ Every class that implements an iterator must have the following **two pieces**.
 		- `end()` can come in handy a lot to check if an item exists in an iterator.
 		- If I want to find string `milk` in a `std::vector<std::string>` named `groceries`, i can write `milk != groceries.end()` to see if `groceries` contains milk.
 		- If `milk` is found, `end()` will return an iterator to what it found (in this case is `milk`) or will return an iterator to `end()` saying that there is no milk in the list.
+		- This is a useful tool because we get an extra feature in our data structures to say that an element does/does not exist
 
-2. 
+2. Must have the base ca
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMjk1OTE4LDIwMTg0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbNzM1Mjc1NzUyLDIwMTg0Nzk4NjZdfQ==
 -->
