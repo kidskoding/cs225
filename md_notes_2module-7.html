@@ -103,7 +103,8 @@ $(function(){initNavTree('md_notes_2module-7.html',''); initResizable(true); });
 <p>One concept that is often in the scope of DSA is the <b>iterator</b>. An iterator is an object that traverses through all the elements/items in a data structure.</p>
 <p>Suppose we had 3 data structures, <code>Array</code>, <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, and a <code>Hypercube</code> (also known as a tesseract and is a 4D cube). How would we be able to traverse through every element in this data structure?</p>
 <p>The solution is simply an iterator, which provides encapsulated access to our data in a data structure. Each data structure, <code>Array</code>, <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, and <code>Hypercube</code> has its own way of iterating through its data</p><ul>
-<li>For example, an `Arra</li>
+<li>For example, an <code>Array</code> typically uses an index to iterate, where <code>index++</code> traverses through each element in an array</li>
+<li>Similarly, a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> uses a pointer to iterate, where <code>cur-&gt;next</code> represents a pointer to the next <code><a class="el" href="structListNode.html">ListNode</a></code> in a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>. This is shown in the table below</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md65"></a>
 Iterate through data in each data structure</h1>
@@ -140,6 +141,7 @@ Iterators with respect to Classes</h1>
 <li>This standardized approach is what allows us to iterate via a data structure regardless of whether or not we iterate via a pointer (<code><a class="el" href="classLinkedList.html">LinkedList</a></code>) or index (<code>Array</code>)</li>
 </ul>
 </li>
+<li><code>operator!=()</code></li>
 </ul>
 </li>
 </ol>
