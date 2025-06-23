@@ -107,7 +107,8 @@ var NAVTREE =
     ] ],
     [ "Module 7 - Iterators", "md_notes_2module-7.html", [
       [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md65", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md66", null ]
+      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md66", null ],
+      [ "Implementing begin() and end() for common Data Structures", "md_notes_2module-7.html#autotoc_md67", null ]
     ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
