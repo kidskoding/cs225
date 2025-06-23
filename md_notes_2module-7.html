@@ -213,7 +213,10 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <div class="fragment"><div class="line">for(std::vector&lt;Animal&gt;::iterator it = zoo.begin();  it != zoo.end(); it++)  {</div>
 <div class="line">    std::cout &lt;&lt; it-&gt;name &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;food &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>one of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, <code>std::vector</code> implements th     </p>
+</div><!-- fragment --><p>one of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, <code>std::vector</code> implements this operator to work for its iterator, so this isn't an issue in our example code.</p>
+<p>However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (<code>++it</code>)</p><ul>
+<li>If I were to do <code>it++</code>, then post increment would create a copy of the current iterator, store that iterator,     </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
