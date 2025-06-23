@@ -109,9 +109,12 @@ one of the problems with this code is using the post-increment operator over the
 However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (`++it`)
 - If I were to do `it++`, then post increment would make a copy of  the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!
 
-The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it **behaves like one** and "points" to the current object in the container. To access members of the object the iterator refers to, we dereference it using the arrow operator `->`
+The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it **behaves like one** and "points" to the current object in the container. 
+- To access members of the object the iterator refers to, we dereference it using the arrow operator `->`, such as `it->name` (`*(it).name` also works but `it->name` is a short form of dereferencing and calling a pointer's member)
+
+This code is great, we utilize an iterator with a `std::vector`. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzk0NDgxLDE5MTIxMTc2NjgsLTkxND
-Y1MDg4OSwtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMTMyMTQyNzYy
-MCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTQxNjAzMDQwNywxOTEyMTE3NjY4LC05MT
+Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
+MjAsMjAxODQ3OTg2Nl19
 -->
