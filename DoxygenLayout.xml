@@ -4,7 +4,7 @@
   <!-- Navigation index tabs for HTML output -->
   <navindex>
     <tab type="mainpage" visible="yes" title=""/>
-    <tab type="pages" visible="no" title="" intro=""/>
+    <tab type="pages" visible="yes" title="" intro=""/>
     <tab type="topics" visible="yes" title="" intro=""/>
     <tab type="modules" visible="yes" title="" intro="">
       <tab type="modulelist" visible="yes" title="" intro=""/>
@@ -41,25 +41,6 @@
       <tab type="globals" visible="yes" title="" intro=""/>
     </tab>
     <tab type="examples" visible="yes" title="" intro=""/>
-    
-    <tab type="user" url="\ref md_readme" title="README" />
-    <tab type="usergroup" title="Lecture Notes">
-      <tab type="user" url="\ref md_lecture2" title="Lecture 2 - C++ and Lists" />
-      <tab type="user" url="\ref md_lecture3" title="Lecture 3 - Linked List Implementation" />
-      <tab type="user" url="\ref md_lecture4" title="Lecture 4 - Linked Lists and List <vector>" />
-      <tab type="user" url="\ref md_lecture5" title="Lecture 5 - Amortized Analysis" />
-      <tab type="user" url="\ref md_lecture6" title="Lecture 6 - Stacks and Queues" />
-    </tab>
-    
-    <tab type="usergroup" title="Midterm Reviews">
-      <tab type="usergroup" title="Midterm 0">
-        <tab type="user" url="\ref md_midterm0" title="Midterm 0 - Review of Prerequisite Courses" />
-        <tab type="user" url="\ref md_theory" title="Theory Review" />
-        <tab type="user" url="\ref md_programming" title="Programming Review" />
-      </tab>
-    </tab>
-
-
   </navindex>
 
   <!-- Layout definition for a class page -->
