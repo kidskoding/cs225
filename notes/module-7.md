@@ -93,9 +93,9 @@ int main()  {
 }
 ```
 
-`Animal` stores 
+`Animal` stores 3 things, `name`, `food`, `big`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzgwOTM2MCwxOTEyMTE3NjY4LC05MT
+eyJoaXN0b3J5IjpbMjAwMzkzMDQwOSwxOTEyMTE3NjY4LC05MT
 Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
 MjAsMjAxODQ3OTg2Nl19
 -->
