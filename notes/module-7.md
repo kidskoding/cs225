@@ -111,7 +111,7 @@ However, if we wanted to implement an iterator minimally, we would use the pre-i
 
 The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. 
 - Notice that we access the members of `it` by dereferencing it and then calling a member via `(*it).next`. Recall that in C++, `(*it).name` is equivalent to `it->name`.  Couldn't we use the arrow operator (`->`) instead as a shorthand of calling a member on a pointer?
-	- To simply answer that question, `->` is typically implemented manually by several containers, but it is **not required**. 
+	- To simply answer this question, `->` is typically implemented manually by several containers, but it is **not required**. 
 	- `std::vector` and many other containers do implement the `->` , so we could replace that snippet with `->`, but the code snippet assumes that `->` is not implemented by the container
 	
 	``` 
@@ -159,10 +159,12 @@ for(auto it = zoo.begin(); it != zoo.end(); ++it) {
 }
 ```
 
-Recall that the code above assumes that `->` is not implemented
+Recall that the code above assumes that `->` is not implemented for the iterator
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDk1OTM4MSwyMDk2NDEwOTcsNjQzMT
-kzNDEwLC0yMDAyNTE3MjUyLC04NDA3MTA3MjIsLTEwMDU4NjQ5
-MTEsMTkxMjExNzY2OCwtOTE0NjUwODg5LC0yMDI1Mzg4Mzg4LD
-YzOTE0Nzg0NiwxMzIxNDI3NjIwLDIwMTg0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTE2NTIzNjI1MzAsMjA5NjQxMDk3LDY0Mz
+E5MzQxMCwtMjAwMjUxNzI1MiwtODQwNzEwNzIyLC0xMDA1ODY0
+OTExLDE5MTIxMTc2NjgsLTkxNDY1MDg4OSwtMjAyNTM4ODM4OC
+w2MzkxNDc4NDYsMTMyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
 -->
