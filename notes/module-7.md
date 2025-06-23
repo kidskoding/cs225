@@ -109,9 +109,9 @@ one of the problems with this code is using the post-increment operator over the
 However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (`++it`)
 - If I were to do `it++`, then post increment would make a copy of  the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!
 
-The rest of the code in our for loop snippets prints the fields associated with the iterator. Remember that an iterator is a 
+The rest of the code in our for loop snippets prints the fields associated with each iterator. Remember that an iterator is just a **pointer** to the current object in the iteration, so we need to dereference it and then call a member using `->`  (the arrow function; `*(it).name` also works but less convenient).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk2OTY4NzMsMTkxMjExNzY2OCwtOT
-E0NjUwODg5LC0yMDI1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3
-NjIwLDIwMTg0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTc4MzQ3NDMyMCwxOTEyMTE3NjY4LC05MT
+Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
+MjAsMjAxODQ3OTg2Nl19
 -->
