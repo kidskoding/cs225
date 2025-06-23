@@ -215,8 +215,9 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <div class="line">}</div>
 </div><!-- fragment --><p>one of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, <code>std::vector</code> implements this operator to work for its iterator, so this isn't an issue in our example code.</p>
 <p>However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (<code>++it</code>)</p><ul>
-<li>If I were to do <code>it++</code>, then post increment would create a copy of the current iterator, store that iterator, and then return the value of the stored iterator that will appear there in the code and get ignored and do nothing.     </li>
+<li>If I were to do <code>it++</code>, then post increment would make a copy of the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!</li>
 </ul>
+<p>The rest of the code in our for loop snippets prints the fields associated with the iterator. Remember that an iterator is a     </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
