@@ -1,7 +1,7 @@
 var searchData=
 [
   ['background_0',['Background',['../md_notes_2module-1.html#autotoc_md40',1,'']]],
-  ['begin_20tt_20and_20tt_20end_20tt_20for_20common_20data_20structures_1',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for common Data Structures',['../md_notes_2module-7.html#autotoc_md67',1,'']]],
+  ['begin_20tt_20and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_1',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md67',1,'']]],
   ['big_20o_2',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
   ['big_20o_20of_20common_20algorithms_3',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
   ['bipartite_20graph_4',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],

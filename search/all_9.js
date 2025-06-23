@@ -18,12 +18,14 @@ var searchData=
   ['and_20resources_15',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md42',1,'']]],
   ['and_20tt_20delete_20tt_16',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
   ['and_20tt_20dequeue_20tt_17',['&lt;tt&gt;CircularQueue&lt;/tt&gt; Implementation - &lt;tt&gt;enqueue&lt;/tt&gt; and &lt;tt&gt;dequeue&lt;/tt&gt;',['../md_notes_2module-6.html#autotoc_md63',1,'']]],
-  ['and_20tt_20end_20tt_20for_20common_20data_20structures_18',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for common Data Structures',['../md_notes_2module-7.html#autotoc_md67',1,'']]],
+  ['and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_18',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md67',1,'']]],
   ['and_20tt_20linked_20list_20tt_20implementation_19',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
-  ['arguments_20',['Passing Arguments',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md28',1,'']]],
-  ['array_20implementation_20of_20a_20tt_20list_20tt_21',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['arraylist_22',['ArrayList',['../classArrayList.html',1,'']]],
-  ['arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_23',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['ary_20trees_24',['$m$-ary Trees',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14',1,'']]],
-  ['assignment_20operator_25',['Assignment Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]]
+  ['and_20tt_20linkedlist_20tt_20',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md67',1,'']]],
+  ['arguments_21',['Passing Arguments',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md28',1,'']]],
+  ['array_20implementation_20of_20a_20tt_20list_20tt_22',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['array_20tt_20and_20tt_20linkedlist_20tt_23',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md67',1,'']]],
+  ['arraylist_24',['ArrayList',['../classArrayList.html',1,'']]],
+  ['arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_25',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['ary_20trees_26',['$m$-ary Trees',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14',1,'']]],
+  ['assignment_20operator_27',['Assignment Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]]
 ];
