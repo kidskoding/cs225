@@ -43,10 +43,15 @@ There are also some other nice features that can be implemented in an iterator, 
 - Recall that this is the shorthand for dereferencing a pointer and then calling its member, where 
 `*(item).data` is equivalent to `item->data`. 
 
-A bidirectional iterator could also b
+A bidirectional iterator could also be implemented in a data structure, where it can traverse through elements **forwards** and **backwards**. 
+
+With these requirements, how would we implement `begin()` and `end()` with the example data structure mentioned earlier in this module?
+
+## Implementing `begin()` and `end()` for common Data Structures
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTEzNzcyNjQsMTMyMTQyNzYyMCwyMD
-E4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbMTM5MzE1NTk5NCwxMzIxNDI3NjIwLDIwMT
+g0Nzk4NjZdfQ==
 -->
