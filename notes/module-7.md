@@ -88,14 +88,14 @@ int main()  {
 	zoo.push_back(p);
 	zoo.push_back(b);
 
-	for(std::vector<Animal>::iterator it = zoo.begin();  it  !=  zoo.end();  it++)  {
-		std::cout  <<  it->name  <<  " "  <<  it->food  <<  std::endl;
+	for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end();  it++)  {
+		std::cout << it->name << " " << it->food  <<  std::endl;
 	}
 	return  0;
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTM3MDI4OTYsLTkxNDY1MDg4OSwtMj
-AyNTM4ODM4OCw2MzkxNDc4NDYsMTMyMTQyNzYyMCwyMDE4NDc5
-ODY2XX0=
+eyJoaXN0b3J5IjpbMTMzNTMwNjM5MiwtOTE0NjUwODg5LC0yMD
+I1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3NjIwLDIwMTg0Nzk4
+NjZdfQ==
 -->
