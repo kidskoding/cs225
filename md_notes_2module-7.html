@@ -219,12 +219,12 @@ Iterator Usage Example with <code>std::vector</code></h2>
 </ul>
 <p>The rest of the code in our <code>for</code> loop prints the fields of the objects being traversed by the iterator.</p><ul>
 <li>Notice that we access the members of <code>it</code> by dereferencing it and then calling a member via <code>(*it).next</code>. Recall that in C++, <code>(*it).name</code> is equivalent to <code>it-&gt;name</code>. Couldn't we use the arrow operator (<code>-&gt;</code>) instead as a shorthand of calling a member on a pointer?<ul>
-<li>To Since iterators can behave like pointers, <code>-&gt;</code> is typically implemented by many containers, but it is not required. And to answer that question is just simply the fact that the arrow operator (<code>-&gt;</code>) is often implemented in a case by case basis per container</li>
+<li>To simply answer that question, <code>-&gt;</code> is typically implemented manually by several containers, but it is <b>not required</b>.</li>
+<li><code>std::vector</code> and many other containers do implement the <code>-&gt;</code> , so we could replace that snipped with <code>-&gt;</code></li>
+<li>for(std::vector&lt;Animal&gt;::iterator it = zoo.begin(); it != zoo.end(); it++) { std::cout &lt;&lt; (*it).name &lt;&lt; " " &lt;&lt; (*it).food &lt;&lt; std::endl; } ``<code> This code is great, we utilize a</code>std::iterator<code>with a</code>std::vector<code>. We don't worry about how</code>std::vector` implemented the iterator.</li>
 </ul>
 </li>
-<li>To access members of the object the iterator refers to, we dereference it using the arrow operator <code>-&gt;</code>, such as <code>it-&gt;name</code> (<code>*(it).name</code> also works but <code>it-&gt;name</code> is a short form of dereferencing and calling a pointer's member)</li>
 </ul>
-<p>This code is great, we utilize a <code>std::iterator</code> with a <code>std::vector</code>. We don't worry about how <code>std::vector</code> implemented the iterator.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
