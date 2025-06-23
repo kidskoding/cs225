@@ -217,7 +217,7 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <p>However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (<code>++it</code>)</p><ul>
 <li>If I were to do <code>it++</code>, then post increment would make a copy of the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!</li>
 </ul>
-<p>The rest of the code in our for loop snippets prints the fields associated with the iterator. Remember that an iterator is a     </p>
+<p>The rest of the code in our for loop snippets prints the fields associated with each iterator. Remember that an iterator is just a <b>pointer</b> to the current object in the iteration, so we need to dereference it and then call a member using <code>-&gt;</code> (the arrow function; <code>*(it).name</code> also works but less convenient).     </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
