@@ -49,9 +49,12 @@ With these requirements, how would we implement `begin()` and `end()` with the e
 
 ## Implementing `begin()` and `end()` for common Data Structures
 
-
-
+| Data Structure | `::begin` | `::end` |
+| ------------------| -------------------- | ------- |
+`LinkedList` | `Iterator(head_)` | `Iterator(nullptr)` | `cur->data` | 
+`Array` | `index` | `data[index]` |
+`Hypercube` | `(x, y, z)` (a list or tuple of dimensions) | ?? (cannot be determined)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzE1NTk5NCwxMzIxNDI3NjIwLDIwMT
-g0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTE0ODYxOTE5NDMsMTMyMTQyNzYyMCwyMD
+E4NDc5ODY2XX0=
 -->
