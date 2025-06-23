@@ -14,15 +14,19 @@ The solution is simply an iterator, which provides encapsulated access to our da
 `Array` | `index` | `data[index]` | `++index` |
 `Hypercube` | `(x, y, z)` (a list or tuple of dimensions) | ?? (cannot be determined) | ?? (cannot be determined)
 
-These intuitively make sense because we know how these data structures work. With an array, we can use its index
+These intuitively make sense because we know how these data structures work. With an array, we can use its index to access an element, a `LinkedList` we can hold a pointer to the next node, etc.
+
+But if we don't know how the data structure works, it will be very difficult to implement an iterator for it because we wouldn't know how to iterate through its elements.
 
 ## Iterators with respect to Classes
 
 Every class that implements an iterator must have the following **two pieces**. 
 
+1. 
+
 - 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQ0OTk2ODgsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbLTYwNDYwNjQ1NywyMDE4NDc5ODY2XX0=
 -->
