@@ -67,8 +67,12 @@ Lets explain the table above for an `Array` and `LinkedList`
 		- You could also have the `Iterator` constructor take in a $0$
 	- We would implement `end()` by returning `Iterator(size)`. This makes sense because size is the last element plus 1 in an array! 
 
+### Iterator Usage Example with `std::vector`
+
+Take a look at the following `Animal` class below
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMj
-E0Mjc2MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbLTkxNDY1MDg4OSwtMjAyNTM4ODM4OCw2Mz
+kxNDc4NDYsMTMyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
 -->
