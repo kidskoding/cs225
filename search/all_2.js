@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['and_20resources_0',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md3',1,'']]],
-  ['arraylist_1',['ArrayList',['../classArrayList.html',1,'']]]
+  ['1_20introduction_20to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
 ];

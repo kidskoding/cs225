@@ -25,10 +25,71 @@
 var NAVTREE =
 [
   [ "CS 225", "index.html", [
+    [ "Midterm 0 - Review of Prerequisite Material", "md_notes_2midterm-reviews_2midterm-0.html", [
+      [ "Topics Covered", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1", null ],
+      [ "Recursive Definitions", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2", null ],
+      [ "Proofs by Induction", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3", null ],
+      [ "Big-O", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4", [
+        [ "Big-O of Common Algorithms", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5", null ]
+      ] ],
+      [ "Graphs", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md6", [
+        [ "Additional Graph terminology", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7", null ],
+        [ "Degree", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md8", null ],
+        [ "Isomorphism", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9", null ],
+        [ "Connectivity", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md10", null ],
+        [ "Bipartite Graph", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11", null ]
+      ] ],
+      [ "Trees", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md12", [
+        [ "Tree Vocabulary", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md13", null ],
+        [ "$m$-ary Trees", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14", null ],
+        [ "Height and number of nodes", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15", null ],
+        [ "Public vs Private", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16", [
+          [ "Classes vs Structs", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17", null ],
+          [ "Member Functions", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md18", null ]
+        ] ],
+        [ "Constructors", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md19", null ],
+        [ "Namespaces", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md20", null ]
+      ] ],
+      [ "References and Pointers", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21", null ],
+      [ "Dynamic Memory Allocation", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22", [
+        [ "new and delete", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23", null ],
+        [ "Destructors", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md24", null ],
+        [ "RAII", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25", null ],
+        [ "Heap", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md26", null ],
+        [ "Stack", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27", null ],
+        [ "Passing Arguments", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md28", null ],
+        [ "Returning Values", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29", null ]
+      ] ],
+      [ "Copy Semantics", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30", [
+        [ "Shallow and Deep Copies", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31", null ],
+        [ "Copy Assignment Operator", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32", null ],
+        [ "Default and Delete on Copy constructors", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33", null ]
+      ] ],
+      [ "Move Semantics", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34", [
+        [ "rvalue references", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35", null ],
+        [ "Move Constructor", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md36", null ],
+        [ "Move Assignment Operator", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37", null ]
+      ] ],
+      [ "Rule of Zero/Three/Five", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38", null ]
+    ] ],
     [ "Module 1 - Introduction to CS 225", "md_notes_2module-1.html", [
-      [ "Background", "md_notes_2module-1.html#autotoc_md1", null ],
-      [ "Grading", "md_notes_2module-1.html#autotoc_md2", null ],
-      [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md3", null ]
+      [ "Background", "md_notes_2module-1.html#autotoc_md40", null ],
+      [ "Grading", "md_notes_2module-1.html#autotoc_md41", null ],
+      [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md42", null ]
+    ] ],
+    [ "Module 2 - C++ Review", "md_notes_2module-2.html", [
+      [ "Encapsulation", "md_notes_2module-2.html#autotoc_md44", null ],
+      [ "Memory Management - Ownership", "md_notes_2module-2.html#autotoc_md45", null ],
+      [ "Rule of Zero/Three/Five", "md_notes_2module-2.html#autotoc_md46", null ]
+    ] ],
+    [ "Module 3 - <tt>List</tt> ADT and <tt>Linked List</tt> Implementation", "md_notes_2module-3.html", [
+      [ "insertAtFront", "md_notes_2module-3.html#autotoc_md48", null ],
+      [ "insert", "md_notes_2module-3.html#autotoc_md49", [
+        [ "find", "md_notes_2module-3.html#autotoc_md50", null ]
+      ] ],
+      [ "operator[]", "md_notes_2module-3.html#autotoc_md51", [
+        [ "remove", "md_notes_2module-3.html#autotoc_md52", null ]
+      ] ]
     ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [

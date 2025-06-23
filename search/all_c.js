@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_README.html',1,'']]],
-  ['remove_1',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
-  ['resources_2',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md3',1,'']]]
+  ['heap_0',['Heap',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md26',1,'']]],
+  ['height_20and_20number_20of_20nodes_1',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]]
 ];
