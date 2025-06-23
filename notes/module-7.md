@@ -6,7 +6,11 @@ Suppose we had 3 data structures, `Array`, `LinkedList`, and a `Hypercube` (also
 
 The solution is simply an iterator, which provides encapsulated access to our data in a data structure. Each data structure, `Array`, `LinkedList`, and `Hypercube` has its own way to get all its elements.
 
-| 
+| Current Location | Current Data | Next
+| -------------------- | --------------- | --
+| `ListNode*` | `cur->data` | 
+| `index` | 
+| `(x, y, z)` (list or tuple of dimensions) | 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTUzNzI4OCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTg4Nzk0ODgxNCwyMDE4NDc5ODY2XX0=
 -->
