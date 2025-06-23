@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['implementation_0',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
-  ['implementation_20of_20a_20tt_20list_20tt_1',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['introduction_20to_20cs_20225_2',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
+  ['c_20review_0',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
+  ['cs_20225_1',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
 ];

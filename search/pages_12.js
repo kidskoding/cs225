@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['passing_20arguments_0',['Passing Arguments',['../md_programming.html#autotoc_md24',1,'']]],
-  ['pointers_1',['References and Pointers',['../md_programming.html#autotoc_md17',1,'']]],
-  ['prerequisite_20courses_2',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
-  ['private_3',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]],
-  ['programming_4',['programming',['../md__midterm_01_reviews_2_midterm_010_2programming.html',1,'']]],
-  ['programming_20review_5',['Programming Review',['../md_programming.html',1,'']]],
-  ['proofs_20by_20induction_6',['Proofs by Induction',['../md_theory.html#autotoc_md36',1,'']]],
-  ['public_20vs_20private_7',['Public vs Private',['../md_programming.html#autotoc_md12',1,'']]]
+  ['to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
+  ['tt_1',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_2',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_3',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_4',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20implementation_5',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['tt_20linked_20list_20tt_20implementation_6',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['tt_20list_20tt_7',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_8',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]]
 ];

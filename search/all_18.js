@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['s_20queues_0',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md62',1,'']]],
-  ['semantics_1',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['shallow_20and_20deep_20copies_2',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['stack_3',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['stacks_4',['Stacks',['../md_notes_2module-6.html#autotoc_md61',1,'']]],
-  ['stacks_20and_20queues_5',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
-  ['stacks_20v_20s_20queues_6',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md62',1,'']]],
-  ['structs_7',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
+  ['readme_1',['README',['../md_README.html',1,'']]],
+  ['recursive_20definitions_2',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
+  ['references_3',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
+  ['references_20and_20pointers_4',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
+  ['remove_5',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
+  ['remove_20tt_6',['&lt;tt&gt;remove&lt;/tt&gt;',['../md_notes_2module-3.html#autotoc_md52',1,'']]],
+  ['resizing_20by_20adding_202_20elements_20every_20time_7',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md56',1,'']]],
+  ['resizing_20by_20doubling_20the_20elements_20every_20time_8',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md57',1,'']]],
+  ['resources_9',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md42',1,'']]],
+  ['returning_20values_10',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
+  ['review_11',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
+  ['review_20of_20prerequisite_20material_12',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rule_20of_20zero_20three_20five_13',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-2.html#autotoc_md46',1,'Rule of Zero/Three/Five']]],
+  ['rvalue_20references_14',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
 ];
