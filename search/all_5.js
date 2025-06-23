@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['find_0',['find',['../classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde',1,'LinkedList']]]
+  ['github_20io_20cs225_20notes_20index_20html_20here_20a_0',['All references of this code are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]]
 ];
