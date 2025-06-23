@@ -237,7 +237,10 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <div class="fragment"><div class="line">for(const Animal&amp; animal : zoo) {</div>
 <div class="line">    std::cout &lt;&lt; animal.name &lt;&lt; &quot; &quot; &lt;&lt; animal.food &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>In this for loop, I am introducing a constant <code>Animal</code> reference, <code>Animal&amp;</code>, and this reference is going to take the value of every      </p>
+</div><!-- fragment --><p>In this for loop, I am introducing a constant <code>Animal</code> reference, <code>Animal&amp;</code>, and this reference is going to take the value of every element in <code>zoo</code> one at a time using the iterator interface.</p><ul>
+<li>The <code>animal</code> variable is the dereferenced iterator, so I would have to use <code>.</code> instead of <code>-&gt;</code></li>
+<li>This approach completely abstracts/hides the fact I am even using an iterator      </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
