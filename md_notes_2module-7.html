@@ -219,8 +219,9 @@ Iterator Usage Example with <code>std::vector</code></h2>
 </ul>
 <p>The rest of the code in our <code>for</code> loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it <b>behaves like one</b> and "points" to the current object in the container.</p><ul>
 <li>To access members of the object the iterator refers to, we dereference it using the arrow operator <code>-&gt;</code>, such as <code>it-&gt;name</code> (<code>*(it).name</code> also works but <code>it-&gt;name</code> is a short form of dereferencing and calling a pointer's member)</li>
+<li>Since iterators can behave like pointers, the <code>-&gt;</code> is typically implemented b</li>
 </ul>
-<p>This code is great, we utilize an iterator with a <code>std::vector</code>.     </p>
+<p>This code is great, we utilize a <code>std::iterator</code> with a <code>std::vector</code>. We don't worry about how <code>std::vector</code> implemented the iterator.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
