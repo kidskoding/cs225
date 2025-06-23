@@ -14,6 +14,8 @@ The solution is simply an iterator, which provides encapsulated access to our da
 `Array` | `index` | `data[index]` | `++index` |
 `Hypercube` | `(x, y, z)` (a list or tuple of dimensions) | ?? (cannot be determined) | ?? (cannot be determined)
 
+These intuitively make sense because we know how these data structures work. With an array, we can use its index
+
 ## Iterators with respect to Classes
 
 Every class that implements an iterator must have the following **two pieces**. 
@@ -22,5 +24,5 @@ Every class that implements an iterator must have the following **two pieces**.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzQ5MDgxOSwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTE5NjQ0OTk2ODgsMjAxODQ3OTg2Nl19
 -->
