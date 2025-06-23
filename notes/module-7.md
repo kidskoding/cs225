@@ -127,8 +127,10 @@ We could add some other changes to this code. One is by using the `auto` keyword
 ``auto it = zoo.begin();``
 
 `auto` is nice because the compiler infers the type of our iterator. This is good when we don't have to really remember what container we are working with. Whether to use `auto` is in fact debatable among the community.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMjE5OTg3Myw2NDMxOTM0MTAsLTIwMD
+eyJoaXN0b3J5IjpbLTI1OTE1NjcwNyw2NDMxOTM0MTAsLTIwMD
 I1MTcyNTIsLTg0MDcxMDcyMiwtMTAwNTg2NDkxMSwxOTEyMTE3
 NjY4LC05MTQ2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LD
 EzMjE0Mjc2MjAsMjAxODQ3OTg2Nl19
