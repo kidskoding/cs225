@@ -93,9 +93,10 @@ int main()  {
 }
 ```
 
-`Animal` stores 3 things, `name`, `food`, `big`
+1. `Animal` stores 3 things, `name`, `food`, which describe the animal's name, food, and a boolean `big` that determines whether an `Animal` is big or not.
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzkzMDQwOSwxOTEyMTE3NjY4LC05MT
+eyJoaXN0b3J5IjpbMTIyODUwMTMyNywxOTEyMTE3NjY4LC05MT
 Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
 MjAsMjAxODQ3OTg2Nl19
 -->
