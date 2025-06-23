@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['find_0',['find',['../classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde',1,'LinkedList']]]
+  ['and_20resources_0',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md3',1,'']]],
+  ['arraylist_1',['ArrayList',['../classArrayList.html',1,'']]]
 ];

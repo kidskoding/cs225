@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_README.html',1,'']]],
-  ['remove_1',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]]
+  ['info_20and_20resources_0',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md3',1,'']]],
+  ['insert_1',['insert',['../classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32',1,'LinkedList']]],
+  ['insertatfront_2',['insertAtFront',['../classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908',1,'LinkedList']]],
+  ['introduction_20to_20cs_20225_3',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
 ];

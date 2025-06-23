@@ -25,6 +25,11 @@
 var NAVTREE =
 [
   [ "CS 225", "index.html", [
+    [ "Module 1 - Introduction to CS 225", "md_notes_2module-1.html", [
+      [ "Background", "md_notes_2module-1.html#autotoc_md1", null ],
+      [ "Grading", "md_notes_2module-1.html#autotoc_md2", null ],
+      [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md3", null ]
+    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

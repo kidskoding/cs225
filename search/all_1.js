@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['circularqueue_0',['CircularQueue',['../classCircularQueue.html',1,'']]]
+  ['225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
 ];

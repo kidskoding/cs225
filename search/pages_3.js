@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['4_20linked_20list_20and_20list_0',['Lecture 4 - Linked List and List &amp;lt;vector&amp;gt;',['../md_lecture4.html',1,'']]]
+  ['introduction_20to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
 ];
