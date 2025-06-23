@@ -114,15 +114,17 @@ The rest of the code in our `for` loop prints the fields of the objects being tr
 	- To simply answer that question, `->` is typically implemented manually by several containers, but it is **not required**. 
 	- `std::vector` and many other containers do implement the `->` , so we could replace that snipped with `->`
 	
-	- for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
-		std::cout << (*it).name << " " << (*it).food << std::endl;
+	``` 
+	for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
+		std::cout << it->name << " " << it->food << std::endl;
 	}
 	```
-This code is great, we utilize a `std::iterator` with a `std::vector`.  We don't worry about how `std::vector` implemented the iterator.
+	
+This code is now great, we utilize a `std::iterator` with a `std::vector`.  We don't worry about how `std::vector` implemented the iterator.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTI5MTczMywtMTAwNTg2NDkxMSwxOT
+eyJoaXN0b3J5IjpbLTg0MDcxMDcyMiwtMTAwNTg2NDkxMSwxOT
 EyMTE3NjY4LC05MTQ2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3
 ODQ2LDEzMjE0Mjc2MjAsMjAxODQ3OTg2Nl19
 -->
