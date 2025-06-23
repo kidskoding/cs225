@@ -27,7 +27,7 @@ Every class that implements an iterator must have the following **two pieces**.
 	- `end()` - Returns iterator to one past the end item in a container
 		- `end()` can come in handy a lot to check if an item exists in an iterator.
 		- If I want to find string `milk` in a `std::vector<std::string>` named `groceries`, i can write `milk != groceries.end()` to see if `groceries` contains milk.
-		- If `milk` is found, `end()` will return an iterator to what it found (in this case is `milk`) or will return an iterator to the end saying that there is no milk in the list.
+		- If `milk` is found, `end()` will return an iterator to what it found (in this case is `milk`) or will return an iterator to `end()` saying that there is no milk in the list.
 
 2. 
 
@@ -35,5 +35,5 @@ Every class that implements an iterator must have the following **two pieces**.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDAwNDUzNCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbMzQxMjk1OTE4LDIwMTg0Nzk4NjZdfQ==
 -->
