@@ -135,9 +135,11 @@ for(const Animal& animal : zoo) {
 	std::cout << animal.name << " " << animal.food << std::endl;
 }
 ```
+
+In this for loop, I am introducing a constant `Animal` reference, `Animal&`, and this reference is going to take the value of every 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NjQxMDk3LDY0MzE5MzQxMCwtMjAwMj
-UxNzI1MiwtODQwNzEwNzIyLC0xMDA1ODY0OTExLDE5MTIxMTc2
-NjgsLTkxNDY1MDg4OSwtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMT
-MyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTE3NzgwMDk0OCwyMDk2NDEwOTcsNjQzMT
+kzNDEwLC0yMDAyNTE3MjUyLC04NDA3MTA3MjIsLTEwMDU4NjQ5
+MTEsMTkxMjExNzY2OCwtOTE0NjUwODg5LC0yMDI1Mzg4Mzg4LD
+YzOTE0Nzg0NiwxMzIxNDI3NjIwLDIwMTg0Nzk4NjZdfQ==
 -->
