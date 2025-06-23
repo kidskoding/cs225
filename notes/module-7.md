@@ -128,10 +128,16 @@ We could add some other changes to this code. One is by using the `auto` keyword
 
 `auto` is nice because the compiler infers the type of our iterator. This is good when we don't have to really remember what container we are working with. Whether to use `auto` is in fact debatable among the community.
 
-Another w
+Another way to write the code is by using a range based for loop to loop through constant `Animal` references, `Animal&` , in a `std::vector`
+
+```
+for(const Animal& animal : zoo) {
+	std::cout << animal.name << " " << animal.food << std::endl;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjEzMTgwNSw2NDMxOTM0MTAsLTIwMD
-I1MTcyNTIsLTg0MDcxMDcyMiwtMTAwNTg2NDkxMSwxOTEyMTE3
-NjY4LC05MTQ2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LD
-EzMjE0Mjc2MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbMjA5NjQxMDk3LDY0MzE5MzQxMCwtMjAwMj
+UxNzI1MiwtODQwNzEwNzIyLC0xMDA1ODY0OTExLDE5MTIxMTc2
+NjgsLTkxNDY1MDg4OSwtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMT
+MyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
 -->
