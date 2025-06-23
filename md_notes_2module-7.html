@@ -200,13 +200,14 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <div class="line">    zoo.push_back(p);</div>
 <div class="line">    zoo.push_back(b);</div>
 <div class="line"> </div>
-<div class="line">    for(std::vector&lt;Animal&gt;::iterator it = zoo.begin();  it != zoo.end();  it++)  {</div>
+<div class="line">    for(std::vector&lt;Animal&gt;::iterator it = zoo.begin();  it != zoo.end(); it++)  {</div>
 <div class="line">        std::cout &lt;&lt; it-&gt;name &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;food &lt;&lt; std::endl;</div>
 <div class="line">    }</div>
 <div class="line">    return 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><ol type="1">
 <li><code>Animal</code> stores 3 things, <code>name</code>, <code>food</code>, which describe the animal's name, food, and a boolean <code>big</code> that determines whether an <code>Animal</code> is big or not.</li>
+<li>The <code>main</code> function creates 3 <code>Animal</code> objects and stores them in a <code>std::vector</code>. We then use an iterator to loop through the objects in the <code>std::vector</code>.</li>
 <li></li>
 </ol>
 </div></div><!-- contents -->
