@@ -77,6 +77,11 @@ var NAVTREE =
       [ "Grading", "md_notes_2module-1.html#autotoc_md41", null ],
       [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md42", null ]
     ] ],
+    [ "Module 2 - C++ Review", "md_notes_2module-2.html", [
+      [ "Encapsulation", "md_notes_2module-2.html#autotoc_md44", null ],
+      [ "Memory Management - Ownership", "md_notes_2module-2.html#autotoc_md45", null ],
+      [ "Rule of Zero/Three/Five", "md_notes_2module-2.html#autotoc_md46", null ]
+    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

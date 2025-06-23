@@ -1,7 +1,15 @@
 var searchData=
 [
-  ['semantics_0',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['shallow_20and_20deep_20copies_1',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['stack_2',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['structs_3',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
+  ['readme_1',['README',['../md_README.html',1,'']]],
+  ['recursive_20definitions_2',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
+  ['references_3',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
+  ['references_20and_20pointers_4',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
+  ['remove_5',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
+  ['resources_6',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md42',1,'']]],
+  ['returning_20values_7',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
+  ['review_8',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
+  ['review_20of_20prerequisite_20material_9',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rule_20of_20zero_20three_20five_10',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-2.html#autotoc_md46',1,'Rule of Zero/Three/Five']]],
+  ['rvalue_20references_11',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
 ];

@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['terminology_0',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
-  ['three_20five_1',['Rule of Zero/Three/Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'']]],
-  ['to_20cs_20225_2',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
-  ['topics_20covered_3',['Topics Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'']]],
-  ['tree_20vocabulary_4',['Tree Vocabulary',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md13',1,'']]],
-  ['trees_5',['Trees',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14',1,'$m$-ary Trees'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md12',1,'Trees']]],
-  ['tt_6',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
-  ['tt_20and_20tt_20delete_20tt_7',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
-  ['tt_20delete_20tt_8',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
-  ['tt_20new_20tt_20and_20tt_20delete_20tt_9',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]]
+  ['semantics_0',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
+  ['shallow_20and_20deep_20copies_1',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
+  ['stack_2',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
+  ['structs_3',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
 ];
