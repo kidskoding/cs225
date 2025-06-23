@@ -153,7 +153,14 @@ Iterators with respect to Classes</h1>
 <p>With these requirements, how would we implement <code>begin()</code> and <code>end()</code> with the example data structure mentioned earlier in this module?</p>
 <h1><a class="anchor" id="autotoc_md67"></a>
 Implementing <code>begin()</code> and <code>end()</code> for common Data Structures</h1>
-<p>| Data Structure | <code>::begin</code> | <code>::end</code> | | ---------------&mdash;| -----------------&mdash; | ----&mdash; | <code><a class="el" href="classLinkedList.html">LinkedList</a></code> | <code>Iterator(head_)</code> | <code>Iterator(nullptr)</code> | <code>cur-&gt;data</code> | <code>Array</code> | <code>index</code> | <code>data[index]</code> | <code>Hypercube</code> | <code>(x, y, z)</code> (a list or tuple of dimensions) | ?? (cannot be determined)    </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Data Structure   </th><th class="markdownTableHeadNone"><code>::begin</code>   </th><th class="markdownTableHeadNone"><code>::end</code>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code><a class="el" href="classLinkedList.html">LinkedList</a></code>   </td><td class="markdownTableBodyNone"><code>Iterator(head_)</code>   </td><td class="markdownTableBodyNone"><code>Iterator(nullptr)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>Array</code>   </td><td class="markdownTableBodyNone"><code>Iterator() { index = 0; }</code>   </td><td class="markdownTableBodyNone"><code>return Iterator(size)</code>   </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
