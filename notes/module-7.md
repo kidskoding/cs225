@@ -111,10 +111,13 @@ However, if we wanted to implement an iterator minimally, we would use the pre-i
 
 The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it **behaves like one** and "points" to the current object in the container. 
 - To access members of the object the iterator refers to, we dereference it using the arrow operator `->`, such as `it->name` (`*(it).name` also works but `it->name` is a short form of dereferencing and calling a pointer's member)
+- Since iterators can behave like pointers, the `->` is typically implemented b
 
-This code is great, we utilize an iterator with a `std::vector`. 
+This code is great, we utilize a `std::iterator` with a `std::vector`.  We don't worry about how `std::vector` implemented the iterator.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjAzMDQwNywxOTEyMTE3NjY4LC05MT
+eyJoaXN0b3J5IjpbMTE1NTEzNTU2MCwxOTEyMTE3NjY4LC05MT
 Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
 MjAsMjAxODQ3OTg2Nl19
 -->
