@@ -219,7 +219,7 @@ Iterator Usage Example with <code>std::vector</code></h2>
 </ul>
 <p>The rest of the code in our <code>for</code> loop prints the fields of the objects being traversed by the iterator.</p><ul>
 <li>Notice that we access the members of <code>it</code> by dereferencing it and then calling a member. Recall that in C++, <code>(*it).next</code> is equivalent to <code>it-&gt;next</code>. Couldn't we use the arrow operator (<code>-&gt;</code>) instead as a shortform of calling a member on a pointer?<ul>
-<li>And to answer that questi</li>
+<li>And to answer that question is just simply the fact that the arrow operator (<code>-&gt;</code>) is often implemented</li>
 </ul>
 </li>
 <li>To access members of the object the iterator refers to, we dereference it using the arrow operator <code>-&gt;</code>, such as <code>it-&gt;name</code> (<code>*(it).name</code> also works but <code>it-&gt;name</code> is a short form of dereferencing and calling a pointer's member)</li>
