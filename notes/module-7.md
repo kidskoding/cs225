@@ -100,7 +100,7 @@ However, take a look at a snippet of the code above, specifically the part that 
 
 ```
 for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
-	std::cout << it->name << " " << it->food << std::endl;
+	std::cout << (*it).name << " " << (*it).food << std::endl;
 }
 ```
 
@@ -109,15 +109,16 @@ one of the problems with this code is using the post-increment operator over the
 However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (`++it`)
 - If I were to do `it++`, then post increment would make a copy of  the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!
 
-The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it **behaves like one** and "points" to the current object in the container. 
+The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. 
+- Notice that we access the members of `it` by dereferencing 
 - To access members of the object the iterator refers to, we dereference it using the arrow operator `->`, such as `it->name` (`*(it).name` also works but `it->name` is a short form of dereferencing and calling a pointer's member)
-- Since iterators can behave like pointers, the `->` is typically implemented b
+- Since iterators can behave like pointers, the `->` is typically implemented by many containers, but it is not required. 
 
 This code is great, we utilize a `std::iterator` with a `std::vector`.  We don't worry about how `std::vector` implemented the iterator.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTEzNTU2MCwxOTEyMTE3NjY4LC05MT
+eyJoaXN0b3J5IjpbLTIwMDc2NTc4NiwxOTEyMTE3NjY4LC05MT
 Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
 MjAsMjAxODQ3OTg2Nl19
 -->
