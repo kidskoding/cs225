@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['grading_0',['Grading',['../md_notes_2module-1.html#autotoc_md41',1,'']]],
-  ['graph_1',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
-  ['graph_20terminology_2',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
-  ['graphs_3',['Graphs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md6',1,'']]]
+  ['heap_0',['Heap',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md26',1,'']]],
+  ['height_20and_20number_20of_20nodes_1',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['c_20review_0',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
-  ['cs_20225_1',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
+  ['cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
 ];
