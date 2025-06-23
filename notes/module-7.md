@@ -110,7 +110,8 @@ However, if we wanted to implement an iterator minimally, we would use the pre-i
 - If I were to do `it++`, then post increment would make a copy of  the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!
 
 The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. 
-- Notice that we access the members of `it` by dereferencing 
+- Notice that we access the members of `it` by dereferencing it and then calling a member. Recall that in C++, `(*it).next` is equivalent to `it->next`.  Couldn't we use the arrow operator (`->`) instead as a shortform of calling a member on a pointer?
+	- And to answer that questi 
 - To access members of the object the iterator refers to, we dereference it using the arrow operator `->`, such as `it->name` (`*(it).name` also works but `it->name` is a short form of dereferencing and calling a pointer's member)
 - Since iterators can behave like pointers, the `->` is typically implemented by many containers, but it is not required. 
 
@@ -118,7 +119,7 @@ This code is great, we utilize a `std::iterator` with a `std::vector`.  We don't
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc2NTc4NiwxOTEyMTE3NjY4LC05MT
-Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
-MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbLTEzNjA2MTg0NzIsMTkxMjExNzY2OCwtOT
+E0NjUwODg5LC0yMDI1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3
+NjIwLDIwMTg0Nzk4NjZdfQ==
 -->
