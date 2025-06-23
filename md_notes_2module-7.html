@@ -222,7 +222,7 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <li>To simply answer that question, <code>-&gt;</code> is typically implemented manually by several containers, but it is <b>not required</b>.</li>
 <li><code>std::vector</code> and many other containers do implement the <code>-&gt;</code> , so we could replace that snippet with <code>-&gt;</code>, but the code snippet assumes that <code>-&gt;</code> is not implemented by the container</li>
 </ul>
-<div class="fragment"><div class="line">for(std::vector&lt;Animal&gt;::iterator it = zoo.begin();  it != zoo.end(); it++)  {</div>
+<div class="fragment"><div class="line">for(std::vector&lt;Animal&gt;::iterator it = zoo.begin();  it != zoo.end(); ++it)  {</div>
 <div class="line">    std::cout &lt;&lt; it-&gt;name &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;food &lt;&lt; std::endl;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p> <br  />
