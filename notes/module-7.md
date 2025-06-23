@@ -23,12 +23,14 @@ But if we don't know how the data structure works, it will be very difficult to 
 Every class that implements an iterator must have the following **two pieces**. 
 
 1. Have two methods
-	- `begin()` - Return iterator to the start of the item in a container
-	- `end()` - Returns iterator to the end of the item in a container
+	- `begin()` - Return iterator to the start item in a container (index 0)
+	- `end()` - Returns iterator to one past the end item in a container
+		- `end()` can come in handy a lot to check if an item exists in an iterator.
+		- If I want to find string `milk` in a `std::vector<std::string
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE1MTIxNzQsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbMTg5NDk5MDU0MiwyMDE4NDc5ODY2XX0=
 -->
