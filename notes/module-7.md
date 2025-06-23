@@ -107,9 +107,11 @@ for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
 one of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, `std::vector` implements this operator to work for its iterator, so this isn't an issue in our example code. 
 
 However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (`++it`)
-- If I were to do `it++`, then post increment would create a copy of  the current iterator, store that iterator, and then return the value of the stored iterator that will appear there in the code and get ignored and do nothing.
+- If I were to do `it++`, then post increment would make a copy of  the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!
+
+The rest of the code in our for loop snippets prints the fields associated with the iterator. Remember that an iterator is a 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTAyMDc0OCwxOTEyMTE3NjY4LC05MT
-Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
-MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbLTE1Njk2OTY4NzMsMTkxMjExNzY2OCwtOT
+E0NjUwODg5LC0yMDI1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3
+NjIwLDIwMTg0Nzk4NjZdfQ==
 -->
