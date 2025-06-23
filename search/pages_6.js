@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['of_20prerequisite_20material_0',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]]
+  ['6_20stacks_20and_20queues_0',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]]
 ];

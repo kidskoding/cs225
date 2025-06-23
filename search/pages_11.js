@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['o_0',['Big-O',['../md_theory.html#autotoc_md37',1,'']]],
-  ['o_20of_20common_20algorithms_1',['Big-O of Common Algorithms',['../md_theory.html#autotoc_md38',1,'']]],
-  ['of_20common_20algorithms_2',['Big-O of Common Algorithms',['../md_theory.html#autotoc_md38',1,'']]],
-  ['of_20nodes_3',['Height and number of nodes',['../md_theory.html#autotoc_md49',1,'']]],
-  ['of_20prerequisite_20courses_4',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
-  ['of_20zero_20three_20five_5',['of Zero Three Five',['../md_lecture2.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md_programming.html#autotoc_md34',1,'Rule of Zero/Three/Five']]],
-  ['on_20copy_20constructors_6',['Default and Delete on Copy constructors',['../md_programming.html#autotoc_md29',1,'']]],
-  ['operator_7',['Operator',['../md_programming.html#autotoc_md28',1,'Copy Assignment Operator'],['../md_programming.html#autotoc_md33',1,'Move Assignment Operator']]],
-  ['operator_8',['operator[]',['../md_lecture4.html#autotoc_md7',1,'']]],
-  ['ownership_9',['Memory Management - Ownership',['../md_lecture2.html#autotoc_md1',1,'']]]
+  ['to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
+  ['tt_1',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_2',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_3',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_4',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20implementation_5',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['tt_20linked_20list_20tt_20implementation_6',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['tt_20list_20tt_7',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['tt_20list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_8',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]]
 ];

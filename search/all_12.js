@@ -1,7 +1,18 @@
 var searchData=
 [
-  ['semantics_0',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['shallow_20and_20deep_20copies_1',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['stack_2',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['structs_3',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['management_20ownership_0',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md45',1,'']]],
+  ['material_1',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['member_20functions_2',['Member Functions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md18',1,'']]],
+  ['memory_20allocation_3',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]],
+  ['memory_20management_20ownership_4',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md45',1,'']]],
+  ['midterm_200_20review_20of_20prerequisite_20material_5',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['module_201_20introduction_20to_20cs_20225_6',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
+  ['module_202_20c_20review_7',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
+  ['module_203_20tt_20list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_8',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
+  ['module_204_20tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_9',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['module_205_20amortized_20analysis_10',['Module 5 - Amortized Analysis',['../md_notes_2module-5.html',1,'']]],
+  ['module_206_20stacks_20and_20queues_11',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
+  ['move_20assignment_20operator_12',['Move Assignment Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'']]],
+  ['move_20constructor_13',['Move Constructor',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md36',1,'']]],
+  ['move_20semantics_14',['Move Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'']]]
 ];

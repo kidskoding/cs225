@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['namespaces_0',['Namespaces',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md20',1,'']]],
-  ['new_20tt_20and_20tt_20delete_20tt_1',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
-  ['nodes_2',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]],
-  ['number_20of_20nodes_3',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]]
+  ['grading_0',['Grading',['../md_notes_2module-1.html#autotoc_md41',1,'']]],
+  ['graph_1',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
+  ['graph_20terminology_2',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
+  ['graphs_3',['Graphs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md6',1,'']]]
 ];
