@@ -71,8 +71,36 @@ Lets explain the table above for an `Array` and `LinkedList`
 
 Take a look at the following `Animal` class below
 
+```
+struct  Animal  {
 
+std::string  name,  food;
+
+bool  big;
+
+Animal(std::string  name  =  "blob",  std::string  food  =  "you",  bool  big  =  true)  :  name(name),  food(food),  big(big)  {  }
+
+};
+
+  
+
+int main()  {
+	Animal  g("giraffe",  "leaves",  true),  p("penguin",  "fish",  false),  b("bear");
+
+	std::vector<Animal>  zoo;
+
+	zoo.push_back(g);
+	zoo.push_back(p);
+	zoo.push_back(b);
+
+	for(std::vector<Animal>::iterator  it  =  zoo.begin();  it  !=  zoo.end();  it++)  {
+		std::cout  <<  it->name  <<  " "  <<  it->food  <<  std::endl;
+	}
+	return  0;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDY1MDg4OSwtMjAyNTM4ODM4OCw2Mz
-kxNDc4NDYsMTMyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbNzYyODkyNDk2LC05MTQ2NTA4ODksLTIwMj
+UzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2MjAsMjAxODQ3OTg2
+Nl19
 -->
