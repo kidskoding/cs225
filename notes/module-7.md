@@ -22,11 +22,13 @@ But if we don't know how the data structure works, it will be very difficult to 
 
 Every class that implements an iterator must have the following **two pieces**. 
 
-1. 
+1. Have two methods
+	- `begin()` - Return iterator to the start of the item in a container
+	- `end()` - Returns iterator to the end of the item in a container
 
-- 
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDYwNjQ1NywyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTE1MjE1MTIxNzQsMjAxODQ3OTg2Nl19
 -->
