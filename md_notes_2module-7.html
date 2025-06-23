@@ -122,8 +122,12 @@ Iterators with respect to Classes</h1>
 <p>Every class that implements an iterator must have the following <b>two pieces</b>.</p>
 <ol type="1">
 <li>Have two methods<ul>
-<li><code>begin()</code> - Return iterator to the start of the item in a container</li>
-<li><code>end()</code> - Returns iterator to the end of the item in a container</li>
+<li><code>begin()</code> - Return iterator to the start item in a container (index 0)</li>
+<li><code>end()</code> - Returns iterator to one past the end item in a container<ul>
+<li><code>end()</code> can come in handy a lot to check if an item exists in an iterator.</li>
+<li>If I want to find string <code>milk</code> in a `std::vector&lt;std::string</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
