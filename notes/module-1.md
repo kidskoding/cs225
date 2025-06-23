@@ -28,8 +28,6 @@ This course is crucial as it provides the foundation for writing efficient softw
 	- [Online C++ Reference](http://en.cppreference.com/)
 	- [Tutorial Based Approach of C++](http://www.learncpp.com/)
 	- [Textbook C++ Reference](https://openlibrary.org/books/OL7408458M/C_Distilled)
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MjIzMDc3NV19
+eyJoaXN0b3J5IjpbMTcyODY0MTU1XX0=
 -->
