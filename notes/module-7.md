@@ -63,9 +63,9 @@ Lets explain the table above for an `Array` and `LinkedList`
 		- This also intuitively makes sense because the end of a `LinkedList` occurs when a node no longer holds a pointer to its next node, when this happens its pointer is set to `nullptr`
 
 - `Array` 
-	- We would implement begin by having our constructor set our `index` instance variable to `0`. This makes sense because the $0^th$ index is always the first element in an array
-	- We would implement `end()` by returning `It 
+	- We would implement begin by having our constructor set our `index` instance variable to `0`. This makes sense because the $0^{th}$ index is always the first element in an array
+	- We would implement `end()` by returning `Iterator(size)`. This makes sense because size is the last element plus 1 in an array! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzQyMzg1LDEzMjE0Mjc2MjAsMjAxOD
+eyJoaXN0b3J5IjpbNjg4NDQ4NzU0LDEzMjE0Mjc2MjAsMjAxOD
 Q3OTg2Nl19
 -->
