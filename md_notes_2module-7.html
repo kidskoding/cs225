@@ -164,11 +164,11 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 <p>Lets explain the table above for an <code>Array</code> and <code><a class="el" href="classLinkedList.html">LinkedList</a></code></p>
 <ul>
 <li><code><a class="el" href="classLinkedList.html">LinkedList</a></code><ul>
-<li>We would implement <code>begin()</code> by having our <code>Iterator</code> constructor take in the head<code>of the</code><a class="el" href="classLinkedList.html">LinkedList</a><code>, which is</code>this-&gt;head_<code>, or simply</code>head_<code><ul>
-<li>The reason why this works is because the beginning of our</li>
+<li>We would implement <code>begin()</code> by having our <code>Iterator</code> constructor take in the head of the <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, which is <code>this-&gt;head_</code>, or simply <code>head_</code><ul>
+<li>The reason why this intuitively makes sense is because the beginning of our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is a pointer to the first element of the <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, which is simply <code>head_</code></li>
 </ul>
-</code><a class="el" href="classLinkedList.html">LinkedList</a><code>is intuitively a pointer to the first element of the</code><a class="el" href="classLinkedList.html">LinkedList</a><code>, which is simply</code>head_<code></code></li>
-<li><code>We would implement</code>end()<code>by having our</code>Iterator` constructor take in</li>
+</li>
+<li>We would implement <code>end()</code> by having our <code>Iterator</code> constructor take in <code>nullptr</code>. This also intuitively makes sense because the end of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> occurs when a node no longer holds a pointer to its next node</li>
 </ul>
 </li>
 <li><code>Array</code><ul>
