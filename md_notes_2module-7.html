@@ -220,7 +220,7 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <p>The rest of the code in our <code>for</code> loop prints the fields of the objects being traversed by the iterator.</p><ul>
 <li><p class="startli">Notice that we access the members of <code>it</code> by dereferencing it and then calling a member via <code>(*it).next</code>. Recall that in C++, <code>(*it).name</code> is equivalent to <code>it-&gt;name</code>. Couldn't we use the arrow operator (<code>-&gt;</code>) instead as a shorthand of calling a member on a pointer?</p><ul>
 <li>To simply answer that question, <code>-&gt;</code> is typically implemented manually by several containers, but it is <b>not required</b>.</li>
-<li><code>std::vector</code> and many other containers do implement the <code>-&gt;</code> , so we could replace that snipped with <code>-&gt;</code></li>
+<li><code>std::vector</code> and many other containers do implement the <code>-&gt;</code> , so we could replace that snippet with <code>-&gt;</code>, but the code snippet assumes that <code>-&gt;</code> is not implemented by the container</li>
 </ul>
 <div class="fragment"><div class="line">for(std::vector&lt;Animal&gt;::iterator it = zoo.begin();  it != zoo.end(); it++)  {</div>
 <div class="line">    std::cout &lt;&lt; it-&gt;name &lt;&lt; &quot; &quot; &lt;&lt; it-&gt;food &lt;&lt; std::endl;</div>
