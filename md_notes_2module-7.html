@@ -243,14 +243,20 @@ Iterator Usage Example with <code>std::vector</code></h2>
 </ul>
 <p>And this brings us to the two approaches to use iterators</p>
 <ol type="1">
-<li>Using a for each loop, like the second example <div class="fragment"><div class="line">std::vector</div>
+<li>Using a for each loop, like the second example <div class="fragment"><div class="line">std::vector&lt;Animal&gt; zoo;</div>
 <div class="line"> </div>
 <div class="line">for(const Animal&amp; animal : zoo) {</div>
 <div class="line">    std::cout &lt;&lt; animal.name &lt;&lt; &quot; &quot; &lt;&lt; animal.food &lt;&lt; std::endl;</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
-<li></li>
+<li>Using a manually implemented iterator, like the first example <div class="fragment"><div class="line">std::vector&lt;Animal&gt; zoo;</div>
+<div class="line"> </div>
+<div class="line">for(auto it = zoo.begin(); it != zoo.end(); ++it) {</div>
+<div class="line">    std::cout &lt;&lt; (*it).name &lt;&lt; &quot; &quot; &lt;&lt; (*it).food &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
 </ol>
+<p>Recall that the code above assumes that <code>-&gt;</code> is not implemented      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
