@@ -75,7 +75,7 @@ Take a look at the following `Animal` class below
 struct  Animal  {
 	std::string name, food;
 	bool big;
-	Animal(std::string name = "blob", std::string food =  "you", bool big  =  true)  :  name(name),  food(food),  big(big)  {  }
+	Animal(std::string name = "blob", std::string food =  "you", bool big = true) : name(name), food(food), big(big)  {  }
 };  
 
 int main()  {
@@ -93,7 +93,7 @@ int main()  {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3Mzg0MDYyLDE5MTIxMTc2NjgsLTkxND
-Y1MDg4OSwtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMTMyMTQyNzYy
-MCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTI1OTQ3MDMzNCwxOTEyMTE3NjY4LC05MT
+Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
+MjAsMjAxODQ3OTg2Nl19
 -->
