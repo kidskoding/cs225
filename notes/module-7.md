@@ -59,11 +59,13 @@ Lets explain the table above for an `Array` and `LinkedList`
 - `LinkedList` 
 	- We would implement `begin()` by having our `Iterator` constructor take in the head of the `LinkedList`, which is `this->head_`, or simply `head_`
 		- The reason why this intuitively makes sense is because the beginning of our `LinkedList` is a pointer to the first element of the `LinkedList`, which is simply `head_`
-	- We would implement `end()` by having our `Iterator` constructor take in `nullptr`. This also intuitively makes sense because the end of a `LinkedList` occurs when a node no longer holds a pointer to its next node
+	- We would implement `end()` by having our `Iterator` constructor take in `nullptr`
+		- This also intuitively makes sense because the end of a `LinkedList` occurs when a node no longer holds a pointer to its next node, when this happens its pointer is set to `nullptr`
 
 - `Array` 
-	- We would implement begin by 
+	- We would implement begin by having our constructor set our `index` instance variable to `0`. This makes sense because the $0^th$ index is always the first element in an array
+	- We would implement `end()` by returning `It 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzY4MzE5MywxMzIxNDI3NjIwLDIwMT
-g0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbMTgxMzQyMzg1LDEzMjE0Mjc2MjAsMjAxOD
+Q3OTg2Nl19
 -->
