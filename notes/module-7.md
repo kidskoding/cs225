@@ -38,10 +38,15 @@ Every class that implements an iterator must have the following **two pieces**.
 		- This standardized approach is what allows us to iterate via a data structure regardless of whether or not we iterate via a pointer (`LinkedList`) or index (`Array`)
 	- `operator!=()` , which compares a constant reference to an iterator (`const Iterator& i`) to an element in the data structure and check whether they are equal or not
 
-There are also some other nice features that can be implemented in an iterator, one of which is the arrow operator `->` which accesses members of a pointer. Recall that this is the shorthand for dereferencing a pointer and then calling its member, where *(item).data is equivalent to `item->data`
+There are also some other nice features that can be implemented in an iterator, one of which is the arrow operator `->` which accesses members of a pointer. 
+
+- Recall that this is the shorthand for dereferencing a pointer and then calling its member, where 
+`*(item).data` is equivalent to `item->data`. 
+
+A bidirectional iterator could also b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTE4MTYxNSwxMzIxNDI3NjIwLDIwMT
-g0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTEwMTEzNzcyNjQsMTMyMTQyNzYyMCwyMD
+E4NDc5ODY2XX0=
 -->
