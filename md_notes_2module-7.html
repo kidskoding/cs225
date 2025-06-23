@@ -159,7 +159,7 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code><a class="el" href="classLinkedList.html">LinkedList</a></code>   </td><td class="markdownTableBodyNone"><code>Iterator(head_)</code>   </td><td class="markdownTableBodyNone"><code>Iterator(nullptr)</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>Array</code>   </td><td class="markdownTableBodyNone"><code>Iterator() { index = 0; }</code> or <code>Iterator(0)</code>   </td><td class="markdownTableBodyNone"><code>return Iterator(size)</code>   </td></tr>
+<td class="markdownTableBodyNone"><code>Array</code>   </td><td class="markdownTableBodyNone"><code>Iterator() { index = 0; }</code> or <code>Iterator(0)</code>   </td><td class="markdownTableBodyNone"><code>Iterator(size)</code>   </td></tr>
 </table>
 <p>Lets explain the table above for an <code>Array</code> and <code><a class="el" href="classLinkedList.html">LinkedList</a></code></p>
 <ul>
@@ -168,7 +168,7 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 <li>The reason why this intuitively makes sense is because the beginning of our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is a pointer to the first element of the <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, which is simply <code>head_</code></li>
 </ul>
 </li>
-<li>We would implement <code>end()</code> by having our <code>Iterator</code> constructor take in <code>nullptr</code><ul>
+<li>We would implement <code>end()</code> by returning our <code>Iterator</code> object, where it takes in a <code>nullptr</code><ul>
 <li>This also intuitively makes sense because the end of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> occurs when a node no longer holds a pointer to its next node, when this happens its pointer is set to <code>nullptr</code></li>
 </ul>
 </li>
@@ -179,7 +179,7 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 <li>You could also have the <code>Iterator</code> constructor take in a $0$</li>
 </ul>
 </li>
-<li>We would implement <code>end()</code> by returning <code>Iterator(size)</code>. This makes sense because size is the last element plus 1 in an array!    </li>
+<li>We would implement <code>end()</code> by returning <code>Iterator(size)</code>. This makes sense because size is the last element plus 1 in an array!</li>
 </ul>
 </li>
 </ul>
