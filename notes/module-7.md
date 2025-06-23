@@ -136,9 +136,11 @@ for(const Animal& animal : zoo) {
 }
 ```
 
-In this for loop, I am introducing a constant `Animal` reference, `Animal&`, and this reference is going to take the value of every 
+In this for loop, I am introducing a constant `Animal` reference, `Animal&`, and this reference is going to take the value of every element in `zoo` one at a time using the iterator interface. 
+	- The `animal` variable is the dereferenced iterator, so I would have to use `.` instead of `->`
+	- This approach completely abstracts/hides the fact I am even using an iterator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzgwMDk0OCwyMDk2NDEwOTcsNjQzMT
+eyJoaXN0b3J5IjpbMTQzNzc0MzMxMCwyMDk2NDEwOTcsNjQzMT
 kzNDEwLC0yMDAyNTE3MjUyLC04NDA3MTA3MjIsLTEwMDU4NjQ5
 MTEsMTkxMjExNzY2OCwtOTE0NjUwODg5LC0yMDI1Mzg4Mzg4LD
 YzOTE0Nzg0NiwxMzIxNDI3NjIwLDIwMTg0Nzk4NjZdfQ==
