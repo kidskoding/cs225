@@ -73,11 +73,9 @@ Take a look at the following `Animal` class below
 
 ```
 struct  Animal  {
-
-std::string  name,  food;
-
+	std::string name, food;
 	bool big;
-	Animal(std::string  name  =  "blob",  std::string  food  =  "you",  bool  big  =  true)  :  name(name),  food(food),  big(big)  {  }
+	Animal(std::string name = "blob", std::string food =  "you", bool  big  =  true)  :  name(name),  food(food),  big(big)  {  }
 };  
 
 int main()  {
@@ -89,13 +87,13 @@ int main()  {
 	zoo.push_back(b);
 
 	for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end();  it++)  {
-		std::cout << it->name << " " << it->food  <<  std::endl;
+		std::cout << it->name << " " << it->food << std::endl;
 	}
 	return  0;
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTMwNjM5MiwtOTE0NjUwODg5LC0yMD
+eyJoaXN0b3J5IjpbMTkxMjExNzY2OCwtOTE0NjUwODg5LC0yMD
 I1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3NjIwLDIwMTg0Nzk4
 NjZdfQ==
 -->
