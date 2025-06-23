@@ -95,9 +95,18 @@ int main()  {
 
 1. `Animal` stores 3 things, `name`, `food`, which describe the animal's name, food, and a boolean `big` that determines whether an `Animal` is big or not.
 2. The `main` function creates 3 `Animal` objects and stores them in a `std::vector`. We then use an iterator to loop through the objects in the `std::vector`. 
-3. 
+
+However, take a look at a snippet of the code above, specifically the part that utilizes an iterator
+
+```
+for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
+	std::cout << it->name << " " << it->food << std::endl;
+}
+```
+
+one of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, `std::vector` implements th
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4NDY4ODksMTkxMjExNzY2OCwtOTE0Nj
-UwODg5LC0yMDI1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3NjIw
-LDIwMTg0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjI3MTA3MzQsMTkxMjExNzY2OCwtOT
+E0NjUwODg5LC0yMDI1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3
+NjIwLDIwMTg0Nzk4NjZdfQ==
 -->
