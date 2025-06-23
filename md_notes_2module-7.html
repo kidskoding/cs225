@@ -125,7 +125,8 @@ Iterators with respect to Classes</h1>
 <li><code>begin()</code> - Return iterator to the start item in a container (index 0)</li>
 <li><code>end()</code> - Returns iterator to one past the end item in a container<ul>
 <li><code>end()</code> can come in handy a lot to check if an item exists in an iterator.</li>
-<li>If I want to find string <code>milk</code> in a `std::vector&lt;std::string</li>
+<li>If I want to find string <code>milk</code> in a <code>std::vector&lt;std::string&gt;</code> named <code>groceries</code>, i can write <code>milk != groceries.end()</code> to see if <code>groceries</code> contains milk.</li>
+<li>If <code>milk</code> is found, <code>end()</code> will return an iterator to what it found (in this case is <code>milk</code>)</li>
 </ul>
 </li>
 </ul>
