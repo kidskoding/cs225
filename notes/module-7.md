@@ -31,12 +31,13 @@ Every class that implements an iterator must have the following **two pieces**.
 		- This is a useful tool because we get an extra feature in our data structures to say that an element does/does not exist
 
 2. Must have the base class `std::iterator`, which requires us to minimally implement
-	- `operator*()` to get the data, where dereferencing `std::iterator` `it` with `*it` 
-	- 
+	- `operator*()` to get the data, where `*it` is the data at iterator `it`
+	- `operator++()` to move/traverse through the data in a data structure
+		- This is 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2OTU2MjkyLDIwMTg0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTMyMTU1ODMyMiwyMDE4NDc5ODY2XX0=
 -->
