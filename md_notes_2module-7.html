@@ -168,11 +168,15 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 <li>The reason why this intuitively makes sense is because the beginning of our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is a pointer to the first element of the <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, which is simply <code>head_</code></li>
 </ul>
 </li>
-<li>We would implement <code>end()</code> by having our <code>Iterator</code> constructor take in <code>nullptr</code>. This also intuitively makes sense because the end of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> occurs when a node no longer holds a pointer to its next node</li>
+<li>We would implement <code>end()</code> by having our <code>Iterator</code> constructor take in <code>nullptr</code><ul>
+<li>This also intuitively makes sense because the end of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> occurs when a node no longer holds a pointer to its next node, when this happens its pointer is set to <code>nullptr</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><code>Array</code><ul>
-<li>We would implement begin by    </li>
+<li>We would implement begin by having our constructor set our <code>index</code> instance variable to <code>0</code>. This makes sense because the $0^th$ index is always the first element in an array</li>
+<li>We would implement <code>end()</code> by returning `It    </li>
 </ul>
 </li>
 </ul>
