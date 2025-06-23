@@ -1,6 +1,6 @@
 # Module 7 - Iterators
 
-One concept that is often in the scope of DSA is the **iterator**. An iterator is an object that traverses through all the elements/items in a data structure. Specifically in C++, an iterator is a **pointer** to the current object being traversed in a data structure
+One concept that is often in the scope of DSA is the **iterator**. An iterator is an object that traverses through all the elements/items in a data structure. 
 
 Suppose we had 3 data structures, `Array`, `LinkedList`, and a `Hypercube` (also known as a tesseract and is a 4D cube). How would we be able to traverse through every element in this data structure?
 
@@ -109,9 +109,9 @@ one of the problems with this code is using the post-increment operator over the
 However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (`++it`)
 - If I were to do `it++`, then post increment would make a copy of  the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!
 
-The rest of the code in our for loop snippets prints the fields associated with each iterator. Remember that an iterator is just a **pointer** to the current object in the iteration, so we need to dereference it and then call a member using `->`  (the arrow function; `*(it).name` also works but less convenient).
+The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it **behaves like one** and "points" to the current object in the container. To access members of the object the iterator refers to, we dereference it using the arrow operator `->`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5OTU0MzYwNSwxOTEyMTE3NjY4LC05MT
-Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
-MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbMTMwNzk0NDgxLDE5MTIxMTc2NjgsLTkxND
+Y1MDg4OSwtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMTMyMTQyNzYy
+MCwyMDE4NDc5ODY2XX0=
 -->
