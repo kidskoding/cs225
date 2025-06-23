@@ -100,7 +100,7 @@ $(function(){initNavTree('md_notes_2module-7.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md64"></a></p>
-<p>One concept that is often in the scope of DSA is the <b>iterator</b>. An iterator is an object that traverses through all the elements/items in a data structure. Specifically in C++, an iterator is a <b>pointer</b> to the current object being traversed in a data structure</p>
+<p>One concept that is often in the scope of DSA is the <b>iterator</b>. An iterator is an object that traverses through all the elements/items in a data structure.</p>
 <p>Suppose we had 3 data structures, <code>Array</code>, <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, and a <code>Hypercube</code> (also known as a tesseract and is a 4D cube). How would we be able to traverse through every element in this data structure?</p>
 <p>The solution is simply an iterator, which provides encapsulated access to our data in a data structure. Each data structure, <code>Array</code>, <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, and <code>Hypercube</code> has its own way of iterating through its data</p><ul>
 <li>For example, an <code>Array</code> typically uses an index to iterate, where <code>index++</code> traverses through each element in an array</li>
@@ -217,7 +217,7 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <p>However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (<code>++it</code>)</p><ul>
 <li>If I were to do <code>it++</code>, then post increment would make a copy of the original iterator, move the original iterator forward, and then return the value of the original iterator that will appear there, which isn't what we want!</li>
 </ul>
-<p>The rest of the code in our for loop snippets prints the fields associated with each iterator. Remember that an iterator is just a <b>pointer</b> to the current object in the iteration, so we need to dereference it and then call a member using <code>-&gt;</code> (the arrow function; <code>*(it).name</code> also works but less convenient).     </p>
+<p>The rest of the code in our <code>for</code> loop prints the fields of the objects being traversed by the iterator. Although an iterator isn't always a raw pointer, it <b>behaves like one</b> and "points" to the current object in the container. To access members of the object the iterator refers to, we dereference it using the arrow operator <code>-&gt;</code>     </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
