@@ -88,6 +88,8 @@ var NAVTREEINDEX0 =
 "md_notes_2module-6.html#autotoc_md62":[6,2],
 "md_notes_2module-6.html#autotoc_md63":[6,3],
 "md_notes_2module-7.html":[7],
+"md_notes_2module-7.html#autotoc_md65":[7,0],
+"md_notes_2module-7.html#autotoc_md66":[7,1],
 "pages.html":[],
 "structListNode.html":[9,0,3]
 };

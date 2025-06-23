@@ -105,7 +105,10 @@ var NAVTREE =
       [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md62", null ],
       [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md63", null ]
     ] ],
-    [ "Module 7 - Iterators", "md_notes_2module-7.html", null ],
+    [ "Module 7 - Iterators", "md_notes_2module-7.html", [
+      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md65", null ],
+      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md66", null ]
+    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

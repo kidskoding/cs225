@@ -7,5 +7,6 @@ var searchData=
   ['stacks_4',['Stacks',['../md_notes_2module-6.html#autotoc_md61',1,'']]],
   ['stacks_20and_20queues_5',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
   ['stacks_20v_20s_20queues_6',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md62',1,'']]],
-  ['structs_7',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['structs_7',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
+  ['structure_8',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md65',1,'']]]
 ];
