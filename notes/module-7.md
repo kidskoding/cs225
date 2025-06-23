@@ -76,31 +76,26 @@ struct  Animal  {
 
 std::string  name,  food;
 
-bool  big;
-
-Animal(std::string  name  =  "blob",  std::string  food  =  "you",  bool  big  =  true)  :  name(name),  food(food),  big(big)  {  }
-
-};
-
-  
+	bool big;
+	Animal(std::string  name  =  "blob",  std::string  food  =  "you",  bool  big  =  true)  :  name(name),  food(food),  big(big)  {  }
+};  
 
 int main()  {
-	Animal  g("giraffe",  "leaves",  true),  p("penguin",  "fish",  false),  b("bear");
-
+	Animal g("giraffe",  "leaves",  true),  p("penguin",  "fish",  false),  b("bear");
 	std::vector<Animal>  zoo;
 
 	zoo.push_back(g);
 	zoo.push_back(p);
 	zoo.push_back(b);
 
-	for(std::vector<Animal>::iterator  it  =  zoo.begin();  it  !=  zoo.end();  it++)  {
+	for(std::vector<Animal>::iterator it = zoo.begin();  it  !=  zoo.end();  it++)  {
 		std::cout  <<  it->name  <<  " "  <<  it->food  <<  std::endl;
 	}
 	return  0;
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYyODkyNDk2LC05MTQ2NTA4ODksLTIwMj
-UzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2MjAsMjAxODQ3OTg2
-Nl19
+eyJoaXN0b3J5IjpbLTE5NTM3MDI4OTYsLTkxNDY1MDg4OSwtMj
+AyNTM4ODM4OCw2MzkxNDc4NDYsMTMyMTQyNzYyMCwyMDE4NDc5
+ODY2XX0=
 -->
