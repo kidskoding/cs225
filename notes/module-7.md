@@ -52,7 +52,7 @@ With these requirements, how would we implement `begin()` and `end()` with the e
 | Data Structure | `::begin` | `::end` |
 | ------------------| -------------------- | ------- |
 `LinkedList` | `Iterator(head_)` | `Iterator(nullptr)` |  
-`Array` | `Iterator() { index = 0; }` | `return Iterator(size)` 
+`Array` | `Iterator() { index = 0; }` or `Iterator(0)` | `return Iterator(size)` 
 
 Lets explain the table above for an `Array` and `LinkedList`
 
@@ -64,8 +64,9 @@ Lets explain the table above for an `Array` and `LinkedList`
 
 - `Array` 
 	- We would implement begin by having our constructor set our `index` instance variable to `0`. This makes sense because the $0^{th}$ index is always the first element in an array
+		- You could also have the `Iterator` constructor take in a $0$
 	- We would implement `end()` by returning `Iterator(size)`. This makes sense because size is the last element plus 1 in an array! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NDQ4NzU0LDEzMjE0Mjc2MjAsMjAxOD
+eyJoaXN0b3J5IjpbNjM5MTQ3ODQ2LDEzMjE0Mjc2MjAsMjAxOD
 Q3OTg2Nl19
 -->
