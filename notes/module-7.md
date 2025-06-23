@@ -47,13 +47,19 @@ A bidirectional iterator could also be implemented in a data structure, where it
 
 With these requirements, how would we implement `begin()` and `end()` with the example data structure mentioned earlier in this module?
 
-## Implementing `begin()` and `end()` for common Data Structures
+## Implementing `begin()` and `end()` for `Array` and `LinkedList`
 
 | Data Structure | `::begin` | `::end` |
 | ------------------| -------------------- | ------- |
 `LinkedList` | `Iterator(head_)` | `Iterator(nullptr)` |  
 `Array` | `Iterator() { index = 0; }` | `return Iterator(size)` 
+
+Lets explain the table above for an `Array` and `LinkedList`
+
+`LinkedList` 
+	- We would implement `begin()` by having our `Iterator` constructor take in the `head` of the `LinkedList`, which is `this->head_`, or simply `head_`
+`Array` - We would implement begin by 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMwOTY1Njc3LDEzMjE0Mjc2MjAsMjAxOD
-Q3OTg2Nl19
+eyJoaXN0b3J5IjpbMTIyNjY3NTA3NiwxMzIxNDI3NjIwLDIwMT
+g0Nzk4NjZdfQ==
 -->
