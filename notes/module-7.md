@@ -56,10 +56,14 @@ With these requirements, how would we implement `begin()` and `end()` with the e
 
 Lets explain the table above for an `Array` and `LinkedList`
 
-`LinkedList` 
-	- We would implement `begin()` by having our `Iterator` constructor take in the `head` of the `LinkedList`, which is `this->head_`, or simply `head_`
-`Array` - We would implement begin by 
+- `LinkedList` 
+	- We would implement `begin()` by having our `Iterator` constructor take in the head` of the `LinkedList`, which is `this->head_`, or simply `head_`
+		- The reason why this works is because the beginning of our `LinkedList` is intuitively a pointer to the first element of the `LinkedList`, which is simply `head_`
+	- We would implement `end()` by having our `Iterator` constructor take in 
+
+- `Array` 
+	- We would implement begin by 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjY3NTA3NiwxMzIxNDI3NjIwLDIwMT
-g0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbLTE5MTk5MDkyOTQsMTMyMTQyNzYyMCwyMD
+E4NDc5ODY2XX0=
 -->
