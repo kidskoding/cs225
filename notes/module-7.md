@@ -144,15 +144,24 @@ And this brings us to the two approaches to use iterators
 
 1. Using a for each loop, like the second example
 ```
-std::vector
+std::vector<Animal> zoo;
 
 for(const Animal& animal : zoo) {
 	std::cout << animal.name << " " << animal.food << std::endl;
 }
 ```
-2. 
+2. Using a manually implemented iterator, like the first example
+```
+std::vector<Animal> zoo;
+
+for(auto it = zoo.begin(); it != zoo.end(); ++it) {
+	std::cout << (*it).name << " " << (*it).food << std::endl;
+}
+```
+
+Recall that the code above assumes that `->` is not implemented
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NDQyNDQ1MSwyMDk2NDEwOTcsNjQzMT
+eyJoaXN0b3J5IjpbMTEwNDk1OTM4MSwyMDk2NDEwOTcsNjQzMT
 kzNDEwLC0yMDAyNTE3MjUyLC04NDA3MTA3MjIsLTEwMDU4NjQ5
 MTEsMTkxMjExNzY2OCwtOTE0NjUwODg5LC0yMDI1Mzg4Mzg4LD
 YzOTE0Nzg0NiwxMzIxNDI3NjIwLDIwMTg0Nzk4NjZdfQ==
