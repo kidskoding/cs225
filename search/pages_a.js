@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['prerequisite_20material_0',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]]
+  ['five_0',['Five',['../md_lecture2.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md_programming.html#autotoc_md34',1,'Rule of Zero/Three/Five']]],
+  ['functions_1',['Member Functions',['../md_programming.html#autotoc_md14',1,'']]]
 ];

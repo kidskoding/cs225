@@ -1,16 +1,13 @@
 var searchData=
 [
-  ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
-  ['readme_1',['README',['../md_README.html',1,'']]],
-  ['recursive_20definitions_2',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
-  ['references_3',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
-  ['references_20and_20pointers_4',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
-  ['remove_5',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
-  ['remove_20tt_6',['&lt;tt&gt;remove&lt;/tt&gt;',['../md_notes_2module-3.html#autotoc_md52',1,'']]],
-  ['resources_7',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md42',1,'']]],
-  ['returning_20values_8',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
-  ['review_9',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
-  ['review_20of_20prerequisite_20material_10',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['rule_20of_20zero_20three_20five_11',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-2.html#autotoc_md46',1,'Rule of Zero/Three/Five']]],
-  ['rvalue_20references_12',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
+  ['terminology_0',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
+  ['three_20five_1',['Rule of Zero/Three/Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'']]],
+  ['to_20cs_20225_2',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
+  ['topics_20covered_3',['Topics Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'']]],
+  ['tree_20vocabulary_4',['Tree Vocabulary',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md13',1,'']]],
+  ['trees_5',['Trees',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14',1,'$m$-ary Trees'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md12',1,'Trees']]],
+  ['tt_6',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
+  ['tt_20and_20tt_20delete_20tt_7',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
+  ['tt_20delete_20tt_8',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
+  ['tt_20new_20tt_20and_20tt_20delete_20tt_9',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]]
 ];

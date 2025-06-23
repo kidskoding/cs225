@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['management_20ownership_0',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md45',1,'']]],
-  ['material_1',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['member_20functions_2',['Member Functions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md18',1,'']]],
-  ['memory_20allocation_3',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]],
-  ['memory_20management_20ownership_4',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md45',1,'']]],
-  ['midterm_200_20review_20of_20prerequisite_20material_5',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['module_201_20introduction_20to_20cs_20225_6',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
-  ['module_202_20c_20review_7',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
-  ['module_203_20tt_20list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_8',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
-  ['move_20assignment_20operator_9',['Move Assignment Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'']]],
-  ['move_20constructor_10',['Move Constructor',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md36',1,'']]],
-  ['move_20semantics_11',['Move Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'']]]
+  ['o_0',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
+  ['o_20of_20common_20algorithms_1',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
+  ['of_20common_20algorithms_2',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
+  ['of_20nodes_3',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]],
+  ['of_20prerequisite_20material_4',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['of_20zero_20three_20five_5',['Rule of Zero/Three/Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'']]],
+  ['on_20copy_20constructors_6',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
+  ['operator_7',['Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]],
+  ['operator_5b_5d_8',['operator[]',['../classLinkedList.html#a199fff56292949cdec68970cc5197a66',1,'LinkedList']]]
 ];
