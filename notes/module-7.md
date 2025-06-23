@@ -86,7 +86,7 @@ int main()  {
 	zoo.push_back(p);
 	zoo.push_back(b);
 
-	for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end();  it++)  {
+	for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
 		std::cout << it->name << " " << it->food << std::endl;
 	}
 	return 0;
@@ -94,9 +94,10 @@ int main()  {
 ```
 
 1. `Animal` stores 3 things, `name`, `food`, which describe the animal's name, food, and a boolean `big` that determines whether an `Animal` is big or not.
-2. 
+2. The `main` function creates 3 `Animal` objects and stores them in a `std::vector`. We then use an iterator to loop through the objects in the `std::vector`. 
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODUwMTMyNywxOTEyMTE3NjY4LC05MT
-Q2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LDEzMjE0Mjc2
-MjAsMjAxODQ3OTg2Nl19
+eyJoaXN0b3J5IjpbMjY4NDY4ODksMTkxMjExNzY2OCwtOTE0Nj
+UwODg5LC0yMDI1Mzg4Mzg4LDYzOTE0Nzg0NiwxMzIxNDI3NjIw
+LDIwMTg0Nzk4NjZdfQ==
 -->
