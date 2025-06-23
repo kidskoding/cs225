@@ -128,10 +128,10 @@ We could add some other changes to this code. One is by using the `auto` keyword
 
 `auto` is nice because the compiler infers the type of our iterator. This is good when we don't have to really remember what container we are working with. Whether to use `auto` is in fact debatable among the community.
 
-
+Another w
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxNjcxMzg5LDY0MzE5MzQxMCwtMjAwMj
-UxNzI1MiwtODQwNzEwNzIyLC0xMDA1ODY0OTExLDE5MTIxMTc2
-NjgsLTkxNDY1MDg4OSwtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMT
-MyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbMTM4MjEzMTgwNSw2NDMxOTM0MTAsLTIwMD
+I1MTcyNTIsLTg0MDcxMDcyMiwtMTAwNTg2NDkxMSwxOTEyMTE3
+NjY4LC05MTQ2NTA4ODksLTIwMjUzODgzODgsNjM5MTQ3ODQ2LD
+EzMjE0Mjc2MjAsMjAxODQ3OTg2Nl19
 -->
