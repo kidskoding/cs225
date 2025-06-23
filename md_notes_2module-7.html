@@ -233,8 +233,11 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <p>We could add some other changes to this code. One is by using the <code>auto</code> keyword to define the iterator</p>
 <p><code>auto it = zoo.begin();</code></p>
 <p><code>auto</code> is nice because the compiler infers the type of our iterator. This is good when we don't have to really remember what container we are working with. Whether to use <code>auto</code> is in fact debatable among the community.</p>
-<p>Another w      </p>
-</div></div><!-- contents -->
+<p>Another way to write the code is by using a range based for loop to loop through constant <code>Animal</code> references, <code>Animal&amp;</code> , in a <code>std::vector</code></p>
+<div class="fragment"><div class="line">for(const Animal&amp; animal : zoo) {</div>
+<div class="line">    std::cout &lt;&lt; animal.name &lt;&lt; &quot; &quot; &lt;&lt; animal.food &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment -->      </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
