@@ -36,11 +36,11 @@ Every class that implements an iterator must have the following **two pieces**.
 	- `operator*()` to get the data, where `*it` is the data at iterator `it`
 	- `operator++()` to move/traverse through the data in a data structure
 		- This standardized approach is what allows us to iterate via a data structure regardless of whether or not we iterate via a pointer (`LinkedList`) or index (`Array`)
-	- `operator!=()`
+	- `operator!=()` , which compares a constant reference to an iterator (`const Iterator& i`) to an element in the data structure and check whether they are equal or not
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDg0MjMzLDIwMTg0Nzk4NjZdfQ==
+eyJoaXN0b3J5IjpbMTMyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
 -->
