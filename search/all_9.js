@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['linkedlist_0',['LinkedList',['../classLinkedList.html',1,'']]],
-  ['listnode_1',['ListNode',['../structListNode.html',1,'']]]
+  ['encapsulation_0',['Encapsulation',['../md_lecture2.html#autotoc_md0',1,'']]]
 ];

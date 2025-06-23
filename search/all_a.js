@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['notes_20index_20html_20here_20a_0',['All references of this code are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]]
+  ['find_0',['find',['../class_list.html#a3a2167c7e3d8c0f9b00521c0ca2b2a0a',1,'List']]],
+  ['five_1',['Five',['../md_lecture2.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md_programming.html#autotoc_md34',1,'Rule of Zero/Three/Five']]],
+  ['functions_2',['Member Functions',['../md_programming.html#autotoc_md14',1,'']]]
 ];

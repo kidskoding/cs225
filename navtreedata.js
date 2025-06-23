@@ -26,7 +26,6 @@ var NAVTREE =
 [
   [ "CS 225", "index.html", [
     [ "README", "md_README.html", null ],
-    [ "CS 225 - Introduction", "md_readme.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

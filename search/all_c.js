@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['pushback_0',['pushBack',['../classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
+  ['heap_0',['Heap',['../md_programming.html#autotoc_md22',1,'']]],
+  ['height_20and_20number_20of_20nodes_1',['Height and number of nodes',['../md_theory.html#autotoc_md49',1,'']]],
+  ['here_2',['All references/notes are compiled in &lt;b&gt;Doxygen&lt;/b&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot;&gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md50',1,'']]]
 ];

@@ -1,4 +1,13 @@
 var searchData=
 [
-  ['this_20code_20are_20compiled_20in_20strong_20doxygen_20strong_20view_20a_20href_20http_3a_20kidskoding_20github_20io_20cs225_20notes_20index_20html_20here_20a_0',['All references of this code are compiled in &lt;strong&gt;Doxygen&lt;/strong&gt;. View &lt;a href=&quot;http://kidskoding.github.io/cs225-notes/index.html&quot; &gt;here&lt;/a&gt;!',['../md_readme.html#autotoc_md0',1,'']]]
+  ['m_20ary_20trees_0',['m-ary Trees',['../md_theory.html#autotoc_md48',1,'']]],
+  ['management_20ownership_1',['Memory Management - Ownership',['../md_lecture2.html#autotoc_md1',1,'']]],
+  ['member_20functions_2',['Member Functions',['../md_programming.html#autotoc_md14',1,'']]],
+  ['memory_20allocation_3',['Dynamic Memory Allocation',['../md_programming.html#autotoc_md18',1,'']]],
+  ['memory_20management_20ownership_4',['Memory Management - Ownership',['../md_lecture2.html#autotoc_md1',1,'']]],
+  ['midterm_200_20review_20of_20prerequisite_20courses_5',['Midterm 0 - Review of Prerequisite Courses',['../md_midterm0.html',1,'']]],
+  ['midterm0_6',['midterm0',['../md__midterm_01_reviews_2_midterm_010_2midterm0.html',1,'']]],
+  ['move_20assignment_20operator_7',['Move Assignment Operator',['../md_programming.html#autotoc_md33',1,'']]],
+  ['move_20constructor_8',['Move Constructor',['../md_programming.html#autotoc_md32',1,'']]],
+  ['move_20semantics_9',['Move Semantics',['../md_programming.html#autotoc_md30',1,'']]]
 ];
