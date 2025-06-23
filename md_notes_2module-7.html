@@ -186,15 +186,15 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 <h2><a class="anchor" id="autotoc_md68"></a>
 Iterator Usage Example with <code>std::vector</code></h2>
 <p>Take a look at the following <code>Animal</code> class below</p>
-<div class="fragment"><div class="line">struct  Animal  {</div>
+<div class="fragment"><div class="line">struct Animal  {</div>
 <div class="line">    std::string name, food;</div>
 <div class="line">    bool big;</div>
 <div class="line">    Animal(std::string name = &quot;blob&quot;, std::string food =  &quot;you&quot;, bool big = true) : name(name), food(food), big(big)  {  }</div>
 <div class="line">};  </div>
 <div class="line"> </div>
 <div class="line">int main()  {</div>
-<div class="line">    Animal g(&quot;giraffe&quot;,  &quot;leaves&quot;,  true),  p(&quot;penguin&quot;,  &quot;fish&quot;,  false),  b(&quot;bear&quot;);</div>
-<div class="line">    std::vector&lt;Animal&gt;  zoo;</div>
+<div class="line">    Animal g(&quot;giraffe&quot;, &quot;leaves&quot;, true), p(&quot;penguin&quot;, &quot;fish&quot;, false), b(&quot;bear&quot;);</div>
+<div class="line">    std::vector&lt;Animal&gt; zoo;</div>
 <div class="line"> </div>
 <div class="line">    zoo.push_back(g);</div>
 <div class="line">    zoo.push_back(p);</div>
@@ -205,7 +205,8 @@ Iterator Usage Example with <code>std::vector</code></h2>
 <div class="line">    }</div>
 <div class="line">    return 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->     </div></div><!-- contents -->
+</div><!-- fragment --><p><code>Animal</code> stores     </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
