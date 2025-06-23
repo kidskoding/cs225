@@ -15,6 +15,7 @@ var searchData=
   ['introduction_20to_20cs_20225_12',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['isomorphism_13',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]],
   ['iterate_20through_20data_20in_20each_20data_20structure_14',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md65',1,'']]],
-  ['iterators_15',['Module 7 - Iterators',['../md_notes_2module-7.html',1,'']]],
-  ['iterators_20with_20respect_20to_20classes_16',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md66',1,'']]]
+  ['iterator_20usage_20example_20with_20tt_20std_3a_3avector_20tt_15',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md68',1,'']]],
+  ['iterators_16',['Module 7 - Iterators',['../md_notes_2module-7.html',1,'']]],
+  ['iterators_20with_20respect_20to_20classes_17',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md66',1,'']]]
 ];

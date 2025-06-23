@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zero_20three_20five_0',['Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-2.html#autotoc_md46',1,'Rule of Zero/Three/Five']]]
+  ['with_20respect_20to_20classes_0',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md66',1,'']]],
+  ['with_20tt_20std_3a_3avector_20tt_1',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md68',1,'']]]
 ];
