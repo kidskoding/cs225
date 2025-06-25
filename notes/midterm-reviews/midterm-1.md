@@ -18,11 +18,12 @@ Use these assignments to reference when studying as well
 
 **ADT**s, or Abstract Data Types, are templates/descriptions used to explain how a data structure works and how any user should use it.  
 
+In a **`LinkedList`**, 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTIwMTQ1NjUsLTEwOTA2NTIyMl19
+eyJoaXN0b3J5IjpbLTcwNzA3NDg4LC0xMDkwNjUyMjJdfQ==
 -->
