@@ -31,9 +31,10 @@ Each node holds data and then a pointer to the next node!
 
 The table below shows the core functionalities of a `LinkedList` and their runtimes
 
-| Operation                     | **Singly Linked List** | **Array**            |
-|-------------------------------|-----------------------|----------------------|
-| Insert/Remove at front/back    | `O(1)` |
+| Operation                     | **Singly Linked List** |
+|-------------------------------|-----------------------|
+| Insert/Remove at front    | `O(1)` |
+| Insert/Remove at back     | usually `O(n)`, can be `O(1)` if there is a `tail` pointer to back of the list
 | Insert/Remove given a pointer  | `O(1)` |
 | Insert/Remove at a given index | `O(n)` |
 | Find a value in a list         | `O(n)` |
@@ -44,6 +45,6 @@ The table below shows the core functionalities of a `LinkedList` and their runti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTExODU0Nyw3MDMzNTkzNTQsLTcwNz
+eyJoaXN0b3J5IjpbLTU2ODgxMzkwOCw3MDMzNTkzNTQsLTcwNz
 A3NDg4LC0xMDkwNjUyMjJdfQ==
 -->
