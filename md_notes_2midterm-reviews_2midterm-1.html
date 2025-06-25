@@ -141,7 +141,10 @@ Lists</h1>
 <li>Free temp from memory (<code>delete temp</code>)</li>
 </ol>
 </li>
-<li>Inserting at the back of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is also <code>O(1)</code></li>
+<li>Inserting at the back of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is also <code>O(1)</code>, but this assumes that there is a <code>tail</code> pointer<ul>
+<li>Otherwise it would be <code>O(n)</code> because we would need to traverse <code>n</code> times through the entire list from the <code>head</code> to find the last node</li>
+</ul>
+</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
