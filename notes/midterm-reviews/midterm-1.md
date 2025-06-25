@@ -40,14 +40,15 @@ The table below shows the core functionalities of a `LinkedList` and their runti
 | Find a value in a sorted list  | `O(n)` |
 
 - Inserting at the front of a `LinkedList` is `O(1)`. This is because we only have to do 3 steps. Create a new node with its given data, point its next to the original head, set the new node as `head`
-- Removing at the front of a `LinkedList` is also `O(1)`. This is because to remove the front node, we need to 
+- Removing at the front of a `LinkedList` is also `O(1)`. This is because to remove the front node, we only need to do 3 constant operations 
 	1. Create a temporary node pointing to the head
 	2. set `head` to its next pointer (`head = head->next`)
 	3. Free temp from memory (`delete temp`)
+- Inserting at the back of a `LinkedList` is also `O(1)`
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM4NjgwMjAsMTY5ODg4ODUwNiwzNj
-IwNDgzMDEsNzAzMzU5MzU0LC03MDcwNzQ4OCwtMTA5MDY1MjIy
-XX0=
+eyJoaXN0b3J5IjpbLTE5MjgzNTEzNCwxNjk4ODg4NTA2LDM2Mj
+A0ODMwMSw3MDMzNTkzNTQsLTcwNzA3NDg4LC0xMDkwNjUyMjJd
+fQ==
 -->
