@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['s_20queues_0',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md64',1,'']]],
+  ['s_20queues_0',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md65',1,'']]],
   ['semantics_1',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
   ['shallow_20and_20deep_20copies_2',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
   ['stack_3',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['stacks_4',['Stacks',['../md_notes_2module-6.html#autotoc_md63',1,'']]],
+  ['stacks_4',['Stacks',['../md_notes_2module-6.html#autotoc_md64',1,'']]],
   ['stacks_20and_20queues_5',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
-  ['stacks_20v_20s_20queues_6',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md64',1,'']]],
-  ['std_3a_3avector_20tt_7',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md70',1,'']]],
+  ['stacks_20v_20s_20queues_6',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md65',1,'']]],
+  ['std_3a_3avector_20tt_7',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md71',1,'']]],
   ['structs_8',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
-  ['structure_9',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md67',1,'']]]
+  ['structure_9',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md68',1,'']]]
 ];
