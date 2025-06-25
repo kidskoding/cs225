@@ -44,6 +44,7 @@ Covers the info discussed in course prerequisities, including Graph Theory from 
 	    -   Return by value, by reference, and by pointer
 
 ## Recursive Definitions
+
 - **Recursive definitions** contain formulas where each term is based on one or more preceding terms
 	- Many recursive numerical formulas have something called a 	**closed form**, which is a closed expression that doesn't involve computing each term in the formula/sequence (similar to a summation)
 		- Deriving this closed form is an act known as **unrolling**
@@ -826,5 +827,5 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
 
 Use this rule when you need to **avoid deep copying** and allow your class to be efficiently moved
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjY3MzA0NDYsLTMyODM1NTA2OF19
+eyJoaXN0b3J5IjpbLTYxODI0OTY5NiwtMzI4MzU1MDY4XX0=
 -->
