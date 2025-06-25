@@ -7,5 +7,6 @@ var searchData=
   ['list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_4',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
   ['list_20tt_20implementation_5',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
   ['list_20tt_20implementations_6',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-5.html#autotoc_md59',1,'']]],
-  ['listnode_7',['ListNode',['../structListNode.html',1,'']]]
+  ['listnode_7',['ListNode',['../structListNode.html',1,'']]],
+  ['lists_8',['Midterm 1 - Lists',['../md_notes_2midterm-reviews_2midterm-1.html',1,'']]]
 ];
