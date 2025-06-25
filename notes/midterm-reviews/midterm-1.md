@@ -3,6 +3,8 @@
 
 Midterm 1 covers modules 1-7, which discuss mostly about Lists. The topics covered are listed below
 
+## Topics Covered
+
 -   Lists
     -   ADT
     -   Linked
@@ -13,6 +15,8 @@ Use these assignments to reference when studying as well
 -   mp_stickers
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjM4MTQ4MV19
+eyJoaXN0b3J5IjpbLTEwNjM1MjU0MjldfQ==
 -->
