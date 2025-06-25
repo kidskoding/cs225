@@ -33,16 +33,17 @@ The table below shows the core functionalities of a `LinkedList` and their runti
 
 | Operation                     | **Singly Linked List** |
 |-------------------------------|-----------------------|
-| Insert at front/back    | `O(1)` |
+| Insert/Remove at front    | `O(1)` |
 | Insert/Remove at back     | `O(1)` for insert, `O(n)` for remove | Insert/Remove given a pointer  | `O(1)` |
 | Insert/Remove at a given index | `O(n)` |
 | Find a value in a list         | `O(n)` |
 | Find a value in a sorted list  | `O(n)` |
 
-- 
+- Inserting and Removing at the front of a `LinkedList` is `O(1)`. This is because we only have to do 3 steps. Create a new node with its given data, point its next to the original `head`
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5ODg4ODUwNiwzNjIwNDgzMDEsNzAzMz
-U5MzU0LC03MDcwNzQ4OCwtMTA5MDY1MjIyXX0=
+eyJoaXN0b3J5IjpbLTEyNzIyODY2MDUsMTY5ODg4ODUwNiwzNj
+IwNDgzMDEsNzAzMzU5MzU0LC03MDcwNzQ4OCwtMTA5MDY1MjIy
+XX0=
 -->
