@@ -74,7 +74,7 @@ var NAVTREE =
     ] ],
     [ "Midterm 1 - Lists", "md_notes_2midterm-reviews_2midterm-1.html", [
       [ "Topics Covered", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40", null ],
-      [ "List ADT", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41", null ]
+      [ "Lists", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41", null ]
     ] ],
     [ "Module 1 - Introduction to CS 225", "md_notes_2module-1.html", [
       [ "Background", "md_notes_2module-1.html#autotoc_md43", null ],
