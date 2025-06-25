@@ -16,9 +16,9 @@ Use these assignments to reference when studying as well
 
 ## List ADT
 
-ADTs, or Abstract Data Types, are templates/descriptions used to explain how a data structure works and how a user should use it. 
+ADTs, or Abstract Data Types, are templates/descriptions used to explain how a data structure works and how a user should use it.  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA2NTIyMl19
+eyJoaXN0b3J5IjpbLTE5NzQ4ODM5MTgsLTEwOTA2NTIyMl19
 -->
