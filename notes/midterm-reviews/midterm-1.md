@@ -34,8 +34,8 @@ The table below shows the core functionalities of a `LinkedList` and their runti
 | Operation                     | **Singly Linked List** |
 |-------------------------------|-----------------------|
 | Insert/Remove at front    | `O(1)` |
-| Insert/Remove at back     | `O(1)` for insert, `O(n)` for remove 
-Insert/Remove given a pointer  | `O(1)` |
+| Insert/Remove at back     | `O(1)` for insert, `O(n)` for remove | 
+| Insert/Remove given a pointer  | `O(1)` |
 | Insert/Remove at a given index | `O(n)` |
 | Find a value in a list         | `O(n)` |
 | Find a value in a sorted list  | `O(n)` |
@@ -47,11 +47,11 @@ Insert/Remove given a pointer  | `O(1)` |
 	3. Free temp from memory (`delete temp`)
 - Inserting at the back of a `LinkedList` is also `O(1)`, but this assumes that there is a `tail` pointer
 	- Otherwise it would be `O(n)` because we would need to traverse `n` times through the entire list from  `head` to find the last node
- - Removing from the back of a `LinkedList` is `O(1)`
+ - Removing from the back of a `LinkedList` is `O(n)` because we have to traverse through the list `n` times in order to find the second to last node and update its pointer to the newly made element
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyNTE3MTMxLDE2OTg4ODg1MDYsMzYyMD
+eyJoaXN0b3J5IjpbNzg2MDEyMDAzLDE2OTg4ODg1MDYsMzYyMD
 Q4MzAxLDcwMzM1OTM1NCwtNzA3MDc0ODgsLTEwOTA2NTIyMl19
 
 -->
