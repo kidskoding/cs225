@@ -123,8 +123,11 @@ Lists</h1>
 <li>Data - the actual value stored in the node</li>
 <li>Pointer - a pointer to the next node in the list (or previous in a doubly linked list)</li>
 </ol>
-<p>From a visual standpoint a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> looks like one belo </p><div class="fragment"><div class="line">[Data | Next] -&gt; [Data | Next] -&gt; [Data | Next] -&gt; NULL</div>
-</div><!-- fragment --></div></div><!-- contents -->
+<p>From a visual standpoint a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> looks like one below </p><div class="fragment"><div class="line">[Data | Next] -&gt; [Data | Next] -&gt; [Data | Next] -&gt; NULL</div>
+</div><!-- fragment --><p>Each node holds data and then a pointer to the next node!</p>
+<p>The table below shows the core functionalities of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> and their runtimes</p>
+<p>| Operation | <b>Singly Linked List</b> | <b>Array</b> | |----------------------------&mdash;|--------------------&mdash;|-------------------&mdash;| | Insert/Remove at front/back | <code>O(1)</code> | | Insert/Remove given a pointer | <code>O(1)</code> | | Insert/Remove at a given index | <code>O(n)</code> | | Find a value in a list | <code>O(n)</code> | | Find a value in a sorted list | <code>O(n)</code> |</p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
