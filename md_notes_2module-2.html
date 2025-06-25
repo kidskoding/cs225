@@ -99,9 +99,9 @@ $(function(){initNavTree('md_notes_2module-2.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Module 2 - C++ Review</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md44"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md45"></a></p>
 <p>Contacting the CS 225 course - <a href="#" onclick="location.href='mai'+'lto:'+'cs2'+'25'+'adm'+'in'+'@li'+'st'+'s.c'+'s.'+'ill'+'in'+'ois'+'.e'+'du'; return false;">cs225<span class="obfuscator">.nosp@m.</span>admi<span class="obfuscator">.nosp@m.</span>n@lis<span class="obfuscator">.nosp@m.</span>ts.c<span class="obfuscator">.nosp@m.</span>s.ill<span class="obfuscator">.nosp@m.</span>inoi<span class="obfuscator">.nosp@m.</span>s.edu</a></p>
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md46"></a>
 Encapsulation</h1>
 <p>Encapsulation in C++ is primarily distinguished via two things: <b>header</b> and <b>code</b>. In C/C++, code is separated into two files, one which we call the <b>header</b> and one which we call the <b>code segment</b></p><ul>
 <li><b>header files</b> - Describes how the code is used, or how people should use this specific data structure</li>
@@ -110,7 +110,7 @@ Encapsulation</h1>
 <li>has a <code>.cpp</code> file extension</li>
 </ul>
 <p>Object Oriented languages also provide with two main things, a <b>constructor</b>, which initializes the necessary data for us in a object and a <b>destructor</b> which gets rid of any necessary data for us in an object</p>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<h1><a class="anchor" id="autotoc_md47"></a>
 Memory Management - Ownership</h1>
 <p>Someone or some code owns everything, which simply means that <b>one part of the program is responsible</b> for</p><ul>
 <li>Creating an object in memory (<b>Constructor</b>)</li>
@@ -119,7 +119,7 @@ Memory Management - Ownership</h1>
 </ul>
 <p>This essentially means that the programmer is responsible for managing memory, which can both be powerful and dangerous. Forgetting to free allocated memory can cause <b>memory leaks</b>, or program crashes. In contrast, <b>freeing</b> memory too early can cause <b>dangling pointers</b> and <b>undefined behavior (segfaults)</b>.</p>
 <p>Ownership is tracked carefully using <code>new</code> and <code>delete</code>, or use smart pointers like <code>std::unique_ptr</code>, <code>std::shared_ptr</code>, <code>std::weak_ptr</code></p>
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Rule of Zero/Three/Five</h1>
 <p>When your class manages resources (<b>dynamic memory</b>, file handles, etc.), you need to define how it is <b>copied</b>, <b>moved</b>, and <b>destroyed</b> in order to avoid issues like memory leaks or double deletes</p>
 <p>The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class</p>

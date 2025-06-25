@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['management_20ownership_0',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md46',1,'']]],
+  ['management_20ownership_0',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md47',1,'']]],
   ['material_1',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
   ['member_20functions_2',['Member Functions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md18',1,'']]],
   ['memory_20allocation_3',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]],
-  ['memory_20management_20ownership_4',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md46',1,'']]],
+  ['memory_20management_20ownership_4',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md47',1,'']]],
   ['midterm_200_20review_20of_20prerequisite_20material_5',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
   ['midterm_201_20lists_6',['Midterm 1 - Lists',['../md_notes_2midterm-reviews_2midterm-1.html',1,'']]],
   ['module_201_20introduction_20to_20cs_20225_7',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
