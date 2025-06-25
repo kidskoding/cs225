@@ -126,7 +126,22 @@ Lists</h1>
 <p>From a visual standpoint a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> looks like one below </p><div class="fragment"><div class="line">[Data | Next] -&gt; [Data | Next] -&gt; [Data | Next] -&gt; NULL</div>
 </div><!-- fragment --><p>Each node holds data and then a pointer to the next node!</p>
 <p>The table below shows the core functionalities of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> and their runtimes</p>
-<p>| Operation | <b>Singly Linked List</b> | <b>Array</b> | |----------------------------&mdash;|--------------------&mdash;|-------------------&mdash;| | Insert/Remove at front/back | <code>O(1)</code> | | Insert/Remove given a pointer | <code>O(1)</code> | | Insert/Remove at a given index | <code>O(n)</code> | | Find a value in a list | <code>O(n)</code> | | Find a value in a sorted list | <code>O(n)</code> |</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Operation   </th><th class="markdownTableHeadNone"><b>Singly Linked List</b>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Insert/Remove at front   </td><td class="markdownTableBodyNone"><code>O(1)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Insert/Remove at back   </td><td class="markdownTableBodyNone">usually <code>O(n)</code>, can be <code>O(1)</code> if there is a <code>tail</code> pointer to back of the list    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Insert/Remove given a pointer   </td><td class="markdownTableBodyNone"><code>O(1)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Insert/Remove at a given index   </td><td class="markdownTableBodyNone"><code>O(n)</code>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Find a value in a list   </td><td class="markdownTableBodyNone"><code>O(n)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Find a value in a sorted list   </td><td class="markdownTableBodyNone"><code>O(n)</code>   </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
