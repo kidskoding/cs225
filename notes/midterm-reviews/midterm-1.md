@@ -14,9 +14,11 @@ Use these assignments to reference when studying as well
 -   lab_debug
 -   mp_stickers
 
+## List ADT
 
+ADTs, or Abstract Data Types, are templates used to provide the reference of a data structure, explaining how it should be used 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjM1MjU0MjldfQ==
+eyJoaXN0b3J5IjpbLTIwOTM2Mzg2MjZdfQ==
 -->
