@@ -5,6 +5,7 @@ Midterm 0 is CS 225's formal introduction to UIUC's Computer Based Testing Facil
 Covers the info discussed in course prerequisities, including Graph Theory from **CS 173/MATH 213** and C++ principles from **CS 128/ECE 220**
 
 ## Topics Covered
+
 - Course Policies
 - Mathematical Foundations
 	- Be able to give a closed form solution to a recurence relation
@@ -825,5 +826,5 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
 
 Use this rule when you need to **avoid deep copying** and allow your class to be efficiently moved
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODM1NTA2OF19
+eyJoaXN0b3J5IjpbLTE0NjY3MzA0NDYsLTMyODM1NTA2OF19
 -->
