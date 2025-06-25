@@ -22,16 +22,28 @@ In a **`LinkedList`**, each node is stored independently in memory and contains
 1. Data - the actual value stored in the node
 2. Pointer - a pointer to the next node in the list (or previous in a doubly linked list)
 
-From a visual standpoint a `LinkedList` looks like one belo
+From a visual standpoint a `LinkedList` looks like one below
 ```
 [Data | Next] -> [Data | Next] -> [Data | Next] -> NULL
 ```
+
+Each node holds data and then a pointer to the next node!
+
+The table below shows the core functionalities of a `LinkedList` and their runtimes
+
+| Operation                     | **Singly Linked List** | **Array**            |
+|-------------------------------|-----------------------|----------------------|
+| Insert/Remove at front/back    | `O(1)` |
+| Insert/Remove given a pointer  | `O(1)` |
+| Insert/Remove at a given index | `O(n)` |
+| Find a value in a list         | `O(n)` |
+| Find a value in a sorted list  | `O(n)` |
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTM1MDcxMyw3MDMzNTkzNTQsLTcwNz
+eyJoaXN0b3J5IjpbLTE1MTExODU0Nyw3MDMzNTkzNTQsLTcwNz
 A3NDg4LC0xMDkwNjUyMjJdfQ==
 -->
