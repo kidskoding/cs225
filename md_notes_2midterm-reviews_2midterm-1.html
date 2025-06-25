@@ -130,9 +130,18 @@ Lists</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Operation   </th><th class="markdownTableHeadNone"><b>Singly Linked List</b>    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Insert/Remove at front   </td><td class="markdownTableBodyNone"><code>O(1)</code>   </td></tr>
+<td class="markdownTableBodyNone">Insert/Remove at front   </td><td class="markdownTableBodyNone"><code>O(1)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Insert/Remove at back   </td><td class="markdownTableBodyNone"><code>O(1)</code> for insert, <code>O(n)</code> for remove    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Insert/Remove given a pointer   </td><td class="markdownTableBodyNone"><code>O(1)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Insert/Remove at a given index   </td><td class="markdownTableBodyNone"><code>O(n)</code>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Find a value in a list   </td><td class="markdownTableBodyNone"><code>O(n)</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Find a value in a sorted list   </td><td class="markdownTableBodyNone"><code>O(n)</code>   </td></tr>
 </table>
-<p>| Insert/Remove at back | <code>O(1)</code> for insert, <code>O(n)</code> for remove | Insert/Remove given a pointer | <code>O(1)</code> | | Insert/Remove at a given index | <code>O(n)</code> | | Find a value in a list | <code>O(n)</code> | | Find a value in a sorted list | <code>O(n)</code> |</p>
 <ul>
 <li>Inserting at the front of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is <code>O(1)</code>. This is because we only have to do 3 steps. Create a new node with its given data, point its next to the original head, set the new node as <code>head</code></li>
 <li>Removing at the front of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is also <code>O(1)</code>. This is because to remove the front node, we only need to do 3 constant operations<ol type="1">
@@ -142,10 +151,11 @@ Lists</h1>
 </ol>
 </li>
 <li>Inserting at the back of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is also <code>O(1)</code>, but this assumes that there is a <code>tail</code> pointer<ul>
-<li>Otherwise it would be <code>O(n)</code> because we would need to traverse <code>n</code> times through the entire list from the <code>head</code> to find the last node</li>
+<li>Otherwise it would be <code>O(n)</code> because we would need to traverse <code>n</code> times through the entire list from <code>head</code> to find the last node</li>
 </ul>
 </li>
 </ul>
+<p>Removing from the back of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is <code>O(1)</code></p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
