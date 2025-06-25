@@ -44,11 +44,12 @@ The table below shows the core functionalities of a `LinkedList` and their runti
 	1. Create a temporary node pointing to the head
 	2. set `head` to its next pointer (`head = head->next`)
 	3. Free temp from memory (`delete temp`)
-- Inserting at the back of a `LinkedList` is also `O(1)`
+- Inserting at the back of a `LinkedList` is also `O(1)`, but this assumes that there is a `tail` pointer
+	- Otherwise it would be `O(n)` because we would need to traverse `n` times through the entire list from the `head` to find the last node
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjgzNTEzNCwxNjk4ODg4NTA2LDM2Mj
-A0ODMwMSw3MDMzNTkzNTQsLTcwNzA3NDg4LC0xMDkwNjUyMjJd
-fQ==
+eyJoaXN0b3J5IjpbOTM1OTQzNzA0LDE2OTg4ODg1MDYsMzYyMD
+Q4MzAxLDcwMzM1OTM1NCwtNzA3MDc0ODgsLTEwOTA2NTIyMl19
+
 -->
