@@ -39,10 +39,10 @@ The table below shows the core functionalities of a `LinkedList` and their runti
 | Find a value in a list         | `O(n)` |
 | Find a value in a sorted list  | `O(n)` |
 
-
+- 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMDQ4MzAxLDcwMzM1OTM1NCwtNzA3MD
-c0ODgsLTEwOTA2NTIyMl19
+eyJoaXN0b3J5IjpbMTY5ODg4ODUwNiwzNjIwNDgzMDEsNzAzMz
+U5MzU0LC03MDcwNzQ4OCwtMTA5MDY1MjIyXX0=
 -->
