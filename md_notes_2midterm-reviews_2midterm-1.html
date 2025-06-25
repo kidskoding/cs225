@@ -134,7 +134,13 @@ Lists</h1>
 </table>
 <p>| Insert/Remove at back | <code>O(1)</code> for insert, <code>O(n)</code> for remove | Insert/Remove given a pointer | <code>O(1)</code> | | Insert/Remove at a given index | <code>O(n)</code> | | Find a value in a list | <code>O(n)</code> | | Find a value in a sorted list | <code>O(n)</code> |</p>
 <ul>
-<li>Inserting and Removing at the front of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is <code>O(1)</code>. This is because we only have to do 3 steps. Create a new node with its given data, point its next to the original <code>head</code></li>
+<li>Inserting at the front of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is <code>O(1)</code>. This is because we only have to do 3 steps. Create a new node with its given data, point its next to the original head, set the new node as <code>head</code></li>
+<li>Removing at the front of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is also <code>O(1)</code>. This is because to remove the front node, we need to<ol type="1">
+<li>Create a temporary node pointing to the head</li>
+<li>set <code>head</code> to its next pointer (<code>head = head-&gt;next</code>)</li>
+<li>Free temp from memory (<code>delete temp</code>)</li>
+</ol>
+</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
