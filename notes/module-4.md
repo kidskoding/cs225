@@ -1,5 +1,4 @@
 
-
 # Module 4 - `ArrayList`, an Array implementation of a `List`
 
 There is another way to implement a `List`, which is by using an Array. This is simply implementing a C++ `std::vector`, or in broader programming terms, an `ArrayList`
@@ -131,5 +130,5 @@ void ArrayList<T>::pushBack(const T& data) {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk3NTAzOTldfQ==
+eyJoaXN0b3J5IjpbMjA2MjM1MTk4M119
 -->
