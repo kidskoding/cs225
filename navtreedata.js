@@ -88,7 +88,7 @@ var NAVTREE =
     [ "Module 14 - AVL Trees", "md_notes_2module-14.html", null ],
     [ "Module 15 - BBST Wrap and Lambda", "md_notes_2module-15.html", null ],
     [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", null ],
-    [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
+    [ "M", "md_notes_2module-17.html", null ],
     [ "Module 2 - C++ Review", "md_notes_2module-2.html", [
       [ "Encapsulation", "md_notes_2module-2.html#autotoc_md55", null ],
       [ "Memory Management - Ownership", "md_notes_2module-2.html#autotoc_md56", null ],

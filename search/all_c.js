@@ -12,8 +12,7 @@ var searchData=
   ['bst_20balance_9',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['bst_20implementation_10',['Module 11 - BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['bst_20rotations_11',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['btrees_12',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_13',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md68',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_14',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md69',1,'']]],
-  ['by_20induction_15',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
+  ['by_20adding_202_20elements_20every_20time_12',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md68',1,'']]],
+  ['by_20doubling_20the_20elements_20every_20time_13',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md69',1,'']]],
+  ['by_20induction_14',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
 ];
