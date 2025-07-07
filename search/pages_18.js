@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['zero_20three_20five_0',['Zero Three Five',['../md__lecture_01_notes_2_lecture_012_01-_01_c_09_09_01and_01_lists.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md__midterm_01_reviews_2_midterm_010_2_programming_01_review.html#autotoc_md33',1,'Rule of Zero/Three/Five']]]
+  ['s_20algorithm_0',['s Algorithm',['../md_notes_2module-25.html',1,'Module 25 - Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - Minimum Spanning Tree (Prim&apos;s Algorithm)']]],
+  ['search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['search_20and_20bst_2',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
+  ['sets_3',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
+  ['spanning_20tree_20kruskal_20s_20algorithm_4',['Module 25 - Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
+  ['spanning_20tree_20prim_20s_20algorithm_5',['Module 26 - Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
+  ['stacks_20and_20queues_6',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]]
 ];

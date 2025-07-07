@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['grap_0',['Module 24 - Grap',['../md_notes_2module-24.html',1,'']]]
+  ['disjoint_20sets_0',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]]
 ];
