@@ -117,8 +117,8 @@ var NAVTREE =
     ] ],
     [ "Module 30 - Hashing, Hash Collisions, and Hash Tables", "md_notes_2module-30.html", null ],
     [ "Module 31 - Bloom Filters", "md_notes_2module-31.html", null ],
-    [ "Module 32 - Hash Tables", "md_notes_2module-32.html", null ],
-    [ "Module 33 - MinHash Sketch", "md_notes_2module-33.html", null ],
+    [ "Module 32 - Cardinality", "md_notes_2module-32.html", null ],
+    [ "Module 33 - MinHash Sketch Strategy", "md_notes_2module-33.html", null ],
     [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-4.html", [
       [ "pushBack()", "md_notes_2module-4.html#autotoc_md81", null ]
     ] ],
