@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "$0123456789abcdefghiklmnopqrstuvwz",
+  0: "$0123456789abcdefghilmnopqrstuvwz",
   1: "acl",
   2: "fiopr",
-  3: "0123456789abcdghiklmopqrstw"
+  3: "0123456789abcdghilmopqrstw"
 };
 
 var indexSectionNames =
