@@ -13,7 +13,7 @@ var searchData=
   ['stacks_10',['Stacks',['../md_notes_2module-6.html#autotoc_md84',1,'']]],
   ['stacks_20and_20queues_11',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
   ['stacks_20v_20s_20queues_12',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md85',1,'']]],
-  ['std_3a_3avector_20tt_13',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md92',1,'']]],
+  ['std_3a_3avector_20tt_13',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md91',1,'']]],
   ['structs_14',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
-  ['structure_15',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md89',1,'']]]
+  ['structure_15',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md88',1,'']]]
 ];

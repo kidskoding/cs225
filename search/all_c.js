@@ -4,7 +4,7 @@ var searchData=
   ['balance_1',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['bbst_20range_20search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
   ['bbst_20wrap_20and_20lambda_3',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
-  ['begin_20tt_20and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_4',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md91',1,'']]],
+  ['begin_20tt_20and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_4',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md90',1,'']]],
   ['big_20o_5',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
   ['big_20o_20of_20common_20algorithms_6',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
   ['bipartite_20graph_7',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],

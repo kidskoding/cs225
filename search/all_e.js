@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['data_20in_20each_20data_20structure_0',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md89',1,'']]],
-  ['data_20structure_1',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md89',1,'']]],
+  ['data_20in_20each_20data_20structure_0',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md88',1,'']]],
+  ['data_20structure_1',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md88',1,'']]],
   ['deep_20copies_2',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
   ['default_20and_20delete_20on_20copy_20constructors_3',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
   ['definitions_4',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],

@@ -130,10 +130,10 @@ var NAVTREE =
       [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md86", null ]
     ] ],
     [ "Module 7 - Iterators", "md_notes_2module-7.html", [
-      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md89", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md90", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md91", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md92", null ]
+      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md88", null ],
+      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md89", null ],
+      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md90", [
+        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md91", null ]
       ] ]
     ] ],
     [ "Module 8 - Trees", "md_notes_2module-8.html", null ],
