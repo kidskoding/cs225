@@ -115,9 +115,9 @@ var NAVTREE =
         [ "remove", "md_notes_2module-3.html#autotoc_md75", null ]
       ] ]
     ] ],
-    [ "Module 30 - Hashing", "md_notes_2module-30.html", null ],
-    [ "Module 31 - Bloom Filters", "md_notes_2module-31_81.html", null ],
+    [ "Module 30 - Hashing, Hash Collisions, and Hash Tables", "md_notes_2module-30.html", null ],
     [ "module-31", "md_notes_2module-31.html", null ],
+    [ "Module 32 - Hash Tables", "md_notes_2module-32.html", null ],
     [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-4.html", [
       [ "pushBack()", "md_notes_2module-4.html#autotoc_md79", null ]
     ] ],
