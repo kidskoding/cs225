@@ -99,14 +99,14 @@ $(function(){initNavTree('md_notes_2module-7.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Module 7 - Iterators</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md87"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md89"></a></p>
 <p>One concept that is often in the scope of DSA is the <b>iterator</b>. An iterator is an object that traverses through all the elements/items in a data structure.</p>
 <p>Suppose we had 3 data structures, <code>Array</code>, <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, and a <code>Hypercube</code> (also known as a tesseract and is a 4D cube). How would we be able to traverse through every element in this data structure?</p>
 <p>The solution is simply an iterator, which provides encapsulated access to our data in a data structure. Each data structure, <code>Array</code>, <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, and <code>Hypercube</code> has its own way of iterating through its data</p><ul>
 <li>For example, an <code>Array</code> typically uses an index to iterate, where <code>index++</code> traverses through each element in an array</li>
 <li>Similarly, a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> uses a pointer to iterate, where <code>cur-&gt;next</code> represents a pointer to the next <code><a class="el" href="structListNode.html">ListNode</a></code> in a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>. This is shown in the table below</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md88"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 Iterate through data in each data structure</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -120,7 +120,7 @@ Iterate through data in each data structure</h1>
 </table>
 <p>These intuitively make sense because we know how these data structures work. With an array, we can use its index to access an element, a <code><a class="el" href="classLinkedList.html">LinkedList</a></code> we can hold a pointer to the next node, etc.</p>
 <p>But if we don't know how the data structure works, it will be very difficult to implement an iterator for it because we wouldn't know how to iterate through its elements.</p>
-<h1><a class="anchor" id="autotoc_md89"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 Iterators with respect to Classes</h1>
 <p>Every class that implements an iterator must have the following <b>two pieces</b>.</p>
 <ol type="1">
@@ -151,7 +151,7 @@ Iterators with respect to Classes</h1>
 </ul>
 <p>A bidirectional iterator could also be implemented in a data structure, where it can traverse through elements <b>forwards</b> and <b>backwards</b>.</p>
 <p>With these requirements, how would we implement <code>begin()</code> and <code>end()</code> with the example data structure mentioned earlier in this module?</p>
-<h1><a class="anchor" id="autotoc_md90"></a>
+<h1><a class="anchor" id="autotoc_md92"></a>
 Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> and <code>LinkedList</code></h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -183,7 +183,7 @@ Implementing <code>begin()</code> and <code>end()</code> for <code>Array</code> 
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md93"></a>
 Iterator Usage Example with <code>std::vector</code></h2>
 <p>Take a look at the following <code>Animal</code> class below</p>
 <div class="fragment"><div class="line">struct Animal  {</div>

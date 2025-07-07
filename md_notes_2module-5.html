@@ -99,10 +99,10 @@ $(function(){initNavTree('md_notes_2module-5.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Module 5 - Amortized Analysis</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md78"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md79"></a></p>
 <p><b>Amortized Analysis</b> is a technique commonly used in Computer Science to analyze the <b>average running time</b> per operation over a sequence of operations in an algorithm. Rather than focusing on the worst case cost for a single operation (this is simply <b>Big-O</b>), amortized analysis evaluates the overall cost when spreaded out evenly across all operations performed.</p>
 <p>This is useful because even though some operations in an algorithm can cost a lot more than others, the average cost per operation is low when many operations are performed consecutively.</p>
-<h1><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md80"></a>
 Resizing by adding 2 elements every time</h1>
 <p>One way to implement our <code>addSpace()</code> function is to resize the buffer by increasing the <code>capacity</code> by 2 each time the array is full. This means that when more space is needed, <code>addSpace()</code> allocates a new array with a capacity of <code>capacity + 2</code>. Recall that after this, <code>addSpace()</code> then needs to copy all the data from the previous buffer to the new buffer and then update the buffer's internal pointers.</p>
 <p>Since <code>addSpace()</code> needs to copy all the data from the previous buffer to the new buffer when updating its capacity by <code>capacity + 2</code>, this means that the algorithm has a runtime of $O(n)$, where $n$ represents the number of elements currently in the array. This is because each element must be copied one by one into the new buffer.</p>
@@ -115,7 +115,7 @@ Resizing by adding 2 elements every time</h1>
 <p>Therefore, the total time for $n$ inserts is $\frac{n^2 + 2n}{4}$.</p>
 <p>The total amortized cost is then calculated by dividing by $n$, the total number of operations performed on an algorithm $$ \frac{\frac{n^2 + 2n}{4}}{n} = \frac{n^2 + 2n}{4n} = \frac{n(n + 2)}{4n} = \frac{n + 2}{4} = \frac{1}{4}n + \frac{1}{2} $$</p>
 <p>making the total amortized cost $O(n)$ (since constants are dropped)</p>
-<h1><a class="anchor" id="autotoc_md80"></a>
+<h1><a class="anchor" id="autotoc_md81"></a>
 Resizing by doubling the elements every time</h1>
 <p>Now suppose, we resized the <code><a class="el" href="classArrayList.html">ArrayList</a></code> by doubling the capacity everytime. Each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large.</p>
 <p>Let $r$ represent the number of resizes, where a resize occurs when the <a class="el" href="classArrayList.html">ArrayList</a> is full (or simply every time two elements are added)</p>
@@ -188,7 +188,7 @@ Resizing by doubling the elements every time</h1>
 <div class="line">    size = data + currentSize;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>This will effectively add more space to our buffer (double that the original) when its capacity is full</p>
-<h1><a class="anchor" id="autotoc_md81"></a>
+<h1><a class="anchor" id="autotoc_md82"></a>
 Amortized Costs of various operations on various <code>List</code> implementations</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
