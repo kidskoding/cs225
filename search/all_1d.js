@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tables_0',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['tables_0',['Tables',['../md_notes_2module-30.html',1,'Module 30 - Hashing, Hash Collisions, and Hash Tables'],['../md_notes_2module-32.html',1,'Module 32 - Hash Tables']]],
   ['terminology_1',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
   ['the_20elements_20every_20time_2',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md84',1,'']]],
   ['three_20five_3',['Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-2.html#autotoc_md59',1,'Rule of Zero/Three/Five']]],

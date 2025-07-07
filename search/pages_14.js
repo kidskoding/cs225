@@ -31,7 +31,7 @@ var searchData=
   ['module_203_20tt_20list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_28',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
   ['module_2030_20hashing_20hash_20collisions_20and_20hash_20tables_29',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
   ['module_2031_20bloom_20filters_30',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
-  ['module_2032_20cardinality_31',['Module 32 - Cardinality',['../md_notes_2module-32.html',1,'']]],
+  ['module_2032_20hash_20tables_31',['Module 32 - Hash Tables',['../md_notes_2module-32.html',1,'']]],
   ['module_2033_20minhash_20sketch_32',['Module 33 - MinHash Sketch',['../md_notes_2module-33.html',1,'']]],
   ['module_204_20tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_33',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
   ['module_205_20amortized_20analysis_34',['Module 5 - Amortized Analysis',['../md_notes_2module-5.html',1,'']]],

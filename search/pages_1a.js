@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tables_0',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['tables_0',['Tables',['../md_notes_2module-30.html',1,'Module 30 - Hashing, Hash Collisions, and Hash Tables'],['../md_notes_2module-32.html',1,'Module 32 - Hash Tables']]],
   ['to_20cs_20225_1',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['traversals_2',['Traversals',['../md_notes_2module-24.html',1,'Module 24 - Graph Traversals'],['../md_notes_2module-9.html',1,'Module 9 - Tree Traversals']]],
   ['tree_20kruskal_20s_20algorithm_3',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
