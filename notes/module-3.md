@@ -119,14 +119,20 @@ To solve this problem, the best thing to do is to create a `insert` algorithm th
 
 template <typename T>
 struct ListNode {
-	T data;
-	ListNode<T>* next;
-	ListNode(const T& data) : data(data), next(nullptr) { }
-}
+    // the current data in the list 
+    T data;
+    
+    // a pointer to the next node in the linked list
+    ListNode* next;
+
+    // a copy constructor for the list
+    ListNode(const T& data) : data(data), next(nullptr) { }
+};
 
 template <typename T>
 class List {
 private:
+	// a pointer to the head (front) of the linked list
 	ListNode<T>* head;
 
 public:
@@ -194,7 +200,7 @@ To make this call take place, we need to find the node at the first index and in
 ### `find`
 
 1. To implement `find`, it to return a `ListNode*&`, which is **a `ListNode` pointer by reference**
-    1. Recall that with return type semantics in C++, returning just a `ListNode*` won't actually allow us to change the original `Listnode*`. Doing so will create a copy of the `ListNode*` and instead modify the **copy** instead of the original pointer. Therefore, we need to return a **reference** to the original pointer, which is a type `ListNode*&`
+    1. Recall that with return type semantics in C++, returning just a `ListNode*` won't actually allow us to change the original `ListNode*`. Doing so will create a copy of the `ListNode*` and instead modify the **copy** instead of the original pointer. Therefore, we need to return a **reference** to the original pointer, which is a type `ListNode*&`
     2. Recall that `insertAtFront` changed our `head` member variable. Therefore, `head` needs to be the pointer pointing at the given index needed to be inserted
     3. Implement this **iteratively**. Implementing **recursively** will cause a **Stack Overflow Error**, where no more stack frames can be placed on the call stack, resulting in **stack memory overflow**
         1. Regardless, thinking about the recursive solution can still be a good thing to do
@@ -468,6 +474,6 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MTExMDg0NCwtMTUwNjkxNjkyNiwtMT
-c1MDQ5MzA3OF19
+eyJoaXN0b3J5IjpbLTExMTIyNDEwMjYsLTE1MDY5MTY5MjYsLT
+E3NTA0OTMwNzhdfQ==
 -->
