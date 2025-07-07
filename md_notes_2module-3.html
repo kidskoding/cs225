@@ -205,7 +205,14 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">    ListNode&lt;T&gt;* head;</div>
 <div class="line"> </div>
 <div class="line">public:</div>
+<div class="line">    /** Inserts data at the front of a List</div>
+<div class="line">    * Runtime: O(1)</div>
+<div class="line">    */</div>
 <div class="line">    void insertAtFront(const T&amp; data);</div>
+<div class="line">    </div>
+<div class="line">    /** Inserts data in the given index of a list</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    void insert(const T&amp; data, int index);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>When the index is 0, <code>insert</code> would behave exactly how <code>insertAtFront</code> works</p>
@@ -216,27 +223,43 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <li><p class="startli">Find the place to insert the newly created node (typically the code semantics are before)</p><ol type="a">
 <li>Therefore, we need a helper <code>find</code> function to return the node by reference at the given index. Our updated <code><a class="el" href="classLinkedList.html">LinkedList</a></code> ADT is represented in the code below</li>
 </ol>
-<div class="fragment"><div class="line">// List.h</div>
+<div class="fragment"><div class="line">// LinkedList.h</div>
 <div class="line"> </div>
 <div class="line">#pragma once</div>
 <div class="line"> </div>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">struct ListNode {</div>
+<div class="line">    // the current data in the list </div>
 <div class="line">    T data;</div>
-<div class="line">    ListNode&lt;T&gt;* next;</div>
-<div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) { }</div>
-<div class="line">}</div>
+<div class="line">    </div>
+<div class="line">    // a pointer to the next node in the linked list</div>
+<div class="line">    ListNode* next;</div>
 <div class="line"> </div>
+<div class="line">    // a copy constructor for the list</div>
+<div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) { }</div>
+<div class="line">};</div>
+<div class="line">    </div>
 <div class="line">template &lt;typename T&gt;</div>
-<div class="line">class List {</div>
+<div class="line">class LinkedList {</div>
 <div class="line">private:</div>
+<div class="line">    // a pointer to the head of the linked list</div>
 <div class="line">    ListNode&lt;T&gt;* head;</div>
 <div class="line"> </div>
 <div class="line">public:</div>
+<div class="line">    /** Inserts data at the front of a List</div>
+<div class="line">    * Runtime: O(1)</div>
+<div class="line">    */</div>
 <div class="line">    void insertAtFront(const T&amp; data);</div>
+<div class="line"> </div>
+<div class="line">    /** Inserts data in the given index of a list</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    void insert(const T&amp; data, int index);</div>
+<div class="line">    </div>
+<div class="line">    /** Finds the `ListNode` at the given index!</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    ListNode&lt;T&gt;*&amp; find(int index);</div>
-<div class="line">};</div>
 </div><!-- fragment --> </li>
 </ol>
 <h2><a class="anchor" id="autotoc_md73"></a>
