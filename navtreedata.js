@@ -115,27 +115,29 @@ var NAVTREE =
         [ "remove", "md_notes_2module-3.html#autotoc_md75", null ]
       ] ]
     ] ],
-    [ "Module 30 - Hashing", "md_notes_2module-30.html", null ],
+    [ "Module 30 - Hashing, Hash Collisions, and Hash Tables", "md_notes_2module-30.html", null ],
+    [ "Module 31 - Bloom Filters", "md_notes_2module-31_81.html", null ],
     [ "module-31", "md_notes_2module-31.html", null ],
+    [ "Module 32 - Hash Tables", "md_notes_2module-32.html", null ],
     [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-4.html", [
-      [ "pushBack()", "md_notes_2module-4.html#autotoc_md78", null ]
+      [ "pushBack()", "md_notes_2module-4.html#autotoc_md80", null ]
     ] ],
     [ "Module 5 - Amortized Analysis", "md_notes_2module-5.html", [
-      [ "Resizing by adding 2 elements every time", "md_notes_2module-5.html#autotoc_md80", null ],
-      [ "Resizing by doubling the elements every time", "md_notes_2module-5.html#autotoc_md81", null ],
-      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-5.html#autotoc_md82", null ]
+      [ "Resizing by adding 2 elements every time", "md_notes_2module-5.html#autotoc_md82", null ],
+      [ "Resizing by doubling the elements every time", "md_notes_2module-5.html#autotoc_md83", null ],
+      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-5.html#autotoc_md84", null ]
     ] ],
     [ "Module 6 - Stacks and Queues", "md_notes_2module-6.html", [
-      [ "Queues", "md_notes_2module-6.html#autotoc_md84", null ],
-      [ "Stacks", "md_notes_2module-6.html#autotoc_md85", null ],
-      [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md86", null ],
-      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md87", null ]
+      [ "Queues", "md_notes_2module-6.html#autotoc_md86", null ],
+      [ "Stacks", "md_notes_2module-6.html#autotoc_md87", null ],
+      [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md88", null ],
+      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md89", null ]
     ] ],
     [ "Module 7 - Iterators", "md_notes_2module-7.html", [
-      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md90", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md91", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md92", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md93", null ]
+      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md92", null ],
+      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md93", null ],
+      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md94", [
+        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md95", null ]
       ] ]
     ] ],
     [ "Module 8 - Trees", "md_notes_2module-8.html", null ],
