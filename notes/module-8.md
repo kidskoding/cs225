@@ -9,7 +9,7 @@ A **binary tree**, $T$, is either
 1. A tree composed of a tuple containing the **root**, **left subtree**, and **right subtree**, $T = (r, T_L, T_R)$
 2. A **null** tree (there are no nodes in the tree)
 
-A data structure should be able to contain nothing beca
+A data structure should be able to contain nothing because that is how we tend to start evolving and adding elements/nodes into it. In the context of a tree, we would like to be able to start it off with nothing. Therefore, it makes sense to define a binary tree as a **null** tree, where it has no vertices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MTc4MzQyOCwtMjkxODg0MTc3XX0=
+eyJoaXN0b3J5IjpbMjEyNTAwNjI1LC0yOTE4ODQxNzddfQ==
 -->
