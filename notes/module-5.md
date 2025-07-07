@@ -152,7 +152,6 @@ This will effectively add more space to our buffer (double that the original) wh
 
 ## Amortized Costs of various operations on various `List` implementations
 
-
 | Operation                     | **Singly Linked List** | **Array**            |
 |-------------------------------|-----------------------|----------------------|
 | Insert/Remove at front/back    | `O(1)`                  | `O(1)`* (amortized)    |
@@ -164,5 +163,5 @@ This will effectively add more space to our buffer (double that the original) wh
 
 The `*` represents **amortized** cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis isn’t ideal for explaining the cost of a single, individual operation, but rather useful for understanding the average cost spread across many operations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2NzIzNjE4XX0=
+eyJoaXN0b3J5IjpbNjk1MDcwMDk2XX0=
 -->
