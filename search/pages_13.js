@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
-  ['tree_20sear_1',['Module 10 - Tree Sear',['../md_notes_2module-10.html',1,'']]],
-  ['trees_2',['Module 8 - Trees',['../md_notes_2module-8.html',1,'']]],
-  ['tt_3',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_4',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
-  ['tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_5',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_6',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['tt_20implementation_7',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
-  ['tt_20linked_20list_20tt_20implementation_8',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]],
-  ['tt_20list_20tt_9',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['tt_20list_20tt_20adt_20and_20tt_20linked_20list_20tt_20implementation_10',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-3.html',1,'']]]
+  ['range_20search_0',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['readme_1',['README',['../md_README.html',1,'']]],
+  ['review_2',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
+  ['review_20of_20prerequisite_20material_3',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]]
 ];

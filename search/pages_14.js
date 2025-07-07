@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['semantics_0',['Semantics',['../md_programming.html#autotoc_md26',1,'Copy Semantics'],['../md_programming.html#autotoc_md30',1,'Move Semantics']]],
-  ['shallow_20and_20deep_20copies_1',['Shallow and Deep Copies',['../md_programming.html#autotoc_md27',1,'']]],
-  ['stack_2',['Stack',['../md_programming.html#autotoc_md23',1,'']]],
-  ['std_3a_3avector_3',['Representing a &lt;span class=&quot;tt&quot;&gt;List&lt;/span&gt; as a &lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;',['../md_lecture4.html#autotoc_md9',1,'']]],
-  ['structs_4',['Classes vs Structs',['../md_programming.html#autotoc_md13',1,'']]]
+  ['sear_0',['Module 10 - Tree Sear',['../md_notes_2module-10.html',1,'']]],
+  ['search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['stacks_20and_20queues_2',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]]
 ];

@@ -1,14 +1,20 @@
 var searchData=
 [
-  ['s_20queues_0',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md66',1,'']]],
-  ['sear_1',['Module 10 - Tree Sear',['../md_notes_2module-10.html',1,'']]],
-  ['semantics_2',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['shallow_20and_20deep_20copies_3',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['stack_4',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['stacks_5',['Stacks',['../md_notes_2module-6.html#autotoc_md65',1,'']]],
-  ['stacks_20and_20queues_6',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
-  ['stacks_20v_20s_20queues_7',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md66',1,'']]],
-  ['std_3a_3avector_20tt_8',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md72',1,'']]],
-  ['structs_9',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
-  ['structure_10',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md69',1,'']]]
+  ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
+  ['range_20search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['readme_2',['README',['../md_README.html',1,'']]],
+  ['recursive_20definitions_3',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
+  ['references_4',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
+  ['references_20and_20pointers_5',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
+  ['remove_6',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
+  ['remove_20tt_7',['&lt;tt&gt;remove&lt;/tt&gt;',['../md_notes_2module-3.html#autotoc_md57',1,'']]],
+  ['resizing_20by_20adding_202_20elements_20every_20time_8',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md61',1,'']]],
+  ['resizing_20by_20doubling_20the_20elements_20every_20time_9',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md62',1,'']]],
+  ['resources_10',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md45',1,'']]],
+  ['respect_20to_20classes_11',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md71',1,'']]],
+  ['returning_20values_12',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
+  ['review_13',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
+  ['review_20of_20prerequisite_20material_14',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rule_20of_20zero_20three_20five_15',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-2.html#autotoc_md51',1,'Rule of Zero/Three/Five']]],
+  ['rvalue_20references_16',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
 ];
