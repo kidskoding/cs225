@@ -43,7 +43,7 @@ This is shown in the code below, which represents a generic `ListNode`, `ListNod
 Additionally, there is a pointer to the next `ListNode` in the List along with a copy constructor that can be used to copy data into the List!
 
 ```
-// List.h
+// LinkedList.hpp
 
 #pragma once
 
@@ -442,5 +442,5 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM4ODMwMDVdfQ==
+eyJoaXN0b3J5IjpbLTE3NTA0OTMwNzhdfQ==
 -->
