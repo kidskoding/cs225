@@ -425,26 +425,47 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <code>operator[]</code></h1>
 <p>The next function our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> ADT must have is the operator <code>[ ]</code>. Recall that in C++ we can operator overload with a function that changes the behavior of the <code>[ ]</code> operator.</p>
 <p>The brackets operator will behave very similarly to the <code>find</code> function, but rather return the <code>data</code> by reference that the <code><a class="el" href="structListNode.html">ListNode</a></code> at the given index contains. This updates our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> class like this (shown below)</p>
-<div class="fragment"><div class="line">// List.h</div>
+<div class="fragment"><div class="line">// LinkedList.h</div>
 <div class="line"> </div>
 <div class="line">#pragma once</div>
 <div class="line"> </div>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">struct ListNode {</div>
-<div class="line">    T data; // the current data in the linked list</div>
-<div class="line">    ListNode&lt;T&gt;* next; // a pointer to the next node in the linked list</div>
+<div class="line">    // the current data in the list </div>
+<div class="line">    T data;</div>
+<div class="line">    </div>
+<div class="line">    // a pointer to the next node in the linked list</div>
+<div class="line">    ListNode* next;</div>
+<div class="line"> </div>
+<div class="line">    // a copy constructor for the list</div>
 <div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) { }</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line">template&lt;typename T&gt;</div>
-<div class="line">class List {</div>
+<div class="line">template &lt;typename T&gt;</div>
+<div class="line">class LinkedList {</div>
 <div class="line">private:</div>
-<div class="line">    ListNode&lt;T&gt;* head; // a pointer to the head of the linked list</div>
+<div class="line">    // a pointer to the head (front) of the linked list</div>
+<div class="line">    ListNode&lt;T&gt;* head;</div>
 <div class="line"> </div>
 <div class="line">public:</div>
+<div class="line">    /** Inserts data at the front of a List</div>
+<div class="line">    * Runtime: O(1)</div>
+<div class="line">    */</div>
 <div class="line">    void insertAtFront(const T&amp; data);</div>
+<div class="line"> </div>
+<div class="line">    /** Inserts data in the given index of a list</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    void insert(const T&amp; data, int index);</div>
+<div class="line">    </div>
+<div class="line">    /** Finds the `ListNode` at the given index!</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    ListNode&lt;T&gt;*&amp; find(int index);</div>
+<div class="line">    </div>
+<div class="line">    /** Returns the data by reference of the `ListNode` at the given index </div>
+<div class="line">    *   Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    T&amp; operator[](int index);</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>This algorithm, therefore, works very simple</p>
