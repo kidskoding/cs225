@@ -217,15 +217,12 @@ To make this call take place, we need to find the node at the first index and in
 
 The code below shows implementing `find` **recursively**
 ```
-// List.hpp
+// LinkedList.hpp
 
-#include "List.h"
+#include "LinkedList.h"
 
 // RECURSIVE IMPLEMENTATION OF FIND!
 
-/** Finds the ListNode at the given index!
- *  Runtime: O(n)
- */
 template <typename T>
 ListNode*& List<T>::find(int index) {
     return find(index, head);
@@ -243,9 +240,9 @@ ListNode*& List<T>::find(int index, ListNode*& head) {
 
 The code below shows implementing `find` **iteratively**
 ```
-// List.hpp
+// LinkedList.hpp
 
-#include "List.h"
+#include "LinkedList.h"
 
 // ITERATIVE IMPLEMENTATION OF FIND!
 
@@ -278,26 +275,43 @@ ListNode<T>*& List<T>::find(int index) {
 We can also update our current implementation of the `LinkedList` ADT
 
 ```
-// List.h
+// LinkedList.h
 
 #pragma once
 
 template <typename T>
 struct ListNode {
-    T data; // the current data in the linked list
-    ListNode<T>* next; // a pointer to the next node in the linked list
+    // the current data in the list 
+    T data;
+    
+    // a pointer to the next node in the linked list
+    ListNode* next;
+
+    // a copy constructor for the list
     ListNode(const T& data) : data(data), next(nullptr) { }
 };
 
 template<typename T>
 class List {
 private:
-    ListNode<T>* head; // a pointer to the head of the linked list
+	// a pointer to the head of the linked list
+    ListNode<T>* head;
 
 public:
+    /** Inserts data at the front of a List
+	* Runtime: O(1)
+	*/
     void insertAtFront(const T& data);
+
+	/** Inserts data in the given index of a list
+	*  Runtime: O(n)
+	*/
     void insert(const T& data, int index);
-    ListNode<T>*& find(int index);
+    
+	/** Finds the `ListNode` at the given index!
+	*  Runtime: O(n)
+	*/
+	ListNode<T>*& find(int index);
 };
 ```
 
@@ -315,13 +329,10 @@ Now that the `find` function has been coded, we can continue with finishing our 
 This algorithm is shown in the code below
 
 ```
-// List.hpp
+// LinkedList.hpp
 
-#include "List.h"
+#include "LinkedList.h"
 
-/** Inserts data in the given index of a list
- *  Runtime: O(n)
- */
 template <typename T>
 void List<T>::insert(const T& data, int index) {
 	// Call `find` to find the `ListNode` at the given index
@@ -474,6 +485,6 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTIyNDEwMjYsLTE1MDY5MTY5MjYsLT
-E3NTA0OTMwNzhdfQ==
+eyJoaXN0b3J5IjpbLTg2MDg0MTM1MiwtMTUwNjkxNjkyNiwtMT
+c1MDQ5MzA3OF19
 -->
