@@ -100,7 +100,7 @@ var NAVTREE =
     [ "Module 21 - Disjoint Sets", "md_notes_2module-21.html", null ],
     [ "Module 22 - Graphs", "md_notes_2module-22.html", null ],
     [ "Module 23 - Graph Implementations", "md_notes_2module-23.html", null ],
-    [ "Module 24 - Graph Traversals", "md_notes_2module-24.html", null ],
+    [ "Module 24 - Grap", "md_notes_2module-24.html", null ],
     [ "Module 26 - Minimum Spanning Tree (Prim's Algorithm)", "md_notes_2module-26.html", null ],
     [ "Module 3 - <tt>List</tt> ADT and <tt>Linked List</tt> Implementation", "md_notes_2module-3.html", [
       [ "insertAtFront", "md_notes_2module-3.html#autotoc_md67", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
-  ['traversals_1',['Traversals',['../md_notes_2module-24.html',1,'Module 24 - Graph Traversals'],['../md_notes_2module-9.html',1,'Module 9 - Tree Traversals']]],
+  ['traversals_1',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
   ['tree_20prim_20s_20algorithm_2',['Module 26 - Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
   ['tree_20search_20and_20bst_3',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
   ['tree_20traversals_4',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],

@@ -8,7 +8,7 @@ var searchData=
   ['to_20classes_5',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md85',1,'']]],
   ['to_20cs_20225_6',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['topics_20covered_7',['Topics Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'Topics Covered'],['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40',1,'Topics Covered']]],
-  ['traversals_8',['Traversals',['../md_notes_2module-24.html',1,'Module 24 - Graph Traversals'],['../md_notes_2module-9.html',1,'Module 9 - Tree Traversals']]],
+  ['traversals_8',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
   ['tree_20prim_20s_20algorithm_9',['Module 26 - Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
   ['tree_20search_20and_20bst_10',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
   ['tree_20traversals_11',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
