@@ -51,7 +51,7 @@ template <typename T>
 struct ListNode {
 	T data;
 	ListNode<T>* next;
-	ListNode(const T& data) : data(data), next(nullptr) { }
+	ListNode(const T& data) : data(data), next(nullptr) { 	}
 }
 ```
 
@@ -442,5 +442,6 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTA0OTMwNzhdfQ==
+eyJoaXN0b3J5IjpbLTE1MDY5MTY5MjYsLTE3NTA0OTMwNzhdfQ
+==
 -->
