@@ -11,7 +11,7 @@ var searchData=
   ['resizing_20by_20adding_202_20elements_20every_20time_8',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md79',1,'']]],
   ['resizing_20by_20doubling_20the_20elements_20every_20time_9',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md80',1,'']]],
   ['resources_10',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md45',1,'']]],
-  ['respect_20to_20classes_11',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md89',1,'']]],
+  ['respect_20to_20classes_11',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md90',1,'']]],
   ['returning_20values_12',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
   ['review_13',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
   ['review_20of_20prerequisite_20material_14',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
