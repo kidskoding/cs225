@@ -43,16 +43,19 @@ This is shown in the code below, which represents a generic `ListNode`, `ListNod
 Additionally, there is a pointer to the next `ListNode` in the List along with a copy constructor that can be used to copy data into the List!
 
 ```
-// LinkedList.hpp
-
 #pragma once
 
 template <typename T>
 struct ListNode {
-	T data;
-	ListNode<T>* next;
-	ListNode(const T& data) : data(data), next(nullptr) { 	}
-}
+    // the current data in the list 
+    T data;
+    
+    // a pointer to the next node in the linked list
+    ListNode* next;
+
+    // a copy constructor for the list
+    ListNode(const T& data) : data(data), next(nullptr) { }
+};
 ```
 
 ## `insertAtFront`
@@ -79,9 +82,9 @@ graph LR
 In C++, this is what the `insertAtFront` algorithm would look like
 
 ```
-// List.hpp
+// LinkedList.hpp
 
-#include "List.h"
+#include "LinkedList.h"
 
 /** Inserts data at the front of a List
   * Runtime: O(1)
@@ -110,7 +113,7 @@ The previous algorithm only inserted nodes at the front of the List. However a m
 To solve this problem, the best thing to do is to create a `insert` algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated `LinkedList` ADT code below
 
 ```
-// List.h
+// LinkedList.h
 
 #pragma once
 
@@ -442,6 +445,6 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY5MTY5MjYsLTE3NTA0OTMwNzhdfQ
-==
+eyJoaXN0b3J5IjpbLTE5NzQ0ODE1MzksLTE1MDY5MTY5MjYsLT
+E3NTA0OTMwNzhdfQ==
 -->
