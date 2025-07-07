@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['with_20respect_20to_20classes_0',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md87',1,'']]],
-  ['with_20tt_20std_3a_3avector_20tt_1',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md89',1,'']]],
-  ['wrap_20and_20lambda_2',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]]
+  ['warshall_20s_20algorithm_0',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]],
+  ['with_20respect_20to_20classes_1',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md88',1,'']]],
+  ['with_20tt_20std_3a_3avector_20tt_2',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md90',1,'']]],
+  ['wrap_20and_20lambda_3',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]]
 ];
