@@ -358,27 +358,48 @@ The next function our `LinkedList` ADT must have is the operator `[ ]`. Recall t
 The brackets operator will behave very similarly to the `find` function, but rather return the `data` by reference that the `ListNode` at the given index contains. This updates our `LinkedList` class like this (shown below)
 
 ```
-// List.h
+// LinkedList.h
 
 #pragma once
 
 template <typename T>
 struct ListNode {
-    T data; // the current data in the linked list
-    ListNode<T>* next; // a pointer to the next node in the linked list
+    // the current data in the list 
+    T data;
+    
+    // a pointer to the next node in the linked list
+    ListNode* next;
+
+    // a copy constructor for the list
     ListNode(const T& data) : data(data), next(nullptr) { }
 };
 
-template<typename T>
-class List {
+template <typename T>
+class LinkedList {
 private:
-    ListNode<T>* head; // a pointer to the head of the linked list
+    // a pointer to the head (front) of the linked list
+    ListNode<T>* head;
 
 public:
+	/** Inserts data at the front of a List
+	* Runtime: O(1)
+	*/
     void insertAtFront(const T& data);
+
+	/** Inserts data in the given index of a list
+	*  Runtime: O(n)
+	*/
     void insert(const T& data, int index);
-    ListNode<T>*& find(int index);
-    T& operator[](int index);
+    
+	/** Finds the `ListNode` at the given index!
+	*  Runtime: O(n)
+	*/
+	ListNode<T>*& find(int index);
+    
+	/** Returns the data by reference of the `ListNode` at the given index 
+	*	Runtime: O(n)
+	*/
+	T& operator[](int index);
 };
 ```
 
@@ -485,6 +506,6 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDg0MTM1MiwtMTUwNjkxNjkyNiwtMT
+eyJoaXN0b3J5IjpbMTcwNTU3NzAwNiwtMTUwNjkxNjkyNiwtMT
 c1MDQ5MzA3OF19
 -->
