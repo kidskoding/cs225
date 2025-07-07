@@ -8,5 +8,6 @@ var searchData=
   ['23_20graph_20implementations_5',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
   ['24_20graph_20traversals_6',['Module 24 - Graph Traversals',['../md_notes_2module-24.html',1,'']]],
   ['25_20mst_3a_20minimum_20spanning_20tree_20kruskal_20s_20algorithm_7',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['26_20minimum_20spanning_20tree_20prim_20s_20algorithm_8',['Module 26 - Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]]
+  ['26_20mst_3a_20minimum_20spanning_20tree_20prim_20s_20algorithm_8',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
+  ['27_20dijkstra_20s_20algorithm_9',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]]
 ];
