@@ -1,3 +1,4 @@
+
 # Module 7 - Iterators
 
 One concept that is often in the scope of DSA is the **iterator**. An iterator is an object that traverses through all the elements/items in a data structure. 
@@ -163,8 +164,9 @@ Recall that the code above assumes that `->` is not implemented for the iterator
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTIzNjI1MzAsMjA5NjQxMDk3LDY0Mz
-E5MzQxMCwtMjAwMjUxNzI1MiwtODQwNzEwNzIyLC0xMDA1ODY0
-OTExLDE5MTIxMTc2NjgsLTkxNDY1MDg4OSwtMjAyNTM4ODM4OC
-w2MzkxNDc4NDYsMTMyMTQyNzYyMCwyMDE4NDc5ODY2XX0=
+eyJoaXN0b3J5IjpbLTE4ODQ2MTE5NTYsLTE2NTIzNjI1MzAsMj
+A5NjQxMDk3LDY0MzE5MzQxMCwtMjAwMjUxNzI1MiwtODQwNzEw
+NzIyLC0xMDA1ODY0OTExLDE5MTIxMTc2NjgsLTkxNDY1MDg4OS
+wtMjAyNTM4ODM4OCw2MzkxNDc4NDYsMTMyMTQyNzYyMCwyMDE4
+NDc5ODY2XX0=
 -->
