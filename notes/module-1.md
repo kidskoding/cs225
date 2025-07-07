@@ -6,7 +6,7 @@
 
 > **🚨 ECE Students** - Electrical/Computer Engineering (ECE) students may substitute CS 128 credit for **ECE 220** (Intro to Computing Systems), as both earn the same credit
 
-As stated in the prereqs, **a strong knowledge in C++ is required** to be successful in this course! In other words, please ensure you have a **solid grasp** in CS 128/ECE 220 course material. Please see **Course Info and Resources** below for more info
+As stated in the prereqs, **a strong knowledge in C++ is required** to be successful in this course! In other words, please ensure you have a **solid grasp** in CS 128/ECE 220 course material. Please see **Course Info and Resources** below for more info	
 
 ##  Background
 
@@ -29,5 +29,5 @@ This course is crucial as it provides the foundation for writing efficient softw
 	- [Tutorial Based Approach of C++](http://www.learncpp.com/)
 	- [Textbook C++ Reference](https://openlibrary.org/books/OL7408458M/C_Distilled)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODY0MTU1XX0=
+eyJoaXN0b3J5IjpbMTMyMjU4MDM1LDE3Mjg2NDE1NV19
 -->
