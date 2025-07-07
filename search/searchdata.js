@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "$0123456789abcdefghilmnopqrstuvwz",
   1: "acl",
   2: "fiopr",
-  3: "0123456789abcilmopqrstw"
+  3: "0123456789abcilmopqrst"
 };
 
 var indexSectionNames =
