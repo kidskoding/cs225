@@ -1,7 +1,7 @@
 var searchData=
 [
   ['2_20c_20review_0',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
-  ['2_20elements_20every_20time_1',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md85',1,'']]],
+  ['2_20elements_20every_20time_1',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md84',1,'']]],
   ['20_20heaps_2',['Module 20 - Heaps',['../md_notes_2module-20.html',1,'']]],
   ['21_20disjoint_20sets_3',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
   ['22_20graphs_4',['Module 22 - Graphs',['../md_notes_2module-22.html',1,'']]],

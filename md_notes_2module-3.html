@@ -131,16 +131,19 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 </ul>
 <p>This is shown in the code below, which represents a generic <code><a class="el" href="structListNode.html">ListNode</a></code>, <code><a class="el" href="structListNode.html">ListNode</a>&lt;T&gt;</code>. In this <code><a class="el" href="structListNode.html">ListNode</a></code> representation, each <code><a class="el" href="structListNode.html">ListNode</a></code> holds a generic type of data notated as <code>T</code></p>
 <p>Additionally, there is a pointer to the next <code><a class="el" href="structListNode.html">ListNode</a></code> in the List along with a copy constructor that can be used to copy data into the List!</p>
-<div class="fragment"><div class="line">// LinkedList.hpp</div>
-<div class="line"> </div>
-<div class="line">#pragma once</div>
+<div class="fragment"><div class="line">#pragma once</div>
 <div class="line"> </div>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">struct ListNode {</div>
+<div class="line">    // the current data in the list </div>
 <div class="line">    T data;</div>
-<div class="line">    ListNode&lt;T&gt;* next;</div>
-<div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) {   }</div>
-<div class="line">}</div>
+<div class="line">    </div>
+<div class="line">    // a pointer to the next node in the linked list</div>
+<div class="line">    ListNode* next;</div>
+<div class="line"> </div>
+<div class="line">    // a copy constructor for the list</div>
+<div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) { }</div>
+<div class="line">};</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md71"></a>
 <code>insertAtFront</code></h1>
 <p>The <code>.hpp</code> extension is used to define functionality of templates defined in a <code>.h</code>. It typically contains the full definitions of template functions, enabling the compiler to generate code for each type instantiation based on the defined type</p>
@@ -161,9 +164,9 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <li>Make <code>head</code> point to the newly created <code><a class="el" href="structListNode.html">ListNode</a></code></li>
 </ol>
 <p>In C++, this is what the <code>insertAtFront</code> algorithm would look like</p>
-<div class="fragment"><div class="line">// List.hpp</div>
+<div class="fragment"><div class="line">// LinkedList.hpp</div>
 <div class="line"> </div>
-<div class="line">#include &quot;List.h&quot;</div>
+<div class="line">#include &quot;LinkedList.h&quot;</div>
 <div class="line"> </div>
 <div class="line">/** Inserts data at the front of a List</div>
 <div class="line">  * Runtime: O(1)</div>
@@ -185,7 +188,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <code>insert</code></h1>
 <p>The previous algorithm only inserted nodes at the front of the List. However a more general insert algorithm is recommended to insert nodes in more places than just the front!</p>
 <p>To solve this problem, the best thing to do is to create a <code>insert</code> algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated <code><a class="el" href="classLinkedList.html">LinkedList</a></code> ADT code below</p>
-<div class="fragment"><div class="line">// List.h</div>
+<div class="fragment"><div class="line">// LinkedList.h</div>
 <div class="line"> </div>
 <div class="line">#pragma once</div>
 <div class="line"> </div>
