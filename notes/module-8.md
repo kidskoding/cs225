@@ -13,8 +13,12 @@ A data structure should be able to contain nothing because that is how we tend t
 
 A tree's **height**, height($T$), is the shortest path from the roof to a leaf. However, this changes a little bit for a binary tree
 
-In a binary tree, we know that its height is equal to maximum subtree of the left and right plus 1, or simply max($T_L$, $T_R$) + 1
+In a binary tree, its height works a little bit differently. It isequal to maximum subtree of the left and right plus 1, or simply max($T_L$, $T_R$) + 1
+
+This is because 
+
+The height of a null tree is simply -1
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTQ0MDcwMzYsMjEyNTAwNjI1LC0yOT
-E4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbNTEzODQwODc4LDIxMjUwMDYyNSwtMjkxOD
+g0MTc3XX0=
 -->
