@@ -1,3 +1,4 @@
+
 # Module 3 - `List` ADT and `Linked List` Implementation
 
 **ADT** - Abstract Data Type
@@ -441,5 +442,5 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTgyMTI4NzldfQ==
+eyJoaXN0b3J5IjpbLTExMTM4ODMwMDVdfQ==
 -->
