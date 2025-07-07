@@ -1,3 +1,4 @@
+
 # Module 6 - Stacks and Queues
 
 One of the biggest problems with both `ArrayList` and `LinkedList` is that accessing elements can sometimes be slow. Recall that the runtime complexity is `O(1)` to remove an element at the beginning and end and `O(n)` for elements not at the beginning/end. 
@@ -98,5 +99,6 @@ This effectively describes implementing a queue in depth via a `CircularQueue`. 
 
 Typically from a hardware standpoint, we don't resize a queue. In hardware, memory is already preallocated and doesn't change at runtime.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzU3MzMxMTddfQ==
+eyJoaXN0b3J5IjpbLTE4NDc3Mzc3MDcsLTE0MzU3MzMxMTddfQ
+==
 -->
