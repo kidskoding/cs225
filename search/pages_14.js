@@ -33,12 +33,13 @@ var searchData=
   ['module_2031_20bloom_20filters_30',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
   ['module_2032_20cardinality_31',['Module 32 - Cardinality',['../md_notes_2module-32.html',1,'']]],
   ['module_2033_20minhash_20sketch_20strategy_32',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['module_204_20tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_33',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
-  ['module_205_20amortized_20analysis_34',['Module 5 - Amortized Analysis',['../md_notes_2module-5.html',1,'']]],
-  ['module_206_20stacks_20and_20queues_35',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
-  ['module_207_20iterators_36',['Module 7 - Iterators',['../md_notes_2module-7.html',1,'']]],
-  ['module_208_20trees_37',['Module 8 - Trees',['../md_notes_2module-8.html',1,'']]],
-  ['module_209_20tree_20traversals_38',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
-  ['mst_3a_20minimum_20spanning_20tree_20kruskal_20s_20algorithm_39',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['mst_3a_20minimum_20spanning_20tree_20prim_20s_20algorithm_40',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]]
+  ['module_2034_20wrapping_20up_20cs_20225_33',['Module 34 - Wrapping up CS 225!',['../md_notes_2module-34.html',1,'']]],
+  ['module_204_20tt_20arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_34',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
+  ['module_205_20amortized_20analysis_35',['Module 5 - Amortized Analysis',['../md_notes_2module-5.html',1,'']]],
+  ['module_206_20stacks_20and_20queues_36',['Module 6 - Stacks and Queues',['../md_notes_2module-6.html',1,'']]],
+  ['module_207_20iterators_37',['Module 7 - Iterators',['../md_notes_2module-7.html',1,'']]],
+  ['module_208_20trees_38',['Module 8 - Trees',['../md_notes_2module-8.html',1,'']]],
+  ['module_209_20tree_20traversals_39',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
+  ['mst_3a_20minimum_20spanning_20tree_20kruskal_20s_20algorithm_40',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
+  ['mst_3a_20minimum_20spanning_20tree_20prim_20s_20algorithm_41',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]]
 ];

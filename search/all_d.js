@@ -3,8 +3,8 @@ var searchData=
   ['c_20review_0',['Module 2 - C++ Review',['../md_notes_2module-2.html',1,'']]],
   ['cardinality_1',['Module 32 - Cardinality',['../md_notes_2module-32.html',1,'']]],
   ['circularqueue_2',['CircularQueue',['../classCircularQueue.html',1,'']]],
-  ['circularqueue_20tt_20implementation_20tt_20enqueue_20tt_20and_20tt_20dequeue_20tt_3',['&lt;tt&gt;CircularQueue&lt;/tt&gt; Implementation - &lt;tt&gt;enqueue&lt;/tt&gt; and &lt;tt&gt;dequeue&lt;/tt&gt;',['../md_notes_2module-6.html#autotoc_md90',1,'']]],
-  ['classes_4',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md94',1,'']]],
+  ['circularqueue_20tt_20implementation_20tt_20enqueue_20tt_20and_20tt_20dequeue_20tt_3',['&lt;tt&gt;CircularQueue&lt;/tt&gt; Implementation - &lt;tt&gt;enqueue&lt;/tt&gt; and &lt;tt&gt;dequeue&lt;/tt&gt;',['../md_notes_2module-6.html#autotoc_md91',1,'']]],
+  ['classes_4',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md95',1,'']]],
   ['classes_20vs_20structs_5',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
   ['collisions_20and_20hash_20tables_6',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
   ['common_20algorithms_7',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
@@ -17,8 +17,8 @@ var searchData=
   ['copy_20assignment_20operator_14',['Copy Assignment Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'']]],
   ['copy_20constructors_15',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
   ['copy_20semantics_16',['Copy Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'']]],
-  ['costs_20of_20various_20operations_20on_20various_20tt_20list_20tt_20implementations_17',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-5.html#autotoc_md85',1,'']]],
+  ['costs_20of_20various_20operations_20on_20various_20tt_20list_20tt_20implementations_17',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-5.html#autotoc_md86',1,'']]],
   ['course_20info_20and_20resources_18',['Course Info and Resources',['../md_notes_2module-1.html#autotoc_md45',1,'']]],
   ['covered_19',['Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'Topics Covered'],['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40',1,'Topics Covered']]],
-  ['cs_20225_20',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]]
+  ['cs_20225_20',['CS 225',['../md_notes_2module-1.html',1,'Module 1 - Introduction to CS 225'],['../md_notes_2module-34.html',1,'Module 34 - Wrapping up CS 225!']]]
 ];
