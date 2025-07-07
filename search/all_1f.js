@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['with_20respect_20to_20classes_0',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md81',1,'']]],
-  ['with_20tt_20std_3a_3avector_20tt_1',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md83',1,'']]],
+  ['with_20respect_20to_20classes_0',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md80',1,'']]],
+  ['with_20tt_20std_3a_3avector_20tt_1',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md82',1,'']]],
   ['wrap_20and_20lambda_2',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]]
 ];

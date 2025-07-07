@@ -96,36 +96,35 @@ var NAVTREE =
       [ "Memory Management - Ownership", "md_notes_2module-2.html#autotoc_md58", null ],
       [ "Rule of Zero/Three/Five", "md_notes_2module-2.html#autotoc_md59", null ]
     ] ],
-    [ "Module 20 - Heaps", "md_notes_2module-20.html", null ],
     [ "Module 24 - Grap", "md_notes_2module-24.html", null ],
     [ "Module 3 - <tt>List</tt> ADT and <tt>Linked List</tt> Implementation", "md_notes_2module-3.html", [
-      [ "insertAtFront", "md_notes_2module-3.html#autotoc_md63", null ],
-      [ "insert", "md_notes_2module-3.html#autotoc_md64", [
-        [ "find", "md_notes_2module-3.html#autotoc_md65", null ]
+      [ "insertAtFront", "md_notes_2module-3.html#autotoc_md62", null ],
+      [ "insert", "md_notes_2module-3.html#autotoc_md63", [
+        [ "find", "md_notes_2module-3.html#autotoc_md64", null ]
       ] ],
-      [ "operator[]", "md_notes_2module-3.html#autotoc_md66", [
-        [ "remove", "md_notes_2module-3.html#autotoc_md67", null ]
+      [ "operator[]", "md_notes_2module-3.html#autotoc_md65", [
+        [ "remove", "md_notes_2module-3.html#autotoc_md66", null ]
       ] ]
     ] ],
     [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-4.html", [
-      [ "pushBack()", "md_notes_2module-4.html#autotoc_md69", null ]
+      [ "pushBack()", "md_notes_2module-4.html#autotoc_md68", null ]
     ] ],
     [ "Module 5 - Amortized Analysis", "md_notes_2module-5.html", [
-      [ "Resizing by adding 2 elements every time", "md_notes_2module-5.html#autotoc_md71", null ],
-      [ "Resizing by doubling the elements every time", "md_notes_2module-5.html#autotoc_md72", null ],
-      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-5.html#autotoc_md73", null ]
+      [ "Resizing by adding 2 elements every time", "md_notes_2module-5.html#autotoc_md70", null ],
+      [ "Resizing by doubling the elements every time", "md_notes_2module-5.html#autotoc_md71", null ],
+      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-5.html#autotoc_md72", null ]
     ] ],
     [ "Module 6 - Stacks and Queues", "md_notes_2module-6.html", [
-      [ "Queues", "md_notes_2module-6.html#autotoc_md75", null ],
-      [ "Stacks", "md_notes_2module-6.html#autotoc_md76", null ],
-      [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md77", null ],
-      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md78", null ]
+      [ "Queues", "md_notes_2module-6.html#autotoc_md74", null ],
+      [ "Stacks", "md_notes_2module-6.html#autotoc_md75", null ],
+      [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md76", null ],
+      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md77", null ]
     ] ],
     [ "Module 7 - Iterators", "md_notes_2module-7.html", [
-      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md80", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md81", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md82", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md83", null ]
+      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md79", null ],
+      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md80", null ],
+      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md81", [
+        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md82", null ]
       ] ]
     ] ],
     [ "Module 8 - Trees", "md_notes_2module-8.html", null ],

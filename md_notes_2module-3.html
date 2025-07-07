@@ -99,7 +99,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md62"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md61"></a></p>
 <p><b>ADT</b> - Abstract Data Type</p><ul>
 <li>ADTs are conceptual models that define a set of operations and behaviors for a data structure</li>
 </ul>
@@ -141,7 +141,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">    ListNode&lt;T&gt;* next;</div>
 <div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) { }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md63"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md62"></a>
 <code>insertAtFront</code></h1>
 <p>The <code>.hpp</code> extension is used to define functionality of templates defined in a <code>.h</code>. It typically contains the full definitions of template functions, enabling the compiler to generate code for each type instantiation based on the defined type</p>
 <p>One of the functions that a good List data structure must implement is <code>insertAtFront</code>, which as the name suggests inserts a node to the front of the List!</p>
@@ -181,7 +181,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">}</div>
 </div><!-- fragment --><p>This algorithm has a runtime of $O(1)$, due to three simple operations and doesn't loop or scale through a list size!</p>
 <p>Recall what <code>-&gt;</code> (arrow operator) does in C++. Its a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! <code>temp-&gt;next</code> is the mere equivalent of <code>(*temp).next</code></p>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 <code>insert</code></h1>
 <p>The previous algorithm only inserted nodes at the front of the List. However a more general insert algorithm is recommended to insert nodes in more places than just the front!</p>
 <p>To solve this problem, the best thing to do is to create a <code>insert</code> algorithm that is able to insert data anywhere at a given index of the list. This is shown in our updated <code><a class="el" href="classLinkedList.html">LinkedList</a></code> ADT code below</p>
@@ -236,7 +236,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">};</div>
 </div><!-- fragment --> </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md65"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 <code>find</code></h2>
 <ol type="1">
 <li>To implement <code>find</code>, it to return a <code>ListNode*&amp;</code>, which is <b>a <code><a class="el" href="structListNode.html">ListNode</a></code> pointer by reference</b><ol type="a">
@@ -378,7 +378,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">    nodeAtIndex = newNode;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><code>insert</code> has a $O(n)$ runtime, since it needs to traverse to the given position/index and then insert the newly created node of the given data</p>
-<h1><a class="anchor" id="autotoc_md66"></a>
+<h1><a class="anchor" id="autotoc_md65"></a>
 <code>operator[]</code></h1>
 <p>The next function our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> ADT must have is the operator <code>[ ]</code>. Recall that in C++ we can operator overload with a function that changes the behavior of the <code>[ ]</code> operator.</p>
 <p>The brackets operator will behave very similarly to the <code>find</code> function, but rather return the <code>data</code> by reference that the <code><a class="el" href="structListNode.html">ListNode</a></code> at the given index contains. This updates our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> class like this (shown below)</p>
@@ -426,7 +426,7 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">    return loc-&gt;data;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The runtime for <code>operator[]</code> is also $O(n)$ because it takes $n$ times to traverse through the list to find the <code><a class="el" href="structListNode.html">ListNode</a></code> at the given index to then return its data!</p>
-<h2><a class="anchor" id="autotoc_md67"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 <code>remove</code></h2>
 <p>The next function is to remove data from our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> at a given index. This updates our <code><a class="el" href="classLinkedList.html">LinkedList</a></code> class structure!</p>
 <div class="fragment"><div class="line">// List.h</div>
