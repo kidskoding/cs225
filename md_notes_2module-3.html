@@ -299,15 +299,12 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 </ol>
 </li>
 </ol>
-<p>The code below shows implementing <code>find</code> <b>recursively</b> </p><div class="fragment"><div class="line">// List.hpp</div>
+<p>The code below shows implementing <code>find</code> <b>recursively</b> </p><div class="fragment"><div class="line">// LinkedList.hpp</div>
 <div class="line"> </div>
-<div class="line">#include &quot;List.h&quot;</div>
+<div class="line">#include &quot;LinkedList.h&quot;</div>
 <div class="line"> </div>
 <div class="line">// RECURSIVE IMPLEMENTATION OF FIND!</div>
 <div class="line"> </div>
-<div class="line">/** Finds the ListNode at the given index!</div>
-<div class="line"> *  Runtime: O(n)</div>
-<div class="line"> */</div>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">ListNode*&amp; List&lt;T&gt;::find(int index) {</div>
 <div class="line">    return find(index, head);</div>
@@ -321,9 +318,9 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">    // Return a recursive method call passing in the next node and decrement the given index!</div>
 <div class="line">    return find(index - 1, head-&gt;next);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The code below shows implementing <code>find</code> <b>iteratively</b> </p><div class="fragment"><div class="line">// List.hpp</div>
+</div><!-- fragment --><p>The code below shows implementing <code>find</code> <b>iteratively</b> </p><div class="fragment"><div class="line">// LinkedList.hpp</div>
 <div class="line"> </div>
-<div class="line">#include &quot;List.h&quot;</div>
+<div class="line">#include &quot;LinkedList.h&quot;</div>
 <div class="line"> </div>
 <div class="line">// ITERATIVE IMPLEMENTATION OF FIND!</div>
 <div class="line"> </div>
@@ -352,25 +349,42 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <div class="line">    return curr-&gt;next;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>We can also update our current implementation of the <code><a class="el" href="classLinkedList.html">LinkedList</a></code> ADT</p>
-<div class="fragment"><div class="line">// List.h</div>
+<div class="fragment"><div class="line">// LinkedList.h</div>
 <div class="line"> </div>
 <div class="line">#pragma once</div>
 <div class="line"> </div>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">struct ListNode {</div>
-<div class="line">    T data; // the current data in the linked list</div>
-<div class="line">    ListNode&lt;T&gt;* next; // a pointer to the next node in the linked list</div>
+<div class="line">    // the current data in the list </div>
+<div class="line">    T data;</div>
+<div class="line">    </div>
+<div class="line">    // a pointer to the next node in the linked list</div>
+<div class="line">    ListNode* next;</div>
+<div class="line"> </div>
+<div class="line">    // a copy constructor for the list</div>
 <div class="line">    ListNode(const T&amp; data) : data(data), next(nullptr) { }</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line">template&lt;typename T&gt;</div>
 <div class="line">class List {</div>
 <div class="line">private:</div>
-<div class="line">    ListNode&lt;T&gt;* head; // a pointer to the head of the linked list</div>
+<div class="line">    // a pointer to the head of the linked list</div>
+<div class="line">    ListNode&lt;T&gt;* head;</div>
 <div class="line"> </div>
 <div class="line">public:</div>
+<div class="line">    /** Inserts data at the front of a List</div>
+<div class="line">    * Runtime: O(1)</div>
+<div class="line">    */</div>
 <div class="line">    void insertAtFront(const T&amp; data);</div>
+<div class="line"> </div>
+<div class="line">    /** Inserts data in the given index of a list</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    void insert(const T&amp; data, int index);</div>
+<div class="line">    </div>
+<div class="line">    /** Finds the `ListNode` at the given index!</div>
+<div class="line">    *  Runtime: O(n)</div>
+<div class="line">    */</div>
 <div class="line">    ListNode&lt;T&gt;*&amp; find(int index);</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>Runtime for our <code>find</code> function is $O(n)$ because we have to traverse up to $n$ nodes in the <code><a class="el" href="classLinkedList.html">LinkedList</a></code> to find the node at the given <code>index</code></p>
@@ -388,13 +402,10 @@ $(function(){initNavTree('md_notes_2module-3.html',''); initResizable(true); });
 <li>Set the node found at the given index's pointer to the newly created node</li>
 </ol>
 <p>This algorithm is shown in the code below</p>
-<div class="fragment"><div class="line">// List.hpp</div>
+<div class="fragment"><div class="line">// LinkedList.hpp</div>
 <div class="line"> </div>
-<div class="line">#include &quot;List.h&quot;</div>
+<div class="line">#include &quot;LinkedList.h&quot;</div>
 <div class="line"> </div>
-<div class="line">/** Inserts data in the given index of a list</div>
-<div class="line"> *  Runtime: O(n)</div>
-<div class="line"> */</div>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">void List&lt;T&gt;::insert(const T&amp; data, int index) {</div>
 <div class="line">    // Call `find` to find the `ListNode` at the given index</div>
