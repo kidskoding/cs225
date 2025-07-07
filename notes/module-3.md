@@ -130,7 +130,14 @@ private:
 	ListNode<T>* head;
 
 public:
+	/** Inserts data at the front of a List
+	* Runtime: O(1)
+	*/
 	void insertAtFront(const T& data);
+	
+	/** Inserts data in the given index of a list
+	*  Runtime: O(n)
+	*/
 	void insert(const T& data, int index);
 }
 ```
@@ -146,27 +153,43 @@ To make this call take place, we need to find the node at the first index and in
 	1. Therefore, we need a helper `find` function to return the node by reference at the given index. Our updated `LinkedList` ADT is represented in the code below
 
 	```
-	// List.h
+	// LinkedList.h
 	
 	#pragma once
-	
+
 	template <typename T>
 	struct ListNode {
-		T data;
-		ListNode<T>* next;
-		ListNode(const T& data) : data(data), next(nullptr) { }
-	}
-	
+	    // the current data in the list 
+	    T data;
+	    
+	    // a pointer to the next node in the linked list
+	    ListNode* next;
+
+	    // a copy constructor for the list
+	    ListNode(const T& data) : data(data), next(nullptr) { }
+	};
+		
 	template <typename T>
-	class List {
+	class LinkedList {
 	private:
-		ListNode<T>* head;
+	    // a pointer to the head of the linked list
+	    ListNode<T>* head;
 
 	public:
-		void insertAtFront(const T& data);
-		void insert(const T& data, int index);
+		/** Inserts data at the front of a List
+		* Runtime: O(1)
+		*/
+	    void insertAtFront(const T& data);
+
+		/** Inserts data in the given index of a list
+		*  Runtime: O(n)
+		*/
+	    void insert(const T& data, int index);
+	    
+		/** Finds the `ListNode` at the given index!
+		*  Runtime: O(n)
+		*/
 		ListNode<T>*& find(int index);
-	};
 	```
 ### `find`
 
@@ -445,6 +468,6 @@ T remove(int index) {
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ0ODE1MzksLTE1MDY5MTY5MjYsLT
-E3NTA0OTMwNzhdfQ==
+eyJoaXN0b3J5IjpbMTU2MTExMDg0NCwtMTUwNjkxNjkyNiwtMT
+c1MDQ5MzA3OF19
 -->
