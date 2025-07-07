@@ -9,7 +9,7 @@ var searchData=
   ['to_20cs_20225_6',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['topics_20covered_7',['Topics Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'Topics Covered'],['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40',1,'Topics Covered']]],
   ['traversals_8',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
-  ['tree_20sear_9',['Module 10 - Tree Sear',['../md_notes_2module-10.html',1,'']]],
+  ['tree_20search_20and_20bst_9',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
   ['tree_20traversals_10',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
   ['tree_20vocabulary_11',['Tree Vocabulary',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md13',1,'']]],
   ['trees_12',['Trees',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14',1,'$m$-ary Trees'],['../md_notes_2module-8.html',1,'Module 8 - Trees'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md12',1,'Trees']]],

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['s_20queues_0',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md67',1,'']]],
-  ['sear_1',['Module 10 - Tree Sear',['../md_notes_2module-10.html',1,'']]],
-  ['search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['search_20and_20bst_2',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
   ['semantics_3',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
   ['shallow_20and_20deep_20copies_4',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
   ['stack_5',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],

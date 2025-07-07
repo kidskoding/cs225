@@ -81,7 +81,7 @@ var NAVTREE =
       [ "Grading", "md_notes_2module-1.html#autotoc_md44", null ],
       [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md45", null ]
     ] ],
-    [ "Module 10 - Tree Sear", "md_notes_2module-10.html", null ],
+    [ "Module 10 - Tree Search and BST", "md_notes_2module-10.html", null ],
     [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", null ],
     [ "Module 2 - C++ Review", "md_notes_2module-2.html", [
       [ "Encapsulation", "md_notes_2module-2.html#autotoc_md49", null ],

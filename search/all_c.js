@@ -6,7 +6,8 @@ var searchData=
   ['big_20o_3',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
   ['big_20o_20of_20common_20algorithms_4',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
   ['bipartite_20graph_5',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_6',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md61',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_7',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md62',1,'']]],
-  ['by_20induction_8',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
+  ['bst_6',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
+  ['by_20adding_202_20elements_20every_20time_7',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md61',1,'']]],
+  ['by_20doubling_20the_20elements_20every_20time_8',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md62',1,'']]],
+  ['by_20induction_9',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['traversals_1',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
-  ['tree_20sear_2',['Module 10 - Tree Sear',['../md_notes_2module-10.html',1,'']]],
+  ['tree_20search_20and_20bst_2',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
   ['tree_20traversals_3',['Module 9 - Tree Traversals',['../md_notes_2module-9.html',1,'']]],
   ['trees_4',['Module 8 - Trees',['../md_notes_2module-8.html',1,'']]],
   ['tt_5',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
