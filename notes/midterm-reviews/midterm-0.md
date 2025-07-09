@@ -734,7 +734,7 @@ Deep copies can be expensive, especially when objects manage dynamic memory or o
 
 - Simply use move semantics when you want to avoid copying expensive resources and instead transfer ownership to another object!  
 
-They are defined like copy semantics, including a **move constructor** and **move semantics**
+They are defined like copy semantics, including a **move constructor** and **move assignment operator**
 
 ###  rvalue references
 
@@ -827,6 +827,6 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
 
 Use this rule when you need to **avoid deep copying** and allow your class to be efficiently moved
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDgzNjMzOSwtMTUxODIzNjUzMywtNj
-E4MjQ5Njk2LC0zMjgzNTUwNjhdfQ==
+eyJoaXN0b3J5IjpbNTMxMzE5Njg5LDE5NTQ4MzYzMzksLTE1MT
+gyMzY1MzMsLTYxODI0OTY5NiwtMzI4MzU1MDY4XX0=
 -->
