@@ -521,7 +521,7 @@ Otherwise, a **memory leak** happens. **Memory leaks** occur when a program allo
 
 A **destructor** is another special kind of class member function that runs when an object of that class is **destroyed**, using `delete`. While constructors initialize instances of a class, destructors help clean them up
 
-When objects go out of scope via RAII, or a dynamically allocated object is explicitly deleted using `delete`, the class destructor (if it exists) is automatically called to do any necessary clean up of the object before it is freed from memory
+When objects go out of scope or a dynamically allocated object is explicitly deleted using `delete`, the class destructor (if it exists) is automatically called to do any necessary clean up of the object before it is freed from memory
 
 Like constructors, destructors also have specific naming rules
 
@@ -827,5 +827,6 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
 
 Use this rule when you need to **avoid deep copying** and allow your class to be efficiently moved
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxODI0OTY5NiwtMzI4MzU1MDY4XX0=
+eyJoaXN0b3J5IjpbLTE1MTgyMzY1MzMsLTYxODI0OTY5NiwtMz
+I4MzU1MDY4XX0=
 -->
