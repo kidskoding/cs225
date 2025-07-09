@@ -683,7 +683,7 @@ class Foo {
 };
 ```  
 
-where `Foo a; Foo b = a` implicitly calls the copy constructor on `b`.
+where `Foo a; Foo b = a` implicitly calls the copy constructor on `b`.	
 
 ###  Shallow and Deep Copies
 
@@ -827,6 +827,6 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
 
 Use this rule when you need to **avoid deep copying** and allow your class to be efficiently moved
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTgyMzY1MzMsLTYxODI0OTY5NiwtMz
-I4MzU1MDY4XX0=
+eyJoaXN0b3J5IjpbMTk1NDgzNjMzOSwtMTUxODIzNjUzMywtNj
+E4MjQ5Njk2LC0zMjgzNTUwNjhdfQ==
 -->
