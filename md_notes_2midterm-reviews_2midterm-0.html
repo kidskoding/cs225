@@ -498,7 +498,7 @@ Dynamic Memory Allocation</h1>
 <h2><a class="anchor" id="autotoc_md24"></a>
 Destructors</h2>
 <p>A <b>destructor</b> is another special kind of class member function that runs when an object of that class is <b>destroyed</b>, using <code>delete</code>. While constructors initialize instances of a class, destructors help clean them up</p>
-<p>When objects go out of scope via RAII, or a dynamically allocated object is explicitly deleted using <code>delete</code>, the class destructor (if it exists) is automatically called to do any necessary clean up of the object before it is freed from memory</p>
+<p>When objects go out of scope or a dynamically allocated object is explicitly deleted using <code>delete</code>, the class destructor (if it exists) is automatically called to do any necessary clean up of the object before it is freed from memory</p>
 <p>Like constructors, destructors also have specific naming rules</p>
 <ol type="1">
 <li>Must have <b>same name</b> as the class (like a constructor)</li>
@@ -729,7 +729,7 @@ Rule of Zero/Three/Five</h1>
 <li>Move Constructor</li>
 <li>Move Assignment</li>
 </ul>
-<p>Use this rule when you need to <b>avoid deep copying</b> and allow your class to be efficiently moved   </p>
+<p>Use this rule when you need to <b>avoid deep copying</b> and allow your class to be efficiently moved    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
