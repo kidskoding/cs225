@@ -36,10 +36,10 @@ If $P_h$ represents a perfect tree with height $h$, then
 
 However, if I wanted to build a perfect tree with only 4 nodes, that wouldn't be possible since we have an odd number of nodes remaining after expending 1 for the root node
 
-A **complete
+A **complete** tree
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDM0MzQ5Miw0NTE4MjUzODksLTg0Mj
+eyJoaXN0b3J5IjpbMTQ5NzAyMDE0Miw0NTE4MjUzODksLTg0Mj
 Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
 fQ==
 -->
