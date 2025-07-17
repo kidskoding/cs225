@@ -21,8 +21,8 @@ $$
 
 This makes sense because if $T_L = 5$ and $T_R = 3$, then the whole tree can go at most 5 levels deep through the left. The maximum of the two tells you the **deepest path** from the current node to a leaf. We add 1 because we add the **edge of the root node**.
 
-The height of a null tree is simply -1 (could also be 0 depending on the convention)
+The height of a null tree is simply -1 (can also define as 0)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNT
-AwNjI1LC0yOTE4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbLTUyMDkyNDQ1MSwtODQyNDY0MjE3LDM1Nz
+g2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
 -->
