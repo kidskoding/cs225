@@ -25,9 +25,12 @@ The height of a null tree is simply -1, because all the math and recursion will 
 
 A tree is **full** if and only if
 1. The tree is empty (has no nodes, or simply $F = \empty$
-2. $F = (r, F_L, F_R)$ where either $F_L = F_R = \empty$ or $F_L \neq \empty$
+2. $F = (r, F_L, F_R)$ where either $F_L = F_R = \empty$ or $F_L \neq \empty$ and $F_R \neq \empty$
+	- in code, this simply means checking whether the two nodes both have null pointers or neither have null pointers
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjI0NTg1NSw0NTE4MjUzODksLTg0Mj
+eyJoaXN0b3J5IjpbMTYyMjg3NzE3MSw0NTE4MjUzODksLTg0Mj
 Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
 fQ==
 -->
