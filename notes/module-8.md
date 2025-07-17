@@ -34,10 +34,12 @@ If $P_h$ represents a perfect tree with height $h$, then
 1. $P_{-1} = \empty$
 2. $P_h = (r, P_{h - 1}, P_{h - 1})$, meaning that the height of the left and right subtrees are **equal**
 
-However, if I wanted to build a perfect tree with only 4 nodes, that wouldn't be possible si
+However, if I wanted to build a perfect tree with only 4 nodes, that wouldn't be possible since we have an odd number of nodes remaining after expending 1 for the root node
+
+A **complete
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMTA4NDAyLDQ1MTgyNTM4OSwtODQyND
-Y0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
-
+eyJoaXN0b3J5IjpbMTAxMDM0MzQ5Miw0NTE4MjUzODksLTg0Mj
+Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
+fQ==
 -->
