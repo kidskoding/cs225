@@ -109,12 +109,12 @@ $(function(){initNavTree('md_notes_2module-8.html',''); initResizable(true); });
 <li>A <b>null</b> tree (there are no nodes in the tree)</li>
 </ol>
 <p>A data structure should be able to contain nothing because that is how we tend to start evolving and adding elements/nodes into it. In the context of a tree, we would like to be able to start it off with nothing. Therefore, it makes sense to define a binary tree as a <b>null</b> tree, where it has no vertices</p>
-<p>The <b>height</b> of a tree is the number of edges on the <b>longest path</b> from the <b>root node</b> to a leaf node</p>
 <p>A tree's <b>height</b>, height($T$), is the shortest path from the root to a leaf. However, this changes a little bit for a binary tree</p>
-<p>In a binary tree, its height works a little bit differently. It is equal to maximum subtree of the left and right plus 1, or simply</p>
+<p>In a binary tree, it is equal to maximum subtree of the left and right plus 1, or simply</p>
 <p>$$ height(T) = max(height(T_L), height(T_R)) + 1 $$</p>
-<p>This is because</p>
-<p>The height of a null tree is simply -1    </p>
+<p>This makes sense because if $T_L = 5$ and $T_R = 3$, then the tree can go at a <br  />
+</p>
+<p>The height of a null tree is simply -1 (could also be 0 depending on the convention)    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
