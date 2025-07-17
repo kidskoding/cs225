@@ -11,20 +11,18 @@ A **binary tree**, $T$, is either
 
 A data structure should be able to contain nothing because that is how we tend to start evolving and adding elements/nodes into it. In the context of a tree, we would like to be able to start it off with nothing. Therefore, it makes sense to define a binary tree as a **null** tree, where it has no vertices
 
-The **height** of a tree is the number of edges on the **longest path** from the **root node** to a leaf node
-
 A tree's **height**, height($T$), is the shortest path from the root to a leaf. However, this changes a little bit for a binary tree
 
-In a binary tree, its height works a little bit differently. It is equal to maximum subtree of the left and right plus 1, or simply 
+In a binary tree, it is equal to maximum subtree of the left and right plus 1, or simply 
 
 $$
 height(T) = max(height(T_L), height(T_R)) + 1
 $$
 
-This is because 
+This makes sense because if $T_L = 5$ and $T_R = 3$, then the tree can go at a  
 
-The height of a null tree is simply -1
+The height of a null tree is simply -1 (could also be 0 depending on the convention)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTA4NjUzNjgsMzU3ODY4NDc5LDIxMj
-UwMDYyNSwtMjkxODg0MTc3XX0=
+eyJoaXN0b3J5IjpbMTE4MjE5NTgxMCwzNTc4Njg0NzksMjEyNT
+AwNjI1LC0yOTE4ODQxNzddfQ==
 -->
