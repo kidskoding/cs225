@@ -28,9 +28,11 @@ A tree is **full** if and only if
 2. $F = (r, F_L, F_R)$ where either $F_L = F_R = \empty$ or $F_L \neq \empty$ and $F_R \neq \empty$
 	- in code, this simply means checking whether the two nodes both have null pointers or neither have null pointers
 
+A **perfect** tree, $P$, is defined in terms of a tree's height. If $P_h$ represents a perfect tree with height $h$, then
+A tree is **perfect** when
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjg3NzE3MSw0NTE4MjUzODksLTg0Mj
-Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
-fQ==
+eyJoaXN0b3J5IjpbOTQzOTY2MzQwLDQ1MTgyNTM4OSwtODQyND
+Y0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
+
 -->
