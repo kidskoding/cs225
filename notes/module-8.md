@@ -32,10 +32,12 @@ A **perfect** tree, $P$, is defined in terms of a tree's height (simply because 
 
 If $P_h$ represents a perfect tree with height $h$, then
 1. $P_{-1} = \empty$
-2. $P_h = (r, P_{h - 1}, P_{h - 1})$
+2. $P_h = (r, P_{h - 1}, P_{h - 1})$, meaning that the height of the left and right subtrees are **equal**
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODg4OTM0NSw0NTE4MjUzODksLTg0Mj
+eyJoaXN0b3J5IjpbLTY1NjkwNTc4NCw0NTE4MjUzODksLTg0Mj
 Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
 fQ==
 -->
