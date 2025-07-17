@@ -24,10 +24,10 @@ This makes sense because if $T_L = 5$ and $T_R = 3$, then the whole tree can go 
 The height of a null tree is simply -1, because all the math and recursion will work out. Most of the time, the base case in tree recursion occurs when there are no nodes to choose from
 
 A tree is **full** if and only if
-1. 
-2. 
+1. The tree is empty (has no nodes, or simply $F = \empty$
+2. $F = (r, F_L, F_R)$ where either $F_L = F_R = \empty$ or $F_L \neq \empty$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDAwMDQxMTQsNDUxODI1Mzg5LC04ND
-I0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxODg0MTc3
-XX0=
+eyJoaXN0b3J5IjpbMTA3MjI0NTg1NSw0NTE4MjUzODksLTg0Mj
+Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
+fQ==
 -->
