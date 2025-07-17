@@ -115,8 +115,8 @@ $(function(){initNavTree('md_notes_2module-8.html',''); initResizable(true); });
 <p>This makes sense because if $T_L = 5$ and $T_R = 3$, then the whole tree can go at most 5 levels deep through the left. The maximum of the two tells you the <b>deepest path</b> from the current node to a leaf. We add 1 because we add the <b>edge of the root node</b>.</p>
 <p>The height of a null tree is simply -1, because all the math and recursion will work out. Most of the time, the base case in tree recursion occurs when there are no nodes to choose from</p>
 <p>A tree is <b>full</b> if and only if</p><ol type="1">
-<li></li>
-<li></li>
+<li>The tree is empty (has no nodes, or simply $F = \empty$</li>
+<li>$F = (r, F_L, F_R)$ where either $F_L = F_R = \empty$ or $F_L \neq \empty$     </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
