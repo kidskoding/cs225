@@ -21,8 +21,9 @@ $$
 
 This makes sense because if $T_L = 5$ and $T_R = 3$, then the whole tree can go at most 5 levels deep through the left. The maximum of the two tells you the **deepest path** from the current node to a leaf. We add 1 because we add the **edge of the root node**.
 
-The height of a null tree is simply -1 (can also define as 0), but in this case -1 makes sense because all the math will work out
+The height of a null tree is simply -1, because all the math and recursion will work out. The base case in tree recursion is when there are no nodes to choose from
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3OD
-Y4NDc5LDIxMjUwMDYyNSwtMjkxODg0MTc3XX0=
+eyJoaXN0b3J5IjpbNjM3Nzk5MDUzLDQ1MTgyNTM4OSwtODQyND
+Y0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
+
 -->
