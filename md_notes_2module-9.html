@@ -104,10 +104,11 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 <p>Here, we will continue discussing Trees and the Tree ADT. Previously, we failed to discuss how the implementation of <code>insert</code>, <code>remove</code>, and <code>access</code> would work. This is because the way they work is different for every tree.</p>
 <p>Recall that previously we discussed that every data structure should be able to have its own way of getting everything it contains, which was done through an iterator. This means that if we want to achieve this functionality, we would need to implement an iterator interface. But <b>how</b>?</p>
 <p>We need to know how to find everything in our tree. Otherwise, how would we know that we found everything. The simple answer to these questions is by implementing <b>tree traversals</b></p>
-<p><b>Tree traversals</b> are algorithms that will follow the structure of a tree in some fixed order that <b>visits</b> every node. So every data point is stored in some sort, and we are going to visit all of the nodes.</p><ul>
+<p><b>Tree traversals</b> are algorithms that will follow the structure of a tree in some fixed order that <b>visits</b> every node. They access <b>all the nodes</b> in a tree. So every data point is stored in some sort, and we are going to visit all of the nodes.</p><ul>
 <li>By visit, we typically mean whatever the algorithm wants to do with the data, which for demonstration purposes, we just simplify to printing the data because that is an easy way to test what is going on</li>
-<li>So when a node is visited, it will then be print and then at the end we can check whether</li>
+<li>So when a node is visited, it will then be print and then at the end check whether we went through every node in the tree</li>
 </ul>
+<p>While it makes sense that the goal of a tree traversal is to</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
