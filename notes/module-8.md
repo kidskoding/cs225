@@ -58,10 +58,12 @@ Tree ADT involves 3 primary functionalities
 2. `remove`, removes an element from a tree - from a location in structure
 3. `access`, access elements from a tree - from a location in structure
 
-A list has a fixed structure and order, but a tree has varied structure depending on how it is used
+A list has a fixed structure and order, but a tree has varied structure depending on how it is used. The tree's structure may not matter because many algorithms may still work the same regardless of the tree’s shape, as long as the structure still preserves the necessary relationships.
+
+Therefore, lets thi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA1MjQwNzksLTY1NDc1MTM2LC0zOT
-UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
-LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
-g0MTc3XX0=
+eyJoaXN0b3J5IjpbOTA3NDQ5Njg2LC02NTQ3NTEzNiwtMzk1Mj
+AwODc4LDEwMTQxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwt
+ODQyNDY0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4ND
+E3N119
 -->
