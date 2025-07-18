@@ -42,9 +42,12 @@ More specially, complete trees
 1. A perfect tree for every level except the last, where the last level is "pushed to the left"
 2. For all levels $k$ in $[0, h - 1]$, $k$ has $2^k$ nodes. For level $h$, all nodes are "pushed to the left"
 
-
+A complete tree of height $h$, $C_h$
+1. $C_{-1}$ = { }
+2. $C_h$ (where $h \geq 0$) = {$r, T_L, T_R$} and either:
+	$T_L$ is  and $T_R$ is 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NTIwMDg3OCwxMDE0MTQwOTMsMTQ5Nz
-AyMDE0Miw0NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Njg0Nzks
-MjEyNTAwNjI1LC0yOTE4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbLTQzMDU2ODQ2MSwtMzk1MjAwODc4LDEwMT
+QxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwtODQyNDY0MjE3
+LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
 -->
