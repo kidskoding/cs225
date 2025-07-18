@@ -36,10 +36,11 @@ If $P_h$ represents a perfect tree with height $h$, then
 
 However, if I wanted to build a perfect tree with only 4 nodes, that wouldn't be possible since we have an odd number of nodes remaining after expending 1 for the root node
 
-A **complete** tree
+A **complete** tree is a binary tree where all levels are completely filled except for the last level, which is filled from left to right
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NzAyMDE0Miw0NTE4MjUzODksLTg0Mj
-Q2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzdd
-fQ==
+eyJoaXN0b3J5IjpbMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxOD
+I1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwt
+MjkxODg0MTc3XX0=
 -->
