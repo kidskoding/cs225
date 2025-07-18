@@ -109,7 +109,11 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 <li>So when a node is visited, it will then be print and then at the end check whether we went through every node in the tree</li>
 </ul>
 <p>While it makes sense that the goal of a tree traversal is to visit every node, but <b>how</b>? Should a tree visit a node <b>before</b> I traverse into the subtree, <b>in between</b> the subtree, or <b>after</b> the subtree?</p>
-<p>The simple answer is that <b>it is up to you</b>. These are the three traversal algorithm techniques used to traverse through an entire tree: <b>pre order traversal</b>, <b>in order traversal</b>, <b>post order traversal</b></p>
+<p>The simple answer is that <b>it's up to you</b>. It depends on <b>when</b> you choose to visit a node in relation to its children. These three choices correspond to the three well-known tree traversal techniques:</p><ul>
+<li><b>Pre-order traversal</b> – visit the node <b>before</b> its subtrees</li>
+<li><b>In-order traversal</b> – visit the node <b>between</b> its subtrees</li>
+<li><b>Post-order traversal</b> – visit the node <b>after</b> its subtrees</li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
