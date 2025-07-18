@@ -92,8 +92,7 @@ Therefore, it makes sense to **prove how many null pointers exist in a tree** to
 
 There will always be $n + 1$ `NULL` pointers for $n$ nodes in our binary tree. But why?
 
-Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ `NULL` pointers.
-- Use induction on $n$
+Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ `NULL` pointers (Hint: use induction on $n$)
 
 1. Let $NULLS(n)$ be defined as the number of null pointers in a tree of size $n$
 2. **Base Case(s)**
@@ -107,13 +106,13 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 	- By the inductive hypothesis, this smaller tree has $k + 1$ null pointers
 	- When adding back the removed node:
 		-   One null pointer (where the node was attached) is replaced by a new node, so we lose 1 null pointer
-		-   The newly added node 
-	- **Total null pointers**: $(k + 1) - 1 + 2 = k + 2$
-	- Which matches $(k + 1) + 1$
+		-   The newly added node has two child pointers, both null, so we add two null pointers
+	- Therefore, the **total null pointers** = $(k + 1) - 1 + 2 = k + 2$
+	- Which equals: $(k + 1) + 1$
 	- Therefore, by induction this statement holds true for $n \geq 0$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3MDA2MTk2LDQxMzQ0NDEyNyw2NTM1OD
-E5MzcsLTY1NDc1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0
-OTcwMjAxNDIsNDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4ND
-c5LDIxMjUwMDYyNSwtMjkxODg0MTc3XX0=
+eyJoaXN0b3J5IjpbMTYyNzk1OTc2OSw0MTM0NDQxMjcsNjUzNT
+gxOTM3LC02NTQ3NTEzNiwtMzk1MjAwODc4LDEwMTQxNDA5Mywx
+NDk3MDIwMTQyLDQ1MTgyNTM4OSwtODQyNDY0MjE3LDM1Nzg2OD
+Q3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
 -->
