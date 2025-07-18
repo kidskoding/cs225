@@ -84,14 +84,16 @@ With this, it makes sense for our root to also be a **pointer** to a `TreeNode` 
 
 In memory, each tree node is created on the heap, and the `root` pointer (on the stack) points to the first node. Each node's `left` and `right` fields store pointers to other nodes on the heap, linking them together without copying any data. This allows the tree to grow dynamically, using memory only when needed.
 
-When we create a tree in memory, there is often a lot of wasted space, where child nodes can contain lots of pointers that simply point to nothing. It is useful to know how many nodes store wasted memory (point to null) so that we know how much overhead we have and how efficient our data structure is
+When we create a tree in memory, there is often wasted space because child pointers in many nodes can point to `null`, meaning they don't reference any actual node. Knowing **how many nodes store these null pointers** helps us understand the **memory overhead** and measure how **efficient** our tree data structure is.
 
-With a `LinkedList`, we didn't have to worry about this because we knew there was only one pointer that would point to null.
+In contrast, with a `LinkedList`, we only had to worry about one pointer per node possibly being null (the `next` pointer), so the overhead was much simpler and easier to quantify (it was always 1)
 
-Therefore, it makes sense to prove how many null pointers exist in a tree
+Therefore, it makes sense to **prove how many null pointers exist in a tree** to analyze and optimize its memory usage and better understand the structure’s efficiency.
+
+Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ NU
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzgxMTIxLDY1MzU4MTkzNywtNjU0Nz
-UxMzYsLTM5NTIwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0
-NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNj
-I1LC0yOTE4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbMTA0MDU4NzQyNCw2NTM1ODE5MzcsLTY1ND
+c1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIs
+NDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMD
+YyNSwtMjkxODg0MTc3XX0=
 -->
