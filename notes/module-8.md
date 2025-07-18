@@ -93,15 +93,17 @@ Therefore, it makes sense to **prove how many null pointers exist in a tree** to
 There will always be $n + 1$ `NULL` pointers for $n$ nodes in our binary tree. But why?
 
 Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ `NULL` pointers.
+- Use induction on $n$
 
 1. Let $NULLS(n)$ be defined as the number of null pointers in a tree of size $n$
-2. Use base cases
+2. **Base Case(s)**
 	- $n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) ✅ (the tree is empty so the `root` pointer is null)
 	- $n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅ (there is only the root node and both `left` and `right` child pointers are null)
 	- $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) ✅ (One node has two children - one child node and one null child - and the child node has two null pointers, totaling 3)
-3. 
+3. **Induction Hypothesis**: Suppose $NULLS(n) = n + 1$ for all $0 \leq n < k$
+4. Consider an ar
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODQ4NjY1NCw2NTM1ODE5MzcsLTY1ND
+eyJoaXN0b3J5IjpbMTcyNDQ4ODAwNiw2NTM1ODE5MzcsLTY1ND
 c1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIs
 NDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMD
 YyNSwtMjkxODg0MTc3XX0=
