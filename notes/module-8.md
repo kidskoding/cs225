@@ -101,19 +101,19 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 	- $n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅ (there is only the root node and both `left` and `right` child pointers are null)
 	- $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) ✅ (One node has two children - one child node and one null child - and the child node has two null pointers, totaling 3)
 3. **Induction Hypothesis**: Suppose $NULLS(n) = n + 1$ for all $0 \leq n < k$
-4. **Inductive Step**: Prove for $n =k + 1$ nodes
-	- Take any binary tree with $k + 1$ nodes
+4. **Inductive Step**: Prove for $n = k + 1$ nodes
+	- Consider any binary tree with $k + 1$ nodes
 	- Remove a leaf node (or any node that can be removed while keeping a valid binary tree structure), resulting in a tree with $k$ nodes
 	- By the inductive hypothesis, this smaller tree has $k + 1$ null pointers
-	- Adding back the removed node:
-		-   We remove one null pointer (where the new node was attached)
-		-   We add two null pointers for the new node’s children
+	- When adding back the removed node:
+		-   One null pointer (where the node was attached) is replaced by a new node, so we lose 1 null pointer
+		-   The newly added node 
 	- **Total null pointers**: $(k + 1) - 1 + 2 = k + 2$
 	- Which matches $(k + 1) + 1$
 	- Therefore, by induction this statement holds true for $n \geq 0$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzA4MDU5MzksNDEzNDQ0MTI3LDY1Mz
-U4MTkzNywtNjU0NzUxMzYsLTM5NTIwMDg3OCwxMDE0MTQwOTMs
-MTQ5NzAyMDE0Miw0NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Nj
-g0NzksMjEyNTAwNjI1LC0yOTE4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbNDI3MDA2MTk2LDQxMzQ0NDEyNyw2NTM1OD
+E5MzcsLTY1NDc1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0
+OTcwMjAxNDIsNDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4ND
+c5LDIxMjUwMDYyNSwtMjkxODg0MTc3XX0=
 -->
