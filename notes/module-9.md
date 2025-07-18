@@ -10,8 +10,11 @@ Recall that previously we discussed that every data structure should be able to 
 We need to know how to find everything in our tree. Otherwise, how would we know that we found everything. The simple answer to these questions is by implementing **tree traversals**
 
 **Tree traversals** are algorithms that will follow the structure of a tree in some fixed order that **visits** every node. So every data point is stored in some sort, and we are going to visit all of the nodes.
-- By visit, we typcially mean 
+- By visit, we typically mean whatever the algorithm wants to do with the data, which for demonstration purposes, we just simplify to printing the data because that is an easy way to test what is going on
+- So when a node is visited, it will then be print and then at the end we can check whether 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2ODAyNTUyLDY2NTk5OTc5MiwtNjYxMT
-I1NDYwXX0=
+eyJoaXN0b3J5IjpbLTc0NzEyOTk5OSw2NjU5OTk3OTIsLTY2MT
+EyNTQ2MF19
 -->
