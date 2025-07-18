@@ -60,10 +60,21 @@ Tree ADT involves 3 primary functionalities
 
 A list has a fixed structure and order, but a tree has varied structure depending on how it is used. The tree's structure may not matter because many algorithms may still work the same regardless of the tree’s shape, as long as the structure still preserves the necessary relationships.
 
-Therefore, lets thi
+Therefore, lets think about how we code a `BinaryTree`. An example header file that defines a `BinaryTree` is shown below
+
+```
+#pragma once  
+template <class T>
+class BinaryTree {
+public:
+	
+private:
+			
+};
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NDQ5Njg2LC02NTQ3NTEzNiwtMzk1Mj
-AwODc4LDEwMTQxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwt
-ODQyNDY0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4ND
-E3N119
+eyJoaXN0b3J5IjpbMTU2NTQxNDM5NCwtNjU0NzUxMzYsLTM5NT
+IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
+LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
+QxNzddfQ==
 -->
