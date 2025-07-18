@@ -57,10 +57,11 @@ Tree ADT involves 3 primary functionalities
 1. `insert`, inserts an element to the tree - into a location in structure
 2. `remove`, removes an element from a tree - from a location in structure
 3. `access`, access elements from a tree - from a location in structure
-4. 
+
+A list has a fixed structure and order, but a tree has varied structure depending on how it is used
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MjE3MjYxMiwtNjU0NzUxMzYsLTM5NT
-IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
-LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
-QxNzddfQ==
+eyJoaXN0b3J5IjpbLTEyMTA1MjQwNzksLTY1NDc1MTM2LC0zOT
+UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
+LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
+g0MTc3XX0=
 -->
