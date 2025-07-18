@@ -13,11 +13,13 @@ We need to know how to find everything in our tree. Otherwise, how would we know
 - By visit, we typically mean whatever the algorithm wants to do with the data, which for demonstration purposes, we just simplify to printing the data because that is an easy way to test what is going on
 - So when a node is visited, it will then be print and then at the end check whether we went through every node in the tree
 
-While it makes sense that the goal of a tree traversal is to 
+While it makes sense that the goal of a tree traversal is to visit every node, but **how**? Should it visit the node before I traverse into the subtree, during, or after? The simple answer is that **it is up to you**
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY4NDI5MTMsNjY1OTk5NzkyLC02Nj
-ExMjU0NjBdfQ==
+eyJoaXN0b3J5IjpbMTAzNjEyOTE5NSw2NjU5OTk3OTIsLTY2MT
+EyNTQ2MF19
 -->
