@@ -183,15 +183,18 @@ Tree ADT</h1>
 </ul>
 </li>
 <li><b>Induction Hypothesis</b>: Suppose $NULLS(n) = n + 1$ for all $0 \leq n &lt; k$</li>
-<li><b>Inductive Step</b>: Prove for $k + 1$ nodes<ul>
+<li><b>Inductive Step</b>: Prove for $n =k + 1$ nodes<ul>
 <li>Take any binary tree with $k + 1$ nodes</li>
 <li>Remove a leaf node (or any node that can be removed while keeping a valid binary tree structure), resulting in a tree with $k$ nodes</li>
 <li>By the inductive hypothesis, this smaller tree has $k + 1$ null pointers</li>
 <li>Adding back the removed node:<ul>
 <li>We remove one null pointer (where the new node was attached)</li>
-<li>We add two null pointers for the new node’s children      </li>
+<li>We add two null pointers for the new node’s children</li>
 </ul>
 </li>
+<li><b>Total null pointers</b>: $(k + 1) - 1 + 2 = k + 2$</li>
+<li>Which matches $(k + 1) + 1$</li>
+<li>Therefore, by induction this statement holds true for $n \geq 0$      </li>
 </ul>
 </li>
 </ol>
