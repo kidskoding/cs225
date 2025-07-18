@@ -80,10 +80,10 @@ Therefore, we will also want to use a `struct` here to store each individual `Tr
 2. `left` - a **pointer** to another `TreeNode` that represents the left child (or `nullptr` if no left child)
 3. `right` - a **pointer** to another `TreeNode` that represents the right child (or `nullptr` if no right child)
 
-With this, it makes sense for our root to be a **pointer** to a `zzzzz
+With this, it makes sense for our root to also be a **pointer** to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access an
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNTc5MjA0MCwtNjU0NzUxMzYsLTM5NT
-IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
-LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
-QxNzddfQ==
+eyJoaXN0b3J5IjpbLTEwMDQwMTY2NjksLTY1NDc1MTM2LC0zOT
+UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
+LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
+g0MTc3XX0=
 -->
