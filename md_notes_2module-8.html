@@ -162,9 +162,10 @@ Tree ADT</h1>
 </div><!-- fragment --><p>The first thing we need is a way to store the tree's root. In a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, the way we did it was by having a <code><a class="el" href="structListNode.html">ListNode</a></code> class to store each node of a list. Trees are similar to lists as well. They also have data stored in nodes, but are in hierarchal order rather than sequential</p>
 <p>Therefore, we will also want to use a <code>struct</code> here to store each individual <code>TreeNode</code>, which will have 3 fields</p><ol type="1">
 <li><code>data</code> - the data the <code>TreeNode</code> holds</li>
-<li><code>left</code> - a <b>pointer</b> to another <code>TreeNode</code> that represents a left child</li>
-<li><code>right</code> - a <b>pointer</b> to another <code>TreeNode</code> that represents the right child      </li>
+<li><code>left</code> - a <b>pointer</b> to another <code>TreeNode</code> that represents the left child (or <code>nullptr</code> if no left child)</li>
+<li><code>right</code> - a <b>pointer</b> to another <code>TreeNode</code> that represents the right child (or <code>nullptr</code> if no right child)</li>
 </ol>
+<p>With this, it makes sense for our root to be a <b>pointer</b> to a `zzzzz      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
