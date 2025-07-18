@@ -38,9 +38,13 @@ However, if I wanted to build a perfect tree with only 4 nodes, that wouldn't be
 
 A **complete** tree is a binary tree where all levels are completely filled except for the last level, which is filled from left to right
 
+More specially, complete trees
+1. A perfect tree for every level except the last, where the last level is "pushed to the left"
+2. For all levels $k$ in $[0, h - 1]$, $k$ has $2^k$ nodes. For level $h$, all nodes are "pushed to the left"
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxOD
-I1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwt
-MjkxODg0MTc3XX0=
+eyJoaXN0b3J5IjpbLTM5NTIwMDg3OCwxMDE0MTQwOTMsMTQ5Nz
+AyMDE0Miw0NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Njg0Nzks
+MjEyNTAwNjI1LC0yOTE4ODQxNzddfQ==
 -->
