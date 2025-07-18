@@ -101,10 +101,10 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 	- $n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅ (there is only the root node and both `left` and `right` child pointers are null)
 	- $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) ✅ (One node has two children - one child node and one null child - and the child node has two null pointers, totaling 3)
 3. **Induction Hypothesis**: Suppose $NULLS(n) = n + 1$ for all $0 \leq n < k$
-4. Consider an arbitrary tree $T$ containing $k$ data elements
+4. **Inductive Step**: Prove for $k + 1$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3MDE4NTMzLDY1MzU4MTkzNywtNjU0Nz
-UxMzYsLTM5NTIwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0
-NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNj
-I1LC0yOTE4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbMjA4NDY0MzI3Niw2NTM1ODE5MzcsLTY1ND
+c1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIs
+NDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMD
+YyNSwtMjkxODg0MTc3XX0=
 -->
