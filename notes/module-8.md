@@ -45,13 +45,12 @@ More specially, complete trees
 A complete tree of height $h$, $C_h$
 1. $C_{-1}$ = { }
 2. $C_h$ (where $h \geq 0$) = {$r, T_L, T_R$} and either:
-	- $T_L$ is $C_{h - 1}$ and $T_R$ is $P_{h - 2}$
-	- $T_L$ is $P_{h - 1}$ and $C_{h - 1}$
+	- $T_L$ is $C_{h - 1}$ and $T_R$ is $P_{h - 2}$ - given a complete tree with a height $h$, its left subtree must be complete with height $h - 1$ and its right subtree must be perfect with height $h - 2$
+	- $T_L$ is $P_{h - 1}$ and $C_{h - 1}$ - given a complete tree with a height $h$, its left subtree must be perfect with height $h - 1$ and its right subtree must be perfect with height $h - 2$
 
-This just mathematically explains the definition of a complete tree
-- $T_L = C_{h - 1}$ and $T_R = P_{h - 2}$ just explains that given a complete tree with a height $h - 1$, its left subtree m
+This just mathematically explains the definition of a complete tree, which is simply a perfect tree where every level is filled except the last, which is filled towar
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQyNTkwNTAsLTY1NDc1MTM2LC0zOT
+eyJoaXN0b3J5IjpbLTE5MzMxNTc2NjksLTY1NDc1MTM2LC0zOT
 UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
 LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
 g0MTc3XX0=
