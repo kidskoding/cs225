@@ -174,7 +174,13 @@ Tree ADT</h1>
 <p>Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ <code>NULL</code> pointers.</p>
 <ol type="1">
 <li>Let $NULLS(n)$ be defined as the number of null pointers in a tree of size $n$</li>
-<li>Use base cases $n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) ✅ (this makes sense because the tree is empty so the <code>root</code> pointer is null $n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅ (there is only the root node, w $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) ✅ (      </li>
+<li>Use base cases<ul>
+<li>$n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) ✅ (the tree is empty so the <code>root</code> pointer is null)</li>
+<li>$n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅ (there is only the root node and both <code>left</code> and <code>right</code> child pointers are null)</li>
+<li>$n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) ✅ (One node has two children - one child node and one null child - and the child node has two null pointers, totaling 3)</li>
+</ul>
+</li>
+<li></li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
