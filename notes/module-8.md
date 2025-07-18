@@ -54,13 +54,13 @@ This just mathematically explains the definition of a complete tree, which is si
 
 Tree ADT involves 3 primary functionalities
 
-1. `insert`, inserts an element to the tree
-2. `remove`, removes an element from a tree
-3. `access`, access elements from a tree
+1. `insert`, inserts an element to the tree - into a location in structure
+2. `remove`, removes an element from a tree - from a location in structure
+3. `access`, access elements from a tree - from a location in structure
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU5MDY5MzkxLC02NTQ3NTEzNiwtMzk1Mj
-AwODc4LDEwMTQxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwt
-ODQyNDY0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4ND
-E3N119
+eyJoaXN0b3J5IjpbMTk4MjE3MjYxMiwtNjU0NzUxMzYsLTM5NT
+IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
+LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
+QxNzddfQ==
 -->
