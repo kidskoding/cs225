@@ -48,10 +48,19 @@ A complete tree of height $h$, $C_h$
 	- $T_L$ is $C_{h - 1}$ and $T_R$ is $P_{h - 2}$ - given a complete tree with a height $h$, its left subtree must be complete with height $h - 1$ and its right subtree must be perfect with height $h - 2$
 	- $T_L$ is $P_{h - 1}$ and $C_{h - 1}$ - given a complete tree with a height $h$, its left subtree must be perfect with height $h - 1$ and its right subtree must be perfect with height $h - 2$
 
-This just mathematically explains the definition of a complete tree, which is simply a perfect tree where every level is filled except the last, which is filled towar
+This just mathematically explains the definition of a complete tree, which is simply a perfect tree where every level is filled except the last, which is filled with nodes towards its left subtree
+
+## Tree ADT
+
+Tree ADT involves 3 primary functionalities
+
+1. `insert`, inserts an element to the tree
+2. `remove`, removes an element from a tree
+3. `access`, access elements from a tree
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzMxNTc2NjksLTY1NDc1MTM2LC0zOT
-UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
-LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
-g0MTc3XX0=
+eyJoaXN0b3J5IjpbMjU5MDY5MzkxLC02NTQ3NTEzNiwtMzk1Mj
+AwODc4LDEwMTQxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwt
+ODQyNDY0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4ND
+E3N119
 -->
