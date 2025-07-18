@@ -76,11 +76,12 @@ private:
 The first thing we need is a way to store the tree's root. In a `LinkedList`, the way we did it was by having a `ListNode` class to store each node of a list. Trees are similar to lists as well. They also have data stored in nodes, but are in hierarchal order rather than sequential
 
 Therefore, we will also want to use a `struct` here to store each individual `TreeNode`, which will have 3 fields
-1. 
-2. 
+1. `data` - the data the `TreeNode` holds
+2. `left` - a **pointer** to another `TreeNode` that represents a left child
+3. `right` - a **pointer** to another `TreeNode` that represents the right child
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDA1MjQ2NTgsLTY1NDc1MTM2LC0zOT
-UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
-LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
-g0MTc3XX0=
+eyJoaXN0b3J5IjpbLTcxNjAwMTQxOCwtNjU0NzUxMzYsLTM5NT
+IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
+LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
+QxNzddfQ==
 -->
