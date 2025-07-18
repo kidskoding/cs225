@@ -106,12 +106,11 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 	- Remove a leaf node (or any node that can be removed while keeping a valid binary tree structure), resulting in a tree with $k$ nodes
 	- By the inductive hypothesis, this smaller tree has $k + 1$ null pointers
 	- Adding back the removed node:
-		-   We remove one null pointer (where the new node was attached).
-   
-		-   We add two null pointers for the new node’s children.
+		-   We remove one null pointer (where the new node was attached)
+		-   We add two null pointers for the new node’s children
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDk4MjI5MDUsNjUzNTgxOTM3LC02NT
-Q3NTEzNiwtMzk1MjAwODc4LDEwMTQxNDA5MywxNDk3MDIwMTQy
-LDQ1MTgyNTM4OSwtODQyNDY0MjE3LDM1Nzg2ODQ3OSwyMTI1MD
-A2MjUsLTI5MTg4NDE3N119
+eyJoaXN0b3J5IjpbNDEzNDQ0MTI3LDY1MzU4MTkzNywtNjU0Nz
+UxMzYsLTM5NTIwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0
+NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNj
+I1LC0yOTE4ODQxNzddfQ==
 -->
