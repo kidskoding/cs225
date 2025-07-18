@@ -72,8 +72,10 @@ private:
 			
 };
 ```
+
+The first thing we need is a way to store the tree's root. In a `LinkedList`, the way we did it was by having a `ListNode` class to store each node of a list. Trees work like lists as well. They also have nodes, but rather are stored in hei
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTQxNDM5NCwtNjU0NzUxMzYsLTM5NT
+eyJoaXN0b3J5IjpbMTk2NDU3ODcyOSwtNjU0NzUxMzYsLTM5NT
 IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
 LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
 QxNzddfQ==
