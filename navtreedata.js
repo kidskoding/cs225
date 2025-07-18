@@ -141,7 +141,9 @@ var NAVTREE =
         [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md97", null ]
       ] ]
     ] ],
-    [ "Module 8 - Trees", "md_notes_2module-8.html", null ],
+    [ "Module 8 - Trees", "md_notes_2module-8.html", [
+      [ "Tree ADT", "md_notes_2module-8.html#autotoc_md99", null ]
+    ] ],
     [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", null ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
