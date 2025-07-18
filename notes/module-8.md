@@ -45,9 +45,10 @@ More specially, complete trees
 A complete tree of height $h$, $C_h$
 1. $C_{-1}$ = { }
 2. $C_h$ (where $h \geq 0$) = {$r, T_L, T_R$} and either:
-	$T_L$ is  and $T_R$ is 
+	- $T_L$ is $C_{h - 1}$ and $T_R$ is $P_{h - 2}$
+	- $T_L$ is $P_{h - 1}$ and $C_{h - 1}$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDU2ODQ2MSwtMzk1MjAwODc4LDEwMT
-QxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwtODQyNDY0MjE3
-LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4NDE3N119
+eyJoaXN0b3J5IjpbLTY1NDc1MTM2LC0zOTUyMDA4NzgsMTAxND
+E0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5LC04NDI0NjQyMTcs
+MzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxODg0MTc3XX0=
 -->
