@@ -47,8 +47,12 @@ A complete tree of height $h$, $C_h$
 2. $C_h$ (where $h \geq 0$) = {$r, T_L, T_R$} and either:
 	- $T_L$ is $C_{h - 1}$ and $T_R$ is $P_{h - 2}$
 	- $T_L$ is $P_{h - 1}$ and $C_{h - 1}$
+
+This just mathematically explains the definition of a complete tree
+- $T_L = C_{h - 1}$ and $T_R = P_{h - 2}$ just explains that given a complete tree with a height $h - 1$, its left subtree m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDc1MTM2LC0zOTUyMDA4NzgsMTAxND
-E0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5LC04NDI0NjQyMTcs
-MzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxODg0MTc3XX0=
+eyJoaXN0b3J5IjpbLTE0MzQyNTkwNTAsLTY1NDc1MTM2LC0zOT
+UyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIsNDUxODI1Mzg5
+LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMDYyNSwtMjkxOD
+g0MTc3XX0=
 -->
