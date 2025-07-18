@@ -96,11 +96,12 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 
 1. Let $NULLS(n)$ be defined as the number of null pointers in a tree of size $n$
 2. Use base cases
-$n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) ✅
-$n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅
+$n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) ✅ (this makes sense because the tree is empty so the `root` pointer is null
+$n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) ✅ (there is only the root node, w
+$n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) ✅ (
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU3NDgzNTQ4LDY1MzU4MTkzNywtNjU0Nz
-UxMzYsLTM5NTIwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0
-NTE4MjUzODksLTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNj
-I1LC0yOTE4ODQxNzddfQ==
+eyJoaXN0b3J5IjpbMTM3MDMyMTQyNyw2NTM1ODE5MzcsLTY1ND
+c1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIs
+NDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMD
+YyNSwtMjkxODg0MTc3XX0=
 -->
