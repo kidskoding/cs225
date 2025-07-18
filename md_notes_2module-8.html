@@ -171,9 +171,7 @@ Tree ADT</h1>
 <p>In contrast, with a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, we only had to worry about one pointer per node possibly being null (the <code>next</code> pointer), so the overhead was much simpler and easier to quantify (it was always 1)</p>
 <p>Therefore, it makes sense to <b>prove how many null pointers exist in a tree</b> to analyze and optimize its memory usage and better understand the structure’s efficiency.</p>
 <p>There will always be $n + 1$ <code>NULL</code> pointers for $n$ nodes in our binary tree. But why?</p>
-<p>Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ <code>NULL</code> pointers.</p><ul>
-<li>Use induction on $n$</li>
-</ul>
+<p>Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ <code>NULL</code> pointers (Hint: use induction on $n$)</p>
 <ol type="1">
 <li>Let $NULLS(n)$ be defined as the number of null pointers in a tree of size $n$</li>
 <li><b>Base Case(s)</b><ul>
@@ -189,11 +187,11 @@ Tree ADT</h1>
 <li>By the inductive hypothesis, this smaller tree has $k + 1$ null pointers</li>
 <li>When adding back the removed node:<ul>
 <li>One null pointer (where the node was attached) is replaced by a new node, so we lose 1 null pointer</li>
-<li>The newly added node</li>
+<li>The newly added node has two child pointers, both null, so we add two null pointers</li>
 </ul>
 </li>
-<li><b>Total null pointers</b>: $(k + 1) - 1 + 2 = k + 2$</li>
-<li>Which matches $(k + 1) + 1$</li>
+<li>Therefore, the <b>total null pointers</b> = $(k + 1) - 1 + 2 = k + 2$</li>
+<li>Which equals: $(k + 1) + 1$</li>
 <li>Therefore, by induction this statement holds true for $n \geq 0$      </li>
 </ul>
 </li>
