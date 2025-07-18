@@ -90,9 +90,16 @@ In contrast, with a `LinkedList`, we only had to worry about one pointer per nod
 
 Therefore, it makes sense to **prove how many null pointers exist in a tree** to analyze and optimize its memory usage and better understand the structure’s efficiency.
 
-Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ NU
+There will always be $n + 1$ `NULL` pointers for $n$ nodes in our binary tree. But why?
+
+Prove that if there are $n$ data items in our representation of a binary tree, then there are $n + 1$ `NULL` pointers.
+
+1. Let $NULLS(n)$ be defined as the maximu
+$$
+
+$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDU4NzQyNCw2NTM1ODE5MzcsLTY1ND
+eyJoaXN0b3J5IjpbMTQzNDE1OTUyOCw2NTM1ODE5MzcsLTY1ND
 c1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIs
 NDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMD
 YyNSwtMjkxODg0MTc3XX0=
