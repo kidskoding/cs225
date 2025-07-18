@@ -13,9 +13,9 @@ We need to know how to find everything in our tree. Otherwise, how would we know
 - By visit, we typically mean whatever the algorithm wants to do with the data, which for demonstration purposes, we just simplify to printing the data because that is an easy way to test what is going on
 - So when a node is visited, it will then be print and then at the end check whether we went through every node in the tree
 
-While it makes sense that the goal of a tree traversal is to visit every node, but **how**? Should it visit the node before I traverse into the subtree, **in between** the subtree, or **after** the subtree? 
+While it makes sense that the goal of a tree traversal is to visit every node, but **how**? Should a tree visit a node **before** I traverse into the subtree, **in between** the subtree, or **after** the subtree? 
 
-The simple answer is that **it is up to you**
+The simple answer is that **it is up to you**. These are the three traversal algorithm techniques used to traverse through an entire tree: **pre order traversal**, **in order traversal**, **post order traversal**
 
 
 
@@ -24,6 +24,6 @@ The simple answer is that **it is up to you**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTEwNDY2MSw2NjU5OTk3OTIsLTY2MT
+eyJoaXN0b3J5IjpbMjEzMDc4NTY4Niw2NjU5OTk3OTIsLTY2MT
 EyNTQ2MF19
 -->
