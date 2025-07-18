@@ -83,9 +83,13 @@ Therefore, we will also want to use a `struct` here to store each individual `Tr
 With this, it makes sense for our root to also be a **pointer** to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access and avoids copying data unecessarily, allowing the tree to grow dynamically in memory without using too much overhead
 
 In memory, each tree node is created on the heap, and the `root` pointer (on the stack) points to the first node. Each node's `left` and `right` fields store pointers to other nodes on the heap, linking them together without copying any data. This allows the tree to grow dynamically, using memory only when needed.
+
+When we create a tree in memory, there is often a lot of wasted space, where child nodes can contain lots of pointers that simply point to nothing. With a `LinkedList`, we didn't have to worry about this because we knew there was only one pointer that would point to null.
+
+Therefore, it makes sense to prove 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzNTgxOTM3LC02NTQ3NTEzNiwtMzk1Mj
-AwODc4LDEwMTQxNDA5MywxNDk3MDIwMTQyLDQ1MTgyNTM4OSwt
-ODQyNDY0MjE3LDM1Nzg2ODQ3OSwyMTI1MDA2MjUsLTI5MTg4ND
-E3N119
+eyJoaXN0b3J5IjpbMjA5NTYyNDQyNCw2NTM1ODE5MzcsLTY1ND
+c1MTM2LC0zOTUyMDA4NzgsMTAxNDE0MDkzLDE0OTcwMjAxNDIs
+NDUxODI1Mzg5LC04NDI0NjQyMTcsMzU3ODY4NDc5LDIxMjUwMD
+YyNSwtMjkxODg0MTc3XX0=
 -->
