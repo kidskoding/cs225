@@ -15,7 +15,11 @@ We need to know how to find everything in our tree. Otherwise, how would we know
 
 While it makes sense that the goal of a tree traversal is to visit every node, but **how**? Should a tree visit a node **before** I traverse into the subtree, **in between** the subtree, or **after** the subtree? 
 
-The simple answer is that **it is up to you**. These are the three traversal algorithm techniques used to traverse through an entire tree: **pre order traversal**, **in order traversal**, **post order traversal**
+The simple answer is that **it's up to you**. It depends on **when** you choose to visit a node in relation to its children. These three choices correspond to the three well-known tree traversal techniques:
+-   **Pre-order traversal** – visit the node **before** its subtrees
+-   **In-order traversal** – visit the node **between** its subtrees
+-   **Post-order traversal** – visit the node **after** its subtrees
+
 
 
 
@@ -24,6 +28,6 @@ The simple answer is that **it is up to you**. These are the three traversal alg
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDc4NTY4Niw2NjU5OTk3OTIsLTY2MT
+eyJoaXN0b3J5IjpbMTY2MDYyOTAxNCw2NjU5OTk3OTIsLTY2MT
 EyNTQ2MF19
 -->
