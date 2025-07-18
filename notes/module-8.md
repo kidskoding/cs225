@@ -77,10 +77,12 @@ The first thing we need is a way to store the tree's root. In a `LinkedList`, th
 
 Therefore, we will also want to use a `struct` here to store each individual `TreeNode`, which will have 3 fields
 1. `data` - the data the `TreeNode` holds
-2. `left` - a **pointer** to another `TreeNode` that represents a left child
-3. `right` - a **pointer** to another `TreeNode` that represents the right child
+2. `left` - a **pointer** to another `TreeNode` that represents the left child (or `nullptr` if no left child)
+3. `right` - a **pointer** to another `TreeNode` that represents the right child (or `nullptr` if no right child)
+
+With this, it makes sense for our root to be a **pointer** to a `zzzzz
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjAwMTQxOCwtNjU0NzUxMzYsLTM5NT
+eyJoaXN0b3J5IjpbMTkyNTc5MjA0MCwtNjU0NzUxMzYsLTM5NT
 IwMDg3OCwxMDE0MTQwOTMsMTQ5NzAyMDE0Miw0NTE4MjUzODks
 LTg0MjQ2NDIxNywzNTc4Njg0NzksMjEyNTAwNjI1LC0yOTE4OD
 QxNzddfQ==
