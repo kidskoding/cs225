@@ -21,7 +21,8 @@ The simple answer is that **it's up to you**. It depends on **when** you choose 
   -   **In-order traversal** – visit the node **between** its subtrees
   -   **Post-order traversal** – visit the node **after** its subtrees
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MT
-EyNTQ2MF19
+eyJoaXN0b3J5IjpbOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OT
+k5NzkyLC02NjExMjU0NjBdfQ==
 -->
