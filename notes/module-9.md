@@ -127,15 +127,15 @@ NLR - pre order traversal (node, left, right)
 LNR - in order traversal (left, node, right)
 LRN - post order traversal (left, right, node) 
 
-![enter image description here](https://photos.google.com/u/1/photo/AF1QipMP3i-sRL9tEZwr3Zs2ecdPEsnqabWhVJcx7Qox)
-
 Diagram for remembering the tree traversals
+
+
 
 More specifically, these tree traversals fall under a broader category known as **depth first search (DFS)**. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking, where nodes are then visited in a way that explores one entire path before moving to another.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDI0MDA1NjksLTE3NDQyNzY1NjQsLT
-IyNzY0NjIxOCwtNTQzNjIyMDE4LC01OTc1MTQzNzksNTY1ODg1
-Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1MzQ4LC03MTc5MDY1OS
-w5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MTEy
-NTQ2MF19
+eyJoaXN0b3J5IjpbLTI2Nzc2NDU3MSwtMTc0NDI3NjU2NCwtMj
+I3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUy
+OTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LD
+k3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1
+NDYwXX0=
 -->
