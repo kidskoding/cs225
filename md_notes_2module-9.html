@@ -128,14 +128,14 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 <li>Repeat step 1 for the <b>next</b> subtree (depending on its left or right right) until there is no subtree available</li>
 </ol>
 <p>The order in which you do the three options above depends on the traversal type</p><ul>
-<li><b>Preorder</b> - visit, decend left, decend right</li>
-<li><b>Inorder</b> - decend left, visit, decend right</li>
-<li><b>Postorder</b> - decend left, decend right, visit</li>
+<li><b>Preorder</b> - visit, descend left, descend right</li>
+<li><b>Inorder</b> - descend left, visit, descend right</li>
+<li><b>Postorder</b> - descend left, descend right, visit</li>
 </ul>
 <p>Traversals are <b>recursive</b> by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.</p>
 <h2><a class="anchor" id="autotoc_md101"></a>
 Pre Order traversal</h2>
-<p>Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.</p>
+<p>Preorder traversal visits a tree node, and then descends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.</p>
 <p>This makes coding pre order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void preOrderTraversal(TreeNode*  curr)</code>;</p>
 <p>The code for <code>preOrderTraversal</code> shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
@@ -156,7 +156,7 @@ Pre Order traversal</h2>
 <p>Each of these recursive calls follows the same pattern: check if the node is <code>nullptr</code>, visit it, and recurse on its children. This process naturally continues until all nodes have been visited, and both left and right child pointers are <code>nullptr</code>, causing the recursion to unwind.</p>
 <h2><a class="anchor" id="autotoc_md102"></a>
 In Order traversal</h2>
-<p>Inorder traversal decends into the left subtree, visits a tree node, and then decends into the right subtree</p>
+<p>Inorder traversal descends into the left subtree, visits a tree node, and then descends into the right subtree</p>
 <p>This also makes coding in order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void inOrderTraversal(TreeNode*  curr)</code></p>
 <p>The code for <code>inOrderTraversal</code> is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
@@ -176,7 +176,7 @@ In Order traversal</h2>
 </ol>
 <h2><a class="anchor" id="autotoc_md103"></a>
 Post Order Traversal</h2>
-<p>Post Order traversal decends into the left subtree, decends into the right subtree, and then visits the current tree node.</p>
+<p>Post Order traversal descends into the left subtree, descends into the right subtree, and then visits the current tree node.</p>
 <p>This also makes coding post order traversal very simple, since we know its process. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void postOrderTraversal(TreeNode*  curr)</code></p>
 <p>The code for <code>postOrderTraversal</code> is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
@@ -194,7 +194,8 @@ Post Order Traversal</h2>
 <li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
 <li><b>Visit the current node</b> — we get its data (e.g., print it).</li>
 </ol>
-<p>The ideas behind these traversals are very similar. Its just that the order <code>TreeNode</code> are visited and      </p>
+<p>The ideas behind these traversals are very similar. Its just that the order a <code>TreeNode</code> is visited and when to descend into subtrees varies based on the type of traversal</p>
+<p>A good way      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
