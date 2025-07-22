@@ -147,15 +147,35 @@ We can still implement it iteratively with the help of a queue.
 
 1. Create a queue of `TreeNode` pointers (`TreeNode*`)
 2. Enqueue `root` to the queue
-3. While the queue isn't empty, dequeue the front no
+3. While the queue isn't empty, dequeue the front node and check if its pointer is `null`. If not, then print its data, and then enqueue its left and right child
 
+The code for this process is shown below
+
+```
+template <typename T>
+void BinaryTree<T>::levelOrderTraversal() {
+    std::queue<TreeNode*> q;
+    q.push(root);
+
+    while(!q.empty()) {
+        TreeNode* n = q.front();
+        q.pop();
+        
+        if(n != nullptr) {
+            std::cout << n->data << " ";
+            q.push(n->left);
+            q.push(n->right);
+        }
+    }
+}
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5NTc1NTUyLC0yMTIxNDU3MzA2LC0xNz
-Q0Mjc2NTY0LC0yMjc2NDYyMTgsLTU0MzYyMjAxOCwtNTk3NTE0
-Mzc5LDU2NTg4NTI5NSwtMTY0NjQ3OTQzNiwtMTQ3MjYxNTM0OC
-wtNzE3OTA2NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OTk5
-NzkyLC02NjExMjU0NjBdfQ==
+eyJoaXN0b3J5IjpbLTIwOTUzNjc1MzYsLTIxMjE0NTczMDYsLT
+E3NDQyNzY1NjQsLTIyNzY0NjIxOCwtNTQzNjIyMDE4LC01OTc1
+MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1Mz
+Q4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5
+OTk3OTIsLTY2MTEyNTQ2MF19
 -->
