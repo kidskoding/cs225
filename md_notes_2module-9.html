@@ -178,6 +178,23 @@ In Order traversal</h2>
 Post Order Traversal</h2>
 <p>Post Order traversal decends into the left subtree, decends into the right subtree, and then visits the current tree node.</p>
 <p>This also makes coding post order traversal very simple, since we know its process. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void postOrderTraversal(TreeNode*  curr)</code></p>
+<p>The code for <code>postOrderTraversal</code> is shown below</p>
+<div class="fragment"><div class="line">template &lt;typename T&gt;</div>
+<div class="line">void BinaryTree&lt;T&gt;::postOrderTraversal(TreeNode* curr) {</div>
+<div class="line">    if(curr == nullptr) { return; }</div>
+<div class="line"> </div>
+<div class="line">    postOrderTraversal(curr-&gt;left);</div>
+<div class="line">    postOrderTraversal(curr-&gt;right);</div>
+<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The base case is equivalent to pre and in order traversals.</p>
+<p>If the node is not <code>nullptr</code>, we proceed with the pre-order traversal steps:</p>
+<ol type="1">
+<li><b>Traverse the left subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;left</code>.</li>
+<li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
+<li><b>Visit the current node</b> — we get its data (e.g., print it).</li>
+</ol>
+<p>The ideas behind these traversals are very similar. Its just that the order <code>TreeNode</code> are visited and      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
