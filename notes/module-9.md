@@ -121,11 +121,17 @@ If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
 The ideas behind these traversals are very similar. Its just that the order a `TreeNode` is visited and when to descend into subtrees varies based on the type of traversal
 
-A good way to remember when to visit each node in the traversal is a simple diagram below
+A good way to remember the traversals are the three mneumonics
+
+NLR - pre order traversal (node, left, right)
+LNR - in order traversal (left, node, right)
+LRN - post order traversal (left, right, node) 
+
+
 
 More specifically, these tree traversals fall under a broader category known as **depth first search (DFS)**. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking, where nodes are then visited in a way that explores one entire path before moving to another.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjc3NDkyNjAsLTIyNzY0NjIxOCwtNT
+eyJoaXN0b3J5IjpbLTE3NDQyNzY1NjQsLTIyNzY0NjIxOCwtNT
 QzNjIyMDE4LC01OTc1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5
 NDM2LC0xNDcyNjE1MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMT
 MwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MTEyNTQ2MF19
