@@ -152,6 +152,8 @@ Pre-Order traversal</h2>
 <div class="line">    preOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Our base case is when our current node's pointer is <code>null</code>. This means that it cannot recursively call <code>preOrderTraversal</code> with its left and right subtree because it never had either one in the first place. If this is the case, we can immediately exit the function since we cant do anything with that <code>TreeNode</code></p>
+<p>Otherwise, we first visit the node (by printing its data), and then recursively repeat this process on the tree's left subtree and right subtree, which are <code>curr-&gt;left</code> and <code>curr-&gt;right</code> respectively.</p>
+<p>From here, <code>curr-&gt;left</code> and <code>curr-&gt;right</code> check if they are null and if not they are visited and then cal      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
