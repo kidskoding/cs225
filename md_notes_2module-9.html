@@ -132,10 +132,10 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 <li><b>Inorder</b> - decend left, visit, decend right</li>
 <li><b>Postorder</b> - decend left, decend right, visit</li>
 </ul>
-<p>Traversals are recursive by nature because trees are recursive data structures. When we descend into the left and right subtrees, we repeat the process of then visiting and decending into the left and right subsubtrees and so on so forth until there are no more subtrees.</p>
+<p>Traversals are <b>recursive</b> by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.</p>
 <h2><a class="anchor" id="autotoc_md101"></a>
 Pre-Order traversal</h2>
-<p>Preorder traversal visits a tree node, then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.      </p>
+<p>Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
