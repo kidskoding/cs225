@@ -36,9 +36,9 @@ The order in which you do the three options above depends on the traversal type
 
 ### Pre-Order traversal
 
-Preorder traversal visits a tree node, then decends into the left and right subtrees. Its recursive since trees
+Preorder traversal visits a tree node, then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xND
-cyNjE1MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1
-Niw2NjU5OTk3OTIsLTY2MTEyNTQ2MF19
+eyJoaXN0b3J5IjpbLTU5NzUxNDM3OSw1NjU4ODUyOTUsLTE2ND
+Y0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MDg4NTY5
+NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
 -->
