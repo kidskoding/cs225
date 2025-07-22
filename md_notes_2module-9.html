@@ -149,7 +149,7 @@ Pre Order traversal</h2>
 </div><!-- fragment --><p>Our <b>base case</b> occurs when the current node pointer (<code>curr</code>) is <code>nullptr</code>. This means we've reached a point in the tree where no further nodes exist (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
 <p>If the node is not <code>nullptr</code>, we proceed with the pre-order traversal steps:</p>
 <ol type="1">
-<li><b>Visit the current node</b> — we process its data (e.g., print it).</li>
+<li><b>Visit the current node</b> — we get its data (e.g., print it).</li>
 <li><b>Traverse the left subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;left</code>.</li>
 <li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
 </ol>
@@ -170,8 +170,8 @@ In Order traversal</h2>
 </div><!-- fragment --><p>Our <b>base case</b> is the same as pre order, when the current node pointer (<code>curr</code>) is <code>nullptr</code>. No further nodes exist anymore (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
 <p>If the node is not <code>nullptr</code>, we proceed with the pre-order traversal steps:</p>
 <ol type="1">
-<li><b>Visit the current node</b> — we process its data (e.g., print it).</li>
 <li><b>Traverse the left subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;left</code>.</li>
+<li><b>Visit the current node</b> — we get its data (e.g., print it).</li>
 <li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
 </ol>
 </div></div><!-- contents -->
