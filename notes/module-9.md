@@ -123,10 +123,10 @@ The ideas behind these traversals are very similar. Its just that the order a `T
 
 A good way to remember when to visit each node in the traversal is a simple diagram below
 
-More specifically, these tree traversals fall under a broader category known as **Depth First Search (DFS)**. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking — visiting nodes in a way that explores one entire path before moving to another.
+More specifically, these tree traversals fall under a broader category known as **depth first search (DFS)**. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking, where nodes are then visited in a way that explores one entire path before moving to another.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTA1NTkyNSwtMjI3NjQ2MjE4LC01ND
-M2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0
-MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMz
-AzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
+eyJoaXN0b3J5IjpbLTIwMjc3NDkyNjAsLTIyNzY0NjIxOCwtNT
+QzNjIyMDE4LC01OTc1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5
+NDM2LC0xNDcyNjE1MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMT
+MwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MTEyNTQ2MF19
 -->
