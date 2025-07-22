@@ -4,7 +4,7 @@ var searchData=
   ['s_20queues_1',['Stacks v.s. Queues',['../md_notes_2module-6.html#autotoc_md90',1,'']]],
   ['science_2',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
   ['search_3',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['search_20and_20bst_4',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
+  ['searching_4',['Module 10 - Tree Searching',['../md_notes_2module-10.html',1,'']]],
   ['semantics_5',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
   ['sets_6',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
   ['shallow_20and_20deep_20copies_7',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],

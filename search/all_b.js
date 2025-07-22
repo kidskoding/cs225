@@ -13,7 +13,7 @@ var searchData=
   ['amortized_20costs_20of_20various_20operations_20on_20various_20tt_20list_20tt_20implementations_10',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-5.html#autotoc_md86',1,'']]],
   ['an_20array_20implementation_20of_20a_20tt_20list_20tt_11',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
   ['analysis_12',['Analysis',['../md_notes_2module-18.html',1,'Module 18 - BTree Analysis'],['../md_notes_2module-5.html',1,'Module 5 - Amortized Analysis']]],
-  ['and_20bst_13',['Module 10 - Tree Search and BST',['../md_notes_2module-10.html',1,'']]],
+  ['and_20bst_20implementation_13',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['and_20deep_20copies_14',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
   ['and_20delete_20on_20copy_20constructors_15',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
   ['and_20hash_20tables_16',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
