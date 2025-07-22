@@ -144,7 +144,9 @@ var NAVTREE =
     [ "Module 8 - Trees", "md_notes_2module-8.html", [
       [ "Tree ADT", "md_notes_2module-8.html#autotoc_md99", null ]
     ] ],
-    [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", null ],
+    [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", [
+      [ "A different type of traversal - Level Order Traversal", "md_notes_2module-9.html#autotoc_md104", null ]
+    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

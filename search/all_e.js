@@ -10,8 +10,9 @@ var searchData=
   ['delete_20tt_7',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
   ['dequeue_20tt_8',['&lt;tt&gt;CircularQueue&lt;/tt&gt; Implementation - &lt;tt&gt;enqueue&lt;/tt&gt; and &lt;tt&gt;dequeue&lt;/tt&gt;',['../md_notes_2module-6.html#autotoc_md91',1,'']]],
   ['destructors_9',['Destructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md24',1,'']]],
-  ['dijkstra_20s_20algorithm_10',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
-  ['disjoint_20sets_11',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['doubling_20the_20elements_20every_20time_12',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md85',1,'']]],
-  ['dynamic_20memory_20allocation_13',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
+  ['different_20type_20of_20traversal_20level_20order_20traversal_10',['A different type of traversal - Level Order Traversal',['../md_notes_2module-9.html#autotoc_md104',1,'']]],
+  ['dijkstra_20s_20algorithm_11',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
+  ['disjoint_20sets_12',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
+  ['doubling_20the_20elements_20every_20time_13',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md85',1,'']]],
+  ['dynamic_20memory_20allocation_14',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
 ];
