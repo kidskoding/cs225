@@ -27,13 +27,21 @@ By understanding how these traversals work, it makes coding them much more simpl
 	- Visit
 	- Descend into the left subtree
 	- Descend into the right subtree
+	- the order in which you do the three options above depends on the traversal type
+		- Preorder - visit, decend left, decend right
+Inorder - decend left, visit, decend right
+Postorder - decend left, decend right, visit
 2. Repeat step 1 for the **next** subtree (depending on its left or right right) until there is no subtree available
+
+Preorder - visit, decend left, decend right
+Inorder - decend left, visit, decend right
+Postorder - decend left, decend right, visit
 
 ### Pre-Order traversal
 
 Preorder traversal visits a treenode before its subtree. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDY3NDE0LC0xNDcyNjE1MzQ4LC03MT
-c5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5OTk3OTIs
-LTY2MTEyNTQ2MF19
+eyJoaXN0b3J5IjpbLTY1NDA5NTEzNiwtMTQ3MjYxNTM0OCwtNz
+E3OTA2NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OTk5Nzky
+LC02NjExMjU0NjBdfQ==
 -->
