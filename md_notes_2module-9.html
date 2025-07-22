@@ -210,9 +210,26 @@ A different type of traversal - Level Order Traversal</h1>
 <ol type="1">
 <li>Create a queue of <code>TreeNode</code> pointers (<code>TreeNode*</code>)</li>
 <li>Enqueue <code>root</code> to the queue</li>
-<li>While the queue isn't empty, dequeue the front no</li>
+<li>While the queue isn't empty, dequeue the front node and check if its pointer is <code>null</code>. If not, then print its data, and then enqueue its left and right child</li>
 </ol>
-</div></div><!-- contents -->
+<p>The code for this process is shown below</p>
+<div class="fragment"><div class="line">template &lt;typename T&gt;</div>
+<div class="line">void BinaryTree&lt;T&gt;::levelOrderTraversal() {</div>
+<div class="line">    std::queue&lt;TreeNode*&gt; q;</div>
+<div class="line">    q.push(root);</div>
+<div class="line"> </div>
+<div class="line">    while(!q.empty()) {</div>
+<div class="line">        TreeNode* n = q.front();</div>
+<div class="line">        q.pop();</div>
+<div class="line">        </div>
+<div class="line">        if(n != nullptr) {</div>
+<div class="line">            std::cout &lt;&lt; n-&gt;data &lt;&lt; &quot; &quot;;</div>
+<div class="line">            q.push(n-&gt;left);</div>
+<div class="line">            q.push(n-&gt;right);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
