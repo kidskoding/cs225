@@ -7,12 +7,14 @@ A **search** is an algorithm that finds a node in a tree of value $v$ if it exis
 
 Previously, we discussed two types of search **Breath First** and **Depth First** (BFS and DFS)
 
-**BFS** is the same as level order traversal, where its overhead (or space complexity) is the maximum number of nodes in a queue.
+**BFS** is the same as level order traversal, where its overhead (or space complexity) is the maximum number of nodes in a queue (can also be seen as the width of a tree)
+
+**DFS** involves any of the three traversals that descend into the tree's children: pre order traversal, in order traversal, and post order traversal. Its overhead is the maximum depth in the tree (or simply height)
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU0NTIzMjAsLTE1MDkzNTI2N119
+eyJoaXN0b3J5IjpbLTkxMTY5NTE4OCwtMTUwOTM1MjY3XX0=
 -->
