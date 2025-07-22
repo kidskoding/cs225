@@ -12,7 +12,7 @@ var searchData=
   ['minimum_20spanning_20tree_20prim_20s_20algorithm_9',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
   ['module_201_20introduction_20to_20cs_20225_10',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['module_2010_20tree_20searching_11',['Module 10 - Tree Searching',['../md_notes_2module-10.html',1,'']]],
-  ['module_2011_20bst_20implementation_12',['Module 11 - BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['module_2011_20bst_20and_20bst_20implementation_12',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['module_2012_20bst_20balance_13',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['module_2013_20bst_20rotations_14',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
   ['module_2014_20avl_20trees_15',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]],
