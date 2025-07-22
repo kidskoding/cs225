@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['implementation_0',['Implementation',['../md_notes_2module-11.html',1,'Module 11 - BST and BST Implementation'],['../md_notes_2module-3.html',1,'Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation']]],
+  ['implementation_0',['Implementation',['../md_notes_2module-11.html',1,'Module 11 - BST Implementation'],['../md_notes_2module-3.html',1,'Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation']]],
   ['implementation_20of_20a_20tt_20list_20tt_1',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-4.html',1,'']]],
   ['implementations_2',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
   ['in_20computer_20science_3',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],

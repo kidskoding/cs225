@@ -82,7 +82,7 @@ var NAVTREE =
       [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md45", null ]
     ] ],
     [ "Module 10 - Tree Searching", "md_notes_2module-10.html", null ],
-    [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
+    [ "Module 11 - BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
     [ "Module 13 - BST Rotations", "md_notes_2module-13.html", null ],
     [ "Module 14 - AVL Trees", "md_notes_2module-14.html", null ],
