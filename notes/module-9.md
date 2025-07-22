@@ -30,15 +30,15 @@ By understanding how these traversals work, it makes coding them much more simpl
 2. Repeat step 1 for the **next** subtree (depending on its left or right right) until there is no subtree available
 
 The order in which you do the three options above depends on the traversal type
-- **Preorder** - visit, decend left, decend right
-- **Inorder** - decend left, visit, decend right
-- **Postorder** - decend left, decend right, visit
+- **Preorder** - visit, descend left, descend right
+- **Inorder** - descend left, visit, descend right
+- **Postorder** - descend left, descend right, visit
 
 Traversals are **recursive** by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.
 
 ### Pre Order traversal
 
-Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
+Preorder traversal visits a tree node, and then descends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
 
 This makes coding pre order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void preOrderTraversal(TreeNode*  curr)``;
 
@@ -67,7 +67,7 @@ Each of these recursive calls follows the same pattern: check if the node is `nu
 
 ### In Order traversal
 
-Inorder traversal decends into the left subtree, visits a tree node, and then decends into the right subtree
+Inorder traversal descends into the left subtree, visits a tree node, and then descends into the right subtree
 
 This also makes coding in order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void inOrderTraversal(TreeNode*  curr)``
 
@@ -94,7 +94,7 @@ If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
 ### Post Order Traversal
 
-Post Order traversal decends into the left subtree, decends into the right subtree, and then visits the current tree node.
+Post Order traversal descends into the left subtree, descends into the right subtree, and then visits the current tree node.
 
 This also makes coding post order traversal very simple, since we know its process. This function will take in the current `TreeNode` being processed (`curr`): ``void postOrderTraversal(TreeNode*  curr)``
 
@@ -119,9 +119,11 @@ If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 2.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
 3.  **Visit the current node** — we get its data (e.g., print it).
 
-The ideas behind these traversals are very similar. Its just that the order `TreeNode` are visited and 
+The ideas behind these traversals are very similar. Its just that the order a `TreeNode` is visited and when to descend into subtrees varies based on the type of traversal
+
+A good way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDU0NDQzMywtMjI3NjQ2MjE4LC01ND
+eyJoaXN0b3J5IjpbLTIwNjUxNjUyNCwtMjI3NjQ2MjE4LC01ND
 M2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0
 MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMz
 AzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
