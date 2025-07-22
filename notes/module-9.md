@@ -40,12 +40,27 @@ Traversals are **recursive** by nature because trees are recursive data structur
 
 Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
 
-This makes coding pre order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`) and then do the simple three step process
+This makes coding pre order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void  preOrderTraversal(TreeNode*  curr)``;
 
+This will follow 3 simple steps:
 1. Visit the current tree node (which in our case is printing its data)
-2. R
+2. Recursive call preorder on the left subtree
+3. Recursive call preorder on the right subtree
+
+The code for `preOrderTraversal` shown below
+
+```
+template <typename T>
+void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
+    if(curr == nullptr) { return; }
+
+    std::cout << curr->data << std::endl;
+    preOrderTraversal(curr->left);
+    preOrderTraversal(curr->right);
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2ODE4MDQxOSwtNTQzNjIyMDE4LC01OT
+eyJoaXN0b3J5IjpbMTUxNjgzNDc4NSwtNTQzNjIyMDE4LC01OT
 c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
 MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
 U5OTk3OTIsLTY2MTEyNTQ2MF19
