@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['circularqueue_0',['CircularQueue',['../classCircularQueue.html',1,'']]]
+  ['binarytree_0',['BinaryTree',['../classBinaryTree.html',1,'']]]
 ];
