@@ -98,8 +98,30 @@ Post Order traversal decends into the left subtree, decends into the right subtr
 
 This also makes coding post order traversal very simple, since we know its process. This function will take in the current `TreeNode` being processed (`curr`): ``void postOrderTraversal(TreeNode*  curr)``
 
+The code for `postOrderTraversal` is shown below
+
+```
+template <typename T>
+void BinaryTree<T>::postOrderTraversal(TreeNode* curr) {
+    if(curr == nullptr) { return; }
+
+    postOrderTraversal(curr->left);
+    postOrderTraversal(curr->right);
+    std::cout << curr->data << std::endl;
+}
+```
+
+The base case is equivalent to pre and in order traversals. 
+
+If the node is not `nullptr`, we proceed with the pre-order traversal steps:
+
+1.  **Traverse the left subtree** — recursively call `preOrderTraversal` on `curr->left`.
+2.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
+3.  **Visit the current node** — we get its data (e.g., print it).
+
+The ideas behind these traversals are very similar. Its just that the order `TreeNode` are visited and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODUxNzU5MiwtMjI3NjQ2MjE4LC01ND
+eyJoaXN0b3J5IjpbLTUyMDU0NDQzMywtMjI3NjQ2MjE4LC01ND
 M2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0
 MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMz
 AzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
