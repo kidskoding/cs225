@@ -143,13 +143,19 @@ Instead, we would need to use another data structure that the recursion would wo
 
 However, using recursion with BFS is not intuitive and not preferred, since it requires visiting all of a node’s siblings before its children, which goes against the natural depth-first behavior of recursion.
 
+We can still implement it iteratively with the help of a queue. 
+
+1. Create a queue of `TreeNode` pointers (`TreeNode*`)
+2. Enqueue `root` to the queue
+3. While the queue isn't empty, dequeue the front no
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTgyMzkyMiwtMjEyMTQ1NzMwNiwtMT
-c0NDI3NjU2NCwtMjI3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUx
-NDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzND
-gsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5
-OTc5MiwtNjYxMTI1NDYwXX0=
+eyJoaXN0b3J5IjpbMjc5NTc1NTUyLC0yMTIxNDU3MzA2LC0xNz
+Q0Mjc2NTY0LC0yMjc2NDYyMTgsLTU0MzYyMjAxOCwtNTk3NTE0
+Mzc5LDU2NTg4NTI5NSwtMTY0NjQ3OTQzNiwtMTQ3MjYxNTM0OC
+wtNzE3OTA2NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OTk5
+NzkyLC02NjExMjU0NjBdfQ==
 -->
