@@ -55,7 +55,7 @@ void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
 }
 ```
 
-Our **base case** occurs when the current node pointer (`curr`) is `nullptr`. This means we've reached a point in the tree where no further nodes exist (i.e., a leaf's child), so there's nothing to process or recurse on — we simply return.
+Our **base case** occurs when the current node pointer (`curr`) is `nullptr`. This means we've reached a point in the tree where no further nodes exist (i.e., a leaf's child), so there's nothing to process or recurse on, we simply return.
 
 If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
@@ -73,10 +73,21 @@ This makes coding in order traversal very simple. This function will take in the
 
 The code for `inOrderTraversal` is shown below
 
+```
+template <typename T>
+void BinaryTree<T>::inOrderTraversal(TreeNode* curr) {
+    if(curr == nullptr) { return; }
+    
+    inOrderTraversal(curr->left);
+    std::cout << curr->data << std::endl;
+    inOrderTraversal(curr->right);
+}
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDE0NjU0MCwtNTQzNjIyMDE4LC01OT
-c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
-MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
-U5OTk3OTIsLTY2MTEyNTQ2MF19
+eyJoaXN0b3J5IjpbMzEwMzQ5MDQ3LC01NDM2MjIwMTgsLTU5Nz
+UxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUz
+NDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NT
+k5OTc5MiwtNjYxMTI1NDYwXX0=
 -->
