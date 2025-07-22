@@ -36,7 +36,7 @@ The order in which you do the three options above depends on the traversal type
 
 Traversals are **recursive** by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.
 
-### Pre-Order traversal
+### Pre Order traversal
 
 Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
 
@@ -60,14 +60,22 @@ void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
 }
 ```
 
-Our base case is when our current node's pointer is `null`. This means that it cannot recursively call `preOrderTraversal` with its left and right subtree because it never had either one in the first place. If this is the case, we can immediately exit the function since we cant do anything with that `TreeNode`
+Our **base case** occurs when the current node pointer (`curr`) is `nullptr`. This means we've reached a point in the tree where no further nodes exist (i.e., a leaf's child), so there's nothing to process or recurse on — we simply return.
 
-Otherwise, we first visit the node (by printing its data), and then recursively repeat this process on the tree's left subtree and right subtree, which are `curr->left` and `curr->right` respectively.
+If the node is not `nullptr`, we proceed with the pre-order traversal steps:
+
+1.  **Visit the current node** — we process its data (e.g., print it).
+2.  **Traverse the left subtree** — recursively call `preOrderTraversal` on `curr->left`.
+3.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
 
 Each of these recursive calls follows the same pattern: check if the node is `nullptr`, visit it, and recurse on its children. This process naturally continues until all nodes have been visited, and both left and right child pointers are `nullptr`, causing the recursion to unwind.
+
+### In Order traversal
+
+Inorder traversal decends into the left sub visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTE0MDQ4NiwtNTQzNjIyMDE4LC01OT
-c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
-MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
-U5OTk3OTIsLTY2MTEyNTQ2MF19
+eyJoaXN0b3J5IjpbNTM5Mjg0NDUsLTU0MzYyMjAxOCwtNTk3NT
+E0Mzc5LDU2NTg4NTI5NSwtMTY0NjQ3OTQzNiwtMTQ3MjYxNTM0
+OCwtNzE3OTA2NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OT
+k5NzkyLC02NjExMjU0NjBdfQ==
 -->
