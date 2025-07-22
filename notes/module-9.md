@@ -131,9 +131,13 @@ More specifically, these tree traversals fall under a broader category known as 
 
 ## A different type of traversal - Level Order Traversal
 
-There is another type of tree traversal that behaves differently than the t
+There is another type of tree traversal that behaves differently than the three DFS traversals and it is known as a **Level Order Traversal**. 
+
+In this traversal, we visit each node **layer by layer**, or level by level, starting from the root node. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MDU4MTMxMSwtMTc0NDI3NjU2NCwtMj
+eyJoaXN0b3J5IjpbMTM5MjM2Mjc2MiwtMTc0NDI3NjU2NCwtMj
 I3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUy
 OTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LD
 k3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1
