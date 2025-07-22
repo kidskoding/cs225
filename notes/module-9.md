@@ -49,7 +49,7 @@ template <typename T>
 void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
     if(curr == nullptr) { return; }
 
-    std::cout << curr->data << std::endl;
+    std::cout << curr->data << " ";
     preOrderTraversal(curr->left);
     preOrderTraversal(curr->right);
 }
@@ -79,7 +79,7 @@ void BinaryTree<T>::inOrderTraversal(TreeNode* curr) {
     if(curr == nullptr) { return; }
     
     inOrderTraversal(curr->left);
-    std::cout << curr->data << std::endl;
+    std::cout << curr->data << " ";
     inOrderTraversal(curr->right);
 }
 ```
@@ -107,7 +107,7 @@ void BinaryTree<T>::postOrderTraversal(TreeNode* curr) {
 
     postOrderTraversal(curr->left);
     postOrderTraversal(curr->right);
-    std::cout << curr->data << std::endl;
+    std::cout << curr->data << " ";
 }
 ```
 
@@ -147,9 +147,9 @@ However, using recursion with BFS is not intuitive and not preferred, since it r
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjE0NTczMDYsLTE3NDQyNzY1NjQsLT
-IyNzY0NjIxOCwtNTQzNjIyMDE4LC01OTc1MTQzNzksNTY1ODg1
-Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1MzQ4LC03MTc5MDY1OS
-w5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MTEy
-NTQ2MF19
+eyJoaXN0b3J5IjpbMjA3MTgyMzkyMiwtMjEyMTQ1NzMwNiwtMT
+c0NDI3NjU2NCwtMjI3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUx
+NDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzND
+gsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5
+OTc5MiwtNjYxMTI1NDYwXX0=
 -->
