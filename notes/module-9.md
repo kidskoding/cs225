@@ -55,7 +55,7 @@ void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
 }
 ```
 
-Our **base case** occurs when the current node pointer (`curr`) is `nullptr`. This means we've reached a point in the tree where no further nodes exist (i.e., a leaf's child), so there's nothing to process or recurse on, we simply return.
+Our **base case** occurs when the current node pointer (`curr`) is `nullptr`. This means we've reached a point in the tree where no further nodes exist (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.
 
 If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
@@ -84,9 +84,16 @@ void BinaryTree<T>::inOrderTraversal(TreeNode* curr) {
 }
 ```
 
+Our **base case** is the same as pre order, when the current node pointer (`curr`) is `nullptr`. No further nodes exist anymore (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.
+
+If the node is not `nullptr`, we proceed with the pre-order traversal steps:
+
+1.  **Visit the current node** — we process its data (e.g., print it).
+2.  **Traverse the left subtree** — recursively call `preOrderTraversal` on `curr->left`.
+3.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwMzQ5MDQ3LC01NDM2MjIwMTgsLTU5Nz
+eyJoaXN0b3J5IjpbMjE1MjQ0ODAyLC01NDM2MjIwMTgsLTU5Nz
 UxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUz
 NDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NT
 k5OTc5MiwtNjYxMTI1NDYwXX0=
