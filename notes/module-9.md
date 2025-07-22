@@ -135,13 +135,15 @@ There is another type of tree traversal that behaves differently than the three 
 
 In this traversal, we visit each node **layer by layer**, or level by level, starting from the root node. This will help find nodes at each level. 
 
-This method is commonly known as **breadth first search** or simply **BFS**
+This method is commonly known as **breadth first search** or simply **BFS**, which involves visiting the nodes of a tree level by level
+
+In the three DFS traversals we used recursion on the **tree** to implement them
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMDI0Njk2MSwtMTc0NDI3NjU2NCwtMj
-I3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUy
-OTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LD
-k3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1
-NDYwXX0=
+eyJoaXN0b3J5IjpbMjM2MzQ3NDQ5LC0xNzQ0Mjc2NTY0LC0yMj
+c2NDYyMTgsLTU0MzYyMjAxOCwtNTk3NTE0Mzc5LDU2NTg4NTI5
+NSwtMTY0NjQ3OTQzNiwtMTQ3MjYxNTM0OCwtNzE3OTA2NTksOT
+cwODg1Njk0LDEzMDM5MjA2NTYsNjY1OTk5NzkyLC02NjExMjU0
+NjBdfQ==
 -->
