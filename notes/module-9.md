@@ -141,11 +141,13 @@ In the three DFS traversals we used recursion on the **tree** itself to implemen
 
 Instead, we would need to use another data structure that the recursion would work with. Since BFS visits the nodes in horizontal, level order, a queue would make sense here. This is because queues are **First-In First-Out** and preserve the level ordering rule that BFS needs.
 
-However, using recursion with BFS i
+However, using recursion with BFS is not intuitive and not preferred, since it requires visiting all of a node’s siblings before its children, which goes against the natural depth-first behavior of recursion.
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQ2ODgxODUsLTE3NDQyNzY1NjQsLT
+eyJoaXN0b3J5IjpbLTIxMjE0NTczMDYsLTE3NDQyNzY1NjQsLT
 IyNzY0NjIxOCwtNTQzNjIyMDE4LC01OTc1MTQzNzksNTY1ODg1
 Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1MzQ4LC03MTc5MDY1OS
 w5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MTEy
