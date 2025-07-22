@@ -9,7 +9,7 @@ var searchData=
   ['to_20classes_6',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md95',1,'']]],
   ['to_20cs_20225_7',['Module 1 - Introduction to CS 225',['../md_notes_2module-1.html',1,'']]],
   ['topics_20covered_8',['Topics Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'Topics Covered'],['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40',1,'Topics Covered']]],
-  ['traversal_9',['Pre-Order traversal',['../md_notes_2module-9.html#autotoc_md101',1,'']]],
+  ['traversal_9',['traversal',['../md_notes_2module-9.html#autotoc_md102',1,'In Order traversal'],['../md_notes_2module-9.html#autotoc_md101',1,'Pre Order traversal']]],
   ['traversals_10',['Traversals',['../md_notes_2module-24.html',1,'Module 24 - Graph Traversals'],['../md_notes_2module-9.html',1,'Module 9 - Tree Traversals']]],
   ['tree_20adt_11',['Tree ADT',['../md_notes_2module-8.html#autotoc_md99',1,'']]],
   ['tree_20kruskal_20s_20algorithm_12',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],

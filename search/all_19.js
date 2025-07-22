@@ -2,7 +2,7 @@ var searchData=
 [
   ['passing_20arguments_0',['Passing Arguments',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md28',1,'']]],
   ['pointers_1',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
-  ['pre_20order_20traversal_2',['Pre-Order traversal',['../md_notes_2module-9.html#autotoc_md101',1,'']]],
+  ['pre_20order_20traversal_2',['Pre Order traversal',['../md_notes_2module-9.html#autotoc_md101',1,'']]],
   ['prerequisite_20material_3',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
   ['prim_20s_20algorithm_4',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
   ['priority_20queues_5',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]],

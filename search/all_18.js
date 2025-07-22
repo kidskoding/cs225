@@ -14,6 +14,6 @@ var searchData=
   ['operator_11',['Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]],
   ['operator_20tt_12',['&lt;tt&gt;operator[]&lt;/tt&gt;',['../md_notes_2module-3.html#autotoc_md74',1,'']]],
   ['operator_5b_5d_13',['operator[]',['../classLinkedList.html#a199fff56292949cdec68970cc5197a66',1,'LinkedList']]],
-  ['order_20traversal_14',['Pre-Order traversal',['../md_notes_2module-9.html#autotoc_md101',1,'']]],
+  ['order_20traversal_14',['Order traversal',['../md_notes_2module-9.html#autotoc_md102',1,'In Order traversal'],['../md_notes_2module-9.html#autotoc_md101',1,'Pre Order traversal']]],
   ['ownership_15',['Memory Management - Ownership',['../md_notes_2module-2.html#autotoc_md58',1,'']]]
 ];
