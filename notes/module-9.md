@@ -59,7 +59,7 @@ Our **base case** occurs when the current node pointer (`curr`) is `nullptr`. Th
 
 If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
-1.  **Visit the current node** — we process its data (e.g., print it).
+1.  **Visit the current node** — we get its data (e.g., print it).
 2.  **Traverse the left subtree** — recursively call `preOrderTraversal` on `curr->left`.
 3.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
 
@@ -88,13 +88,14 @@ Our **base case** is the same as pre order, when the current node pointer (`curr
 
 If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
-1.  **Visit the current node** — we process its data (e.g., print it).
-2.  **Traverse the left subtree** — recursively call `preOrderTraversal` on `curr->left`.
+1.  **Traverse the left subtree** — recursively call `preOrderTraversal` on `curr->left`.
+2.  **Visit the current node** — we get its data (e.g., print it).
 3.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1MjQ0ODAyLC01NDM2MjIwMTgsLTU5Nz
-UxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUz
-NDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NT
-k5OTc5MiwtNjYxMTI1NDYwXX0=
+eyJoaXN0b3J5IjpbLTIyNzY0NjIxOCwtNTQzNjIyMDE4LC01OT
+c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
+MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
+U5OTk3OTIsLTY2MTEyNTQ2MF19
 -->
