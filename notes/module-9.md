@@ -40,7 +40,7 @@ Traversals are **recursive** by nature because trees are recursive data structur
 
 Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
 
-This makes coding pre order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void  preOrderTraversal(TreeNode*  curr)``;
+This makes coding pre order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void preOrderTraversal(TreeNode*  curr)``;
 
 The code for `preOrderTraversal` shown below
 
@@ -69,7 +69,7 @@ Each of these recursive calls follows the same pattern: check if the node is `nu
 
 Inorder traversal decends into the left subtree, visits a tree node, and then decends into the right subtree
 
-This makes coding in order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void  inOrderTraversal(TreeNode*  curr)``
+This also makes coding in order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void inOrderTraversal(TreeNode*  curr)``
 
 The code for `inOrderTraversal` is shown below
 
@@ -92,10 +92,15 @@ If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 2.  **Visit the current node** — we get its data (e.g., print it).
 3.  **Traverse the right subtree** — recursively call `preOrderTraversal` on `curr->right`.
 
+### Post Order Traversal
+
+Post Order traversal decends into the left subtree, decends into the right subtree, and then visits the current tree node.
+
+This also makes coding post order traversal very simple, since we know its process. This function will take in the current `TreeNode` being processed (`curr`): ``void postOrderTraversal(TreeNode*  curr)``
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzY0NjIxOCwtNTQzNjIyMDE4LC01OT
-c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
-MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
-U5OTk3OTIsLTY2MTEyNTQ2MF19
+eyJoaXN0b3J5IjpbMTU2ODUxNzU5MiwtMjI3NjQ2MjE4LC01ND
+M2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0
+MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMz
+AzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
 -->
