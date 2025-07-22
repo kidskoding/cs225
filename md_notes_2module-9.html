@@ -146,7 +146,7 @@ Pre Order traversal</h2>
 <div class="line">    preOrderTraversal(curr-&gt;left);</div>
 <div class="line">    preOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>Our <b>base case</b> occurs when the current node pointer (<code>curr</code>) is <code>nullptr</code>. This means we've reached a point in the tree where no further nodes exist (i.e., a leaf's child), so there's nothing to process or recurse on, we simply return.</p>
+</div><!-- fragment --><p>Our <b>base case</b> occurs when the current node pointer (<code>curr</code>) is <code>nullptr</code>. This means we've reached a point in the tree where no further nodes exist (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
 <p>If the node is not <code>nullptr</code>, we proceed with the pre-order traversal steps:</p>
 <ol type="1">
 <li><b>Visit the current node</b> — we process its data (e.g., print it).</li>
@@ -167,7 +167,14 @@ In Order traversal</h2>
 <div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; std::endl;</div>
 <div class="line">    inOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
-</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- fragment --><p>Our <b>base case</b> is the same as pre order, when the current node pointer (<code>curr</code>) is <code>nullptr</code>. No further nodes exist anymore (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
+<p>If the node is not <code>nullptr</code>, we proceed with the pre-order traversal steps:</p>
+<ol type="1">
+<li><b>Visit the current node</b> — we process its data (e.g., print it).</li>
+<li><b>Traverse the left subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;left</code>.</li>
+<li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
+</ol>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
