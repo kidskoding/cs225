@@ -34,14 +34,16 @@ The order in which you do the three options above depends on the traversal type
 - **Inorder** - decend left, visit, decend right
 - **Postorder** - decend left, decend right, visit
 
-Traversals are recursive by nature because trees are recursive data structures. When we descend into the left and right subtrees, we repeat the process of then visiting and decending into the left and right subsubtrees and so on so forth until there are no more subtrees.
+Traversals are **recursive** by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.
 
 ### Pre-Order traversal
 
-Preorder traversal visits a tree node, then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
+Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDE2NzQ2NDEsLTU5NzUxNDM3OSw1Nj
-U4ODUyOTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkw
-NjU5LDk3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNj
-YxMTI1NDYwXX0=
+eyJoaXN0b3J5IjpbLTU0MzYyMjAxOCwtNTk3NTE0Mzc5LDU2NT
+g4NTI5NSwtMTY0NjQ3OTQzNiwtMTQ3MjYxNTM0OCwtNzE3OTA2
+NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OTk5NzkyLC02Nj
+ExMjU0NjBdfQ==
 -->
