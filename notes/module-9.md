@@ -23,17 +23,17 @@ The simple answer is that **it's up to you**. It depends on **when** you choose 
 
 By understanding how these traversals work, it makes coding them much more simple and straight forward.
 
-1. Start from the root and do three of the following options (the order of the three depends on the traversal type)
-	1. Visit
-	2. Descend into the left subtree
-	3. Descend into the right
-2. Repeat step 1 for the **next** subtree (left or right) until there is no subtree available
+1. Start from the root and do one of three of the following options (the order in which you do the tree depends on the traversal type)
+	- Visit
+	- Descend into the left subtree
+	- Descend into the right subtree
+2. Repeat step 1 for the **next** subtree (depending on its left or right right) until there is no subtree available
 
 ### Pre-Order traversal
 
 Preorder traversal visits a treenode before its subtree. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MD
-g4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYw
-XX0=
+eyJoaXN0b3J5IjpbMTg4NDY3NDE0LC0xNDcyNjE1MzQ4LC03MT
+c5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5OTk3OTIs
+LTY2MTEyNTQ2MF19
 -->
