@@ -21,8 +21,14 @@ The simple answer is that **it's up to you**. It depends on **when** you choose 
   -   **In-order traversal** – visit the node **between** its subtrees
   -   **Post-order traversal** – visit the node **after** its subtrees
 
+By understanding how these traversals work, it makes coding them much more simple and straight forward.
 
+1. 
+
+### Pre-Order traversal
+
+Preorder traversal visits a treenode before its subtree. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OT
-k5NzkyLC02NjExMjU0NjBdfQ==
+eyJoaXN0b3J5IjpbLTcxNzkwNjU5LDk3MDg4NTY5NCwxMzAzOT
+IwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
 -->
