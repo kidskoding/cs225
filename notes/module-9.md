@@ -139,11 +139,11 @@ This method is commonly known as **breadth first search** or simply **BFS**, whi
 
 In the three DFS traversals we used recursion on the **tree** itself to implement them. In BFS, we can use recursion, but it wouldn't make sense to do it on the **tree** itself since we don't need to recursively descend into each subtree. 
 
-Instead, we would need to use another data structure that the recursion would work with. Since BFS visits the nodes in horizontal, level order, a queue would make sense here
+Instead, we would need to use another data structure that the recursion would work with. Since BFS visits the nodes in horizontal, level order, a queue would make sense here. This is because queues are **First-In First-Out** and preserve the level ordering rule. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjM5OTM1NCwtMTc0NDI3NjU2NCwtMj
+eyJoaXN0b3J5IjpbLTgwODc0NTEzMywtMTc0NDI3NjU2NCwtMj
 I3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUy
 OTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LD
 k3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1
