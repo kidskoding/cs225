@@ -42,11 +42,6 @@ Preorder traversal visits a tree node, and then decends into the left and right 
 
 This makes coding pre order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void  preOrderTraversal(TreeNode*  curr)``;
 
-This will follow 3 simple steps:
-1. Visit the current tree node (which in our case is printing its data)
-2. Recursive call preorder on the left subtree
-3. Recursive call preorder on the right subtree
-
 The code for `preOrderTraversal` shown below
 
 ```
@@ -72,10 +67,16 @@ Each of these recursive calls follows the same pattern: check if the node is `nu
 
 ### In Order traversal
 
-Inorder traversal decends into the left sub visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.
+Inorder traversal decends into the left subtree, visits a tree node, and then decends into the right subtree
+
+This makes coding in order traversal very simple. This function will take in the current `TreeNode` being processed (`curr`): ``void  inOrderTraversal(TreeNode*  curr)``
+
+The code for `inOrderTraversal` is shown below
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5Mjg0NDUsLTU0MzYyMjAxOCwtNTk3NT
-E0Mzc5LDU2NTg4NTI5NSwtMTY0NjQ3OTQzNiwtMTQ3MjYxNTM0
-OCwtNzE3OTA2NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNjY1OT
-k5NzkyLC02NjExMjU0NjBdfQ==
+eyJoaXN0b3J5IjpbLTE2MDE0NjU0MCwtNTQzNjIyMDE4LC01OT
+c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
+MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
+U5OTk3OTIsLTY2MTEyNTQ2MF19
 -->
