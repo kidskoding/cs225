@@ -206,6 +206,12 @@ A different type of traversal - Level Order Traversal</h1>
 <p>In the three DFS traversals we used recursion on the <b>tree</b> itself to implement them. In BFS, we can use recursion, but it wouldn't make sense to do it on the <b>tree</b> itself since we don't need to recursively descend into each subtree.</p>
 <p>Instead, we would need to use another data structure that the recursion would work with. Since BFS visits the nodes in horizontal, level order, a queue would make sense here. This is because queues are <b>First-In First-Out</b> and preserve the level ordering rule that BFS needs.</p>
 <p>However, using recursion with BFS is not intuitive and not preferred, since it requires visiting all of a node’s siblings before its children, which goes against the natural depth-first behavior of recursion.</p>
+<p>We can still implement it iteratively with the help of a queue.</p>
+<ol type="1">
+<li>Create a queue of <code>TreeNode</code> pointers (<code>TreeNode*</code>)</li>
+<li>Enqueue <code>root</code> to the queue</li>
+<li>While the queue isn't empty, dequeue the front no</li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
