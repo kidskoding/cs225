@@ -64,9 +64,9 @@ Our base case is when our current node's pointer is `null`. This means that it c
 
 Otherwise, we first visit the node (by printing its data), and then recursively repeat this process on the tree's left subtree and right subtree, which are `curr->left` and `curr->right` respectively.
 
-From here, `curr->left` and `curr->right` check if they are null and if not they are visited and then cal
+Each of these recursive calls follows the same pattern: check if the node is `nullptr`, visit it, and recurse on its children. This process naturally continues until all nodes have been visited, and both left and right child pointers are `nullptr`, causing the recursion to unwind.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTc1MTMxNiwtNTQzNjIyMDE4LC01OT
+eyJoaXN0b3J5IjpbMjAxOTE0MDQ4NiwtNTQzNjIyMDE4LC01OT
 c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
 MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
 U5OTk3OTIsLTY2MTEyNTQ2MF19
