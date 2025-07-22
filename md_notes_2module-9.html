@@ -137,11 +137,6 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 Pre Order traversal</h2>
 <p>Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.</p>
 <p>This makes coding pre order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void preOrderTraversal(TreeNode*  curr)</code>;</p>
-<p>This will follow 3 simple steps:</p><ol type="1">
-<li>Visit the current tree node (which in our case is printing its data)</li>
-<li>Recursive call preorder on the left subtree</li>
-<li>Recursive call preorder on the right subtree</li>
-</ol>
 <p>The code for <code>preOrderTraversal</code> shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
 <div class="line">void BinaryTree&lt;T&gt;::preOrderTraversal(TreeNode* curr) {</div>
@@ -161,7 +156,9 @@ Pre Order traversal</h2>
 <p>Each of these recursive calls follows the same pattern: check if the node is <code>nullptr</code>, visit it, and recurse on its children. This process naturally continues until all nodes have been visited, and both left and right child pointers are <code>nullptr</code>, causing the recursion to unwind.</p>
 <h2><a class="anchor" id="autotoc_md102"></a>
 In Order traversal</h2>
-<p>Inorder traversal decends into the left sub visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.      </p>
+<p>Inorder traversal decends into the left subtree, visits a tree node, and then decends into the right subtree</p>
+<p>This makes coding in order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void inOrderTraversal(TreeNode*  curr)</code></p>
+<p>The code for <code>inOrderTraversal</code> is shown below</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
