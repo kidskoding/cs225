@@ -121,9 +121,11 @@ If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
 The ideas behind these traversals are very similar. Its just that the order a `TreeNode` is visited and when to descend into subtrees varies based on the type of traversal
 
-A good way
+A good way to remember when to visit each node in the traversal is a simple diagram below
+
+More specifically, these tree traversals are known as a *
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUxNjUyNCwtMjI3NjQ2MjE4LC01ND
+eyJoaXN0b3J5IjpbMTgxMzk1MTg0MywtMjI3NjQ2MjE4LC01ND
 M2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUyOTUsLTE2NDY0Nzk0
 MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LDk3MDg4NTY5NCwxMz
 AzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1NDYwXX0=
