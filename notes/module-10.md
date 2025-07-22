@@ -1,7 +1,7 @@
 
-# Module 10 - Tree Search and BST
+# Module 10 - Tree Searching
 
-> Written with [StackEdit](https://stackedit.io/).
+A traversal i
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDkzNTI2N119
+eyJoaXN0b3J5IjpbMzAwNzYxNDgzLC0xNTA5MzUyNjddfQ==
 -->
