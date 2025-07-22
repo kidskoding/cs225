@@ -62,10 +62,12 @@ void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
 
 Our base case is when our current node's pointer is `null`. This means that it cannot recursively call `preOrderTraversal` with its left and right subtree because it never had either one in the first place. If this is the case, we can immediately exit the function since we cant do anything with that `TreeNode`
 
+Otherwise, we first visit the node (by printing its data), and then recursively repeat this process on the tree's left subtree and right subtree, which are `curr->left` and `curr->right` respectively.
 
+From here, `curr->left` and `curr->right` check if they are null and if not they are visited and then cal
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg3MzA2NzksLTU0MzYyMjAxOCwtNT
-k3NTE0Mzc5LDU2NTg4NTI5NSwtMTY0NjQ3OTQzNiwtMTQ3MjYx
-NTM0OCwtNzE3OTA2NTksOTcwODg1Njk0LDEzMDM5MjA2NTYsNj
-Y1OTk5NzkyLC02NjExMjU0NjBdfQ==
+eyJoaXN0b3J5IjpbMTM1OTc1MTMxNiwtNTQzNjIyMDE4LC01OT
+c1MTQzNzksNTY1ODg1Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1
+MzQ4LC03MTc5MDY1OSw5NzA4ODU2OTQsMTMwMzkyMDY1Niw2Nj
+U5OTk3OTIsLTY2MTEyNTQ2MF19
 -->
