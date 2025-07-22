@@ -123,17 +123,17 @@ The ideas behind these traversals are very similar. Its just that the order a `T
 
 A good way to remember the traversals are the three mneumonics
 
-NLR - pre order traversal (node, left, right)
-LNR - in order traversal (left, node, right)
-LRN - post order traversal (left, right, node) 
-
-Diagram for remembering the tree traversals
-
-
+**NLR** - pre order traversal (node, left, right)
+**LNR** - in order traversal (left, node, right)
+**LRN** - post order traversal (left, right, node) 
 
 More specifically, these tree traversals fall under a broader category known as **depth first search (DFS)**. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking, where nodes are then visited in a way that explores one entire path before moving to another.
+
+## A different type of traversal - Level Order Traversal
+
+There is another type of tree traversal that behaves differently than the t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Nzc2NDU3MSwtMTc0NDI3NjU2NCwtMj
+eyJoaXN0b3J5IjpbMTI0MDU4MTMxMSwtMTc0NDI3NjU2NCwtMj
 I3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUy
 OTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LD
 k3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1
