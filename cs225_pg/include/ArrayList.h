@@ -2,9 +2,12 @@
 
 #pragma once
 
-template<typename T>
+template <typename T>
 class ArrayList {
 public:
+    /** Inserts data to the back of this `ArrayList`
+    *  Runtime: O(1)
+    */
     void pushBack(const T& data);
 private:
     // a pointer to the start of the buffer
@@ -16,5 +19,8 @@ private:
     // a pointer to the end of the allocated space in the buffer
     T* capacity;
     
+    /** Allocates additional space to the buffer in this `ArrayList`
+    *  Runtime: O(n)
+    */
     void addSpace();
 };

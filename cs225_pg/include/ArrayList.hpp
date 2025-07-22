@@ -2,9 +2,6 @@
 
 #include "ArrayList.h"
 
-/** Inserts data to the back of this `ArrayList`
- *  Runtime: O(1)
- */
 template <typename T>
 void ArrayList<T>::pushBack(const T& data) {
     // Add additional space to the buffer if `size` == `capacity`
@@ -19,9 +16,6 @@ void ArrayList<T>::pushBack(const T& data) {
     ++size;
 }
 
-/** Allocates additional space to the buffer in this `ArrayList`
- *  Runtime: O(n)
- */
 template <typename T>
 void ArrayList<T>::addSpace() {
     /* Reallocate the capacity of the buffer (similar to realloc in C)

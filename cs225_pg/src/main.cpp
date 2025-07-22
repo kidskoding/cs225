@@ -1,8 +1,8 @@
-#include "List.hpp"
+#include "LinkedList.hpp"
 #include <iostream>
 
 int main(int argc, char** argv) {
-    List<int> list;
+    LinkedList<int> list;
     list.insertAtFront(10);
     list.insertAtFront(20);
     list.insert(30, 1);

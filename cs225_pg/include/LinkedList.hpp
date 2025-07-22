@@ -1,14 +1,11 @@
-// List.hpp
+// LinkedList.hpp
 
 #include "LinkedList.h"
 
-/** Inserts data at the front of a List
-  * Runtime: O(1)
- */
 template <typename T>
 void LinkedList<T>::insertAtFront(const T& data) {
 	// Dynamically allocate the data to the heap
-    ListNode<T>* newNode = new ListNode(data);
+    ListNode<T>* newNode = new ListNode<T>(data);
 
 	// Reassign the next pointer to the head
     newNode->next = head;
@@ -17,16 +14,13 @@ void LinkedList<T>::insertAtFront(const T& data) {
     head = newNode;
 }
 
-/** Inserts data in the given index of a list
- *  Runtime: O(n)
- */
 template <typename T>
 void LinkedList<T>::insert(const T& data, int index) {
 	// Call `find` to find the `ListNode` at the given index
 	ListNode<T>*& nodeAtIndex = find(index);
 
 	// Dynamically allocate the data to the heap
-	ListNode<T>* newNode = new ListNode(data);
+	ListNode<T>* newNode = new ListNode<T>(data);
 
 	// Reassign the next node of the newly created node to be the `ListNode` found at the given index
 	newNode->next = nodeAtIndex;
@@ -35,9 +29,6 @@ void LinkedList<T>::insert(const T& data, int index) {
 	nodeAtIndex = newNode;
 }
 
-/** Finds the `ListNode` at the given index!
- *  Runtime: O(n)
- */
 template <typename T>
 ListNode<T>*& LinkedList<T>::find(int index) {
 	// Return the head if the index is 0
@@ -60,9 +51,6 @@ ListNode<T>*& LinkedList<T>::find(int index) {
 	return curr->next;
 }
 
-/** Returns the data by reference of the `ListNode` at the given index 
- *	Runtime: O(n)
- */
 template <typename T>
 T& LinkedList<T>::operator[](int index) {
 	// Call `find` to find the `ListNode` at the given index	
@@ -72,9 +60,6 @@ T& LinkedList<T>::operator[](int index) {
 	return loc->data;
 }
 
-/** Removes a `ListNode` by index and returns its associated data! 
- * 	Runtime: O(n)
- */
 template <typename T>
 T LinkedList<T>::remove(int index) {
 	// Find the `ListNode` to be removed
