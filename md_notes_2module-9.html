@@ -136,12 +136,22 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 <h2><a class="anchor" id="autotoc_md101"></a>
 Pre-Order traversal</h2>
 <p>Preorder traversal visits a tree node, and then decends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.</p>
-<p>This makes coding pre order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>) and then do the simple three step process</p>
-<ol type="1">
+<p>This makes coding pre order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void preOrderTraversal(TreeNode*  curr)</code>;</p>
+<p>This will follow 3 simple steps:</p><ol type="1">
 <li>Visit the current tree node (which in our case is printing its data)</li>
-<li>R      </li>
+<li>Recursive call preorder on the left subtree</li>
+<li>Recursive call preorder on the right subtree</li>
 </ol>
-</div></div><!-- contents -->
+<p>The code for <code>preOrderTraversal</code> shown below</p>
+<div class="fragment"><div class="line">template &lt;typename T&gt;</div>
+<div class="line">void BinaryTree&lt;T&gt;::preOrderTraversal(TreeNode* curr) {</div>
+<div class="line">    if(curr == nullptr) { return; }</div>
+<div class="line"> </div>
+<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; std::endl;</div>
+<div class="line">    preOrderTraversal(curr-&gt;left);</div>
+<div class="line">    preOrderTraversal(curr-&gt;right);</div>
+<div class="line">}</div>
+</div><!-- fragment -->      </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
