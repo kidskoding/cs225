@@ -135,17 +135,19 @@ There is another type of tree traversal that behaves differently than the three 
 
 In this traversal, we visit each node **layer by layer**, or level by level, starting from the root node. This will help find nodes at each level. 
 
-This method is commonly known as **breadth first search** or simply **BFS**, which involves visiting the nodes of a tree level by level
+This level order traversal method is more commonly known as **breadth first search** or simply **BFS**, which involves visiting the nodes of a tree level by level
 
 In the three DFS traversals we used recursion on the **tree** itself to implement them. In BFS, we can use recursion, but it wouldn't make sense to do it on the **tree** itself since we don't need to recursively descend into each subtree. 
 
-Instead, we would need to use another data structure that the recursion would work with. Since BFS visits the nodes in horizontal, level order, a queue would make sense here. This is because queues are **First-In First-Out** and preserve the level ordering rule. 
+Instead, we would need to use another data structure that the recursion would work with. Since BFS visits the nodes in horizontal, level order, a queue would make sense here. This is because queues are **First-In First-Out** and preserve the level ordering rule that BFS needs.
+
+However, using recursion with BFS i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwODc0NTEzMywtMTc0NDI3NjU2NCwtMj
-I3NjQ2MjE4LC01NDM2MjIwMTgsLTU5NzUxNDM3OSw1NjU4ODUy
-OTUsLTE2NDY0Nzk0MzYsLTE0NzI2MTUzNDgsLTcxNzkwNjU5LD
-k3MDg4NTY5NCwxMzAzOTIwNjU2LDY2NTk5OTc5MiwtNjYxMTI1
-NDYwXX0=
+eyJoaXN0b3J5IjpbLTIwMTQ2ODgxODUsLTE3NDQyNzY1NjQsLT
+IyNzY0NjIxOCwtNTQzNjIyMDE4LC01OTc1MTQzNzksNTY1ODg1
+Mjk1LC0xNjQ2NDc5NDM2LC0xNDcyNjE1MzQ4LC03MTc5MDY1OS
+w5NzA4ODU2OTQsMTMwMzkyMDY1Niw2NjU5OTk3OTIsLTY2MTEy
+NTQ2MF19
 -->
