@@ -142,7 +142,7 @@ Pre Order traversal</h2>
 <div class="line">void BinaryTree&lt;T&gt;::preOrderTraversal(TreeNode* curr) {</div>
 <div class="line">    if(curr == nullptr) { return; }</div>
 <div class="line"> </div>
-<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; &quot; &quot;;</div>
 <div class="line">    preOrderTraversal(curr-&gt;left);</div>
 <div class="line">    preOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
@@ -164,7 +164,7 @@ In Order traversal</h2>
 <div class="line">    if(curr == nullptr) { return; }</div>
 <div class="line">    </div>
 <div class="line">    inOrderTraversal(curr-&gt;left);</div>
-<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; &quot; &quot;;</div>
 <div class="line">    inOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Our <b>base case</b> is the same as pre order, when the current node pointer (<code>curr</code>) is <code>nullptr</code>. No further nodes exist anymore (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
@@ -185,7 +185,7 @@ Post Order Traversal</h2>
 <div class="line"> </div>
 <div class="line">    postOrderTraversal(curr-&gt;left);</div>
 <div class="line">    postOrderTraversal(curr-&gt;right);</div>
-<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; &quot; &quot;;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The base case is equivalent to pre and in order traversals.</p>
 <p>If the node is not <code>nullptr</code>, we proceed with the pre-order traversal steps:</p>
