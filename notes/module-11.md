@@ -10,7 +10,9 @@ Mathematically speaking, for tree $T$ to be a BST:
 - $T = (r, T_L, T_R)$, where $\forall_x \in T_L$, $x < r$ and $\forall_x \in T_R$, $x > r$
 
 $x$ is a key in $T_L$, where $x < r$ and a key in $T_R$, where $x > r$
+
+This creates structure in the tree, where if I wanted to find a node like 21, I would start searching from the root node, and then check if 21 is less than, or greater than 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMjk2ODYzLC00NzU3NjI1OTEsLTcyMj
-QwNTk0NV19
+eyJoaXN0b3J5IjpbNTQwMDI5MTAzLDUzMDI5Njg2MywtNDc1Nz
+YyNTkxLC03MjI0MDU5NDVdfQ==
 -->
