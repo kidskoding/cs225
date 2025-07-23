@@ -27,10 +27,15 @@ This effectively simulates BFS for DFS and will always find the solution because
 
 These are the two basic searching strategies, but they aren't that effective, since they can be slow in both time and memory. But what if there was a data structure that put searching at its forefront, which is essentially what a **map** or **dictionary** does
 
+## Dictionaries
+
+Dictionaries store **key-value** pairs, just like a regular dictionary, which stores words to definitions. If I had a word, I can use a dictionary to look up its definition! This could be done most optimally using binary search, where I start from the middle and then slowly go left or right based on whether the word I’m looking for comes before or after the middle word alphabetically.
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwNTM1NzE4LC0xNTUxMzA2Mzk0LC05MT
-E2OTUxODgsLTE1MDkzNTI2N119
+eyJoaXN0b3J5IjpbLTQ5MTgwMzI0MiwtMTU1MTMwNjM5NCwtOT
+ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
