@@ -101,18 +101,8 @@ var NAVTREE =
     [ "Module 32 - Cardinality", "md_notes_2module-32.html", null ],
     [ "Module 33 - MinHash Sketch Strategy", "md_notes_2module-33.html", null ],
     [ "Module 34 - Wrapping up CS 225!", "md_notes_2module-34.html", null ],
-    [ "Module 7 - Iterators", "md_notes_2module-7.html", [
-      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md68", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md69", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md70", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md71", null ]
-      ] ]
-    ] ],
-    [ "Module 8 - Trees", "md_notes_2module-8.html", [
-      [ "Tree ADT", "md_notes_2module-8.html#autotoc_md73", null ]
-    ] ],
     [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", [
-      [ "A different type of traversal - Level Order Traversal", "md_notes_2module-9.html#autotoc_md78", null ]
+      [ "A different type of traversal - Level Order Traversal", "md_notes_2module-9.html#autotoc_md71", null ]
     ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [

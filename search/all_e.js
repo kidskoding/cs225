@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['graph_0',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
-  ['graph_20implementations_1',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
-  ['graph_20terminology_2',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
-  ['graph_20traversals_3',['Module 24 - Graph Traversals',['../md_notes_2module-24.html',1,'']]],
-  ['graphs_4',['Graphs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md6',1,'Graphs'],['../md_notes_2module-22.html',1,'Module 22 - Graphs']]]
+  ['kruskal_20s_20algorithm_0',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]]
 ];

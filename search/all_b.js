@@ -1,16 +1,8 @@
 var searchData=
 [
-  ['data_20in_20each_20data_20structure_0',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md68',1,'']]],
-  ['data_20structure_1',['Iterate through data in each data structure',['../md_notes_2module-7.html#autotoc_md68',1,'']]],
-  ['deep_20copies_2',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['default_20and_20delete_20on_20copy_20constructors_3',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
-  ['definitions_4',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
-  ['degree_5',['Degree',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md8',1,'']]],
-  ['delete_20on_20copy_20constructors_6',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
-  ['delete_20tt_7',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
-  ['destructors_8',['Destructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md24',1,'']]],
-  ['different_20type_20of_20traversal_20level_20order_20traversal_9',['A different type of traversal - Level Order Traversal',['../md_notes_2module-9.html#autotoc_md78',1,'']]],
-  ['dijkstra_20s_20algorithm_10',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
-  ['disjoint_20sets_11',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['dynamic_20memory_20allocation_12',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
+  ['graph_0',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
+  ['graph_20implementations_1',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
+  ['graph_20terminology_2',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
+  ['graph_20traversals_3',['Module 24 - Graph Traversals',['../md_notes_2module-24.html',1,'']]],
+  ['graphs_4',['Graphs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md6',1,'Graphs'],['../md_notes_2module-22.html',1,'Module 22 - Graphs']]]
 ];

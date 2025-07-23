@@ -99,7 +99,7 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Module 9 - Tree Traversals</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md74"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md67"></a></p>
 <p>Previously, we discussed a new data structure: trees, where we discussed that there is a $O(n)$, linear space, overhead cost because $n$-space is required to store the data</p>
 <p>Here, we will continue discussing Trees and the Tree ADT. Previously, we failed to discuss how the implementation of <code>insert</code>, <code>remove</code>, and <code>access</code> would work. This is because the way they work is different for every tree.</p>
 <p>Recall that previously we discussed that every data structure should be able to have its own way of getting everything it contains, which was done through an iterator. This means that if we want to achieve this functionality, we would need to implement an iterator interface. But <b>how</b>?</p>
@@ -133,7 +133,7 @@ $(function(){initNavTree('md_notes_2module-9.html',''); initResizable(true); });
 <li><b>Postorder</b> - descend left, descend right, visit</li>
 </ul>
 <p>Traversals are <b>recursive</b> by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.</p>
-<h2><a class="anchor" id="autotoc_md75"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 Pre Order traversal</h2>
 <p>Preorder traversal visits a tree node, and then descends into the left and right subtrees. Its recursive since trees are recursive data structures in nature.</p>
 <p>This makes coding pre order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void preOrderTraversal(TreeNode*  curr)</code>;</p>
@@ -154,7 +154,7 @@ Pre Order traversal</h2>
 <li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
 </ol>
 <p>Each of these recursive calls follows the same pattern: check if the node is <code>nullptr</code>, visit it, and recurse on its children. This process naturally continues until all nodes have been visited, and both left and right child pointers are <code>nullptr</code>, causing the recursion to unwind.</p>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 In Order traversal</h2>
 <p>Inorder traversal descends into the left subtree, visits a tree node, and then descends into the right subtree</p>
 <p>This also makes coding in order traversal very simple. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void inOrderTraversal(TreeNode*  curr)</code></p>
@@ -174,7 +174,7 @@ In Order traversal</h2>
 <li><b>Visit the current node</b> — we get its data (e.g., print it).</li>
 <li><b>Traverse the right subtree</b> — recursively call <code>preOrderTraversal</code> on <code>curr-&gt;right</code>.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md77"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 Post Order Traversal</h2>
 <p>Post Order traversal descends into the left subtree, descends into the right subtree, and then visits the current tree node.</p>
 <p>This also makes coding post order traversal very simple, since we know its process. This function will take in the current <code>TreeNode</code> being processed (<code>curr</code>): <code>void postOrderTraversal(TreeNode*  curr)</code></p>
@@ -198,7 +198,7 @@ Post Order Traversal</h2>
 <p>A good way to remember the traversals are the three mneumonics</p>
 <p><b>NLR</b> - pre order traversal (node, left, right) <b>LNR</b> - in order traversal (left, node, right) <b>LRN</b> - post order traversal (left, right, node)</p>
 <p>More specifically, these tree traversals fall under a broader category known as <b>depth first search (DFS)</b>. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking, where nodes are then visited in a way that explores one entire path before moving to another.</p>
-<h1><a class="anchor" id="autotoc_md78"></a>
+<h1><a class="anchor" id="autotoc_md71"></a>
 A different type of traversal - Level Order Traversal</h1>
 <p>There is another type of tree traversal that behaves differently than the three DFS traversals and it is known as a <b>Level Order Traversal</b>.</p>
 <p>In this traversal, we visit each node <b>layer by layer</b>, or level by level, starting from the root node. This will help find nodes at each level.</p>
