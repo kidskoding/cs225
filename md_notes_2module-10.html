@@ -123,8 +123,9 @@ Dictionary Interface (ADT)</h2>
 <ul>
 <li><code>insert(key, value)</code> - insert a key and value into the dictionary</li>
 <li><code>remove(key)</code> - remove a key value mapping from the dictionary via passing in the key</li>
-<li><code>value find(key)</code> - return the value associated with the key (C++ has an <code>std::optional</code> type that you could use</li>
+<li><code>std::optional&lt;value&gt; find(key)</code> - return the value associated with the key (C++ has an <code>std::optional</code> type that you could use to return nothing if no value is found for the key!)</li>
 </ul>
+<p>And then theres the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary. And with this, we solve our problems with</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
