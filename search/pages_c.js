@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['filters_0',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
-  ['floyd_20warshall_20s_20algorithm_1',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]]
+  ['hash_20collisions_20and_20hash_20tables_0',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['hash_20tables_1',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['hashing_20hash_20collisions_20and_20hash_20tables_2',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['heaps_3',['Module 20 - Heaps',['../md_notes_2module-20.html',1,'']]]
 ];

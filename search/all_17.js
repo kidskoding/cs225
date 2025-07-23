@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['passing_20arguments_0',['Passing Arguments',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md28',1,'']]],
-  ['pointers_1',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
-  ['post_20order_20traversal_2',['Post Order Traversal',['../md_notes_2module-9.html#autotoc_md83',1,'']]],
-  ['pre_20order_20traversal_3',['Pre Order traversal',['../md_notes_2module-9.html#autotoc_md81',1,'']]],
-  ['prerequisite_20material_4',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['prim_20s_20algorithm_5',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['priority_20queues_6',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]],
-  ['private_7',['Public vs Private',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16',1,'']]],
-  ['probability_20in_20computer_20science_8',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['proofs_20by_20induction_9',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]],
-  ['public_20vs_20private_10',['Public vs Private',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16',1,'']]],
-  ['pushback_11',['pushBack',['../classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c',1,'ArrayList']]]
+  ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
+  ['range_20search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['readme_2',['README',['../md_README.html',1,'']]],
+  ['recursive_20definitions_3',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
+  ['references_4',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
+  ['references_20and_20pointers_5',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
+  ['remove_6',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
+  ['resizing_20by_20adding_202_20elements_20every_20time_7',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md53',1,'']]],
+  ['resizing_20by_20doubling_20the_20elements_20every_20time_8',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md54',1,'']]],
+  ['resources_9',['Course Info and Resources',['../md_notes_2module-01.html#autotoc_md45',1,'']]],
+  ['returning_20values_10',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
+  ['review_11',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
+  ['review_20of_20prerequisite_20material_12',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rotations_13',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
+  ['rule_20of_20zero_20three_20five_14',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-02.html#autotoc_md49',1,'Rule of Zero/Three/Five']]],
+  ['rvalue_20references_15',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
 ];

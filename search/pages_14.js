@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['prerequisite_20material_0',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['prim_20s_20algorithm_1',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['priority_20queues_2',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]],
-  ['probability_20in_20computer_20science_3',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]]
+  ['range_20search_0',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['readme_1',['README',['../md_README.html',1,'']]],
+  ['review_2',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
+  ['review_20of_20prerequisite_20material_3',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rotations_4',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]]
 ];
