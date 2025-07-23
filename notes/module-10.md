@@ -21,7 +21,9 @@ In contrast, DFS typically uses less memory, since it only needs to store the cu
 
 Therefore, in any practical application, memory is going to be the forefront problem. Since DFS uses less memory, that will often be the best approach. But, if there are infinite trees, DFS wouldn't work. There is a solution that solves this problem and it is known as **iterative deepening**
 
-**Iterative Deepening** runs DFS with a **maximum depth limit** of $k$, meaning it will not explore any nodes beyond depth $k$. When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum meory used when doing DFS is proportional to $k$ (simply the overhead). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k+1$ + 1k+1, and this process repeats until a solution is found.
+**Iterative Deepening** runs DFS with a **maximum depth limit** of $k$, meaning it will not explore any nodes beyond depth $k$ (starting at $k = 0$). When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum meory used when doing DFS is proportional to $k$ (simply the overhead - $O(k)$). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k+1$, and this process repeats until a solution is found.
+
+This effectively simulates BFS for DFS
 
 
 
@@ -29,6 +31,6 @@ Therefore, in any practical application, memory is going to be the forefront pro
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTY4ODA2NSwtMTU1MTMwNjM5NCwtOT
+eyJoaXN0b3J5IjpbMjA0NTE1NzQxMiwtMTU1MTMwNjM5NCwtOT
 ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
