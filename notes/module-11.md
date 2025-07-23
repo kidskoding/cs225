@@ -6,8 +6,8 @@ Recall that all trees have **structure**. Fundamentally, a tree gives us **posit
 For this to take place, we need to discuss a different type of tree: the **Binary Search Tree**, or BST. The BST has a property, in which a node's left subtree contains nodes with keys less than the node's key and a node's right subtree contains nodes with keys greater than the node's key.
 
 Mathematically speaking, for tree $T$ to be a BST:
-$T = \empty$, $T = (r, t_
+$T = \empty$, $T = (r, T_L, T_R)$, where $x \in T_L$, in which $x < r$, where $x$ is a value in $T_R$ where $x > r$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTg0NzEwLC00NzU3NjI1OTEsLTcyMj
-QwNTk0NV19
+eyJoaXN0b3J5IjpbLTU2MzY5OTA1MywtNDc1NzYyNTkxLC03Mj
+I0MDU5NDVdfQ==
 -->
