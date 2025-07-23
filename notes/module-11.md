@@ -5,6 +5,8 @@ Recall that all trees have **structure**. Fundamentally, a tree gives us **posit
 
 For this to take place, we need to discuss a different type of tree: the **Binary Search Tree**, or BST. The BST has a property, in which a node's left subtree contains nodes with keys less than the node's key and a node's right subtree contains nodes with keys greater than the node's key.
 
+When it comes to equality, 
+
 Mathematically speaking, for tree $T$ to be a BST: 
 - $T = \empty$
 - $T = (r, T_L, T_R)$, where $\forall_x \in T_L$, $x < r$ and $\forall_x \in T_R$, $x > r$
@@ -13,6 +15,7 @@ $x$ is a key in $T_L$, where $x < r$ and a key in $T_R$, where $x > r$
 
 This creates structure in the tree, where if I wanted to find a node like 21, I would start searching from the root node, and then check if 21 is greater than or less than the root node and then descend to the right or left subtree respectively and repeat the process.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOT
-Y4NjMsLTQ3NTc2MjU5MSwtNzIyNDA1OTQ1XX0=
+eyJoaXN0b3J5IjpbMTkyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMj
+kxMDMsNTMwMjk2ODYzLC00NzU3NjI1OTEsLTcyMjQwNTk0NV19
+
 -->
