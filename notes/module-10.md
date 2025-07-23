@@ -36,16 +36,22 @@ This is just one example of a dictionary though, we can use it to look up studen
 In fact, an array really is just a dictionary, because we use an index (**key**) to lookup the value of an element that is present in the array (**value**)
 
 ### Dictionary Interface (ADT)
+
 - `insert(key, value)` - insert a key and value into the dictionary
 - `remove(key)` - remove a key value mapping from the dictionary via passing in the key
 - `std::optional<value> find(key)` - return the value associated with the key (C++ has an `std::optional` type that you could use to return nothing if no value is found for the key!)
 
 And then theres the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary. 
 
-And with this, we solve our problems with searching in Computer Science. A lot of data structures, like Hash Tables and Tries, will rely on dictionaries
+And with this, we solve our problems with searching in Computer Science. A lot of other data structures, like Hash Tables and Tries, will rely on dictionaries to provide fast and efficient key-based access, which is essential for everything from caching to autocomplete and spell checking
+
+The code below is a sample header file for our dictionary
+
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDMwNzUzMSwtMTQyNjkyODQ3NiwtMT
-U1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5MzUyNjddfQ==
+eyJoaXN0b3J5IjpbLTEyNzk2MDI3MjAsLTE0MjY5Mjg0NzYsLT
+E1NTEzMDYzOTQsLTkxMTY5NTE4OCwtMTUwOTM1MjY3XX0=
 -->
