@@ -107,7 +107,9 @@ $(function(){initNavTree('md_notes_2module-10.html',''); initResizable(true); })
 <p><b>DFS</b> involves any of the three traversals that descend into the tree's children: pre order traversal, in order traversal, and post order traversal. Its overhead is the maximum depth in the tree (or simply height)</p>
 <p>BFS is more <b>reliable</b> than DFS. This is because it will eventually find a solution to a valid search if one exists, even if the tree is infinite in depth. Since BFS explores nodes level by level, this guarantees that all nodes at depth $d$ are visited before any node at depth $d + 1$. So if the solution lies at a shallow depth, BFS will find it eventually.</p>
 <p>In contrast, DFS can get <b>"stuck"</b> going down an infinite branch of a tree, especially if the solution lies on a different, shallower path. Therefore, DFS might never return a proper solution, even if it does exist.</p>
-<p>So BFS will always work, but it might an infinite amount of memory. In fact, BFS uses more memory than DFS because it stores all the nodes at a particular width (one entire level in a queue). If the tree is very wide, then this would inv</p>
+<p>BFS will always find a solution if one exists, even in infinite-depth trees, but it may require an infinite amount of memory. This is because BFS stores all nodes at a given depth (one full level of the tree) in a queue before moving on to the next level. If the tree is very wide, this means the queue can grow extremely large, consuming a lot of memory.</p>
+<p>In contrast, DFS typically uses less memory, since it only needs to store the current path from the root to a leaf, which depends on the depth of the tree, not its width.</p>
+<p>However, if we had an infinite tree</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
