@@ -47,11 +47,36 @@ And with this, we solve our problems with searching in Computer Science. A lot o
 
 The code below is a sample header file for our dictionary
 
+```
+// Dictionary.h
+
+#include <unordered_map>
+
+template <class K, class V>
+class Dictionary {
+public:
+    using Iterator = typename std::unordered_map<K, V>::iterator;
+    using ConstIterator = typename std::unordered_map<K, V>::const_iterator;
+
+    void insert(const K key, const V value);
+    V remove(const K& key);
+    ConstIterator find(const K& key) const;
+    Iterator begin();
+    Iterator end();
+    
+private:
+
+};
+```
+
+Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of `std::unordered_map` . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like `begin()`, `end()`, and `find()`.
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk2MDI3MjAsLTE0MjY5Mjg0NzYsLT
-E1NTEzMDYzOTQsLTkxMTY5NTE4OCwtMTUwOTM1MjY3XX0=
+eyJoaXN0b3J5IjpbMTAwOTU2NTMyNywtMTI3OTYwMjcyMCwtMT
+QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
+MzUyNjddfQ==
 -->
