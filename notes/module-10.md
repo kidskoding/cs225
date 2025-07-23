@@ -73,17 +73,17 @@ Our custom dictionary implements an iterator by leveraging C++’s standard libr
 
 ## Revisiting Trees
 
-In the context of a tree, These three functionalities of a dictionary are core of a tree because , `insert`, `remove`, and `find` all have a runtime of $O(n)$. 
+In the context of a tree, These three functionalities of a dictionary, `insert`, `remove`, and `find`, are reflected below
 
 | Dictionary Operation | Runtime | Explanation |
 |-----------|-----|-----------------------|
-| `insert`    | $O(n)$ | You need to search all items first or shift elements in an array |
+| `insert`    | $O(1)$ | Similar to a a LinkedList; put a new pointer to head and point the tree's head |
 | `remove`    | $O(n)$ | Need to first find the item by scanning the tree, and then shift elements to fill the gap |
 | `find`      | $O(n)$ | Searches items one by one until a key is found |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDM3MzEwOCwtMTI3OTYwMjcyMCwtMT
+eyJoaXN0b3J5IjpbLTg3Mjk2ODM3MCwtMTI3OTYwMjcyMCwtMT
 QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
 MzUyNjddfQ==
 -->
