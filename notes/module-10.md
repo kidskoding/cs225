@@ -1,5 +1,5 @@
 
-# Module 10 - Tree Searching
+# Module 10 - Tree Searching and Dictionaries
 
 A **traversal** is an algorithm that goes through every single node in a tree and visits it ($O(n)$ time)
 
@@ -73,10 +73,8 @@ Our custom dictionary implements an iterator by leveraging C++’s standard libr
 
 
 
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTU2NTMyNywtMTI3OTYwMjcyMCwtMT
-QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
-MzUyNjddfQ==
+eyJoaXN0b3J5IjpbODQ5NDkxNDI0LC0xMjc5NjAyNzIwLC0xND
+I2OTI4NDc2LC0xNTUxMzA2Mzk0LC05MTE2OTUxODgsLTE1MDkz
+NTI2N119
 -->
