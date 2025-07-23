@@ -19,7 +19,9 @@ BFS will always find a solution if one exists, even in infinite-depth trees, but
 
 In contrast, DFS typically uses less memory, since it only needs to store the current path from the root to a leaf, which depends on the depth of the tree, not its width.
 
-However, if we had an infinite tree
+Therefore, in any practical application, memory is going to be the forefront problem. Since DFS uses less memory, that will often be the best approach. But, if there are infinite trees, DFS wouldn't work. There is a solution that solves this problem and it is known as **iterative deepening**
+
+
 
 
 
@@ -27,6 +29,6 @@ However, if we had an infinite tree
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNDI4MzE5NSwtMTU1MTMwNjM5NCwtOT
+eyJoaXN0b3J5IjpbMTg1NDg1MjY2MCwtMTU1MTMwNjM5NCwtOT
 ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
