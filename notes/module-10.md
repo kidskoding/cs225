@@ -77,13 +77,13 @@ In the context of a tree, These three functionalities of a dictionary, `insert`,
 
 | Dictionary Operation | Runtime | Explanation |
 |-----------|-----|-----------------------|
-| `insert`    | $O(1)$ | Similar to a a LinkedList; put a new pointer to head and point the tree's head |
+| `insert`    | $O(1)$ | Similar to a a LinkedList; put a new pointer to head and point the tree's head to this new node, which is constant time |
 | `remove`    | $O(n)$ | Need to first find the item by scanning the tree, and then shift elements to fill the gap |
-| `find`      | $O(n)$ | Searches items one by one until a key is found |
+| `find`      | $O(n)$ | Searches nodes one by one, traversing the tree until it finds the key or uses all nodes |
 
-
+This sets up the foundation for many other types of trees including, BSTs, BBSTs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3Mjk2ODM3MCwtMTI3OTYwMjcyMCwtMT
+eyJoaXN0b3J5IjpbLTE4ODAxNzc1NiwtMTI3OTYwMjcyMCwtMT
 QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
 MzUyNjddfQ==
 -->
