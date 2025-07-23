@@ -128,6 +128,26 @@ Dictionary Interface (ADT)</h2>
 <p>And then theres the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary.</p>
 <p>And with this, we solve our problems with searching in Computer Science. A lot of other data structures, like Hash Tables and Tries, will rely on dictionaries to provide fast and efficient key-based access, which is essential for everything from caching to autocomplete and spell checking</p>
 <p>The code below is a sample header file for our dictionary</p>
+<div class="fragment"><div class="line">// Dictionary.h</div>
+<div class="line"> </div>
+<div class="line">#include &lt;unordered_map&gt;</div>
+<div class="line"> </div>
+<div class="line">template &lt;class K, class V&gt;</div>
+<div class="line">class Dictionary {</div>
+<div class="line">public:</div>
+<div class="line">    using Iterator = typename std::unordered_map&lt;K, V&gt;::iterator;</div>
+<div class="line">    using ConstIterator = typename std::unordered_map&lt;K, V&gt;::const_iterator;</div>
+<div class="line"> </div>
+<div class="line">    void insert(const K key, const V value);</div>
+<div class="line">    V remove(const K&amp; key);</div>
+<div class="line">    ConstIterator find(const K&amp; key) const;</div>
+<div class="line">    Iterator begin();</div>
+<div class="line">    Iterator end();</div>
+<div class="line">    </div>
+<div class="line">private:</div>
+<div class="line"> </div>
+<div class="line">};</div>
+</div><!-- fragment --><p>Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of <code>std::unordered_map</code> . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like <code>begin()</code>, <code>end()</code>, and <code>find()</code>.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
