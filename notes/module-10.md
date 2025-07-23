@@ -23,12 +23,12 @@ Therefore, in any practical application, memory is going to be the forefront pro
 
 **Iterative Deepening** runs DFS with a **maximum depth limit** of $k$, meaning it will not explore any nodes beyond depth $k$ (starting at $k = 0$). When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum memory used when doing DFS is proportional to $k$ (simply the overhead cost - $O(k)$). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k+1$, and this process repeats until a solution is found.
 
-This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$)
+This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$ with overhead cost of $O(k)$). 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjMzNTA2ODEsLTE1NTEzMDYzOTQsLT
-kxMTY5NTE4OCwtMTUwOTM1MjY3XX0=
+eyJoaXN0b3J5IjpbLTk5Mzc0ODUwMiwtMTU1MTMwNjM5NCwtOT
+ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
