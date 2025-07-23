@@ -15,7 +15,7 @@ BFS is more **reliable** than DFS. This is because it will eventually find a sol
 
 In contrast, DFS can get **"stuck"** going down an infinite branch of a tree, especially if the solution lies on a different, shallower path. Therefore, DFS might never return a proper solution, even if it does exist.
 
-As a result, BFS always works but might need lots of memory
+So BFS will always work, but it might an infinite amount of memory. In fact, BFS uses more memory than DFS because it stores all the nodes at a particular width (one entire level in a queue). If the tree is very wide, then this would inv
 
 
 
@@ -23,6 +23,6 @@ As a result, BFS always works but might need lots of memory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODk1MDU2MiwtMTU1MTMwNjM5NCwtOT
+eyJoaXN0b3J5IjpbMTUxNTgyMjQwMywtMTU1MTMwNjM5NCwtOT
 ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
