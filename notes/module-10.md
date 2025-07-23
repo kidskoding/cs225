@@ -73,7 +73,7 @@ Our custom dictionary implements an iterator by leveraging C++’s standard libr
 
 ## Revisiting Trees
 
-In the context of a tree, These three functionalities of a dictionary, `insert`, `remove`, and `find` all have a runtime of $O(n)$. 
+In the context of a tree, These three functionalities of a dictionary are core of a tree because , `insert`, `remove`, and `find` all have a runtime of $O(n)$. 
 
 | Dictionary Operation | Runtime | Explanation |
 |-----------|-----|-----------------------|
@@ -83,7 +83,7 @@ In the context of a tree, These three functionalities of a dictionary, `insert`,
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxNDk5NDIxLC0xMjc5NjAyNzIwLC0xND
-I2OTI4NDc2LC0xNTUxMzA2Mzk0LC05MTE2OTUxODgsLTE1MDkz
-NTI2N119
+eyJoaXN0b3J5IjpbMjAzMDM3MzEwOCwtMTI3OTYwMjcyMCwtMT
+QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
+MzUyNjddfQ==
 -->
