@@ -40,10 +40,12 @@ In fact, an array really is just a dictionary, because we use an index (**key**)
 - `remove(key)` - remove a key value mapping from the dictionary via passing in the key
 - `std::optional<value> find(key)` - return the value associated with the key (C++ has an `std::optional` type that you could use to return nothing if no value is found for the key!)
 
-And then theres the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary. And with this, we solve our problems with 
+And then theres the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary. 
+
+And with this, we solve our problems with searching in Computer Science. A lot of data structures, like Hash Tables and Tries, will rely on dictionaries
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjU4MjEwMSwtMTQyNjkyODQ3NiwtMT
+eyJoaXN0b3J5IjpbMTY4NDMwNzUzMSwtMTQyNjkyODQ3NiwtMT
 U1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
