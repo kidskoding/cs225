@@ -36,11 +36,12 @@ This is just one example of a dictionary though, we can use it to look up studen
 In fact, an array really is just a dictionary, because we use an index (**key**) to lookup the value of an element that is present in the array (**value**)
 
 ### Dictionary Interface (ADT)
-
-- 
+- `insert(key, value)` - insert a key and value into the dictionary
+- `remove(key)` - remove a key value mapping from the dictionary via passing in the key
+- `value find(key)` - return the value associated with the key (C++ has an `std::optional` type that you could use
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkzNjYxODkyLC0xNDI2OTI4NDc2LC0xNT
+eyJoaXN0b3J5IjpbMzgzMTY3MjQ0LC0xNDI2OTI4NDc2LC0xNT
 UxMzA2Mzk0LC05MTE2OTUxODgsLTE1MDkzNTI2N119
 -->
