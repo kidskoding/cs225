@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['tables_0',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
-  ['traversals_1',['Module 24 - Graph Traversals',['../md_notes_2module-24.html',1,'']]],
-  ['tree_20kruskal_20s_20algorithm_2',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['tree_20prim_20s_20algorithm_3',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['tree_20searching_4',['Module 10 - Tree Searching',['../md_notes_2module-10.html',1,'']]],
-  ['trees_5',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
+  ['queues_0',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]]
 ];

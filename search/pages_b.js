@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['implementation_0',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['implementations_1',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
-  ['in_20computer_20science_2',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]]
+  ['filters_0',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
+  ['floyd_20warshall_20s_20algorithm_1',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]]
 ];

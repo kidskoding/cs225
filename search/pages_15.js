@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['up_20cs_20225_0',['Module 34 - Wrapping up CS 225!',['../md_notes_2module-34.html',1,'']]]
+  ['range_20search_0',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['readme_1',['README',['../md_README.html',1,'']]],
+  ['review_20of_20prerequisite_20material_2',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rotations_3',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]]
 ];

@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['s_20algorithm_0',['s Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
-  ['science_1',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['searching_3',['Module 10 - Tree Searching',['../md_notes_2module-10.html',1,'']]],
-  ['semantics_4',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['sets_5',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['shallow_20and_20deep_20copies_6',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['sketch_20strategy_7',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['spanning_20tree_20kruskal_20s_20algorithm_8',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['spanning_20tree_20prim_20s_20algorithm_9',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['stack_10',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['strategy_11',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['structs_12',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['o_0',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
+  ['o_20of_20common_20algorithms_1',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
+  ['of_20common_20algorithms_2',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
+  ['of_20nodes_3',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]],
+  ['of_20prerequisite_20material_4',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['of_20traversal_20level_20order_20traversal_5',['A different type of traversal - Level Order Traversal',['../md_notes_2module-9.html#autotoc_md78',1,'']]],
+  ['of_20zero_20three_20five_6',['Rule of Zero/Three/Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'']]],
+  ['on_20copy_20constructors_7',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
+  ['operator_8',['Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]],
+  ['operator_5b_5d_9',['operator[]',['../classLinkedList.html#a199fff56292949cdec68970cc5197a66',1,'LinkedList']]],
+  ['order_20traversal_10',['Order Traversal',['../md_notes_2module-9.html#autotoc_md78',1,'A different type of traversal - Level Order Traversal'],['../md_notes_2module-9.html#autotoc_md77',1,'Post Order Traversal']]],
+  ['order_20traversal_11',['Order traversal',['../md_notes_2module-9.html#autotoc_md76',1,'In Order traversal'],['../md_notes_2module-9.html#autotoc_md75',1,'Pre Order traversal']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['of_20prerequisite_20material_0',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]]
+  ['kruskal_20s_20algorithm_0',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]]
 ];
