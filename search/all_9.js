@@ -7,8 +7,7 @@ var searchData=
   ['delete_20on_20copy_20constructors_4',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
   ['delete_20tt_5',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
   ['destructors_6',['Destructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md24',1,'']]],
-  ['different_20type_20of_20traversal_20level_20order_20traversal_7',['A different type of traversal - Level Order Traversal',['../md_notes_2module-9.html#autotoc_md71',1,'']]],
-  ['dijkstra_20s_20algorithm_8',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
-  ['disjoint_20sets_9',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['dynamic_20memory_20allocation_10',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
+  ['dijkstra_20s_20algorithm_7',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
+  ['disjoint_20sets_8',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
+  ['dynamic_20memory_20allocation_9',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
 ];

@@ -76,6 +76,19 @@ var NAVTREE =
       [ "Topics Covered", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40", null ],
       [ "Lists", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41", null ]
     ] ],
+    [ "Module 1 - Introduction to CS 225", "md_notes_2module-01.html", [
+      [ "Background", "md_notes_2module-01.html#autotoc_md43", null ],
+      [ "Grading", "md_notes_2module-01.html#autotoc_md44", null ],
+      [ "Course Info and Resources", "md_notes_2module-01.html#autotoc_md45", null ]
+    ] ],
+    [ "Module 2 - C++ Review", "md_notes_2module-02.html", [
+      [ "Encapsulation", "md_notes_2module-02.html#autotoc_md47", null ],
+      [ "Memory Management - Ownership", "md_notes_2module-02.html#autotoc_md48", null ],
+      [ "Rule of Zero/Three/Five", "md_notes_2module-02.html#autotoc_md49", null ]
+    ] ],
+    [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-04.html", [
+      [ "pushBack()", "md_notes_2module-04.html#autotoc_md51", null ]
+    ] ],
     [ "Module 10 - Tree Searching", "md_notes_2module-10.html", null ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
@@ -101,9 +114,6 @@ var NAVTREE =
     [ "Module 32 - Cardinality", "md_notes_2module-32.html", null ],
     [ "Module 33 - MinHash Sketch Strategy", "md_notes_2module-33.html", null ],
     [ "Module 34 - Wrapping up CS 225!", "md_notes_2module-34.html", null ],
-    [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", [
-      [ "A different type of traversal - Level Order Traversal", "md_notes_2module-9.html#autotoc_md71", null ]
-    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
