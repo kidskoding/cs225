@@ -71,9 +71,9 @@ private:
 
 Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of `std::unordered_map` . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like `begin()`, `end()`, and `find()`.
 
-## Revisiting Trees
+## Using Binary Trees as a Search Structure
 
-In the context of a tree, These three functionalities of a dictionary, `insert`, `remove`, and `find`, are reflected below
+In the context of a tree, these three functionalities of a dictionary, `insert`, `remove`, and `find`, are reflected below
 
 | Dictionary Operation | Runtime | Explanation |
 |-----------|-----|-----------------------|
@@ -81,9 +81,9 @@ In the context of a tree, These three functionalities of a dictionary, `insert`,
 | `remove`    | $O(n)$ | Need to first find the item by scanning the tree, and then shift elements to fill the gap |
 | `find`      | $O(n)$ | Searches nodes one by one, traversing the tree until it finds the key or uses all nodes |
 
-This sets up the foundation for many other types of trees including, BSTs, BBSTs
+This sets up the foundation for many other types of trees including, BSTs, BBSTs, and AVL trees, which will be covered later on
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODAxNzc1NiwtMTI3OTYwMjcyMCwtMT
-QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
-MzUyNjddfQ==
+eyJoaXN0b3J5IjpbLTIxMTIwMjA1NDEsLTEyNzk2MDI3MjAsLT
+E0MjY5Mjg0NzYsLTE1NTEzMDYzOTQsLTkxMTY5NTE4OCwtMTUw
+OTM1MjY3XX0=
 -->
