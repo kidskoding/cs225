@@ -38,10 +38,12 @@ In fact, an array really is just a dictionary, because we use an index (**key**)
 ### Dictionary Interface (ADT)
 - `insert(key, value)` - insert a key and value into the dictionary
 - `remove(key)` - remove a key value mapping from the dictionary via passing in the key
-- `value find(key)` - return the value associated with the key (C++ has an `std::optional` type that you could use
+- `std::optional<value> find(key)` - return the value associated with the key (C++ has an `std::optional` type that you could use to return nothing if no value is found for the key!)
+
+And then theres the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary. And with this, we solve our problems with 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzMTY3MjQ0LC0xNDI2OTI4NDc2LC0xNT
-UxMzA2Mzk0LC05MTE2OTUxODgsLTE1MDkzNTI2N119
+eyJoaXN0b3J5IjpbLTYxMjU4MjEwMSwtMTQyNjkyODQ3NiwtMT
+U1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
