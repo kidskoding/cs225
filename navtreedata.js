@@ -125,7 +125,8 @@ var NAVTREE =
     [ "Module 10 - Tree Searching and Dictionaries", "md_notes_2module-10.html", [
       [ "Dictionaries", "md_notes_2module-10.html#autotoc_md80", [
         [ "Dictionary Interface (ADT)", "md_notes_2module-10.html#autotoc_md81", null ]
-      ] ]
+      ] ],
+      [ "Revisiting Trees", "md_notes_2module-10.html#autotoc_md82", null ]
     ] ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
