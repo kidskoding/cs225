@@ -4,7 +4,7 @@ var searchData=
   ['a_20tt_20list_20tt_1',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
   ['adding_202_20elements_20every_20time_2',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'']]],
   ['additional_20graph_20terminology_3',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
-  ['adt_4',['Tree ADT',['../md_notes_2module-08.html#autotoc_md73',1,'']]],
+  ['adt_4',['ADT',['../md_notes_2module-10.html#autotoc_md81',1,'Dictionary Interface (ADT)'],['../md_notes_2module-08.html#autotoc_md73',1,'Tree ADT']]],
   ['adt_20and_20tt_20linked_20list_20tt_20implementation_5',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
   ['algorithm_6',['Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
   ['algorithms_7',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],

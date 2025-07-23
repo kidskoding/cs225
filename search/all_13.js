@@ -15,10 +15,11 @@ var searchData=
   ['insert_20tt_12',['&lt;tt&gt;insert&lt;/tt&gt;',['../md_notes_2module-03.html#autotoc_md52',1,'']]],
   ['insertatfront_13',['insertAtFront',['../classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908',1,'LinkedList']]],
   ['insertatfront_20tt_14',['&lt;tt&gt;insertAtFront&lt;/tt&gt;',['../md_notes_2module-03.html#autotoc_md51',1,'']]],
-  ['introduction_20to_20cs_20225_15',['Module 1 - Introduction to CS 225',['../md_notes_2module-01.html',1,'']]],
-  ['isomorphism_16',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]],
-  ['iterate_20through_20data_20in_20each_20data_20structure_17',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
-  ['iterator_20usage_20example_20with_20tt_20std_3a_3avector_20tt_18',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
-  ['iterators_19',['Module 7 - Iterators',['../md_notes_2module-07.html',1,'']]],
-  ['iterators_20with_20respect_20to_20classes_20',['Iterators with respect to Classes',['../md_notes_2module-07.html#autotoc_md69',1,'']]]
+  ['interface_20adt_15',['Dictionary Interface (ADT)',['../md_notes_2module-10.html#autotoc_md81',1,'']]],
+  ['introduction_20to_20cs_20225_16',['Module 1 - Introduction to CS 225',['../md_notes_2module-01.html',1,'']]],
+  ['isomorphism_17',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]],
+  ['iterate_20through_20data_20in_20each_20data_20structure_18',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
+  ['iterator_20usage_20example_20with_20tt_20std_3a_3avector_20tt_19',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
+  ['iterators_20',['Module 7 - Iterators',['../md_notes_2module-07.html',1,'']]],
+  ['iterators_20with_20respect_20to_20classes_21',['Iterators with respect to Classes',['../md_notes_2module-07.html#autotoc_md69',1,'']]]
 ];
