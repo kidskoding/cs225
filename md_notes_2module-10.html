@@ -105,7 +105,8 @@ $(function(){initNavTree('md_notes_2module-10.html',''); initResizable(true); })
 <p>Previously, we discussed two types of search <b>Breath First</b> and <b>Depth First</b> (<b>BFS</b> and <b>DFS</b>)</p>
 <p><b>BFS</b> is the same as level order traversal, where its overhead (or space complexity) is the maximum number of nodes in a queue (can also be seen as the width of a tree)</p>
 <p><b>DFS</b> involves any of the three traversals that descend into the tree's children: pre order traversal, in order traversal, and post order traversal. Its overhead is the maximum depth in the tree (or simply height)</p>
-<p>BFS is more <b>reliable</b> than DFS. This is because it will eventually find a solution to a valid search if one exists, even if the tree is infinite in depth. Since BFS explores nodes level by level, this guarantees that all nodes at depth $d$ are visited before any node at depth $d + 1$.</p>
+<p>BFS is more <b>reliable</b> than DFS. This is because it will eventually find a solution to a valid search if one exists, even if the tree is infinite in depth. Since BFS explores nodes level by level, this guarantees that all nodes at depth $d$ are visited before any node at depth $d + 1$. So if the solution lies at a shallow depth, BFS will find it eventually.</p>
+<p>In contrast, DFS can get <b>"stuck"</b> going down an infinite branch of a tree, especially if the solution lies on a different, shallower path. Therefore, DFS might never return a proper solution, even if it does exist.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
