@@ -25,10 +25,12 @@ Therefore, in any practical application, memory is going to be the forefront pro
 
 This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$ with overhead cost of $O(k)$). 
 
+These are the two basic searching strategies, but they aren't that effective, since they can be slow in both time and meor
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5Mzc0ODUwMiwtMTU1MTMwNjM5NCwtOT
+eyJoaXN0b3J5IjpbMjA0NzQ0NTE2NCwtMTU1MTMwNjM5NCwtOT
 ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
 -->
