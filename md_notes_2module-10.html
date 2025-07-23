@@ -113,6 +113,9 @@ $(function(){initNavTree('md_notes_2module-10.html',''); initResizable(true); })
 <p><b>Iterative Deepening</b> runs DFS with a <b>maximum depth limit</b> of $k$, meaning it will not explore any nodes beyond depth $k$ (starting at $k = 0$). When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum memory used when doing DFS is proportional to $k$ (simply the overhead cost - $O(k)$). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k+1$, and this process repeats until a solution is found.</p>
 <p>This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$ with overhead cost of $O(k)$).</p>
 <p>These are the two basic searching strategies, but they aren't that effective, since they can be slow in both time and memory. But what if there was a data structure that put searching at its forefront, which is essentially what a <b>map</b> or <b>dictionary</b> does</p>
+<h1><a class="anchor" id="autotoc_md80"></a>
+Dictionaries</h1>
+<p>Dictionaries store <b>key-value</b> pairs, just like a regular dictionary, which stores words to definitions. If I had a word, I can use a dictionary to look up its definition! This could be done most optimally using binary search, where I start from the middle and then slowly go left or right based on whether the word I’m looking for comes before or after the middle word alphabetically.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

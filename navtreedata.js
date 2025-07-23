@@ -122,7 +122,9 @@ var NAVTREE =
     [ "Module 9 - Tree Traversals", "md_notes_2module-09.html", [
       [ "A different type of traversal - Level Order Traversal", "md_notes_2module-09.html#autotoc_md78", null ]
     ] ],
-    [ "Module 10 - Tree Searching", "md_notes_2module-10.html", null ],
+    [ "Module 10 - Tree Searching", "md_notes_2module-10.html", [
+      [ "Dictionaries", "md_notes_2module-10.html#autotoc_md80", null ]
+    ] ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
     [ "Module 13 - BST Rotations", "md_notes_2module-13.html", null ],
