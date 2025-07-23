@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['lambda_0',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
-  ['linkedlist_1',['LinkedList',['../classLinkedList.html',1,'']]],
-  ['listnode_2',['ListNode',['../structListNode.html',1,'']]],
-  ['lists_3',['Lists',['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41',1,'Lists'],['../md_notes_2midterm-reviews_2midterm-1.html',1,'Midterm 1 - Lists']]]
+  ['each_20data_20structure_0',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
+  ['elements_20every_20time_1',['elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'Resizing by adding 2 elements every time'],['../md_notes_2module-05.html#autotoc_md60',1,'Resizing by doubling the elements every time']]],
+  ['encapsulation_2',['Encapsulation',['../md_notes_2module-02.html#autotoc_md47',1,'']]],
+  ['end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_3',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md70',1,'']]],
+  ['enqueue_20tt_20and_20tt_20dequeue_20tt_4',['&lt;tt&gt;CircularQueue&lt;/tt&gt; Implementation - &lt;tt&gt;enqueue&lt;/tt&gt; and &lt;tt&gt;dequeue&lt;/tt&gt;',['../md_notes_2module-06.html#autotoc_md66',1,'']]],
+  ['every_20time_5',['every time',['../md_notes_2module-05.html#autotoc_md59',1,'Resizing by adding 2 elements every time'],['../md_notes_2module-05.html#autotoc_md60',1,'Resizing by doubling the elements every time']]],
+  ['example_20with_20tt_20std_3a_3avector_20tt_6',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]]
 ];

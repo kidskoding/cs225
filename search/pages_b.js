@@ -1,7 +1,13 @@
 var searchData=
 [
-  ['implementation_0',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['implementations_1',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
-  ['in_20computer_20science_2',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['introduction_20to_20cs_20225_3',['Module 1 - Introduction to CS 225',['../md_notes_2module-01.html',1,'']]]
+  ['balance_0',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
+  ['bbst_20range_20search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['bbst_20wrap_20and_20lambda_2',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
+  ['bloom_20filters_3',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
+  ['bst_20and_20bst_20implementation_4',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['bst_20balance_5',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
+  ['bst_20implementation_6',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['bst_20rotations_7',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
+  ['btree_20analysis_8',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
+  ['btrees_9',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]]
 ];

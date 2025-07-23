@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queues_0',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]]
+  ['kruskal_20s_20algorithm_0',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]]
 ];

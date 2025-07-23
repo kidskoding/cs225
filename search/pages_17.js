@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_20three_20five_0',['Zero Three Five',['../md_lecture2.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md_programming.html#autotoc_md34',1,'Rule of Zero/Three/Five']]]
+  ['queues_0',['Queues',['../md_notes_2module-19.html',1,'Module 19 - Priority Queues'],['../md_notes_2module-06.html',1,'Module 6 - Stacks and Queues']]]
 ];

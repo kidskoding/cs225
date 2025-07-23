@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['zero_20three_20five_0',['Zero Three Five',['../md__lecture_01_notes_2_lecture_012_01-_01_c_09_09_01and_01_lists.html#autotoc_md2',1,'Rule of Zero/Three/Five'],['../md__midterm_01_reviews_2_midterm_010_2_programming_01_review.html#autotoc_md33',1,'Rule of Zero/Three/Five']]]
+  ['range_20search_0',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['readme_1',['README',['../md_README.html',1,'']]],
+  ['review_2',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
+  ['review_20of_20prerequisite_20material_3',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['rotations_4',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]]
 ];

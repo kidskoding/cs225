@@ -99,12 +99,13 @@ $(function(){initNavTree('md_notes_2module-10.html',''); initResizable(true); })
   <div class="headertitle"><div class="title">Module 10 - Tree Searching</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md50"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md79"></a></p>
 <p>A <b>traversal</b> is an algorithm that goes through every single node in a tree and visits it ($O(n)$ time)</p>
-<p>A <b>search</b> is an algorithm that finds a node in a tree of value $v$ if it exists (worst case is when $v \notin T$, where $T$ represents any tree; this involves running the full traversal so it is in $O(n)$ time)</p>
-<p>Previously, we discussed two types of search <b>Breath First</b> and <b>Depth First</b> (BFS and DFS)</p>
+<p>A <b>search</b> is an algorithm that finds a node in a tree of value $v$ if it exists (worst case is when $v \notin T$, where $T$ represents any tree; this involves running the full traversal, so it is in $O(n)$ time)</p>
+<p>Previously, we discussed two types of search <b>Breath First</b> and <b>Depth First</b> (<b>BFS</b> and <b>DFS</b>)</p>
 <p><b>BFS</b> is the same as level order traversal, where its overhead (or space complexity) is the maximum number of nodes in a queue (can also be seen as the width of a tree)</p>
 <p><b>DFS</b> involves any of the three traversals that descend into the tree's children: pre order traversal, in order traversal, and post order traversal. Its overhead is the maximum depth in the tree (or simply height)</p>
+<p>BFS is more <b>reliable</b> than DFS. This is because it will eventually find a solution to a valid search if one exists, even if the tree is infinite in depth. Since BFS explores nodes level by level, this guarantees that all nodes at depth $d$ are visited before any node at depth $d + 1$.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

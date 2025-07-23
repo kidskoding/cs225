@@ -1,7 +1,17 @@
 var searchData=
 [
-  ['hash_20collisions_20and_20hash_20tables_0',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
-  ['hash_20tables_1',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
-  ['hashing_20hash_20collisions_20and_20hash_20tables_2',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
-  ['heaps_3',['Module 20 - Heaps',['../md_notes_2module-20.html',1,'']]]
+  ['a_20tt_20list_20tt_0',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['adt_20and_20tt_20linked_20list_20tt_20implementation_1',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
+  ['algorithm_2',['Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
+  ['amortized_20analysis_3',['Module 5 - Amortized Analysis',['../md_notes_2module-05.html',1,'']]],
+  ['an_20array_20implementation_20of_20a_20tt_20list_20tt_4',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['analysis_5',['Analysis',['../md_notes_2module-18.html',1,'Module 18 - BTree Analysis'],['../md_notes_2module-05.html',1,'Module 5 - Amortized Analysis']]],
+  ['and_20bst_20implementation_6',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['and_20hash_20tables_7',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['and_20lambda_8',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
+  ['and_20queues_9',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]],
+  ['and_20tt_20linked_20list_20tt_20implementation_10',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
+  ['array_20implementation_20of_20a_20tt_20list_20tt_11',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_12',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['avl_20trees_13',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
 ];
