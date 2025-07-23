@@ -155,12 +155,13 @@ Revisiting Trees</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Dictionary Operation   </th><th class="markdownTableHeadNone">Runtime   </th><th class="markdownTableHeadNone">Explanation    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>insert</code>   </td><td class="markdownTableBodyNone">$O(1)$   </td><td class="markdownTableBodyNone">Similar to a a <a class="el" href="classLinkedList.html">LinkedList</a>; put a new pointer to head and point the tree's head    </td></tr>
+<td class="markdownTableBodyNone"><code>insert</code>   </td><td class="markdownTableBodyNone">$O(1)$   </td><td class="markdownTableBodyNone">Similar to a a <a class="el" href="classLinkedList.html">LinkedList</a>; put a new pointer to head and point the tree's head to this new node, which is constant time    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>remove</code>   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">Need to first find the item by scanning the tree, and then shift elements to fill the gap    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>find</code>   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">Searches items one by one until a key is found   </td></tr>
+<td class="markdownTableBodyNone"><code>find</code>   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">Searches nodes one by one, traversing the tree until it finds the key or uses all nodes   </td></tr>
 </table>
+<p>This sets up the foundation for many other types of trees including, BSTs, BBSTs     </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
