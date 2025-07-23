@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['a_20tt_20list_20tt_0',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['algorithm_1',['Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
-  ['amortized_20analysis_2',['Module 5 - Amortized Analysis',['../md_notes_2module-05.html',1,'']]],
-  ['an_20array_20implementation_20of_20a_20tt_20list_20tt_3',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['analysis_4',['Analysis',['../md_notes_2module-18.html',1,'Module 18 - BTree Analysis'],['../md_notes_2module-05.html',1,'Module 5 - Amortized Analysis']]],
-  ['and_20bst_20implementation_5',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['and_20hash_20tables_6',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
-  ['and_20lambda_7',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
-  ['array_20implementation_20of_20a_20tt_20list_20tt_8',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_9',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['avl_20trees_10',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
+  ['c_20review_0',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
+  ['cardinality_1',['Module 32 - Cardinality',['../md_notes_2module-32.html',1,'']]],
+  ['collisions_20and_20hash_20tables_2',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['computer_20science_3',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
+  ['cs_20225_4',['CS 225',['../md_notes_2module-01.html',1,'Module 1 - Introduction to CS 225'],['../md_notes_2module-34.html',1,'Module 34 - Wrapping up CS 225!']]]
 ];

@@ -1,16 +1,4 @@
 var searchData=
 [
-  ['s_20algorithm_0',['s Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
-  ['science_1',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['searching_3',['Module 10 - Tree Searching',['../md_notes_2module-10.html',1,'']]],
-  ['semantics_4',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['sets_5',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['shallow_20and_20deep_20copies_6',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['sketch_20strategy_7',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['spanning_20tree_20kruskal_20s_20algorithm_8',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['spanning_20tree_20prim_20s_20algorithm_9',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['stack_10',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['strategy_11',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['structs_12',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['up_20cs_20225_0',['Module 34 - Wrapping up CS 225!',['../md_notes_2module-34.html',1,'']]]
 ];

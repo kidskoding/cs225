@@ -86,14 +86,6 @@ var NAVTREE =
       [ "Memory Management - Ownership", "md_notes_2module-02.html#autotoc_md48", null ],
       [ "Rule of Zero/Three/Five", "md_notes_2module-02.html#autotoc_md49", null ]
     ] ],
-    [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-04.html", [
-      [ "pushBack()", "md_notes_2module-04.html#autotoc_md51", null ]
-    ] ],
-    [ "Module 5 - Amortized Analysis", "md_notes_2module-05.html", [
-      [ "Resizing by adding 2 elements every time", "md_notes_2module-05.html#autotoc_md53", null ],
-      [ "Resizing by doubling the elements every time", "md_notes_2module-05.html#autotoc_md54", null ],
-      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-05.html#autotoc_md55", null ]
-    ] ],
     [ "Module 10 - Tree Searching", "md_notes_2module-10.html", null ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],

@@ -1,21 +1,13 @@
 var searchData=
 [
-  ['background_0',['Background',['../md_notes_2module-01.html#autotoc_md43',1,'']]],
-  ['balance_1',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bbst_20range_20search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['bbst_20wrap_20and_20lambda_3',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
-  ['big_20o_4',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
-  ['big_20o_20of_20common_20algorithms_5',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
-  ['binarytree_6',['BinaryTree',['../classBinaryTree.html',1,'']]],
-  ['bipartite_20graph_7',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
-  ['bloom_20filters_8',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
-  ['bst_20and_20bst_20implementation_9',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20balance_10',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bst_20implementation_11',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20rotations_12',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['btree_20analysis_13',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
-  ['btrees_14',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_15',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md53',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_16',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md54',1,'']]],
-  ['by_20induction_17',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
+  ['deep_20copies_0',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
+  ['default_20and_20delete_20on_20copy_20constructors_1',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
+  ['definitions_2',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
+  ['degree_3',['Degree',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md8',1,'']]],
+  ['delete_20on_20copy_20constructors_4',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
+  ['delete_20tt_5',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
+  ['destructors_6',['Destructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md24',1,'']]],
+  ['dijkstra_20s_20algorithm_7',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
+  ['disjoint_20sets_8',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
+  ['dynamic_20memory_20allocation_9',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
 ];
