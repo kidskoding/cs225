@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['s_20algorithm_0',['s Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
-  ['science_1',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['searching_3',['Module 10 - Tree Searching',['../md_notes_2module-10.html',1,'']]],
-  ['semantics_4',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
-  ['sets_5',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['shallow_20and_20deep_20copies_6',['Shallow and Deep Copies',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md31',1,'']]],
-  ['sketch_20strategy_7',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['spanning_20tree_20kruskal_20s_20algorithm_8',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['spanning_20tree_20prim_20s_20algorithm_9',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['stack_10',['Stack',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md27',1,'']]],
-  ['strategy_11',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['structs_12',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['o_0',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
+  ['o_20of_20common_20algorithms_1',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
+  ['of_20a_20tt_20list_20tt_2',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['of_20common_20algorithms_3',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
+  ['of_20nodes_4',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]],
+  ['of_20prerequisite_20material_5',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['of_20various_20operations_20on_20various_20tt_20list_20tt_20implementations_6',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
+  ['of_20zero_20three_20five_7',['of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-02.html#autotoc_md49',1,'Rule of Zero/Three/Five']]],
+  ['on_20copy_20constructors_8',['Default and Delete on Copy constructors',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md33',1,'']]],
+  ['on_20various_20tt_20list_20tt_20implementations_9',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
+  ['operations_20on_20various_20tt_20list_20tt_20implementations_10',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
+  ['operator_11',['Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]],
+  ['operator_20tt_12',['&lt;tt&gt;operator[]&lt;/tt&gt;',['../md_notes_2module-03.html#autotoc_md54',1,'']]],
+  ['operator_5b_5d_13',['operator[]',['../classLinkedList.html#a199fff56292949cdec68970cc5197a66',1,'LinkedList']]],
+  ['ownership_14',['Memory Management - Ownership',['../md_notes_2module-02.html#autotoc_md48',1,'']]]
 ];

@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['implementation_0',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['implementation_20of_20a_20tt_20list_20tt_1',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['implementations_2',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
-  ['in_20computer_20science_3',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['induction_4',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]],
-  ['info_20and_20resources_5',['Course Info and Resources',['../md_notes_2module-01.html#autotoc_md45',1,'']]],
-  ['insert_6',['insert',['../classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32',1,'LinkedList']]],
-  ['insertatfront_7',['insertAtFront',['../classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908',1,'LinkedList']]],
-  ['introduction_20to_20cs_20225_8',['Module 1 - Introduction to CS 225',['../md_notes_2module-01.html',1,'']]],
-  ['isomorphism_9',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]]
+  ['each_20data_20structure_0',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
+  ['elements_20every_20time_1',['elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'Resizing by adding 2 elements every time'],['../md_notes_2module-05.html#autotoc_md60',1,'Resizing by doubling the elements every time']]],
+  ['encapsulation_2',['Encapsulation',['../md_notes_2module-02.html#autotoc_md47',1,'']]],
+  ['end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_3',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md70',1,'']]],
+  ['enqueue_20tt_20and_20tt_20dequeue_20tt_4',['&lt;tt&gt;CircularQueue&lt;/tt&gt; Implementation - &lt;tt&gt;enqueue&lt;/tt&gt; and &lt;tt&gt;dequeue&lt;/tt&gt;',['../md_notes_2module-06.html#autotoc_md66',1,'']]],
+  ['every_20time_5',['every time',['../md_notes_2module-05.html#autotoc_md59',1,'Resizing by adding 2 elements every time'],['../md_notes_2module-05.html#autotoc_md60',1,'Resizing by doubling the elements every time']]],
+  ['example_20with_20tt_20std_3a_3avector_20tt_6',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]]
 ];

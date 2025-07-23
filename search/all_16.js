@@ -1,17 +1,7 @@
 var searchData=
 [
-  ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
-  ['range_20search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['readme_2',['README',['../md_README.html',1,'']]],
-  ['recursive_20definitions_3',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
-  ['references_4',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
-  ['references_20and_20pointers_5',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
-  ['remove_6',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
-  ['resources_7',['Course Info and Resources',['../md_notes_2module-01.html#autotoc_md45',1,'']]],
-  ['returning_20values_8',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
-  ['review_9',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
-  ['review_20of_20prerequisite_20material_10',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['rotations_11',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['rule_20of_20zero_20three_20five_12',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-02.html#autotoc_md49',1,'Rule of Zero/Three/Five']]],
-  ['rvalue_20references_13',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
+  ['namespaces_0',['Namespaces',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md20',1,'']]],
+  ['new_20tt_20and_20tt_20delete_20tt_1',['&lt;tt&gt;new&lt;/tt&gt; and &lt;tt&gt;delete&lt;/tt&gt;',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23',1,'']]],
+  ['nodes_2',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]],
+  ['number_20of_20nodes_3',['Height and number of nodes',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md15',1,'']]]
 ];
