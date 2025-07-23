@@ -148,6 +148,17 @@ Dictionary Interface (ADT)</h2>
 <div class="line"> </div>
 <div class="line">};</div>
 </div><!-- fragment --><p>Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of <code>std::unordered_map</code> . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like <code>begin()</code>, <code>end()</code>, and <code>find()</code>.</p>
+<p>These three functionalities of a dictionary, <code>insert</code>, <code>remove</code>, and <code>find</code> all have a runtime of $O(n)$.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Dictionary Operation   </th><th class="markdownTableHeadNone">Runtime    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>insert</code>   </td><td class="markdownTableBodyNone">May need to search all items first or shift elements in an array    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Remove   </td><td class="markdownTableBodyNone">Must find the item by scanning and then shift elements to fill the gap    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Find   </td><td class="markdownTableBodyNone">Searches items one by one until key is found   </td></tr>
+</table>
 <h1><a class="anchor" id="autotoc_md82"></a>
 Revisiting Trees</h1>
 </div></div><!-- contents -->
