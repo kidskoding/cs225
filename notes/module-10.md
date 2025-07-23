@@ -25,12 +25,12 @@ Therefore, in any practical application, memory is going to be the forefront pro
 
 This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$ with overhead cost of $O(k)$). 
 
-These are the two basic searching strategies, but they aren't that effective, since they can be slow in both time and meor
+These are the two basic searching strategies, but they aren't that effective, since they can be slow in both time and memory. But what if there was a data structure that put searching at its forefront, which is essentially what a **map** or **dictionary** does
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzQ0NTE2NCwtMTU1MTMwNjM5NCwtOT
-ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
+eyJoaXN0b3J5IjpbNTgwNTM1NzE4LC0xNTUxMzA2Mzk0LC05MT
+E2OTUxODgsLTE1MDkzNTI2N119
 -->
