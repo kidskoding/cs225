@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['prerequisite_20material_0',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
-  ['prim_20s_20algorithm_1',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['priority_20queues_2',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]],
-  ['probability_20in_20computer_20science_3',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]]
+  ['warshall_20s_20algorithm_0',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]],
+  ['wrap_20and_20lambda_1',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
+  ['wrapping_20up_20cs_20225_2',['Module 34 - Wrapping up CS 225!',['../md_notes_2module-34.html',1,'']]]
 ];

@@ -1,22 +1,10 @@
 var searchData=
 [
-  ['background_0',['Background',['../md_notes_2module-1.html#autotoc_md43',1,'']]],
-  ['balance_1',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bbst_20range_20search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['bbst_20wrap_20and_20lambda_3',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
-  ['begin_20tt_20and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_4',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md96',1,'']]],
-  ['big_20o_5',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
-  ['big_20o_20of_20common_20algorithms_6',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
-  ['binarytree_7',['BinaryTree',['../classBinaryTree.html',1,'']]],
-  ['bipartite_20graph_8',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
-  ['bloom_20filters_9',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
-  ['bst_20and_20bst_20implementation_10',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20balance_11',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bst_20implementation_12',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20rotations_13',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['btree_20analysis_14',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
-  ['btrees_15',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_16',['Resizing by adding 2 elements every time',['../md_notes_2module-5.html#autotoc_md84',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_17',['Resizing by doubling the elements every time',['../md_notes_2module-5.html#autotoc_md85',1,'']]],
-  ['by_20induction_18',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
+  ['implementation_0',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['implementations_1',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
+  ['in_20computer_20science_2',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
+  ['induction_3',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]],
+  ['insert_4',['insert',['../classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32',1,'LinkedList']]],
+  ['insertatfront_5',['insertAtFront',['../classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908',1,'LinkedList']]],
+  ['isomorphism_6',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]]
 ];

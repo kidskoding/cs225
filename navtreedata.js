@@ -76,11 +76,6 @@ var NAVTREE =
       [ "Topics Covered", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40", null ],
       [ "Lists", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41", null ]
     ] ],
-    [ "Module 1 - Introduction to CS 225", "md_notes_2module-1.html", [
-      [ "Background", "md_notes_2module-1.html#autotoc_md43", null ],
-      [ "Grading", "md_notes_2module-1.html#autotoc_md44", null ],
-      [ "Course Info and Resources", "md_notes_2module-1.html#autotoc_md45", null ]
-    ] ],
     [ "Module 10 - Tree Searching", "md_notes_2module-10.html", null ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
@@ -91,11 +86,6 @@ var NAVTREE =
     [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
     [ "Module 18 - BTree Analysis", "md_notes_2module-18.html", null ],
     [ "Module 19 - Priority Queues", "md_notes_2module-19.html", null ],
-    [ "Module 2 - C++ Review", "md_notes_2module-2.html", [
-      [ "Encapsulation", "md_notes_2module-2.html#autotoc_md57", null ],
-      [ "Memory Management - Ownership", "md_notes_2module-2.html#autotoc_md58", null ],
-      [ "Rule of Zero/Three/Five", "md_notes_2module-2.html#autotoc_md59", null ]
-    ] ],
     [ "Module 20 - Heaps", "md_notes_2module-20.html", null ],
     [ "Module 21 - Disjoint Sets", "md_notes_2module-21.html", null ],
     [ "Module 22 - Graphs", "md_notes_2module-22.html", null ],
@@ -106,47 +96,11 @@ var NAVTREE =
     [ "Module 27 - Dijkstra's Algorithm", "md_notes_2module-27.html", null ],
     [ "Module 28 - Floyd Warshall's Algorithm", "md_notes_2module-28.html", null ],
     [ "Module 29 - Probability in Computer Science", "md_notes_2module-29.html", null ],
-    [ "Module 3 - <tt>List</tt> ADT and <tt>Linked List</tt> Implementation", "md_notes_2module-3.html", [
-      [ "insertAtFront", "md_notes_2module-3.html#autotoc_md71", null ],
-      [ "insert", "md_notes_2module-3.html#autotoc_md72", [
-        [ "find", "md_notes_2module-3.html#autotoc_md73", null ]
-      ] ],
-      [ "operator[]", "md_notes_2module-3.html#autotoc_md74", [
-        [ "remove", "md_notes_2module-3.html#autotoc_md75", null ]
-      ] ]
-    ] ],
     [ "Module 30 - Hashing, Hash Collisions, and Hash Tables", "md_notes_2module-30.html", null ],
     [ "Module 31 - Bloom Filters", "md_notes_2module-31.html", null ],
     [ "Module 32 - Cardinality", "md_notes_2module-32.html", null ],
     [ "Module 33 - MinHash Sketch Strategy", "md_notes_2module-33.html", null ],
     [ "Module 34 - Wrapping up CS 225!", "md_notes_2module-34.html", null ],
-    [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-4.html", [
-      [ "pushBack()", "md_notes_2module-4.html#autotoc_md82", null ]
-    ] ],
-    [ "Module 5 - Amortized Analysis", "md_notes_2module-5.html", [
-      [ "Resizing by adding 2 elements every time", "md_notes_2module-5.html#autotoc_md84", null ],
-      [ "Resizing by doubling the elements every time", "md_notes_2module-5.html#autotoc_md85", null ],
-      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-5.html#autotoc_md86", null ]
-    ] ],
-    [ "Module 6 - Stacks and Queues", "md_notes_2module-6.html", [
-      [ "Queues", "md_notes_2module-6.html#autotoc_md88", null ],
-      [ "Stacks", "md_notes_2module-6.html#autotoc_md89", null ],
-      [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md90", null ],
-      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md91", null ]
-    ] ],
-    [ "Module 7 - Iterators", "md_notes_2module-7.html", [
-      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md94", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md95", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md96", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md97", null ]
-      ] ]
-    ] ],
-    [ "Module 8 - Trees", "md_notes_2module-8.html", [
-      [ "Tree ADT", "md_notes_2module-8.html#autotoc_md99", null ]
-    ] ],
-    [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", [
-      [ "A different type of traversal - Level Order Traversal", "md_notes_2module-9.html#autotoc_md104", null ]
-    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
