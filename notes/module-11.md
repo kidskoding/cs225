@@ -8,7 +8,9 @@ For this to take place, we need to discuss a different type of tree: the **Binar
 Mathematically speaking, for tree $T$ to be a BST: 
 - $T = \empty$
 - $T = (r, T_L, T_R)$, where $\forall_x \in T_L$, $x < r$ and $\forall_x \in T_R$, $x > r$
+
+$x$ is a key in $T_L$, where $x < r$ and a key in $T_R$, where $x > r$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDkxMTM4MiwtNDc1NzYyNTkxLC03Mj
-I0MDU5NDVdfQ==
+eyJoaXN0b3J5IjpbNTMwMjk2ODYzLC00NzU3NjI1OTEsLTcyMj
+QwNTk0NV19
 -->
