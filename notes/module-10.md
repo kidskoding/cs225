@@ -71,10 +71,11 @@ private:
 
 Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of `std::unordered_map` . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like `begin()`, `end()`, and `find()`.
 
+## Revisiting Trees
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5NDkxNDI0LC0xMjc5NjAyNzIwLC0xND
+eyJoaXN0b3J5IjpbNTg3MjYzMTAzLC0xMjc5NjAyNzIwLC0xND
 I2OTI4NDc2LC0xNTUxMzA2Mzk0LC05MTE2OTUxODgsLTE1MDkz
 NTI2N119
 -->
