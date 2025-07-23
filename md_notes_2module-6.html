@@ -70,7 +70,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('md_notes_2module-06.html',''); initResizable(true); });
+$(function(){initNavTree('md_notes_2module-6.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -99,11 +99,11 @@ $(function(){initNavTree('md_notes_2module-06.html',''); initResizable(true); })
   <div class="headertitle"><div class="title">Module 6 - Stacks and Queues</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md62"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md67"></a></p>
 <p>One of the biggest problems with both <code><a class="el" href="classArrayList.html">ArrayList</a></code> and <code><a class="el" href="classLinkedList.html">LinkedList</a></code> is that accessing elements can sometimes be slow. Recall that the runtime complexity is <code>O(1)</code> to remove an element at the beginning and end and <code>O(n)</code> for elements not at the beginning/end.</p>
 <p>Therefore, if we want <code>O(1)</code> insertion and removal, we need a faster data structure, which introduces Stacks and Queues.</p>
 <p>This lecture will introduce Stacks, but will only fully cover the Queue implementation. The next lecture will cover the Stack implementation in depth along with introducing another new topic</p>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md68"></a>
 Queues</h1>
 <p>Queues are everywhere and are used in an enormous amount of computer hardware. A Queue is like a list, but with a fixed order of <b>FIFO (First In First Out)</b>.</p>
 <p>FIFO is a good mneumonic that helps remember how queues fundamentally work. <b>This means that the first element in the queue will be the first element out of the queue</b>. Some may also refer the FIFO mneumonic as LILO - Last In Last Out, but the idea behind remembering what a queue does is still fundamentally the same.</p>
@@ -114,7 +114,7 @@ Queues</h1>
 <li><code>dequeue()</code> will remove elements at the front of the queue</li>
 </ul>
 <p>These functions are both <code>O(1)</code>, meaning adding and removing is constant time. This is because these functionalities happen at the back and front of the queue for <code>enqueue()</code> and <code>dequeue()</code> respectively, meaning we don't have to deal with the other elements in the queue.</p>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md69"></a>
 Stacks</h1>
 <p>Like a Queue, a Stack also has a fixed order, but it works a little bit differently than a Queue. This order is referred to as <b>LIFO (Last In First Out)</b>.</p>
 <p>LIFO is a good mneumonic that helps remember how stacks fundamentally work. <b>The last item put into the stack will be the first item out of the stack</b>. Some may also refer to the LIFO mneumonic as FILO - First In Last Out, but the idea behind remembering what a stack does/will do is still fundamentally the same.</p>
@@ -125,7 +125,7 @@ Stacks</h1>
 <li><code>pop()</code> will remove elements from the top of the stack</li>
 </ul>
 <p>These functions are also both O(1), meaning adding and removing is constant time. This is because these functionalities both happen at the top of the stack, meaning we don't have to deal with the other elements in the queue.</p>
-<h1><a class="anchor" id="autotoc_md65"></a>
+<h1><a class="anchor" id="autotoc_md70"></a>
 Stacks v.s. Queues</h1>
 <ul>
 <li>Stacks operate upon the mneumonic LIFO - <b>Last In First Out</b> (last element in is the first element out), while Queues operate upon the mneumonic FIFO - <b>First In First Out</b> (first element in is the first element out)</li>
@@ -134,7 +134,7 @@ Stacks v.s. Queues</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md66"></a>
+<h1><a class="anchor" id="autotoc_md71"></a>
 <code>CircularQueue</code> Implementation - <code>enqueue</code> and <code>dequeue</code></h1>
 <p>Take a look at the following <code><a class="el" href="classCircularQueue.html">CircularQueue</a></code> implementation below</p>
 <div class="fragment"><div class="line">// CircularQueue.h</div>
@@ -198,7 +198,7 @@ Stacks v.s. Queues</h1>
 </li>
 </ul>
 <p>This effectively describes implementing a queue in depth via a <code><a class="el" href="classCircularQueue.html">CircularQueue</a></code>. In a <code><a class="el" href="classCircularQueue.html">CircularQueue</a></code>, we use a dynamically allocated array, like <code>items</code> that circles around when inserting an element goes outside the array's dynamically allocated memory!</p>
-<p>Typically from a hardware standpoint, we don't resize a queue. In hardware, memory is already preallocated and doesn't change at runtime.   </p>
+<p>Typically from a hardware standpoint, we don't resize a queue. In hardware, memory is already preallocated and doesn't change at runtime.    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

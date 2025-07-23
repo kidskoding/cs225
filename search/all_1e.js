@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['v_20s_20queues_0',['Stacks v.s. Queues',['../md_notes_2module-06.html#autotoc_md65',1,'']]],
-  ['values_1',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
-  ['various_20operations_20on_20various_20tt_20list_20tt_20implementations_2',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
-  ['various_20tt_20list_20tt_20implementations_3',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
-  ['vocabulary_4',['Tree Vocabulary',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md13',1,'']]],
-  ['vs_20private_5',['Public vs Private',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16',1,'']]],
-  ['vs_20structs_6',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]
+  ['warshall_20s_20algorithm_0',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]],
+  ['with_20respect_20to_20classes_1',['Iterators with respect to Classes',['../md_notes_2module-7.html#autotoc_md75',1,'']]],
+  ['with_20tt_20std_3a_3avector_20tt_2',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-7.html#autotoc_md77',1,'']]],
+  ['wrap_20and_20lambda_3',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
+  ['wrapping_20up_20cs_20225_4',['Module 34 - Wrapping up CS 225!',['../md_notes_2module-34.html',1,'']]]
 ];

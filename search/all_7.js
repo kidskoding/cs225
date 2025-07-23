@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['6_20stacks_20and_20queues_0',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]]
+  ['8_20trees_0',['Module 8 - Trees',['../md_notes_2module-8.html',1,'']]]
 ];

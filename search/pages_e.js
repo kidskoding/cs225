@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['graph_20implementations_0',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
-  ['graph_20traversals_1',['Module 24 - Graph Traversals',['../md_notes_2module-24.html',1,'']]],
-  ['graphs_2',['Module 22 - Graphs',['../md_notes_2module-22.html',1,'']]]
+  ['hash_20collisions_20and_20hash_20tables_0',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['hash_20tables_1',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['hashing_20hash_20collisions_20and_20hash_20tables_2',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
+  ['heaps_3',['Module 20 - Heaps',['../md_notes_2module-20.html',1,'']]]
 ];

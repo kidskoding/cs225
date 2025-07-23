@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dijkstra_20s_20algorithm_0',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
-  ['disjoint_20sets_1',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]]
+  ['filters_0',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
+  ['floyd_20warshall_20s_20algorithm_1',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]]
 ];

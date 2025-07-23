@@ -76,49 +76,6 @@ var NAVTREE =
       [ "Topics Covered", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40", null ],
       [ "Lists", "md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41", null ]
     ] ],
-    [ "Module 1 - Introduction to CS 225", "md_notes_2module-01.html", [
-      [ "Background", "md_notes_2module-01.html#autotoc_md43", null ],
-      [ "Grading", "md_notes_2module-01.html#autotoc_md44", null ],
-      [ "Course Info and Resources", "md_notes_2module-01.html#autotoc_md45", null ]
-    ] ],
-    [ "Module 2 - C++ Review", "md_notes_2module-02.html", [
-      [ "Encapsulation", "md_notes_2module-02.html#autotoc_md47", null ],
-      [ "Memory Management - Ownership", "md_notes_2module-02.html#autotoc_md48", null ],
-      [ "Rule of Zero/Three/Five", "md_notes_2module-02.html#autotoc_md49", null ]
-    ] ],
-    [ "Module 3 - <tt>List</tt> ADT and <tt>Linked List</tt> Implementation", "md_notes_2module-03.html", [
-      [ "insertAtFront", "md_notes_2module-03.html#autotoc_md51", null ],
-      [ "insert", "md_notes_2module-03.html#autotoc_md52", [
-        [ "find", "md_notes_2module-03.html#autotoc_md53", null ]
-      ] ],
-      [ "operator[]", "md_notes_2module-03.html#autotoc_md54", [
-        [ "remove", "md_notes_2module-03.html#autotoc_md55", null ]
-      ] ]
-    ] ],
-    [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-04.html", [
-      [ "pushBack()", "md_notes_2module-04.html#autotoc_md57", null ]
-    ] ],
-    [ "Module 5 - Amortized Analysis", "md_notes_2module-05.html", [
-      [ "Resizing by adding 2 elements every time", "md_notes_2module-05.html#autotoc_md59", null ],
-      [ "Resizing by doubling the elements every time", "md_notes_2module-05.html#autotoc_md60", null ],
-      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-05.html#autotoc_md61", null ]
-    ] ],
-    [ "Module 6 - Stacks and Queues", "md_notes_2module-06.html", [
-      [ "Queues", "md_notes_2module-06.html#autotoc_md63", null ],
-      [ "Stacks", "md_notes_2module-06.html#autotoc_md64", null ],
-      [ "Stacks v.s. Queues", "md_notes_2module-06.html#autotoc_md65", null ],
-      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-06.html#autotoc_md66", null ]
-    ] ],
-    [ "Module 7 - Iterators", "md_notes_2module-07.html", [
-      [ "Iterate through data in each data structure", "md_notes_2module-07.html#autotoc_md68", null ],
-      [ "Iterators with respect to Classes", "md_notes_2module-07.html#autotoc_md69", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-07.html#autotoc_md70", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-07.html#autotoc_md71", null ]
-      ] ]
-    ] ],
-    [ "Module 8 - Trees", "md_notes_2module-08.html", [
-      [ "Tree ADT", "md_notes_2module-08.html#autotoc_md73", null ]
-    ] ],
     [ "Module 10 - Tree Searching", "md_notes_2module-10.html", null ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
@@ -144,6 +101,25 @@ var NAVTREE =
     [ "Module 32 - Cardinality", "md_notes_2module-32.html", null ],
     [ "Module 33 - MinHash Sketch Strategy", "md_notes_2module-33.html", null ],
     [ "Module 34 - Wrapping up CS 225!", "md_notes_2module-34.html", null ],
+    [ "Module 6 - Stacks and Queues", "md_notes_2module-6.html", [
+      [ "Queues", "md_notes_2module-6.html#autotoc_md68", null ],
+      [ "Stacks", "md_notes_2module-6.html#autotoc_md69", null ],
+      [ "Stacks v.s. Queues", "md_notes_2module-6.html#autotoc_md70", null ],
+      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-6.html#autotoc_md71", null ]
+    ] ],
+    [ "Module 7 - Iterators", "md_notes_2module-7.html", [
+      [ "Iterate through data in each data structure", "md_notes_2module-7.html#autotoc_md74", null ],
+      [ "Iterators with respect to Classes", "md_notes_2module-7.html#autotoc_md75", null ],
+      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-7.html#autotoc_md76", [
+        [ "Iterator Usage Example with std::vector", "md_notes_2module-7.html#autotoc_md77", null ]
+      ] ]
+    ] ],
+    [ "Module 8 - Trees", "md_notes_2module-8.html", [
+      [ "Tree ADT", "md_notes_2module-8.html#autotoc_md79", null ]
+    ] ],
+    [ "Module 9 - Tree Traversals", "md_notes_2module-9.html", [
+      [ "A different type of traversal - Level Order Traversal", "md_notes_2module-9.html#autotoc_md84", null ]
+    ] ],
     [ "README", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
