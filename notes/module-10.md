@@ -71,7 +71,9 @@ private:
 
 Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of `std::unordered_map` . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like `begin()`, `end()`, and `find()`.
 
-These three functionalities of a dictionary, `insert`, `remove`, and `find` all have a runtime of $O(n)$. 
+## Revisiting Trees
+
+In the context of a tree, These three functionalities of a dictionary, `insert`, `remove`, and `find` all have a runtime of $O(n)$. 
 
 | Dictionary Operation | Runtime | Explanation |
 |-----------|-----|-----------------------|
@@ -79,11 +81,9 @@ These three functionalities of a dictionary, `insert`, `remove`, and `find` all 
 | `remove`    | $O(n)$ | Need to first find the item by scanning the tree, and then shift elements to fill the gap |
 | `find`      | $O(n)$ | Searches items one by one until a key is found |
 
-## Revisiting Trees
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTk5MTg5OCwtMTI3OTYwMjcyMCwtMT
-QyNjkyODQ3NiwtMTU1MTMwNjM5NCwtOTExNjk1MTg4LC0xNTA5
-MzUyNjddfQ==
+eyJoaXN0b3J5IjpbOTMxNDk5NDIxLC0xMjc5NjAyNzIwLC0xND
+I2OTI4NDc2LC0xNTUxMzA2Mzk0LC05MTE2OTUxODgsLTE1MDkz
+NTI2N119
 -->
