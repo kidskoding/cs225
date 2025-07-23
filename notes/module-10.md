@@ -31,11 +31,13 @@ These are the two basic searching strategies, but they aren't that effective, si
 
 Dictionaries store **key-value** pairs, just like a regular dictionary, which stores words to definitions. If I had a word, I can use a dictionary to look up its definition! This could be done most optimally using binary search, where I start from the middle and then slowly go left or right based on whether the word I’m looking for comes before or after the middle word alphabetically.
 
+This is just one example of a dictionary though, we can use it to look up students using their unique ID numbers (UIUC UIN) or by looking at a Flight number for its departure time/arrival time. 
 
+In fact, an array really is just a dictionary, because we use an index to lookup the element that 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTgwMzI0MiwtMTU1MTMwNjM5NCwtOT
-ExNjk1MTg4LC0xNTA5MzUyNjddfQ==
+eyJoaXN0b3J5IjpbLTE0MjY5Mjg0NzYsLTE1NTEzMDYzOTQsLT
+kxMTY5NTE4OCwtMTUwOTM1MjY3XX0=
 -->
