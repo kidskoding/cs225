@@ -71,14 +71,17 @@ To implement find in a BST, the process is pretty straightforward
 
 First we will begin with the internal find (`_find`). The external find function will just wrap the internal find with `root`, and then dealing with the case when the pointer is null and returning an iterator to the `end` rather than an iterator to that node.
 
+```
 template <class K, class V>
 BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
 
 }
 ```
+
+This internal `_find` is a lot like `find` from a `LinkedList`. It returns a pointer to a reference of a `TreeNode`. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDAxNDI2MzUsLTU3MjEyODU3MCwxNz
-Q0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgw
-MzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYzLC00Nz
-U3NjI1OTEsLTcyMjQwNTk0NV19
+eyJoaXN0b3J5IjpbLTk5NTEyNDQzLC01NzIxMjg1NzAsMTc0ND
+c5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4MDM0
+NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5Njg2MywtNDc1Nz
+YyNTkxLC03MjI0MDU5NDVdfQ==
 -->
