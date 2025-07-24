@@ -109,11 +109,11 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
-We will now move on to implementing an internal `insert` function.
+We will now move on to implementing an internal `insert` function. And this is simple. To insert a node into a BST, we just need to search for where it should belong in the BST and then 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1NjIxNDAzLC0yNzUxODk2MDQsLTUwMz
-IxNjE5MiwxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3
-MCwxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMT
-kyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYz
-LC00NzU3NjI1OTEsLTcyMjQwNTk0NV19
+eyJoaXN0b3J5IjpbMTYzMzQ1NTIyMiwtMjc1MTg5NjA0LC01MD
+MyMTYxOTIsMTA2MzYwODUwMiwxNTk0MDA2MDcwLC01NzIxMjg1
+NzAsMTc0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYxODM5LD
+E5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5Njg2
+MywtNDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
 -->
