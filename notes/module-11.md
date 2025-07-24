@@ -19,9 +19,11 @@ This is the unified process of searching that we have in a BST, which  gives the
 
 Simply speaking, a BST is a binary tree that is organized in a way where all the nodes in its left subtree are smaller than it and all of the nodes in the right subtree are bigger than it.
 
-Finding a node in a BST is $O(h)$, where $h$ is the height of the tree. This is because the worst case occurs when we have to traverse all the way to the root of a lea
+Finding a node in a BST is $O(h)$, where $h$ is the height of the tree. This is because the worst case occurs when we have to traverse all the way to the root of a leaf, which takes $h$ steps.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTEyNTc1MiwtMTE1NjU2MTgzOSwxOT
+eyJoaXN0b3J5IjpbMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOT
 I2ODAzNDQsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMs
 LTQ3NTc2MjU5MSwtNzIyNDA1OTQ1XX0=
 -->
