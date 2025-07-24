@@ -106,10 +106,10 @@ BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
 
 However, there are some questions to ask, especially since this was a recursive approach.
 
-1. What if the tree is really tall? 
+1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjkzMDUwLDE1OTQwMDYwNzAsLTU3Mj
-EyODU3MCwxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4
-MzksMTkyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMj
-k2ODYzLC00NzU3NjI1OTEsLTcyMjQwNTk0NV19
+eyJoaXN0b3J5IjpbMTA2MzYwODUwMiwxNTk0MDA2MDcwLC01Nz
+IxMjg1NzAsMTc0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYx
+ODM5LDE5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMD
+I5Njg2MywtNDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
 -->
