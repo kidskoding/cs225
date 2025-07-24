@@ -13,11 +13,11 @@ Mathematically speaking, for tree $T$ to be a BST:
 
 $x$ is a key in $T_L$, where $x < r$ and a key in $T_R$, where $x > r$
 
-This creates structure in the tree, where if I wanted to find a node like 21, I would start searching from the root node, and then check if 21 is greater than or less than the root node and then descend to the right or left subtree respectively and repeat the process until I find the node of 21.
+This creates structure in the tree, where if I wanted to find a node like 21, I would start searching from the root node, and then check if 21 is greater than or less than the root node and then descend to the right or left subtree respectively and repeat the process until I find the node of 21. In this process, we rule out half one of the subtrees.
 
 This is the unified process of searching that we have in a BST, which  gives the tree a proper structure, giving each node's position a meaning.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzg5MjQwNywxOTI2ODAzNDQsNzAyOT
+eyJoaXN0b3J5IjpbLTEyNTkyNjExNSwxOTI2ODAzNDQsNzAyOT
 ExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NTc2MjU5MSwt
 NzIyNDA1OTQ1XX0=
 -->
