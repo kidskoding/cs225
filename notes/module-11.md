@@ -109,11 +109,13 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
-We will now move on to implementing an internal `insert` function (`_insert`). And this is simple. To insert a node into a BST, we just need to search for where it should belong in the BST and then just 
+We will now move on to implementing an internal `insert` function (`_insert`). And this is simple. To insert a node into a BST, we just need to search for where it should belong in the BST and then just assign it to a new `TreeNode` with the given key and value
+
+The reason why this works is because when we search for the proper position in the BST to insert the node into, that node's pointer will **always** be null and when calling `_find`, we get a pointer as a reference to that null pointer**, meaning we can directly assign a new `TreeNode` to it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI1ODAxNzI5LC0yNzUxODk2MDQsLTUwMz
-IxNjE5MiwxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3
-MCwxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMT
-kyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYz
-LC00NzU3NjI1OTEsLTcyMjQwNTk0NV19
+eyJoaXN0b3J5IjpbMTQ0MjM2Mzk5Nyw3MjU4MDE3MjksLTI3NT
+E4OTYwNCwtNTAzMjE2MTkyLDEwNjM2MDg1MDIsMTU5NDAwNjA3
+MCwtNTcyMTI4NTcwLDE3NDQ3OTI3NTQsMTkxOTUyNzcyOCwtMT
+E1NjU2MTgzOSwxOTI2ODAzNDQsNzAyOTExOTIzLDU0MDAyOTEw
+Myw1MzAyOTY4NjMsLTQ3NTc2MjU5MSwtNzIyNDA1OTQ1XX0=
 -->
