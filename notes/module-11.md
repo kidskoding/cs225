@@ -109,9 +109,9 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
-We will come back to the external `find` implementation later. We will move on to the other func
+We will now move on to implementing an internal `insert` function.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5MjY4MjQxLC0yNzUxODk2MDQsLTUwMz
+eyJoaXN0b3J5IjpbNjQ1NjIxNDAzLC0yNzUxODk2MDQsLTUwMz
 IxNjE5MiwxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3
 MCwxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMT
 kyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYz
