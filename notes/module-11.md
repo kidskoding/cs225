@@ -90,10 +90,26 @@ Otherwise, we can just call `_find` and then return the root's right node and th
 
 This full code for internal find, `_find`, is shown below
 
+```
+template <class K, class V>
+BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
+    if(root == nullptr) { return root; }
+    if(root->key == key) { return key; }
 
+    if(root->key > key) {
+        return _find(root->left, key);
+    }
+
+    return _find(root->right, key);
+}
+```
+
+However, there are some questions to ask, especially since this was a recursive approach.
+
+1. What if the tree is really tall? 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3ND
-Q3OTI3NTQsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAz
-NDQsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NT
-c2MjU5MSwtNzIyNDA1OTQ1XX0=
+eyJoaXN0b3J5IjpbLTkxMjkzMDUwLDE1OTQwMDYwNzAsLTU3Mj
+EyODU3MCwxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4
+MzksMTkyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMj
+k2ODYzLC00NzU3NjI1OTEsLTcyMjQwNTk0NV19
 -->
