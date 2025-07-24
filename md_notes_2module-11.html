@@ -161,7 +161,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line">}</div>
 </div><!-- fragment --><p>This internal <code>_find</code> is a lot like <code>find</code> from a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>. It returns a pointer to a reference of a <code>TreeNode</code>. This returns the pointer that points to the node that has the key that exists somewhere in my tree data structure. Or if not, the last pointer I found while trying to find it. And then we take in the <code>root</code>, which is our recursion and the <code>key</code></p>
-<p>Since this is a recursive problem we first need to figure out our base case, which is just checking if our root's key is equal to the key we want to find. If it is, we should just return the root, since it is a pointer as a reference to the root node!      </p>
+<p>Since this is a recursive problem we first need to figure out our base case, which is just checking if our root's key is equal to the key we want to find. If it is, we should just return the root, since it is a pointer as a reference to the root node!</p>
+<p>However, this code will crash if <code>root</code> is null, so we need to add another base case to check if <code>root</code> is null.      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
