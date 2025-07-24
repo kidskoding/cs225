@@ -17,9 +17,11 @@ This creates structure in the tree, where if I wanted to find a node like 21, I 
 
 This is the unified process of searching that we have in a BST, which  gives the tree a proper structure, giving each node's position a meaning.
 
-Simply speaking, a BST is a binary tree that is organized in a way where all the nodes in its left subtree are smalle
+Simply speaking, a BST is a binary tree that is organized in a way where all the nodes in its left subtree are smaller than it and all of the nodes in the right subtree are bigger than it.
+
+Finding a node in a BST is $O(h)$, where $h$ is the height of the tree. This is because the worst case occurs when we have to traverse all the way to the root of a lea
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyMjczODcwLC0xMTU2NTYxODM5LDE5Mj
-Y4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5Njg2Mywt
-NDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
+eyJoaXN0b3J5IjpbLTMyNTEyNTc1MiwtMTE1NjU2MTgzOSwxOT
+I2ODAzNDQsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMs
+LTQ3NTc2MjU5MSwtNzIyNDA1OTQ1XX0=
 -->
