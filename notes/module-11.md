@@ -83,9 +83,11 @@ This internal `_find` is a lot like `find` from a `LinkedList`. It returns a poi
 Since this is a recursive problem we first need to figure out our base case, which is just checking if our root's key is equal to the key we want to find. If it is, we should just return the root, since it is a pointer as a reference to the root node!
 
 However, this code will crash if `root` is null, so we need to add another base case to check if `root` is null. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0NTcxNTcyLC01NzIxMjg1NzAsMTc0ND
-c5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4MDM0
-NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5Njg2MywtNDc1Nz
-YyNTkxLC03MjI0MDU5NDVdfQ==
+eyJoaXN0b3J5IjpbLTExOTkzNTQ4NjQsLTU3MjEyODU3MCwxNz
+Q0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgw
+MzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYzLC00Nz
+U3NjI1OTEsLTcyMjQwNTk0NV19
 -->
