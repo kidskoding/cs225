@@ -84,9 +84,15 @@ Since this is a recursive problem we first need to figure out our base case, whi
 
 However, this code will crash if `root` is null, so we need to add another base case to check if `root` is null. 
 
-Then, we need to check if the root's key is greater than the given key, and if so, we call `_find` and return  key of the root's left node
+Then, we need to check if the root's key is greater than the given key, and if so, we call `_find` and return the root's left node and the key
+
+Otherwise, we can just call `_find` and then return the root's right node and the key
+
+This full code for internal find, `_find`, is shown below
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTMxNjQzNCwtNTcyMTI4NTcwLDE3ND
+eyJoaXN0b3J5IjpbMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3ND
 Q3OTI3NTQsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAz
 NDQsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NT
 c2MjU5MSwtNzIyNDA1OTQ1XX0=
