@@ -20,8 +20,40 @@ This is the unified process of searching that we have in a BST, which  gives the
 Simply speaking, a BST is a binary tree that is organized in a way where all the nodes in its left subtree are smaller than it and all of the nodes in the right subtree are bigger than it.
 
 Finding a node in a BST is $O(h)$, where $h$ is the height of the tree. This is because the worst case occurs when we have to traverse all the way to the root of a leaf, which takes $h$ steps. This means that $O(h) \equiv O(n)$ because the height $h$ can be as large as $n$ in the worst case.
+
+Below is a good concrete implementation of a BST
+
+```
+// BST.h
+
+#pragma once
+#include <unordered_map>
+
+template <class K, class V>
+class BST {
+public:
+    using TreeIterator = typename std::unordered_map<K, V>::iterator;
+
+    BST();
+    void insert(const K key, const K value);
+    void remove(const K& key);
+    TreeIterator find(const K& key);
+    TreeIterator begin();
+    TreeIterator end();
+
+private:
+    struct TreeNode {
+        TreeNode* left;
+        TreeNode* right;
+        K key;
+        V value;
+    };
+
+    TreeNode* root;
+};
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDMyMzkxOCwxOTE5NTI3NzI4LC0xMT
+eyJoaXN0b3J5IjpbMTE1OTY3MzA4NSwxOTE5NTI3NzI4LC0xMT
 U2NTYxODM5LDE5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAz
 LDUzMDI5Njg2MywtNDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
 -->
