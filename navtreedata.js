@@ -128,7 +128,9 @@ var NAVTREE =
       ] ],
       [ "Using Binary Trees as a Search Structure", "md_notes_2module-10.html#autotoc_md82", null ]
     ] ],
-    [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", null ],
+    [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", [
+      [ "find", "md_notes_2module-11.html#autotoc_md84", null ]
+    ] ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
     [ "Module 13 - BST Rotations", "md_notes_2module-13.html", null ],
     [ "Module 14 - AVL Trees", "md_notes_2module-14.html", null ],
