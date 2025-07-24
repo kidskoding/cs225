@@ -142,7 +142,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">};</div>
 </div><!-- fragment --><p>This looks great, it shows the exact functionalities we need for our BST</p>
 <ul>
-<li><code>find</code> - Will be used to find a node in a BST. Returns a custom implemented <code>TreeIterator</code> that behaves like the STL iterator of a template library</li>
+<li><code>find</code> - Will be used to find a node in a BST. Returns a custom implemented <code>TreeIterator</code> that behaves like the STL iterator of a template library. This is because we want to return</li>
 <li><code>insert</code> - Will be used to insert a node into a BST</li>
 <li><code>remove</code> - Will be used to remove a node from a BST</li>
 </ul>
@@ -151,7 +151,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <code>find</code></h1>
 <p>To implement find in a BST, the process is pretty straightforward</p>
 <ol type="1">
-<li>Visit the root node; if it's greater     </li>
+<li>Visit the root node; if it's greater than the root node, descend into the right subtree and visit its node. otherwise, descend into the left subtree and visit its node.</li>
+<li>Repeat step one for each node as you descend until you find the node and return it     </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
