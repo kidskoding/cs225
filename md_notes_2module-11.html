@@ -156,8 +156,11 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <li>Otherwise, return the iterator's <code>.end()</code> behavior if the node was not found in the BST</li>
 </ol>
 <p>First we will begin with the internal find (<code>_find</code>). The external find function will just wrap the internal find with <code>root</code>, and then dealing with the case when the pointer is null and returning an iterator to the <code>end</code> rather than an iterator to that node.</p>
-<p>template &lt;class K, class V&gt; BST&lt;K, V&gt;::TreeNode*&amp; BST&lt;K, V&gt;::_find(TreeNode*&amp; root, const K&amp; key) {</p>
-<p>} ```      </p>
+<div class="fragment"><div class="line">template &lt;class K, class V&gt;</div>
+<div class="line">BST&lt;K, V&gt;::TreeNode*&amp; BST&lt;K, V&gt;::_find(TreeNode*&amp; root, const K&amp; key) {</div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --><p>This internal <code>_find</code> is a lot like <code>find</code> from a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>. It returns a pointer to a reference of a <code>TreeNode</code>.      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
