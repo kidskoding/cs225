@@ -80,10 +80,10 @@ BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
 
 This internal `_find` is a lot like `find` from a `LinkedList`. It returns a pointer to a reference of a `TreeNode`. This returns the pointer that points to the node that has the key that exists somewhere in my tree data structure. Or if not, the last pointer I found while trying to find it. And then we take in the `root`, which is our recursion and the `key`
 
-
+Since this is a recursive problem we first need to figure out our base case, which is just checking if our root's key is equal to the key we want to find. If it is, we should just return the root, since it is a pointer as a reference to the root node!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzOTM5NjQzLC01NzIxMjg1NzAsMTc0ND
-c5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4MDM0
-NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5Njg2MywtNDc1Nz
-YyNTkxLC03MjI0MDU5NDVdfQ==
+eyJoaXN0b3J5IjpbLTk0MzczNTQ3NSwtNTcyMTI4NTcwLDE3ND
+Q3OTI3NTQsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAz
+NDQsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NT
+c2MjU5MSwtNzIyNDA1OTQ1XX0=
 -->
