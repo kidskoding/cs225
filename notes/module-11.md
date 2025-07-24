@@ -111,9 +111,9 @@ However, there are some questions to ask, especially since this was a recursive 
 
 We will now move on to implementing an internal `insert` function (`_insert`). And this is simple. To insert a node into a BST, we just need to search for where it should belong in the BST and then just assign it to a new `TreeNode` with the given key and value
 
-The reason why this works is because when we search for the proper position in the BST to insert the node into, that node's pointer will **always** be null and when calling `_find`, we get a pointer as a reference to that null pointer**, meaning we can directly assign a new `TreeNode` to it.
+The reason why this works is because when we search for the proper position in the BST to insert the node into, that node's pointer will **always** be null because it does not exist in the BST. Therefore, when calling `_find`, we get a pointer as a reference to that null pointer, meaning we can directly assign a new `TreeNode` to it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MjM2Mzk5Nyw3MjU4MDE3MjksLTI3NT
+eyJoaXN0b3J5IjpbMTQ1MDY4OTUwNSw3MjU4MDE3MjksLTI3NT
 E4OTYwNCwtNTAzMjE2MTkyLDEwNjM2MDg1MDIsMTU5NDAwNjA3
 MCwtNTcyMTI4NTcwLDE3NDQ3OTI3NTQsMTkxOTUyNzcyOCwtMT
 E1NjU2MTgzOSwxOTI2ODAzNDQsNzAyOTExOTIzLDU0MDAyOTEw
