@@ -55,7 +55,7 @@ private:
 
 This looks great, it shows the exact functionalities we need for our BST
 
-- `find` - Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library
+- `find` - Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library. This is because we want to return 
 - `insert` - Will be used to insert a node into a BST
 - `remove` - Will be used to remove a node from a BST
 
@@ -65,9 +65,10 @@ Lets first start with the simplest implementation, `find`
 
 To implement find in a BST, the process is pretty straightforward
 
-1. Visit the root node; if it's greater
+1. Visit the root node; if it's greater than the root node, descend into the right subtree and visit its node. otherwise, descend into the left subtree and visit its node.
+2. Repeat step one for each node as you descend until you find the node and return it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY0MDk4MCwxOTE5NTI3NzI4LC0xMT
+eyJoaXN0b3J5IjpbLTY4NzYwOTEzOSwxOTE5NTI3NzI4LC0xMT
 U2NTYxODM5LDE5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAz
 LDUzMDI5Njg2MywtNDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
 -->
