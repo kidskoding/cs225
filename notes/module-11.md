@@ -68,8 +68,11 @@ To implement find in a BST, the process is pretty straightforward
 1. Visit the root node; if it's greater than the root node, descend into the right subtree and visit its node. otherwise, descend into the left subtree and visit its node.
 2. Repeat step one for each node as you descend until you find the node and return it
 3. Otherwise, return the iterator's `.end()` behavior if the node was not found in the BST
+
+First we will begin with the internal find. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMT
-U2NTYxODM5LDE5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAz
-LDUzMDI5Njg2MywtNDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
+eyJoaXN0b3J5IjpbLTU3MjEyODU3MCwxNzQ0NzkyNzU0LDE5MT
+k1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMzQ0LDcwMjkxMTky
+Myw1NDAwMjkxMDMsNTMwMjk2ODYzLC00NzU3NjI1OTEsLTcyMj
+QwNTk0NV19
 -->
