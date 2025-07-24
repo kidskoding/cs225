@@ -109,11 +109,11 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
-
+We will come back to the external `find` implementation later. We will move on to the other func
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTE4OTYwNCwtNTAzMjE2MTkyLDEwNj
-M2MDg1MDIsMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3NDQ3OTI3
-NTQsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAzNDQsNz
-AyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NTc2MjU5
-MSwtNzIyNDA1OTQ1XX0=
+eyJoaXN0b3J5IjpbNDY5MjY4MjQxLC0yNzUxODk2MDQsLTUwMz
+IxNjE5MiwxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3
+MCwxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMT
+kyNjgwMzQ0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYz
+LC00NzU3NjI1OTEsLTcyMjQwNTk0NV19
 -->
