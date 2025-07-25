@@ -10,5 +10,6 @@ var searchData=
   ['list_20tt_20implementation_7',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
   ['list_20tt_20implementations_8',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
   ['listnode_9',['ListNode',['../structListNode.html',1,'']]],
-  ['lists_10',['Lists',['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41',1,'Lists'],['../md_notes_2midterm-reviews_2midterm-1.html',1,'Midterm 1 - Lists']]]
+  ['lists_10',['Lists',['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41',1,'Lists'],['../md_notes_2midterm-reviews_2midterm-1.html',1,'Midterm 1 - Lists']]],
+  ['llqueue_11',['LLQueue',['../classLLQueue.html',1,'']]]
 ];

@@ -11,13 +11,14 @@ var searchData=
   ['binarytree_8',['BinaryTree',['../classBinaryTree.html',1,'']]],
   ['bipartite_20graph_9',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
   ['bloom_20filters_10',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
-  ['bst_20and_20bst_20implementation_11',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20balance_12',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bst_20implementation_13',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20rotations_14',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['btree_20analysis_15',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
-  ['btrees_16',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_17',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_18',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md60',1,'']]],
-  ['by_20induction_19',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
+  ['bst_11',['BST',['../classBST.html',1,'']]],
+  ['bst_20and_20bst_20implementation_12',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['bst_20balance_13',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
+  ['bst_20implementation_14',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['bst_20rotations_15',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
+  ['btree_20analysis_16',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
+  ['btrees_17',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
+  ['by_20adding_202_20elements_20every_20time_18',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'']]],
+  ['by_20doubling_20the_20elements_20every_20time_19',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md60',1,'']]],
+  ['by_20induction_20',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
 ];
