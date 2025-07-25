@@ -10,9 +10,10 @@ private:
     };
 
     TreeNode* root;
-    
+
 public:
     void preOrderTraversal(TreeNode* curr);
     void inOrderTraversal(TreeNode* curr);
     void postOrderTraversal(TreeNode* curr);
+    void levelOrderTraversal();
 };
