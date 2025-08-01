@@ -114,11 +114,12 @@ We will now move on to implementing an internal `insert` function (`_insert`). A
 The reason why this works is because when we search for the proper position in the BST to insert the node into, that node's pointer will **always** be null because it does not exist in the BST. Therefore, when calling `_find`, we get a pointer as a reference to that null pointer, meaning we can directly assign a new `TreeNode` to it.
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDY4MzAwMTksMTQ1MDY4OTUwNSw3Mj
-U4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLDEwNjM2MDg1
-MDIsMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3NDQ3OTI3NTQsMT
-kxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAzNDQsNzAyOTEx
-OTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NTc2MjU5MSwtNz
-IyNDA1OTQ1XX0=
+eyJoaXN0b3J5IjpbMTkxMDI1MzM1NSwtMjAwNjgzMDAxOSwxND
+UwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5NjA0LC01MDMyMTYx
+OTIsMTA2MzYwODUwMiwxNTk0MDA2MDcwLC01NzIxMjg1NzAsMT
+c0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4
+MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5Njg2MywtND
+c1NzYyNTkxLC03MjI0MDU5NDVdfQ==
 -->
