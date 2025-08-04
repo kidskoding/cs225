@@ -148,15 +148,13 @@ Its a preference as to which method is better for writing `_insert`; the first o
 
 The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
 
-However, this actually will only work if the node is a **leaf node**. If the node has children, doing so would disconnect and lose the subtrees of the removed node, which breaks the structure of the BST. Therefore, to remove a node with children, we need to replace the node with its inorder predecessor or successor, to maintain the BST properties while properly deleting the target node.
-
-
+However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjE1OTc4OCwxNzI0NjYxNjY0LDgzMj
-A1MTQ2NSwyMDM0NDgxNTIwLC05ODc5MTQ3NDksLTE4MDU1NDc1
-MzksMTkxMDI1MzM1NSwtMjAwNjgzMDAxOSwxNDUwNjg5NTA1LD
-cyNTgwMTcyOSwtMjc1MTg5NjA0LC01MDMyMTYxOTIsMTA2MzYw
-ODUwMiwxNTk0MDA2MDcwLC01NzIxMjg1NzAsMTc0NDc5Mjc1NC
-wxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4MDM0NCw3MDI5
-MTE5MjNdfQ==
+eyJoaXN0b3J5IjpbMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3Mj
+Q2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0
+OSwtMTgwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LD
+E0NTA2ODk1MDUsNzI1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIx
+NjE5MiwxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MC
+wxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTky
+NjgwMzQ0XX0=
 -->
