@@ -109,17 +109,18 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
-We will now move on to implementing an internal `insert` function (`_insert`). And this is simple. To insert a node into a BST, we just need to search for where it should belong in the BST and then assign it to a new `TreeNode` with the given key and value
+We will now implement an internal `insert` function called `_insert`. The process is simple: to insert a node into a Binary Search Tree (BST), we search for the position where the new node should go, and then assign a new `TreeNode` with the given key and value at that location.
 
-The reason why this works is because when we search for the proper position in the BST to insert the node into, that node's pointer will **always** be null because it does not exist in the BST. Therefore, when calling `_find`, we get a pointer as a reference to that null pointer, meaning we can directly assign a new `TreeNode` to it.
+This works because, when we search for the correct position in the BST, we eventually reach a `null` pointer — since the key does not already exist in the tree. The `_find` function returns a **reference to that pointer**, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new `TreeNode` to that location, effectively inserting the node into the tree.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMj
-AwNjgzMDAxOSwxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5
-NjA0LC01MDMyMTYxOTIsMTA2MzYwODUwMiwxNTk0MDA2MDcwLC
-01NzIxMjg1NzAsMTc0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2
-NTYxODM5LDE5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAzLD
-UzMDI5Njg2MywtNDc1NzYyNTkxLC03MjI0MDU5NDVdfQ==
+eyJoaXN0b3J5IjpbLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOT
+EwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNzI1ODAx
+NzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4NTAyLD
+E1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0NzkyNzU0LDE5MTk1
+Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMzQ0LDcwMjkxMTkyMy
+w1NDAwMjkxMDMsNTMwMjk2ODYzLC00NzU3NjI1OTEsLTcyMjQw
+NTk0NV19
 -->
