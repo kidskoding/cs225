@@ -184,7 +184,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 </ul>
 </li>
 </ol>
-<p>We will now move on to implementing an internal <code>insert</code> function (<code>_insert</code>). And this is simple. To insert a node into a <a class="el" href="classBST.html">BST</a>, we just need to search for where it should belong in the <a class="el" href="classBST.html">BST</a> and then just assign it to a new <code>TreeNode</code> with the given key and value</p>
+<p>We will now move on to implementing an internal <code>insert</code> function (<code>_insert</code>). And this is simple. To insert a node into a <a class="el" href="classBST.html">BST</a>, we just need to search for where it should belong in the <a class="el" href="classBST.html">BST</a> and then assign it to a new <code>TreeNode</code> with the given key and value</p>
 <p>The reason why this works is because when we search for the proper position in the <a class="el" href="classBST.html">BST</a> to insert the node into, that node's pointer will <b>always</b> be null because it does not exist in the <a class="el" href="classBST.html">BST</a>. Therefore, when calling <code>_find</code>, we get a pointer as a reference to that null pointer, meaning we can directly assign a new <code>TreeNode</code> to it.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
