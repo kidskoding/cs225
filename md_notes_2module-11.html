@@ -184,8 +184,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 </ul>
 </li>
 </ol>
-<p>We will now move on to implementing an internal <code>insert</code> function (<code>_insert</code>). And this is simple. To insert a node into a <a class="el" href="classBST.html">BST</a>, we just need to search for where it should belong in the <a class="el" href="classBST.html">BST</a> and then assign it to a new <code>TreeNode</code> with the given key and value</p>
-<p>The reason why this works is because when we search for the proper position in the <a class="el" href="classBST.html">BST</a> to insert the node into, that node's pointer will <b>always</b> be null because it does not exist in the <a class="el" href="classBST.html">BST</a>. Therefore, when calling <code>_find</code>, we get a pointer as a reference to that null pointer, meaning we can directly assign a new <code>TreeNode</code> to it.</p>
+<p>We will now implement an internal <code>insert</code> function called <code>_insert</code>. The process is simple: to insert a node into a Binary Search Tree (<a class="el" href="classBST.html">BST</a>), we search for the position where the new node should go, and then assign a new <code>TreeNode</code> with the given key and value at that location.</p>
+<p>This works because, when we search for the correct position in the <a class="el" href="classBST.html">BST</a>, we eventually reach a <code>null</code> pointer — since the key does not already exist in the tree. The <code>_find</code> function returns a <b>reference to that pointer</b>, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new <code>TreeNode</code> to that location, effectively inserting the node into the tree.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
