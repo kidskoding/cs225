@@ -118,14 +118,14 @@ The code for internal insert, `_insert` is shown below
 ```
 template <class K, class V>
 void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
-	// Create a new `TreeNode` and place it in the position that was returned by `_find`
+	// Create a new `TreeNode` at the null pointer location returned by `_find`
     _find(key) = new TreeNode(key, value);
 }
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjc1NjY1NywtOTg3OTE0NzQ5LC0xOD
+eyJoaXN0b3J5IjpbMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xOD
 A1NTQ3NTM5LDE5MTAyNTMzNTUsLTIwMDY4MzAwMTksMTQ1MDY4
 OTUwNSw3MjU4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLD
 EwNjM2MDg1MDIsMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3NDQ3
