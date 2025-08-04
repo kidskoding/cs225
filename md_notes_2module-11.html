@@ -194,7 +194,9 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">}</div>
 </div><!-- fragment --><p>This code looks a little bit weird, but it makes sense</p>
 <ol type="1">
-<li>Recall that <code>_find(root, key)</code> returns a <b>reference to a pointer</b> (<code>TreeNode*&amp;</code>), specifically the pointer in the tree where the node with <code>key</code> should be located.</li>
+<li>Recall that <code>_find(root, key)</code> returns a <b>reference to a pointer</b> (<code>TreeNode*&amp;</code>), specifically the pointer in the tree where the node with <code>key</code> should be located</li>
+<li>When the key doesn’t exist, that pointer is <b>null</b></li>
+<li>Because <code>_find</code> returns a <b>reference to that pointer</b>, you can assign to it <b>directly</b></li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
