@@ -115,15 +115,21 @@ This works because, when we search for the correct position in the BST, we event
 
 The code for internal insert, `_insert` is shown below
 
-
+```
+template <class K, class V>
+void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
+	// Create a new `TreeNode` and place it in the position that was returned by `_find`
+    _find(key) = new TreeNode(key, value);
+}
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTI0Nzc1NjQsLTk4NzkxNDc0OSwtMT
-gwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2
-ODk1MDUsNzI1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5Mi
-wxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0
-NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMz
-Q0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYzLC00NzU3
-NjI1OTFdfQ==
+eyJoaXN0b3J5IjpbLTgyNjc1NjY1NywtOTg3OTE0NzQ5LC0xOD
+A1NTQ3NTM5LDE5MTAyNTMzNTUsLTIwMDY4MzAwMTksMTQ1MDY4
+OTUwNSw3MjU4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLD
+EwNjM2MDg1MDIsMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3NDQ3
+OTI3NTQsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAzND
+QsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NTc2
+MjU5MV19
 -->
