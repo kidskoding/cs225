@@ -55,8 +55,13 @@ Take a look at the following `CircularQueue` implementation below
 template <typename T>
 class CircularQueue {
 public:
+	// Adds an element to the rear of the queue
     void enqueue(T e);
+	
+	// Removes and returns the element at the front of the queue
     T dequeue();
+	
+	// Returns `true` if the queue is empty; `false` otherwise
     bool isEmpty();
 private:
     T* items;
@@ -99,5 +104,5 @@ This effectively describes implementing a queue in depth via a `CircularQueue`. 
 
 Typically from a hardware standpoint, we don't resize a queue. In hardware, memory is already preallocated and doesn't change at runtime.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDc3Mzc3MDddfQ==
+eyJoaXN0b3J5IjpbLTEyMTAzNTgzMTBdfQ==
 -->
