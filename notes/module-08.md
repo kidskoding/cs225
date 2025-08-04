@@ -95,9 +95,27 @@ struct TreeNode {
 };
 ```
 
-With this, it makes sense for our root to also be a **pointer** to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access and avoids copying data unecessarily, allowing the tree to grow dynamically in memory without using too much overhead
+With this, it makes sense for our root to also be a **pointer** to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access and avoids copying data unecessarily, allowing the tree to grow dynamically in memory without using too much overhead. The `BinaryTree` class is reflected below
 
+```
+template <class T>
+class BinaryTree {
+private:
+    struct TreeNode {
+        // the data each tree node holds
+        T data;
 
+        // a pointer to the left child `TreeNode` (or `nullptr` if non-existent)
+        TreeNode* left;
+
+        // a pointer to the right child `TreeNode` (or `nullptr` if non-existent)
+        TreeNode* right;
+    };
+
+    // a pointer to the root node of a tree
+    TreeNode* root;
+}
+```
 
 In memory, each tree node is created on the heap, and the `root` pointer (on the stack) points to the first node. Each node's `left` and `right` fields store pointers to other nodes on the heap, linking them together without copying any data. This allows the tree to grow dynamically, using memory only when needed.
 
@@ -128,5 +146,5 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 	- Which equals: $(k + 1) + 1$
 	- Therefore, by induction this statement holds true for $n \geq 0$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTc0ODQxLDE2Mjc5NTk3NjldfQ==
+eyJoaXN0b3J5IjpbMjM5MDA1OTE4LDE2Mjc5NTk3NjldfQ==
 -->
