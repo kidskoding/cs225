@@ -109,18 +109,21 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
-We will now implement an internal `insert` function called `_insert`. The process is simple: to insert a node into a Binary Search Tree (BST), we search for the position where the new node should go, and then assign a new `TreeNode` with the given key and value at that location.
+We will now implement an internal insert function called `_insert`. The process is simple: to insert a node into a Binary Search Tree (BST), we search for the position where the new node should go, and then assign a new `TreeNode` with the given key and value at that location.
 
-This works because, when we search for the correct position in the BST, we eventually reach a `null` pointer — since the key does not already exist in the tree. The `_find` function returns a **reference to that pointer**, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new `TreeNode` to that location, effectively inserting the node into the tree.
+This works because, when we search for the correct position in the BST, we eventually reach a `null` pointer, since the key does not already exist in the tree. The `_find` function returns a **reference to that pointer**, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new `TreeNode` to that location, effectively inserting the node into the tree.
+
+The code for internal insert, `_insert` is shown below
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOT
-EwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNzI1ODAx
-NzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4NTAyLD
-E1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0NzkyNzU0LDE5MTk1
-Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMzQ0LDcwMjkxMTkyMy
-w1NDAwMjkxMDMsNTMwMjk2ODYzLC00NzU3NjI1OTEsLTcyMjQw
-NTk0NV19
+eyJoaXN0b3J5IjpbLTEwNTI0Nzc1NjQsLTk4NzkxNDc0OSwtMT
+gwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2
+ODk1MDUsNzI1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5Mi
+wxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0
+NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMz
+Q0LDcwMjkxMTkyMyw1NDAwMjkxMDMsNTMwMjk2ODYzLC00NzU3
+NjI1OTFdfQ==
 -->
