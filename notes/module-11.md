@@ -123,13 +123,16 @@ void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
 }
 ```
 
+This code looks a little bit weird, but it makes sense
+
+ 1. Recall that `_find(root, key)` returns a **reference to a pointer** (`TreeNode*&`), specifically the pointer in the tree where the node with `key` should be located.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xOD
-A1NTQ3NTM5LDE5MTAyNTMzNTUsLTIwMDY4MzAwMTksMTQ1MDY4
-OTUwNSw3MjU4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLD
-EwNjM2MDg1MDIsMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3NDQ3
-OTI3NTQsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAzND
-QsNzAyOTExOTIzLDU0MDAyOTEwMyw1MzAyOTY4NjMsLTQ3NTc2
-MjU5MV19
+eyJoaXN0b3J5IjpbLTI5NjI3NjY2NCwyMDM0NDgxNTIwLC05OD
+c5MTQ3NDksLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMjAwNjgz
+MDAxOSwxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5NjA0LC
+01MDMyMTYxOTIsMTA2MzYwODUwMiwxNTk0MDA2MDcwLC01NzIx
+Mjg1NzAsMTc0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2NTYxOD
+M5LDE5MjY4MDM0NCw3MDI5MTE5MjMsNTQwMDI5MTAzLDUzMDI5
+Njg2M119
 -->
