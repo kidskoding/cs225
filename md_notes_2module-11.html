@@ -187,7 +187,12 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <p>We will now implement an internal insert function called <code>_insert</code>. The process is simple: to insert a node into a Binary Search Tree (<a class="el" href="classBST.html">BST</a>), we search for the position where the new node should go, and then assign a new <code>TreeNode</code> with the given key and value at that location.</p>
 <p>This works because, when we search for the correct position in the <a class="el" href="classBST.html">BST</a>, we eventually reach a <code>null</code> pointer, since the key does not already exist in the tree. The <code>_find</code> function returns a <b>reference to that pointer</b>, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new <code>TreeNode</code> to that location, effectively inserting the node into the tree.</p>
 <p>The code for internal insert, <code>_insert</code> is shown below</p>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line">template &lt;class K, class V&gt;</div>
+<div class="line">void BST&lt;K, V&gt;::_insert(TreeNode*&amp; root, const K&amp; key, const V&amp; value) {</div>
+<div class="line">    // Create a new `TreeNode` and place it in the position that was returned by `_find`</div>
+<div class="line">    _find(key) = new TreeNode(key, value);</div>
+<div class="line">}</div>
+</div><!-- fragment --></div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
