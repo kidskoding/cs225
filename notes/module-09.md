@@ -47,10 +47,16 @@ The code for `preOrderTraversal` shown below
 ```
 template <typename T>
 void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
+    // If the current node is a null pointer (`nullptr`), halt the recursion
     if(curr == nullptr) { return; }
 
+    // Visit the current `TreeNode`
     std::cout << curr->data << " ";
+
+    // Repeat the process for the left subtree
     preOrderTraversal(curr->left);
+
+    // Repeat the process for the right subtree
     preOrderTraversal(curr->right);
 }
 ```
@@ -76,10 +82,16 @@ The code for `inOrderTraversal` is shown below
 ```
 template <typename T>
 void BinaryTree<T>::inOrderTraversal(TreeNode* curr) {
+    // If the current node is a null pointer (`nullptr`), halt the recursion
     if(curr == nullptr) { return; }
-    
+
+    // Repeat the process for the left subtree
     inOrderTraversal(curr->left);
+
+    // Visit the current `TreeNode`    
     std::cout << curr->data << " ";
+
+    // Repeat the process for the right subtree
     inOrderTraversal(curr->right);
 }
 ```
@@ -103,10 +115,16 @@ The code for `postOrderTraversal` is shown below
 ```
 template <typename T>
 void BinaryTree<T>::postOrderTraversal(TreeNode* curr) {
+    // If the current node is a null pointer (`nullptr`), halt the recursion
     if(curr == nullptr) { return; }
 
+    // Repeat the process for the left subtree
     postOrderTraversal(curr->left);
+
+    // Repeat the process for the right subtree
     postOrderTraversal(curr->right);
+
+    // Visit the current `TreeNode`
     std::cout << curr->data << " ";
 }
 ```
@@ -165,7 +183,7 @@ void BinaryTree<T>::levelOrderTraversal() {
         TreeNode* n = q.front();
         q.pop();
         
-        // If the `TreeNode` is not null, visit the node and add its left and right children to the queue
+        // Check if the front `TreeNode` is not null
         if(n != nullptr) {
             // visit the node
             std::cout << n->data << " ";
@@ -181,6 +199,6 @@ void BinaryTree<T>::levelOrderTraversal() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjg5NDI2NzIsLTIwOTUzNjc1MzZdfQ
+eyJoaXN0b3J5IjpbLTIxMDExNjE1MDUsLTIwOTUzNjc1MzZdfQ
 ==
 -->
