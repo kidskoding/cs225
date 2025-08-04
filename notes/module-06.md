@@ -64,8 +64,13 @@ public:
 	// Returns `true` if the queue is empty; `false` otherwise
     bool isEmpty();
 private:
+	// Pointer to the dynamically allocated array holding the queue elements
     T* items;
+
+	// Total capacity of the queue (number of elements it can hold)
     unsigned int capacity;
+	
+	// Current number of elements in the queue
     unsigned int size;
 };
 ```
@@ -104,5 +109,5 @@ This effectively describes implementing a queue in depth via a `CircularQueue`. 
 
 Typically from a hardware standpoint, we don't resize a queue. In hardware, memory is already preallocated and doesn't change at runtime.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTAzNTgzMTBdfQ==
+eyJoaXN0b3J5IjpbLTM3ODc2NDM3Ml19
 -->
