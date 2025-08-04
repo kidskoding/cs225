@@ -140,10 +140,16 @@ Pre Order traversal</h2>
 <p>The code for <code>preOrderTraversal</code> shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
 <div class="line">void BinaryTree&lt;T&gt;::preOrderTraversal(TreeNode* curr) {</div>
+<div class="line">    // If the current node is a null pointer (`nullptr`), halt the recursion</div>
 <div class="line">    if(curr == nullptr) { return; }</div>
 <div class="line"> </div>
+<div class="line">    // Visit the current `TreeNode`</div>
 <div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; &quot; &quot;;</div>
+<div class="line"> </div>
+<div class="line">    // Repeat the process for the left subtree</div>
 <div class="line">    preOrderTraversal(curr-&gt;left);</div>
+<div class="line"> </div>
+<div class="line">    // Repeat the process for the right subtree</div>
 <div class="line">    preOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Our <b>base case</b> occurs when the current node pointer (<code>curr</code>) is <code>nullptr</code>. This means we've reached a point in the tree where no further nodes exist (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
@@ -161,10 +167,16 @@ In Order traversal</h2>
 <p>The code for <code>inOrderTraversal</code> is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
 <div class="line">void BinaryTree&lt;T&gt;::inOrderTraversal(TreeNode* curr) {</div>
+<div class="line">    // If the current node is a null pointer (`nullptr`), halt the recursion</div>
 <div class="line">    if(curr == nullptr) { return; }</div>
-<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    // Repeat the process for the left subtree</div>
 <div class="line">    inOrderTraversal(curr-&gt;left);</div>
+<div class="line"> </div>
+<div class="line">    // Visit the current `TreeNode`    </div>
 <div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; &quot; &quot;;</div>
+<div class="line"> </div>
+<div class="line">    // Repeat the process for the right subtree</div>
 <div class="line">    inOrderTraversal(curr-&gt;right);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Our <b>base case</b> is the same as pre order, when the current node pointer (<code>curr</code>) is <code>nullptr</code>. No further nodes exist anymore (e.g. a leaf node's child) and there's nothing to process or recurse on, so we simply return.</p>
@@ -181,10 +193,16 @@ Post Order Traversal</h2>
 <p>The code for <code>postOrderTraversal</code> is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
 <div class="line">void BinaryTree&lt;T&gt;::postOrderTraversal(TreeNode* curr) {</div>
+<div class="line">    // If the current node is a null pointer (`nullptr`), halt the recursion</div>
 <div class="line">    if(curr == nullptr) { return; }</div>
 <div class="line"> </div>
+<div class="line">    // Repeat the process for the left subtree</div>
 <div class="line">    postOrderTraversal(curr-&gt;left);</div>
+<div class="line"> </div>
+<div class="line">    // Repeat the process for the right subtree</div>
 <div class="line">    postOrderTraversal(curr-&gt;right);</div>
+<div class="line"> </div>
+<div class="line">    // Visit the current `TreeNode`</div>
 <div class="line">    std::cout &lt;&lt; curr-&gt;data &lt;&lt; &quot; &quot;;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The base case is equivalent to pre and in order traversals.</p>
@@ -226,7 +244,7 @@ A different type of traversal - Level Order Traversal</h1>
 <div class="line">        TreeNode* n = q.front();</div>
 <div class="line">        q.pop();</div>
 <div class="line">        </div>
-<div class="line">        // If the `TreeNode` is not null, visit the node and add its left and right children to the queue</div>
+<div class="line">        // Check if the front `TreeNode` is not null</div>
 <div class="line">        if(n != nullptr) {</div>
 <div class="line">            // visit the node</div>
 <div class="line">            std::cout &lt;&lt; n-&gt;data &lt;&lt; &quot; &quot;;</div>
