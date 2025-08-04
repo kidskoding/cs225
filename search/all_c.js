@@ -7,7 +7,7 @@ var searchData=
   ['begin_20tt_20and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_4',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md70',1,'']]],
   ['big_20o_5',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
   ['big_20o_20of_20common_20algorithms_6',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
-  ['binary_20trees_20as_20a_20search_20structure_7',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md82',1,'']]],
+  ['binary_20trees_20as_20a_20search_20structure_7',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
   ['binarytree_8',['BinaryTree',['../classBinaryTree.html',1,'']]],
   ['bipartite_20graph_9',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
   ['bloom_20filters_10',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],

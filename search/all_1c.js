@@ -4,7 +4,7 @@ var searchData=
   ['s_20queues_1',['Stacks v.s. Queues',['../md_notes_2module-06.html#autotoc_md65',1,'']]],
   ['science_2',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
   ['search_3',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
-  ['search_20structure_4',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md82',1,'']]],
+  ['search_20structure_4',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
   ['searching_20and_20dictionaries_5',['Module 10 - Tree Searching and Dictionaries',['../md_notes_2module-10.html',1,'']]],
   ['semantics_6',['Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'Copy Semantics'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md34',1,'Move Semantics']]],
   ['sets_7',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
@@ -19,6 +19,6 @@ var searchData=
   ['std_3a_3avector_20tt_16',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
   ['strategy_17',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
   ['structs_18',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
-  ['structure_19',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md82',1,'']]],
+  ['structure_19',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
   ['structure_20',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]]
 ];

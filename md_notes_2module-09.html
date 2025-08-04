@@ -215,15 +215,23 @@ A different type of traversal - Level Order Traversal</h1>
 <p>The code for this process is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename T&gt;</div>
 <div class="line">void BinaryTree&lt;T&gt;::levelOrderTraversal() {</div>
+<div class="line">    // Create a queue to store `TreeNode` pointers at every level</div>
 <div class="line">    std::queue&lt;TreeNode*&gt; q;</div>
+<div class="line"> </div>
+<div class="line">    // Add the root `TreeNode`, `root` to the queue</div>
 <div class="line">    q.push(root);</div>
 <div class="line"> </div>
 <div class="line">    while(!q.empty()) {</div>
+<div class="line">        // Get the `TreeNode` at the front of the queue and remove it</div>
 <div class="line">        TreeNode* n = q.front();</div>
 <div class="line">        q.pop();</div>
 <div class="line">        </div>
+<div class="line">        // If the `TreeNode` is not null, visit the node and add its left and right children to the queue</div>
 <div class="line">        if(n != nullptr) {</div>
+<div class="line">            // visit the node</div>
 <div class="line">            std::cout &lt;&lt; n-&gt;data &lt;&lt; &quot; &quot;;</div>
+<div class="line"> </div>
+<div class="line">            // add the node&#39;s left and right children to the queue</div>
 <div class="line">            q.push(n-&gt;left);</div>
 <div class="line">            q.push(n-&gt;right);</div>
 <div class="line">        }</div>

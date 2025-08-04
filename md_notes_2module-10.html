@@ -99,7 +99,7 @@ $(function(){initNavTree('md_notes_2module-10.html',''); initResizable(true); })
   <div class="headertitle"><div class="title">Module 10 - Tree Searching and Dictionaries</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md79"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md80"></a></p>
 <p>A <b>traversal</b> is an algorithm that goes through every single node in a tree and visits it ($O(n)$ time)</p>
 <p>A <b>search</b> is an algorithm that finds a node in a tree of value $v$ if it exists (worst case is when $v \notin T$, where $T$ represents any tree; this involves running the full traversal, so it is in $O(n)$ time)</p>
 <p>Previously, we discussed two types of search <b>Breath First</b> and <b>Depth First</b> (<b>BFS</b> and <b>DFS</b>)</p>
@@ -113,12 +113,12 @@ $(function(){initNavTree('md_notes_2module-10.html',''); initResizable(true); })
 <p><b>Iterative Deepening</b> runs DFS with a <b>maximum depth limit</b> of $k$, meaning it will not explore any nodes beyond depth $k$ (starting at $k = 0$). When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum memory used when doing DFS is proportional to $k$ (simply the overhead cost - $O(k)$). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k+1$, and this process repeats until a solution is found.</p>
 <p>This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$ with overhead cost of $O(k)$).</p>
 <p>These are the two basic searching strategies, but they aren't that effective, since they can be slow in both time and memory. But what if there was a data structure that put searching at its forefront, which is essentially what a <b>map</b> or <b>dictionary</b> does</p>
-<h1><a class="anchor" id="autotoc_md80"></a>
+<h1><a class="anchor" id="autotoc_md81"></a>
 Dictionaries</h1>
 <p>Dictionaries store <b>key-value</b> pairs, just like a regular dictionary, which stores words to definitions. If I had a word, I can use a dictionary to look up its definition! This could be done most optimally using binary search, where I start from the middle and then slowly go left or right based on whether the word I’m looking for comes before or after the middle word alphabetically.</p>
 <p>This is just one example of a dictionary though, we can use it to look up students using their unique ID numbers (UIUC UIN) or by looking at a Flight number (<b>key</b>) for its departure time/arrival time (<b>value</b>).</p>
 <p>In fact, an array really is just a dictionary, because we use an index (<b>key</b>) to lookup the value of an element that is present in the array (<b>value</b>)</p>
-<h2><a class="anchor" id="autotoc_md81"></a>
+<h2><a class="anchor" id="autotoc_md82"></a>
 Dictionary Interface (ADT)</h2>
 <ul>
 <li><code>insert(key, value)</code> - insert a key and value into the dictionary</li>
@@ -148,7 +148,7 @@ Dictionary Interface (ADT)</h2>
 <div class="line"> </div>
 <div class="line">};</div>
 </div><!-- fragment --><p>Our custom dictionary implements an iterator by leveraging C++’s standard library iterator from the underlying data structure of <code>std::unordered_map</code> . This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like <code>begin()</code>, <code>end()</code>, and <code>find()</code>.</p>
-<h1><a class="anchor" id="autotoc_md82"></a>
+<h1><a class="anchor" id="autotoc_md83"></a>
 Using Binary Trees as a Search Structure</h1>
 <p>In the context of a tree, these three functionalities of a dictionary, <code>insert</code>, <code>remove</code>, and <code>find</code>, are reflected below</p>
 <table class="markdownTable">
