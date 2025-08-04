@@ -144,13 +144,15 @@ void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
 
 There is a bug if you don't add the ampersand to the `TreeNode*` type when creating `loc`, since that then creates a copy pointer which changing it only changes the copy
 
-Its a preference which way the
+Its a preference as to which method is better for writing `_insert`; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3MDYyNDkwLDE3MjQ2NjE2NjQsODMyMD
-UxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUz
-OSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNz
-I1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4
-NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0NzkyNzU0LD
-E5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMzQ0LDcwMjkx
-MTkyM119
+eyJoaXN0b3J5IjpbLTcwNzUxMTM4NSwxNzI0NjYxNjY0LDgzMj
+A1MTQ2NSwyMDM0NDgxNTIwLC05ODc5MTQ3NDksLTE4MDU1NDc1
+MzksMTkxMDI1MzM1NSwtMjAwNjgzMDAxOSwxNDUwNjg5NTA1LD
+cyNTgwMTcyOSwtMjc1MTg5NjA0LC01MDMyMTYxOTIsMTA2MzYw
+ODUwMiwxNTk0MDA2MDcwLC01NzIxMjg1NzAsMTc0NDc5Mjc1NC
+wxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4MDM0NCw3MDI5
+MTE5MjNdfQ==
 -->
