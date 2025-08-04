@@ -153,8 +153,13 @@ Stacks v.s. Queues</h1>
 <div class="line">    // Returns `true` if the queue is empty; `false` otherwise</div>
 <div class="line">    bool isEmpty();</div>
 <div class="line">private:</div>
+<div class="line">    // Pointer to the dynamically allocated array holding the queue elements</div>
 <div class="line">    T* items;</div>
+<div class="line"> </div>
+<div class="line">    // Total capacity of the queue (number of elements it can hold)</div>
 <div class="line">    unsigned int capacity;</div>
+<div class="line">    </div>
+<div class="line">    // Current number of elements in the queue</div>
 <div class="line">    unsigned int size;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>This queue is an Array implementation, where data is stored in an array that <code>items</code> points to.</p>
