@@ -144,8 +144,13 @@ Stacks v.s. Queues</h1>
 <div class="line">template &lt;typename T&gt;</div>
 <div class="line">class CircularQueue {</div>
 <div class="line">public:</div>
+<div class="line">    // Adds an element to the rear of the queue</div>
 <div class="line">    void enqueue(T e);</div>
+<div class="line">    </div>
+<div class="line">    // Removes and returns the element at the front of the queue</div>
 <div class="line">    T dequeue();</div>
+<div class="line">    </div>
+<div class="line">    // Returns `true` if the queue is empty; `false` otherwise</div>
 <div class="line">    bool isEmpty();</div>
 <div class="line">private:</div>
 <div class="line">    T* items;</div>
