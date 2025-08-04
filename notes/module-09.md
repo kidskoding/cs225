@@ -154,15 +154,23 @@ The code for this process is shown below
 ```
 template <typename T>
 void BinaryTree<T>::levelOrderTraversal() {
+    // Create a queue to store `TreeNode` pointers at every level
     std::queue<TreeNode*> q;
+
+    // Add the root `TreeNode`, `root` to the queue
     q.push(root);
 
     while(!q.empty()) {
+        // Get the `TreeNode` at the front of the queue and remove it
         TreeNode* n = q.front();
         q.pop();
         
+        // If the `TreeNode` is not null, visit the node and add its left and right children to the queue
         if(n != nullptr) {
+            // visit the node
             std::cout << n->data << " ";
+
+            // add the node's left and right children to the queue
             q.push(n->left);
             q.push(n->right);
         }
@@ -173,5 +181,6 @@ void BinaryTree<T>::levelOrderTraversal() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTUzNjc1MzZdfQ==
+eyJoaXN0b3J5IjpbLTEyNjg5NDI2NzIsLTIwOTUzNjc1MzZdfQ
+==
 -->
