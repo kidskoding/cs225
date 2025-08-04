@@ -198,7 +198,17 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <li>When the key doesn’t exist, that pointer is <b>null</b></li>
 <li>Because <code>_find</code> returns a <b>reference to that pointer</b>, you can assign to it <b>directly</b></li>
 </ol>
-<p>This code can be done more clearly to understand what's going on         </p>
+<p>This code can be done more clearly to understand what's going on</p>
+<div class="fragment"><div class="line">template &lt;class K, class V&gt;</div>
+<div class="line">void BST&lt;K, V&gt;::_insert(TreeNode*&amp; root, const K&amp; key, const V&amp; value) {</div>
+<div class="line">    // grab the reference/location to the pointer where `key` should be inserted</div>
+<div class="line">    TreeNode*&amp; loc = _find(root, key);</div>
+<div class="line"> </div>
+<div class="line">    // assign `loc` to point to a new `TreeNode` with the given `key` and `value`</div>
+<div class="line">    loc = new TreeNode(key, value);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>There is a bug if you don't add the ampersand to the <code>TreeNode*</code> type when creating <code>loc</code>, since that then creates a copy pointer which changing it only changes the copy</p>
+<p>Its a preference which way the         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
