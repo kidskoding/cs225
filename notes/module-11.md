@@ -146,13 +146,15 @@ There is a bug if you don't add the ampersand to the `TreeNode*` type when creat
 
 Its a preference as to which method is better for writing `_insert`; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.
 
-The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove
+The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
+
+However, this actually will only work if the node is a **leaf node**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTQ3MTM0MCwxNzI0NjYxNjY0LDgzMj
-A1MTQ2NSwyMDM0NDgxNTIwLC05ODc5MTQ3NDksLTE4MDU1NDc1
-MzksMTkxMDI1MzM1NSwtMjAwNjgzMDAxOSwxNDUwNjg5NTA1LD
-cyNTgwMTcyOSwtMjc1MTg5NjA0LC01MDMyMTYxOTIsMTA2MzYw
-ODUwMiwxNTk0MDA2MDcwLC01NzIxMjg1NzAsMTc0NDc5Mjc1NC
-wxOTE5NTI3NzI4LC0xMTU2NTYxODM5LDE5MjY4MDM0NCw3MDI5
-MTE5MjNdfQ==
+eyJoaXN0b3J5IjpbLTE3MjE0NzE2MTQsMTcyNDY2MTY2NCw4Mz
+IwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xODA1NTQ3
+NTM5LDE5MTAyNTMzNTUsLTIwMDY4MzAwMTksMTQ1MDY4OTUwNS
+w3MjU4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLDEwNjM2
+MDg1MDIsMTU5NDAwNjA3MCwtNTcyMTI4NTcwLDE3NDQ3OTI3NT
+QsMTkxOTUyNzcyOCwtMTE1NjU2MTgzOSwxOTI2ODAzNDQsNzAy
+OTExOTIzXX0=
 -->
