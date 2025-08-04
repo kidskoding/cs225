@@ -146,9 +146,9 @@ There is a bug if you don't add the ampersand to the `TreeNode*` type when creat
 
 Its a preference as to which method is better for writing `_insert`; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.
 
-
+The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzUxMTM4NSwxNzI0NjYxNjY0LDgzMj
+eyJoaXN0b3J5IjpbMTIwMTQ3MTM0MCwxNzI0NjYxNjY0LDgzMj
 A1MTQ2NSwyMDM0NDgxNTIwLC05ODc5MTQ3NDksLTE4MDU1NDc1
 MzksMTkxMDI1MzM1NSwtMjAwNjgzMDAxOSwxNDUwNjg5NTA1LD
 cyNTgwMTcyOSwtMjc1MTg5NjA0LC01MDMyMTYxOTIsMTA2MzYw
