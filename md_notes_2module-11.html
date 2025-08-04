@@ -192,7 +192,11 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    // Create a new `TreeNode` at the null pointer location returned by `_find`</div>
 <div class="line">    _find(key) = new TreeNode(key, value);</div>
 <div class="line">}</div>
-</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- fragment --><p>This code looks a little bit weird, but it makes sense</p>
+<ol type="1">
+<li>Recall that <code>_find(root, key)</code> returns a <b>reference to a pointer</b> (<code>TreeNode*&amp;</code>), specifically the pointer in the tree where the node with <code>key</code> should be located.</li>
+</ol>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
