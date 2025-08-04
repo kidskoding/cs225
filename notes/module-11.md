@@ -130,12 +130,27 @@ This code looks a little bit weird, but it makes sense
  3. Because `_find` returns a **reference to that pointer**, you can assign to it **directly**
 
 This code can be done more clearly to understand what's going on
+
+```
+template <class K, class V>
+void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
+    // grab the reference/location to the pointer where `key` should be inserted
+    TreeNode*& loc = _find(root, key);
+
+    // assign `loc` to point to a new `TreeNode` with the given `key` and `value`
+    loc = new TreeNode(key, value);
+}
+```
+
+There is a bug if you don't add the ampersand to the `TreeNode*` type when creating `loc`, since that then creates a copy pointer which changing it only changes the copy
+
+Its a preference which way the
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAzND
-Q4MTUyMCwtOTg3OTE0NzQ5LC0xODA1NTQ3NTM5LDE5MTAyNTMz
-NTUsLTIwMDY4MzAwMTksMTQ1MDY4OTUwNSw3MjU4MDE3MjksLT
-I3NTE4OTYwNCwtNTAzMjE2MTkyLDEwNjM2MDg1MDIsMTU5NDAw
-NjA3MCwtNTcyMTI4NTcwLDE3NDQ3OTI3NTQsMTkxOTUyNzcyOC
-wtMTE1NjU2MTgzOSwxOTI2ODAzNDQsNzAyOTExOTIzLDU0MDAy
-OTEwM119
+eyJoaXN0b3J5IjpbNDk3MDYyNDkwLDE3MjQ2NjE2NjQsODMyMD
+UxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUz
+OSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNz
+I1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4
+NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0NzkyNzU0LD
+E5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTkyNjgwMzQ0LDcwMjkx
+MTkyM119
 -->
