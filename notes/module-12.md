@@ -75,15 +75,14 @@ This is delving into the average case runtime of a BST because the time complexi
 The table below summarizes BST analysis with the average case
 
 | Operation | BST Average Case | BST Worst Case | Sorted List | Unsorted List
-| ----------- | ---------------------- | ------------------- |
--------- | ------------ |
-| `find`
-| `insert`
-| `remove`
-| `traverse` | $O(
+| ----------- | ---------------------- | ------------------- | -------- | ------------ |
+| `find` | $O(\log n)$ | $O(h) \equiv O(n)$ | 
+| `insert` | $O(\log n)$ | $O(h) \equiv O(n)$ | 
+| `remove` | $O(\log n)$ | $O(h) \equiv O(n)$ | 
+| `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 
 This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzNjc0NzgxLDcwOTkxOTksLTEzNDM5OD
+eyJoaXN0b3J5IjpbOTczMTIwNDIwLDcwOTkxOTksLTEzNDM5OD
 EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
 -->
