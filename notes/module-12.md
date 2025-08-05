@@ -64,8 +64,10 @@ This explains the notion of **balancing**. We want to balance a BST so that its 
 
 As discussed earlier, a BST's height depends on the number of nodes inserted into it.
 
-If we 
+If we assume that we have random numbers being inserted into our BST, and choose those random numbers, how many different ways are there?
+
+The simple answer is that there is a lot. If we put $n$ random numbers into our tree, that means we have $n$ choices to choose from for the first number to insert, $n - 1$ for th
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5OTE5OSwtMTM0Mzk4MTI3NCw4MzYwNz
-I4MDAsMTU3NTIxNzc2MF19
+eyJoaXN0b3J5IjpbNjQyMzg0ODYyLDcwOTkxOTksLTEzNDM5OD
+EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
 -->
