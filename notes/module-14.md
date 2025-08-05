@@ -38,6 +38,7 @@ We already established that we need each `TreeNode` in an AVL tree to track its 
 
 ```
 struct TreeNode {
+    K key;
     V value;
 
     // have each `TreeNode` store the height in order to self balance
@@ -53,7 +54,7 @@ Inserting a node into an AVL tree is very similar to a BST (since it is in fact 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzcxNDMxNzAsLTU5MTg1MTkyOSwtNz
+eyJoaXN0b3J5IjpbLTE3NTQzNjEzODEsLTU5MTg1MTkyOSwtNz
 ExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4
 NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX
 0=
