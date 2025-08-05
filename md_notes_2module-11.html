@@ -295,9 +295,10 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <li>If the key we need to remove is greater than the node's key, it makes sense to descend down the right subtree, since that contains keys greater than the key we need to remove</li>
 <li>We have to check if either the left or right child aren't null for the one child case.<ul>
 <li>When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null, and obviously wasn't the case</li>
-<li>If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. T</li>
+<li>If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. The same thing works with the right child, simply remove the left child and connect its parent directly to this left child.</li>
 </ul>
 </li>
+<li>For the two child case, once we found the iop and swapped it with the current node, we have to recursively call <code>_remove</code> on the left subtree, since that is where the IOP will always be located. That is because the IOP is the greatest node in the left subtree, but smaller than its root (meaning it resides directly on the left of the root of the left subtree)</li>
 </ol>
 <p>Coding the exposed (external) version of <code>remove</code> becomes simple from here, we just call <code>_remove</code> and passing in the root</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
