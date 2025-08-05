@@ -115,9 +115,11 @@ Compute the balance of the tree to determine the shape of a stick
 	- We then need to compute the balance of the right subtree to figure out specifically which one it is
 	- A right subtree of balance -1 means that its a **"right stick"**, so we need to do a **left rotation**
 	- A right subtree balance of +1 means that its a **"right elbow"**, so we need to do a **right-left** rotation
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg5NTkwMTIsLTU1NzczMzM5MiwxNT
-U4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAz
-OTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Mi
-w0MDk1NzgxMzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NT
+g0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5
+NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLD
+QwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
 -->
