@@ -317,15 +317,16 @@ By definition, the height $h$ of a BST is the length of the longest path from th
 
 1. The worst case scenario occurs when the BST weakens into a `LinkedList`, where each node has only one child
 2. The height of this worst case scenario BST, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest path must visit all nodes except the root
-3. $h = n - 1$, so that means $O(h) \equiv O(n - 1)$. Since constants are insignificant in measuring an algorithm's runtime, $O(n - 1) \equiv O(n)$, meaning that $O(n) \equiv O(n - 1) \equiv O(n)$
+
+$h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, we conclude that $O(h) \equiv O(n)$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzAwNzU4MTksLTE4MzU5NjUxMTUsLT
-E1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAz
-MDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1Nj
-kxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0Mywz
-MTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MD
-g2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQs
-ODMyMDUxNDY1XX0=
+eyJoaXN0b3J5IjpbMjkxNDg1MTYyLC0xODM1OTY1MTE1LC0xNT
+k4MDg2NjU2LC0xMjM4ODYwMDA2LDEzNzI3ODg4NTgsLTEwMzA5
+NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0Nzg0OCwtODg5NTY5MT
+U2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05MDY3MzkwNDMsMzE0
+NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3MTQxODYsNzI2NjA4Nj
+Q0LDE2OTY0OTY1ODksMjA3NjE1OTc4OCwxNzI0NjYxNjY0LDgz
+MjA1MTQ2NV19
 -->
