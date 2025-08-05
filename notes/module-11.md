@@ -161,17 +161,19 @@ Finding either IOP and IOS (it doesn't matter which one) is a very effective app
 
 This is because when a left or right node follows a single path down a tree, the worst case occurs when the node travels through the entire path of $h$
 
-First, we need a helper function that helps find either the IOP or IOS (will do IOP in this example). Recall that the IOP finds the largest node in the left subtree. Therefore, to implement this, 
+First, we need a helper function that helps find either the IOP or IOS (will do IOP in this example). Recall that the IOP finds the largest node in the left subtree. Therefore, to implement this, we need to find the rightmost value in the left subtree, since this will always be the largest value according to the BST property
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTcyNjUyNTMsLTQ2NDk0Nzg0OCwtOD
-g5NTY5MTU2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05MDY3Mzkw
-NDMsMzE0NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3MTQxODYsNz
-I2NjA4NjQ0LDE2OTY0OTY1ODksMjA3NjE1OTc4OCwxNzI0NjYx
-NjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIwLC05ODc5MTQ3NDksLT
-E4MDU1NDc1MzksMTkxMDI1MzM1NSwtMjAwNjgzMDAxOSwxNDUw
-Njg5NTA1XX0=
+eyJoaXN0b3J5IjpbLTQ0NzYzMjAzOSwtMTYxNzI2NTI1MywtND
+Y0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIw
+ODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMT
+g2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5
+Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLT
+k4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2
+ODMwMDE5XX0=
 -->
