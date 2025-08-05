@@ -22,16 +22,18 @@ To explain this, we must understand the structure of a perfect BST, which occurs
 $\vdots$
 - Level $h$ has $2^h$ nodes
 
-This forms a geometric series, where the total number of nodes, $n$ at level $l$ occurs when
+This forms a geometric series, where the number of nodes, $n_l$, at level $l$ occurs when
 
 $$
-n = 1 + 2 + 4 + \cdots + 2^h = \sum^h_i = 0
+n_l = 1 + 2 + 4 + \cdots + 2^l = \sum^l_{i = 0} 2^i
 $$
+
+This means that the total number of nodes, $n$, can be represented as
 
 Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$
 
 This is the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzNDkyODkxLDE1NzUyMTc3NjBdfQ==
+eyJoaXN0b3J5IjpbLTg5OTE5MjE3NSwxNTc1MjE3NzYwXX0=
 -->
