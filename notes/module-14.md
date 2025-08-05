@@ -151,13 +151,13 @@ void AVL<K, V>::_updateHeight(TreeNode* curr) {
 From here, the rest is simple. We just have to simply code each rotation. The rotations intuitively make sense to code if you know what's going on
 
 1. Left Rotation
-	- The right child becomes the new root
+	- The right child becomes the new root of the subtree
 	- The new root's left subtree becomes the old root's right child
 	- The old root becomes the left child of the new root of the subtree
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MjEwNzgwNiwxNTIwMjMzMzAsLTE4Mj
-k4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUw
-NSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMj
-k0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4
-MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbLTIwNDQ1MTYyNTIsMTUyMDIzMzMwLC0xOD
+I5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1
+MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMT
+I5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3
+ODEzOCwtNDA5NjMyNTkxXX0=
 -->
