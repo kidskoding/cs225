@@ -10,7 +10,10 @@ Two key details:
 	- `node->right > root`
 2. Change a "stick" (every node basically has only one child) into a "mountain" (roughly equal subtrees)
 
-If a tree is very imbalanced, we can do a rotation where 
+If a tree is very imbalanced, we can do a rotation where we equally split nodes between left and right subtrees to rebalance it (this is how we change a "stick" into a "mountain")
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTA1NTI3NCwzMzA1NzA3NDRdfQ==
+eyJoaXN0b3J5IjpbLTI4NzIzODAyLDMzMDU3MDc0NF19
 -->
