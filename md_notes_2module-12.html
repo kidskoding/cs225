@@ -158,10 +158,10 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <p>This explains the notion of <b>balancing</b> a <a class="el" href="classBST.html">BST</a>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(\log n)$</p>
 <p>To achieve this, we aim for a tree where the number of nodes in the left and right subtrees of every node is roughly equal. This ensures that the height of the tree remains logarithmic in terms of the number of nodes, preventing degeneration into a <code><a class="el" href="classLinkedList.html">LinkedList</a></code></p>
 <p>But how??</p>
-<p>To <b>find the balance of a <a class="el" href="classBST.html">BST</a> node</b>, you use the concept of a <b>balance factor</b> (BF), where</p>
-<p>$$BF = height(T_R) - height(T_L)$$</p>
-<p>When $BF &lt; 0$, the left subtree is taller; when $BF &gt; 0$, the right subtree is taller; and when $BF = 0$, the tree is perfectly balanced</p>
-<p>If $|BF| &gt; 1$, then the tree is unbalanced</p>
+<p>To <b>find the balance of a <a class="el" href="classBST.html">BST</a> node</b>, you use the concept of a <b>balance factor</b> ($b$), where</p>
+<p>$$b = height(T_R) - height(T_L)$$</p>
+<p>When $b &lt; 0$, the left subtree is taller; when $b &gt; 0$, the right subtree is taller; and when $b = 0$, the tree is perfectly balanced</p>
+<p>If $|b| &gt; 1$, then the tree is unbalanced</p>
 <p>Therefore, a tree is height balanced if $|b| \leq 1$ at every node</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
