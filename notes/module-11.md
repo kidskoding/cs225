@@ -306,12 +306,14 @@ The table below summarizes the runtime for all our important BST algorithms
 | `insert` | $O(h) \equiv O(n)$ |
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
+
+For `find`, `insert`, and `remove`, the worst-case time complexity depends on the height $h$ of the node involved. Since these operations require traversing from the root down to the node, they may involve up to $h - 1$ recursive or iterative steps through the tree.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxODk0NjYxLC0xODM1OTY1MTE1LC0xNT
-k4MDg2NjU2LC0xMjM4ODYwMDA2LDEzNzI3ODg4NTgsLTEwMzA5
-NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0Nzg0OCwtODg5NTY5MT
-U2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05MDY3MzkwNDMsMzE0
-NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3MTQxODYsNzI2NjA4Nj
-Q0LDE2OTY0OTY1ODksMjA3NjE1OTc4OCwxNzI0NjYxNjY0LDgz
-MjA1MTQ2NV19
+eyJoaXN0b3J5IjpbLTUzNDQ2NzE2MywtMTgzNTk2NTExNSwtMT
+U5ODA4NjY1NiwtMTIzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMw
+OTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OT
+E1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMx
+NDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwOD
+Y0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4
+MzIwNTE0NjVdfQ==
 -->
