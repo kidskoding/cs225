@@ -195,8 +195,13 @@ Insertion into an AVL tree</h1>
 </ul>
 </li>
 </ul>
-<p>We need a helper height function in order to avoid any crashes.      </p>
-</div></div><!-- contents -->
+<p>We need a helper height function in order to avoid any crashes. While <code>curr-&gt;left-&gt;height</code> and <code>curr-&gt;right-&gt;height</code> do work, they may crash if <code>curr-&gt;left</code> and <code>curr-&gt;right</code> are null.</p>
+<p>Therefore, a helper function to get the height of a node can help prevent any unecessary crashes. It simply checks if the node is not null before calling its height property. The code is shown below</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">int AVL&lt;K, V&gt;::height(TreeNode* node) {     </div>
+<div class="line">      return node != nullptr ? 0 : node-&gt;height; </div>
+<div class="line">}</div>
+</div><!-- fragment --></div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
