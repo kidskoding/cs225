@@ -116,10 +116,21 @@ Compute the balance of the tree to determine the shape of a stick
 	- A right subtree of balance -1 means that its a **"right stick"**, so we need to do a **left rotation**
 	- A right subtree balance of +1 means that its a **"right elbow"**, so we need to do a **right-left** rotation
 
-We need a helper height function in order to avoid any crashes. 
+We need a helper height function in order to avoid any crashes. While `curr->left->height` and `curr->right->height` do work, they may crash if `curr->left` and `curr->right` are null. 
+
+Therefore, a helper function to get the height of a node can help prevent any unecessary crashes. It simply checks if the node is not null before calling its height property. The code is shown below
+
+```
+template <typename K, typename V>
+int AVL<K, V>::height(TreeNode* node) { 	
+	  return node != nullptr ? 0 : node->height; 
+}
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA2MDU2ODMwLDIwMDU4MjI5MDQsLTU1Nz
-czMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2
-MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMT
-Y1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbLTQxNzQ2OTc5NywyMDA1ODIyOTA0LC01NT
+c3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQy
+NjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLT
+E2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ==
 -->
