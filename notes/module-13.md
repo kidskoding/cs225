@@ -24,9 +24,12 @@ There are a total of **four** rotations: L (left), R (right), LR (left-right), R
 
 - All rotations are local, meaning subtrees aren't impacted
 - All rotations are constant time, $O(1)$ because they only rearrange a **fixed, small number of pointers** (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree
+- The BST property is maintained
+
+The goal is to get $O(h) \equiv O(\log n)$, where we call these trees **AVL trees**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4MzUyNDcxLDE2Mzc1OTE2ODEsLTI4Nz
+eyJoaXN0b3J5IjpbNzAyMTg4NzQ1LDE2Mzc1OTE2ODEsLTI4Nz
 IzODAyLDMzMDU3MDc0NF19
 -->
