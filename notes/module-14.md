@@ -233,8 +233,14 @@ Let $h(n)$ be the height as a function with respect to $n$, the number of nodes.
 In other words, 2 trees can have 4 nodes, but be fundamentally different in structure
 
 Since we can't compute the exact height function, $h(n)$, we analyze the worst-case scenario: which is the tallest possible tree with $n$ nodes, or simply $h_{max}(n)$
+
+But this is also a problem. I don't know how to come up with a way to get the maximum height of any tree with $n$ nodes. Its impossible.
+
+To fix this, we have to take the inverse of this functino, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTIwOTk2MywtMTExNTQ0Mzg5LDkzMT
+eyJoaXN0b3J5IjpbLTY0MDI5NjQ4NywtMTExNTQ0Mzg5LDkzMT
 YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
 LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
 EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
