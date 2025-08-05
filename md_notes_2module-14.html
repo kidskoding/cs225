@@ -268,7 +268,19 @@ Insertion into an AVL tree</h1>
 <div class="line">    // update pointer to point to the new root</div>
 <div class="line">    node = newRoot;</div>
 <div class="line">}</div>
-</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- fragment --><div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::_rotateLeftRight(TreeNode*&amp; node) {</div>
+<div class="line">    // rotate left and then rotate right</div>
+<div class="line">    _rotateLeft(node);</div>
+<div class="line">    _rotateRight(node);</div>
+<div class="line">}</div>
+</div><!-- fragment --><div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::_rotateRightLeft(TreeNode*&amp; node) {</div>
+<div class="line">    // rotate right and then rotate left</div>
+<div class="line">    _rotateRight(node);</div>
+<div class="line">    _rotateLeft(node);</div>
+<div class="line">}</div>
+</div><!-- fragment -->       </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
