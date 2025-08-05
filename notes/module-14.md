@@ -238,12 +238,12 @@ But this is also a problem. I don't know how to come up with a way to get the ma
 
 To fix this, we have to take the inverse of this functino, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!
 
-We can let the lower bound of this function be the 
+We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefore finding a lower bound instead of an upper bound. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQzMzEwMDEsLTExMTU0NDM4OSw5Mz
-E2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkw
-NCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNz
-ExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4
-NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX
-0=
+eyJoaXN0b3J5IjpbLTUzNDg4MDIzNywtMTExNTQ0Mzg5LDkzMT
+YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
+LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
+EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
+MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
+==
 -->
