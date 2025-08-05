@@ -146,6 +146,8 @@ There is a bug if you don't add the ampersand to the `TreeNode*` type when creat
 
 Its a preference as to which method is better for writing `_insert`; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.
 
+To then code the external `insert`, we just have to simply call the internal insert, `_insert` and then add the key to our `node_map
+
 The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
 
 However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node, which rely on the node having at least one child
@@ -270,11 +272,11 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTgwODY2NTYsLTEyMzg4NjAwMDYsMT
-M3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0
-OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwOD
-UsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2
-MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nz
-g4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4
-NzkxNDc0OV19
+eyJoaXN0b3J5IjpbMjA4NDc2NzQ5MSwtMTU5ODA4NjY1NiwtMT
+IzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3
+MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMz
+IsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5
+NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NT
+g5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAz
+NDQ4MTUyMF19
 -->
