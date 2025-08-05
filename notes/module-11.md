@@ -318,13 +318,15 @@ By definition, the height $h$ of a BST is the length of the longest path from th
 
 $h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, we conclude that $O(h) \equiv O(n)$
 
-With this, we know that $O(h) \equiv O(n)$ in the worst case scenario. When comp
+With this, we know that $O(h) \equiv O(n)$ in the worst case scenario. When comparing to our runtime of a `LinkedList`, its not actually any better, and is in fact almost the same.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNzMxNDc4LDI5MTQ4NTE2MiwtMTgzNT
-k2NTExNSwtMTU5ODA4NjY1NiwtMTIzODg2MDAwNiwxMzcyNzg4
-ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4ND
-gsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2
-NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MT
-g2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcy
-NDY2MTY2NF19
+eyJoaXN0b3J5IjpbLTIxMDEzNjA4ODYsMjkxNDg1MTYyLC0xOD
+M1OTY1MTE1LC0xNTk4MDg2NjU2LC0xMjM4ODYwMDA2LDEzNzI3
+ODg4NTgsLTEwMzA5NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0Nz
+g0OCwtODg5NTY5MTU2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05
+MDY3MzkwNDMsMzE0NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3MT
+QxODYsNzI2NjA4NjQ0LDE2OTY0OTY1ODksMjA3NjE1OTc4OCwx
+NzI0NjYxNjY0XX0=
 -->
