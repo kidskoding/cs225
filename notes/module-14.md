@@ -80,25 +80,25 @@ The balancing function is shown below
 template <typename K, typename V>
 void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
     // calculate the balance factor
-    int balance = curr->right->height - curr->left->height;
+    int balance = height(curr->right) - height(curr->left);
 
     // check if the node is currently not in balance
     if(balance == -2) { // heavy left ("left stick" shaped subtree)
-        int leftBalance = curr->left->right->height - curr->left->left->height;
+        int leftBalance = height(curr->left->right) - height(curr->left->left);
         if(leftBalance == -1) {
             // perform right rotation
         } else {
             // perform left-right rotation
         }
     } else if(balance == 2) { // heavy right ("right stick" shaped subtree)
-        int rightBalance = curr->right->right->height - curr->right->left->height;
+        int rightBalance = height(curr->right->right) - height(curr->right->left);
         if(rightBalance == -1) {
             // perform left rotation
         } else {
             // perform right-left rotation
         }
     }
-    
+
     _updateHeight(curr);
 }
 ```
@@ -116,10 +116,10 @@ Compute the balance of the tree to determine the shape of a stick
 	- A right subtree of balance -1 means that its a **"right stick"**, so we need to do a **left rotation**
 	- A right subtree balance of +1 means that its a **"right elbow"**, so we need to do a **right-left** rotation
 
-
+We need a helper height function in order to avoid any crashes. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NT
-g0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5
-NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLD
-QwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbMzA2MDU2ODMwLDIwMDU4MjI5MDQsLTU1Nz
+czMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2
+MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMT
+Y1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
 -->
