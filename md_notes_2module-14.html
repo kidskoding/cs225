@@ -216,24 +216,24 @@ Insertion into an AVL tree</h1>
 <div class="line">}</div>
 </div><!-- fragment --><p>From here, the rest is simple. We just have to simply code each rotation. The rotations intuitively make sense to code if you know what's going on</p>
 <ol type="1">
-<li>Left Rotation<ul>
+<li><b>Left Rotation</b><ul>
 <li>The right child becomes the new root of the subtree</li>
 <li>The new root's left subtree becomes the old root's right child</li>
 <li>The old root becomes the left child of the new root of the subtree</li>
 </ul>
 </li>
-<li>Right Rotation<ul>
+<li><b>Right Rotation</b><ul>
 <li>The left child becomes the new root of the subtree</li>
 <li>The new root's right subtree becomes the old root's left child</li>
 <li>The old root becomes the right child of the new root of the subtree</li>
 </ul>
 </li>
-<li>Left-Right Rotation<ul>
+<li><b>Left-Right Rotation</b><ul>
 <li>Perform a left rotation</li>
 <li>Perform a right rotation</li>
 </ul>
 </li>
-<li>Right-Left Rotation<ul>
+<li><b>Right-Left Rotation</b><ul>
 <li>Perform a right rotation</li>
 <li>Perform a left rotation</li>
 </ul>
@@ -280,7 +280,10 @@ Insertion into an AVL tree</h1>
 <div class="line">    _rotateRight(root);</div>
 <div class="line">    _rotateLeft(root);</div>
 <div class="line">}</div>
-</div><!-- fragment -->       </div></div><!-- contents -->
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md93"></a>
+AVL Tree Analysis</h1>
+<p><code>insert</code>, <code>remove</code>, and <code>find</code> also all run in $O(h)$. This is because the worst case scenario occurs when we descend all the way to level $h - 1$        </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
