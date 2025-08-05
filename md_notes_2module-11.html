@@ -181,7 +181,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line">    return _find(root-&gt;right, key);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>To code the external find, <code>find</code>, we just have to call the internal find, <code>_find</code></p>
+</div><!-- fragment --><p>To implement the external find, <code>find</code>, we can just call <code>node_map.find(key)</code> and return its iterator, since <code>node_map</code> always stores the same key-value pairs as the <a class="el" href="classBST.html">BST</a> and supports fast lookup.</p>
 <p>However, there are some questions to ask, especially since this was a recursive approach.</p>
 <ol type="1">
 <li>What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack.<ul>
