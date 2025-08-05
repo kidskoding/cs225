@@ -355,7 +355,8 @@ BST-Analysis</h1>
 <li>The worst case scenario occurs when the <a class="el" href="classBST.html">BST</a> weakens into a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, where each node has only one child</li>
 <li>The height of this worst case scenario <a class="el" href="classBST.html">BST</a>, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest path must visit all nodes except the root</li>
 </ol>
-<p>$h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, we conclude that $O(h) \equiv O(n)$         </p>
+<p>$h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, we conclude that $O(h) \equiv O(n)$</p>
+<p>With this, we know that $O(h) \equiv O(n)$ in the worst case scenario. When comparing to our runtime of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, its not actually any better, and is in fact almost the same.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
