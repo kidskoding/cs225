@@ -151,19 +151,18 @@ The final step is to implement `remove` for a BST. This seems simple since I jus
 However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node 
 
 1. **Removing a node with one child (left or right)** - If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes.
-2. **Removing a node with two children** - If the node has two children, meaning it has both a left and right child, this is a little bit tricky
-	- We know that there exists some node in the tree, where we need to find a replacement node to take the removed node’s place in order to maintain the property of a BST. This is either:
-	-   The **inorder predecessor** (the largest node in the left subtree)
-	-   The **inorder successor** (the smallest node in the right subtree)
+2. **Removing a node with two children** - If the node has two children, meaning it has both a left and right child, we need to instead find a replacement node to take the removed node’s place in order to maintain the property of a BST. This is either:
+	-   The **inorder predecessor** - the largest node in the left subtree
+	-   The **inorder successor** - the smallest node in the right subtree
 	- Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NTA4NTc4LC0xMzk1MDYwMDU4LDE4Nj
-A3MTQxODYsNzI2NjA4NjQ0LDE2OTY0OTY1ODksMjA3NjE1OTc4
-OCwxNzI0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIwLC05OD
-c5MTQ3NDksLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMjAwNjgz
-MDAxOSwxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5NjA0LC
-01MDMyMTYxOTIsMTA2MzYwODUwMiwxNTk0MDA2MDcwLC01NzIx
-Mjg1NzBdfQ==
+eyJoaXN0b3J5IjpbMTYyMzIzMjA0MCwzMTQ1MDg1NzgsLTEzOT
+UwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4
+OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMz
+Q0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOTEwMjUz
+MzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNzI1ODAxNzI5LC
+0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4NTAyLDE1OTQw
+MDYwNzBdfQ==
 -->
