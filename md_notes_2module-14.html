@@ -203,18 +203,18 @@ Insertion into an AVL tree</h1>
 <div class="line">}</div>
 </div><!-- fragment --><p>We also need a helper function to update the height after performing necessary rotations</p>
 <p>The updated node's height is 1 plus the max height of its left and right subtrees</p>
-<p>Height represents the number of edges in the longest path from that node down to a leaf. When calculating this longest path, you need to consider that it will go through either the left subtree or the right subtree, depending on whichever is taller. This is the performed by taking the maximum height b</p>
+<p>Height represents the number of edges in the longest path from that node down to a leaf. When calculating this longest path, you need to consider that it will go through either the left subtree or the right subtree, depending on whichever is taller. This is the performed by taking the maximum height between the two subtrees</p>
 <p>However, to get the total path length from the current node, you must add one additional edge, because that accounts for descending into the taller subtree</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
 <div class="line">void AVL&lt;K, V&gt;::_updateHeight(TreeNode* curr) {</div>
 <div class="line">    // calculate height as 1 + maximum height of children</div>
-<div class="line">    // the +1 accounts for the edge from this node to its deepest child</div>
+<div class="line">    // the +1 accounts for the extra edge needed to descend into the subtree with a greater height</div>
 <div class="line">    // this works after any tree modification because height depends on the current tree structure</div>
 <div class="line">    if(curr != nullptr) {</div>
 <div class="line">        curr-&gt;height = 1 + std::max(height(curr-&gt;left), height(curr-&gt;right));</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment -->      </div></div><!-- contents -->
+</div><!-- fragment --></div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
