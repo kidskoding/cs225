@@ -99,10 +99,15 @@ To **find the balance of a BST node**, you use the concept of a **balance factor
 
 $$BF = height(T_R) - height(T_L)$$
 
-When $BF < 0$, the left subtree is taller and when $BF > 0$, the right subtree is taller
+When $BF < 0$, the left subtree is taller; when $BF > 0$, the right subtree is taller; and when $BF = 0$, the tree is perfectly balanced
+
+If $|BF| > 1$, then the tree is unbalanced
+
+Therefore, a tree is height balanced if $|b| \leq 1$ at every node
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNDkyNjc3OSw3MDk5MTk5LC0xMzQzOT
-gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbNTEyOTU5NzI4LDcwOTkxOTksLTEzNDM5OD
+EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
 -->
