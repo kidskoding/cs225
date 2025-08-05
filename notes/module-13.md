@@ -22,12 +22,12 @@ For example, if the left subtree is much taller than the right, a right rotation
 
 There are a total of **four** rotations: L (left), R (right), LR (left-right), RL (right-left)
 
-- **L** (Left Rotation) - used when the right subtree is too tall (Right-Right case). Referred to as **"right stick"** (due to its shape)
+- **L** (Left Rotation) - used when the right subtree is too tall and forms a **"right stick"** (due to its shape). This is known formally as the Right-Right case
 - **R** (Right Rotation) - used when the left subtree is too tall and forms a **"left stick"** (due to its shape). This is known formally as the Left-Left case
-- **LR** (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case). Referred to as **"left elbow"** (due to its shape)
-	- Perform a left and then right rotation
-- **RL** (Right-Left Rotation) - Used when there's imbalance in the right-left direction (Right child has a taller left subtree — Right-Left case). Referred to as **"right elbow"** (due to its shape)
-	- Perform a right and then left rotation
+- **LR** (Left-Right Rotation) - Used when there's imbalance in the left-right direction and forms a **"left elbow"** (due to its shape). This is known formally as the Left-Right case, where the left child has a taller right subtree
+	- Perform a **left** and then **right** rotation
+- **RL** (Right-Left Rotation) - Used when there's imbalance in the right-left direction and forms a **right elbow** . Referred to as **"right elbow"** (due to its shape)
+	- Perform a **right** and then **left** rotation
 
 Other things to know about rotations:
 - All rotations are local, meaning subtrees aren't impacted
@@ -36,7 +36,7 @@ Other things to know about rotations:
 
 The goal is to get $h \equiv O(\log n)$. These types of trees are called **AVL trees** (named after Georgy Addison-Velsky and Evengii Landis), which are a specific type of **BBST** (Balanced Binary Search Tree)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQ0MDA4MDEsNTUxNTQwNzM1LC0xMj
+eyJoaXN0b3J5IjpbLTEyNTk5NDQwNzYsNTUxNTQwNzM1LC0xMj
 g3NjczMTg5LDE2NzA5MTYzNDMsLTQyMDU5MjYwLDE2Mzc1OTE2
 ODEsLTI4NzIzODAyLDMzMDU3MDc0NF19
 -->
