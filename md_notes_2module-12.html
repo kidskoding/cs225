@@ -152,9 +152,11 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <p>Some other things to note</p>
 <ol type="1">
 <li><code>find</code> - Sorted List <code>find</code> is $O(\log n)$. This is basically performing binary search, since binary search is a more optimal search when a list is sorted. Similarly, unsorted list <code>find</code> is $O(n)$, which is simply linear search, which the worst case occurs when the element is found after traversing $n$ times</li>
-<li><code>insert</code> - Unsorted is $O(1)$, since we can just append an element to the back of a list without maintaining an order, while sorted is $O(n)$ since we have to first insert the element to the back and then shif</li>
+<li><code>insert</code> - Unsorted is $O(1)$, since we can just append an element to the back of a list without maintaining an order, while sorted is $O(n)$ since we have to first insert the element to the back and then shift elements up to $n$ times to make space for the new element</li>
+<li><code>remove</code> and <code>traverse</code> are $O(n)$ for both sorted and unsorted lists since the worst case scenario occurs when having to traverse a maximum of $n$ times</li>
 </ol>
-<p>This explains the notion of <b>balancing</b> a <a class="el" href="classBST.html">BST</a>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(\log n)$    </p>
+<p>This explains the notion of <b>balancing</b> a <a class="el" href="classBST.html">BST</a>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(\log n)$</p>
+<p>Bu    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
