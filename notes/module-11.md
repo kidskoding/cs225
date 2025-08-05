@@ -168,11 +168,11 @@ Therefore, to implement this, we need to find the rightmost value in the left su
 ```
 template <typename K, typename V>
 typename BST<K, V>::TreeNode*& BST<K, V>::_iop(TreeNode*& root) {
-	// grab the left subtree of the root
+    // grab the left subtree of the root
     TreeNode*& curr = root->left;
 
-	// iterate through the right children of the left subtree
-	// return the rightmost node
+    // iterate through the right children of the left subtree
+	// return the rightmost node (since that always contains the greatest value)
     while(curr->right != nullptr) {
         curr = curr->right;
     }
@@ -207,11 +207,11 @@ void BST<K, V>::remove(const K& key) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMT
-YxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1
-MTMyLDExMTk1NDIwODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLT
-EzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5
-NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LD
-IwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOTEw
-MjUzMzU1XX0=
+eyJoaXN0b3J5IjpbLTEyMDkzOTk4NSwxMzcyNzg4ODU4LC0xMD
+MwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2
+OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLD
+MxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYw
+ODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NC
+w4MzIwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xODA1
+NTQ3NTM5XX0=
 -->
