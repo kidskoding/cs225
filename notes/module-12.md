@@ -62,8 +62,10 @@ Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(
 
 This explains the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
 
-As discussed earlier, 
+As discussed earlier, a BST's height depends on the number of nodes inserted into it.
+
+If we 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM5ODEyNzQsODM2MDcyODAwLDE1Nz
-UyMTc3NjBdfQ==
+eyJoaXN0b3J5IjpbNzA5OTE5OSwtMTM0Mzk4MTI3NCw4MzYwNz
+I4MDAsMTU3NTIxNzc2MF19
 -->
