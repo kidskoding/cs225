@@ -116,9 +116,10 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <li>Level $2$ has $4$ nodes $\vdots$</li>
 <li>Level $h$ has $2^h$ nodes</li>
 </ul>
-<p>This forms a geometric series, where the number of nodes, $n_l$, at level $l$ occurs when</p>
+<p>This also means that level $l$ has $2^l$ nodes. $h = l$ at the maximum level of a tree, so the total nodes is $2^h$</p>
+<p>This forms a geometric series, where the number of nodes at level $l$, $n_l$, occurs as a sum of the geometric series of all nodes up to level $l$, where</p>
 <p>$$ n_l = 1 + 2 + 4 + \cdots + 2^l = \sum^l_{i = 0} 2^i $$</p>
-<p>This means that the total number of nodes, $n$, can be represented as</p>
+<p>This means that the total number of nodes, $n$, can be represented as a sum of the</p>
 <p>Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$</p>
 <p>This is the notion of <b>balancing</b>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(log(n))$</p>
 </div></div><!-- contents -->
