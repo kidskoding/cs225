@@ -22,6 +22,7 @@ For example, if the left subtree is much taller than the right, a right rotation
 
 There are a total of **four** rotations: L (left), R (right), LR (left-right), RL (right-left)
 
+
 - All rotations are local, meaning subtrees aren't impacted
 - All rotations are constant time, $O(1)$ because they only rearrange a **fixed, small number of pointers** (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree
 - The BST property is maintained
@@ -30,6 +31,6 @@ The goal is to get $O(h) \equiv O(\log n)$. These types of trees are called **AV
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDU5MjYwLDE2Mzc1OTE2ODEsLTI4Nz
-IzODAyLDMzMDU3MDc0NF19
+eyJoaXN0b3J5IjpbLTM2NTc4NzMwLC00MjA1OTI2MCwxNjM3NT
+kxNjgxLC0yODcyMzgwMiwzMzA1NzA3NDRdfQ==
 -->
