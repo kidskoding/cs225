@@ -103,9 +103,14 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 <p>A <b><a class="el" href="classBST.html">BST</a> rotation</b> is a strategy to help change the structure of a <a class="el" href="classBST.html">BST</a> to help <b>rebalance</b> the tree without violating the <a class="el" href="classBST.html">BST</a> property.</p>
 <p>Two key details:</p>
 <ol type="1">
-<li>Maintain the <a class="el" href="classBST.html">BST</a> property</li>
+<li>Maintain the <a class="el" href="classBST.html">BST</a> property<ul>
+<li><code>node-&gt;left &lt; root</code></li>
+<li><code>node-&gt;right &gt; root</code></li>
+</ul>
+</li>
 <li>Change a "stick" (every node basically has only one child) into a "mountain" (roughly equal subtrees)</li>
 </ol>
+<p>If a tree is very imbalanced, we can do a rotation where   </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
