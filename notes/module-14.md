@@ -11,7 +11,7 @@ This means that we have to consider 3 things:
 
 We can compute balance by having each subtree store its height, which means that I can retrieve it in constant time
 
-``` mermaid
+```mermaid
 tree
   A->[B, C]
   B->[D, E]
@@ -20,7 +20,7 @@ tree
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDkyNTI3NywxMjk0NDE2NzgwLDExMD
-k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
-OTFdfQ==
+eyJoaXN0b3J5IjpbLTExNDgyMTAzODMsMTI5NDQxNjc4MCwxMT
+A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
+NTkxXX0=
 -->
