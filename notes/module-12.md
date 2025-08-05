@@ -95,10 +95,14 @@ To achieve this, we aim for a tree where the number of nodes in the left and rig
 
 But how?? 
 
+To **find the balance of a BST node**, you use the concept of a **balance factor** (BF), where
+
+$$BF = height(T_L) - height(T_R)$$
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIwNzA4MTcsNzA5OTE5OSwtMTM0Mz
-k4MTI3NCw4MzYwNzI4MDAsMTU3NTIxNzc2MF19
+eyJoaXN0b3J5IjpbMzk4MzMxMjUxLDcwOTkxOTksLTEzNDM5OD
+EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
 -->
