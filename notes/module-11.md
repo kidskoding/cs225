@@ -165,8 +165,20 @@ First, we need a helper function that helps find either the IOP or IOS (will do 
 
 Therefore, to implement this, we need to find the rightmost value in the left subtree, since this will always be the largest value according to the BST property. To find the largest value, we just need to iterate through each node's right child until a node's right child no longer exists (null pointer). The code for finding the IOP is reflected below
 
+```
+template <typename K, typename V>
+typename BST<K, V>::TreeNode*& BST<K, V>::_iop(TreeNode*& root) {
+	// grab the left subtree of the root
+    TreeNode*& curr = root->left;
 
-
+	// iterate through the right children of the left subtree
+	// return the rightmost node
+    while(curr->right != nullptr) {
+        curr = curr->right;
+    }
+    return curr;
+}
+```
 
 
 
@@ -175,11 +187,11 @@ Therefore, to implement this, we need to find the rightmost value in the left su
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2NDkxOTkyLC0xNjE3MjY1MjUzLC00Nj
-Q5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4
-NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxOD
-YwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3
-ODgsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAzNDQ4MTUyMCwtOT
-g3OTE0NzQ5LC0xODA1NTQ3NTM5LDE5MTAyNTMzNTUsLTIwMDY4
-MzAwMTldfQ==
+eyJoaXN0b3J5IjpbLTYyMDMxNTY0OCwtMTYxNzI2NTI1MywtND
+Y0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIw
+ODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMT
+g2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5
+Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLT
+k4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2
+ODMwMDE5XX0=
 -->
