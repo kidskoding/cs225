@@ -181,8 +181,13 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line">    return _find(root-&gt;right, key);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>To implement the external find, <code>find</code>, we can just call <code>_find</code> and then return <code>node_map.find(key)</code> as an iterator, since <code>node_map</code> always stores the same key-value pairs as the <a class="el" href="classBST.html">BST</a> and supports fast lookup.</p>
-<p>However, there are some questions to ask, especially since this was a recursive approach.</p>
+</div><!-- fragment --><p>To implement the external find, <code>find</code>, we can just simply return <code>node_map.find(key)</code> as an iterator, since <code>node_map</code> always stores the same key-value pairs as the <a class="el" href="classBST.html">BST</a> and supports fast lookup.</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">typename BST&lt;K, V&gt;::TreeIterator BST&lt;K, V&gt;::find(const K&amp; key) const {</div>
+<div class="line">    // use `node_map` to quickly find the value without traversing the tree</div>
+<div class="line">    return node_map.find(key);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>However, there are some questions to ask, especially since this was a recursive approach.</p>
 <ol type="1">
 <li>What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack.<ul>
 <li>The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.</li>
