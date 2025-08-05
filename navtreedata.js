@@ -137,7 +137,7 @@ var NAVTREE =
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
     [ "Module 13 - BST Rotations", "md_notes_2module-13.html", null ],
     [ "Module 14 - AVL Trees", "md_notes_2module-14.html", null ],
-    [ "Module 15 - BBST Wrap and Lambda", "md_notes_2module-15.html", null ],
+    [ "Module 15 - Lambda", "md_notes_2module-15.html", null ],
     [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", null ],
     [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
     [ "Module 18 - BTree Analysis", "md_notes_2module-18.html", null ],

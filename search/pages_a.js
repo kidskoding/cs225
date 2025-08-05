@@ -9,10 +9,9 @@ var searchData=
   ['and_20bst_20implementation_6',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['and_20dictionaries_7',['Module 10 - Tree Searching and Dictionaries',['../md_notes_2module-10.html',1,'']]],
   ['and_20hash_20tables_8',['Module 30 - Hashing, Hash Collisions, and Hash Tables',['../md_notes_2module-30.html',1,'']]],
-  ['and_20lambda_9',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
-  ['and_20queues_10',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]],
-  ['and_20tt_20linked_20list_20tt_20implementation_11',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
-  ['array_20implementation_20of_20a_20tt_20list_20tt_12',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_13',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
-  ['avl_20trees_14',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
+  ['and_20queues_9',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]],
+  ['and_20tt_20linked_20list_20tt_20implementation_10',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
+  ['array_20implementation_20of_20a_20tt_20list_20tt_11',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['arraylist_20tt_20an_20array_20implementation_20of_20a_20tt_20list_20tt_12',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
+  ['avl_20trees_13',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
 ];

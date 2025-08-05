@@ -12,7 +12,7 @@ var searchData=
   ['module_2012_20bst_20balance_9',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['module_2013_20bst_20rotations_10',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
   ['module_2014_20avl_20trees_11',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]],
-  ['module_2015_20bbst_20wrap_20and_20lambda_12',['Module 15 - BBST Wrap and Lambda',['../md_notes_2module-15.html',1,'']]],
+  ['module_2015_20lambda_12',['Module 15 - Lambda',['../md_notes_2module-15.html',1,'']]],
   ['module_2016_20bbst_20range_20search_13',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
   ['module_2017_20btrees_14',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
   ['module_2018_20btree_20analysis_15',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
