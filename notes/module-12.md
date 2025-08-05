@@ -30,18 +30,18 @@ $$
 n_l = 1 + 2 + 4 + \cdots + 2^l = \sum^l_{i = 0} 2^i
 $$
 
-Since $h = l$ at the maximum level of a tree, the total number of nodes in a BS, $n$, is $2^h$, which can also be represented as a sum of the geometric series of all nodes up to level $h$, where
+Since $h = l$ at the maximum level of a tree, the total number of nodes in a BST, $n$, is $2^h$, which can also be represented as a sum of the geometric series of all nodes up to level $h$, where
 
 $$
 n = 1 + 2 + 4 + \cdots + 2^h = \sum^h_{i = 0} 2^i
 $$
 
-
+The sum of a geometric series $1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r$
 
 Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$
 
 This is the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NTUyOTgxMCwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbNTA2MTE5NDcyLDE1NzUyMTc3NjBdfQ==
 -->
