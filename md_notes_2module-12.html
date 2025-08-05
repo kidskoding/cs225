@@ -160,7 +160,9 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <p>But how??</p>
 <p>To <b>find the balance of a <a class="el" href="classBST.html">BST</a> node</b>, you use the concept of a <b>balance factor</b> (BF), where</p>
 <p>$$BF = height(T_R) - height(T_L)$$</p>
-<p>When $BF &lt; 0$, the left subtree is taller and when $BF &gt; 0$, the right subtree is taller</p>
+<p>When $BF &lt; 0$, the left subtree is taller; when $BF &gt; 0$, the right subtree is taller; and when $BF = 0$, the tree is perfectly balanced</p>
+<p>If $|BF| &gt; 1$, then the tree is unbalanced</p>
+<p>Therefore, a tree is height balanced if $|b| \leq 1$ at every node</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
