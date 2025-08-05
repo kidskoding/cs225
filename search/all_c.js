@@ -12,7 +12,7 @@ var searchData=
   ['bipartite_20graph_9',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
   ['bloom_20filters_10',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
   ['bst_11',['BST',['../classBST.html',1,'']]],
-  ['bst_20analysis_12',['BST-Analysis',['../md_notes_2module-11.html#autotoc_md86',1,'']]],
+  ['bst_20analysis_12',['BST-Analysis',['../md_notes_2module-11.html#autotoc_md88',1,'']]],
   ['bst_20and_20bst_20implementation_13',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['bst_20balance_14',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['bst_20implementation_15',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],

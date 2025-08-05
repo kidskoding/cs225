@@ -144,7 +144,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    std::unordered_map&lt;K, V&gt; node_map;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>This looks great, it shows the exact functionalities we need for our <a class="el" href="classBST.html">BST</a></p>
-<p>Notice how we added an <code>std::unordered_map</code>. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our <a class="el" href="classBST.html">BST</a></p>
+<p>Notice how we added an <code>std::unordered_map</code>, <code>node_map</code>. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our <a class="el" href="classBST.html">BST</a></p>
 <ul>
 <li><code>find</code> - Will be used to find a node in a <a class="el" href="classBST.html">BST</a>. Returns a custom implemented <code>TreeIterator</code> that behaves like the STL iterator of a template library. This is because we want to return the iterator's <code>.end()</code> behavior when not found.</li>
 <li><code>insert</code> - Will be used to insert a node into a <a class="el" href="classBST.html">BST</a></li>
@@ -197,6 +197,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 </ul>
 </li>
 </ol>
+<h1><a class="anchor" id="autotoc_md86"></a>
+<code>insert</code></h1>
 <p>We will now implement an internal insert function called <code>_insert</code>. The process is simple: to insert a node into a Binary Search Tree (<a class="el" href="classBST.html">BST</a>), we search for the position where the new node should go, and then assign a new <code>TreeNode</code> with the given key and value at that location.</p>
 <p>This works because, when we search for the correct position in the <a class="el" href="classBST.html">BST</a>, we eventually reach a <code>null</code> pointer, since the key does not already exist in the tree. The <code>_find</code> function returns a <b>reference to that pointer</b>, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new <code>TreeNode</code> to that location, effectively inserting the node into the tree.</p>
 <p>The code for internal insert, <code>_insert</code> is shown below</p>
@@ -230,7 +232,9 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    // also insert the key-value pair into the hashmap for fast lookup and iterator support</div>
 <div class="line">    node_map[key] = value;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The final step is to implement <code>remove</code> for a <a class="el" href="classBST.html">BST</a>. This seems simple since I just need to find the location of the <code>TreeNode</code> that I want to remove and then set its pointer to null.</p>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md87"></a>
+<code>remove</code></h1>
+<p>The final step is to implement <code>remove</code> for a <a class="el" href="classBST.html">BST</a>. This seems simple since I just need to find the location of the <code>TreeNode</code> that I want to remove and then set its pointer to null.</p>
 <p>However, this actually will only work if the node is a <b>leaf node</b>. There are two other cases we have to consider when removing a node, which rely on the node having at least one child</p>
 <ol type="1">
 <li><b>Removing a leaf node</b> - If the node is a leaf node (has no children)</li>
@@ -329,7 +333,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    // remove the key from the map</div>
 <div class="line">    node_map.erase(key);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md86"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md88"></a>
 BST-Analysis</h1>
 <p>The table below summarizes the runtime for all our important <a class="el" href="classBST.html">BST</a> algorithms</p>
 <table class="markdownTable">

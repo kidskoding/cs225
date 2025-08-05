@@ -7,7 +7,7 @@ var searchData=
   ['references_4',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]],
   ['references_20and_20pointers_5',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
   ['remove_6',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]],
-  ['remove_20tt_7',['&lt;tt&gt;remove&lt;/tt&gt;',['../md_notes_2module-03.html#autotoc_md55',1,'']]],
+  ['remove_20tt_7',['remove tt',['../md_notes_2module-03.html#autotoc_md55',1,'&lt;tt&gt;remove&lt;/tt&gt;'],['../md_notes_2module-11.html#autotoc_md87',1,'&lt;tt&gt;remove&lt;/tt&gt;']]],
   ['resizing_20by_20adding_202_20elements_20every_20time_8',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'']]],
   ['resizing_20by_20doubling_20the_20elements_20every_20time_9',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md60',1,'']]],
   ['resources_10',['Course Info and Resources',['../md_notes_2module-01.html#autotoc_md45',1,'']]],

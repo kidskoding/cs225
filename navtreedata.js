@@ -130,7 +130,9 @@ var NAVTREE =
     ] ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", [
       [ "find", "md_notes_2module-11.html#autotoc_md85", null ],
-      [ "BST-Analysis", "md_notes_2module-11.html#autotoc_md86", null ]
+      [ "insert", "md_notes_2module-11.html#autotoc_md86", null ],
+      [ "remove", "md_notes_2module-11.html#autotoc_md87", null ],
+      [ "BST-Analysis", "md_notes_2module-11.html#autotoc_md88", null ]
     ] ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
     [ "Module 13 - BST Rotations", "md_notes_2module-13.html", null ],
