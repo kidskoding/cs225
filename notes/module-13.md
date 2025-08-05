@@ -22,29 +22,23 @@ For example, if the left subtree is much taller than the right, a right rotation
 
 There are a total of **four** rotations: L (left), R (right), LR (left-right), RL (right-left)
 
-- **L** (Left Rotation) - used when the right subtree is too tall (Left-Left case)
-
-**Before Rotation**
-```mermaid 
-graph TD
+1. **L** (Left Rotation) - used when the right subtree is too tall (Right-Right case)
+	```mermaid 
+	graph TD
     Z[Z]
+    Z --> T1
     Z --> Y[Y]
+    Y --> T2
     Y --> X[X]
-    Y --> T2[T2]
-    Z --> T3[T3]
-```
-
-**After Rotation**
-```mermaid
-graph TD
-    %% After rotation
+    
+    %% After
     X2[X]
     X2 --> Y2[Y]
-    Y2 --> T1[T1]
-    Y2 --> T2a[T2]
-    X2 --> Z2[Z]
-    Z2 --> T3a[T3]
-```
+    X2 --> T4
+    Y2 --> Z2[Z]
+    Z2 --> T1a
+    Z2 --> T2a
+    ```
 
 - **R** (Right Rotation) - used when the left subtree is too tall (Right-Right case)
 - **LR** (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case)
@@ -61,7 +55,7 @@ The goal is to get $h \equiv O(\log n)$. These types of trees are called **AVL t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDA4NTUwMCwtMTI4NzY3MzE4OSwxNj
+eyJoaXN0b3J5IjpbLTkzMzE4OTQ5OSwtMTI4NzY3MzE4OSwxNj
 cwOTE2MzQzLC00MjA1OTI2MCwxNjM3NTkxNjgxLC0yODcyMzgw
 MiwzMzA1NzA3NDRdfQ==
 -->
