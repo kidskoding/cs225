@@ -333,6 +333,16 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    // remove the key from the map</div>
 <div class="line">    node_map.erase(key);</div>
 <div class="line">}</div>
+</div><!-- fragment --><p><code>begin()</code> and <code>end()</code> work by simply returning the begin and end iterators of <code>node_map</code>, our unordered map</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">typename BST&lt;K, V&gt;::TreeIterator BST&lt;K, V&gt;::begin() {</div>
+<div class="line">    return node_map.begin();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">typename BST&lt;K, V&gt;::TreeIterator BST&lt;K, V&gt;::end() {</div>
+<div class="line">    return node_map.end();</div>
+<div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md88"></a>
 BST-Analysis</h1>
 <p>The table below summarizes the runtime for all our important <a class="el" href="classBST.html">BST</a> algorithms</p>
