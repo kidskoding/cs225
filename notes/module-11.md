@@ -157,13 +157,13 @@ However, this actually will only work if the node is a **leaf node**.  There are
 	-   The **inorder successor** (IOS) - the smallest node in the right subtree
 	- Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child
 
-
+Finding the IOP and IOS is a very effective approach when removing a node with both a left and right child because it always runs in $O(h)$ time. When a left or right node follows a single path down a tree, the worst case occurs when the node travels through the entire path of $
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMxND
-UwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwODY0
-NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4Mz
-IwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xODA1NTQ3
-NTM5LDE5MTAyNTMzNTUsLTIwMDY4MzAwMTksMTQ1MDY4OTUwNS
-w3MjU4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLDEwNjM2
-MDg1MDJdfQ==
+eyJoaXN0b3J5IjpbMTMxNzM0MzY0OSwxMTE5NTQyMDg1LC05MD
+Y3MzkwNDMsMzE0NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3MTQx
+ODYsNzI2NjA4NjQ0LDE2OTY0OTY1ODksMjA3NjE1OTc4OCwxNz
+I0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIwLC05ODc5MTQ3
+NDksLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMjAwNjgzMDAxOS
+wxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5NjA0LC01MDMy
+MTYxOTJdfQ==
 -->
