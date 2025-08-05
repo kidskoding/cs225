@@ -58,7 +58,7 @@ private:
 
 This looks great, it shows the exact functionalities we need for our BST
 
-Notice how we added an `std::unordered_map`. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our BST
+Notice how we added an `std::unordered_map`, `node_map`. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our BST
 
 - `find` - Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library. This is because we want to return the iterator's `.end()` behavior when not found.
 - `insert` - Will be used to insert a node into a BST
@@ -127,6 +127,8 @@ However, there are some questions to ask, especially since this was a recursive 
 1. What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack. 
 	- The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.
 
+## `insert`
+
 We will now implement an internal insert function called `_insert`. The process is simple: to insert a node into a Binary Search Tree (BST), we search for the position where the new node should go, and then assign a new `TreeNode` with the given key and value at that location.
 
 This works because, when we search for the correct position in the BST, we eventually reach a `null` pointer, since the key does not already exist in the tree. The `_find` function returns a **reference to that pointer**, giving us access to the exact spot where the new node should be inserted. With this reference, we can directly assign a new `TreeNode` to that location, effectively inserting the node into the tree.
@@ -175,6 +177,8 @@ void BST<K, V>::insert(K key, V value) {
     node_map[key] = value;
 }
 ```
+
+## `remove`
 
 The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
 
@@ -303,7 +307,7 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3NjYxNzg1LC0xODM1OTY1MTE1LC0xNT
+eyJoaXN0b3J5IjpbNTYxODk0NjYxLC0xODM1OTY1MTE1LC0xNT
 k4MDg2NjU2LC0xMjM4ODYwMDA2LDEzNzI3ODg4NTgsLTEwMzA5
 NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0Nzg0OCwtODg5NTY5MT
 U2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05MDY3MzkwNDMsMzE0
