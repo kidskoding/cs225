@@ -311,17 +311,16 @@ For `find`, `insert`, and `remove`, the worst-case time complexity depends on th
 
 $h$ can be as large as $n$ in the worst case, meaning that any operation that takes $O(h)$ time can take up to $O(n)$ time and are therefore considered equivalent
 
-We can prove this by showing that height $h$ of a BST with $n$ nodes can be $h=n−1$ in the worst case, meaning $O(h) \equiv O(n)$
+Let the maximum height, $h$, of a BST with $n$ nodes be $h = n - 1$. Prove that $O(h) \equiv O(n)$ in the worst case.
 
-Let the maximum height, $h$, of a BST with $n$ nodes be $h = n - 1$
-
-
+By definition, the height $h$ of a BST is the length of the longest path from the root to a leaf, measured in edges
+	1. The worst case scenario occurs when the BS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjM5NjI0MjQsLTE4MzU5NjUxMTUsLT
-E1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAz
-MDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1Nj
-kxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0Mywz
-MTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MD
-g2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQs
-ODMyMDUxNDY1XX0=
+eyJoaXN0b3J5IjpbMTUxNDg0MDYwNiwtMTgzNTk2NTExNSwtMT
+U5ODA4NjY1NiwtMTIzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMw
+OTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OT
+E1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMx
+NDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwOD
+Y0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4
+MzIwNTE0NjVdfQ==
 -->
