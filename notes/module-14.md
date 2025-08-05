@@ -73,9 +73,37 @@ void AVL<K, V>::insert(K key, V value) {
 The code above ensures the AVL tree maintains BST properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater
 
 However, we are missing one crucial detail: ensuring that the AVL tree is **balanced**. To do this, we need to calculate the **balance factor** and then based on the balance factor, perform the appropriate rotation
+
+The balancing function is shown below
+
+```
+template <typename K, typename V>
+void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
+    // calculate the balance factor
+    int balance = curr->right->height - curr->left->height;
+
+    // check if the node is currently not in balance
+    if(balance == -2) { // heavy left ("left stick" shaped subtree)
+        int leftBalance = curr->left->right->height - curr->left->left->height;
+        if(leftBalance == -1) {
+            // perform right rotation
+        } else {
+            // perform left-right rotation
+        }
+    } else if(balance == 2) { // heavy right ("right stick" shaped subtree)
+        // perform left rotation
+    } else {
+        // perform right-left rotation
+    }
+
+    _updateHeight(curr);
+}
+```
+
+This is a lot of code, but what we are essentially doing is calculating the balance factor so we know which rotation to perform!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OT
-E4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3
-ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLT
-QwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbMzE0NjcxMzUwLC01NTc3MzMzOTIsMTU1OD
+QzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0
+MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsND
+A5NTc4MTM4LC00MDk2MzI1OTFdfQ==
 -->
