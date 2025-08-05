@@ -144,7 +144,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    std::unordered_map&lt;K, V&gt; node_map;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>This looks great, it shows the exact functionalities we need for our <a class="el" href="classBST.html">BST</a></p>
-<p>Notice how we added an <code>std::unordered_map</code>. This helps us use an iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our <a class="el" href="classBST.html">BST</a></p>
+<p>Notice how we added an <code>std::unordered_map</code>. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our <a class="el" href="classBST.html">BST</a></p>
 <ul>
 <li><code>find</code> - Will be used to find a node in a <a class="el" href="classBST.html">BST</a>. Returns a custom implemented <code>TreeIterator</code> that behaves like the STL iterator of a template library. This is because we want to return the iterator's <code>.end()</code> behavior when not found.</li>
 <li><code>insert</code> - Will be used to insert a node into a <a class="el" href="classBST.html">BST</a></li>
@@ -181,7 +181,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line">    return _find(root-&gt;right, key);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>However, there are some questions to ask, especially since this was a recursive approach.</p>
+</div><!-- fragment --><p>To code the external find, <code>find</code>, we just have to call the internal find, <code>_find</code></p>
+<p>However, there are some questions to ask, especially since this was a recursive approach.</p>
 <ol type="1">
 <li>What if the tree is really tall? Because in a list, we don't want to write things recursively because the nodes will expend a lot of memory on the call stack.<ul>
 <li>The only valid solution would be to implement this iteratively, but I wouldn't want to do this because they work in a naturally recursive format. For now we can safely ignore this because there isn't much of a use case, but this is still a problem.</li>
@@ -317,7 +318,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">void BST&lt;K, V&gt;::remove(const K&amp; key) {</div>
 <div class="line">    _remove(root, key);</div>
 <div class="line">    </div>
-<div class="line">    // removes the key from the map</div>
+<div class="line">    // remove the key from the map</div>
 <div class="line">    node_map.erase(key);</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md86"></a>
