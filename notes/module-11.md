@@ -96,15 +96,18 @@ Otherwise, we can just call `_find` and then return the root's right node and th
 This full code for internal find, `_find`, is shown below
 
 ```
-template <class K, class V>
-BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
-    if(root == nullptr) { return root; }
-    if(root->key == key) { return key; }
+template <typename K, typename V>
+typename BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
+    // if the root's pointer is null, return the root or
+    // if the root's key equals the given key, return the root
+    if(root == nullptr || root->key == key) { return root; }
 
+    // if the root's key is greater than the given key, call find on the left subtree
     if(root->key > key) {
         return _find(root->left, key);
     }
 
+    // if the root's key is less than the given key, call find on the right subtree
     return _find(root->right, key);
 }
 ```
@@ -300,11 +303,11 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ2MTM0NTgsLTE4MzU5NjUxMTUsLT
-E1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAz
-MDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1Nj
-kxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0Mywz
-MTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MD
-g2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQs
-ODMyMDUxNDY1XX0=
+eyJoaXN0b3J5IjpbNjM3NjYxNzg1LC0xODM1OTY1MTE1LC0xNT
+k4MDg2NjU2LC0xMjM4ODYwMDA2LDEzNzI3ODg4NTgsLTEwMzA5
+NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0Nzg0OCwtODg5NTY5MT
+U2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05MDY3MzkwNDMsMzE0
+NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3MTQxODYsNzI2NjA4Nj
+Q0LDE2OTY0OTY1ODksMjA3NjE1OTc4OCwxNzI0NjYxNjY0LDgz
+MjA1MTQ2NV19
 -->
