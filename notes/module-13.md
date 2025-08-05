@@ -25,8 +25,11 @@ There are a total of **four** rotations: L (left), R (right), LR (left-right), R
 - **L** (Left Rotation) - used when the left subtree is too tall (Left-Left case)
 - **R** (Right Rotation) - used when the right subtree is too tall (Right-Right case)
 - **LR** (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case)
-	- 
-- 
+	- **Left Rotation** at `y` to turn it into a Left-Left case
+	- **Right Rotation** at `z`
+- **RL** (Right-Left Rotation) - Used when there's imbalance in the right-left direction (Right child has a taller left subtree — Right-Left case)
+	- **Right Rotation** at `y` to turn it into a Right-Right case
+	- **Left Rotation** at `z`
 
 Other things to know about rotations:
 - All rotations are local, meaning subtrees aren't impacted
@@ -37,6 +40,6 @@ The goal is to get $O(h) \equiv O(\log n)$. These types of trees are called **AV
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjU2NjMzNjcsLTQyMDU5MjYwLDE2Mz
-c1OTE2ODEsLTI4NzIzODAyLDMzMDU3MDc0NF19
+eyJoaXN0b3J5IjpbMTY3MDkxNjM0MywtNDIwNTkyNjAsMTYzNz
+U5MTY4MSwtMjg3MjM4MDIsMzMwNTcwNzQ0XX0=
 -->
