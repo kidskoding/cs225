@@ -36,9 +36,12 @@ $$
 n = 1 + 2 + 4 + \cdots + 2^h = \sum^h_{i = 0} 2^i
 $$
 
-The sum of a geometric series $1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r^{h + 1} - 1}{r - 1}$
+The sum of a geometric series is
 
-$r = 2$, so $\frac{2^{h + 1} - 1}{2 - 1} = 2^{h + 1} - 1$
+$$1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r^{h + 1} - 1}{r - 1}$$
+
+Since $r = 2$, 
+$$\frac{2^{h + 1} - 1}{2 - 1} = 2^{h + 1} - 1$$
 
 Solving for $h$,
 
@@ -59,5 +62,5 @@ This explains the notion of **balancing**. We want to balance a BST so that its 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDcwNjI4NjEsMTU3NTIxNzc2MF19
+eyJoaXN0b3J5IjpbLTE5NzUyNDk2MTEsMTU3NTIxNzc2MF19
 -->
