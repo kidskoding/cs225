@@ -12,14 +12,19 @@ For all BST's:
 - Its **lower bound** (best case scenario) occurs when $h \geq O(log(n)) \equiv h \geq O(log_2(n))$
 - Its **upper bound** (worst case scenario) occurs when $h \leq O(n)$
 
-Previously, we discussed and proved why the upper bound must be $O(n)$. But, why is the lower bound at least $O(log(n))$?
+Previously, we discussed and proved why the upper bound must be at most $O(n)$. But, why is the lower bound at least $O(log(n))$?
 
+To explain this, we must understand the structure of a perfect BST, which occurs when each level has twice the number of nodes as the previous level
 
+- Level $0$ (root) has $1$ node
+- Level $1$ has $2$ nodes
+- Level $2$ has $4$ nodes
+$\vdots$
 
 Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$
 
 This is the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTc2NTY2MCwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbLTE5MzY0MjQ1NzgsMTU3NTIxNzc2MF19
 -->
