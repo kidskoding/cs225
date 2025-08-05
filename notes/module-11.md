@@ -193,7 +193,9 @@ void BST<K, V>::_swap(TreeNode* a, TreeNode* b) {
 
 Finally, we can top it off by coding the functionality of `remove`. We first need a helper to handle `remove`, `_remove`, for all kinds of nodes, and then we can call the external remove with `root`. 
 
-Recall that `_remove` involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child). The co
+Recall that `_remove` involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child). The code for `_remove` is shown below
+
+
 
 Coding the exposed (external) version of `remove` becomes simple from here, we just call `_remove` and passing in the root
 
@@ -205,11 +207,11 @@ void BST<K, V>::remove(const K& key) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0OTQ5MTE1LC0xMDMwOTQ4OTA5LC0xNj
-E3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUx
-MzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMT
-M5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2
-NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMj
-AzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xODA1NTQ3NTM5LDE5MTAy
-NTMzNTVdfQ==
+eyJoaXN0b3J5IjpbMTM3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMT
+YxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1
+MTMyLDExMTk1NDIwODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLT
+EzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5
+NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LD
+IwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOTEw
+MjUzMzU1XX0=
 -->
