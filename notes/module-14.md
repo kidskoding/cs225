@@ -228,9 +228,9 @@ Recall from discrete math, the definition of big-O states that $f(n)$ is $O(g(n)
 
 Or simply, the worst-case growth rate of a function as the input gets very large. When I give it more data, how does it slow down?
 
-
+Let $h(n)$ be the height as a function of $n$. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzk5NTY5MiwtMTExNTQ0Mzg5LDkzMT
+eyJoaXN0b3J5IjpbMTQ5MzY0OTk1OSwtMTExNTQ0Mzg5LDkzMT
 YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
 LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
 EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
