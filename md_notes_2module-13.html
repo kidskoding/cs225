@@ -131,7 +131,17 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 </ul>
 </li>
 </ul>
-<p>Other things to know about rotations:</p><ul>
+<div class="fragment"><div class="line">mermaid graph TD</div>
+<div class="line">    A[8]</div>
+<div class="line">    A --&gt; B[3]</div>
+<div class="line">    A --&gt; C[10]</div>
+<div class="line">    B --&gt; D[1]</div>
+<div class="line">    B --&gt; E[6]</div>
+<div class="line">    E --&gt; F[4]</div>
+<div class="line">    E --&gt; G[7]</div>
+<div class="line">    C --&gt; H[14]</div>
+<div class="line">    H --&gt; I[13]</div>
+</div><!-- fragment --><p>Other things to know about rotations:</p><ul>
 <li>All rotations are local, meaning subtrees aren't impacted</li>
 <li>All rotations are constant time, $O(1)$ because they only rearrange a <b>fixed, small number of pointers</b> (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree</li>
 <li>The <a class="el" href="classBST.html">BST</a> property is maintained</li>
