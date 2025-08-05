@@ -58,7 +58,7 @@ private:
 
 This looks great, it shows the exact functionalities we need for our BST
 
-Notice how we added an `std::unordered_map`. This helps us use an iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our BST
+Notice how we added an `std::unordered_map`. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our BST
 
 - `find` - Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library. This is because we want to return the iterator's `.end()` behavior when not found.
 - `insert` - Will be used to insert a node into a BST
@@ -108,6 +108,8 @@ BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
     return _find(root->right, key);
 }
 ```
+
+To code the external find, `find`, we just have to call the internal find, `_find`
 
 However, there are some questions to ask, especially since this was a recursive approach.
 
@@ -274,7 +276,7 @@ template <typename K, typename V>
 void BST<K, V>::remove(const K& key) {
     _remove(root, key);
 	
-	// removes the key from the map
+	// remove the key from the map
     node_map.erase(key);
 }
 ```
@@ -290,11 +292,11 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzU5NjUxMTUsLTE1OTgwODY2NTYsLT
-EyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMTYx
-NzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MT
-MyLDExMTk1NDIwODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEz
-OTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5Nj
-U4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIw
-MzQ0ODE1MjBdfQ==
+eyJoaXN0b3J5IjpbLTYyMTYzNTU5NiwtMTgzNTk2NTExNSwtMT
+U5ODA4NjY1NiwtMTIzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMw
+OTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OT
+E1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMx
+NDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwOD
+Y0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4
+MzIwNTE0NjVdfQ==
 -->
