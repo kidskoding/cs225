@@ -148,21 +148,22 @@ Its a preference as to which method is better for writing `_insert`; the first o
 
 The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
 
-However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node 
+However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node, which rely on the node having at least one child
 
-1. **Removing a node with one child (left or right)** - If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes.
-2. **Removing a node with two children** - If the node has two children, meaning it has both a left and right child, we need to instead find a replacement node to take the removed node’s place in order to maintain the property of a BST. This is either:
+1. **Removing a leaf node** - If the node is a leaf node (has no children)
+2. **Removing a node with one child (left or right)** - If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes.
+3. **Removing a node with two children** - If the node has two children, meaning it has both a left and right child, we need to instead find a replacement node to take the removed node’s place in order to maintain the property of a BST. This is either:
 	-   The **inorder predecessor** (IOP) - the largest node in the left subtree
 	-   The **inorder successor** (IOS) - the smallest node in the right subtree
 	- Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOT
-UwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4
-OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMz
-Q0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOTEwMjUz
-MzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNzI1ODAxNzI5LC
-0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4NTAyLDE1OTQw
-MDYwNzBdfQ==
+eyJoaXN0b3J5IjpbMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMxND
+UwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwODY0
+NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4Mz
+IwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xODA1NTQ3
+NTM5LDE5MTAyNTMzNTUsLTIwMDY4MzAwMTksMTQ1MDY4OTUwNS
+w3MjU4MDE3MjksLTI3NTE4OTYwNCwtNTAzMjE2MTkyLDEwNjM2
+MDg1MDJdfQ==
 -->
