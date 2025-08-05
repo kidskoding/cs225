@@ -26,7 +26,7 @@ There are a total of **four** rotations: L (left), R (right), LR (left-right), R
 - **R** (Right Rotation) - used when the left subtree is too tall and forms a **"left stick"** (due to its shape). This is known formally as the Left-Left case
 - **LR** (Left-Right Rotation) - Used when there's imbalance in the left-right direction and forms a **"left elbow"** (due to its shape). This is known formally as the Left-Right case, where the left child has a taller right subtree
 	- Perform a **left** and then **right** rotation
-- **RL** (Right-Left Rotation) - Used when there's imbalance in the right-left direction and forms a **right elbow** . Referred to as **"right elbow"** (due to its shape)
+- **RL** (Right-Left Rotation) - Used when there's imbalance in the right-left direction and forms a **right elbow** (due to its shape). This is known formally as the Right-Left case, where the right child has a taller left subtree
 	- Perform a **right** and then **left** rotation
 
 Other things to know about rotations:
@@ -36,7 +36,7 @@ Other things to know about rotations:
 
 The goal is to get $h \equiv O(\log n)$. These types of trees are called **AVL trees** (named after Georgy Addison-Velsky and Evengii Landis), which are a specific type of **BBST** (Balanced Binary Search Tree)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTk5NDQwNzYsNTUxNTQwNzM1LC0xMj
-g3NjczMTg5LDE2NzA5MTYzNDMsLTQyMDU5MjYwLDE2Mzc1OTE2
-ODEsLTI4NzIzODAyLDMzMDU3MDc0NF19
+eyJoaXN0b3J5IjpbMTg5NDk1OTE4Myw1NTE1NDA3MzUsLTEyOD
+c2NzMxODksMTY3MDkxNjM0MywtNDIwNTkyNjAsMTYzNzU5MTY4
+MSwtMjg3MjM4MDIsMzMwNTcwNzQ0XX0=
 -->
