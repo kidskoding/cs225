@@ -195,7 +195,56 @@ Finally, we can top it off by coding the functionality of `remove`. We first nee
 
 Recall that `_remove` involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child). The code for `_remove` is shown below
 
+```
+template <typename K, typename V>
+void BST<K, V>::_remove(TreeNode*& node, const K& key) {
+    if(node != nullptr) { return; }
 
+    if(key < node->key) {
+        // descend down the left subtree because left subtree contains the smaller values
+        _remove(node->left, key);
+    } else if(key > node->key) {
+        // descend down the right subtree because right subtree contains the larger values
+        _remove(node->right, key);
+    } else {
+        // case 1: the leaf node case - free the node and set it to null
+        if(node->left != nullptr && node->right != nullptr) {
+            delete node;
+            node = nullptr;
+        } 
+        
+        // case 2: the one child node case (either left or right child)
+        else if(node->left != nullptr) {
+            // remove the node by connecting its parent directly to the node’s only child (the right child)
+            TreeNode* tmp = node;
+            node = node->right;
+            delete tmp;
+        }
+        else if(node->right != nullptr) {
+            // remove the node by connecting its parent directly to the node’s only child (the left child)
+            TreeNode* tmp = node;
+            node = node->left;
+            delete tmp;
+        }
+
+        // case 3: the two child node case (both left and right child)
+        // swap the removed node with the iop and recursively call the function on the left subtree
+        else {
+            K iop_key = node->key;
+            TreeNode* iop = _iop(node);
+            _swap(iop, node);
+
+            // recursively call on the left subtree because the iop (the node to remove) is located there
+            _remove(node->left, iop_key);
+        }
+    }
+}
+```
+
+A lot of things happen in this code, but most of it has already been previously explained. A couple things to clarify however,
+
+1. If the key we need to remove is less than the node's key, it makes sense to descend down the left subtree, since that contains keys less than the key we need to remove
+2. If the key we
 
 Coding the exposed (external) version of `remove` becomes simple from here, we just call `_remove` and passing in the root
 
@@ -207,11 +256,11 @@ void BST<K, V>::remove(const K& key) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMT
-AzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1
-NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0My
-wzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2
-MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2Nj
-QsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgw
-NTU0NzUzOV19
+eyJoaXN0b3J5IjpbMTA3MzQzNDY4NywtMTIzODg2MDAwNiwxMz
+cyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5
+NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NS
+wtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYw
+NzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3OD
+gsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3
+OTE0NzQ5XX0=
 -->
