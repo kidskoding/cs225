@@ -110,7 +110,7 @@ $(function(){initNavTree('LinkedList_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* newNode = <span class="keyword">new</span> <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>(data);</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// reassign the next pointer to the head</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    newNode-&gt;next = head;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    newNode-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> = head;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// reassign the head pointer to the newly created node</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    head = newNode;</div>
@@ -127,7 +127,7 @@ $(function(){initNavTree('LinkedList_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* newNode = <span class="keyword">new</span> <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>(data);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// reassign the next node of the newly created node to be the `ListNode` found at the given index</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    newNode-&gt;next = nodeAtIndex;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    newNode-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> = nodeAtIndex;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// reassign the found `ListNode` at the given index&#39;s pointer to the newly created node from the given data</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    nodeAtIndex = newNode;</div>
@@ -149,12 +149,12 @@ $(function(){initNavTree('LinkedList_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// traverse through the list to find the node right before the given index</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">int</span> x = 0;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">while</span>(curr != <span class="keyword">nullptr</span> &amp;&amp; x &lt; index - 1) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        curr = curr-&gt;next;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        curr = curr-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        x += 1;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// return the next node in the list, since that matches the node at the given index</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> curr-&gt;next;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> curr-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -165,7 +165,7 @@ $(function(){initNavTree('LinkedList_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; loc = <a class="code hl_function" href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">find</a>(index);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// return the data that the `ListNode` at the given index holds</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> loc-&gt;data;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> loc-&gt;<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
@@ -179,10 +179,10 @@ $(function(){initNavTree('LinkedList_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* temp = toRemove;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// create a `val` variable to store temp&#39;s data</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    T val = temp-&gt;data;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    T val = temp-&gt;<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// reassign `toRemove` to the next node in the `ListNode`</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    toRemove = toRemove-&gt;next;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    toRemove = toRemove-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// delete `temp` from memory since we no longer need it</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">delete</span> temp;</div>
@@ -195,6 +195,8 @@ $(function(){initNavTree('LinkedList_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="aclassLinkedList_html_af331637727b3ada2f806c29b9f4cc6fe"><div class="ttname"><a href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">LinkedList::remove</a></div><div class="ttdeci">T remove(int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:64</div></div>
 <div class="ttc" id="aclassLinkedList_html_afe2698a20469566f34c4cfcc92ae6908"><div class="ttname"><a href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">LinkedList::insertAtFront</a></div><div class="ttdeci">void insertAtFront(const T &amp;data)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:6</div></div>
 <div class="ttc" id="astructListNode_html"><div class="ttname"><a href="structListNode.html">ListNode</a></div><div class="ttdef"><b>Definition</b> LinkedList.h:6</div></div>
+<div class="ttc" id="astructListNode_html_a935e06f21b246fb3a0987dd3f9d28528"><div class="ttname"><a href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">ListNode::data</a></div><div class="ttdeci">T data</div><div class="ttdef"><b>Definition</b> LinkedList.h:8</div></div>
+<div class="ttc" id="astructListNode_html_aa5d5cd1078f0342696f4fb713e0d7744"><div class="ttname"><a href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">ListNode::next</a></div><div class="ttdeci">ListNode * next</div><div class="ttdef"><b>Definition</b> LinkedList.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

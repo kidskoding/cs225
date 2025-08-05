@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remove_0',['remove',['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList']]]
+  ['operator_5b_5d_0',['operator[]',['../classLinkedList.html#a199fff56292949cdec68970cc5197a66',1,'LinkedList']]]
 ];

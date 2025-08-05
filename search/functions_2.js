@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_5b_5d_0',['operator[]',['../classLinkedList.html#a199fff56292949cdec68970cc5197a66',1,'LinkedList']]]
+  ['find_0',['find',['../classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde',1,'LinkedList']]]
 ];

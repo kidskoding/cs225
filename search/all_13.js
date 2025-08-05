@@ -18,9 +18,10 @@ var searchData=
   ['insertatfront_20tt_15',['&lt;tt&gt;insertAtFront&lt;/tt&gt;',['../md_notes_2module-03.html#autotoc_md51',1,'']]],
   ['interface_20adt_16',['Dictionary Interface (ADT)',['../md_notes_2module-10.html#autotoc_md82',1,'']]],
   ['introduction_20to_20cs_20225_17',['Module 1 - Introduction to CS 225',['../md_notes_2module-01.html',1,'']]],
-  ['isomorphism_18',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]],
-  ['iterate_20through_20data_20in_20each_20data_20structure_19',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
-  ['iterator_20usage_20example_20with_20tt_20std_3a_3avector_20tt_20',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
-  ['iterators_21',['Module 7 - Iterators',['../md_notes_2module-07.html',1,'']]],
-  ['iterators_20with_20respect_20to_20classes_22',['Iterators with respect to Classes',['../md_notes_2module-07.html#autotoc_md69',1,'']]]
+  ['isempty_18',['isEmpty',['../classCircularQueue.html#a8d6edd1a93508ebb81e05709bdc131f1',1,'CircularQueue::isEmpty()'],['../classLLQueue.html#a9744253e51c572b3f01c80b26f511aa0',1,'LLQueue::isEmpty()']]],
+  ['isomorphism_19',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]],
+  ['iterate_20through_20data_20in_20each_20data_20structure_20',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
+  ['iterator_20usage_20example_20with_20tt_20std_3a_3avector_20tt_21',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
+  ['iterators_22',['Module 7 - Iterators',['../md_notes_2module-07.html',1,'']]],
+  ['iterators_20with_20respect_20to_20classes_23',['Iterators with respect to Classes',['../md_notes_2module-07.html#autotoc_md69',1,'']]]
 ];

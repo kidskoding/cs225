@@ -109,7 +109,8 @@ $(function(){initNavTree('CircularQueue_8hpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>CircularQueue&lt;T&gt;::~CircularQueue() { <span class="keyword">delete</span>[] items; }</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> CircularQueue&lt;T&gt;::enqueue(T e) {</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classCircularQueue.html#a2266b69d4c809e821d329b101441f1b3">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCircularQueue.html#a2266b69d4c809e821d329b101441f1b3">CircularQueue&lt;T&gt;::enqueue</a>(T e) {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// throw a runtime error if the queue is full</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span>(size == capacity) {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;queue is full!&quot;</span>);</div>
@@ -124,9 +125,11 @@ $(function(){initNavTree('CircularQueue_8hpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// increment the queue size</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    ++size;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>T CircularQueue&lt;T&gt;::dequeue() {</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classCircularQueue.html#a038b8383c0dd622cccfc8ba001e21a6e">   28</a></span>T <a class="code hl_function" href="classCircularQueue.html#a038b8383c0dd622cccfc8ba001e21a6e">CircularQueue&lt;T&gt;::dequeue</a>() {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// throw a runtime error if the queue is empty</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">if</span>(size == 0) {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Queue is empty&quot;</span>);</div>
@@ -144,12 +147,18 @@ $(function(){initNavTree('CircularQueue_8hpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// return the value of the element dequeued</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">bool</span> CircularQueue&lt;T&gt;::isEmpty() {</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classCircularQueue.html#a8d6edd1a93508ebb81e05709bdc131f1">   48</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classCircularQueue.html#a8d6edd1a93508ebb81e05709bdc131f1">CircularQueue&lt;T&gt;::isEmpty</a>() {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// if the size is 0, the queue is empty</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> size == 0;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+</div>
+<div class="ttc" id="aclassCircularQueue_html_a038b8383c0dd622cccfc8ba001e21a6e"><div class="ttname"><a href="classCircularQueue.html#a038b8383c0dd622cccfc8ba001e21a6e">CircularQueue::dequeue</a></div><div class="ttdeci">T dequeue()</div><div class="ttdef"><b>Definition</b> CircularQueue.hpp:28</div></div>
+<div class="ttc" id="aclassCircularQueue_html_a2266b69d4c809e821d329b101441f1b3"><div class="ttname"><a href="classCircularQueue.html#a2266b69d4c809e821d329b101441f1b3">CircularQueue::enqueue</a></div><div class="ttdeci">void enqueue(T e)</div><div class="ttdef"><b>Definition</b> CircularQueue.hpp:11</div></div>
+<div class="ttc" id="aclassCircularQueue_html_a8d6edd1a93508ebb81e05709bdc131f1"><div class="ttname"><a href="classCircularQueue.html#a8d6edd1a93508ebb81e05709bdc131f1">CircularQueue::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdef"><b>Definition</b> CircularQueue.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

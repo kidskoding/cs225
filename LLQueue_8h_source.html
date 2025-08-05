@@ -108,30 +108,27 @@ $(function(){initNavTree('LLQueue_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classLLQueue.html">    6</a></span><span class="keyword">class </span>LLQueue {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    LLQueue() : head(<span class="keyword">nullptr</span>), tail(<span class="keyword">nullptr</span>), count(0) { }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// Adds an element to the end of the queue</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> enqueue(T value);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// Removes an element from the front of the queue</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    T dequeue();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// Checks if the queue is empty (`true` if so, otherwise `false`)</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> isEmpty() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">// Returns the number of elements the queue holds</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> size() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLLQueue.html#af617aafde9b0b8534064c873ad767a27">enqueue</a>(T value);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    T <a class="code hl_function" href="classLLQueue.html#a9db303dbc6866ca6c41f21eb31e31cca">dequeue</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLLQueue.html#a9744253e51c572b3f01c80b26f511aa0">isEmpty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLLQueue.html#aed8d2e4c9cad9428d32789dea35c7078">size</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Pointer to the rear of the queue</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* tail;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// Pointer to the front of the queue</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* head;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// The element count in the queue</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> count;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
 </div>
+<div class="ttc" id="aclassLLQueue_html_a9744253e51c572b3f01c80b26f511aa0"><div class="ttname"><a href="classLLQueue.html#a9744253e51c572b3f01c80b26f511aa0">LLQueue::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdef"><b>Definition</b> LLQueue.hpp:60</div></div>
+<div class="ttc" id="aclassLLQueue_html_a9db303dbc6866ca6c41f21eb31e31cca"><div class="ttname"><a href="classLLQueue.html#a9db303dbc6866ca6c41f21eb31e31cca">LLQueue::dequeue</a></div><div class="ttdeci">T dequeue()</div><div class="ttdef"><b>Definition</b> LLQueue.hpp:26</div></div>
+<div class="ttc" id="aclassLLQueue_html_aed8d2e4c9cad9428d32789dea35c7078"><div class="ttname"><a href="classLLQueue.html#aed8d2e4c9cad9428d32789dea35c7078">LLQueue::size</a></div><div class="ttdeci">int size() const</div><div class="ttdef"><b>Definition</b> LLQueue.hpp:54</div></div>
+<div class="ttc" id="aclassLLQueue_html_af617aafde9b0b8534064c873ad767a27"><div class="ttname"><a href="classLLQueue.html#af617aafde9b0b8534064c873ad767a27">LLQueue::enqueue</a></div><div class="ttdeci">void enqueue(T value)</div><div class="ttdef"><b>Definition</b> LLQueue.hpp:6</div></div>
 <div class="ttc" id="astructListNode_html"><div class="ttname"><a href="structListNode.html">ListNode</a></div><div class="ttdef"><b>Definition</b> LinkedList.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
