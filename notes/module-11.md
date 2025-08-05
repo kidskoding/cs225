@@ -261,15 +261,20 @@ void BST<K, V>::remove(const K& key) {
 
 ## BST-Analysis
 
+The table below summarizes the runtime for all our important BST algorithms
+
 | Operation | BST Worst Case |
 | ------------ | ----------- |
-| `find`
+| `find` | $O(h) \equiv O(n)$ |
+| `insert` | $O(h) \equiv O(n)$ |
+| `remove` | $O(h) \equiv O(n)$ |
+| `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTg1MzEyMSwtMTIzODg2MDAwNiwxMz
-cyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5
-NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NS
-wtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYw
-NzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3OD
-gsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3
-OTE0NzQ5XX0=
+eyJoaXN0b3J5IjpbLTE1OTgwODY2NTYsLTEyMzg4NjAwMDYsMT
+M3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0
+OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwOD
+UsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2
+MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nz
+g4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4
+NzkxNDc0OV19
 -->
