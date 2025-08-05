@@ -171,7 +171,7 @@ typename BST<K, V>::TreeNode*& BST<K, V>::_iop(TreeNode*& root) {
     // grab the left subtree of the root
     TreeNode*& curr = root->left;
 
-    // iterate through the right children of the left subtree
+    // iterate through each right child of the left subtree to find the rightmost
 	// return the rightmost node (since that always contains the greatest value)
     while(curr->right != nullptr) {
         curr = curr->right;
@@ -207,11 +207,11 @@ void BST<K, V>::remove(const K& key) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDkzOTk4NSwxMzcyNzg4ODU4LC0xMD
-MwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2
-OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLD
-MxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYw
-ODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NC
-w4MzIwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3OTE0NzQ5LC0xODA1
-NTQ3NTM5XX0=
+eyJoaXN0b3J5IjpbLTExMzEyMTU3NDAsMTM3Mjc4ODg1OCwtMT
+AzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1
+NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0My
+wzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2
+MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2Nj
+QsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgw
+NTU0NzUzOV19
 -->
