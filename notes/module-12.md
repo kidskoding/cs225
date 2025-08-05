@@ -38,7 +38,7 @@ $$
 
 The sum of a geometric series is
 
-$$1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r^{h + 1} - 1}{r - 1}$$
+$$1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r^{n + 1} - 1}{r - 1}$$
 
 Since $r = 2$, 
 $$\frac{2^{h + 1} - 1}{2 - 1} = 2^{h + 1} - 1$$
@@ -62,5 +62,5 @@ This explains the notion of **balancing**. We want to balance a BST so that its 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUyNDk2MTEsMTU3NTIxNzc2MF19
+eyJoaXN0b3J5IjpbLTE0NDcwNDIzNzMsMTU3NTIxNzc2MF19
 -->
