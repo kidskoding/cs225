@@ -309,17 +309,7 @@ The table below summarizes the runtime for all our important BST algorithms
 
 For `find`, `insert`, and `remove`, the worst-case time complexity depends on the height $h$ of the node involved. Since these operations require traversing from the root down to the node, they may involve up to $h$ recursive or iterative steps through the tree
 
-If the height $h$ of a Binary Search Tree (BST) can be as large as the number of nodes $n$ in the worst case, then any operation that takes $O(h)$ time can take up to $O(n) time. Prove that this worst-case scenario holds, and consequently, that 
-𝑂
-(
-ℎ
-)
-≡
-𝑂
-(
-𝑛
-)
-O(h)≡O(n).
+If the height $h$ of a Binary Search Tree (BST) can be as large as the number of nodes $n$ in the worst case, then any operation that takes $O(h)$ time can take up to $O(n)$ time. Prove that this worst-case scenario holds, $O(h) \equiv O(n)$
 
 By definition, the height $h$ of a BST is the length of the longest path from the root to a leaf, measured in edges
 
@@ -330,7 +320,7 @@ $h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insigni
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NjA1OTE5NSwyOTE0ODUxNjIsLTE4Mz
+eyJoaXN0b3J5IjpbMTQ4NDgwNDAzMywyOTE0ODUxNjIsLTE4Mz
 U5NjUxMTUsLTE1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4
 ODg1OCwtMTAzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3OD
 Q4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkw
