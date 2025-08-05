@@ -125,17 +125,17 @@ Insertion into an AVL tree</h1>
 <li>Update height</li>
 </ol>
 <p>We already established that we need each <code>TreeNode</code> in an AVL tree to track its height. Therefore,</p>
-<div class="fragment"><div class="line">template &lt;typename T&gt;</div>
-<div class="line">struct TreeNode {</div>
-<div class="line">    T data;</div>
+<div class="fragment"><div class="line">struct TreeNode {</div>
+<div class="line">    V value;</div>
 <div class="line"> </div>
 <div class="line">    // have each `TreeNode` store the height in order to self balance</div>
 <div class="line">    unsigned int height;</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    TreeNode* left;</div>
 <div class="line">    TreeNode* right;</div>
 <div class="line">};</div>
-</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- fragment --><p>Inserting a node into an AVL tree</p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
