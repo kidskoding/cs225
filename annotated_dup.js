@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "ArrayList", "classArrayList.html", "classArrayList" ],
-    [ "BinaryTree", "classBinaryTree.html", null ],
+    [ "BinaryTree", "classBinaryTree.html", "classBinaryTree" ],
     [ "BST", "classBST.html", null ],
     [ "CircularQueue", "classCircularQueue.html", null ],
     [ "LinkedList", "classLinkedList.html", "classLinkedList" ],

@@ -111,7 +111,7 @@ $(function(){initNavTree('BST_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using </span>TreeIterator = <span class="keyword">typename</span> std::unordered_map&lt;K, V&gt;::iterator;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    BST();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> insert(<span class="keyword">const</span> K key, V value);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> insert(K key, V value);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> remove(<span class="keyword">const</span> K&amp; key);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    TreeIterator find(<span class="keyword">const</span> K&amp; key) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    TreeIterator begin();</div>
@@ -127,9 +127,15 @@ $(function(){initNavTree('BST_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    TreeNode* root;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    TreeNode*&amp; _find(TreeNode*&amp; root, <span class="keyword">const</span> K&amp; key);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> _insert(TreeNode*&amp; root, <span class="keyword">const</span> K&amp; key, <span class="keyword">const</span> V&amp; value);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// a map that lets us use iterators for fast access without needing to traverse the tree</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::unordered_map&lt;K, V&gt; node_map;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TreeNode*&amp; _find(TreeNode*&amp; root, <span class="keyword">const</span> K&amp; key);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> _insert(TreeNode*&amp; root, <span class="keyword">const</span> K&amp; key, <span class="keyword">const</span> V&amp; value);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> _swap(TreeNode* a, TreeNode* b);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    TreeNode*&amp; _iop(TreeNode*&amp; node);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> _remove(TreeNode*&amp; node, <span class="keyword">const</span> K&amp; key);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

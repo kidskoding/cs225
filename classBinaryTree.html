@@ -105,19 +105,95 @@ $(function(){initNavTree('classBinaryTree.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2493598ee6ddedde1453f96c384d45bc" id="r_a2493598ee6ddedde1453f96c384d45bc"><td class="memItemLeft" align="right" valign="top"><a id="a2493598ee6ddedde1453f96c384d45bc" name="a2493598ee6ddedde1453f96c384d45bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>preOrderTraversal</b> (TreeNode *curr)</td></tr>
+<tr class="memitem:a2493598ee6ddedde1453f96c384d45bc" id="r_a2493598ee6ddedde1453f96c384d45bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2493598ee6ddedde1453f96c384d45bc">preOrderTraversal</a> (TreeNode *curr)</td></tr>
 <tr class="separator:a2493598ee6ddedde1453f96c384d45bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4b120405c57eac8da096b047fbc3f2" id="r_a6c4b120405c57eac8da096b047fbc3f2"><td class="memItemLeft" align="right" valign="top"><a id="a6c4b120405c57eac8da096b047fbc3f2" name="a6c4b120405c57eac8da096b047fbc3f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>inOrderTraversal</b> (TreeNode *curr)</td></tr>
+<tr class="memitem:a6c4b120405c57eac8da096b047fbc3f2" id="r_a6c4b120405c57eac8da096b047fbc3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c4b120405c57eac8da096b047fbc3f2">inOrderTraversal</a> (TreeNode *curr)</td></tr>
 <tr class="separator:a6c4b120405c57eac8da096b047fbc3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5611e73b1aadf19e50137392384c7ad4" id="r_a5611e73b1aadf19e50137392384c7ad4"><td class="memItemLeft" align="right" valign="top"><a id="a5611e73b1aadf19e50137392384c7ad4" name="a5611e73b1aadf19e50137392384c7ad4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>postOrderTraversal</b> (TreeNode *curr)</td></tr>
+<tr class="memitem:a5611e73b1aadf19e50137392384c7ad4" id="r_a5611e73b1aadf19e50137392384c7ad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5611e73b1aadf19e50137392384c7ad4">postOrderTraversal</a> (TreeNode *curr)</td></tr>
 <tr class="separator:a5611e73b1aadf19e50137392384c7ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a627dc5e5a658c8e0c81f9ab43a62604d" id="r_a627dc5e5a658c8e0c81f9ab43a62604d"><td class="memItemLeft" align="right" valign="top"><a id="a627dc5e5a658c8e0c81f9ab43a62604d" name="a627dc5e5a658c8e0c81f9ab43a62604d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>levelOrderTraversal</b> ()</td></tr>
 <tr class="separator:a627dc5e5a658c8e0c81f9ab43a62604d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6c4b120405c57eac8da096b047fbc3f2" name="a6c4b120405c57eac8da096b047fbc3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4b120405c57eac8da096b047fbc3f2">&#9670;&#160;</a></span>inOrderTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classBinaryTree.html">BinaryTree</a>&lt; T &gt;::inOrderTraversal </td>
+          <td>(</td>
+          <td class="paramtype">TreeNode *</td>          <td class="paramname"><span class="paramname"><em>curr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the inorder traversal of a tree</p>
+<p>Inorder Traversal steps:</p><ol type="1">
+<li>Check if <code>curr == nullptr</code>; if so, halt the recursion (no more subtrees to process)</li>
+<li>Repeat the process recursively on the left subtree</li>
+<li>Visit the current <code>TreeNode</code> (<code>curr</code>)</li>
+<li>Repeat the process recursively on the right subtree </li>
+</ol>
+
+</div>
+</div>
+<a id="a5611e73b1aadf19e50137392384c7ad4" name="a5611e73b1aadf19e50137392384c7ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5611e73b1aadf19e50137392384c7ad4">&#9670;&#160;</a></span>postOrderTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classBinaryTree.html">BinaryTree</a>&lt; T &gt;::postOrderTraversal </td>
+          <td>(</td>
+          <td class="paramtype">TreeNode *</td>          <td class="paramname"><span class="paramname"><em>curr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the post order traversal of a tree</p>
+<p>Postorder Traversal steps:</p><ol type="1">
+<li>Check if <code>curr == nullptr</code>; if so, halt the recursion (no more subtrees to process)</li>
+<li>Repeat the process recursively on the left subtree</li>
+<li>Repeat the process recursively on the right subtree</li>
+<li>Visit the current <code>TreeNode</code> (<code>curr</code>) </li>
+</ol>
+
+</div>
+</div>
+<a id="a2493598ee6ddedde1453f96c384d45bc" name="a2493598ee6ddedde1453f96c384d45bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2493598ee6ddedde1453f96c384d45bc">&#9670;&#160;</a></span>preOrderTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classBinaryTree.html">BinaryTree</a>&lt; T &gt;::preOrderTraversal </td>
+          <td>(</td>
+          <td class="paramtype">TreeNode *</td>          <td class="paramname"><span class="paramname"><em>curr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the pre order traversal of a tree</p>
+<p>Preorder Traversal steps:</p><ol type="1">
+<li>Check if <code>curr == nullptr</code>; if so, halt the recursion (no more subtrees to process)</li>
+<li>Visit the current <code>TreeNode</code> (<code>curr</code>)</li>
+<li>Repeat the process recursively on the left subtree</li>
+<li>Repeat the process recursively on the right subtree </li>
+</ol>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>cs225_pg/include/<a class="el" href="BinaryTree_8h_source.html">BinaryTree.h</a></li>
 <li>cs225_pg/include/<a class="el" href="BinaryTree_8hpp_source.html">BinaryTree.hpp</a></li>

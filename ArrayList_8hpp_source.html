@@ -106,52 +106,52 @@ $(function(){initNavTree('ArrayList_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c">ArrayList&lt;T&gt;::pushBack</a>(<span class="keyword">const</span> T&amp; data) {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// Add additional space to the buffer if `size` == `capacity`</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// add additional space to the buffer if `size` == `capacity`</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">if</span>(size == capacity) {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        addSpace();</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    }</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// Place the new element at the current end</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// place the new element at the current end</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    *size = data;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// Incrememnt the `size` pointer to now point to the new end of the filled buffer</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// incrememnt the `size` pointer to now point to the new end of the filled buffer</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    ++size;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> ArrayList&lt;T&gt;::addSpace() {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">/* Reallocate the capacity of the buffer (similar to realloc in C)</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     * Typically that of double the original capacity</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">/* Reallocate the capacity of the buffer (similar to realloc in C);</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     * typically that of double the original capacity</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">int</span> newCapacity = capacity * 2;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// If the original capacity is 0, set it to 1 to be minimal and memory efficient</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// if the original capacity is 0, set it to 1 to be minimal and memory efficient</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span>(newCapacity == 0) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        newCapacity = 1;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// Allocate a new data buffer that is set to the updated capacity</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// allocate a new data buffer that is set to the updated capacity</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    T* newData = <span class="keyword">new</span> T[newCapacity];</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// Calculate the number of elements currently in the `ArrayList`</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// calculate the number of elements currently in the `ArrayList`</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">int</span> currentSize = size - data;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Copy all contents from the old data buffer into the new data buffer</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// copy all contents from the old data buffer into the new data buffer</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        newData[i] = data[i];</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// Free the contents from the old buffer from memory</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// free the contents from the old buffer from memory</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">delete</span>[] data;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Update the data pointer to point to the newly allocated buffer</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// update the data pointer to point to the newly allocated buffer</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    data = newData;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Set the current capacity to the new capacity</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// set the current capacity to the new capacity</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    capacity = newCapacity;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Update the size pointer to point to the correct position in the new buffer</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// update the size pointer to point to the correct position in the new buffer</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    size = data + currentSize;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="ttc" id="aclassArrayList_html_a4d72498460a0c7e3b8fc792308e8538c"><div class="ttname"><a href="classArrayList.html#a4d72498460a0c7e3b8fc792308e8538c">ArrayList::pushBack</a></div><div class="ttdeci">void pushBack(const T &amp;data)</div><div class="ttdef"><b>Definition</b> ArrayList.hpp:6</div></div>

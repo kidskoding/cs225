@@ -106,21 +106,34 @@ $(function(){initNavTree('BinaryTree_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classBinaryTree.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="classBinaryTree.html">BinaryTree</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">struct </span>TreeNode {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        T data;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        TreeNode* left;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        TreeNode* right;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    };</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    TreeNode* root;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> preOrderTraversal(TreeNode* curr);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> inOrderTraversal(TreeNode* curr);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> postOrderTraversal(TreeNode* curr);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> levelOrderTraversal();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="comment">// the data each tree node holds</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        T data;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">// a pointer to the left child `TreeNode` (or `nullptr` if non-existent)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        TreeNode* left;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="comment">// a pointer to the right child `TreeNode` (or `nullptr` if non-existent)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        TreeNode* right;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// a pointer to the root node of a tree</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    TreeNode* root;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBinaryTree.html#a2493598ee6ddedde1453f96c384d45bc">preOrderTraversal</a>(TreeNode* curr);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBinaryTree.html#a6c4b120405c57eac8da096b047fbc3f2">inOrderTraversal</a>(TreeNode* curr);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBinaryTree.html#a5611e73b1aadf19e50137392384c7ad4">postOrderTraversal</a>(TreeNode* curr);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Computes the level order traversal of a tree</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> levelOrderTraversal();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
 <div class="ttc" id="aclassBinaryTree_html"><div class="ttname"><a href="classBinaryTree.html">BinaryTree</a></div><div class="ttdef"><b>Definition</b> BinaryTree.h:4</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a2493598ee6ddedde1453f96c384d45bc"><div class="ttname"><a href="classBinaryTree.html#a2493598ee6ddedde1453f96c384d45bc">BinaryTree::preOrderTraversal</a></div><div class="ttdeci">void preOrderTraversal(TreeNode *curr)</div><div class="ttdef"><b>Definition</b> BinaryTree.hpp:6</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a5611e73b1aadf19e50137392384c7ad4"><div class="ttname"><a href="classBinaryTree.html#a5611e73b1aadf19e50137392384c7ad4">BinaryTree::postOrderTraversal</a></div><div class="ttdeci">void postOrderTraversal(TreeNode *curr)</div><div class="ttdef"><b>Definition</b> BinaryTree.hpp:36</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a6c4b120405c57eac8da096b047fbc3f2"><div class="ttname"><a href="classBinaryTree.html#a6c4b120405c57eac8da096b047fbc3f2">BinaryTree::inOrderTraversal</a></div><div class="ttdeci">void inOrderTraversal(TreeNode *curr)</div><div class="ttdef"><b>Definition</b> BinaryTree.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
