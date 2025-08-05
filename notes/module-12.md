@@ -103,10 +103,9 @@ When $b < 0$, the left subtree is taller; when $b > 0$, the right subtree is tal
 
 If $|b| > 1$, then the tree is unbalanced
 
-Therefore, a tree is height balanced if $|b| \leq 1$ at every node
-
+Therefore, a tree is height balanced if $|b| \leq 1$ or $|b| < 2$ at every node
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODc4MzMwNzYsLTM4MDk1OTIxMiw3MD
+eyJoaXN0b3J5IjpbLTEzODA4NzkyODksLTM4MDk1OTIxMiw3MD
 k5MTk5LC0xMzQzOTgxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYw
 XX0=
 -->
