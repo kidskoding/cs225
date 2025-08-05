@@ -294,7 +294,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <li>If the key we need to remove is less than the node's key, it makes sense to descend down the left subtree, since that contains keys less than the key we need to remove</li>
 <li>If the key we need to remove is greater than the node's key, it makes sense to descend down the right subtree, since that contains keys greater than the key we need to remove</li>
 <li>We have to check if either the left or right child aren't null for the one child case.<ul>
-<li>When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null</li>
+<li>When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null, and obviously wasn't the case</li>
+<li>If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. T</li>
 </ul>
 </li>
 </ol>
