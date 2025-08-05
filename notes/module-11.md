@@ -180,9 +180,20 @@ typename BST<K, V>::TreeNode*& BST<K, V>::_iop(TreeNode*& root) {
 }
 ```
 
+The next thing we need to code is a helper swap function that swaps the internal data between two nodes. This is simple, its just swapping the key and value of two nodes. The code is shown below
+
+```
+template <typename K, typename V>
+void BST<K, V>::_swap(TreeNode* a, TreeNode* b) {
+    // swap the internal data of nodes `a` and `b`
+    std::swap(a->key, b->key);
+    std::swap(a->value, b->value);
+}
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4MTQ5Mjc0LC0xNjE3MjY1MjUzLC00Nj
+eyJoaXN0b3J5IjpbNTc0NjUzNTYxLC0xNjE3MjY1MjUzLC00Nj
 Q5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4
 NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxOD
 YwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3
