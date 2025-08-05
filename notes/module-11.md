@@ -161,15 +161,17 @@ Finding either IOP and IOS (it doesn't matter which one) is a very effective app
 
 This is because when a left or right node follows a single path down a tree, the worst case occurs when the node travels through the entire path of $h$
 
-First, we need a helper function that helps find the IOP
+First, we need a helper function that helps find either the IOP or IOS (will do IOP in this example)
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOT
-U0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1
-OCwxODYwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNz
-YxNTk3ODgsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAzNDQ4MTUy
-MCwtOTg3OTE0NzQ5LC0xODA1NTQ3NTM5LDE5MTAyNTMzNTUsLT
-IwMDY4MzAwMTksMTQ1MDY4OTUwNSw3MjU4MDE3MjksLTI3NTE4
-OTYwNF19
+eyJoaXN0b3J5IjpbLTQ2NDk0Nzg0OCwtODg5NTY5MTU2LDE2Mj
+g2NTEzMiwxMTE5NTQyMDg1LC05MDY3MzkwNDMsMzE0NTA4NTc4
+LC0xMzk1MDYwMDU4LDE4NjA3MTQxODYsNzI2NjA4NjQ0LDE2OT
+Y0OTY1ODksMjA3NjE1OTc4OCwxNzI0NjYxNjY0LDgzMjA1MTQ2
+NSwyMDM0NDgxNTIwLC05ODc5MTQ3NDksLTE4MDU1NDc1MzksMT
+kxMDI1MzM1NSwtMjAwNjgzMDAxOSwxNDUwNjg5NTA1LDcyNTgw
+MTcyOV19
 -->
