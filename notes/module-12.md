@@ -97,12 +97,12 @@ But how??
 
 To **find the balance of a BST node**, you use the concept of a **balance factor** (BF), where
 
-$$BF = height(T_L) - height(T_R)$$
+$$BF = height(T_R) - height(T_L)$$
 
-
+When $BF < 0$, the left subtree is taller and when $BF > 0$, the right subtree is taller
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4MzMxMjUxLDcwOTkxOTksLTEzNDM5OD
-EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
+eyJoaXN0b3J5IjpbLTgyNDkyNjc3OSw3MDk5MTk5LC0xMzQzOT
+gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
