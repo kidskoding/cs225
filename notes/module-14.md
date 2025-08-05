@@ -150,18 +150,18 @@ void AVL<K, V>::_updateHeight(TreeNode* curr) {
 
 From here, the rest is simple. We just have to simply code each rotation. The rotations intuitively make sense to code if you know what's going on
 
-1. Left Rotation
+1. **Left Rotation**
 	- The right child becomes the new root of the subtree
 	- The new root's left subtree becomes the old root's right child
 	- The old root becomes the left child of the new root of the subtree
-2. Right Rotation
+2. **Right Rotation**
 	- The left child becomes the new root of the subtree
 	- The new root's right subtree becomes the old root's left child
 	- The old root becomes the right child of the new root of the subtree
-3. Left-Right Rotation
+3. **Left-Right Rotation**
 	- Perform a left rotation
 	- Perform a right rotation
-4. Right-Left Rotation
+4. **Right-Left Rotation**
 	- Perform a right rotation
 	- Perform a left rotation
 
@@ -217,10 +217,15 @@ void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
     _rotateLeft(root);
 }
 ```
+
+## AVL Tree Analysis
+
+`insert`, `remove`, and `find` also all run in $O(h)$. This is because the worst case scenario occurs when we descend all the way to level $h - 1$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMD
-IzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzky
-LDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzOD
-c4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQx
-NDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbLTU3MjcwNDQzMiwtMTExNTQ0Mzg5LDkzMT
+YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
+LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
+EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
+MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
+==
 -->
