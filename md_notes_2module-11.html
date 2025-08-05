@@ -216,7 +216,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <li><b>Removing a node with two children</b> - If the node has two children, meaning it has both a left and right child, we need to find a replacement node to take the removed node’s place in order to maintain the property of a <a class="el" href="classBST.html">BST</a>. This is either:<ul>
 <li>The <b>inorder predecessor</b> (the largest node in the left subtree)</li>
 <li>The <b>inorder successor</b> (the smallest node in the right subtree)</li>
-<li>Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child         </li>
+<li>Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child</li>
 </ul>
 </li>
 </ol>
