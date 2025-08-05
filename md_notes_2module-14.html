@@ -114,7 +114,16 @@ $(function(){initNavTree('md_notes_2module-14.html',''); initResizable(true); })
 <p>We leverage this by noting that the balance factor, $b$ of <code>t-&gt;right</code> is 2, which is greater than 0 (<code>t-&gt;right &gt; 0</code>)</p>
 <p>If insertion occurred on a subtree, $t$, where a <b>"right elbow"</b> formed (right child has taller left subtree), we would need to do a <b>RL</b> rotation about $t$ to restore the balance of the tree</p>
 <p>We leverage this by noting that the balance factor, $b$ of <code>t-&gt;right</code> is -1, which is less than 0 (<code>t-&gt;right &lt; 0</code>)</p>
-<p>The opposites are true for a "left stick" and "left elbow", where we would need R and LR rotations respectfully</p>
+<p>The opposites are true for a <b>"left stick"</b> and <b>"left elbow"</b>, where we would need <b>R</b> and <b>LR</b> rotations respectfully</p>
+<h1><a class="anchor" id="autotoc_md92"></a>
+Insertion into an AVL tree</h1>
+<p>With the knowledge in <a class="el" href="classBST.html">BST</a> rotations, to insert a node into an AVL tree, we know we have to do the following steps</p>
+<ol type="1">
+<li>Insert at proper place</li>
+<li>Check for imbalance</li>
+<li>Rotate, if necessary</li>
+<li>Update height</li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
