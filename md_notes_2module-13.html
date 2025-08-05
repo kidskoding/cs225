@@ -123,10 +123,15 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 <li><b>L</b> (Left Rotation) - used when the left subtree is too tall (Left-Left case)</li>
 <li><b>R</b> (Right Rotation) - used when the right subtree is too tall (Right-Right case)</li>
 <li><b>LR</b> (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case)<ul>
-<li></li>
+<li><b>Left Rotation</b> at <code>y</code> to turn it into a Left-Left case</li>
+<li><b>Right Rotation</b> at <code>z</code></li>
 </ul>
 </li>
-<li></li>
+<li><b>RL</b> (Right-Left Rotation) - Used when there's imbalance in the right-left direction (Right child has a taller left subtree — Right-Left case)<ul>
+<li><b>Right Rotation</b> at <code>y</code> to turn it into a Right-Right case</li>
+<li><b>Left Rotation</b> at <code>z</code></li>
+</ul>
+</li>
 </ul>
 <p>Other things to know about rotations:</p><ul>
 <li>All rotations are local, meaning subtrees aren't impacted</li>
