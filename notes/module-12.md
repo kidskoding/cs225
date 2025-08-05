@@ -68,8 +68,10 @@ If we assume that we have random numbers being inserted into our BST, and choose
 
 The simple answer is that there is a lot. Mathematically speaking, if we put $n$ random numbers into our tree, that means we have $n$ choices to choose from for the first number to insert, $n - 1$ for the second (since the first number is now gone), and so on. This means that we have $n!$ sequences to insert into our BST, which results in $n$ unique numbers.
 
-If we looked at every possible sequence
+If we looked at every possible sequence and computed its height, its average is $O(log(n))$
+
+This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $log_2⁡(n) \equiv \log nlogn.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMzc2NTgwMyw3MDk5MTk5LC0xMzQzOT
-gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbMzYzNjA1NDAzLDcwOTkxOTksLTEzNDM5OD
+EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
 -->
