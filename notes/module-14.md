@@ -228,9 +228,13 @@ Recall from discrete math, the definition of big-O states that $f(n)$ is $O(g(n)
 
 Or simply, the worst-case growth rate of a function as the input gets very large. When I give it more data, how does it slow down?
 
-Let $h(n)$ be the height as a function of $n$. 
+Let $h(n)$ be the height as a function with respect to $n$, the number of nodes. However, we don't know how to compute this function since this can vary based on the structure of the tree, not just the number of nodes. 
+
+In other words, 2 trees can have 4 nodes, but be fundamentally different in structure
+
+To fix this problem, we want to evaluate the worst case scenar
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MzY0OTk1OSwtMTExNTQ0Mzg5LDkzMT
+eyJoaXN0b3J5IjpbMTMyNzMyODA5NywtMTExNTQ0Mzg5LDkzMT
 YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
 LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
 EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
