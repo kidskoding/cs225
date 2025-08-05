@@ -16,7 +16,7 @@ Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(
 
 This is the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
 
-We can prove that
+We can prove that the lower bound of a BST occurs when $h \geq O(log(n))$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTI4NjY1NywxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbLTE3ODU1Mjg4NzEsMTU3NTIxNzc2MF19
 -->
