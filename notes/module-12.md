@@ -6,7 +6,8 @@ Previously, we discussed that $O(h) \equiv O(n)$ in the worst case scenario. Whe
 Although the worst case is identical, a BST's runtime varies significantly by its shape.
 
 For all BST's
-
+	- Its **lower bound** - $h \geq O(log(n)) \equiv h \geq O(log_2(n))$
+	- Its **upper bound** - $h \leq O(n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNjgxMDI1OSwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbODUxOTIwMzUsMTU3NTIxNzc2MF19
 -->
