@@ -146,7 +146,17 @@ There is a bug if you don't add the ampersand to the `TreeNode*` type when creat
 
 Its a preference as to which method is better for writing `_insert`; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.
 
-To then code the external `insert`, we just have to simply call the internal insert, `_insert` and then add the key to our `node_map
+To then code the external `insert`, we just have to simply call the internal insert, `_insert` and then add the key to our `node_map`, which is an `std::unordered_map` that contains our `TreeNode`s
+
+```
+template <typename K, typename V>
+void BST<K, V>::insert(K key, V value) {
+    _insert(root, key, value);
+
+    // also insert the key-value pair into the hashmap for fast lookup and iterator support
+    node_map[key] = value;
+}
+```
 
 The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
 
@@ -272,7 +282,7 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDc2NzQ5MSwtMTU5ODA4NjY1NiwtMT
+eyJoaXN0b3J5IjpbMTQxNDE0MjYzNSwtMTU5ODA4NjY1NiwtMT
 IzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3
 MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMz
 IsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5
