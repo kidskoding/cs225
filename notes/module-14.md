@@ -51,11 +51,25 @@ struct TreeNode {
 
 Inserting a node into an AVL tree is very similar to a BST (since it is in fact a type of BST!)
 
+```
+template <typename K, typename V>
+void AVL<K, V>::_insert(const K& key, const V& value, TreeNode*& curr) {
+    if(curr == nullptr) { return curr; } 
+    
+    // maintain BST property
+    if(curr->key > key) { return _insert(key, value, curr->right);  }
+    if(curr->key < key) { return _insert(key, value, curr->left); }
 
+    // ensure the balance of the AVL tree
+}
+```
 
+The code above ensures the AVL tree maintains BST properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater
+
+However, we are missing one crucial detail: ensuring that the AVL tree is **balanced**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTQzNjEzODEsLTU5MTg1MTkyOSwtNz
-ExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4
-NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX
-0=
+eyJoaXN0b3J5IjpbMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
+EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
+MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
+==
 -->
