@@ -247,7 +247,8 @@ A lot of things happen in this code, but most of it has already been previously 
 2. If the key we need to remove is greater than the node's key, it makes sense to descend down the right subtree, since that contains keys greater than the key we need to remove
 3. We have to check if either the left or right child aren't null for the one child case. 
 	- When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null, and obviously wasn't the case
-	- If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. T
+	- If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. The same thing works with the right child, simply remove the left child and connect its parent directly to this left child.
+4. For the two child case, once we found the iop and swapped it with the current node, we have to recursively call `_remove` on the left subtree, since that is where the IOP will always be located. That is because the IOP is the greatest node in the left subtree, but smaller than its root (meaning it resides directly on the left of the root of the left subtree)
 
 Coding the exposed (external) version of `remove` becomes simple from here, we just call `_remove` and passing in the root
 
@@ -259,11 +260,11 @@ void BST<K, V>::remove(const K& key) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyMjI2NjI2LC0xMjM4ODYwMDA2LDEzNz
-I3ODg4NTgsLTEwMzA5NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0
-Nzg0OCwtODg5NTY5MTU2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC
-05MDY3MzkwNDMsMzE0NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3
-MTQxODYsNzI2NjA4NjQ0LDE2OTY0OTY1ODksMjA3NjE1OTc4OC
-wxNzI0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIwLC05ODc5
-MTQ3NDldfQ==
+eyJoaXN0b3J5IjpbMTMwNDQxNjMzOSwtMTIzODg2MDAwNiwxMz
+cyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5
+NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NS
+wtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYw
+NzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIwNzYxNTk3OD
+gsMTcyNDY2MTY2NCw4MzIwNTE0NjUsMjAzNDQ4MTUyMCwtOTg3
+OTE0NzQ5XX0=
 -->
