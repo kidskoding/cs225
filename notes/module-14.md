@@ -220,12 +220,16 @@ void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
 
 ## AVL Tree Analysis
 
-`insert`, `remove`, and `find` also all run in $O(h)$. This is because the worst case scenario occurs when we descend all the way to level $h - 1$
+`insert`, `remove`, and `find` also all run in $O(h)$. Recall that this is because in the worst case, we may need to traverse from the root down to a leaf node, visiting $h + 1$ nodes.
+
+However, we will now argue that $h = O(\log n)$, using the balance property to prove this
+
+The definit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjcwNDQzMiwtMTExNTQ0Mzg5LDkzMT
-YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
-LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
-EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
-MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MzczNjc3MTAsLTExMTU0NDM4OSw5Mz
+E2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkw
+NCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNz
+ExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4
+NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX
+0=
 -->
