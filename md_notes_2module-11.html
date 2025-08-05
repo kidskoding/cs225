@@ -237,14 +237,15 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    }</div>
 <div class="line">    return curr;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The next thing we need to code is a helper swap function that swaps the internal data between two nodes. This is simple, its just swapping the key and value of two nodes. The code is shown below</p>
+</div><!-- fragment --><p>The next thing we need to code is a helper swap function that swaps the internal data between two nodes. This is simple, its just swapping the key and value of two nodes. We can use C++ STL swap function to achieve this. The code is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
 <div class="line">void BST&lt;K, V&gt;::_swap(TreeNode* a, TreeNode* b) {</div>
 <div class="line">    // swap the internal data of nodes `a` and `b`</div>
 <div class="line">    std::swap(a-&gt;key, b-&gt;key);</div>
 <div class="line">    std::swap(a-&gt;value, b-&gt;value);</div>
 <div class="line">}</div>
-</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- fragment --><p>Finally, we can top it off by coding the functionality of <code>remove</code>. Recall that this involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child)         </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
