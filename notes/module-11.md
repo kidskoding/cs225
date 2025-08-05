@@ -150,8 +150,10 @@ The final step is to implement `remove` for a BST. This seems simple since I jus
 
 However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node 
 
+1. **Removing a node with one child (left or right)** - If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes.
+2. **Removing a node with two children** - If the node has two children, meaning i
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5MjM1MjU5LDE2OTY0OTY1ODksMjA3Nj
+eyJoaXN0b3J5IjpbMTUwMjIwMjI0LDE2OTY0OTY1ODksMjA3Nj
 E1OTc4OCwxNzI0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIw
 LC05ODc5MTQ3NDksLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMj
 AwNjgzMDAxOSwxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5
