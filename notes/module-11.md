@@ -149,12 +149,13 @@ Its a preference as to which method is better for writing `_insert`; the first o
 The final step is to implement `remove` for a BST. This seems simple since I just need to find the location of the `TreeNode` that I want to remove and then set its pointer to null.
 
 However, this actually will only work if the node is a **leaf node**.  There are two other cases we have to consider when removing a node 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3Mj
-Q2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0
-OSwtMTgwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LD
-E0NTA2ODk1MDUsNzI1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIx
-NjE5MiwxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MC
-wxNzQ0NzkyNzU0LDE5MTk1Mjc3MjgsLTExNTY1NjE4MzksMTky
-NjgwMzQ0XX0=
+eyJoaXN0b3J5IjpbMjc5MjM1MjU5LDE2OTY0OTY1ODksMjA3Nj
+E1OTc4OCwxNzI0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIw
+LC05ODc5MTQ3NDksLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMj
+AwNjgzMDAxOSwxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5
+NjA0LC01MDMyMTYxOTIsMTA2MzYwODUwMiwxNTk0MDA2MDcwLC
+01NzIxMjg1NzAsMTc0NDc5Mjc1NCwxOTE5NTI3NzI4LC0xMTU2
+NTYxODM5XX0=
 -->
