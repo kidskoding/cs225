@@ -72,10 +72,12 @@ This is because inserting keys in a random order splits the tree roughly in half
 
 This is delving into the average case runtime of a BST because the time complexity depends on the tree’s height, and since the average height of a BST built from random insertions is about $O(\log⁡ n)$, the average case runtime for these operations is also $O(\log⁡n)$
 
-The table below
+The table below summarizes BST analysis with the average case
+
+| 
 
 This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzI2MTk2MSw3MDk5MTk5LC0xMzQzOT
+eyJoaXN0b3J5IjpbMTEyNjc5ODAxOCw3MDk5MTk5LC0xMzQzOT
 gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
