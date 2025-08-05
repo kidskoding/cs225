@@ -296,6 +296,20 @@ void BST<K, V>::remove(const K& key) {
 }
 ```
 
+`begin()` and `end()` work by simply returning the begin and end iterators of `node_map`, our unordered map
+
+```
+template <typename K, typename V>
+typename BST<K, V>::TreeIterator BST<K, V>::begin() {
+    return node_map.begin();
+}
+
+template <typename K, typename V>
+typename BST<K, V>::TreeIterator BST<K, V>::end() {
+    return node_map.end();
+}
+```
+
 ## BST-Analysis
 
 The table below summarizes the runtime for all our important BST algorithms
@@ -318,11 +332,11 @@ The height $h$ of a BST is the length of the longest path from the root to a lea
 
 $h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, meaning that $O(h) \equiv O(n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzEyMTY0MTgsLTU3MTkzNDI4MiwyOT
-E0ODUxNjIsLTE4MzU5NjUxMTUsLTE1OTgwODY2NTYsLTEyMzg4
-NjAwMDYsMTM3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMTYxNzI2NT
-I1MywtNDY0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MTMyLDEx
-MTk1NDIwODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNj
-AwNTgsMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwy
-MDc2MTU5Nzg4XX0=
+eyJoaXN0b3J5IjpbMjA2NTIxOTkxNiwtNTcxOTM0MjgyLDI5MT
+Q4NTE2MiwtMTgzNTk2NTExNSwtMTU5ODA4NjY1NiwtMTIzODg2
+MDAwNiwxMzcyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1Mj
+UzLC00NjQ5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTEx
+OTU0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MD
+A1OCwxODYwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIw
+NzYxNTk3ODhdfQ==
 -->
