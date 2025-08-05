@@ -66,8 +66,8 @@ As discussed earlier, a BST's height depends on the number of nodes inserted int
 
 If we assume that we have random numbers being inserted into our BST, and choose those random numbers, how many different ways are there?
 
-The simple answer is that there is a lot. If we put $n$ random numbers into our tree, that means we have $n$ choices to choose from for the first number to insert, $n - 1$ for th
+The simple answer is that there is a lot. If we put $n$ random numbers into our tree, that means we have $n$ choices to choose from for the first number to insert, $n - 1$ for the second (since the first number is now gone), and so on. This means that we have $n!$ sequences to insert into our BST, which results in $n$ unique numbers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQyMzg0ODYyLDcwOTkxOTksLTEzNDM5OD
-EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
+eyJoaXN0b3J5IjpbLTE0ODQwMDYzODUsNzA5OTE5OSwtMTM0Mz
+k4MTI3NCw4MzYwNzI4MDAsMTU3NTIxNzc2MF19
 -->
