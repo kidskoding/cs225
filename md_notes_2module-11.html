@@ -244,7 +244,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    std::swap(a-&gt;key, b-&gt;key);</div>
 <div class="line">    std::swap(a-&gt;value, b-&gt;value);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>Finally, we can top it off by coding the functionality of <code>remove</code>. Recall that this involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child)         </p>
+</div><!-- fragment --><p>Finally, we can top it off by coding the functionality of <code>remove</code>. We first need a helper to handle <code>remove</code> for all kinds of nodes, and then we can call the external remove with the 1Recall that this involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child)</p>
+<p>Coding the exposed (external) version of <code>remove</code> becomes simple from here, we just call <code>remove</code>         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
