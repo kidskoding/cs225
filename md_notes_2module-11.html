@@ -223,7 +223,8 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 </ol>
 <p>Finding either IOP and IOS (it doesn't matter which one) is a very effective approach when removing a node with both a left and right child because it always runs in $O(h)$ time, where $h$ is the height of a tree</p>
 <p>This is because when a left or right node follows a single path down a tree, the worst case occurs when the node travels through the entire path of $h$</p>
-<p>First, we need a helper function that helps find either the IOP or IOS (will do IOP in this example). Recall that the IOP finds the largest node in the left subtree. Therefore, to implement this, we need to find the rightmost value in the left subtree, since this will always be the largest value according to the <a class="el" href="classBST.html">BST</a> property</p>
+<p>First, we need a helper function that helps find either the IOP or IOS (will do IOP in this example). Recall that the IOP finds the largest node in the left subtree.</p>
+<p>Therefore, to implement this, we need to find the rightmost value in the left subtree, since this will always be the largest value according to the <a class="el" href="classBST.html">BST</a> property. To find the largest value, we just need to iterate through each node's right child until a node's right child no longer exists (null pointer). The code for finding the IOP is reflected below</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
