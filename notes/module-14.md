@@ -62,14 +62,20 @@ void AVL<K, V>::_insert(const K& key, const V& value, TreeNode*& curr) {
 
     // ensure the balance of the AVL tree
 }
+
+template <typename K, typename V>
+void AVL<K, V>::insert(K key, V value) {
+    _insert(key, value, root);
+    node_map[key] = value;
+}
 ```
 
 The code above ensures the AVL tree maintains BST properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater
 
-However, we are missing one crucial detail: ensuring that the AVL tree is **balanced**
+However, we are missing one crucial detail: ensuring that the AVL tree is **balanced**. To do this, we need to calculate the **balance factor** and then based on the balance factor, perform the appropriate rotat
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
-EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
-MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
-==
+eyJoaXN0b3J5IjpbLTI4Mzc5MTAxMiwxNTU4NDM0NTA1LC01OT
+E4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3
+ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLT
+QwOTYzMjU5MV19
 -->
