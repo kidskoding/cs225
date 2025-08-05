@@ -76,13 +76,17 @@ The table below summarizes BST analysis with the average case
 
 | Operation | BST Average Case | BST Worst Case | Sorted List | Unsorted List
 | ----------- | ---------------------- | ------------------- | -------- | ------------ |
-| `find` | $O(\log n)$ | $O(h) \equiv O(n)$ | 
-| `insert` | $O(\log n)$ | $O(h) \equiv O(n)$ | 
-| `remove` | $O(\log n)$ | $O(h) \equiv O(n)$ | 
+| `find` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(\log n)$ | $O(n)$ | 
+| `insert` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(1)$ |
+| `remove` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
+
+We discussed the BST average cases, which make senseSome things to note
+
+1. 
 
 This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczMTIwNDIwLDcwOTkxOTksLTEzNDM5OD
-EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
+eyJoaXN0b3J5IjpbMTA5NDMyOTQ1Niw3MDk5MTk5LC0xMzQzOT
+gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
