@@ -136,7 +136,22 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <p>This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $\log_2⁡(n) \equiv \log(n)$</p>
 <p>This is delving into the average case runtime of a <a class="el" href="classBST.html">BST</a> because the time complexity depends on the tree’s height, and since the average height of a <a class="el" href="classBST.html">BST</a> built from random insertions is about $O(\log⁡ n)$, the average case runtime for these operations is also $O(\log⁡n)$</p>
 <p>The table below summarizes <a class="el" href="classBST.html">BST</a> analysis with the average case</p>
-<p>| Operation | <a class="el" href="classBST.html">BST</a> Average Case | <a class="el" href="classBST.html">BST</a> Worst Case | Sorted List | Unsorted List | --------&mdash; | -------------------&mdash; | ----------------&mdash; | -----&mdash; | ---------&mdash; | | <code>find</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | | <code>insert</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | | <code>remove</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | | <code>traverse</code> | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Operation   </th><th class="markdownTableHeadNone"><a class="el" href="classBST.html">BST</a> Average Case   </th><th class="markdownTableHeadNone"><a class="el" href="classBST.html">BST</a> Worst Case   </th><th class="markdownTableHeadNone">Sorted List   </th><th class="markdownTableHeadNone">Unsorted List    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>find</code>   </td><td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">$O(h) \equiv O(n)$   </td><td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">$O(n)$    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>insert</code>   </td><td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">$O(h) \equiv O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(1)$    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>remove</code>   </td><td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">$O(h) \equiv O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>traverse</code>   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td></tr>
+</table>
+<p>We discussed the <a class="el" href="classBST.html">BST</a> average cases, which make senseSome things to note</p>
+<ol type="1">
+<li></li>
+</ol>
 <p>This explains the notion of <b>balancing</b> a <a class="el" href="classBST.html">BST</a>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(\log n)$    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
