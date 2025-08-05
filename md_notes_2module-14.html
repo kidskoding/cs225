@@ -228,6 +228,16 @@ Insertion into an AVL tree</h1>
 <li>The old root becomes the right child of the new root of the subtree</li>
 </ul>
 </li>
+<li>Left-Right Rotation<ul>
+<li>Perform a left rotation</li>
+<li>Perform a right rotation</li>
+</ul>
+</li>
+<li>Right-Left Rotation<ul>
+<li>Perform a right rotation</li>
+<li>Perform a left rotation</li>
+</ul>
+</li>
 </ol>
 <p>Coding these then becomes easy</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
@@ -240,6 +250,20 @@ Insertion into an AVL tree</h1>
 <div class="line"> </div>
 <div class="line">    // the old root becomes the left child of the new root</div>
 <div class="line">    newRoot-&gt;left = node;</div>
+<div class="line"> </div>
+<div class="line">    // update pointer to point to the new root</div>
+<div class="line">    node = newRoot;</div>
+<div class="line">}</div>
+</div><!-- fragment --> <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::_rotateRight(TreeNode*&amp; node) {</div>
+<div class="line">    // the left child becomes the new root</div>
+<div class="line">    TreeNode* newRoot = node-&gt;left;</div>
+<div class="line"> </div>
+<div class="line">    // move `newRoot`&#39;s right subtree to old root&#39;s left subtree</div>
+<div class="line">    node-&gt;left = newRoot-&gt;right;</div>
+<div class="line"> </div>
+<div class="line">    // the old root becomes the right child of the new root</div>
+<div class="line">    newRoot-&gt;right = node;</div>
 <div class="line"> </div>
 <div class="line">    // update pointer to point to the new root</div>
 <div class="line">    node = newRoot;</div>
