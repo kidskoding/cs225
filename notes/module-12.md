@@ -85,12 +85,11 @@ We discussed the BST average cases, which make sense when thinking about it in c
 
 Some other things to note
 
-1. Sorted List `find` is $O(\log n)$. This is basically performing binary search, since binary search is a more optimal search when a list is sorted
-2. Similarly, unsorted list `find` is $O(n)$, which is simply linear search, which the worst case occurs when the element is found after traversing $n$ times
-3. 
+1. `find` - Sorted List `find` is $O(\log n)$. This is basically performing binary search, since binary search is a more optimal search when a list is sorted. Similarly, unsorted list `find` is $O(n)$, which is simply linear search, which the worst case occurs when the element is found after traversing $n$ times
+3. `insert` - Unsorted is $O(1)$, since we can just append an element to the back of a list without maintaining an order, while sorted is $O(n)$ since we have to first insert the element to the back and then shif 
 
 This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTQ2MjE4OSw3MDk5MTk5LC0xMzQzOT
+eyJoaXN0b3J5IjpbMTQ0OTg0NDgyNCw3MDk5MTk5LC0xMzQzOT
 gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
