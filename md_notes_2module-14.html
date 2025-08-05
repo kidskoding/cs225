@@ -100,7 +100,7 @@ $(function(){initNavTree('md_notes_2module-14.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md91"></a></p>
-<p><b>AVL trees</b> are <b>self-balancing binary search trees</b> that automatically keep themselves balanced through rotations after insertions and deletions, ensuring efficient operations</p>
+<p><b><a class="el" href="classAVL.html">AVL</a> trees</b> are <b>self-balancing binary search trees</b> that automatically keep themselves balanced through rotations after insertions and deletions, ensuring efficient operations</p>
 <p>This means that we have to consider 3 things:</p>
 <ul>
 <li>Rotations</li>
@@ -117,14 +117,14 @@ $(function(){initNavTree('md_notes_2module-14.html',''); initResizable(true); })
 <p>The opposites are true for a <b>"left stick"</b> and <b>"left elbow"</b>, where we would need <b>R</b> and <b>LR</b> rotations respectfully</p>
 <h1><a class="anchor" id="autotoc_md92"></a>
 Insertion into an AVL tree</h1>
-<p>With the knowledge in <a class="el" href="classBST.html">BST</a> rotations, to insert a node into an AVL tree, we know we have to do the following steps</p>
+<p>With the knowledge in <a class="el" href="classBST.html">BST</a> rotations, to insert a node into an <a class="el" href="classAVL.html">AVL</a> tree, we know we have to do the following steps</p>
 <ol type="1">
 <li>Insert at proper place</li>
 <li>Check for imbalance</li>
 <li>Rotate, if necessary</li>
 <li>Update height</li>
 </ol>
-<p>We already established that we need each <code>TreeNode</code> in an AVL tree to track its height. Therefore,</p>
+<p>We already established that we need each <code>TreeNode</code> in an <a class="el" href="classAVL.html">AVL</a> tree to track its height. Therefore,</p>
 <div class="fragment"><div class="line">struct TreeNode {</div>
 <div class="line">    K key;</div>
 <div class="line">    V value;</div>
@@ -135,7 +135,7 @@ Insertion into an AVL tree</h1>
 <div class="line">    TreeNode* left;</div>
 <div class="line">    TreeNode* right;</div>
 <div class="line">};</div>
-</div><!-- fragment --><p>Inserting a node into an AVL tree is very similar to a <a class="el" href="classBST.html">BST</a> (since it is in fact a type of BST!)</p>
+</div><!-- fragment --><p>Inserting a node into an <a class="el" href="classAVL.html">AVL</a> tree is very similar to a <a class="el" href="classBST.html">BST</a> (since it is in fact a type of BST!)</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
 <div class="line">void AVL&lt;K, V&gt;::_insert(const K&amp; key, const V&amp; value, TreeNode*&amp; curr) {</div>
 <div class="line">    if(curr == nullptr) { return curr; } </div>
@@ -152,8 +152,8 @@ Insertion into an AVL tree</h1>
 <div class="line">    _insert(key, value, root);</div>
 <div class="line">    node_map[key] = value;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The code above ensures the AVL tree maintains <a class="el" href="classBST.html">BST</a> properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater</p>
-<p>However, we are missing one crucial detail: ensuring that the AVL tree is <b>balanced</b>. To do this, we need to calculate the <b>balance factor</b> and then based on the balance factor, perform the appropriate rotation</p>
+</div><!-- fragment --><p>The code above ensures the <a class="el" href="classAVL.html">AVL</a> tree maintains <a class="el" href="classBST.html">BST</a> properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater</p>
+<p>However, we are missing one crucial detail: ensuring that the <a class="el" href="classAVL.html">AVL</a> tree is <b>balanced</b>. To do this, we need to calculate the <b>balance factor</b> and then based on the balance factor, perform the appropriate rotation</p>
 <p>The balancing function is shown below</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
 <div class="line">void AVL&lt;K, V&gt;::_ensureBalance(TreeNode*&amp; curr) {</div>

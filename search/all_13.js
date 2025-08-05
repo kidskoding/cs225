@@ -12,7 +12,7 @@ var searchData=
   ['induction_9',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]],
   ['info_20and_20resources_10',['Course Info and Resources',['../md_notes_2module-01.html#autotoc_md45',1,'']]],
   ['inordertraversal_11',['inOrderTraversal',['../classBinaryTree.html#a6c4b120405c57eac8da096b047fbc3f2',1,'BinaryTree']]],
-  ['insert_12',['insert',['../classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32',1,'LinkedList']]],
+  ['insert_12',['insert',['../classAVL.html#a6b3ab7eb39354eb5aa46366f3d83aa21',1,'AVL::insert()'],['../classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32',1,'LinkedList::insert()']]],
   ['insert_20tt_13',['insert tt',['../md_notes_2module-03.html#autotoc_md52',1,'&lt;tt&gt;insert&lt;/tt&gt;'],['../md_notes_2module-11.html#autotoc_md86',1,'&lt;tt&gt;insert&lt;/tt&gt;']]],
   ['insertatfront_14',['insertAtFront',['../classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908',1,'LinkedList']]],
   ['insertatfront_20tt_15',['&lt;tt&gt;insertAtFront&lt;/tt&gt;',['../md_notes_2module-03.html#autotoc_md51',1,'']]],

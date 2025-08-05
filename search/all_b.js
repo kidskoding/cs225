@@ -37,6 +37,7 @@ var searchData=
   ['ary_20trees_34',['$m$-ary Trees',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md14',1,'']]],
   ['as_20a_20search_20structure_35',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
   ['assignment_20operator_36',['Assignment Operator',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md32',1,'Copy Assignment Operator'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md37',1,'Move Assignment Operator']]],
-  ['avl_20tree_37',['Insertion into an AVL tree',['../md_notes_2module-14.html#autotoc_md92',1,'']]],
-  ['avl_20trees_38',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
+  ['avl_37',['AVL',['../classAVL.html',1,'']]],
+  ['avl_20tree_38',['Insertion into an AVL tree',['../md_notes_2module-14.html#autotoc_md92',1,'']]],
+  ['avl_20trees_39',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]]
 ];
