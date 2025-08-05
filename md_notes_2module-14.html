@@ -158,25 +158,25 @@ Insertion into an AVL tree</h1>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
 <div class="line">void AVL&lt;K, V&gt;::_ensureBalance(TreeNode*&amp; curr) {</div>
 <div class="line">    // calculate the balance factor</div>
-<div class="line">    int balance = curr-&gt;right-&gt;height - curr-&gt;left-&gt;height;</div>
+<div class="line">    int balance = height(curr-&gt;right) - height(curr-&gt;left);</div>
 <div class="line"> </div>
 <div class="line">    // check if the node is currently not in balance</div>
 <div class="line">    if(balance == -2) { // heavy left (&quot;left stick&quot; shaped subtree)</div>
-<div class="line">        int leftBalance = curr-&gt;left-&gt;right-&gt;height - curr-&gt;left-&gt;left-&gt;height;</div>
+<div class="line">        int leftBalance = height(curr-&gt;left-&gt;right) - height(curr-&gt;left-&gt;left);</div>
 <div class="line">        if(leftBalance == -1) {</div>
 <div class="line">            // perform right rotation</div>
 <div class="line">        } else {</div>
 <div class="line">            // perform left-right rotation</div>
 <div class="line">        }</div>
 <div class="line">    } else if(balance == 2) { // heavy right (&quot;right stick&quot; shaped subtree)</div>
-<div class="line">        int rightBalance = curr-&gt;right-&gt;right-&gt;height - curr-&gt;right-&gt;left-&gt;height;</div>
+<div class="line">        int rightBalance = height(curr-&gt;right-&gt;right) - height(curr-&gt;right-&gt;left);</div>
 <div class="line">        if(rightBalance == -1) {</div>
 <div class="line">            // perform left rotation</div>
 <div class="line">        } else {</div>
 <div class="line">            // perform right-left rotation</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    _updateHeight(curr);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>This is a lot of code, but what we are essentially doing is calculating the balance factor so we know which rotation to perform!</p>
@@ -195,6 +195,7 @@ Insertion into an AVL tree</h1>
 </ul>
 </li>
 </ul>
+<p>We need a helper height function in order to avoid any crashes.      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
