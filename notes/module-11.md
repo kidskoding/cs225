@@ -315,10 +315,10 @@ Let the maximum height, $h$, of a BST with $n$ nodes be $h = n - 1$. Prove that 
 
 By definition, the height $h$ of a BST is the length of the longest path from the root to a leaf, measured in edges
 
-1. Let $T$ be the BST in the worst case scenario, which occurs when $T$ weakens into a `LinkedList`, where each node has only one child
-2. $
+1. The worst case scenario occurs when the BST weakens into a `LinkedList`, where each node has only one child
+2. The height of this worst case scenario BST, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest pt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTExNjYxODMsLTE4MzU5NjUxMTUsLT
+eyJoaXN0b3J5IjpbLTEzNDM5Mzg4NzYsLTE4MzU5NjUxMTUsLT
 E1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAz
 MDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1Nj
 kxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0Mywz
