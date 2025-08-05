@@ -45,16 +45,19 @@ Solving for $h$,
 $$
 \begin{align*}
 &n = 2^{h + 1} - 1 \\
-&n + 1 &= 2^{h + 1} \\
-&\log_2(n + 1) &= h + 1 \\
+&n + 1 = 2^{h + 1} \\
+&\log_2(n + 1) = h + 1 \\
 &h = \log_2(n + 1) - 1
 \end{align*}
 $$
 
+Ignoring constants, the best case scenario of a BST occurs at a runtime of $O(log(n))$
+
 Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$
 
-This is the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
+This explains the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MTY0Nzc1MiwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbLTE1NDcwNjI4NjEsMTU3NTIxNzc2MF19
 -->
