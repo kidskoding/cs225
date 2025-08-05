@@ -34,9 +34,11 @@ With the knowledge in BST rotations, to insert a node into an AVL tree, we know 
 3. Rotate, if necessary
 4. Update height
 
+We already established that we need each `TreeNode` in an AVL tree to track its height. Therefore,
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
-Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
-MzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbLTE0NDMzODIxMjgsLTcxMTI2NDI2MiwxMz
+g3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0
+MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
 -->
