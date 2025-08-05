@@ -70,7 +70,7 @@ If we looked at every possible sequence and computed its height, its average is 
 
 This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $\log_2⁡(n) \equiv \log(n)$
 
-This is delving into the average case runtime of a BST because the time complexity depends on the tree’s height, and since the average height of a BST built from random insertions is about $O(\log⁡ n)$, the average case runtime for these operations is also $O(\log⁡n)$
+This is delving into the average case runtime of a BST because the time complexity depends on the tree’s height, and since the average height of a BST built from random insertions is about $O(\log⁡ n)$, the average case runtime for these operations is also $O(\log ⁡n)$
 
 The table below summarizes BST analysis with the average case
 
@@ -81,12 +81,16 @@ The table below summarizes BST analysis with the average case
 | `remove` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 
-We discussed the BST average cases, which make senseSome things to note
+We discussed the BST average cases, which make sense when thinking about it in context of permutations. 
 
-1. 
+Some other things to note
+
+1. Sorted List `find` is $O(\log n)$. This is basically performing binary search, since binary search is a more optimal search when a list is sorted
+2. Similarly, unsorted list `find` is $O(n)$, which is simply linear search, which the worst case occurs when the element is found after traversing $n$ times
+3. 
 
 This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDMyOTQ1Niw3MDk5MTk5LC0xMzQzOT
+eyJoaXN0b3J5IjpbMTc0MTQ2MjE4OSw3MDk5MTk5LC0xMzQzOT
 gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
