@@ -48,10 +48,13 @@ struct TreeNode {
 };
 ```
 
-Inserting a node into an AVL tree 
+Inserting a node into an AVL tree is very similar to a BST (since it is in fact a type of BST!)
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwNjA4NzI1LC01OTE4NTE5MjksLTcxMT
-I2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYy
-OCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbLTEzMzcxNDMxNzAsLTU5MTg1MTkyOSwtNz
+ExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4
+NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX
+0=
 -->
