@@ -4,10 +4,10 @@
 
 template <typename T>
 struct ListNode {
-    // the current data in the list 
+    /** the current data in the list */
     T data;
     
-    // a pointer to the next node in the linked list
+    /** a pointer to the next node in the linked list */
     ListNode* next;
 
     // a copy constructor for the list

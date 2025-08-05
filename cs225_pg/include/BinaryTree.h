@@ -4,17 +4,17 @@ template <class T>
 class BinaryTree {
 private:
     struct TreeNode {
-        // the data each tree node holds
+        /** the data each tree node holds */
         T data;
 
-        // a pointer to the left child `TreeNode` (or `nullptr` if non-existent)
+        /** a pointer to the left child `TreeNode` (or `nullptr` if non-existent) */
         TreeNode* left;
 
-        // a pointer to the right child `TreeNode` (or `nullptr` if non-existent)
+        /** a pointer to the right child `TreeNode` (or `nullptr` if non-existent) */
         TreeNode* right;
     };
 
-    // a pointer to the root node of a tree
+    /** a pointer to the root node of a tree */
     TreeNode* root;
 
 public:
