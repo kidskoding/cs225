@@ -21,9 +21,9 @@ We leverage this by noting that the balance factor, $b$ of `t->right` is 2, whic
 
 If insertion occurred on a subtree, $t$, where a **"right elbow"**, we would need to do a **RL** rotation about $t$ to restore the balance of the tree
 
-This is similar to a **L** rotation because We leverage this by noting that the balance factor, $b$ of `t->right` is 2, which is greater than 0 (`t->right > 0`) 
+We leverage this by noting that the balance factor, $b$ of `t->right` is -1, which is less than 0 (`t->right < 0`) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTE3NTQ2OSwxMjk0NDE2NzgwLDExMD
+eyJoaXN0b3J5IjpbMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMD
 k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
 OTFdfQ==
 -->
