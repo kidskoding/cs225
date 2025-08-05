@@ -11,10 +11,10 @@ This means BST operations can be done in $O(log⁡(n))$ time only when **balance
 
 For all BST's:
 
-- Its **lower bound** (best case scenario) occurs when $h \geq O(log(n)) \equiv h \geq O(log_2(n))$
+- Its **lower bound** (best case scenario) occurs when $h \geq O(\log(n)) \equiv h \geq O(\log_2(n))$
 - Its **upper bound** (worst case scenario) occurs when $h \leq O(n)$
 
-Previously, we discussed why the upper bound must be at most $O(n)$. But, why is the lower bound at least $O(log(n))$?
+Previously, we discussed why the upper bound must be at most $O(n)$. But, why is the lower bound at least $O(\log(n))$?
 
 To explain this, we must understand the structure of a perfect BST, which occurs when each level has twice the number of nodes as the previous level
 
@@ -56,11 +56,11 @@ $$
 \end{align*}
 $$
 
-Ignoring constants, the best case scenario of a BST occurs at a runtime of $O(log(n))$
+Ignoring constants, the best case scenario of a BST occurs at a runtime of $O(\log(n))$
 
-Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$
+Therefore, BSTs can run faster, only if their height remains close to $O(\log⁡(n))$
 
-This explains the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(log(n))$
+This explains the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(\log(n))$
 
 As discussed earlier, a BST's height depends on the number of nodes inserted into it.
 
@@ -68,10 +68,12 @@ If we assume that we have random numbers being inserted into our BST, and choose
 
 The simple answer is that there is a lot. Mathematically speaking, if we put $n$ random numbers into our tree, that means we have $n$ choices to choose from for the first number to insert, $n - 1$ for the second (since the first number is now gone), and so on. This means that we have $n!$ sequences to insert into our BST, which results in $n$ unique numbers.
 
-If we looked at every possible sequence and computed its height, its average is $O(log(n))$
+If we looked at every possible sequence and computed its height, its average is $O(\log(n))$
 
-This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $log_2⁡(n) \equiv \log nlogn.
+This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $\log_2⁡(n) \equiv \log(n)$
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzNjA1NDAzLDcwOTkxOTksLTEzNDM5OD
-EyNzQsODM2MDcyODAwLDE1NzUyMTc3NjBdfQ==
+eyJoaXN0b3J5IjpbMTg3ODY1NDY1NCw3MDk5MTk5LC0xMzQzOT
+gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
