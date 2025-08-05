@@ -37,21 +37,21 @@ With the knowledge in BST rotations, to insert a node into an AVL tree, we know 
 We already established that we need each `TreeNode` in an AVL tree to track its height. Therefore,
 
 ```
-template <typename T>
 struct TreeNode {
-    T data;
+    V value;
 
     // have each `TreeNode` store the height in order to self balance
     unsigned int height;
-    
+
     TreeNode* left;
     TreeNode* right;
 };
 ```
 
+Inserting a node into an AVL tree 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzOD
-c4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQx
-NDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbODcwNjA4NzI1LC01OTE4NTE5MjksLTcxMT
+I2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYy
+OCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
 -->
