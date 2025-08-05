@@ -115,6 +115,7 @@ var NAVTREEINDEX0 =
 "md_notes_2module-10.html#autotoc_md83":[11,1],
 "md_notes_2module-11.html":[12],
 "md_notes_2module-11.html#autotoc_md85":[12,0],
+"md_notes_2module-11.html#autotoc_md86":[12,1],
 "md_notes_2module-12.html":[13],
 "md_notes_2module-13.html":[14],
 "md_notes_2module-14.html":[15],
