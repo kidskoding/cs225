@@ -268,6 +268,9 @@ This makes coding the exposed (external) version of `remove` simple. We just cal
 template <typename K, typename V>
 void BST<K, V>::remove(const K& key) {
     _remove(root, key);
+	
+	// removes the key from the map
+    node_map.erase(
 }
 ```
 
@@ -282,7 +285,7 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDE0MjYzNSwtMTU5ODA4NjY1NiwtMT
+eyJoaXN0b3J5IjpbMTM1NjE4NzQwOCwtMTU5ODA4NjY1NiwtMT
 IzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3
 MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMz
 IsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5
