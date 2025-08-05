@@ -109,7 +109,9 @@ BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
 }
 ```
 
-To implement the external find, `find`, we can just call `node_map.find(key)` and return its iterator, since `node_map` always stores the same key-value pairs as the BST and supports fast lookup.
+To implement the external find, `find`, we can just call `_find` and then return `node_map.find(key)`  as an iterator, since `node_map` always stores the same key-value pairs as the BST and supports fast lookup.
+
+
 
 However, there are some questions to ask, especially since this was a recursive approach.
 
@@ -292,7 +294,7 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwMTE5OTE3LC0xODM1OTY1MTE1LC0xNT
+eyJoaXN0b3J5IjpbODcxNzAxMzk3LC0xODM1OTY1MTE1LC0xNT
 k4MDg2NjU2LC0xMjM4ODYwMDA2LDEzNzI3ODg4NTgsLTEwMzA5
 NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0Nzg0OCwtODg5NTY5MT
 U2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC05MDY3MzkwNDMsMzE0
