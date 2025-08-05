@@ -200,11 +200,27 @@ void AVL<K, V>::_rotateRight(TreeNode*& node) {
 }
 ```
 
+```
+template <typename K, typename V>
+void AVL<K, V>::_rotateLeftRight(TreeNode*& node) {
+    // rotate left and then rotate right
+    _rotateLeft(node);
+    _rotateRight(node);
+}
+```
 
+```
+template <typename K, typename V>
+void AVL<K, V>::_rotateRightLeft(TreeNode*& node) {
+    // rotate right and then rotate left
+    _rotateRight(node);
+    _rotateLeft(node);
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjkwODkxMywxNTIwMjMzMzAsLTE4Mj
-k4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUw
-NSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMj
-k0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4
-MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOT
+g3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1
+LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
+Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
+MzgsLTQwOTYzMjU5MV19
 -->
