@@ -26,8 +26,10 @@ There are a total of **four** rotations: L (left), R (right), LR (left-right), R
 - All rotations are constant time, $O(1)$ because they only rearrange a **fixed, small number of pointers** (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree
 - The BST property is maintained
 
-The goal is to get $O(h) \equiv O(\log n)$. These types of trees are known as Addision-Velsky and Landis trees, or simply **AVL trees**, which are a specific type of **BBST** (Balanced Binary Search Tree)
+The goal is to get $O(h) \equiv O(\log n)$. These types of trees are called **AVL trees**, named after their (Addison, which are a specific type of **BBST** (Balanced Binary Search Tree)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzMzMDQ5MjUsMTYzNzU5MTY4MSwtMj
-g3MjM4MDIsMzMwNTcwNzQ0XX0=
+eyJoaXN0b3J5IjpbMTgzODIzMDgsMTYzNzU5MTY4MSwtMjg3Mj
+M4MDIsMzMwNTcwNzQ0XX0=
 -->
