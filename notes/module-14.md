@@ -127,9 +127,25 @@ int AVL<K, V>::height(TreeNode* node) {
 }
 ```
 
+We also need a helper function to update the height after performing necessary rotations
 
+The updated node's height will be 1 plus the max height of left and right subtree
+
+The height is defined as the number of edges in the longest path from that node down to a leaf. 
+
+```
+template <typename K, typename V>
+void AVL<K, V>::_updateHeight(TreeNode* curr) {
+    // calculate height as 1 + maximum height of children
+    // the +1 accounts for the edge from this node to its deepest child
+    // this works after any tree modification because height depends on the current tree structure
+    if(curr != nullptr) {
+        curr->height = 1 + std::max(height(curr->left), height(curr->right));
+    }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzQ2OTc5NywyMDA1ODIyOTA0LC01NT
+eyJoaXN0b3J5IjpbLTcxMjU1NjQ2MCwyMDA1ODIyOTA0LC01NT
 c3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQy
 NjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLT
 E2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ==
