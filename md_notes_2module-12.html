@@ -121,7 +121,12 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <p>$$ n_l = 1 + 2 + 4 + \cdots + 2^l = \sum^l_{i = 0} 2^i $$</p>
 <p>Since $h = l$ at the maximum level of a tree, the total number of nodes in a <a class="el" href="classBST.html">BST</a>, $n$, is $2^h$, which can also be represented as a sum of the geometric series of all nodes up to level $h$, where</p>
 <p>$$ n = 1 + 2 + 4 + \cdots + 2^h = \sum^h_{i = 0} 2^i $$</p>
-<p>The sum of a geometric series $1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = </p>
+<p>The sum of a geometric series $1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r^{h + 1} - 1}{r - 1}$</p>
+<p>$r = 2$, so $\frac{2^{h + 1} - 1}{2 - 1} = 2^{h + 1} - 1$</p>
+<p>Solving for $h$,</p>
+<p>$$ n = 2^{h + 1} - 1 n + 1 = 2^{ $$</p>
+<p>Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$</p>
+<p>This is the notion of <b>balancing</b>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(log(n))$</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
