@@ -72,8 +72,10 @@ If we looked at every possible sequence and computed its height, its average is 
 
 This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $\log_2⁡(n) \equiv \log(n)$
 
+This is delving into the average case runtime of a BST because the time complexity depends on the tree’s height, and since the average height of a BST built from random insertions is about log⁡n\log nlogn, the average case runtime for these operations is also O(log⁡n)O(\log n)O(logn).
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODY1NDY1NCw3MDk5MTk5LC0xMzQzOT
+eyJoaXN0b3J5IjpbMTU3Nzc4Njc4OCw3MDk5MTk5LC0xMzQzOT
 gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
