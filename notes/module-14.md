@@ -148,9 +148,11 @@ void AVL<K, V>::_updateHeight(TreeNode* curr) {
 }
 ```
 
+From here, the rest is simple. We just have to simply code each rotation. The rotations intuitively make sense if you know what's going on
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NT
-c3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQy
-NjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLT
-E2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbMTcwODk4MDI1LC0xODI5ODczNzUsMjAwNT
+gyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTky
+OSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMT
+A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
+NTkxXX0=
 -->
