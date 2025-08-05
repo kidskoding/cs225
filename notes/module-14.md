@@ -7,12 +7,12 @@ This means that we have to consider 3 things:
 
 - Rotations
 - Maintaining Height
-- Detecting Imbalance - check subtree height 
+- Detecting Imbalance - check subtree height in $O(1)$ time and compute balance in $O(1)$ time
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgxNzk2MzgsLTE2NTg4NDE0ODIsND
-A5NTc4MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MD
+k1NzgxMzgsLTQwOTYzMjU5MV19
 -->
