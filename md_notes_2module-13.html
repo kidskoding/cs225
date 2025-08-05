@@ -121,7 +121,7 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 <p>There are a total of <b>four</b> rotations: L (left), R (right), LR (left-right), RL (right-left)</p>
 <ul>
 <li><b>L</b> (Left Rotation) - used when the right subtree is too tall (Right-Right case)</li>
-<li><b>R</b> (Right Rotation) - used when the left subtree is too tall (Left- case)</li>
+<li><b>R</b> (Right Rotation) - used when the left subtree is too tall (Left-Left case)</li>
 <li><b>LR</b> (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case)<ul>
 <li>Perform a left and then right rotation</li>
 </ul>
@@ -136,7 +136,7 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 <li>All rotations are constant time, $O(1)$ because they only rearrange a <b>fixed, small number of pointers</b> (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree</li>
 <li>The <a class="el" href="classBST.html">BST</a> property is maintained</li>
 </ul>
-<p>The goal is to get $h \equiv O(\log n)$. These types of trees are called <b>AVL trees</b> (named after Georgy Addison-Velsky and Evengii Landis), which are a specific type of <b>BBST</b> (Balanced Binary Search Tree)</p>
+<p>The goal is to get $h \equiv O(\log n)$. These types of trees are called <b>AVL trees</b> (named after Georgy Addison-Velsky and Evengii Landis), which are a specific type of <b>BBST</b> (Balanced Binary Search Tree)     </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
