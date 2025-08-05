@@ -108,8 +108,8 @@ $(function(){initNavTree('md_notes_2module-14.html',''); initResizable(true); })
 <li>Detecting Imbalance - check subtree height in $O(1)$ time and compute balance in $O(1)$ time</li>
 </ul>
 <p>We can compute balance by having each subtree store its height, which means that I can retrieve it in constant time</p>
-<p>If insertion occurred on a tree, $t$, where its right subtree was heavier, we would need to do a <b>L</b> rotation about $t$ to restore the balance of the tree.</p>
-<p>We leverage this by noting that the balance factor of <code>t-&gt;right</code> is greater than 0 (<code>t-&gt;right &gt; 0</code>)</p>
+<p>If insertion occurred on a tree, $t$, where a right-right case occurred (two ri, meaning that its right subtree was heavier, we would need to do a <b>L</b> rotation about $t$ to restore the balance of the tree.</p>
+<p>We leverage this by noting that the balance factor, $b$ of <code>t-&gt;right</code> is 2, which is greater than 0 (<code>t-&gt;right &gt; 0</code>)</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
