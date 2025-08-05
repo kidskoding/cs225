@@ -201,7 +201,19 @@ Insertion into an AVL tree</h1>
 <div class="line">int AVL&lt;K, V&gt;::height(TreeNode* node) {     </div>
 <div class="line">      return node != nullptr ? 0 : node-&gt;height; </div>
 <div class="line">}</div>
-</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- fragment --><p>We also need a helper function to update the height after performing necessary rotations</p>
+<p>The updated node's height will be 1 plus the max height of left and right subtree</p>
+<p>The height is defined as the number of edges in the longest path from that node down to a leaf.</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::_updateHeight(TreeNode* curr) {</div>
+<div class="line">    // calculate height as 1 + maximum height of children</div>
+<div class="line">    // the +1 accounts for the edge from this node to its deepest child</div>
+<div class="line">    // this works after any tree modification because height depends on the current tree structure</div>
+<div class="line">    if(curr != nullptr) {</div>
+<div class="line">        curr-&gt;height = 1 + std::max(height(curr-&gt;left), height(curr-&gt;right));</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment -->      </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
