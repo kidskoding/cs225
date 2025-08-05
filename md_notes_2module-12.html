@@ -101,13 +101,16 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md89"></a></p>
 <p>Previously, we discussed that $O(h) \equiv O(n)$ in the worst case scenario. When comparing our <a class="el" href="classBST.html">BST</a> runtime analysis to our runtime analysis of a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, its not actually any better, and is in fact almost the same.</p>
-<p>However, a <a class="el" href="classBST.html">BST</a> can still outperform a linked list because its best-case scenario occurs when the tree is <b>balanced</b>, resulting in a height that grows <b>logarithmically</b> with the number of nodes. In contrast, a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>’s best-case scenario still involves traversing a length that grows <b>linearly</b> with the number of elements.</p>
+<p>However, a <a class="el" href="classBST.html">BST</a> can still outperform a linked list because its best-case scenario occurs when the tree is <b>balanced</b>, resulting in a height that grows <b>logarithmically</b> with the number of nodes. In contrast, a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>’s best-case scenario still involves traversing a length that grows <b>linearly</b> with the number of elements</p>
 <p>This means <a class="el" href="classBST.html">BST</a> operations can be done in $O(log⁡(n))$ time only when <b>balanced</b>, whereas a linked list requires $O(n)$ time even in the best case.</p>
-<p>For all <a class="el" href="classBST.html">BST</a>'s</p><ul>
+<p>For all <a class="el" href="classBST.html">BST</a>'s:</p>
+<ul>
 <li>Its <b>lower bound</b> (best case scenario) occurs when $h \geq O(log(n)) \equiv h \geq O(log_2(n))$</li>
 <li>Its <b>upper bound</b> (worst case scenario) occurs when $h \leq O(n)$</li>
 </ul>
-<p>Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$   </p>
+<p>Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$</p>
+<p>This is the notion of <b>balancing</b>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(log(n))$</p>
+<p>We can prove that   </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
