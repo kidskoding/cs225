@@ -60,8 +60,6 @@ Ignoring constants, the best case scenario of a BST occurs at a runtime of $O(\l
 
 Therefore, BSTs can run faster, only if their height remains close to $O(\log⁡ n)$
 
-This explains the notion of **balancing**. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
-
 As discussed earlier, a BST's height depends on the number of nodes inserted into it.
 
 If we assume that we have random numbers being inserted into our BST, and choose those random numbers, how many different ways are there?
@@ -72,10 +70,12 @@ If we looked at every possible sequence and computed its height, its average is 
 
 This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree’s height grows the number of times you can halve the keys, which is about $\log_2⁡(n) \equiv \log(n)$
 
-This is delving into the average case runtime of a BST because the time complexity depends on the tree’s height, and since the average height of a BST built from random insertions is about $O(\log⁡n)$, the average case runtime for these operations is also $O(\log⁡n)$
+This is delving into the average case runtime of a BST because the time complexity depends on the tree’s height, and since the average height of a BST built from random insertions is about $O(\log⁡ n)$, the average case runtime for these operations is also $O(\log⁡n)$
 
 
+
+This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTQ5OTk2NDUsNzA5OTE5OSwtMTM0Mz
-k4MTI3NCw4MzYwNzI4MDAsMTU3NTIxNzc2MF19
+eyJoaXN0b3J5IjpbMTk2NjI4Nzk3NSw3MDk5MTk5LC0xMzQzOT
+gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
 -->
