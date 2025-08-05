@@ -110,9 +110,12 @@ This is a lot of code, but what we are essentially doing is calculating the bala
 		- A left subtree balance of -1 means that its a **"left stick"**, so we need to do a **right rotation**
 		- A left subtree balance of +1 means that its a **"left elbow"**, so we need to do a **left-right rotation**
 	- Similarly, if the balance is +2, we know that the shape of the right subtree is either a **"right stick"** or **"right elbow"**
+		- We then need to compute the balance of the right subtree to figure out specifically which one it is
+		- A right subtree of balance -1 means that its a **"right stick"**, so we need to do a **left rotation**
+		- A right subtree balance of +1 means that its a **"right elbow"**, so we need to do a **right-left** rotation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0NzkxMjkxLC01NTc3MzMzOTIsMTU1OD
-QzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0
-MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsND
-A5NTc4MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbLTMxMzM3MzE3MSwtNTU3NzMzMzkyLDE1NT
+g0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5
+NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLD
+QwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
 -->
