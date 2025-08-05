@@ -354,7 +354,8 @@ BST-Analysis</h1>
 <p>By definition, the height $h$ of a <a class="el" href="classBST.html">BST</a> is the length of the longest path from the root to a leaf, measured in edges</p>
 <ol type="1">
 <li>The worst case scenario occurs when the <a class="el" href="classBST.html">BST</a> weakens into a <code><a class="el" href="classLinkedList.html">LinkedList</a></code>, where each node has only one child</li>
-<li>The height of this worst case scenario <a class="el" href="classBST.html">BST</a>, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest pt         </li>
+<li>The height of this worst case scenario <a class="el" href="classBST.html">BST</a>, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest path must visit all nodes except the root</li>
+<li>Since $h = n - 1$, that means $O(h) \equiv O(n - 1)$. Since constants are insignificant in measuring an algorithm's runtime, $O(n - 1) \equiv O(n)$, meaning that $O(n) \equiv O(n - 1) \equiv O(n)$</li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
