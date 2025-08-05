@@ -91,19 +91,23 @@ void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
             // perform left-right rotation
         }
     } else if(balance == 2) { // heavy right ("right stick" shaped subtree)
-        // perform left rotation
-    } else {
-        // perform right-left rotation
+        int rightBalance = curr->right->right->height - curr->right->left->height;
+        if(rightBalance == -1) {
+            // perform left rotation
+        } else {
+            // perform right-left rotation
+        }
     }
-
     _updateHeight(curr);
 }
 ```
 
 This is a lot of code, but what we are essentially doing is calculating the balance factor so we know which rotation to perform!
+
+1. Compute the balance of the tree
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NjcxMzUwLC01NTc3MzMzOTIsMTU1OD
-QzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0
-MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsND
-A5NTc4MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbMTA0MDUxNDcyMiwtNTU3NzMzMzkyLDE1NT
+g0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5
+NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLD
+QwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
 -->
