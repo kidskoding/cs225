@@ -152,9 +152,11 @@ However, this actually will only work if the node is a **leaf node**.  There are
 
 1. **Removing a node with one child (left or right)** - If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes.
 2. **Removing a node with two children** - If the node has two children, meaning it has both a left and right child, we need to find a replacement node to take the removed node’s place in order to maintain the property of a BST
-	- f 
+	-   The **inorder predecessor** (the largest node in the left subtree)
+	-   The **inorder successor** (the smallest node in the right subtree)
+	- Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which will now fall into one of the simpler cases (leaf or single child). 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3MzQ2MDU4LDE2OTY0OTY1ODksMjA3Nj
+eyJoaXN0b3J5IjpbNzI2NjA4NjQ0LDE2OTY0OTY1ODksMjA3Nj
 E1OTc4OCwxNzI0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIw
 LC05ODc5MTQ3NDksLTE4MDU1NDc1MzksMTkxMDI1MzM1NSwtMj
 AwNjgzMDAxOSwxNDUwNjg5NTA1LDcyNTgwMTcyOSwtMjc1MTg5
