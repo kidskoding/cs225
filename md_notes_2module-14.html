@@ -146,8 +146,14 @@ Insertion into an AVL tree</h1>
 <div class="line"> </div>
 <div class="line">    // ensure the balance of the AVL tree</div>
 <div class="line">}</div>
+<div class="line"> </div>
+<div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::insert(K key, V value) {</div>
+<div class="line">    _insert(key, value, root);</div>
+<div class="line">    node_map[key] = value;</div>
+<div class="line">}</div>
 </div><!-- fragment --><p>The code above ensures the AVL tree maintains <a class="el" href="classBST.html">BST</a> properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater</p>
-<p>However, we are missing one crucial detail: ensuring that the AVL tree is <b>balanced</b>      </p>
+<p>However, we are missing one crucial detail: ensuring that the AVL tree is <b>balanced</b>. To do this, we need to calculate the <b>balance factor</b> and then based on the balance factor, perform the appropriate rotat      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
