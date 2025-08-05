@@ -22,7 +22,13 @@ For example, if the left subtree is much taller than the right, a right rotation
 
 There are a total of **four** rotations: L (left), R (right), LR (left-right), RL (right-left)
 
+- **L** (Left Rotation) - used when the left subtree is too tall (Left-Left case)
+- **R** (Right Rotation) - used when the right subtree is too tall (Right-Right case)
+- **LR** (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case)
+	- 
+- 
 
+Other things to know about rotations:
 - All rotations are local, meaning subtrees aren't impacted
 - All rotations are constant time, $O(1)$ because they only rearrange a **fixed, small number of pointers** (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree
 - The BST property is maintained
@@ -31,6 +37,6 @@ The goal is to get $O(h) \equiv O(\log n)$. These types of trees are called **AV
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTc4NzMwLC00MjA1OTI2MCwxNjM3NT
-kxNjgxLC0yODcyMzgwMiwzMzA1NzA3NDRdfQ==
+eyJoaXN0b3J5IjpbLTE1MjU2NjMzNjcsLTQyMDU5MjYwLDE2Mz
+c1OTE2ODEsLTI4NzIzODAyLDMzMDU3MDc0NF19
 -->
