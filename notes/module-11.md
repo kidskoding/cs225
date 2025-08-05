@@ -246,7 +246,8 @@ A lot of things happen in this code, but most of it has already been previously 
 1. If the key we need to remove is less than the node's key, it makes sense to descend down the left subtree, since that contains keys less than the key we need to remove
 2. If the key we need to remove is greater than the node's key, it makes sense to descend down the right subtree, since that contains keys greater than the key we need to remove
 3. We have to check if either the left or right child aren't null for the one child case. 
-	- When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null
+	- When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null, and obviously wasn't the case
+	- If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. T
 
 Coding the exposed (external) version of `remove` becomes simple from here, we just call `_remove` and passing in the root
 
@@ -258,11 +259,11 @@ void BST<K, V>::remove(const K& key) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkzNjIxNTQsLTEyMzg4NjAwMDYsMT
-M3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0
-OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwOD
-UsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2
-MDcxNDE4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nz
-g4LDE3MjQ2NjE2NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4
-NzkxNDc0OV19
+eyJoaXN0b3J5IjpbNDIyMjI2NjI2LC0xMjM4ODYwMDA2LDEzNz
+I3ODg4NTgsLTEwMzA5NDg5MDksLTE2MTcyNjUyNTMsLTQ2NDk0
+Nzg0OCwtODg5NTY5MTU2LDE2Mjg2NTEzMiwxMTE5NTQyMDg1LC
+05MDY3MzkwNDMsMzE0NTA4NTc4LC0xMzk1MDYwMDU4LDE4NjA3
+MTQxODYsNzI2NjA4NjQ0LDE2OTY0OTY1ODksMjA3NjE1OTc4OC
+wxNzI0NjYxNjY0LDgzMjA1MTQ2NSwyMDM0NDgxNTIwLC05ODc5
+MTQ3NDldfQ==
 -->
