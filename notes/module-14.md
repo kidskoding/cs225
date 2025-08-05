@@ -11,12 +11,13 @@ This means that we have to consider 3 things:
 
 We can compute balance by having each subtree store its height, which means that I can retrieve it in constant time
 
-If insertion occurred on a tree, $t$, where its right subtree was heavier, we would need to do a **L** rotation about $t$ to restore the balance of the tree. 
+If insertion occurred on a tree, $t$, where a right-right case occurred (two ri, meaning that its right subtree was heavier, we would need to do a **L** rotation about $t$ to restore the balance of the tree. 
 
-We leverage this by noting that the balance factor of `t->right` is greater than 0 (`t->right > 0`) 
+We leverage this by noting that the balance factor, $b$ of `t->right` is 2, which is greater than 0 (`t->right > 0`) 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2ODAyMjkzLDEyOTQ0MTY3ODAsMTEwOT
-k3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5
-MV19
+eyJoaXN0b3J5IjpbLTU2NDAwNzgzNCwxMjk0NDE2NzgwLDExMD
+k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
+OTFdfQ==
 -->
