@@ -224,14 +224,14 @@ void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
 
 However, we will now argue that $h = O(\log n)$, using the balance property to prove this
 
-The definition of big-O states that $f(n)$ is $O(g(n))$ iff $\exists_{c,k} \in f(n) \leq c \cdot g(n); \forall_n > k$
+The definition of big-O states that $f(n)$ is $O(g(n))$ iff $\exists_{c,k}$ such that $f(n) \leq c \cdot g(n)$ for all $n > k$
 
-Or simply, there exists a $c$ and $k$ in 
+Or simply, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDE2MjcyOSwtMTExNTQ0Mzg5LDkzMT
-YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
-LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
-EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
-MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MzIwMTM5OTEsLTExMTU0NDM4OSw5Mz
+E2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkw
+NCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNz
+ExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4
+NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX
+0=
 -->
