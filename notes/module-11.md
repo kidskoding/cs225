@@ -248,9 +248,9 @@ A lot of things happen in this code, but most of it has already been previously 
 3. We have to check if either the left or right child aren't null for the one child case. 
 	- When we get to the else if statement, we know that either child has to point to some node since we already checked if both were null, and obviously wasn't the case
 	- If the left child is present, then we know we can simply remove the right child and connect its parent directly to this right child. The same thing works with the right child, simply remove the left child and connect its parent directly to this left child.
-4. For the two child case, once we found the iop and swapped it with the current node, we have to recursively call `_remove` on the left subtree, since that is where the IOP will always be located. That is because the IOP is the greatest node in the left subtree, but smaller than its root (meaning it resides directly on the left of the root of the left subtree)
+4. For the two child case, once we found the iop and swapped it with the current node, we have to recursively call `_remove` on the left subtree, since that is where the IOP will always be located. That is because the IOP is the greatest node in the left subtree, but smaller than its root (meaning it is a left child of the left subtree's root)
 
-Coding the exposed (external) version of `remove` becomes simple from here, we just call `_remove` and passing in the root
+This makes coding the exposed (external) version of `remove` simple. We just call `_remove` and pass in the root
 
 ```
 template <typename K, typename V>
@@ -259,8 +259,13 @@ void BST<K, V>::remove(const K& key) {
 }
 ```
 
+## BST-Analysis
+
+| Operation | BST Worst Case |
+| ------------ | ----------- |
+| `find`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNDQxNjMzOSwtMTIzODg2MDAwNiwxMz
+eyJoaXN0b3J5IjpbMjEyMTg1MzEyMSwtMTIzODg2MDAwNiwxMz
 cyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5
 NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTExOTU0MjA4NS
 wtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MDA1OCwxODYw
