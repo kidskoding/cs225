@@ -309,20 +309,20 @@ The table below summarizes the runtime for all our important BST algorithms
 
 For the operations `find`, `insert`, and `remove` on a BST, the worst-case time complexity depends on the height $h$ of the tree. These operations require traversing from the root down to a specific node, which involves up to $h$ recursive or iterative steps. Therefore, their worst-case time complexity is $O(h)$.
 
-If the height $h$ of a Binary Search Tree (BST) can be as large as the number of nodes $n$ in the worst case, then any operation that takes $O(h)$ time can take up to $O(n)$ time. Prove that this worst-case scenario holds, $O(h) \equiv O(n)$
+If the height $h$ of a Binary Search Tree (BST) can be as large as the number of nodes $n$ in the worst case, then any operation that takes $O(h)$ time can take up to $O(n)$ time. The worst-case scenario holds when $O(h) \equiv O(n)$
 
 By definition, the height $h$ of a BST is the length of the longest path from the root to a leaf, measured in edges
 
 1. The worst case scenario occurs when the BST weakens into a `LinkedList`, where each node has only one child
 2. The height of this worst case scenario BST, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest path must visit all nodes except the root
 
-$h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, we conclude that $O(h) \equiv O(n)$
+$h = n - 1$, so that means $O(h) = O(n - 1) = O(n)$. Since constants are insignificant in measuring an algorithm's runtime, meaning that $O(h) \equiv O(n)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTkzNDI4MiwyOTE0ODUxNjIsLTE4Mz
-U5NjUxMTUsLTE1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4
-ODg1OCwtMTAzMDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3OD
-Q4LC04ODk1NjkxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkw
-NjczOTA0MywzMTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxND
-E4Niw3MjY2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3
-MjQ2NjE2NjRdfQ==
+eyJoaXN0b3J5IjpbMTA1NDIwNzAxNCwtNTcxOTM0MjgyLDI5MT
+Q4NTE2MiwtMTgzNTk2NTExNSwtMTU5ODA4NjY1NiwtMTIzODg2
+MDAwNiwxMzcyNzg4ODU4LC0xMDMwOTQ4OTA5LC0xNjE3MjY1Mj
+UzLC00NjQ5NDc4NDgsLTg4OTU2OTE1NiwxNjI4NjUxMzIsMTEx
+OTU0MjA4NSwtOTA2NzM5MDQzLDMxNDUwODU3OCwtMTM5NTA2MD
+A1OCwxODYwNzE0MTg2LDcyNjYwODY0NCwxNjk2NDk2NTg5LDIw
+NzYxNTk3ODhdfQ==
 -->
