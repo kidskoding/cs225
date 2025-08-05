@@ -17,6 +17,7 @@ var searchData=
   ['different_20type_20of_20traversal_20level_20order_20traversal_14',['A different type of traversal - Level Order Traversal',['../md_notes_2module-09.html#autotoc_md78',1,'']]],
   ['dijkstra_20s_20algorithm_15',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
   ['disjoint_20sets_16',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['doubling_20the_20elements_20every_20time_17',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md60',1,'']]],
-  ['dynamic_20memory_20allocation_18',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
+  ['do_3a_17',['What rotations do:',['../md_notes_2module-13.html#autotoc_md91',1,'']]],
+  ['doubling_20the_20elements_20every_20time_18',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md60',1,'']]],
+  ['dynamic_20memory_20allocation_19',['Dynamic Memory Allocation',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22',1,'']]]
 ];
