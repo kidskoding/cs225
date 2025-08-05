@@ -155,12 +155,14 @@ However, this actually will only work if the node is a **leaf node**.  There are
 	-   The **inorder predecessor** (the largest node in the left subtree)
 	-   The **inorder successor** (the smallest node in the right subtree)
 	- Swap the target node’s key and value with the replacement node’s, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDcxNDE4Niw3MjY2MDg2NDQsMTY5Nj
-Q5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQsODMyMDUxNDY1
-LDIwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMTgwNTU0NzUzOSwxOT
-EwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2ODk1MDUsNzI1ODAx
-NzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5MiwxMDYzNjA4NTAyLD
-E1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0NzkyNzU0LDE5MTk1
-Mjc3MjhdfQ==
+eyJoaXN0b3J5IjpbLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3Mj
+Y2MDg2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2
+NjQsODMyMDUxNDY1LDIwMzQ0ODE1MjAsLTk4NzkxNDc0OSwtMT
+gwNTU0NzUzOSwxOTEwMjUzMzU1LC0yMDA2ODMwMDE5LDE0NTA2
+ODk1MDUsNzI1ODAxNzI5LC0yNzUxODk2MDQsLTUwMzIxNjE5Mi
+wxMDYzNjA4NTAyLDE1OTQwMDYwNzAsLTU3MjEyODU3MCwxNzQ0
+NzkyNzU0XX0=
 -->
