@@ -154,8 +154,33 @@ From here, the rest is simple. We just have to simply code each rotation. The ro
 	- The right child becomes the new root of the subtree
 	- The new root's left subtree becomes the old root's right child
 	- The old root becomes the left child of the new root of the subtree
+2. Right Rotation
+	- The left child becomes the new root of the subtree
+	- The new root's right subtree becomes the old root's left child
+	- The old root becomes the right child of the new root of the subtree
+
+Coding these then becomes easy
+
+```
+template <typename K, typename V>
+void AVL<K, V>::_rotateLeft(TreeNode*& node) {
+    // the right child becomes the new root
+    TreeNode* newRoot = node->right;
+
+    // move `newRoot`'s left subtree to old root's right subtree
+    node->right = newRoot->left;
+
+    // the old root becomes the left child of the new root
+    newRoot->left = node;
+
+    // update pointer to point to the new root
+    node = newRoot;
+}
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQ1MTYyNTIsMTUyMDIzMzMwLC0xOD
+eyJoaXN0b3J5IjpbLTExMDY1NjM2OTcsMTUyMDIzMzMwLC0xOD
 I5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1
 MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMT
 I5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3
