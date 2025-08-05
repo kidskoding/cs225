@@ -139,8 +139,12 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">    };</div>
 <div class="line"> </div>
 <div class="line">    TreeNode* root;</div>
+<div class="line"> </div>
+<div class="line">    // a map that lets us use iterators for fast access without needing to traverse the tree</div>
+<div class="line">    std::unordered_map&lt;K, V&gt; node_map;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>This looks great, it shows the exact functionalities we need for our <a class="el" href="classBST.html">BST</a></p>
+<p>Notice how we added an <code>std::unordered_map</code></p>
 <ul>
 <li><code>find</code> - Will be used to find a node in a <a class="el" href="classBST.html">BST</a>. Returns a custom implemented <code>TreeIterator</code> that behaves like the STL iterator of a template library. This is because we want to return the iterator's <code>.end()</code> behavior when not found.</li>
 <li><code>insert</code> - Will be used to insert a node into a <a class="el" href="classBST.html">BST</a></li>
