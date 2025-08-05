@@ -9,10 +9,12 @@ This means that we have to consider 3 things:
 - Maintaining Height
 - Detecting Imbalance - check subtree height in $O(1)$ time and compute balance in $O(1)$ time
 
+We can compute balance by having each subtree store its height, which means that I can retrieve it in constant time
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MD
-k1NzgxMzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNj
+U4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
 -->
