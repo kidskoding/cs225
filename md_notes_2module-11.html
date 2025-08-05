@@ -209,6 +209,7 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">}</div>
 </div><!-- fragment --><p>There is a bug if you don't add the ampersand to the <code>TreeNode*</code> type when creating <code>loc</code>, since that then creates a copy pointer which changing it only changes the copy</p>
 <p>Its a preference as to which method is better for writing <code>_insert</code>; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.</p>
+<p>To then code the external <code>insert</code>, we just have to simply call the internal insert, <code>_insert</code> and then add the key to our `node_map</p>
 <p>The final step is to implement <code>remove</code> for a <a class="el" href="classBST.html">BST</a>. This seems simple since I just need to find the location of the <code>TreeNode</code> that I want to remove and then set its pointer to null.</p>
 <p>However, this actually will only work if the node is a <b>leaf node</b>. There are two other cases we have to consider when removing a node, which rely on the node having at least one child</p>
 <ol type="1">
