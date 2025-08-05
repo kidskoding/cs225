@@ -246,6 +246,54 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <div class="line">}</div>
 </div><!-- fragment --><p>Finally, we can top it off by coding the functionality of <code>remove</code>. We first need a helper to handle <code>remove</code>, <code>_remove</code>, for all kinds of nodes, and then we can call the external remove with <code>root</code>.</p>
 <p>Recall that <code>_remove</code> involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child). The code for <code>_remove</code> is shown below</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void BST&lt;K, V&gt;::_remove(TreeNode*&amp; node, const K&amp; key) {</div>
+<div class="line">    if(node != nullptr) { return; }</div>
+<div class="line"> </div>
+<div class="line">    if(key &lt; node-&gt;key) {</div>
+<div class="line">        // descend down the left subtree because left subtree contains the smaller values</div>
+<div class="line">        _remove(node-&gt;left, key);</div>
+<div class="line">    } else if(key &gt; node-&gt;key) {</div>
+<div class="line">        // descend down the right subtree because right subtree contains the larger values</div>
+<div class="line">        _remove(node-&gt;right, key);</div>
+<div class="line">    } else {</div>
+<div class="line">        // case 1: the leaf node case - free the node and set it to null</div>
+<div class="line">        if(node-&gt;left != nullptr &amp;&amp; node-&gt;right != nullptr) {</div>
+<div class="line">            delete node;</div>
+<div class="line">            node = nullptr;</div>
+<div class="line">        } </div>
+<div class="line">        </div>
+<div class="line">        // case 2: the one child node case (either left or right child)</div>
+<div class="line">        else if(node-&gt;left != nullptr) {</div>
+<div class="line">            // remove the node by connecting its parent directly to the node’s only child (the right child)</div>
+<div class="line">            TreeNode* tmp = node;</div>
+<div class="line">            node = node-&gt;right;</div>
+<div class="line">            delete tmp;</div>
+<div class="line">        }</div>
+<div class="line">        else if(node-&gt;right != nullptr) {</div>
+<div class="line">            // remove the node by connecting its parent directly to the node’s only child (the left child)</div>
+<div class="line">            TreeNode* tmp = node;</div>
+<div class="line">            node = node-&gt;left;</div>
+<div class="line">            delete tmp;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        // case 3: the two child node case (both left and right child)</div>
+<div class="line">        // swap the removed node with the iop and recursively call the function on the left subtree</div>
+<div class="line">        else {</div>
+<div class="line">            K iop_key = node-&gt;key;</div>
+<div class="line">            TreeNode* iop = _iop(node);</div>
+<div class="line">            _swap(iop, node);</div>
+<div class="line"> </div>
+<div class="line">            // recursively call on the left subtree because the iop (the node to remove) is located there</div>
+<div class="line">            _remove(node-&gt;left, iop_key);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>A lot of things happen in this code, but most of it has already been previously explained. A couple things to clarify however,</p>
+<ol type="1">
+<li>If the key we need to remove is less than the node's key, it makes sense to descend down the left subtree, since that contains keys less than the key we need to remove</li>
+<li>If the key we</li>
+</ol>
 <p>Coding the exposed (external) version of <code>remove</code> becomes simple from here, we just call <code>_remove</code> and passing in the root</p>
 <div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
 <div class="line">void BST&lt;K, V&gt;::remove(const K&amp; key) {</div>
