@@ -136,6 +136,18 @@ Insertion into an AVL tree</h1>
 <div class="line">    TreeNode* right;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>Inserting a node into an AVL tree is very similar to a <a class="el" href="classBST.html">BST</a> (since it is in fact a type of BST!)</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::_insert(const K&amp; key, const V&amp; value, TreeNode*&amp; curr) {</div>
+<div class="line">    if(curr == nullptr) { return curr; } </div>
+<div class="line">    </div>
+<div class="line">    // maintain BST property</div>
+<div class="line">    if(curr-&gt;key &gt; key) { return _insert(key, value, curr-&gt;right);  }</div>
+<div class="line">    if(curr-&gt;key &lt; key) { return _insert(key, value, curr-&gt;left); }</div>
+<div class="line"> </div>
+<div class="line">    // ensure the balance of the AVL tree</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The code above ensures the AVL tree maintains <a class="el" href="classBST.html">BST</a> properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater</p>
+<p>However, we are missing one crucial detail: ensuring that the AVL tree is <b>balanced</b>      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
