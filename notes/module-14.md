@@ -169,58 +169,58 @@ Coding these then becomes easy
 
 ```
 template <typename K, typename V>
-void AVL<K, V>::_rotateLeft(TreeNode*& node) {
+void AVL<K, V>::_rotateLeft(TreeNode*& root) {
     // the right child becomes the new root
-    TreeNode* newRoot = node->right;
+    TreeNode* newRoot = root->right;
 
     // move `newRoot`'s left subtree to old root's right subtree
-    node->right = newRoot->left;
+    root->right = newRoot->left;
 
     // the old root becomes the left child of the new root
-    newRoot->left = node;
+    newRoot->left = root;
 
     // update pointer to point to the new root
-    node = newRoot;
+    root = newRoot;
 }
 ```
 ```
 template <typename K, typename V>
-void AVL<K, V>::_rotateRight(TreeNode*& node) {
+void AVL<K, V>::_rotateRight(TreeNode*& root) {
     // the left child becomes the new root
-    TreeNode* newRoot = node->left;
+    TreeNode* newRoot = root->left;
 
     // move `newRoot`'s right subtree to old root's left subtree
-    node->left = newRoot->right;
+    root->left = newRoot->right;
 
     // the old root becomes the right child of the new root
-    newRoot->right = node;
+    newRoot->right = root;
 
     // update pointer to point to the new root
-    node = newRoot;
+    root = newRoot;
 }
 ```
 
 ```
 template <typename K, typename V>
-void AVL<K, V>::_rotateLeftRight(TreeNode*& node) {
+void AVL<K, V>::_rotateLeftRight(TreeNode*& root) {
     // rotate left and then rotate right
-    _rotateLeft(node);
-    _rotateRight(node);
+    _rotateLeft(root);
+    _rotateRight(root);
 }
 ```
 
 ```
 template <typename K, typename V>
-void AVL<K, V>::_rotateRightLeft(TreeNode*& node) {
+void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
     // rotate right and then rotate left
-    _rotateRight(node);
-    _rotateLeft(node);
+    _rotateRight(root);
+    _rotateLeft(root);
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOT
-g3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1
-LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
-Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
-MzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbLTExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMD
+IzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzky
+LDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzOD
+c4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQx
+NDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
 -->
