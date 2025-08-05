@@ -124,9 +124,10 @@ $(function(){initNavTree('md_notes_2module-12.html',''); initResizable(true); })
 <p>The sum of a geometric series $1 + r + r^2 + \cdots + r^n = \sum_{i = 0}^h r^i = \frac{r^{h + 1} - 1}{r - 1}$</p>
 <p>$r = 2$, so $\frac{2^{h + 1} - 1}{2 - 1} = 2^{h + 1} - 1$</p>
 <p>Solving for $h$,</p>
-<p>$$ \begin{align*} &amp;n = 2^{h + 1} - 1 \ &amp;n + 1 &amp;= 2^{h + 1} \ &amp;\log_2(n + 1) &amp;= h + 1 \ &amp;h = \log_2(n + 1) - 1 \end{align*} $$</p>
+<p>$$ \begin{align*} &amp;n = 2^{h + 1} - 1 \ &amp;n + 1 = 2^{h + 1} \ &amp;\log_2(n + 1) = h + 1 \ &amp;h = \log_2(n + 1) - 1 \end{align*} $$</p>
+<p>Ignoring constants, the best case scenario of a <a class="el" href="classBST.html">BST</a> occurs at a runtime of $O(log(n))$</p>
 <p>Therefore, BSTs can run faster, only if their height remains close to $O(log⁡(n))$</p>
-<p>This is the notion of <b>balancing</b>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(log(n))$</p>
+<p>This explains the notion of <b>balancing</b>. We want to balance a <a class="el" href="classBST.html">BST</a> so that its operations come with a cheaper cost of $O(log(n))$</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
