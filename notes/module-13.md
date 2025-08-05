@@ -29,6 +29,19 @@ There are a total of **four** rotations: L (left), R (right), LR (left-right), R
 - **RL** (Right-Left Rotation) - Used when there's imbalance in the right-left direction (Right child has a taller left subtree — Right-Left case)
 	- Perform a right and then left rotation
 
+```
+mermaid graph TD
+    A[8]
+    A --> B[3]
+    A --> C[10]
+    B --> D[1]
+    B --> E[6]
+    E --> F[4]
+    E --> G[7]
+    C --> H[14]
+    H --> I[13]
+```
+
 Other things to know about rotations:
 - All rotations are local, meaning subtrees aren't impacted
 - All rotations are constant time, $O(1)$ because they only rearrange a **fixed, small number of pointers** (either a node, its child, and their subtrees); the amount of work doesn’t grow with the size of the tree
@@ -38,7 +51,7 @@ The goal is to get $h \equiv O(\log n)$. These types of trees are called **AVL t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODc2NzMxODksMTY3MDkxNjM0MywtND
-IwNTkyNjAsMTYzNzU5MTY4MSwtMjg3MjM4MDIsMzMwNTcwNzQ0
-XX0=
+eyJoaXN0b3J5IjpbNDIwOTQ2Nzg1LC0xMjg3NjczMTg5LDE2Nz
+A5MTYzNDMsLTQyMDU5MjYwLDE2Mzc1OTE2ODEsLTI4NzIzODAy
+LDMzMDU3MDc0NF19
 -->
