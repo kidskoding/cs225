@@ -316,13 +316,16 @@ Let the maximum height, $h$, of a BST with $n$ nodes be $h = n - 1$. Prove that 
 By definition, the height $h$ of a BST is the length of the longest path from the root to a leaf, measured in edges
 
 1. The worst case scenario occurs when the BST weakens into a `LinkedList`, where each node has only one child
-2. The height of this worst case scenario BST, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest pt
+2. The height of this worst case scenario BST, $h$, then becomes $n - 1$, where $h = n - 1$, since the longest path must visit all nodes except the root
+3. Since $h = n - 1$, that means $O(h) \equiv O(n - 1)$. Since constants are insignificant in measuring an algorithm's runtime, $O(n - 1) \equiv O(n)$, meaning that $O(n) \equiv O(n - 1) \equiv O(n)$
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM5Mzg4NzYsLTE4MzU5NjUxMTUsLT
-E1OTgwODY2NTYsLTEyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAz
-MDk0ODkwOSwtMTYxNzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1Nj
-kxNTYsMTYyODY1MTMyLDExMTk1NDIwODUsLTkwNjczOTA0Mywz
-MTQ1MDg1NzgsLTEzOTUwNjAwNTgsMTg2MDcxNDE4Niw3MjY2MD
-g2NDQsMTY5NjQ5NjU4OSwyMDc2MTU5Nzg4LDE3MjQ2NjE2NjQs
-ODMyMDUxNDY1XX0=
+eyJoaXN0b3J5IjpbLTk4ODU2NDcyNywtMTgzNTk2NTExNSwtMT
+U5ODA4NjY1NiwtMTIzODg2MDAwNiwxMzcyNzg4ODU4LC0xMDMw
+OTQ4OTA5LC0xNjE3MjY1MjUzLC00NjQ5NDc4NDgsLTg4OTU2OT
+E1NiwxNjI4NjUxMzIsMTExOTU0MjA4NSwtOTA2NzM5MDQzLDMx
+NDUwODU3OCwtMTM5NTA2MDA1OCwxODYwNzE0MTg2LDcyNjYwOD
+Y0NCwxNjk2NDk2NTg5LDIwNzYxNTk3ODgsMTcyNDY2MTY2NCw4
+MzIwNTE0NjVdfQ==
 -->
