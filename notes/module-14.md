@@ -5,7 +5,11 @@
 
 This means that we have to consider 3 things:
 
-- 
+- Rotations
+- Maintaining Height
+- Detecting Imbalance
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY3Mzg3NDYsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ==
 -->
