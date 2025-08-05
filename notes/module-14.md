@@ -19,11 +19,12 @@ $h = x$ prior to the left rotation and is now $h = x + 1$, where $x$ is the heig
 
 We leverage this by noting that the balance factor, $b$ of `t->right` is 2, which is greater than 0 (`t->right > 0`) 
 
-If insertion occurred on a subtree, $t$, where a **"right elbow"**, we would need to do a **RL** rotation about $t$ to restore the balance of the tree
+If insertion occurred on a subtree, $t$, where a **"right elbow"** formed (right child has taller left subtree), we would need to do a **RL** rotation about $t$ to restore the balance of the tree
 
 We leverage this by noting that the balance factor, $b$ of `t->right` is -1, which is less than 0 (`t->right < 0`) 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMD
-k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
-OTFdfQ==
+eyJoaXN0b3J5IjpbMTk1Mjk3MjY2NCwxMzg3ODAzOTQxLDEyOT
+Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
+MzgsLTQwOTYzMjU5MV19
 -->
