@@ -225,7 +225,19 @@ $(function(){initNavTree('md_notes_2module-11.html',''); initResizable(true); })
 <p>This is because when a left or right node follows a single path down a tree, the worst case occurs when the node travels through the entire path of $h$</p>
 <p>First, we need a helper function that helps find either the IOP or IOS (will do IOP in this example). Recall that the IOP finds the largest node in the left subtree.</p>
 <p>Therefore, to implement this, we need to find the rightmost value in the left subtree, since this will always be the largest value according to the <a class="el" href="classBST.html">BST</a> property. To find the largest value, we just need to iterate through each node's right child until a node's right child no longer exists (null pointer). The code for finding the IOP is reflected below</p>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">typename BST&lt;K, V&gt;::TreeNode*&amp; BST&lt;K, V&gt;::_iop(TreeNode*&amp; root) {</div>
+<div class="line">    // grab the left subtree of the root</div>
+<div class="line">    TreeNode*&amp; curr = root-&gt;left;</div>
+<div class="line"> </div>
+<div class="line">    // iterate through the right children of the left subtree</div>
+<div class="line">    // return the rightmost node</div>
+<div class="line">    while(curr-&gt;right != nullptr) {</div>
+<div class="line">        curr = curr-&gt;right;</div>
+<div class="line">    }</div>
+<div class="line">    return curr;</div>
+<div class="line">}</div>
+</div><!-- fragment --></div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
