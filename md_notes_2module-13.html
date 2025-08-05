@@ -111,13 +111,13 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 <li>Change a "stick" (every node basically has only one child) into a "mountain" (roughly equal subtrees)</li>
 </ol>
 <p>When a <a class="el" href="classBST.html">BST</a> becomes very imbalanced, where there are plenty of more nodes on one side than another, you can perform <b>rotations</b> to rebalance it by redistributing nodes so that the left and right subtrees are more evenly balanced (this is how "sticks" turn into "mountains")</p>
-<h2><a class="anchor" id="autotoc_md91"></a>
-What rotations do:</h2>
+<p>Rotations:</p>
 <ul>
-<li><b>Rotate nodes around a pivot</b> to “move” some nodes from the heavier (taller) side to the lighter side.</li>
-<li>After rotation, the tree height decreases or the balance factor improves.</li>
-<li>The goal is to <b>evenly split nodes</b> (or get as close as possible) between left and right subtrees at that pivot node.</li>
+<li><b>Rotate nodes around a pivot</b> to “move” some nodes from the heavier side with more nodes to the lighter side with less nodes</li>
+<li>After rotation, the tree height decreases or the balancing improves</li>
+<li>The goal is to <b>evenly split nodes</b> (or get as close as possible) between left and right subtrees at that pivot node</li>
 </ul>
+<p>For example, if the left subtree is much taller than the right, a right rotation can lift the left child up and move the original root down to the right subtree, balancing nodes between the two sides.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

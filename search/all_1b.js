@@ -16,7 +16,6 @@ var searchData=
   ['review_13',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
   ['review_20of_20prerequisite_20material_14',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
   ['rotations_15',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['rotations_20do_3a_16',['What rotations do:',['../md_notes_2module-13.html#autotoc_md91',1,'']]],
-  ['rule_20of_20zero_20three_20five_17',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-02.html#autotoc_md49',1,'Rule of Zero/Three/Five']]],
-  ['rvalue_20references_18',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
+  ['rule_20of_20zero_20three_20five_16',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-02.html#autotoc_md49',1,'Rule of Zero/Three/Five']]],
+  ['rvalue_20references_17',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
 ];
