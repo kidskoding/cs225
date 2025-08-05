@@ -91,14 +91,14 @@ Some other things to note
 
 This explains the notion of **balancing** a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(\log n)$
 
-To achieve this, we aim for a tree where the number of nodes in the left and right subtrees of every node is roughly equal. This ensures that the height of the tree remains logarithmic in terms of the number of nodes, preventing degeneration into a linear structure (like a linked list).
-
-
+To achieve this, we aim for a tree where the number of nodes in the left and right subtrees of every node is roughly equal. This ensures that the height of the tree remains logarithmic in terms of the number of nodes, preventing degeneration into a `LinkedList`
 
 But how?? 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjAwMDg5MCw3MDk5MTk5LC0xMzQzOT
-gxMjc0LDgzNjA3MjgwMCwxNTc1MjE3NzYwXX0=
+eyJoaXN0b3J5IjpbLTE2MjIwNzA4MTcsNzA5OTE5OSwtMTM0Mz
+k4MTI3NCw4MzYwNzI4MDAsMTU3NTIxNzc2MF19
 -->
