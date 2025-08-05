@@ -58,7 +58,7 @@ private:
 
 This looks great, it shows the exact functionalities we need for our BST
 
-Notice how we added an `std::unordered_map`
+Notice how we added an `std::unordered_map`. This helps us use an iterator for fast access of our tree nodes, without having to constantly traverse the tree. Its a fast access cache alongside our BST
 
 - `find` - Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library. This is because we want to return the iterator's `.end()` behavior when not found.
 - `insert` - Will be used to insert a node into a BST
@@ -275,7 +275,7 @@ void BST<K, V>::remove(const K& key) {
     _remove(root, key);
 	
 	// removes the key from the map
-    node_map.erase(
+    node_map.erase(key);
 }
 ```
 
@@ -290,7 +290,7 @@ The table below summarizes the runtime for all our important BST algorithms
 | `remove` | $O(h) \equiv O(n)$ |
 | `traverse` | $O(h) \equiv O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjY5MjMyODUsLTE1OTgwODY2NTYsLT
+eyJoaXN0b3J5IjpbLTE4MzU5NjUxMTUsLTE1OTgwODY2NTYsLT
 EyMzg4NjAwMDYsMTM3Mjc4ODg1OCwtMTAzMDk0ODkwOSwtMTYx
 NzI2NTI1MywtNDY0OTQ3ODQ4LC04ODk1NjkxNTYsMTYyODY1MT
 MyLDExMTk1NDIwODUsLTkwNjczOTA0MywzMTQ1MDg1NzgsLTEz
