@@ -105,11 +105,13 @@ void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
 This is a lot of code, but what we are essentially doing is calculating the balance factor so we know which rotation to perform!
 
 1. Compute the balance of the tree to determine the shape of a stick
-	- If the balance is -2, we know that the shape of the subtree is either a **"left stick"** or **"left elbow"**
-		- We then need to compute the balance of the left subtree
+	- If the balance is -2, we know that the shape of the left subtree is either a **"left stick"** or **"left elbow"**
+		- We then need to compute the balance of the left subtree to figure out specifically which one it is
+		- A left subtree balance of -1 means that its a **"left stick"**, so we need to do a **right rotation**
+		- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTg1MjI4OCwtNTU3NzMzMzkyLDE1NT
-g0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5
-NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLD
-QwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbLTIwODI2MzMzMjksLTU1NzczMzM5MiwxNT
+U4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAz
+OTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Mi
+w0MDk1NzgxMzgsLTQwOTYzMjU5MV19
 -->
