@@ -120,13 +120,13 @@ $(function(){initNavTree('md_notes_2module-13.html',''); initResizable(true); })
 <p>For example, if the left subtree is much taller than the right, a right rotation can lift the left child up and move the original root down to the right subtree, balancing nodes between the two sides.</p>
 <p>There are a total of <b>four</b> rotations: L (left), R (right), LR (left-right), RL (right-left)</p>
 <ul>
-<li><b>L</b> (Left Rotation) - used when the right subtree is too tall (Right-Right case)</li>
-<li><b>R</b> (Right Rotation) - used when the left subtree is too tall (Left-Left case)</li>
-<li><b>LR</b> (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case)<ul>
+<li><b>L</b> (Left Rotation) - used when the right subtree is too tall (Right-Right case). Referred to as <b>"right stick"</b> (due to its shape)</li>
+<li><b>R</b> (Right Rotation) - used when the left subtree is too tall and forms a <b>"left stick"</b> (due to its shape). This is known formally as the Left-Left case</li>
+<li><b>LR</b> (Left-Right Rotation) - Used when there's imbalance in the left-right direction (Left child has a taller right subtree — Left-Right case). Referred to as <b>"left elbow"</b> (due to its shape)<ul>
 <li>Perform a left and then right rotation</li>
 </ul>
 </li>
-<li><b>RL</b> (Right-Left Rotation) - Used when there's imbalance in the right-left direction (Right child has a taller left subtree — Right-Left case)<ul>
+<li><b>RL</b> (Right-Left Rotation) - Used when there's imbalance in the right-left direction (Right child has a taller left subtree — Right-Left case). Referred to as <b>"right elbow"</b> (due to its shape)<ul>
 <li>Perform a right and then left rotation</li>
 </ul>
 </li>
