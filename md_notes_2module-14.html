@@ -187,7 +187,12 @@ Insertion into an AVL tree</h1>
 <li>A left subtree balance of +1 means that its a <b>"left elbow"</b>, so we need to do a <b>left-right rotation</b></li>
 </ul>
 </li>
-<li>Similarly, if the balance is +2, we know that the shape of the right subtree is either a <b>"right stick"</b> or <b>"right elbow"</b>      </li>
+<li>Similarly, if the balance is +2, we know that the shape of the right subtree is either a <b>"right stick"</b> or <b>"right elbow"</b><ul>
+<li>We then need to compute the balance of the right subtree to figure out specifically which one it is</li>
+<li>A right subtree of balance -1 means that its a <b>"right stick"</b>, so we need to do a <b>left rotation</b></li>
+<li>A right subtree balance of +1 means that its a <b>"right elbow"</b>, so we need to do a <b>right-left</b> rotation      </li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
