@@ -23,8 +23,11 @@ If insertion occurred on a subtree, $t$, where a **"right elbow"** formed (right
 
 We leverage this by noting that the balance factor, $b$ of `t->right` is -1, which is less than 0 (`t->right < 0`) 
 
+The opposites are true for a "left stick" and "left elbow", where we would need R and LR rotations respectfully
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1Mjk3MjY2NCwxMzg3ODAzOTQxLDEyOT
+eyJoaXN0b3J5IjpbMTAzNDA4MDkxNywxMzg3ODAzOTQxLDEyOT
 Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
 MzgsLTQwOTYzMjU5MV19
 -->
