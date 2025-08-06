@@ -280,6 +280,31 @@ Insertion into an AVL tree</h1>
 <div class="line">    _rotateRight(root);</div>
 <div class="line">    _rotateLeft(root);</div>
 <div class="line">}</div>
+</div><!-- fragment --><p>This updates our balance function as follows</p>
+<div class="fragment"><div class="line">template &lt;typename K, typename V&gt;</div>
+<div class="line">void AVL&lt;K, V&gt;::_ensureBalance(TreeNode*&amp; curr) {</div>
+<div class="line">    // calculate the balance factor</div>
+<div class="line">    int balance = height(curr-&gt;right) - height(curr-&gt;left);</div>
+<div class="line"> </div>
+<div class="line">    // check if the node is currently not in balance</div>
+<div class="line">    if(balance == -2) {</div>
+<div class="line">        int leftBalance = height(curr-&gt;left-&gt;right) - height(curr-&gt;left-&gt;left);</div>
+<div class="line">        if(leftBalance == -1) { // heavy left (&quot;left stick&quot; shaped subtree)</div>
+<div class="line">            _rotateRight(curr);</div>
+<div class="line">        } else { // &quot;left elbow&quot; shaped subtree</div>
+<div class="line">            _rotateLeftRight(curr);</div>
+<div class="line">        }</div>
+<div class="line">    } else if(balance == 2) {</div>
+<div class="line">        int rightBalance = height(curr-&gt;right-&gt;right) - height(curr-&gt;right-&gt;left);</div>
+<div class="line">        if(rightBalance == -1) { // heavy right (&quot;right stick&quot; shaped subtree)</div>
+<div class="line">            _rotateLeft(curr);</div>
+<div class="line">        } else { // &quot;right elbow&quot; shaped subtree</div>
+<div class="line">            _rotateRightLeft(curr);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    _updateHeight(curr);</div>
+<div class="line">}</div>
 </div><!-- fragment --><p>I will not code the remaining functionalities, including <code>find</code>, <code>remove</code>, etc. They are not unique to <a class="el" href="classAVL.html">AVL</a> and are simply identical to a regular <a class="el" href="classBST.html">BST</a>. Please see <a class="el" href="classBST.html">BST</a> implementation for those.</p>
 <h1><a class="anchor" id="autotoc_md93"></a>
 AVL Tree Analysis</h1>
