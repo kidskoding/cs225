@@ -103,13 +103,25 @@ $(function(){initNavTree('md_notes_2module-15.html',''); initResizable(true); })
 <p>There are 3 types of iterators</p>
 <ol type="1">
 <li><b>Forward</b><ul>
-<li>Only moves in the forward direction,</li>
+<li>Only moves in the <b>forward</b> direction,</li>
 <li><b>Operations</b>: <code>++it</code> (increment), <code>*it</code> (dereference), <code>==</code> and <code>!=</code> (comparison)</li>
-<li>Example: Singly <code><a class="el" href="classLinkedList.html">LinkedList</a></code> iterator, where you can go through the list once from start to end, but can't go backwards</li>
+<li><b>Example</b>: Singly <code><a class="el" href="classLinkedList.html">LinkedList</a></code> iterator, where you can go through the list once from start to end, but can't go backwards</li>
 </ul>
 </li>
-<li><b>Bidirectional</b> -</li>
-<li><b>Random Access</b> -    </li>
+<li><b>Bidirectional</b><ul>
+<li>Can move in <b>both directions</b> (forward and backward)</li>
+<li><b>Operations</b>: Everything from Forward, plus <code>--it</code> (decrement)</li>
+<li><b>Example</b>: Doubly linked list iterator and <code>std::set</code> iterator</li>
+<li>You can traverse forward with <code>++</code> or backward with <code>--</code></li>
+</ul>
+</li>
+<li><b>Random Access</b><ul>
+<li>Can <b>jump to any position</b> in constant time</li>
+<li>**Operations: Everything from Bidirectional, plus <code>it + n</code>, <code>it - n</code>, <code>it[n]</code>, <code>&lt;</code>, <code>&gt;</code>, etc.</li>
+<li>Example: <code>std::vector</code> iterator, array pointers</li>
+<li>You can do <code>it + 5</code> to jump 5 positions ahead, or <code>it[10]</code> to access element 10    </li>
+</ul>
+</li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
