@@ -19,6 +19,6 @@ var searchData=
   ['copy_20semantics_16',['Copy Semantics',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md30',1,'']]],
   ['costs_20of_20various_20operations_20on_20various_20tt_20list_20tt_20implementations_17',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
   ['course_20info_20and_20resources_18',['Course Info and Resources',['../md_notes_2module-01.html#autotoc_md45',1,'']]],
-  ['covered_19',['Covered',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'Topics Covered'],['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40',1,'Topics Covered']]],
+  ['covered_19',['Covered',['../md_notes_2module-14.html#autotoc_md95',1,'Runtime Analysis for all Data Structures Covered'],['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md1',1,'Topics Covered'],['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md40',1,'Topics Covered']]],
   ['cs_20225_20',['CS 225',['../md_notes_2module-01.html',1,'Module 1 - Introduction to CS 225'],['../md_notes_2module-34.html',1,'Module 34 - Wrapping up CS 225!']]]
 ];

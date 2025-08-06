@@ -17,5 +17,6 @@ var searchData=
   ['review_20of_20prerequisite_20material_14',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
   ['rotations_15',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
   ['rule_20of_20zero_20three_20five_16',['Rule of Zero Three Five',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md38',1,'Rule of Zero/Three/Five'],['../md_notes_2module-02.html#autotoc_md49',1,'Rule of Zero/Three/Five']]],
-  ['rvalue_20references_17',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
+  ['runtime_20analysis_20for_20all_20data_20structures_20covered_17',['Runtime Analysis for all Data Structures Covered',['../md_notes_2module-14.html#autotoc_md95',1,'']]],
+  ['rvalue_20references_18',['rvalue references',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md35',1,'']]]
 ];
