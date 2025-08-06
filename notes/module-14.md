@@ -244,12 +244,15 @@ This is because if one function grows slower than another, its inverse must grow
 
 To find the lower bound on $n$ given $h$, we can begin by defining a function given $h$, which describes the **smallest number of nodes in an AVL tree** given height $h$
 
-$NODES(h)$ is the minimum number of nodes in an AVL tree of height
+$NODES(h)$ is the minimum number of nodes in an AVL tree of height $h$. 
+
+- When $h = -1$, $NODES(h) = 0$ because the tree is **empty**
+- When $h = 0$, $NODES(h) = 1$
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjM1MTczOCw3NzU1Mjc5MjYsNDcxNj
+eyJoaXN0b3J5IjpbLTQ0OTc0NzQwNyw3NzU1Mjc5MjYsNDcxNj
 A2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUs
 MTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3Nz
 MzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYy
