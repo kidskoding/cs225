@@ -30,7 +30,7 @@ In C++, a **lambda function** is an **anonymous function** you can define inline
 
 This is typically used for short snippets of code like callbacks, custom sorting, or quick operations that don't necessarily need a separate named function.
 
-Lambda functions are so useful because they allow us to use functions as **data**
+Lambda functions are so useful because they allow us to use functions as **data**. This means that the function itself is a value that can be stored, passed around, and manipulated!
 
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
@@ -50,6 +50,6 @@ However, `lessThan5` is an unnecessary function when you can achieve the same re
 
 To solve this problem, we can use a **lambda**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjk4MjUxNDEsMTg2MzU1MzIwOSwxMT
+eyJoaXN0b3J5IjpbLTE4MzM3NTE1NjQsMTg2MzU1MzIwOSwxMT
 Y4NTg0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
 -->
