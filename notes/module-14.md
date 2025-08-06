@@ -303,9 +303,13 @@ and $4 \geq 2$, which means that an AVL tree with height $2$ has at least $2$ no
 
 By inductive hypothesis
 
-$\forall_j < n$, $N(j) \geq 2^{\frac{j}{2}}$
+$\forall_j < n$, $N(j) \geq 2^{\frac{j}{2}}$, where we will prove via inductive step that
+
+$$N(h) = N(h - 1) + N(h - 2) + 1 > 2N(h - 2)$$
+
+$$2 \times 2^{\frac{h - 2}{2}}$ = 2^{\frac{h}{2}}$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTA5NDQ1NDIsLTEyOTM0NDQyNjEsNz
+eyJoaXN0b3J5IjpbLTE4ODI0NDMyNjEsLTEyOTM0NDQyNjEsNz
 c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
 ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
 U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
