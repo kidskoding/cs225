@@ -26,7 +26,7 @@ From 128, we know that there are **three** types of iterators:
 
 ## Lambdas
 
-In C++, a **lambda function** is an **anonymous function** you can define inline. This means that I define and write the function right when I use it, instead of somewhere else
+In C++, a **lambda function** is an **anonymous function** you can define on the fly and inline. This means that I define and write the function right when I use it, instead of somewhere else
 
 This is typically used for short snippets of code like callbacks, custom sorting, or quick operations that don't necessarily need a separate named function.
 
@@ -34,9 +34,11 @@ Lambda functions are so useful because they allow us to use functions as **data*
 
 Lambdas consist of 3 things
 
-1. Capture, notated in `[ ]`
-2. Function Signature, notated in `{ - The signature of the function 
-3. Body 
+1. Capture, notated in `[ ]` - 
+2. Function Signature, notated in `( )` - The signature of the function 
+3. Body, notated in `{ }` - The body of the lambda 
+
+`auto isBig = [big](int num) { return num >= big; };`
 
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
@@ -56,6 +58,6 @@ However, `lessThan5` is an unnecessary function when you can achieve the same re
 
 To solve this problem, we can use a **lambda**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MTYzOTU0MSwxODYzNTUzMjA5LDExNj
-g1ODQ3MDMsMzYyMDE4MTEsLTI0OTg0MTc1NV19
+eyJoaXN0b3J5IjpbNjg3OTc4OTQ2LDE4NjM1NTMyMDksMTE2OD
+U4NDcwMywzNjIwMTgxMSwtMjQ5ODQxNzU1XX0=
 -->
