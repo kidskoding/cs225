@@ -238,16 +238,18 @@ But directly computing $h_{max}(n)$ is also difficult. There are too many possib
 
 This makes sense because when I find the lower bound of the inverse, $h_{min}(n)$, I essentially get the upper bound on $h_{max}(n)$
 
+The number of nodes in the tree, $f^{-1}(h)$ will always be **greater than** $c \times g^{-1}(h)$ for all values where $n > k$
 
+This is because if one function grows slower than another, its inverse must grow faster—so to reach the same output, the slower-growing function requires a larger input, making its inverse larger (up to a constant factor) for sufficiently large values.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzcyMjI4Miw3NzU1Mjc5MjYsNDcxNj
-A2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUs
-MTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3Nz
-MzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYy
-LDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNj
-U4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbMTA1MTU4MDUwLDc3NTUyNzkyNiw0NzE2MD
+YwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwx
+NTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NTc3Mz
+MzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIs
+MTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NT
+g4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ==
 -->
