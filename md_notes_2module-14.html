@@ -344,7 +344,8 @@ Summarizing AVL and BBST</h1>
 <li><b>Rotations</b>: $O(h)$</li>
 </ul>
 <p>Red-Black trees outperform <a class="el" href="classAVL.html">AVL</a> trees in rotations. They are also laid out well in memory that improves cache performance.</p>
-<p>Red-Black trees are much more complicated to understand how they work under the hood. C++ STL map provides us with a balanced <a class="el" href="classBST.html">BST</a> that is in fact a red-black tree</p>
+<p>Red-Black trees are much more complicated to understand how they work under the hood</p>
+<p>Previously, when we were constructing <a class="el" href="classBST.html">BST</a>'s, we were using <code>std::unordered_map</code> to track our nodes and then use <code>operator[]</code> to C++ STL map provides us with a balanced <a class="el" href="classBST.html">BST</a> that is in fact a red-black tree. When we use <code>operator[]</code> on a map, what we are essentially doing is</p>
 <p>But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are <b>balanced</b>         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
