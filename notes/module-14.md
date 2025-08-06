@@ -301,9 +301,11 @@ $$
 
 and $4 \geq 2$, which means that an AVL tree with height $2$ has at least $2$ nodes
 
+By inductive hypothesis
 
+$\forall_j < n$, $N(j) \geq 2^{\frac{j}{2}}$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTUyMTIzMDUsLTEyOTM0NDQyNjEsNz
+eyJoaXN0b3J5IjpbLTE2NTA5NDQ1NDIsLTEyOTM0NDQyNjEsNz
 c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
 ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
 U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
