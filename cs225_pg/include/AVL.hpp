@@ -9,6 +9,7 @@ void AVL<K, V>::_insert(const K& key, const V& value, TreeNode*& curr) {
     if(curr->key < key) { return _insert(key, value, curr->left); }
 
     // ensure the balance of the AVL tree
+    _ensureBalance(curr);
 }
 
 template <typename K, typename V>
@@ -23,22 +24,23 @@ void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
     int balance = height(curr->right) - height(curr->left);
 
     // check if the node is currently not in balance
-    if(balance == -2) { // heavy left ("left stick" shaped subtree)
+    if(balance == -2) {
         int leftBalance = height(curr->left->right) - height(curr->left->left);
-        if(leftBalance == -1) {
-            // perform right rotation
-        } else {
-            // perform left-right rotation
+        if(leftBalance == -1) { // heavy left ("left stick" shaped subtree)
+            _rotateRight(curr);
+        } else { // "left elbow" shaped subtree
+            _rotateLeftRight(curr);
         }
-    } else if(balance == 2) { // heavy right ("right stick" shaped subtree)
+    } else if(balance == 2) {
         int rightBalance = height(curr->right->right) - height(curr->right->left);
-        if(rightBalance == -1) {
-            // perform left rotation
-        } else {
-            // perform right-left rotation
+        if(rightBalance == -1) { // heavy right ("right stick" shaped subtree)
+            _rotateLeft(curr);
+        } else { // "right elbow" shaped subtree
+            _rotateRightLeft(curr);
         }
     }
 
+    // update the height of each node after performing rotations
     _updateHeight(curr);
 }
 
