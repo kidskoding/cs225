@@ -234,18 +234,18 @@ In other words, 2 AVL trees can have 4 nodes, but be fundamentally different in 
 
 Since we can't compute the exact height function, $h(n)$, we analyze the worst-case scenario: which is the tallest possible tree with $n$ nodes, or simply $h_{max}(n)$
 
-But directly computing $hmax(n)h_{\text{max}}(n)hmax​(n) is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly by asking a different question:
+But directly computing $h_{max}(n)$ is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly  by taking the inverse and finding the **minimum number of nodes** required to build an AVL tree of height $h$
 
-To fix this, we have to take the inverse of this function, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!
+This gives us a recurrence relation that we can invert to find a **lower bound** on $n$ in terms of $h$, and from that, we derive a **lower bound** on $h(n)$, where $h(n) \geq c \cdot \log n$
 
 We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefore finding a lower bound instead of an upper bound. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mjg3ODc0MSw0NzE2MDYwMzMsMTc0Nj
-YyNjQxNSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNTIwMjMzMzAs
-LTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1OD
-QzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0
-MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsND
-A5NTc4MTM4LC00MDk2MzI1OTFdfQ==
+eyJoaXN0b3J5IjpbNzc1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2Nj
+I2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMzMCwt
+MTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4ND
+M0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQx
+LDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MD
+k1NzgxMzgsLTQwOTYzMjU5MV19
 -->
