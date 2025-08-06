@@ -21,5 +21,6 @@ var searchData=
   ['strategy_18',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
   ['structs_19',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
   ['structure_20',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
-  ['structure_21',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]]
+  ['structure_21',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
+  ['summarizing_20avl_20and_20bbst_22',['Summarizing AVL and BBST',['../md_notes_2module-14.html#autotoc_md94',1,'']]]
 ];

@@ -138,7 +138,8 @@ var NAVTREE =
     [ "Module 13 - BST Rotations", "md_notes_2module-13.html", null ],
     [ "Module 14 - AVL Trees", "md_notes_2module-14.html", [
       [ "Insertion into an AVL tree", "md_notes_2module-14.html#autotoc_md92", null ],
-      [ "AVL Tree Analysis", "md_notes_2module-14.html#autotoc_md93", null ]
+      [ "AVL Tree Analysis", "md_notes_2module-14.html#autotoc_md93", null ],
+      [ "Summarizing AVL and BBST", "md_notes_2module-14.html#autotoc_md94", null ]
     ] ],
     [ "Module 15 - Lambda", "md_notes_2module-15.html", null ],
     [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", null ],
