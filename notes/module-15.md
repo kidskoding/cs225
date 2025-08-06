@@ -1,9 +1,8 @@
 
-# Module 15 - Lambda
+# Module 15 - Lambdas
 
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTQ0Njk2MywzNjIwMTgxMSwtMjQ5OD
-QxNzU1XX0=
+eyJoaXN0b3J5IjpbLTE4MjEyMDU0NzAsMzYyMDE4MTEsLTI0OT
+g0MTc1NV19
 -->
