@@ -136,7 +136,7 @@ Lambdas</h1>
 <p>Lambdas consist of 3 things</p>
 <ol type="1">
 <li>Capture, notated in <code>[ ]</code> - specifies which variables from the surrounding scope the lambda can access and whether it captures them by value (copy) or by reference</li>
-<li>Function Signature, notated in <code>( )</code> - The signature of the function</li>
+<li>Parameter, notated in <code>( )</code> - The list of parameters with a type and name specified and separated with commas</li>
 <li>Body, notated in <code>{ }</code> - The body of the lambda</li>
 </ol>
 <p><code>auto isBig = [big](int num) { return num &gt;= big; };</code></p>
@@ -150,7 +150,8 @@ Lambdas</h1>
 <div class="line">    return std::count_if(data.begin(), data.end(), lessThan5);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>However, <code>lessThan5</code> is an unnecessary function when you can achieve the same result more concisely and directly using a lambda expression inline, avoiding extra named functions and keeping the code simpler and easier to read.</p>
-<p>To solve this problem, we can use a <b>lambda</b>.    </p>
+<p>To solve this problem, we can use a <b>lambda</b>, like the one below</p>
+<p><code>auto lessThan5 = [](int x) { return x &lt; 5; };</code></p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
