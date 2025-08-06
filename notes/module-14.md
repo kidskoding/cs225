@@ -335,22 +335,18 @@ Red-Black trees outperform AVL trees in rotations. They are also laid out well i
 
 Red-Black trees are much more complicated to understand how they work under the hood 
 
-Previously, when we were constructing BST's, we were using `std::unordered_map` to track our nodes.
+Previously, when we were constructing BST's, we were using `std::unordered_map` to track our nodes. This was so that we had access to a fast iterator. But there is actually something even more interesting about this.
 
-This is because C++ STL map in fact provides us with a balanced BST that is in fact a red-black tree. When we use `operator[]` on a map, what we are essentially doing is searching for the key in a tree and
+C++ STL maps in fact provide us with a balanced BST that is in fact a red-black tree. When we use `operator[]` on a map, what we are essentially doing is searching for the key in a tree and
 
 - **If the key exists**, it returns a reference to the corresponding value.
 - **If the key doesn't exist**, it inserts the key with a default-constructed value and then returns a reference to that value.
-
-
-
-But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are **balanced**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzODA0MDcsMTQ5MjQ0NzI0MCwtMTI5Mz
-Q0NDI2MSw3NzU1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUs
-LTExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5OD
-czNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUs
-LTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5ND
-QxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEz
-OF19
+eyJoaXN0b3J5IjpbOTAxMjA4NzE2LDE0OTI0NDcyNDAsLTEyOT
+M0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1
+LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOT
+g3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1
+LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
+Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
+MzhdfQ==
 -->
