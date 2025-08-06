@@ -323,7 +323,9 @@ AVL Tree Analysis</h1>
 <p>$$ 2^{\frac{2}{2}} = 2^1 = 2 $$</p>
 <p>and $4 \geq 2$, which means that an <a class="el" href="classAVL.html">AVL</a> tree with height $2$ has at least $2$ nodes</p>
 <p>By inductive hypothesis</p>
-<p>$\forall_j &lt; n$, $N(j) \geq 2^{\frac{j}{2}}$         </p>
+<p>$\forall_j &lt; n$, $N(j) \geq 2^{\frac{j}{2}}$, where we will prove via inductive step that</p>
+<p>$$N(h) = N(h - 1) + N(h - 2) + 1 &gt; 2N(h - 2)$$</p>
+<p>$$2 \times 2^{\frac{h - 2}{2}}$ = 2^{\frac{h}{2}}$         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
