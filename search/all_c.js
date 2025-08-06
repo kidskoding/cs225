@@ -4,7 +4,7 @@ var searchData=
   ['balance_1',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['based_20searches_2',['Range-Based Searches',['../md_notes_2module-16.html#autotoc_md101',1,'']]],
   ['bbst_3',['Summarizing AVL and BBST',['../md_notes_2module-14.html#autotoc_md94',1,'']]],
-  ['bbst_20range_20search_4',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['bbst_20range_20search_20and_20kd_20trees_4',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
   ['begin_20tt_20and_20tt_20end_20tt_20for_20tt_20array_20tt_20and_20tt_20linkedlist_20tt_5',['Implementing &lt;tt&gt;begin()&lt;/tt&gt; and &lt;tt&gt;end()&lt;/tt&gt; for &lt;tt&gt;Array&lt;/tt&gt; and &lt;tt&gt;LinkedList&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md70',1,'']]],
   ['big_20o_6',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
   ['big_20o_20of_20common_20algorithms_7',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],

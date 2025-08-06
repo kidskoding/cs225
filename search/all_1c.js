@@ -3,7 +3,7 @@ var searchData=
   ['s_20algorithm_0',['s Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
   ['s_20queues_1',['Stacks v.s. Queues',['../md_notes_2module-06.html#autotoc_md65',1,'']]],
   ['science_2',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['search_3',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['search_20and_20kd_20trees_3',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
   ['search_20structure_4',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
   ['searches_5',['Range-Based Searches',['../md_notes_2module-16.html#autotoc_md101',1,'']]],
   ['searching_20and_20dictionaries_6',['Module 10 - Tree Searching and Dictionaries',['../md_notes_2module-10.html',1,'']]],

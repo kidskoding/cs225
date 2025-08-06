@@ -17,7 +17,7 @@ var searchData=
   ['module_2013_20bst_20rotations_14',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
   ['module_2014_20addison_20velsky_20landis_20avl_20trees_15',['Module 14 - Addison-Velsky Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
   ['module_2015_20lambdas_16',['Module 15 - Lambdas',['../md_notes_2module-15.html',1,'']]],
-  ['module_2016_20bbst_20range_20search_17',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['module_2016_20bbst_20range_20search_20and_20kd_20trees_17',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
   ['module_2017_20btrees_18',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
   ['module_2018_20btree_20analysis_19',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
   ['module_2019_20priority_20queues_20',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]],

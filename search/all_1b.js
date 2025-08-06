@@ -2,7 +2,7 @@ var searchData=
 [
   ['raii_0',['RAII',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25',1,'']]],
   ['range_20based_20searches_1',['Range-Based Searches',['../md_notes_2module-16.html#autotoc_md101',1,'']]],
-  ['range_20search_2',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['range_20search_20and_20kd_20trees_2',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
   ['readme_3',['README',['../md_README.html',1,'']]],
   ['recursive_20definitions_4',['Recursive Definitions',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md2',1,'']]],
   ['red_20black_20trees_20in_20c_5',['Red-Black trees in C++',['../md_notes_2module-16.html#autotoc_md100',1,'']]],

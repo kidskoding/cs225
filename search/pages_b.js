@@ -1,7 +1,7 @@
 var searchData=
 [
   ['balance_0',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bbst_20range_20search_1',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
+  ['bbst_20range_20search_20and_20kd_20trees_1',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
   ['bloom_20filters_2',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
   ['bst_20and_20bst_20implementation_3',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['bst_20balance_4',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
