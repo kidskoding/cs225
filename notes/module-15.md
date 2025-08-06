@@ -34,7 +34,7 @@ Lambda functions are so useful because they allow us to use functions as **data*
 
 Lambdas consist of 3 things
 
-1. Capture, notated in `[ ]` - 
+1. Capture, notated in `[ ]` - specifies which variables from the surrounding scope the lambda can access and whether it captures them by value (copy) or by reference
 2. Function Signature, notated in `( )` - The signature of the function 
 3. Body, notated in `{ }` - The body of the lambda 
 
@@ -58,6 +58,6 @@ However, `lessThan5` is an unnecessary function when you can achieve the same re
 
 To solve this problem, we can use a **lambda**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3OTc4OTQ2LDE4NjM1NTMyMDksMTE2OD
-U4NDcwMywzNjIwMTgxMSwtMjQ5ODQxNzU1XX0=
+eyJoaXN0b3J5IjpbLTQ4MDM3MDQ3OSwxODYzNTUzMjA5LDExNj
+g1ODQ3MDMsMzYyMDE4MTEsLTI0OTg0MTc1NV19
 -->
