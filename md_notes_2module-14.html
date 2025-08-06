@@ -349,8 +349,9 @@ Summarizing AVL and BBST</h1>
 <p>C++ STL maps in fact provide us with a balanced <a class="el" href="classBST.html">BST</a> that is in fact a red-black tree. When we use <code>operator[]</code> on a map, what we are essentially doing is searching for the key in a tree and</p>
 <ul>
 <li><b>If the key exists</b>, it returns a reference to the corresponding value.</li>
-<li><b>If the key doesn't exist</b>, it inserts the key with a default-constructed value and then returns a reference to that value.         </li>
+<li><b>If the key doesn't exist</b>, it inserts the key with a default-constructed value and then returns a reference to that value.</li>
 </ul>
+<p>But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are <b>balanced</b>         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
