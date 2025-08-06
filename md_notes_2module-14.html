@@ -291,6 +291,8 @@ AVL Tree Analysis</h1>
 <p>Since we can't compute the exact height function, $h(n)$, we analyze the worst-case scenario: which is the tallest possible tree with $n$ nodes, or simply $h_{max}(n)$</p>
 <p>But directly computing $h_{max}(n)$ is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly by taking the inverse and finding the <b>minimum number of nodes</b> required to build an <a class="el" href="classAVL.html">AVL</a> tree of height $h$</p>
 <p>This makes sense because when I find the lower bound of the inverse, $h_{min}(n)$, I essentially get the upper bound on $h_{max}(n)$</p>
+<p>The number of nodes in the tree, $f^{-1}(h)$ will always be <b>greater than</b> $c \times g^{-1}(h)$ for all values where $n &gt; k$</p>
+<p>This is because if one function grows slower than another, its inverse must grow faster—so to reach the same output, the slower-growing function requires a larger input, making its inverse larger (up to a constant factor) for sufficiently large values.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
