@@ -32,13 +32,21 @@ This is typically used for short snippets of code like callbacks, custom sorting
 
 Lambda functions are so useful because they allow us to use functions as **data**. This means that the function itself is a value that can be stored, passed around, and manipulated!
 
-Lambdas consist of 3 things
+**Lambdas consist of 3 things**
 
 1. Capture, notated in `[ ]` - specifies which variables from the surrounding scope the lambda can access and whether it captures them by value (copy) or by reference
 2. Parameter, notated in `( )` - The list of parameters with a type and name specified and separated with commas
 3. Body, notated in `{ }` - The body of the lambda 
 
+For example,
+
 `auto isBig = [big](int num) { return num >= big; };`
+
+`[ ]` contains the variables within scope that the lambda "captures" for it to use. In this example, this variable is `big`
+
+`( )` contains the parameters needed to pass into the function
+
+`{ }` contains the body 
 
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
@@ -69,6 +77,6 @@ int countIf(std::vector<int>& data) {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjUwNjI5NiwxODYzNTUzMjA5LDExNj
-g1ODQ3MDMsMzYyMDE4MTEsLTI0OTg0MTc1NV19
+eyJoaXN0b3J5IjpbLTE4NjMxMjA3MzMsMTg2MzU1MzIwOSwxMT
+Y4NTg0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
 -->
