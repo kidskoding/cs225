@@ -228,13 +228,13 @@ Recall from discrete math, the definition of big-O states that $f(n)$ is $O(g(n)
 
 Or simply, the worst-case growth rate of a function as the input gets very large. When I give it more data, how does it slow down?
 
-Let $h(n)$ be the height as a function with respect to $n$, the number of nodes. However, we don't know how to compute this function since this can vary based on the structure of the tree, not just the number of nodes. 
+Let $h(n)$ be the height of an AVL tree as a function of $n$, the number of nodes. However, we can’t directly compute this function, since tree height depends on not only the number of nodes, but also  on the structure of the tree.
 
-In other words, 2 trees can have 4 nodes, but be fundamentally different in structure
+In other words, 2 AVL trees can have 4 nodes, but be fundamentally different in structure
 
 Since we can't compute the exact height function, $h(n)$, we analyze the worst-case scenario: which is the tallest possible tree with $n$ nodes, or simply $h_{max}(n)$
 
-But this is also a problem. I don't know how to come up with a way to get the maximum height of any tree with $n$ nodes. Its impossible.
+But directly computing $hmax(n)h_{\text{max}}(n)hmax​(n) is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly by asking a different question:
 
 To fix this, we have to take the inverse of this function, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!
 
@@ -242,10 +242,10 @@ We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefor
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMT
-U0NDM4OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUs
-MjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MT
-g1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4
-MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtND
-A5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbLTI2Mjg3ODc0MSw0NzE2MDYwMzMsMTc0Nj
+YyNjQxNSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNTIwMjMzMzAs
+LTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1OD
+QzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0
+MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsND
+A5NTc4MTM4LC00MDk2MzI1OTFdfQ==
 -->
