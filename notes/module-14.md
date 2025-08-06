@@ -324,18 +324,20 @@ $$h \equiv O(\log n)$$
 **Red-Black Trees**
 
 - BBST's where max height is equal to $2 \cdot \log n$
-- Constant number of rotations on `insert`, `remove`, and `find`
+- Constant number of rotations on `insert`, `remove`, and `find`, $O(1)$
 
 **AVL Trees**
 
 - **Max Height**: $1.44 * \log n$
-- **Rotations**: 
+- **Rotations**: $O(h)$
+
+Red-Black trees outperform AVL trees in rotations. They are also laid out well in memory that improves cache performance. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQ0MjE5MzksMTQ5MjQ0NzI0MCwtMT
-I5MzQ0NDI2MSw3NzU1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0
-MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xOD
-I5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1
-MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMT
-I5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3
-ODEzOF19
+eyJoaXN0b3J5IjpbLTIwMTQzMTc4LDE0OTI0NDcyNDAsLTEyOT
+M0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1
+LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOT
+g3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1
+LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
+Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
+MzhdfQ==
 -->
