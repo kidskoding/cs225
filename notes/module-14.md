@@ -243,6 +243,7 @@ void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
         }
     }
 
+	// update the height of each node after performing rotations
     _updateHeight(curr);
 }
 ```
@@ -386,11 +387,11 @@ This is great for specific applications when looking for close matches, such as 
 | `remove` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(\log n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDk3OTY5ODAsOTAxMTI3NTQ5LC0xOD
-g0OTQ4MzU3LC0xMDQ4Mjc4NTAzLDE1NTM0MDk1NjgsMTQ5MjQ0
-NzI0MCwtMTI5MzQ0NDI2MSw3NzU1Mjc5MjYsNDcxNjA2MDMzLD
-E3NDY2MjY0MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMDIz
-MzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLD
-E1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4
-MDM5NDFdfQ==
+eyJoaXN0b3J5IjpbNjM3NDYzMDEzLDkwMTEyNzU0OSwtMTg4ND
+k0ODM1NywtMTA0ODI3ODUwMywxNTUzNDA5NTY4LDE0OTI0NDcy
+NDAsLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAzMywxNz
+Q2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMz
+MCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNT
+U4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAz
+OTQxXX0=
 -->
