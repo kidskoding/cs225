@@ -1,5 +1,5 @@
 
-# Module 16 - BBST Range Search
+# Module 16 - BBST Range Search and KD Trees
 
 Balanced BST's are useful for **range-based** and **nearest-neighbor** searches (e.g. finding out which nodes in a tree have values that fall between $[11, 42]$)
 
@@ -20,6 +20,6 @@ Since BBST's are balanced, its height is $O(\log n)$, so range queries can be ef
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU0MjgzMzcsLTg5NTE2NjYyMSwtMj
-A5NDg4MDQ2M119
+eyJoaXN0b3J5IjpbLTUwODI0NjA1MCwtMTY4NTQyODMzNywtOD
+k1MTY2NjIxLC0yMDk0ODgwNDYzXX0=
 -->
