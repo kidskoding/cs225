@@ -16,8 +16,10 @@ Previously, we discussed how C++'s STL map is implemented via a red-black tree u
 
 Since BBST's are balanced, its height is $O(\log n)$, so range queries can be efficient when combining with in-order traversal, since that maintains sorted order
 
-**Range queries** are 
+**Range queries** are a search to find all keys that fall within a given range, typically written as $[x, y]$, where $x$ is the lowest possible value (lower bound) and $y$ is the highest possible value (upper bound)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NDg4MTA0OCwtODk1MTY2NjIxLC0yMD
-k0ODgwNDYzXX0=
+eyJoaXN0b3J5IjpbLTE2ODU0MjgzMzcsLTg5NTE2NjYyMSwtMj
+A5NDg4MDQ2M119
 -->
