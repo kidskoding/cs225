@@ -355,7 +355,15 @@ Summarizing AVL and BBST</h1>
 <p>This is great for specific applications when looking for close matches, such as range queries, nearest-neighbor lookups, or finding the next largest or smallest key, all of which benefit from the in-order structure and efficient traversal of balanced binary search trees like red-black trees</p>
 <h1><a class="anchor" id="autotoc_md95"></a>
 Runtime Analysis for all Data Structures Covered</h1>
-<p>| | Unsorted Array | Sorted Array | Unsorted List | Sorted List | Binary Tree | <a class="el" href="classBST.html">BST</a> | <a class="el" href="classAVL.html">AVL</a> | --------&mdash; | -------------------&mdash; | ----------------&mdash; | -----&mdash; | ---------&mdash; | -----&mdash; | ------&mdash; | -----&mdash; | | <code>find</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(\log n)$ | $O(n)$ | | <code>insert</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(1)$ | | <code>remove</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(n)$ | | <code>traverse</code> | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |         </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">Unsorted Array   </th><th class="markdownTableHeadNone">Sorted Array   </th><th class="markdownTableHeadNone">Unsorted List   </th><th class="markdownTableHeadNone">Sorted List   </th><th class="markdownTableHeadNone">Binary Tree   </th><th class="markdownTableHeadNone"><a class="el" href="classBST.html">BST</a>   </th><th class="markdownTableHeadNone"><a class="el" href="classAVL.html">AVL</a>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>find</code>   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(\log n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(h)$   </td><td class="markdownTableBodyNone">$O(\log n)$    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>insert</code>   </td><td class="markdownTableBodyNone">$O(1)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(1)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(n)$   </td><td class="markdownTableBodyNone">$O(h)$   </td><td class="markdownTableBodyNone">$O(h)$   </td></tr>
+</table>
+<p>| <code>remove</code> | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(n)$ | | <code>traverse</code> | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
