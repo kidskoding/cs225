@@ -259,13 +259,13 @@ $$
 N(h) = 1 + N(h - 1) + N(h - 2)
 $$
 
-We can first argue that $N(h) > 1 + N(h - 1) + N(h - 2)$, which means that $N(h) > 2N(h - 2)$
+We can first argue that $N(h) > 1 + N(h - 1) + N(h - 2)$, which means that $N(h) > 2N(h - 2)$. This is important so that we establish a lower bound on the minimum required number of nodes for height $h$
 
 We can argue that the minimum number of nodes $N(h)$ in an AVL tree of height $h$ is greater than the sum of one root node plus the minimum nodes of its two subtrees: $N(h) > 1 + N(h−1) + N(h−2)$.
 
-Since $N(h−1) > N(h−2)N(h-1)$, this implies $N(h)>1+2N(h−2)$. For larger $h$, the constant 1 becomes insignificant, so we simplify this to $N(h)>2N(h−2)$, showing that $N(h)N(h)N(h) grows at least exponentially as the height increases.
+Since $N(h−1) > N(h−2)$, this implies $N(h)>1+2N(h−2)$. For larger $h$, the constant 1 becomes insignificant, so we simplify this to $N(h)>2N(h−2)$, showing that $N(h)$ grows exponentially as the height increases.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTc4NjM0LC0xMjkzNDQ0MjYxLDc3NT
+eyJoaXN0b3J5IjpbNjA5OTY4Mjc3LC0xMjkzNDQ0MjYxLDc3NT
 UyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5
 LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1OD
 IyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5
