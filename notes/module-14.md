@@ -236,16 +236,18 @@ Since we can't compute the exact height function, $h(n)$, we analyze the worst-c
 
 But directly computing $h_{max}(n)$ is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly  by taking the inverse and finding the **minimum number of nodes** required to build an AVL tree of height $h$
 
-This gives us a recurrence relation that we can invert to find a **lower bound** on $n$ in terms of $h$, and from that, we derive a **lower bound** on $h(n)$, where $h(n) \geq c \cdot \log n$
+This makes sense because when I find the lower bound of the inverse, $h_{min}(n)$, I essentially get the upper bound on $h_{max}(n)$
 
-We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefore finding a lower bound instead of an upper bound. 
+
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2Nj
-I2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMzMCwt
-MTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4ND
-M0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQx
-LDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MD
-k1NzgxMzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbMTQyNzcyMjI4Miw3NzU1Mjc5MjYsNDcxNj
+A2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUs
+MTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3Nz
+MzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYy
+LDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNj
+U4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
 -->
