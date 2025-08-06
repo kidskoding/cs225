@@ -141,9 +141,11 @@ Lambdas</h1>
 </ol>
 <p>For example,</p>
 <p><code>auto isBig = [big](int num) { return num &gt;= big; };</code></p>
-<p><code>[ ]</code> contains the variables within scope that the lambda "captures" for it to use. In this example, this variable is <code>big</code></p>
-<p><code>( )</code> contains the parameters needed to pass into the function</p>
-<p><code>{ }</code> contains the body</p>
+<ul>
+<li><code>[ ]</code> contains the variables within scope that the lambda "captures" for it to use. In this example, this variable is <code>big</code></li>
+<li><code>( )</code> contains the parameters needed to pass into the function</li>
+<li><code>{ }</code> contains the body of the function</li>
+</ul>
 <p>Take a look at a popular function used in excel, <code>COUNTIF</code>. This function counts the number of cells in a range that meet a specific criteria</p>
 <p>Suppose the criteria is that any integer, $x$, is less than 5. To code this in C++ we would do,</p>
 <div class="fragment"><div class="line">bool lessThan5(int x) {</div>
