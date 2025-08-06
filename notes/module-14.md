@@ -1,7 +1,7 @@
 
-# Module 14 - AVL Trees
+# Module 14 - Addison-Velsky Landis (AVL) Trees
 
-**AVL trees** are **self-balancing binary search trees** that automatically keep themselves balanced through rotations after insertions and deletions, ensuring efficient operations
+Addison Velsky Landis trees, or simply **AVL trees** are **self-balancing binary search trees** that automatically keep themselves balanced through rotations after insertions and deletions, ensuring efficient operations
 
 This means that we have to consider 3 things:
 
@@ -357,11 +357,11 @@ This is great for specific applications when looking for close matches, such as 
 | `remove` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(\log n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODQ5NDgzNTcsLTEwNDgyNzg1MDMsMT
-U1MzQwOTU2OCwxNDkyNDQ3MjQwLC0xMjkzNDQ0MjYxLDc3NTUy
-NzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LD
-kzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIy
-OTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC
-03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5
-Nzg2MjhdfQ==
+eyJoaXN0b3J5IjpbOTAxMTI3NTQ5LC0xODg0OTQ4MzU3LC0xMD
+Q4Mjc4NTAzLDE1NTM0MDk1NjgsMTQ5MjQ0NzI0MCwtMTI5MzQ0
+NDI2MSw3NzU1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLT
+ExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODcz
+NzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLT
+U5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQx
+Njc4MF19
 -->
