@@ -247,15 +247,16 @@ To find the lower bound on $n$ given $h$, we can begin by defining a function gi
 $NODES(h)$ is the minimum number of nodes in an AVL tree of height $h$. 
 
 - When $h = -1$, $NODES(h) = 0$ because the tree is **empty**
-- When $h = 0$, $NODES(h) = 1$
+- When $h = 0$, only one tree exists because only the root node exists in such three, so $NODES(h) = 1$
+- When $h = 1$, there are 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTc0NzQwNyw3NzU1Mjc5MjYsNDcxNj
-A2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUs
-MTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3Nz
-MzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYy
-LDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMTA5OTc4NjI4LC0xNj
-U4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMyNTkxXX0=
+eyJoaXN0b3J5IjpbLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MT
+YwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1
+LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1Nz
+czMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2
+MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMT
+Y1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
 -->
