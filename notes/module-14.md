@@ -350,12 +350,12 @@ This is great for specific applications when looking for close matches, such as 
 
 |  | Unsorted Array | Sorted Array | Unsorted List | Sorted List | Binary Tree | BST | AVL
 | ----------- | ---------------------- | ------------------- | -------- | ------------ | -------- | --------- | -------- |
-| `find` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(\log n)$ | $O(n)$ | 
-| `insert` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(1)$ |
+| `find` | $O(n)$ | $O(\log n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(h)$ | $O(\log n)$
+| `insert` | $O(1)$ | $O(n)$ | $O(1)$ | $O(n)$ | $O(n)$ | $O(h)$ | $O(h)$
 | `remove` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTM0ODYyOCwxNTUzNDA5NTY4LDE0OT
+eyJoaXN0b3J5IjpbLTk1MDE5NDM5MSwxNTUzNDA5NTY4LDE0OT
 I0NDcyNDAsLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAz
 MywxNzQ2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1Mj
 AyMzMzMCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5
