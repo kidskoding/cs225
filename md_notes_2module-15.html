@@ -102,7 +102,12 @@ $(function(){initNavTree('md_notes_2module-15.html',''); initResizable(true); })
 <div class="textblock"><p><a class="anchor" id="autotoc_md96"></a></p>
 <p>There are 3 types of iterators</p>
 <ol type="1">
-<li><b>Forward</b> - This iterator only moves in the f</li>
+<li><b>Forward</b><ul>
+<li>Only moves in the forward direction,</li>
+<li><b>Operations</b>: <code>++it</code> (increment), <code>*it</code> (dereference), <code>==</code> and <code>!=</code> (comparison)</li>
+<li>Example: Singly <code><a class="el" href="classLinkedList.html">LinkedList</a></code> iterator, where you can go through the list once from start to end, but can't go backwards</li>
+</ul>
+</li>
 <li><b>Bidirectional</b> -</li>
 <li><b>Random Access</b> -    </li>
 </ol>
