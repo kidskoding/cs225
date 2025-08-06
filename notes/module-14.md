@@ -253,14 +253,20 @@ $NODES(h)$ is the minimum number of nodes in an AVL tree of height $h$.
 	- However, there is one possible balanced tree that can be formed with a minimum of four nodes, where the **root's left child also contains a right child**
 	- This forms a minimum of $4$ nodes, where $NODES(h) = 4$
 
+Assuming that $N(h)$ is an alias for $NODES(h)$, we build a recurrence relation, where
+
+$$
+N(h) = 1 + N(h - 1) + N(h - 2)
+$$
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDUyMjc1NywtMTI5MzQ0NDI2MSw3Nz
-U1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4
-OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNT
-gyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTky
-OSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMT
-A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
-NTkxXX0=
+eyJoaXN0b3J5IjpbLTE0NDA2NzEwMTgsLTEyOTM0NDQyNjEsNz
+c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
+ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
+U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
+MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMT
+EwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYz
+MjU5MV19
 -->
