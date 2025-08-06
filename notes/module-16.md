@@ -14,8 +14,10 @@ Previously, we discussed how C++'s STL map is implemented via a red-black tree u
 
 ## Range-Based Searches
 
-Range based searches are very useful in a BBST, where you can 
+Since BBST's are balanced, its height is $O(\log n)$, so range queries can be efficient when combining with in-order traversal, since that maintains sorted order
+
+**Range queries** are 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjc4MjUyNzMsLTg5NTE2NjYyMSwtMj
-A5NDg4MDQ2M119
+eyJoaXN0b3J5IjpbMTY1NDg4MTA0OCwtODk1MTY2NjIxLC0yMD
+k0ODgwNDYzXX0=
 -->
