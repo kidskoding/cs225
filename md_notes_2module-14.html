@@ -286,10 +286,10 @@ AVL Tree Analysis</h1>
 <p>However, we will now argue that $h = O(\log n)$, using the balance property to prove this</p>
 <p>Recall from discrete math, the definition of big-O states that $f(n)$ is $O(g(n))$ iff $\exists_{c,k}$ such that $f(n) \leq c \cdot g(n)$ for all $n &gt; k$</p>
 <p>Or simply, the worst-case growth rate of a function as the input gets very large. When I give it more data, how does it slow down?</p>
-<p>Let $h(n)$ be the height as a function with respect to $n$, the number of nodes. However, we don't know how to compute this function since this can vary based on the structure of the tree, not just the number of nodes.</p>
-<p>In other words, 2 trees can have 4 nodes, but be fundamentally different in structure</p>
+<p>Let $h(n)$ be the height of an <a class="el" href="classAVL.html">AVL</a> tree as a function of $n$, the number of nodes. However, we can’t directly compute this function, since tree height depends on not only the number of nodes, but also on the structure of the tree.</p>
+<p>In other words, 2 <a class="el" href="classAVL.html">AVL</a> trees can have 4 nodes, but be fundamentally different in structure</p>
 <p>Since we can't compute the exact height function, $h(n)$, we analyze the worst-case scenario: which is the tallest possible tree with $n$ nodes, or simply $h_{max}(n)$</p>
-<p>But this is also a problem. I don't know how to come up with a way to get the maximum height of any tree with $n$ nodes. Its impossible.</p>
+<p>But directly computing $hmax(n)h_{\text{max}}(n)hmax​(n) is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly by asking a different question:</p>
 <p>To fix this, we have to take the inverse of this function, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!</p>
 <p>We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefore finding a lower bound instead of an upper bound.</p>
 </div></div><!-- contents -->
