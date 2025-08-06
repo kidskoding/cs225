@@ -3,10 +3,15 @@
 
 There are 3 types of iterators
 
-1. **Forward** - This iterator only moves in the f
-2. **Bidirectional** - 
-3. **Random Access** - 
+1. **Forward**
+
+	- Only moves in the forward direction,
+	- **Operations**: `++it` (increment), `*it` (dereference), `==` and `!=` (comparison)
+	- Example: Singly `LinkedList` iterator, where you can go through the list once from start to end, but can't go backwards
+
+3. **Bidirectional** - 
+4. **Random Access** - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQ0MTE4NTAsMzYyMDE4MTEsLTI0OT
-g0MTc1NV19
+eyJoaXN0b3J5IjpbLTk0Nzc0NTMwMCwzNjIwMTgxMSwtMjQ5OD
+QxNzU1XX0=
 -->
