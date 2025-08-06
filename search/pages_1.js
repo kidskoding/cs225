@@ -6,7 +6,7 @@ var searchData=
   ['11_20bst_20and_20bst_20implementation_3',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
   ['12_20bst_20balance_4',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
   ['13_20bst_20rotations_5',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['14_20avl_20trees_6',['Module 14 - AVL Trees',['../md_notes_2module-14.html',1,'']]],
+  ['14_20addison_20velsky_20landis_20avl_20trees_6',['Module 14 - Addison-Velsky Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
   ['15_20lambdas_7',['Module 15 - Lambdas',['../md_notes_2module-15.html',1,'']]],
   ['16_20bbst_20range_20search_8',['Module 16 - BBST Range Search',['../md_notes_2module-16.html',1,'']]],
   ['17_20btrees_9',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
