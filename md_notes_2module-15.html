@@ -152,7 +152,12 @@ Lambdas</h1>
 </div><!-- fragment --><p>However, <code>lessThan5</code> is an unnecessary function when you can achieve the same result more concisely and directly using a lambda expression inline, avoiding extra named functions and keeping the code simpler and easier to read.</p>
 <p>To solve this problem, we can use a <b>lambda</b>, like the one below</p>
 <p><code>auto lessThan5 = [](int x) { return x &lt; 5; };</code></p>
-</div></div><!-- contents -->
+<p>this makes our <code>countIf</code> function much more readable</p>
+<div class="fragment"><div class="line">int countIf(std::vector&lt;int&gt;&amp; data) {</div>
+<div class="line">    auto lessThan5 = [](int x) { return x &lt; 5; };</div>
+<div class="line">    return std::count_if(data.begin(), data.end(), lessThan5);</div>
+<div class="line">}</div>
+</div><!-- fragment -->    </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
