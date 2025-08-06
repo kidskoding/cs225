@@ -1,7 +1,9 @@
 
 # Module 15 - Lambdas
 
-There are 3 types of iterators
+> NOTE: This is a simple lesson reviewing iterators and lambda functions from CS 128!
+
+From 128, we know that there are **three** types of iterators:
 
 1. **Forward**
 	- Only moves in the **forward** direction,
@@ -22,6 +24,6 @@ There are 3 types of iterators
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODU4NDcwMywzNjIwMTgxMSwtMjQ5OD
-QxNzU1XX0=
+eyJoaXN0b3J5IjpbMTE5NDE1ODkzNCwxMTY4NTg0NzAzLDM2Mj
+AxODExLC0yNDk4NDE3NTVdfQ==
 -->
