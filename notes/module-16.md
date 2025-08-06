@@ -5,8 +5,9 @@ Balanced BST's are useful for **range-based** and **nearest-neighbor** searches 
 
 ## Red-Black trees in C++
 
+Previously, we discussed how C++'s STL map is implemented via a red-black tree under the hood
 
+`std::map` includes a `lower_bound` and an upper_bound function, which allow efficient logarithmic-time range queries by returning iterators to the first element not less than (lower_bound) and the first element greater than (upper_bound) a given key, respectively.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM5MDk1NDIsLTIwOTQ4ODA0NjNdfQ
-==
+eyJoaXN0b3J5IjpbLTI5NDY4NTgyMCwtMjA5NDg4MDQ2M119
 -->
