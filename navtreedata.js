@@ -147,7 +147,8 @@ var NAVTREE =
       [ "Lambdas", "md_notes_2module-15.html#autotoc_md98", null ]
     ] ],
     [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", [
-      [ "Red-Black trees in C++", "md_notes_2module-16.html#autotoc_md100", null ]
+      [ "Red-Black trees in C++", "md_notes_2module-16.html#autotoc_md100", null ],
+      [ "Range-Based Searches", "md_notes_2module-16.html#autotoc_md101", null ]
     ] ],
     [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
     [ "Module 18 - BTree Analysis", "md_notes_2module-18.html", null ],
