@@ -332,12 +332,14 @@ $$h \equiv O(\log n)$$
 - **Rotations**: $O(h)$
 
 Red-Black trees outperform AVL trees in rotations. They are also laid out well in memory that improves cache performance. 
+
+Red-Black trees are much more complicated to understand how they work under the hood. C++ STL map uses a red-black tree
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQzMTc4LDE0OTI0NDcyNDAsLTEyOT
-M0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1
-LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOT
-g3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1
-LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
-Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
-MzhdfQ==
+eyJoaXN0b3J5IjpbLTQ1NjM5MjIzNCwxNDkyNDQ3MjQwLC0xMj
+kzNDQ0MjYxLDc3NTUyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQx
+NSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mj
+k4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUw
+NSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMj
+k0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4
+MTM4XX0=
 -->
