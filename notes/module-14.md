@@ -322,13 +322,20 @@ $$h \equiv O(\log n)$$
 ## Summarizing AVL and BBST
 
 **Red-Black Trees**
-- BBST's where 
+
+- BBST's where max height is equal to $2 \cdot \log n$
+- Constant number of rotations on `insert`, `remove`, and `find`
+
+**AVL Trees**
+
+- **Max Height: $\sqrt{2} * \log n$
+- Rotations: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzODUzNjQ0LC0xMjkzNDQ0MjYxLDc3NT
-UyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5
-LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1OD
-IyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5
-LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMD
-k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
-OTFdfQ==
+eyJoaXN0b3J5IjpbLTE0NTkzMzU4MDAsLTEyOTM0NDQyNjEsNz
+c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
+ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
+U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
+MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMT
+EwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYz
+MjU5MV19
 -->
