@@ -336,13 +336,14 @@ Summarizing AVL and BBST</h1>
 <p><b>Red-Black Trees</b></p>
 <ul>
 <li>BBST's where max height is equal to $2 \cdot \log n$</li>
-<li>Constant number of rotations on <code>insert</code>, <code>remove</code>, and <code>find</code></li>
+<li>Constant number of rotations on <code>insert</code>, <code>remove</code>, and <code>find</code>, $O(1)$</li>
 </ul>
 <p><b><a class="el" href="classAVL.html">AVL</a> Trees</b></p>
 <ul>
 <li><b>Max Height</b>: $1.44 * \log n$</li>
-<li><b>Rotations</b>:         </li>
+<li><b>Rotations</b>: $O(h)$</li>
 </ul>
+<p>Red-Black trees outperform <a class="el" href="classAVL.html">AVL</a> trees in rotations. They are also laid out well in memory that improves cache performance.         </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
