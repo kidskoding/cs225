@@ -344,15 +344,17 @@ C++ STL maps in fact provide us with a balanced BST that is in fact a red-black 
 
 But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are **balanced**, which is a huge improvement from $O(n)$ of a regular BST
 
-This is great for specific applications when looking for close matches
+This is great for specific applications when looking for close matches, such as range queries, nearest-neighbor lookups, or finding the next largest or smallest key, all of which benefit from the in-order structure and efficient traversal of balanced binary search trees like red-black trees
+
+## Runtime Analysis for all Data Structures Covered
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzIxOTg2OCwxNTUzNDA5NTY4LDE0OT
-I0NDcyNDAsLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAz
-MywxNzQ2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1Mj
-AyMzMzMCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5
-MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMz
-g3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0
-MTQ4Ml19
+eyJoaXN0b3J5IjpbLTEyMTA5NTc2ODMsMTU1MzQwOTU2OCwxND
+kyNDQ3MjQwLC0xMjkzNDQ0MjYxLDc3NTUyNzkyNiw0NzE2MDYw
+MzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNT
+IwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMz
+OTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMT
+M4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4
+NDE0ODJdfQ==
 -->
