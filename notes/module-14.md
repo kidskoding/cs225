@@ -341,12 +341,14 @@ C++ STL maps in fact provide us with a balanced BST that is in fact a red-black 
 
 - **If the key exists**, it returns a reference to the corresponding value.
 - **If the key doesn't exist**, it inserts the key with a default-constructed value and then returns a reference to that value.
+
+But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are **balanced**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxMjA4NzE2LDE0OTI0NDcyNDAsLTEyOT
-M0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1
-LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOT
-g3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1
-LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOT
-Q0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1Nzgx
-MzhdfQ==
+eyJoaXN0b3J5IjpbMTU1MzQwOTU2OCwxNDkyNDQ3MjQwLC0xMj
+kzNDQ0MjYxLDc3NTUyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQx
+NSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mj
+k4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUw
+NSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMj
+k0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4
+MTM4XX0=
 -->
