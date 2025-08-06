@@ -289,8 +289,8 @@ AVL Tree Analysis</h1>
 <p>Let $h(n)$ be the height of an <a class="el" href="classAVL.html">AVL</a> tree as a function of $n$, the number of nodes. However, we can’t directly compute this function, since tree height depends on not only the number of nodes, but also on the structure of the tree.</p>
 <p>In other words, 2 <a class="el" href="classAVL.html">AVL</a> trees can have 4 nodes, but be fundamentally different in structure</p>
 <p>Since we can't compute the exact height function, $h(n)$, we analyze the worst-case scenario: which is the tallest possible tree with $n$ nodes, or simply $h_{max}(n)$</p>
-<p>But directly computing $hmax(n)h_{\text{max}}(n)hmax​(n) is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly by asking a different question:</p>
-<p>To fix this, we have to take the inverse of this function, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!</p>
+<p>But directly computing $h_{max}(n)$ is also difficult. There are too many possible tree shapes to check them all. Instead, we approach the problem indirectly by taking the inverse and finding the <b>minimum number of nodes</b> required to build an <a class="el" href="classAVL.html">AVL</a> tree of height $h$</p>
+<p>This gives us a recurrence relation that we can invert to find a <b>lower bound</b> on $n$ in terms of $h$, and from that, we derive a <b>lower bound</b> on $h(n)$, where $h(n) \geq c \cdot \log n$</p>
 <p>We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefore finding a lower bound instead of an upper bound.</p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
