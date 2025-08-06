@@ -35,7 +35,7 @@ Lambda functions are so useful because they allow us to use functions as **data*
 Lambdas consist of 3 things
 
 1. Capture, notated in `[ ]` - specifies which variables from the surrounding scope the lambda can access and whether it captures them by value (copy) or by reference
-2. Function Signature, notated in `( )` - The signature of the function 
+2. Parameter, notated in `( )` - The list of parameters with a type and name specified and separated with commas
 3. Body, notated in `{ }` - The body of the lambda 
 
 `auto isBig = [big](int num) { return num >= big; };`
@@ -56,8 +56,12 @@ int countIf(std::vector<int>& data) {
 
 However, `lessThan5` is an unnecessary function when you can achieve the same result more concisely and directly using a lambda expression inline, avoiding extra named functions and keeping the code simpler and easier to read.
 
-To solve this problem, we can use a **lambda**. 
+To solve this problem, we can use a **lambda**, like the one below
+
+`auto lessThan5 = [](int x) { return x < 5; };`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDM3MDQ3OSwxODYzNTUzMjA5LDExNj
-g1ODQ3MDMsMzYyMDE4MTEsLTI0OTg0MTc1NV19
+eyJoaXN0b3J5IjpbMzQxMjA2MTEsMTg2MzU1MzIwOSwxMTY4NT
+g0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
 -->
