@@ -218,6 +218,8 @@ void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
 }
 ```
 
+I will not code the remaining functionalities, including `find`, `remove`, etc. They are not unique to AVL and are simply identical to a regular BST. Please see BST implementation for those.
+
 ## AVL Tree Analysis
 
 `insert`, `remove`, and `find` also all run in $O(h)$. Recall that this is because in the worst case, we may need to traverse from the root down to a leaf node, visiting $h + 1$ nodes.
@@ -355,11 +357,11 @@ This is great for specific applications when looking for close matches, such as 
 | `remove` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(\log n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDgyNzg1MDMsMTU1MzQwOTU2OCwxND
-kyNDQ3MjQwLC0xMjkzNDQ0MjYxLDc3NTUyNzkyNiw0NzE2MDYw
-MzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNT
-IwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMz
-OTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMT
-M4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4
-NDE0ODJdfQ==
+eyJoaXN0b3J5IjpbLTE4ODQ5NDgzNTcsLTEwNDgyNzg1MDMsMT
+U1MzQwOTU2OCwxNDkyNDQ3MjQwLC0xMjkzNDQ0MjYxLDc3NTUy
+NzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LD
+kzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIy
+OTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC
+03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5
+Nzg2MjhdfQ==
 -->
