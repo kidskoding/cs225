@@ -274,14 +274,24 @@ Prove that an AVL tree of height $h$ has at least $2^{\frac{h}{2}}$ nodes.
 Consider an AVL tree and let $h$ denote its height. Start with $h = 1$
 
 $$
-N(1) = 2^1 = 2 < 2
+N(1) = 2^1 = 2
 $$
 
 $$
-N(2)
+2^{\frac{1}{2}} = \sqrt{2}
 $$
+
+and $2 \leq \sqrt{2}$
+
+This means that an AVL tree with height $1$ has at least $\sqrt{2}$ nodes
+
+Suppose $h = 2$
+
+$$
+N(2) = 1 + N(2 - 2) + N(2 - 1)
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg5MzE1OTYsLTEyOTM0NDQyNjEsNz
+eyJoaXN0b3J5IjpbLTE0OTgyMDUxNTAsLTEyOTM0NDQyNjEsNz
 c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
 ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
 U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
