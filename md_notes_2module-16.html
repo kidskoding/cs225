@@ -106,8 +106,8 @@ Red-Black trees in C++</h1>
 <p>Previously, we discussed how C++'s STL map is implemented via a red-black tree under the hood</p>
 <p><code>std::map</code> includes a <code>lower_bound</code> and an <code>upper_bound</code> function, which allow efficient logarithmic-time range queries by returning iterators to the first element not less than (<code>lower_bound</code>) and the first element greater than (<code>upper_bound</code>) a given key, respectively.</p>
 <ul>
-<li><code>lower_bound</code> - The smallest point not less than the argument</li>
-<li><code>upper_bound</code> - The smallest element not less than the argument    </li>
+<li><code>lower_bound</code> - The smallest element greater than or equal to the argument</li>
+<li><code>upper_bound</code> - The smallest element greater than the argument</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
