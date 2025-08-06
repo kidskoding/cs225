@@ -342,13 +342,17 @@ C++ STL maps in fact provide us with a balanced BST that is in fact a red-black 
 - **If the key exists**, it returns a reference to the corresponding value.
 - **If the key doesn't exist**, it inserts the key with a default-constructed value and then returns a reference to that value.
 
-But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are **balanced**
+But from a big-O standpoint, all operations are $O(\log n)$, considering the trees are **balanced**, which is a huge improvement from $O(n)$ of a regular BST
+
+This is great for specific applications when looking for close matches
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MzQwOTU2OCwxNDkyNDQ3MjQwLC0xMj
-kzNDQ0MjYxLDc3NTUyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQx
-NSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mj
-k4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUw
-NSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMj
-k0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4
-MTM4XX0=
+eyJoaXN0b3J5IjpbLTk1NzIxOTg2OCwxNTUzNDA5NTY4LDE0OT
+I0NDcyNDAsLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAz
+MywxNzQ2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1Mj
+AyMzMzMCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5
+MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMz
+g3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0
+MTQ4Ml19
 -->
