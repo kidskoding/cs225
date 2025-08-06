@@ -142,7 +142,10 @@ var NAVTREE =
       [ "Summarizing AVL and BBST", "md_notes_2module-14.html#autotoc_md94", null ],
       [ "Runtime Analysis for all Data Structures Covered", "md_notes_2module-14.html#autotoc_md95", null ]
     ] ],
-    [ "Module 15 - Lambdas", "md_notes_2module-15.html", null ],
+    [ "Module 15 - Lambdas", "md_notes_2module-15.html", [
+      [ "Iterators", "md_notes_2module-15.html#autotoc_md97", null ],
+      [ "Lambdas", "md_notes_2module-15.html#autotoc_md98", null ]
+    ] ],
     [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", null ],
     [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
     [ "Module 18 - BTree Analysis", "md_notes_2module-18.html", null ],

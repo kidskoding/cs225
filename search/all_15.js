@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lambdas_0',['Module 15 - Lambdas',['../md_notes_2module-15.html',1,'']]],
+  ['lambdas_0',['Lambdas',['../md_notes_2module-15.html#autotoc_md98',1,'Lambdas'],['../md_notes_2module-15.html',1,'Module 15 - Lambdas']]],
   ['level_20order_20traversal_1',['A different type of traversal - Level Order Traversal',['../md_notes_2module-09.html#autotoc_md78',1,'']]],
   ['linked_20list_20tt_20implementation_2',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
   ['linkedlist_3',['LinkedList',['../classLinkedList.html',1,'']]],

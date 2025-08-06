@@ -24,6 +24,6 @@ var searchData=
   ['isomorphism_21',['Isomorphism',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md9',1,'']]],
   ['iterate_20through_20data_20in_20each_20data_20structure_22',['Iterate through data in each data structure',['../md_notes_2module-07.html#autotoc_md68',1,'']]],
   ['iterator_20usage_20example_20with_20tt_20std_3a_3avector_20tt_23',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
-  ['iterators_24',['Module 7 - Iterators',['../md_notes_2module-07.html',1,'']]],
+  ['iterators_24',['Iterators',['../md_notes_2module-15.html#autotoc_md97',1,'Iterators'],['../md_notes_2module-07.html',1,'Module 7 - Iterators']]],
   ['iterators_20with_20respect_20to_20classes_25',['Iterators with respect to Classes',['../md_notes_2module-07.html#autotoc_md69',1,'']]]
 ];
