@@ -307,13 +307,17 @@ $\forall_j < n$, $N(j) \geq 2^{\frac{j}{2}}$, where we will prove via inductive 
 
 $$N(h) = N(h - 1) + N(h - 2) + 1 > 2N(h - 2)$$
 
-$$2 \times 2^{\frac{h - 2}{2}}$ = 2^{\frac{h}{2}}$
+$$2 \times 2^{\frac{h - 2}{2}} = 2^{\frac{h}{2}}$$
+
+An AVL tree of height $h$ has at least $2^{\frac{h}{2}}$ nodes. 
+
+via induction, we have shown that $N(h) > 2^{\frac{h}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODI0NDMyNjEsLTEyOTM0NDQyNjEsNz
-c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
-ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
-U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
-MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMT
-EwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYz
-MjU5MV19
+eyJoaXN0b3J5IjpbMTE2MTc3NDM0NywtMTI5MzQ0NDI2MSw3Nz
+U1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4
+OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNT
+gyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTky
+OSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMT
+A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
+NTkxXX0=
 -->
