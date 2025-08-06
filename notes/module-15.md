@@ -16,10 +16,12 @@ There are 3 types of iterators
 
 3. **Random Access**
 	-  Can **jump to any position** in constant time
-	-  **Operations: Everything from Bidirectional, plus `it + n`, `it - n`, `it[n]`, `<`, `>`, etc.
-	-  Example: `std::vector` iterator, array pointers
+	-  **Operations**: Everything from Bidirectional, plus `it + n`, `it - n`, `it[n]`, `<`, `>`, etc.
+	-  **Example**: `std::vector` iterator, array pointers
 	-  You can do `it + 5` to jump 5 positions ahead, or `it[10]` to access element 10
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzAxMDAxOSwzNjIwMTgxMSwtMjQ5OD
+eyJoaXN0b3J5IjpbMTE2ODU4NDcwMywzNjIwMTgxMSwtMjQ5OD
 QxNzU1XX0=
 -->
