@@ -248,15 +248,17 @@ $NODES(h)$ is the minimum number of nodes in an AVL tree of height $h$.
 
 - When $h = -1$, $NODES(h) = 0$ because the tree is **empty**
 - When $h = 0$, only one tree exists because only the root node exists in such three, so $NODES(h) = 1$
-- When $h = 1$, there are 
+- When $h = 1$, there are three possible trees: a tree with only a **left child**, a tree with only a **right child**, and a tree with **both** a **left and right** child. $NODES(h) = 2$ since the minimum number of nodes required for height 1 is $2$
+- When we get to $h = 2$, however, 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MT
-YwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1
-LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1Nz
-czMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2
-MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMT
-Y1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYzMjU5MV19
+eyJoaXN0b3J5IjpbMjAzNzUzMDQzNCwtMTI5MzQ0NDI2MSw3Nz
+U1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4
+OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNT
+gyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTky
+OSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMT
+A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
+NTkxXX0=
 -->
