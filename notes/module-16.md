@@ -12,7 +12,10 @@ Previously, we discussed how C++'s STL map is implemented via a red-black tree u
 - `lower_bound` - The smallest element greater than or equal to the argument
 - `upper_bound` - The smallest element greater than the argument
 
+## Range-Based Searches
 
+Range based searches are very useful in a BBST, where you can 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NTE2NjYyMSwtMjA5NDg4MDQ2M119
+eyJoaXN0b3J5IjpbLTEyNjc4MjUyNzMsLTg5NTE2NjYyMSwtMj
+A5NDg4MDQ2M119
 -->
