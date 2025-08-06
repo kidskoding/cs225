@@ -249,16 +249,16 @@ $NODES(h)$ is the minimum number of nodes in an AVL tree of height $h$.
 - When $h = -1$, $NODES(h) = 0$ because the tree is **empty**
 - When $h = 0$, only one tree exists because only the root node exists in such three, so $NODES(h) = 1$
 - When $h = 1$, there are three possible trees: a tree with only a **left child**, a tree with only a **right child**, and a tree with **both** a **left and right** child. $NODES(h) = 2$ since the minimum number of nodes required for height 1 is $2$
-- When we get to $h = 2$, however, 
+- When we get to $h = 2$, however, I get a lot of possible trees and not all of them are balanced. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzUzMDQzNCwtMTI5MzQ0NDI2MSw3Nz
-U1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4
-OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNT
-gyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTky
-OSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMT
-A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
-NTkxXX0=
+eyJoaXN0b3J5IjpbNzk4ODIwNjg0LC0xMjkzNDQ0MjYxLDc3NT
+UyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5
+LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1OD
+IyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5
+LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMD
+k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
+OTFdfQ==
 -->
