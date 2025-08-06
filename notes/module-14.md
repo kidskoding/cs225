@@ -288,14 +288,24 @@ This means that an AVL tree with height $1$ has at least $\sqrt{2}$ nodes
 Suppose $h = 2$
 
 $$
-N(2) = 1 + N(2 - 2) + N(2 - 1)
- 
+\begin{align*}
+N(2) &= 1 + N(2 - 2) + N(2 - 1) \\
+&= 1 + 1 + 2 + 4 \\
+&= 8
+\end{align*}
+$$ 
+
+$$
+2^{\frac{2}{2}} = 2^1 = 2
+$$
+
+and $4 \leq 2$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTgyMDUxNTAsLTEyOTM0NDQyNjEsNz
-c1NTI3OTI2LDQ3MTYwNjAzMywxNzQ2NjI2NDE1LC0xMTE1NDQz
-ODksOTMxNjI0NjM1LDE1MjAyMzMzMCwtMTgyOTg3Mzc1LDIwMD
-U4MjI5MDQsLTU1NzczMzM5MiwxNTU4NDM0NTA1LC01OTE4NTE5
-MjksLTcxMTI2NDI2MiwxMzg3ODAzOTQxLDEyOTQ0MTY3ODAsMT
-EwOTk3ODYyOCwtMTY1ODg0MTQ4Miw0MDk1NzgxMzgsLTQwOTYz
-MjU5MV19
+eyJoaXN0b3J5IjpbMTE4OTA2MzM5LC0xMjkzNDQ0MjYxLDc3NT
+UyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5
+LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1OD
+IyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5
+LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMD
+k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
+OTFdfQ==
 -->
