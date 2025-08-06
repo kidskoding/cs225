@@ -146,7 +146,9 @@ var NAVTREE =
       [ "Iterators", "md_notes_2module-15.html#autotoc_md97", null ],
       [ "Lambdas", "md_notes_2module-15.html#autotoc_md98", null ]
     ] ],
-    [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", null ],
+    [ "Module 16 - BBST Range Search", "md_notes_2module-16.html", [
+      [ "Red-Black trees in C++", "md_notes_2module-16.html#autotoc_md100", null ]
+    ] ],
     [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
     [ "Module 18 - BTree Analysis", "md_notes_2module-18.html", null ],
     [ "Module 19 - Priority Queues", "md_notes_2module-19.html", null ],
