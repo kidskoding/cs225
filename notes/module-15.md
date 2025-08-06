@@ -60,8 +60,15 @@ To solve this problem, we can use a **lambda**, like the one below
 
 `auto lessThan5 = [](int x) { return x < 5; };`
 
+this makes our `countIf` function much more readable
 
+```
+int countIf(std::vector<int>& data) {
+	auto lessThan5 = [](int x) { return x < 5; };
+    return std::count_if(data.begin(), data.end(), lessThan5);
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMjA2MTEsMTg2MzU1MzIwOSwxMTY4NT
-g0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
+eyJoaXN0b3J5IjpbLTc1MjUwNjI5NiwxODYzNTUzMjA5LDExNj
+g1ODQ3MDMsMzYyMDE4MTEsLTI0OTg0MTc1NV19
 -->
