@@ -32,8 +32,22 @@ This is typically used for short snippets of code like callbacks, custom sorting
 
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
+Suppose the criteria is that any integer, $x$, is less than 5. To code this in C++ we would do,
 
+```
+bool lessThan5(int x) {
+    return x < 5;
+}
+
+int countIf(std::vector<int>& data) {
+    return std::count_if(data.begin(), data.end(), lessThan5);
+}
+```
+
+However, `lessThan5` is an unnecessary function when you can achieve the same result more concisely and directly using a lambda expression inline, avoiding extra named functions and keeping the code simpler and easier to read.
+
+To solve this problem, we can use a *
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MzU1MzIwOSwxMTY4NTg0NzAzLDM2Mj
-AxODExLC0yNDk4NDE3NTVdfQ==
+eyJoaXN0b3J5IjpbMzgxNDY0NDg2LDE4NjM1NTMyMDksMTE2OD
+U4NDcwMywzNjIwMTgxMSwtMjQ5ODQxNzU1XX0=
 -->
