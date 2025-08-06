@@ -280,7 +280,8 @@ Insertion into an AVL tree</h1>
 <div class="line">    _rotateRight(root);</div>
 <div class="line">    _rotateLeft(root);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md93"></a>
+</div><!-- fragment --><p>I will not code the remaining functionalities, including <code>find</code>, <code>remove</code>, etc. They are not unique to <a class="el" href="classAVL.html">AVL</a> and are simply identical to a regular <a class="el" href="classBST.html">BST</a>. Please see <a class="el" href="classBST.html">BST</a> implementation for those.</p>
+<h1><a class="anchor" id="autotoc_md93"></a>
 AVL Tree Analysis</h1>
 <p><code>insert</code>, <code>remove</code>, and <code>find</code> also all run in $O(h)$. Recall that this is because in the worst case, we may need to traverse from the root down to a leaf node, visiting $h + 1$ nodes.</p>
 <p>However, we will now argue that $h = O(\log n)$, using the balance property to prove this</p>
