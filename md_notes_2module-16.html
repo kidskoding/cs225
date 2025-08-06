@@ -103,6 +103,8 @@ $(function(){initNavTree('md_notes_2module-16.html',''); initResizable(true); })
 <p>Balanced <a class="el" href="classBST.html">BST</a>'s are useful for <b>range-based</b> and <b>nearest-neighbor</b> searches (e.g. finding out which nodes in a tree have values that fall between $[11, 42]$)</p>
 <h1><a class="anchor" id="autotoc_md100"></a>
 Red-Black trees in C++</h1>
+<p>Previously, we discussed how C++'s STL map is implemented via a red-black tree under the hood</p>
+<p><code>std::map</code> includes a <code>lower_bound</code> and an upper_bound function, which allow efficient logarithmic-time range queries by returning iterators to the first element not less than (lower_bound) and the first element greater than (upper_bound) a given key, respectively.   </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
