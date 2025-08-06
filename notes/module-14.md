@@ -218,6 +218,35 @@ void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
 }
 ```
 
+This updates our balance function as follows
+
+```
+template <typename K, typename V>
+void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
+    // calculate the balance factor
+    int balance = height(curr->right) - height(curr->left);
+
+    // check if the node is currently not in balance
+    if(balance == -2) {
+        int leftBalance = height(curr->left->right) - height(curr->left->left);
+        if(leftBalance == -1) { // heavy left ("left stick" shaped subtree)
+            _rotateRight(curr);
+        } else { // "left elbow" shaped subtree
+            _rotateLeftRight(curr);
+        }
+    } else if(balance == 2) {
+        int rightBalance = height(curr->right->right) - height(curr->right->left);
+        if(rightBalance == -1) { // heavy right ("right stick" shaped subtree)
+            _rotateLeft(curr);
+        } else { // "right elbow" shaped subtree
+            _rotateRightLeft(curr);
+        }
+    }
+
+    _updateHeight(curr);
+}
+```
+
 I will not code the remaining functionalities, including `find`, `remove`, etc. They are not unique to AVL and are simply identical to a regular BST. Please see BST implementation for those.
 
 ## AVL Tree Analysis
@@ -357,11 +386,11 @@ This is great for specific applications when looking for close matches, such as 
 | `remove` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(\log n)$ |
 | `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxMTI3NTQ5LC0xODg0OTQ4MzU3LC0xMD
-Q4Mjc4NTAzLDE1NTM0MDk1NjgsMTQ5MjQ0NzI0MCwtMTI5MzQ0
-NDI2MSw3NzU1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLT
-ExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODcz
-NzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLT
-U5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQx
-Njc4MF19
+eyJoaXN0b3J5IjpbLTEzMDk3OTY5ODAsOTAxMTI3NTQ5LC0xOD
+g0OTQ4MzU3LC0xMDQ4Mjc4NTAzLDE1NTM0MDk1NjgsMTQ5MjQ0
+NzI0MCwtMTI5MzQ0NDI2MSw3NzU1Mjc5MjYsNDcxNjA2MDMzLD
+E3NDY2MjY0MTUsLTExMTU0NDM4OSw5MzE2MjQ2MzUsMTUyMDIz
+MzMwLC0xODI5ODczNzUsMjAwNTgyMjkwNCwtNTU3NzMzMzkyLD
+E1NTg0MzQ1MDUsLTU5MTg1MTkyOSwtNzExMjY0MjYyLDEzODc4
+MDM5NDFdfQ==
 -->
