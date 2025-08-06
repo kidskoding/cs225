@@ -236,16 +236,16 @@ Since we can't compute the exact height function, $h(n)$, we analyze the worst-c
 
 But this is also a problem. I don't know how to come up with a way to get the maximum height of any tree with $n$ nodes. Its impossible.
 
-To fix this, we have to take the inverse of this functino, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!
+To fix this, we have to take the inverse of this function, which is simply the minimum height of any tree with $n$ nodes, or $h_{min}(n)$. And I know how to come up with this function!
 
 We can let the lower bound of this function be $(\log n)^{-1} \cdot c$, therefore finding a lower bound instead of an upper bound. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LDkzMT
-YyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0
-LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MT
-EyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2
-MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1OTFdfQ
-==
+eyJoaXN0b3J5IjpbNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMT
+U0NDM4OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUs
+MjAwNTgyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MT
+g1MTkyOSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4
+MCwxMTA5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtND
+A5NjMyNTkxXX0=
 -->
