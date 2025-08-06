@@ -28,7 +28,9 @@ From 128, we know that there are **three** types of iterators:
 
 In C++, a **lambda function** is an **anonymous function** you can define inline. This means that I define and write the function right when I use it, instead of somewhere else
 
-This is typically used for short snippets of code like callbacks, custom sorting, or quick operations that don't necessarily need a separate named function
+This is typically used for short snippets of code like callbacks, custom sorting, or quick operations that don't necessarily need a separate named function.
+
+Lambda functions are so useful because they allow us to use functions as **data**
 
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
@@ -46,8 +48,8 @@ int countIf(std::vector<int>& data) {
 
 However, `lessThan5` is an unnecessary function when you can achieve the same result more concisely and directly using a lambda expression inline, avoiding extra named functions and keeping the code simpler and easier to read.
 
-To solve this problem, we can use a *
+To solve this problem, we can use a **lambda**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgxNDY0NDg2LDE4NjM1NTMyMDksMTE2OD
-U4NDcwMywzNjIwMTgxMSwtMjQ5ODQxNzU1XX0=
+eyJoaXN0b3J5IjpbLTExMjk4MjUxNDEsMTg2MzU1MzIwOSwxMT
+Y4NTg0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
 -->
