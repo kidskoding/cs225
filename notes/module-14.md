@@ -269,13 +269,15 @@ For larger $h$, the constant 1 becomes insignificant, so we simplify this to $N(
 
 With this, we can prove a closed form of $2N(h - 2)$
 
+An AVL tree of height $h$ has at least $2^{\frac{h}{2}}$ nodes
 
+Consider an AVL tree and let $h$ denote its height. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODU0Nzk2NSwtMTI5MzQ0NDI2MSw3Nz
-U1Mjc5MjYsNDcxNjA2MDMzLDE3NDY2MjY0MTUsLTExMTU0NDM4
-OSw5MzE2MjQ2MzUsMTUyMDIzMzMwLC0xODI5ODczNzUsMjAwNT
-gyMjkwNCwtNTU3NzMzMzkyLDE1NTg0MzQ1MDUsLTU5MTg1MTky
-OSwtNzExMjY0MjYyLDEzODc4MDM5NDEsMTI5NDQxNjc4MCwxMT
-A5OTc4NjI4LC0xNjU4ODQxNDgyLDQwOTU3ODEzOCwtNDA5NjMy
-NTkxXX0=
+eyJoaXN0b3J5IjpbMTc0NjE5Nzc3LC0xMjkzNDQ0MjYxLDc3NT
+UyNzkyNiw0NzE2MDYwMzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5
+LDkzMTYyNDYzNSwxNTIwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1OD
+IyOTA0LC01NTc3MzMzOTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5
+LC03MTEyNjQyNjIsMTM4NzgwMzk0MSwxMjk0NDE2NzgwLDExMD
+k5Nzg2MjgsLTE2NTg4NDE0ODIsNDA5NTc4MTM4LC00MDk2MzI1
+OTFdfQ==
 -->
