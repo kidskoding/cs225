@@ -42,11 +42,9 @@ For example,
 
 `auto isBig = [big](int num) { return num >= big; };`
 
-`[ ]` contains the variables within scope that the lambda "captures" for it to use. In this example, this variable is `big`
-
-`( )` contains the parameters needed to pass into the function
-
-`{ }` contains the body 
+- `[ ]` contains the variables within scope that the lambda "captures" for it to use. In this example, this variable is `big`
+- `( )` contains the parameters needed to pass into the function
+- `{ }` contains the body of the function
 
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
@@ -77,6 +75,6 @@ int countIf(std::vector<int>& data) {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjMxMjA3MzMsMTg2MzU1MzIwOSwxMT
-Y4NTg0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
+eyJoaXN0b3J5IjpbNjEwNjg4MTQ2LDE4NjM1NTMyMDksMTE2OD
+U4NDcwMywzNjIwMTgxMSwtMjQ5ODQxNzU1XX0=
 -->
