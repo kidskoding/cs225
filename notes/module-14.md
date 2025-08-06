@@ -351,15 +351,15 @@ This is great for specific applications when looking for close matches, such as 
 |  | Unsorted Array | Sorted Array | Unsorted List | Sorted List | Binary Tree | BST | AVL
 | ----------- | ---------------------- | ------------------- | -------- | ------------ | -------- | --------- | -------- |
 | `find` | $O(n)$ | $O(\log n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(h)$ | $O(\log n)$
-| `insert` | $O(1)$ | $O(n)$ | $O(1)$ | $O(n)$ | $O(n)$ | $O(h)$ | $O(h)$
-| `remove` | $O(\log n)$ | $O(h) \equiv O(n)$ | $O(n)$ | $O(n)$ |
-| `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
+| `insert` | $O(1)$ | $O(n)$ | $O(1)$ | $O(n)$ | $O(n)$ | $O(h)$ | $O(\log n)$
+| `remove` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(\log n)$ |
+| `traverse` | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ | $O(n)$ |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDE5NDM5MSwxNTUzNDA5NTY4LDE0OT
-I0NDcyNDAsLTEyOTM0NDQyNjEsNzc1NTI3OTI2LDQ3MTYwNjAz
-MywxNzQ2NjI2NDE1LC0xMTE1NDQzODksOTMxNjI0NjM1LDE1Mj
-AyMzMzMCwtMTgyOTg3Mzc1LDIwMDU4MjI5MDQsLTU1NzczMzM5
-MiwxNTU4NDM0NTA1LC01OTE4NTE5MjksLTcxMTI2NDI2MiwxMz
-g3ODAzOTQxLDEyOTQ0MTY3ODAsMTEwOTk3ODYyOCwtMTY1ODg0
-MTQ4Ml19
+eyJoaXN0b3J5IjpbLTEwNDgyNzg1MDMsMTU1MzQwOTU2OCwxND
+kyNDQ3MjQwLC0xMjkzNDQ0MjYxLDc3NTUyNzkyNiw0NzE2MDYw
+MzMsMTc0NjYyNjQxNSwtMTExNTQ0Mzg5LDkzMTYyNDYzNSwxNT
+IwMjMzMzAsLTE4Mjk4NzM3NSwyMDA1ODIyOTA0LC01NTc3MzMz
+OTIsMTU1ODQzNDUwNSwtNTkxODUxOTI5LC03MTEyNjQyNjIsMT
+M4NzgwMzk0MSwxMjk0NDE2NzgwLDExMDk5Nzg2MjgsLTE2NTg4
+NDE0ODJdfQ==
 -->
