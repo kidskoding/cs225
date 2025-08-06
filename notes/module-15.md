@@ -32,6 +32,12 @@ This is typically used for short snippets of code like callbacks, custom sorting
 
 Lambda functions are so useful because they allow us to use functions as **data**. This means that the function itself is a value that can be stored, passed around, and manipulated!
 
+Lambdas consist of 3 things
+
+1. Capture, notated in `[ ]`
+2. Function Signature, notated in `{ - The signature of the function 
+3. Body 
+
 Take a look at a popular function used in excel, `COUNTIF`. This function counts the number of cells in a range that meet a specific criteria
 
 Suppose the criteria is that any integer, $x$, is less than 5. To code this in C++ we would do,
@@ -50,6 +56,6 @@ However, `lessThan5` is an unnecessary function when you can achieve the same re
 
 To solve this problem, we can use a **lambda**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzM3NTE1NjQsMTg2MzU1MzIwOSwxMT
-Y4NTg0NzAzLDM2MjAxODExLC0yNDk4NDE3NTVdfQ==
+eyJoaXN0b3J5IjpbMTA1MTYzOTU0MSwxODYzNTUzMjA5LDExNj
+g1ODQ3MDMsMzYyMDE4MTEsLTI0OTg0MTc1NV19
 -->
