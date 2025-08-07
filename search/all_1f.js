@@ -4,7 +4,7 @@ var searchData=
   ['values_1',['Returning Values',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md29',1,'']]],
   ['various_20operations_20on_20various_20tt_20list_20tt_20implementations_2',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
   ['various_20tt_20list_20tt_20implementations_3',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
-  ['velsky_20landis_20avl_20trees_4',['Module 14 - Addison-Velsky Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
+  ['velskii_20landis_20avl_20trees_4',['Module 14 - Addison-Velskii Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
   ['vocabulary_5',['Tree Vocabulary',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md13',1,'']]],
   ['vs_20private_6',['Public vs Private',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16',1,'']]],
   ['vs_20structs_7',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]]

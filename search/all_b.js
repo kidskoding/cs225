@@ -4,7 +4,7 @@ var searchData=
   ['a_20search_20structure_1',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
   ['a_20tt_20list_20tt_2',['Module 4 - &lt;tt&gt;ArrayList&lt;/tt&gt;, an Array implementation of a &lt;tt&gt;List&lt;/tt&gt;',['../md_notes_2module-04.html',1,'']]],
   ['adding_202_20elements_20every_20time_3',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'']]],
-  ['addison_20velsky_20landis_20avl_20trees_4',['Module 14 - Addison-Velsky Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
+  ['addison_20velskii_20landis_20avl_20trees_4',['Module 14 - Addison-Velskii Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
   ['additional_20graph_20terminology_5',['Additional Graph terminology',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md7',1,'']]],
   ['adt_6',['ADT',['../md_notes_2module-10.html#autotoc_md82',1,'Dictionary Interface (ADT)'],['../md_notes_2module-08.html#autotoc_md73',1,'Tree ADT']]],
   ['adt_20and_20tt_20linked_20list_20tt_20implementation_7',['Module 3 - &lt;tt&gt;List&lt;/tt&gt; ADT and &lt;tt&gt;Linked List&lt;/tt&gt; Implementation',['../md_notes_2module-03.html',1,'']]],
@@ -46,5 +46,5 @@ var searchData=
   ['avl_20and_20bbst_43',['Summarizing AVL and BBST',['../md_notes_2module-14.html#autotoc_md94',1,'']]],
   ['avl_20tree_44',['Insertion into an AVL tree',['../md_notes_2module-14.html#autotoc_md92',1,'']]],
   ['avl_20tree_20analysis_45',['AVL Tree Analysis',['../md_notes_2module-14.html#autotoc_md93',1,'']]],
-  ['avl_20trees_46',['Module 14 - Addison-Velsky Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]]
+  ['avl_20trees_46',['Module 14 - Addison-Velskii Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]]
 ];
