@@ -12,5 +12,6 @@ var searchData=
   ['list_20tt_20implementations_9',['Amortized Costs of various operations on various &lt;tt&gt;List&lt;/tt&gt; implementations',['../md_notes_2module-05.html#autotoc_md61',1,'']]],
   ['listnode_10',['ListNode',['../structListNode.html',1,'']]],
   ['lists_11',['Lists',['../md_notes_2midterm-reviews_2midterm-1.html#autotoc_md41',1,'Lists'],['../md_notes_2midterm-reviews_2midterm-1.html',1,'Midterm 1 - Lists']]],
-  ['llqueue_12',['LLQueue',['../classLLQueue.html',1,'']]]
+  ['llqueue_12',['LLQueue',['../classLLQueue.html',1,'']]],
+  ['lower_20bound_13',['Upper and Lower Bound',['../md_notes_2module-16.html#autotoc_md100',1,'']]]
 ];
