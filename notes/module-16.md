@@ -18,9 +18,12 @@ Since BBST's are balanced, its height is $O(\log n)$, so range queries can be ef
 
 **Range queries** are a search to find all keys that fall within a given range, typically written as $[x, y]$, where $x$ is the lowest possible value (lower bound) and $y$ is the highest possible value (upper bound)
 
+A **$k$-dimensional tree**, or **KD Tree** is a data structure used to store and search points in $k$-dimensional space efficiently for range queries and nearest neighbor searches
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTU0NjY3OTYsLTEzNTU0NjY3OTYsMj
-A0NTY2NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0
-ODgwNDYzXX0=
+eyJoaXN0b3J5IjpbLTcxODIxMDgyLC0xMzU1NDY2Nzk2LDIwND
+U2NjQ2ODgsLTE2ODU0MjgzMzcsLTg5NTE2NjYyMSwtMjA5NDg4
+MDQ2M119
 -->
