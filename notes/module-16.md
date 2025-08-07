@@ -3,7 +3,7 @@
 
 Balanced BST's are useful for **range-based** and **nearest-neighbor** searches (e.g. finding out which nodes in a tree have values that fall between $[11, 42]$)
 
-## Red-Black trees in C++
+## Upper and Lower Bound
 
 Previously, we discussed how C++'s STL map is implemented via a red-black tree under the hood
 
@@ -20,6 +20,6 @@ Since BBST's are balanced, its height is $O(\log n)$, so range queries can be ef
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODI0NjA1MCwtMTY4NTQyODMzNywtOD
+eyJoaXN0b3J5IjpbMjA0NTY2NDY4OCwtMTY4NTQyODMzNywtOD
 k1MTY2NjIxLC0yMDk0ODgwNDYzXX0=
 -->
