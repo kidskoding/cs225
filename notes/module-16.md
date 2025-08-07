@@ -10,7 +10,7 @@ Previously, we discussed how C++'s STL map is implemented via a red-black tree u
 `std::map` includes a `lower_bound` and an `upper_bound` function, which allow efficient logarithmic-time range queries by returning iterators to the first element not less than (`lower_bound`) and the first element greater than (`upper_bound`) a given key, respectively.
 
 - `lower_bound` - The smallest element greater than or equal to the argument
-- `upper_bound` - The smallest element greater than the argument
+- `upper_bound` - The smallest element strictly greater than the argument
 
 ## Range-Based Searches
 
@@ -20,6 +20,6 @@ Since BBST's are balanced, its height is $O(\log n)$, so range queries can be ef
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTY2NDY4OCwtMTY4NTQyODMzNywtOD
-k1MTY2NjIxLC0yMDk0ODgwNDYzXX0=
+eyJoaXN0b3J5IjpbLTEzNTU0NjY3OTYsMjA0NTY2NDY4OCwtMT
+Y4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwNDYzXX0=
 -->
