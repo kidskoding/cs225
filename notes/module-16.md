@@ -22,12 +22,11 @@ A **$k$-dimensional tree**, or **KD Tree** is a data structure used to store and
 
 Range based searching has a lot of real world applications, involving **computer graphics**, **collision detection**, and and **sensor data**. Each of these things relies on quickly identifying all objects, points, or events that fall within a specific region or interval, so that only relevant data is processed while ignoring everything outside the range, which greatly improves efficiency.
 
-## K-D Trees
+## KD Trees
 
-
-
+Range 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4MzgyOTU0LC03MTgyMTA4MiwtMTM1NT
-Q2Njc5NiwyMDQ1NjY0Njg4LC0xNjg1NDI4MzM3LC04OTUxNjY2
-MjEsLTIwOTQ4ODA0NjNdfQ==
+eyJoaXN0b3J5IjpbMTY4Njc2NTgzMiwtNzE4MjEwODIsLTEzNT
+U0NjY3OTYsMjA0NTY2NDY4OCwtMTY4NTQyODMzNywtODk1MTY2
+NjIxLC0yMDk0ODgwNDYzXX0=
 -->
