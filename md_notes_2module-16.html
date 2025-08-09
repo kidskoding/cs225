@@ -136,7 +136,15 @@ $k$-Nearest Neighbor ($k$-NN)</h1>
 <li><b>Regression</b> - Predict the query point’s value as the average of its k nearest neighbors’ values.</li>
 </ul>
 <p>It becomes very efficient with a constructed KD Tree because it avoids brute force checking each point. Instead, it narrows the search by recursively exploring only those regions of space that could contain points closer than the current best candidates, ignoring irrelevant subtrees, to make nearest neighbor searches much faster</p>
-<p>To find the nearest neighbor in a KD Tree, given a      </p>
+<p>To find the nearest neighbor in a KD Tree, given a query point</p>
+<ol type="1">
+<li>Start at the root and move down the tree, choosing the child subtree that contains the query point based on the splitting dimension</li>
+<li>Once you reach a leaf, record that point as the current best candidate</li>
+<li>Backtrack up the tree, at each node checking if there could be points in the other subtree closer than the current best (by comparing distance to the splitting plane)</li>
+<li>If so, explore the other subtree to find potentially closer points</li>
+<li>Continue this process until all promising subtrees have been checked</li>
+<li>Return the closest point found as the nearest neighbor      </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
