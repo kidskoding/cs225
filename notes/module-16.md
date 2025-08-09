@@ -29,9 +29,9 @@ Range based searching becomes efficient with a type of tree known as a **KD Tree
 To build a KD tree from $k$-D space
 
 1. Start with one dimension (doesn't matter which one)
-2. 
+2. Split dataset into two parts: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjE4NDgxNDYsLTExNzE2NDg5NjUsMj
+eyJoaXN0b3J5IjpbLTE5MzUyNDg1OTQsLTExNzE2NDg5NjUsMj
 EzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2
 NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwND
 YzXX0=
