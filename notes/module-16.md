@@ -30,10 +30,14 @@ To build a KD tree from $k$-D space
 
 1. Start with one dimension (doesn't matter which one)
 2. Split dataset into two parts: points less than the median go on the left subtree and points greater than the median go on the right subtree
-3. Create a node with the median point as the current root.
+3. Create a node with the median point as the current root
+4. Recursively build the left and right subtrees: move to the next dimension (e.g., if you split by x at this level, split by y at the next)
+5. Repeat steps 2-4 for each subtree with their respective points
+
+A KD tree stays balanced simply because of the median
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjAwMTI2MCwtMTE3MTY0ODk2NSwyMT
-M2NDg5NDQ3LC03MTgyMTA4MiwtMTM1NTQ2Njc5NiwyMDQ1NjY0
-Njg4LC0xNjg1NDI4MzM3LC04OTUxNjY2MjEsLTIwOTQ4ODA0Nj
-NdfQ==
+eyJoaXN0b3J5IjpbLTEzNDAwNTUzMjIsLTExNzE2NDg5NjUsMj
+EzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2
+NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwND
+YzXX0=
 -->
