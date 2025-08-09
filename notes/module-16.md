@@ -45,11 +45,11 @@ It is used very often in **Machine Learning**, specifically classification and r
 - **Classification** - Assign the query point the most common class among its k nearest neighbors.
 - **Regression** - Predict the query point’s value as the average of its k nearest neighbors’ values.
 
-
+It becomes very efficient with a constructed KD Tree because it avoids brute force checking each point. Instead, it by instead narrowing the search by recursively exploring only those regions of space that could contain points closer than the current best candidates, ignoring irrelevant subtrees, to make nearest neighbor searches much faster
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc3MTc5MjEsLTExNzE2NDg5NjUsMj
-EzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2
-NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwND
-YzXX0=
+eyJoaXN0b3J5IjpbMTc4MzUzOTgxMCwtMTE3MTY0ODk2NSwyMT
+M2NDg5NDQ3LC03MTgyMTA4MiwtMTM1NTQ2Njc5NiwyMDQ1NjY0
+Njg4LC0xNjg1NDI4MzM3LC04OTUxNjY2MjEsLTIwOTQ4ODA0Nj
+NdfQ==
 -->
