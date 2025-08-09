@@ -24,9 +24,9 @@ Range based searching has a lot of real world applications, involving **computer
 
 ## KD Trees
 
-Range 
+Range based searching becomes efficient with a type of tree known as a **KD Tree**, which organizes points so that large portions of space can be skipped entirely during a query.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4Njc2NTgzMiwtNzE4MjEwODIsLTEzNT
+eyJoaXN0b3J5IjpbMjEzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNT
 U0NjY3OTYsMjA0NTY2NDY4OCwtMTY4NTQyODMzNywtODk1MTY2
 NjIxLC0yMDk0ODgwNDYzXX0=
 -->
