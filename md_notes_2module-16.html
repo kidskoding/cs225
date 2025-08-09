@@ -122,8 +122,11 @@ KD Trees</h1>
 <ol type="1">
 <li>Start with one dimension (doesn't matter which one)</li>
 <li>Split dataset into two parts: points less than the median go on the left subtree and points greater than the median go on the right subtree</li>
-<li>Create a node with the median point as the current root.      </li>
+<li>Create a node with the median point as the current root</li>
+<li>Recursively build the left and right subtrees: move to the next dimension (e.g., if you split by x at this level, split by y at the next)</li>
+<li>Repeat steps 2-4 for each subtree with their respective points</li>
 </ol>
+<p>A KD tree stays balanced simply because of the median      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
