@@ -47,9 +47,16 @@ It is used very often in **Machine Learning**, specifically classification and r
 
 It becomes very efficient with a constructed KD Tree because it avoids brute force checking each point. Instead, it narrows the search by recursively exploring only those regions of space that could contain points closer than the current best candidates, ignoring irrelevant subtrees, to make nearest neighbor searches much faster
 
-To find the nearest neighbor in a KD Tree, given a 
+To find the nearest neighbor in a KD Tree, given a query point
+
+1. Start at the root and move down the tree, choosing the child subtree that contains the query point based on the splitting dimension
+2. Once you reach a leaf, record that point as the current best candidate
+3. Backtrack up the tree, at each node checking if there could be points in the other subtree closer than the current best (by comparing distance to the splitting plane)
+4. If so, explore the other subtree to find potentially closer points
+5. Continue this process until all promising subtrees have been checked
+6. Return the closest point found as the nearest neighbor
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTQ2NzgxOCwtMTE3MTY0ODk2NSwyMT
+eyJoaXN0b3J5IjpbLTUyNjE1NDExNywtMTE3MTY0ODk2NSwyMT
 M2NDg5NDQ3LC03MTgyMTA4MiwtMTM1NTQ2Njc5NiwyMDQ1NjY0
 Njg4LC0xNjg1NDI4MzM3LC04OTUxNjY2MjEsLTIwOTQ4ODA0Nj
 NdfQ==
