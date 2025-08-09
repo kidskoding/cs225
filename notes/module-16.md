@@ -34,9 +34,15 @@ To build a KD tree from $k$-D space
 4. Recursively build the left and right subtrees: move to the next dimension (e.g., if you split by x at this level, split by y at the next)
 5. Repeat steps 2-4 for each subtree with their respective points
 
-A KD tree stays balanced simply because of the median
+A KD tree stays balanced simply because of the median because at each step you split the dataset using the **median** point along the current dimension, ensuring that half the points go on the left subtree and half the points go on the right subtree
+
+## $k$-Nearest Neighbor ($k$-NN)
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDAwNTUzMjIsLTExNzE2NDg5NjUsMj
+eyJoaXN0b3J5IjpbLTIwNDE1MTA1NjksLTExNzE2NDg5NjUsMj
 EzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2
 NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwND
 YzXX0=
