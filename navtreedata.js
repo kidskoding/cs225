@@ -149,7 +149,8 @@ var NAVTREE =
     [ "Module 16 - BBST Range Search and KD Trees", "md_notes_2module-16.html", [
       [ "Upper and Lower Bound", "md_notes_2module-16.html#autotoc_md100", null ],
       [ "Range-Based Searches", "md_notes_2module-16.html#autotoc_md101", null ],
-      [ "KD Trees", "md_notes_2module-16.html#autotoc_md102", null ]
+      [ "KD Trees", "md_notes_2module-16.html#autotoc_md102", null ],
+      [ "$k$-Nearest Neighbor ($k$-NN)", "md_notes_2module-16.html#autotoc_md103", null ]
     ] ],
     [ "Module 17 - BTrees", "md_notes_2module-17.html", null ],
     [ "Module 18 - BTree Analysis", "md_notes_2module-18.html", null ],
