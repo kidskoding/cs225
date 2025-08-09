@@ -20,10 +20,12 @@ Since BBST's are balanced, its height is $O(\log n)$, so range queries can be ef
 
 A **$k$-dimensional tree**, or **KD Tree** is a data structure used to store and search points in $k$-dimensional space efficiently for range queries and nearest neighbor searches
 
-Range based searching has a lot of real world applications, involving 
+Range based searching has a lot of real world applications, involving **computer graphics**, **collision detection**, and and **sensor data**. Each of these things relies on quickly identifying all objects, points, or events that fall within a specific region or interval, so that only relevant data is processed while ignoring everything outside the range, which greatly improves efficiency.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NzE3NzQwMCwtNzE4MjEwODIsLTEzNT
-U0NjY3OTYsMjA0NTY2NDY4OCwtMTY4NTQyODMzNywtODk1MTY2
-NjIxLC0yMDk0ODgwNDYzXX0=
+eyJoaXN0b3J5IjpbNzMwNzY5MzMsLTcxODIxMDgyLC0xMzU1ND
+Y2Nzk2LDIwNDU2NjQ2ODgsLTE2ODU0MjgzMzcsLTg5NTE2NjYy
+MSwtMjA5NDg4MDQ2M119
 -->
