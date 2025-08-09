@@ -26,9 +26,13 @@ Range based searching has a lot of real world applications, involving **computer
 
 Range based searching becomes efficient with a type of tree known as a **KD Tree**, which organizes points so that large portions of space can be skipped entirely during a query
 
+To build a KD tree from $k$-D space
 
+1. Start with one dimension (doesn't matter which one)
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE2NDg5NjUsMjEzNjQ4OTQ0NywtNz
-E4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2NDY4OCwtMTY4NTQy
-ODMzNywtODk1MTY2NjIxLC0yMDk0ODgwNDYzXX0=
+eyJoaXN0b3J5IjpbLTEwMjE4NDgxNDYsLTExNzE2NDg5NjUsMj
+EzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2
+NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwND
+YzXX0=
 -->
