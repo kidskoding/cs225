@@ -38,11 +38,17 @@ A KD tree stays balanced simply because of the median because at each step you s
 
 ## $k$-Nearest Neighbor ($k$-NN)
 
+**$k$-Nearest Neighbors (k-NN)** is a simple algorithm used in machine learning and data analysis to find the $k$ closest points to a given query point in a dataset
+
+It is used very often in **Machine Learning**, specifically classification and regression
+
+- **Classification** - Assign the query point the most common class among its k nearest neighbors.
+- **Regression** - Predict the query point’s value as the average of its k nearest neighbors’ values.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDE1MTA1NjksLTExNzE2NDg5NjUsMj
+eyJoaXN0b3J5IjpbLTEwMjc3MTc5MjEsLTExNzE2NDg5NjUsMj
 EzNjQ4OTQ0NywtNzE4MjEwODIsLTEzNTU0NjY3OTYsMjA0NTY2
 NDY4OCwtMTY4NTQyODMzNywtODk1MTY2NjIxLC0yMDk0ODgwND
 YzXX0=
