@@ -118,8 +118,8 @@ Resizing by adding 2 elements every time</h1>
 <h1><a class="anchor" id="autotoc_md60"></a>
 Resizing by doubling the elements every time</h1>
 <p>Now suppose, we resized the <code><a class="el" href="classArrayList.html">ArrayList</a></code> by doubling the capacity everytime. Each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large.</p>
-<p>Let $r$ represent the number of resizes, where a resize occurs when the <a class="el" href="classArrayList.html">ArrayList</a> is full (or simply every time two elements are added)</p>
-<p>When the <a class="el" href="classArrayList.html">ArrayList</a> is full, its capacity will resize by double the original capacity.</p>
+<p>Let $r$ represent the number of resizes, where a resize occurs when the <code><a class="el" href="classArrayList.html">ArrayList</a></code> is full (or simply every time two elements are added)</p>
+<p>When the <code><a class="el" href="classArrayList.html">ArrayList</a></code> is full, its capacity will resize by double the original capacity.</p>
 <p>Recall that each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large. Therefore, this results in $2^r$ copies per resize.</p>
 <p>Therefore, the summation that represents the runtime of this algorithm is</p>
 <p>$$ \sum_{k = 0}^{r}2^k $$</p>
@@ -204,7 +204,7 @@ Amortized Costs of various operations on various <code>List</code> implementatio
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Find a value in a sorted list   </td><td class="markdownTableBodyNone"><code>O(n)</code>   </td><td class="markdownTableBodyNone"><code>O(log n)</code>   </td></tr>
 </table>
-<p>The <code>*</code> represents <b>amortized</b> cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis isn’t ideal for explaining the cost of a single, individual operation, but rather useful for understanding the average cost spread across many operations.   </p>
+<p>The <code>*</code> represents <b>amortized</b> cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis isn’t ideal for explaining the cost of a single, individual operation, but rather useful for understanding the average cost spread across many operations.    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
