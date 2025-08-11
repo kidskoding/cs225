@@ -49,9 +49,9 @@ making the total amortized cost $O(n)$ (since constants are dropped)
 
 Now suppose, we resized the `ArrayList` by doubling the capacity everytime. Each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large.
 
-Let $r$ represent the number of resizes, where a resize occurs when the ArrayList is full (or simply every time two elements are added)
+Let $r$ represent the number of resizes, where a resize occurs when the `ArrayList` is full (or simply every time two elements are added)
 
-When the ArrayList is full, its capacity will resize by double the original capacity.
+When the `ArrayList` is full, its capacity will resize by double the original capacity.
 
 Recall that each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large. Therefore, this results in $2^r$ copies per resize.
 
@@ -163,5 +163,6 @@ This will effectively add more space to our buffer (double that the original) wh
 
 The `*` represents **amortized** cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis isn’t ideal for explaining the cost of a single, individual operation, but rather useful for understanding the average cost spread across many operations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk1MDcwMDk2LDY5NTA3MDA5Nl19
+eyJoaXN0b3J5IjpbNDY3MjQ2MzI0LDY5NTA3MDA5Niw2OTUwNz
+AwOTZdfQ==
 -->
