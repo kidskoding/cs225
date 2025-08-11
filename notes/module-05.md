@@ -24,6 +24,8 @@ $$
     \sum_{k = 1}^{r} = r^2 + r
 $$
 
+$$2 \times \frac{r(r + 1)}{2} = r(r + 1) = r^2 + r$$
+
 However, $r$ is the number of resize operations every two iterations. When analyzing algorithmic runtime, it is important to express it in terms of $n$ rather than $r$ because an algorithm is expressed in terms of its input size, which is simply $n$.
 
 If there were $5$ resizes that occurred every 2 elements, then the total number of elements, $n$, would be $10$, which can be mathematically expressed as $n = 2r$, or simply $r = \frac{n}{2}$ 
@@ -163,5 +165,5 @@ This will effectively add more space to our buffer (double that the original) wh
 
 The `*` represents **amortized** cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis isn’t ideal for explaining the cost of a single, individual operation, but rather useful for understanding the average cost spread across many operations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk1MDcwMDk2XX0=
+eyJoaXN0b3J5IjpbOTgwNTU0OTY3LDY5NTA3MDA5Nl19
 -->
