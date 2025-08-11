@@ -109,6 +109,7 @@ Resizing by adding 2 elements every time</h1>
 <p>Let $r$ represent the number of resizes, where a resize occurs when the <a class="el" href="classArrayList.html">ArrayList</a> is full (or simply every time two elements are added).</p>
 <p>Then, the total runtime cost of this algorithm, where there are 2 copies made every 2 iterations, can be represented through the summation $$ \sum_{k = 1}^{r} = 2k $$</p>
 <p>Since $r$ represents the number of resize operations every two iterations, the summation is equivalent to $2 \times \frac{r(r + 1)}{2} = r(r + 1) = r^2 + r$. Therefore, $$ \sum_{k = 1}^{r} = r^2 + r $$</p>
+<p>$$2 \times \frac{r(r + 1)}{2} = r(r + 1) = r^2 + r$$</p>
 <p>However, $r$ is the number of resize operations every two iterations. When analyzing algorithmic runtime, it is important to express it in terms of $n$ rather than $r$ because an algorithm is expressed in terms of its input size, which is simply $n$.</p>
 <p>If there were $5$ resizes that occurred every 2 elements, then the total number of elements, $n$, would be $10$, which can be mathematically expressed as $n = 2r$, or simply $r = \frac{n}{2}$</p>
 <p>Substituting $n$ for $r$ becomes $$ \begin{align*} &amp;=(\frac{n}{2})^2 + \frac{n}{2} \ &amp;=\frac{n^2 + 2n}{4} \end{align*} $$</p>
