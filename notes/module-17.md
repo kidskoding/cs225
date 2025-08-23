@@ -9,9 +9,7 @@ A **B-Tree** is a self-balancing search tree designed for efficient storage and 
 - The keys inside a node are kept in **sorted order**, and the children split the key ranges between them
 - All leaves appear at the same depth, so the tree remains balanced
 - Because each node can hold many keys (often filling a disk block), the tree height is very small, which reduces disk accesses
-- Operations like search, insertion, and deletion still take **$O(log n)$** time, but with a much smaller constant factor, making B-Trees ideal for databases and file systems
-
-
+- Operations like search, insertion, and deletion still take **$O(\log n)$** time, but with a much smaller constant factor, making B-Trees ideal for databases and file systems
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMDgyNTQyLC0xNDcwOTAwMDM3XX0=
+eyJoaXN0b3J5IjpbNjc5OTc4MTk0LC0xNDcwOTAwMDM3XX0=
 -->
