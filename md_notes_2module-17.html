@@ -101,6 +101,8 @@ $(function(){initNavTree('md_notes_2module-17.html',''); initResizable(true); })
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md104"></a></p>
 <p>In Big-O, we assume that we have uniform time for all operations, but this is not always the case</p>
+<p>Sometimes, the need to make searching, inserting, and deleting data efficient when working with disks, where access is much slower than in memory</p>
+<p>A <b>B-Tree</b> is motivated by the need to make searching, inserting, and deleting data efficient when working with disks, where access is much slower than in memory. Regular binary trees are too tall, requiring many disk reads, but a B-Tree stores multiple keys per node and allows many children, making the tree much shallower. Each node is designed to fit in a disk block, so finding a key usually takes only a few disk accesses instead of many. This makes B-Trees ideal for databases and file systems, where minimizing disk I/O is critical.    </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
