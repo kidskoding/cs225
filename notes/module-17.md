@@ -3,10 +3,15 @@
 
 In Big-O, we assume that we have uniform time for all operations, but this is not always the case
 
-Sometimes, the need to make searching, inserting, and deleting data efficient when working with disks, where access is much slower than in memory
+Sometimes, searching, inserting, and deleting data in a AVL tree is not always efficient when when working with disks, where access is much slower than in memory
 
-A **B-Tree** is motivated by the need to make searching, inserting, and deleting data efficient when working with disks, where access is much slower than in memory. Regular binary trees are too tall, requiring many disk reads, but a B-Tree stores multiple keys per node and allows many children, making the tree much shallower. Each node is designed to fit in a disk block, so finding a key usually takes only a few disk accesses instead of many. This makes B-Trees ideal for databases and file systems, where minimizing disk I/O is critical.
+A **B-Tree** is a self-balancing search tree designed for efficient storage and retrieval on disks. Unlike a binary search tree that stores only one key per node, each B-Tree node can hold multiple keys and have multiple children
+- The keys inside a node are kept in **sorted order**, and the children split the key ranges between them
+- All leaves appear at the same depth, so the tree remains balanced
+- Because each node can hold many keys (often filling a disk block), the tree height is very small, which reduces disk accesses
+- Operations like search, insertion, and deletion still take **$O(log n)$** time, but with a much smaller constant factor, making B-Trees ideal for databases and file systems
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQ1MTgyODYsLTE0NzA5MDAwMzddfQ
-==
+eyJoaXN0b3J5IjpbMjIzMDgyNTQyLC0xNDcwOTAwMDM3XX0=
 -->
