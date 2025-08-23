@@ -55,9 +55,11 @@ To find the nearest neighbor in a KD Tree, given a query point
 4. If so, explore the other subtree to find potentially closer points
 5. Continue this process until all promising subtrees have been checked
 6. Return the closest point found as the nearest neighbor
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjE1NDExNywtMTE3MTY0ODk2NSwyMT
-M2NDg5NDQ3LC03MTgyMTA4MiwtMTM1NTQ2Njc5NiwyMDQ1NjY0
-Njg4LC0xNjg1NDI4MzM3LC04OTUxNjY2MjEsLTIwOTQ4ODA0Nj
-NdfQ==
+eyJoaXN0b3J5IjpbLTExNTE5MTk2NTcsLTUyNjE1NDExNywtMT
+E3MTY0ODk2NSwyMTM2NDg5NDQ3LC03MTgyMTA4MiwtMTM1NTQ2
+Njc5NiwyMDQ1NjY0Njg4LC0xNjg1NDI4MzM3LC04OTUxNjY2Mj
+EsLTIwOTQ4ODA0NjNdfQ==
 -->
