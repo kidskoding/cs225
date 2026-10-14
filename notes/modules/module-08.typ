@@ -97,6 +97,8 @@ A list has a fixed structure and order, but a tree has varied structure dependin
 Therefore, let's think about how we code a `BinaryTree`. An example header file that defines a `BinaryTree` is shown below
 
 ```cpp
+// BinaryTree.h
+
 #pragma once
 template <class T>
 class BinaryTree {
@@ -133,6 +135,8 @@ struct TreeNode {
 With this, it makes sense for our root to also be a *pointer* to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access and avoids copying data unnecessarily, allowing the tree to grow dynamically in memory without using too much overhead. The `BinaryTree` class is reflected below
 
 ```cpp
+// BinaryTree.h
+
 template <class T>
 class BinaryTree {
 private:

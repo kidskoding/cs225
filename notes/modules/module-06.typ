@@ -86,13 +86,19 @@ Take a look at the following `CircularQueue` implementation below
 template <typename T>
 class CircularQueue {
 public:
-    // Adds an element to the rear of the queue
+    /** Adds an element to the rear of the queue
+     * Runtime: amortized O(1)
+     */
     void enqueue(T e);
 
-    // Removes and returns the element at the front of the queue
+    /** Removes and returns the element at the front of the queue
+     * Runtime: O(1)
+     */
     T dequeue();
 
-    // Returns `true` if the queue is empty; `false` otherwise
+    /** Returns `true` if the queue is empty; `false` otherwise
+     * Runtime: O(1)
+     */
     bool isEmpty();
 private:
     // Pointer to the dynamically allocated array holding the queue elements

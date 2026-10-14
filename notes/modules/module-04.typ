@@ -41,8 +41,13 @@ class ArrayList {
 public:
 
 private:
+    // a pointer to the start of the buffer
     T* data = nullptr;
+
+    // a pointer one past the last element in use
     T* size = nullptr;
+
+    // a pointer one past the end of the allocated buffer
     T* capacity = nullptr;
 };
 ```
@@ -72,6 +77,9 @@ private:
     T* size = nullptr;
     T* capacity = nullptr;
 
+    /** Copies the elements into a bigger buffer when it is full
+     * Runtime: O(n)
+     */
     void addSpace();
 };
 ```
@@ -106,12 +114,18 @@ We can update our `ArrayList` ADT like this,
 template<typename T>
 class ArrayList {
 public:
+    /** Inserts data to the back of this `ArrayList`
+     * Runtime: amortized O(1)
+     */
     void pushBack(const T& value);
 private:
     T* data = nullptr;
     T* size = nullptr;
     T* capacity = nullptr;
 
+    /** Copies the elements into a bigger buffer when it is full
+     * Runtime: O(n)
+     */
     void addSpace();
 };
 ```

@@ -57,10 +57,30 @@ public:
     using TreeIterator = typename std::unordered_map<K, V>::iterator;
 
     BST() : root(nullptr) { }
+
+    /** Inserts a key-value pair into the BST
+     * Runtime: O(h)
+     */
     void insert(const K key, const V value);
+
+    /** Removes the node with the given key from the BST
+     * Runtime: O(h)
+     */
     void remove(const K& key);
+
+    /** Returns an iterator to the pair with `key` (looked up in `node_map`)
+     * Runtime: expected O(1)
+     */
     TreeIterator find(const K& key);
+
+    /** Returns an iterator to the first key-value pair
+     * Runtime: O(1)
+     */
     TreeIterator begin();
+
+    /** Returns an iterator one past the last key-value pair
+     * Runtime: O(1)
+     */
     TreeIterator end();
 
 private:
@@ -79,10 +99,30 @@ private:
     std::unordered_map<K, V> node_map;
 
     // internal helpers
+
+    /** Returns the pointer to `key`'s node, or the null spot where it goes
+     * Runtime: O(h)
+     */
     TreeNode*& _find(TreeNode*& root, const K& key);
+
+    /** Inserts a new node at the null pointer `_find` stops on
+     * Runtime: O(h)
+     */
     void _insert(TreeNode*& root, const K& key, const V& value);
+
+    /** Returns the pointer to the in-order predecessor of `root`
+     * Runtime: O(h)
+     */
     TreeNode*& _iop(TreeNode*& root);
+
+    /** Swaps the key and value stored in two nodes
+     * Runtime: O(1)
+     */
     void _swap(TreeNode* a, TreeNode* b);
+
+    /** Removes the node with `key` from the subtree rooted at `node`
+     * Runtime: O(h)
+     */
     void _remove(TreeNode*& node, const K& key);
 };
 ```
@@ -108,6 +148,9 @@ To implement find in a BST, the process is pretty straightforward
 First we will begin with the internal find (`_find`). The external find function will just wrap the internal find with `root`, and then dealing with the case when the pointer is null and returning an iterator to the `end` rather than an iterator to that node. The signature of `_find` is shown below.
 
 ```cpp
+/** Returns the pointer to `key`'s node, or the null spot where it goes
+ * Runtime: O(h)
+ */
 template <class K, class V>
 typename BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
 
@@ -127,6 +170,11 @@ Otherwise, we can just call `_find` and then return the root's right node and th
 This full code for internal find, `_find`, is shown below
 
 ```cpp
+// BST.hpp
+
+/** Returns the pointer to `key`'s node, or the null spot where it goes
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 typename BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
     // if the root's pointer is null, return the root or
@@ -146,6 +194,11 @@ typename BST<K, V>::TreeNode*& BST<K, V>::_find(TreeNode*& root, const K& key) {
 To implement the external find, `find`, we can just simply return `node_map.find(key)` as an iterator, since `node_map` always stores the same key-value pairs as the BST and supports fast lookup:
 
 ```cpp
+// BST.hpp
+
+/** Returns an iterator to the pair with `key` (looked up in `node_map`)
+ * Runtime: expected O(1)
+ */
 template <typename K, typename V>
 typename BST<K, V>::TreeIterator BST<K, V>::find(const K& key) {
     // use `node_map` to quickly find the value without traversing the tree
@@ -181,6 +234,11 @@ This works because, when we search for the correct position in the BST, we event
 The code for internal insert, `_insert` is shown below
 
 ```cpp
+// BST.hpp
+
+/** Inserts a new node at the null pointer `_find` stops on
+ * Runtime: O(h)
+ */
 template <class K, class V>
 void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
     // Create a new `TreeNode` at the null pointer location returned by `_find`
@@ -197,6 +255,11 @@ This code looks a little bit weird, but it makes sense
 This code can be done more clearly to understand what's going on, by storing the result of `_find` in an explicit `loc` reference
 
 ```cpp
+// BST.hpp
+
+/** Inserts a new node at the null pointer `_find` stops on
+ * Runtime: O(h)
+ */
 template <class K, class V>
 void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
     // grab the reference/location to the pointer where `key` should be inserted
@@ -214,6 +277,11 @@ It's a preference as to which method is better for writing `_insert`; the first 
 To then code the external `insert`, we just have to simply call the internal insert, `_insert` and then add the key to our `node_map`, which is an `std::unordered_map` that contains our `TreeNode`s
 
 ```cpp
+// BST.hpp
+
+/** Inserts a key-value pair into the BST
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 void BST<K, V>::insert(const K key, const V value) {
     _insert(root, key, value);
@@ -287,6 +355,11 @@ First, we need a helper function that helps find either the IOP or IOS (will do 
 Therefore, to implement this, we need to find the rightmost value in the left subtree, since this will always be the largest value according to the BST property. To find the largest value, we just need to iterate through each node's right child until a node's right child no longer exists (null pointer). The code for finding the IOP is reflected below
 
 ```cpp
+// BST.hpp
+
+/** Returns the pointer to the in-order predecessor of `root`
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 typename BST<K, V>::TreeNode*& BST<K, V>::_iop(TreeNode*& root) {
     // grab a pointer to the left subtree pointer of the root
@@ -305,6 +378,11 @@ typename BST<K, V>::TreeNode*& BST<K, V>::_iop(TreeNode*& root) {
 The next thing we need to code is a helper swap function that swaps the internal data between two nodes. This is simple, it's just swapping the key and value of two nodes. We can use C++ STL swap function to achieve this. The code is shown below
 
 ```cpp
+// BST.hpp
+
+/** Swaps the key and value stored in two nodes
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void BST<K, V>::_swap(TreeNode* a, TreeNode* b) {
     // swap the internal data of nodes `a` and `b`
@@ -318,6 +396,11 @@ Finally, we can top it off by coding the functionality of `remove`. We first nee
 Recall that `_remove` involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child). The code for `_remove` is shown below
 
 ```cpp
+// BST.hpp
+
+/** Removes the node with `key` from the subtree rooted at `node`
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 void BST<K, V>::_remove(TreeNode*& node, const K& key) {
     if(node == nullptr) { return; }
@@ -375,6 +458,11 @@ A lot of things happen in this code, but most of it has already been previously 
 This makes coding the exposed (external) version of `remove` simple. We just call `_remove` and pass in the root
 
 ```cpp
+// BST.hpp
+
+/** Removes the node with the given key from the BST
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 void BST<K, V>::remove(const K& key) {
     _remove(root, key);
@@ -387,11 +475,19 @@ void BST<K, V>::remove(const K& key) {
 `begin()` and `end()` work by simply returning the begin and end iterators of `node_map`, our unordered map
 
 ```cpp
+// BST.hpp
+
+/** Returns an iterator to the first key-value pair
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 typename BST<K, V>::TreeIterator BST<K, V>::begin() {
     return node_map.begin();
 }
 
+/** Returns an iterator one past the last key-value pair
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 typename BST<K, V>::TreeIterator BST<K, V>::end() {
     return node_map.end();

@@ -56,6 +56,9 @@ bool lessThan5(int x) {
     return x < 5;
 }
 
+/** Counts the values in `data` that are less than 5
+ * Runtime: O(n)
+ */
 int countIf(std::vector<int>& data) {
     return std::count_if(data.begin(), data.end(), lessThan5);
 }
@@ -79,6 +82,9 @@ auto lessThan5 = [](int x) { return x < 5; };
 this makes our `countIf` function much more readable
 
 ```cpp
+/** Counts the values in `data` that are less than 5
+ * Runtime: O(n)
+ */
 int countIf(std::vector<int>& data) {
     auto lessThan5 = [](int x) { return x < 5; };
     return std::count_if(data.begin(), data.end(), lessThan5);

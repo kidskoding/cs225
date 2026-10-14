@@ -77,6 +77,11 @@ struct TreeNode {
 Inserting a node into an AVL tree is very similar to a BST (since it is in fact a type of BST!), as shown below
 
 ```cpp
+// AVL.hpp
+
+/** Inserts a node as in a BST, without rebalancing yet
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_insert(const K& key, const V& value, TreeNode*& curr) {
     // found the empty spot where the new node belongs
@@ -95,6 +100,9 @@ void AVL<K, V>::_insert(const K& key, const V& value, TreeNode*& curr) {
     // we still need to ensure the balance of the AVL tree here
 }
 
+/** Inserts a key-value pair into the AVL tree
+ * Runtime: O(h)
+ */
 template <typename K, typename V>
 void AVL<K, V>::insert(K key, V value) {
     _insert(key, value, root);
@@ -109,6 +117,11 @@ However, we are missing one crucial detail: ensuring that the AVL tree is *balan
 The balancing function is outlined below
 
 ```cpp
+// AVL.hpp
+
+/** Rotates `curr`'s subtree if it is unbalanced (rotations not filled in yet)
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
     // calculate the balance factor
@@ -154,6 +167,11 @@ We need a helper height function in order to avoid any crashes. While `curr->lef
 Therefore, a helper function to get the height of a node can help prevent any unnecessary crashes. It simply checks if the node is not null before calling its height property, and returns -1 for a null node, since the height of a null tree is -1. The code is shown below
 
 ```cpp
+// AVL.hpp
+
+/** Returns the height of a node, or -1 for a null node
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 int AVL<K, V>::height(TreeNode* node) {
     return node != nullptr ? node->height : -1;
@@ -169,6 +187,11 @@ Height represents the number of edges in the longest path from that node down to
 However, to get the total path length from the current node, you must add one additional edge, because that accounts for descending into the taller subtree, which `_updateHeight` does below
 
 ```cpp
+// AVL.hpp
+
+/** Recomputes the height of `curr` from its children
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_updateHeight(TreeNode* curr) {
     // calculate height as 1 + maximum height of children
@@ -202,6 +225,11 @@ From here, the rest is simple. We just have to simply code each rotation. The ro
 Coding these then becomes easy. Below are `_rotateLeft`, `_rotateRight`, `_rotateLeftRight`, and `_rotateRightLeft`, in that order
 
 ```cpp
+// AVL.hpp
+
+/** Rotates the subtree at `root` to the left
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_rotateLeft(TreeNode*& root) {
     // the right child becomes the new root
@@ -223,6 +251,11 @@ void AVL<K, V>::_rotateLeft(TreeNode*& root) {
 ```
 
 ```cpp
+// AVL.hpp
+
+/** Rotates the subtree at `root` to the right
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_rotateRight(TreeNode*& root) {
     // the left child becomes the new root
@@ -244,6 +277,11 @@ void AVL<K, V>::_rotateRight(TreeNode*& root) {
 ```
 
 ```cpp
+// AVL.hpp
+
+/** Rotates left about the left child, then right about `root`
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_rotateLeftRight(TreeNode*& root) {
     // rotate left about the left child and then rotate right about the root
@@ -253,6 +291,11 @@ void AVL<K, V>::_rotateLeftRight(TreeNode*& root) {
 ```
 
 ```cpp
+// AVL.hpp
+
+/** Rotates right about the right child, then left about `root`
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
     // rotate right about the right child and then rotate left about the root
@@ -264,6 +307,11 @@ void AVL<K, V>::_rotateRightLeft(TreeNode*& root) {
 This updates our balance function as follows
 
 ```cpp
+// AVL.hpp
+
+/** Rotates the subtree at `curr` if it is out of balance
+ * Runtime: O(1)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
     // calculate the balance factor
@@ -294,6 +342,11 @@ void AVL<K, V>::_ensureBalance(TreeNode*& curr) {
 Finally, `_insert` calls `_ensureBalance` on every node along the path back up from the new node, so any imbalance is fixed right where it appears
 
 ```cpp
+// AVL.hpp
+
+/** Inserts a node and rebalances every node on the way back up
+ * Runtime: O(h) = O(log n)
+ */
 template <typename K, typename V>
 void AVL<K, V>::_insert(const K& key, const V& value, TreeNode*& curr) {
     // found the empty spot where the new node belongs

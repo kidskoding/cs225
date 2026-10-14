@@ -55,6 +55,11 @@ This makes coding pre order traversal very simple. This function will take in th
 The code for `preOrderTraversal` is shown below
 
 ```cpp
+// BinaryTree.hpp
+
+/** Prints every node in pre-order (node, left subtree, right subtree)
+ * Runtime: O(n)
+ */
 template <typename T>
 void BinaryTree<T>::preOrderTraversal(TreeNode* curr) {
     // If the current node is a null pointer (`nullptr`), halt the recursion
@@ -92,6 +97,11 @@ This also makes coding in order traversal very simple. This function will take i
 The code for `inOrderTraversal` is shown below
 
 ```cpp
+// BinaryTree.hpp
+
+/** Prints every node in in-order (left subtree, node, right subtree)
+ * Runtime: O(n)
+ */
 template <typename T>
 void BinaryTree<T>::inOrderTraversal(TreeNode* curr) {
     // If the current node is a null pointer (`nullptr`), halt the recursion
@@ -127,6 +137,11 @@ This also makes coding post order traversal very simple, since we know its proce
 The code for `postOrderTraversal` is shown below
 
 ```cpp
+// BinaryTree.hpp
+
+/** Prints every node in post-order (left subtree, right subtree, node)
+ * Runtime: O(n)
+ */
 template <typename T>
 void BinaryTree<T>::postOrderTraversal(TreeNode* curr) {
     // If the current node is a null pointer (`nullptr`), halt the recursion
@@ -188,6 +203,11 @@ Level-order on @traversal-example-tree goes one level at a time: 4, then 2, 6, t
 The code for this process, which uses a queue, is shown below
 
 ```cpp
+// BinaryTree.hpp
+
+/** Prints every node level by level, from left to right
+ * Runtime: O(n)
+ */
 template <typename T>
 void BinaryTree<T>::levelOrderTraversal() {
     // Create a queue to store `TreeNode` pointers at every level
