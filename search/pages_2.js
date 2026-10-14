@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['2_20c_20review_0',['Module 2 - C++ Review',['../md_notes_2module-02.html',1,'']]],
-  ['20_20heaps_1',['Module 20 - Heaps',['../md_notes_2module-20.html',1,'']]],
-  ['21_20disjoint_20sets_2',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['22_20graphs_3',['Module 22 - Graphs',['../md_notes_2module-22.html',1,'']]],
-  ['225_4',['225',['../md_notes_2module-01.html',1,'Module 1 - Introduction to CS 225'],['../md_notes_2module-34.html',1,'Module 34 - Wrapping up CS 225!']]],
-  ['23_20graph_20implementations_5',['Module 23 - Graph Implementations',['../md_notes_2module-23.html',1,'']]],
-  ['24_20graph_20traversals_6',['Module 24 - Graph Traversals',['../md_notes_2module-24.html',1,'']]],
-  ['25_20mst_3a_20minimum_20spanning_20tree_20kruskal_20s_20algorithm_7',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['26_20mst_3a_20minimum_20spanning_20tree_20prim_20s_20algorithm_8',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['27_20dijkstra_20s_20algorithm_9',['Module 27 - Dijkstra&apos;s Algorithm',['../md_notes_2module-27.html',1,'']]],
-  ['28_20floyd_20warshall_20s_20algorithm_10',['Module 28 - Floyd Warshall&apos;s Algorithm',['../md_notes_2module-28.html',1,'']]],
-  ['29_20probability_20in_20computer_20science_11',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]]
+  ['1_20introduction_20to_20cs_20225_0',['Module 1 - Introduction to CS 225',['../md_notes_2module-01.html',1,'']]],
+  ['1_20lists_1',['Midterm 1 - Lists',['../md_notes_2midterm-reviews_2midterm-1.html',1,'']]],
+  ['10_20tree_20searching_20and_20dictionaries_2',['Module 10 - Tree Searching and Dictionaries',['../md_notes_2module-10.html',1,'']]],
+  ['11_20bst_20and_20bst_20implementation_3',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
+  ['12_20bst_20balance_4',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
+  ['13_20bst_20rotations_5',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
+  ['14_20addison_20velskii_20landis_20avl_20trees_6',['Module 14 - Addison-Velskii Landis (AVL) Trees',['../md_notes_2module-14.html',1,'']]],
+  ['15_20lambdas_7',['Module 15 - Lambdas',['../md_notes_2module-15.html',1,'']]],
+  ['16_20bbst_20range_20search_20and_20kd_20trees_8',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
+  ['17_20btrees_9',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
+  ['18_20btree_20analysis_10',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
+  ['19_20priority_20queues_11',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]]
 ];

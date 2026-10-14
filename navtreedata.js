@@ -52,7 +52,7 @@ var NAVTREE =
       ] ],
       [ "References and Pointers", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21", null ],
       [ "Dynamic Memory Allocation", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md22", [
-        [ "new and delete", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23", null ],
+        [ "<span class=\"tt\">new</span> and <span class=\"tt\">delete</span>", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md23", null ],
         [ "Destructors", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md24", null ],
         [ "RAII", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md25", null ],
         [ "Heap", "md_notes_2midterm-reviews_2midterm-0.html#autotoc_md26", null ],
@@ -86,34 +86,34 @@ var NAVTREE =
       [ "Memory Management - Ownership", "md_notes_2module-02.html#autotoc_md48", null ],
       [ "Rule of Zero/Three/Five", "md_notes_2module-02.html#autotoc_md49", null ]
     ] ],
-    [ "Module 3 - <tt>List</tt> ADT and <tt>Linked List</tt> Implementation", "md_notes_2module-03.html", [
-      [ "insertAtFront", "md_notes_2module-03.html#autotoc_md51", null ],
-      [ "insert", "md_notes_2module-03.html#autotoc_md52", [
-        [ "find", "md_notes_2module-03.html#autotoc_md53", null ]
+    [ "Module 3 - <span class=\"tt\">List</span> ADT and <span class=\"tt\">Linked List</span> Implementation", "md_notes_2module-03.html", [
+      [ "<span class=\"tt\">insertAtFront</span>", "md_notes_2module-03.html#autotoc_md51", null ],
+      [ "<span class=\"tt\">insert</span>", "md_notes_2module-03.html#autotoc_md52", [
+        [ "<span class=\"tt\">find</span>", "md_notes_2module-03.html#autotoc_md53", null ]
       ] ],
-      [ "operator[]", "md_notes_2module-03.html#autotoc_md54", [
-        [ "remove", "md_notes_2module-03.html#autotoc_md55", null ]
+      [ "<span class=\"tt\">operator[]</span>", "md_notes_2module-03.html#autotoc_md54", [
+        [ "<span class=\"tt\">remove</span>", "md_notes_2module-03.html#autotoc_md55", null ]
       ] ]
     ] ],
-    [ "Module 4 - <tt>ArrayList</tt>, an Array implementation of a <tt>List</tt>", "md_notes_2module-04.html", [
-      [ "pushBack()", "md_notes_2module-04.html#autotoc_md57", null ]
+    [ "Module 4 - <span class=\"tt\">ArrayList</span>, an Array implementation of a <span class=\"tt\">List</span>", "md_notes_2module-04.html", [
+      [ "<span class=\"tt\">pushBack()</span>", "md_notes_2module-04.html#autotoc_md57", null ]
     ] ],
     [ "Module 5 - Amortized Analysis", "md_notes_2module-05.html", [
       [ "Resizing by adding 2 elements every time", "md_notes_2module-05.html#autotoc_md59", null ],
       [ "Resizing by doubling the elements every time", "md_notes_2module-05.html#autotoc_md60", null ],
-      [ "Amortized Costs of various operations on various List implementations", "md_notes_2module-05.html#autotoc_md61", null ]
+      [ "Amortized Costs of various operations on various <span class=\"tt\">List</span> implementations", "md_notes_2module-05.html#autotoc_md61", null ]
     ] ],
     [ "Module 6 - Stacks and Queues", "md_notes_2module-06.html", [
       [ "Queues", "md_notes_2module-06.html#autotoc_md63", null ],
       [ "Stacks", "md_notes_2module-06.html#autotoc_md64", null ],
       [ "Stacks v.s. Queues", "md_notes_2module-06.html#autotoc_md65", null ],
-      [ "CircularQueue Implementation - enqueue and dequeue", "md_notes_2module-06.html#autotoc_md66", null ]
+      [ "<span class=\"tt\">CircularQueue</span> Implementation - <span class=\"tt\">enqueue</span> and <span class=\"tt\">dequeue</span>", "md_notes_2module-06.html#autotoc_md66", null ]
     ] ],
     [ "Module 7 - Iterators", "md_notes_2module-07.html", [
       [ "Iterate through data in each data structure", "md_notes_2module-07.html#autotoc_md68", null ],
       [ "Iterators with respect to Classes", "md_notes_2module-07.html#autotoc_md69", null ],
-      [ "Implementing begin() and end() for Array and LinkedList", "md_notes_2module-07.html#autotoc_md70", [
-        [ "Iterator Usage Example with std::vector", "md_notes_2module-07.html#autotoc_md71", null ]
+      [ "Implementing <span class=\"tt\">begin()</span> and <span class=\"tt\">end()</span> for <span class=\"tt\">Array</span> and <span class=\"tt\">LinkedList</span>", "md_notes_2module-07.html#autotoc_md70", [
+        [ "Iterator Usage Example with <span class=\"tt\">std::vector</span>", "md_notes_2module-07.html#autotoc_md71", null ]
       ] ]
     ] ],
     [ "Module 8 - Trees", "md_notes_2module-08.html", [
@@ -129,9 +129,9 @@ var NAVTREE =
       [ "Using Binary Trees as a Search Structure", "md_notes_2module-10.html#autotoc_md83", null ]
     ] ],
     [ "Module 11 - BST and BST Implementation", "md_notes_2module-11.html", [
-      [ "find", "md_notes_2module-11.html#autotoc_md85", null ],
-      [ "insert", "md_notes_2module-11.html#autotoc_md86", null ],
-      [ "remove", "md_notes_2module-11.html#autotoc_md87", null ],
+      [ "<span class=\"tt\">find</span>", "md_notes_2module-11.html#autotoc_md85", null ],
+      [ "<span class=\"tt\">insert</span>", "md_notes_2module-11.html#autotoc_md86", null ],
+      [ "<span class=\"tt\">remove</span>", "md_notes_2module-11.html#autotoc_md87", null ],
       [ "BST-Analysis", "md_notes_2module-11.html#autotoc_md88", null ]
     ] ],
     [ "Module 12 - BST Balance", "md_notes_2module-12.html", null ],
@@ -170,7 +170,7 @@ var NAVTREE =
     [ "Module 32 - Cardinality", "md_notes_2module-32.html", null ],
     [ "Module 33 - MinHash Sketch Strategy", "md_notes_2module-33.html", null ],
     [ "Module 34 - Wrapping up CS 225!", "md_notes_2module-34.html", null ],
-    [ "README", "md_README.html", null ],
+    [ "cs225-notes", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -191,5 +191,6 @@ var NAVTREEINDEX =
 "AVL_8h_source.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['7_20iterators_0',['Module 7 - Iterators',['../md_notes_2module-07.html',1,'']]]
+  ['6_20stacks_20and_20queues_0',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]]
 ];

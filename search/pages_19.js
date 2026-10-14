@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['s_20algorithm_0',['s Algorithm',['../md_notes_2module-25.html',1,'Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)'],['../md_notes_2module-26.html',1,'Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)'],['../md_notes_2module-27.html',1,'Module 27 - Dijkstra&apos;s Algorithm'],['../md_notes_2module-28.html',1,'Module 28 - Floyd Warshall&apos;s Algorithm']]],
-  ['science_1',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
-  ['search_20and_20kd_20trees_2',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
-  ['searching_20and_20dictionaries_3',['Module 10 - Tree Searching and Dictionaries',['../md_notes_2module-10.html',1,'']]],
-  ['sets_4',['Module 21 - Disjoint Sets',['../md_notes_2module-21.html',1,'']]],
-  ['sketch_20strategy_5',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
-  ['spanning_20tree_20kruskal_20s_20algorithm_6',['Module 25 - MST: Minimum Spanning Tree (Kruskal&apos;s Algorithm)',['../md_notes_2module-25.html',1,'']]],
-  ['spanning_20tree_20prim_20s_20algorithm_7',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
-  ['stacks_20and_20queues_8',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]],
-  ['strategy_9',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]]
+  ['passing_20arguments_0',['Passing Arguments',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md28',1,'']]],
+  ['pointers_1',['References and Pointers',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md21',1,'']]],
+  ['post_20order_20traversal_2',['Post Order Traversal',['../md_notes_2module-09.html#autotoc_md77',1,'']]],
+  ['pre_20order_20traversal_3',['Pre Order traversal',['../md_notes_2module-09.html#autotoc_md75',1,'']]],
+  ['prerequisite_20material_4',['Midterm 0 - Review of Prerequisite Material',['../md_notes_2midterm-reviews_2midterm-0.html',1,'']]],
+  ['prim_20s_20algorithm_5',['Module 26 - MST: Minimum Spanning Tree (Prim&apos;s Algorithm)',['../md_notes_2module-26.html',1,'']]],
+  ['priority_20queues_6',['Module 19 - Priority Queues',['../md_notes_2module-19.html',1,'']]],
+  ['private_7',['Public vs Private',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16',1,'']]],
+  ['probability_20in_20computer_20science_8',['Module 29 - Probability in Computer Science',['../md_notes_2module-29.html',1,'']]],
+  ['proofs_20by_20induction_9',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]],
+  ['public_20vs_20private_10',['Public vs Private',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md16',1,'']]],
+  ['pushback_11',['&lt;span class=&quot;tt&quot;&gt;pushBack()&lt;/span&gt;',['../md_notes_2module-04.html#autotoc_md57',1,'']]]
 ];

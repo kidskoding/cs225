@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "abcl",
   2: "defioprs",
   3: "dn",
-  4: "0123456789abcdfghiklmopqrstuvw"
+  4: "$0123456789abcdefghiklmnopqrstuvwz"
 };
 
 var indexSectionNames =

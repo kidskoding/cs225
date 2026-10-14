@@ -18,7 +18,7 @@ var searchData=
   ['stacks_15',['Stacks',['../md_notes_2module-06.html#autotoc_md64',1,'']]],
   ['stacks_20and_20queues_16',['Module 6 - Stacks and Queues',['../md_notes_2module-06.html',1,'']]],
   ['stacks_20v_20s_20queues_17',['Stacks v.s. Queues',['../md_notes_2module-06.html#autotoc_md65',1,'']]],
-  ['std_3a_3avector_20tt_18',['Iterator Usage Example with &lt;tt&gt;std::vector&lt;/tt&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
+  ['std_3a_3avector_18',['Iterator Usage Example with &lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;',['../md_notes_2module-07.html#autotoc_md71',1,'']]],
   ['strategy_19',['Module 33 - MinHash Sketch Strategy',['../md_notes_2module-33.html',1,'']]],
   ['structs_20',['Classes vs Structs',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md17',1,'']]],
   ['structure_21',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
