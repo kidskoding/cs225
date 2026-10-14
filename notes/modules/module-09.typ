@@ -233,3 +233,17 @@ void BinaryTree<T>::levelOrderTraversal() {
     }
 }
 ```
+
+== Traversals as Iterators
+
+So far, every traversal has been a recursive function that visits the whole tree at once. Sometimes we want to *iterate* over a tree instead, using `begin()` and `end()` like we did for lists, so that each `++` moves to the next node in pre-order, in-order, or post-order
+
+An iterator can't pause in the middle of a recursive call, so it has to remember where it is in the traversal some other way. Instead of relying on the call stack that recursion uses implicitly, the iterator keeps its *own* explicit stack of the nodes it still has to come back to. This is the same idea as the iterator in MP Lists needing to store a little more than just a pointer
+
+A clean way to support all three orders is *inheritance*
+
+- A base class, `TreeTraversal`, holds the shared work. It acts as an *iterator generator*: it provides `begin()` and `end()`, which create the iterator that walks the tree
+- `InorderTraversal`, `PreorderTraversal`, and `PostorderTraversal` inherit from it and provide only the part that differs between them, which is *when* a node is visited relative to its children, the same way the recursive versions only differ in where the print goes
+- Code that takes a `TreeTraversal*` works with any of the three. If the pointer is concretely an `InorderTraversal`, we get an in-order traversal, and so on
+
+Try to put almost all of the work in the base class and only the order-specific step in the derived classes. Working through this carefully matters, since this way of reasoning about recursion done iteratively comes back in later MPs and exams
