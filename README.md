@@ -1,5 +1,22 @@
-All notes and references of this code are compiled in **Doxygen**. View [here](http://kidskoding.github.io/cs225-notes/index.html)!
+# CS 225 Notes
 
-> However, Doxygen does not compile LATEX properly. Please view the notes for this course in the notes folder of this repository. 
+Notes for UIUC CS 225 (Data Structures and Algorithms), written in [Typst](https://typst.app).
 
-Thank you!
+- **Notes:** [`cs225.pdf`](cs225.pdf), built from [`notes/main.typ`](notes/main.typ)
+- **API docs:** Doxygen docs for the implementations in [`cs225_pg/`](cs225_pg), published [here](https://kidskoding.github.io/cs225-notes/)
+
+## Building
+
+```sh
+typst compile notes/main.typ cs225.pdf
+typst watch notes/main.typ cs225.pdf   # rebuild on save
+```
+
+CI rebuilds `cs225.pdf` and the API docs on every push to `master`.
+
+## Layout
+
+- `notes/main.typ`: book styling and chapter order
+- `notes/diagrams.typ`: `tree`, `steps`, `linked-list`, and `array-cells` helpers (built on CeTZ)
+- `notes/modules/`: one file per module
+- `notes/midterm-reviews/`: midterm reviews (appendix)
