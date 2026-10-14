@@ -3,7 +3,7 @@
 notes for uiuc cs 225 (Data Structures and Algorithms), written in [Typst](https://typst.app).
 
 - **Notes:** [`cs225.pdf`](cs225.pdf), built from [`notes/main.typ`](notes/main.typ)
-- **API docs:** Doxygen docs for the implementations in [`cs225_pg/`](cs225_pg), published [here](https://kidskoding.github.io/cs225-notes/)
+- **API docs:** Doxygen docs for the implementations in [`cs225_pg/`](cs225_pg) (one folder per chapter), published [here](https://kidskoding.github.io/cs225-notes/)
 
 ## Building
 
