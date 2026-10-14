@@ -1,6 +1,0 @@
-[
-{
-  "directory": "/Users/anirudh/UIUC/computer-science/cs225/cs225-notes/cs225_pg",
-  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/cs225_pg/macosx/arm64/release/src/main.cpp.o", "src/main.cpp"],
-  "file": "src/main.cpp"
-}]
