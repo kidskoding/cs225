@@ -1,53 +1,85 @@
 // ArrayList.hpp
 
+#pragma once
 #include "ArrayList.h"
 
+/** Inserts data to the back of this `ArrayList`
+ * Runtime: amortized O(1)
+ */
 template <typename T>
-void ArrayList<T>::pushBack(const T& data) {
-    // add additional space to the buffer if `size` == `capacity`
+void ArrayList<T>::pushBack(const T& value) {
+    // Add additional space to the buffer if `size` == `capacity`
     if(size == capacity) {
         addSpace();
     }
 
-    // place the new element at the current end
-    *size = data;
+    // Place the new element at the current end
+    *size = value;
 
-    // incrememnt the `size` pointer to now point to the new end of the filled buffer
+    // Increment the `size` pointer to now point to the new end of the filled buffer
     ++size;
 }
 
+/** Returns the element at `index` by reference
+ * Runtime: O(1)
+ */
+template <typename T>
+T& ArrayList<T>::operator[](int index) {
+    // the buffer is contiguous, so this is just pointer arithmetic
+    return data[index];
+}
+
+/** Returns the number of elements in this `ArrayList` (`size - data`)
+ * Runtime: O(1)
+ */
+template <typename T>
+int ArrayList<T>::length() const {
+    return size - data;
+}
+
+/** Returns how many elements fit in the buffer before it has to grow (`capacity - data`)
+ * Runtime: O(1)
+ */
+template <typename T>
+int ArrayList<T>::allocated() const {
+    return capacity - data;
+}
+
+/** Allocates additional space to the buffer in this `ArrayList`
+ * Runtime: O(n)
+ */
 template <typename T>
 void ArrayList<T>::addSpace() {
-    /* Reallocate the capacity of the buffer (similar to realloc in C);
-     * typically that of double the original capacity
+    /* Reallocate the capacity of the buffer (similar to realloc in C)
+     * Typically that of double the original capacity
      */
-    int newCapacity = capacity * 2;
+    int newCapacity = (capacity - data) * 2;
 
-    // if the original capacity is 0, set it to 1 to be minimal and memory efficient
+    // If the original capacity is 0, set it to 1 to be minimal and memory efficient
     if(newCapacity == 0) {
         newCapacity = 1;
     }
 
-    // allocate a new data buffer that is set to the updated capacity
+    // Allocate a new data buffer that is set to the updated capacity
     T* newData = new T[newCapacity];
 
-    // calculate the number of elements currently in the `ArrayList`
+    // Calculate the number of elements currently in the `ArrayList`
     int currentSize = size - data;
 
-    // copy all contents from the old data buffer into the new data buffer
-    for(int i = 0; i < size; i++) {
+    // Copy all contents from the old data buffer into the new data buffer
+    for(int i = 0; i < currentSize; i++) {
         newData[i] = data[i];
     }
 
-    // free the contents from the old buffer from memory
+    // Free the contents from the old buffer from memory
     delete[] data;
 
-    // update the data pointer to point to the newly allocated buffer
+    // Update the data pointer to point to the newly allocated buffer
     data = newData;
 
-    // set the current capacity to the new capacity
-    capacity = newCapacity;
+    // Point `capacity` to the end of the new buffer
+    capacity = data + newCapacity;
 
-    // update the size pointer to point to the correct position in the new buffer
+    // Update the size pointer to point to the correct position in the new buffer
     size = data + currentSize;
 }
