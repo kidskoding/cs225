@@ -1,196 +1,196 @@
 [
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/24-graph-traversals/linux/x86_64/release/24-graph-traversals/BFS.cpp.o", "24-graph-traversals/BFS.cpp"],
-  "file": "24-graph-traversals/BFS.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/24-graph-traversals/linux/x86_64/release/24-graph-traversals/DFS.cpp.o", "24-graph-traversals/DFS.cpp"],
-  "file": "24-graph-traversals/DFS.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/24-graph-traversals/linux/x86_64/release/24-graph-traversals/main.cpp.o", "24-graph-traversals/main.cpp"],
-  "file": "24-graph-traversals/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/09-tree-traversals/linux/x86_64/release/09-tree-traversals/main.cpp.o", "09-tree-traversals/main.cpp"],
-  "file": "09-tree-traversals/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/11-bst/linux/x86_64/release/11-bst/main.cpp.o", "11-bst/main.cpp"],
-  "file": "11-bst/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/14-avl/linux/x86_64/release/14-avl/main.cpp.o", "14-avl/main.cpp"],
-  "file": "14-avl/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/19-priority-queues/linux/x86_64/release/19-priority-queues/main.cpp.o", "19-priority-queues/main.cpp"],
-  "file": "19-priority-queues/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/30-hashing/linux/x86_64/release/30-hashing/ChainedTable.cpp.o", "30-hashing/ChainedTable.cpp"],
-  "file": "30-hashing/ChainedTable.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/30-hashing/linux/x86_64/release/30-hashing/ProbingTable.cpp.o", "30-hashing/ProbingTable.cpp"],
-  "file": "30-hashing/ProbingTable.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/30-hashing/linux/x86_64/release/30-hashing/main.cpp.o", "30-hashing/main.cpp"],
-  "file": "30-hashing/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/16-range-search/linux/x86_64/release/16-range-search/main.cpp.o", "16-range-search/main.cpp"],
-  "file": "16-range-search/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/28-floyd-warshall/linux/x86_64/release/28-floyd-warshall/FloydWarshall.cpp.o", "28-floyd-warshall/FloydWarshall.cpp"],
-  "file": "28-floyd-warshall/FloydWarshall.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/28-floyd-warshall/linux/x86_64/release/28-floyd-warshall/main.cpp.o", "28-floyd-warshall/main.cpp"],
-  "file": "28-floyd-warshall/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/25-kruskal/linux/x86_64/release/25-kruskal/Kruskal.cpp.o", "25-kruskal/Kruskal.cpp"],
-  "file": "25-kruskal/Kruskal.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/25-kruskal/linux/x86_64/release/25-kruskal/main.cpp.o", "25-kruskal/main.cpp"],
-  "file": "25-kruskal/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/25-kruskal/linux/x86_64/release/21-disjoint-sets/DisjointSets.cpp.o", "21-disjoint-sets/DisjointSets.cpp"],
-  "file": "21-disjoint-sets/DisjointSets.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/10-dictionaries/linux/x86_64/release/10-dictionaries/main.cpp.o", "10-dictionaries/main.cpp"],
-  "file": "10-dictionaries/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/26-prim/VertexHeap.cpp.o", "26-prim/VertexHeap.cpp"],
-  "file": "26-prim/VertexHeap.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/26-prim/Prim.cpp.o", "26-prim/Prim.cpp"],
-  "file": "26-prim/Prim.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/26-prim/main.cpp.o", "26-prim/main.cpp"],
-  "file": "26-prim/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/21-disjoint-sets/DisjointSets.cpp.o", "21-disjoint-sets/DisjointSets.cpp"],
-  "file": "21-disjoint-sets/DisjointSets.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/25-kruskal/Kruskal.cpp.o", "25-kruskal/Kruskal.cpp"],
-  "file": "25-kruskal/Kruskal.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/15-lambdas/linux/x86_64/release/15-lambdas/lambdas.cpp.o", "15-lambdas/lambdas.cpp"],
-  "file": "15-lambdas/lambdas.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/15-lambdas/linux/x86_64/release/15-lambdas/main.cpp.o", "15-lambdas/main.cpp"],
-  "file": "15-lambdas/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/21-disjoint-sets/linux/x86_64/release/21-disjoint-sets/DisjointSets.cpp.o", "21-disjoint-sets/DisjointSets.cpp"],
   "file": "21-disjoint-sets/DisjointSets.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/21-disjoint-sets/linux/x86_64/release/21-disjoint-sets/main.cpp.o", "21-disjoint-sets/main.cpp"],
   "file": "21-disjoint-sets/main.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/16-range-search/linux/x86_64/release/16-range-search/main.cpp.o", "16-range-search/main.cpp"],
+  "file": "16-range-search/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/27-dijkstra/linux/x86_64/release/27-dijkstra/Dijkstra.cpp.o", "27-dijkstra/Dijkstra.cpp"],
   "file": "27-dijkstra/Dijkstra.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/27-dijkstra/linux/x86_64/release/27-dijkstra/main.cpp.o", "27-dijkstra/main.cpp"],
   "file": "27-dijkstra/main.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/06-stacks-queues/linux/x86_64/release/06-stacks-queues/main.cpp.o", "06-stacks-queues/main.cpp"],
   "file": "06-stacks-queues/main.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/17-btrees/linux/x86_64/release/17-btrees/main.cpp.o", "17-btrees/main.cpp"],
-  "file": "17-btrees/main.cpp"
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/24-graph-traversals/linux/x86_64/release/24-graph-traversals/BFS.cpp.o", "24-graph-traversals/BFS.cpp"],
+  "file": "24-graph-traversals/BFS.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/04-arraylist/linux/x86_64/release/04-arraylist/main.cpp.o", "04-arraylist/main.cpp"],
-  "file": "04-arraylist/main.cpp"
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/24-graph-traversals/linux/x86_64/release/24-graph-traversals/DFS.cpp.o", "24-graph-traversals/DFS.cpp"],
+  "file": "24-graph-traversals/DFS.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/31-bloom-filters/linux/x86_64/release/31-bloom-filters/BloomFilter.cpp.o", "31-bloom-filters/BloomFilter.cpp"],
-  "file": "31-bloom-filters/BloomFilter.cpp"
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/24-graph-traversals/linux/x86_64/release/24-graph-traversals/main.cpp.o", "24-graph-traversals/main.cpp"],
+  "file": "24-graph-traversals/main.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/31-bloom-filters/linux/x86_64/release/31-bloom-filters/main.cpp.o", "31-bloom-filters/main.cpp"],
-  "file": "31-bloom-filters/main.cpp"
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/19-priority-queues/linux/x86_64/release/19-priority-queues/main.cpp.o", "19-priority-queues/main.cpp"],
+  "file": "19-priority-queues/main.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/03-lists/linux/x86_64/release/03-lists/main.cpp.o", "03-lists/main.cpp"],
-  "file": "03-lists/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/23-graph-implementations/linux/x86_64/release/23-graph-implementations/Graph.cpp.o", "23-graph-implementations/Graph.cpp"],
-  "file": "23-graph-implementations/Graph.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/23-graph-implementations/linux/x86_64/release/23-graph-implementations/main.cpp.o", "23-graph-implementations/main.cpp"],
-  "file": "23-graph-implementations/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
-  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/32-cardinality/linux/x86_64/release/32-cardinality/main.cpp.o", "32-cardinality/main.cpp"],
-  "file": "32-cardinality/main.cpp"
-},
-{
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/07-iterators/linux/x86_64/release/07-iterators/main.cpp.o", "07-iterators/main.cpp"],
   "file": "07-iterators/main.cpp"
 },
 {
-  "directory": "/home/anirudh/uiuc/notes/cs225-notes/cs225_pg",
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/30-hashing/linux/x86_64/release/30-hashing/ChainedTable.cpp.o", "30-hashing/ChainedTable.cpp"],
+  "file": "30-hashing/ChainedTable.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/30-hashing/linux/x86_64/release/30-hashing/ProbingTable.cpp.o", "30-hashing/ProbingTable.cpp"],
+  "file": "30-hashing/ProbingTable.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/30-hashing/linux/x86_64/release/30-hashing/main.cpp.o", "30-hashing/main.cpp"],
+  "file": "30-hashing/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/25-kruskal/linux/x86_64/release/25-kruskal/Kruskal.cpp.o", "25-kruskal/Kruskal.cpp"],
+  "file": "25-kruskal/Kruskal.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/25-kruskal/linux/x86_64/release/25-kruskal/main.cpp.o", "25-kruskal/main.cpp"],
+  "file": "25-kruskal/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/25-kruskal/linux/x86_64/release/21-disjoint-sets/DisjointSets.cpp.o", "21-disjoint-sets/DisjointSets.cpp"],
+  "file": "21-disjoint-sets/DisjointSets.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/26-prim/Prim.cpp.o", "26-prim/Prim.cpp"],
+  "file": "26-prim/Prim.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/26-prim/VertexHeap.cpp.o", "26-prim/VertexHeap.cpp"],
+  "file": "26-prim/VertexHeap.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/26-prim/main.cpp.o", "26-prim/main.cpp"],
+  "file": "26-prim/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/21-disjoint-sets/DisjointSets.cpp.o", "21-disjoint-sets/DisjointSets.cpp"],
+  "file": "21-disjoint-sets/DisjointSets.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/26-prim/linux/x86_64/release/25-kruskal/Kruskal.cpp.o", "25-kruskal/Kruskal.cpp"],
+  "file": "25-kruskal/Kruskal.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/11-bst/linux/x86_64/release/11-bst/main.cpp.o", "11-bst/main.cpp"],
+  "file": "11-bst/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/03-lists/linux/x86_64/release/03-lists/main.cpp.o", "03-lists/main.cpp"],
+  "file": "03-lists/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/32-cardinality/linux/x86_64/release/32-cardinality/main.cpp.o", "32-cardinality/main.cpp"],
+  "file": "32-cardinality/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/28-floyd-warshall/linux/x86_64/release/28-floyd-warshall/FloydWarshall.cpp.o", "28-floyd-warshall/FloydWarshall.cpp"],
+  "file": "28-floyd-warshall/FloydWarshall.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/28-floyd-warshall/linux/x86_64/release/28-floyd-warshall/main.cpp.o", "28-floyd-warshall/main.cpp"],
+  "file": "28-floyd-warshall/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/04-arraylist/linux/x86_64/release/04-arraylist/main.cpp.o", "04-arraylist/main.cpp"],
+  "file": "04-arraylist/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
   "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/20-heaps/linux/x86_64/release/20-heaps/main.cpp.o", "20-heaps/main.cpp"],
   "file": "20-heaps/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/14-avl/linux/x86_64/release/14-avl/main.cpp.o", "14-avl/main.cpp"],
+  "file": "14-avl/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/15-lambdas/linux/x86_64/release/15-lambdas/lambdas.cpp.o", "15-lambdas/lambdas.cpp"],
+  "file": "15-lambdas/lambdas.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/15-lambdas/linux/x86_64/release/15-lambdas/main.cpp.o", "15-lambdas/main.cpp"],
+  "file": "15-lambdas/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/23-graph-implementations/linux/x86_64/release/23-graph-implementations/Graph.cpp.o", "23-graph-implementations/Graph.cpp"],
+  "file": "23-graph-implementations/Graph.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/23-graph-implementations/linux/x86_64/release/23-graph-implementations/main.cpp.o", "23-graph-implementations/main.cpp"],
+  "file": "23-graph-implementations/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/31-bloom-filters/linux/x86_64/release/31-bloom-filters/BloomFilter.cpp.o", "31-bloom-filters/BloomFilter.cpp"],
+  "file": "31-bloom-filters/BloomFilter.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/31-bloom-filters/linux/x86_64/release/31-bloom-filters/main.cpp.o", "31-bloom-filters/main.cpp"],
+  "file": "31-bloom-filters/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/17-btrees/linux/x86_64/release/17-btrees/main.cpp.o", "17-btrees/main.cpp"],
+  "file": "17-btrees/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/09-tree-traversals/linux/x86_64/release/09-tree-traversals/main.cpp.o", "09-tree-traversals/main.cpp"],
+  "file": "09-tree-traversals/main.cpp"
+},
+{
+  "directory": "/home/anirudh/uiuc/notes/cs225/cs225_pg",
+  "arguments": ["/run/current-system/sw/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-DNDEBUG", "-o", "build/.objs/10-dictionaries/linux/x86_64/release/10-dictionaries/main.cpp.o", "10-dictionaries/main.cpp"],
+  "file": "10-dictionaries/main.cpp"
 }]
