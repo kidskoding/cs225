@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['background_0',['Background',['../md_notes_2module-01.html#autotoc_md43',1,'']]],
-  ['balance_1',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['based_20searches_2',['Range-Based Searches',['../md_notes_2module-16.html#autotoc_md101',1,'']]],
-  ['bbst_3',['Summarizing AVL and BBST',['../md_notes_2module-14.html#autotoc_md94',1,'']]],
-  ['bbst_20range_20search_20and_20kd_20trees_4',['Module 16 - BBST Range Search and KD Trees',['../md_notes_2module-16.html',1,'']]],
-  ['begin_20and_20end_20for_20array_20and_20linkedlist_5',['Implementing &lt;span class=&quot;tt&quot;&gt;begin()&lt;/span&gt; and &lt;span class=&quot;tt&quot;&gt;end()&lt;/span&gt; for &lt;span class=&quot;tt&quot;&gt;Array&lt;/span&gt; and &lt;span class=&quot;tt&quot;&gt;LinkedList&lt;/span&gt;',['../md_notes_2module-07.html#autotoc_md70',1,'']]],
-  ['big_20o_6',['Big-O',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md4',1,'']]],
-  ['big_20o_20of_20common_20algorithms_7',['Big-O of Common Algorithms',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md5',1,'']]],
-  ['binary_20trees_20as_20a_20search_20structure_8',['Using Binary Trees as a Search Structure',['../md_notes_2module-10.html#autotoc_md83',1,'']]],
-  ['binarytree_9',['BinaryTree',['../classBinaryTree.html',1,'']]],
-  ['bipartite_20graph_10',['Bipartite Graph',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md11',1,'']]],
-  ['bloom_20filters_11',['Module 31 - Bloom Filters',['../md_notes_2module-31.html',1,'']]],
-  ['bound_12',['Upper and Lower Bound',['../md_notes_2module-16.html#autotoc_md100',1,'']]],
-  ['bst_13',['BST',['../classBST.html',1,'']]],
-  ['bst_20analysis_14',['BST-Analysis',['../md_notes_2module-11.html#autotoc_md88',1,'']]],
-  ['bst_20and_20bst_20implementation_15',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20balance_16',['Module 12 - BST Balance',['../md_notes_2module-12.html',1,'']]],
-  ['bst_20implementation_17',['Module 11 - BST and BST Implementation',['../md_notes_2module-11.html',1,'']]],
-  ['bst_20rotations_18',['Module 13 - BST Rotations',['../md_notes_2module-13.html',1,'']]],
-  ['btree_20analysis_19',['Module 18 - BTree Analysis',['../md_notes_2module-18.html',1,'']]],
-  ['btrees_20',['Module 17 - BTrees',['../md_notes_2module-17.html',1,'']]],
-  ['by_20adding_202_20elements_20every_20time_21',['Resizing by adding 2 elements every time',['../md_notes_2module-05.html#autotoc_md59',1,'']]],
-  ['by_20doubling_20the_20elements_20every_20time_22',['Resizing by doubling the elements every time',['../md_notes_2module-05.html#autotoc_md60',1,'']]],
-  ['by_20induction_23',['Proofs by Induction',['../md_notes_2midterm-reviews_2midterm-0.html#autotoc_md3',1,'']]]
+  ['remove_0',['remove',['../classBST.html#acd086619a0f5a87078f9de52c7f6207b',1,'BST::remove()'],['../classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe',1,'LinkedList::remove()']]]
 ];
