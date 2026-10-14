@@ -1,6 +1,6 @@
-# CS 225 Notes
+# cs225-notes
 
-Notes for UIUC CS 225 (Data Structures and Algorithms), written in [Typst](https://typst.app).
+notes for uiuc cs 225 (Data Structures and Algorithms), written in [Typst](https://typst.app).
 
 - **Notes:** [`cs225.pdf`](cs225.pdf), built from [`notes/main.typ`](notes/main.typ)
 - **API docs:** Doxygen docs for the implementations in [`cs225_pg/`](cs225_pg), published [here](https://kidskoding.github.io/cs225-notes/)
@@ -20,3 +20,4 @@ CI rebuilds `cs225.pdf` and the API docs on every push to `master`.
 - `notes/diagrams.typ`: `tree`, `steps`, `linked-list`, and `array-cells` helpers (built on CeTZ)
 - `notes/modules/`: one file per module
 - `notes/midterm-reviews/`: midterm reviews (appendix)
+
