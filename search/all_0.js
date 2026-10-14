@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['arraylist_0',['ArrayList',['../classArrayList.html',1,'']]],
-  ['arraylist_2eh_1',['ArrayList.h',['../ArrayList_8h.html',1,'']]],
-  ['arraylist_2ehpp_2',['ArrayList.hpp',['../ArrayList_8hpp.html',1,'']]],
-  ['avl_3',['avl',['../classAVL.html',1,'AVL&lt; K, V &gt;'],['../classAVL.html#abf6d8a741e792171740be7b8e041d736',1,'AVL::AVL()']]],
-  ['avl_2eh_4',['AVL.h',['../AVL_8h.html',1,'']]],
-  ['avl_2ehpp_5',['AVL.hpp',['../AVL_8hpp.html',1,'']]]
+  ['_5ffetchchild_0',['_fetchChild',['../structBTree_1_1BTreeNode.html#af807c7e4738b29b4023b096d8935de11',1,'BTree::BTreeNode']]],
+  ['_5funion_1',['_union',['../classDisjointSets.html#a0c43bfdf9f3bb5c42986b22635ab0d99',1,'DisjointSets']]]
 ];

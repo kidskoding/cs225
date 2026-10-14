@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS 225: cs225_pg/include/BST.hpp Source File</title>
+<title>CS 225: cs225_pg/11-bst/BST.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,151 +100,182 @@ $(document).ready(function(){initNavTree('BST_8hpp_source.html',''); initResizab
 <div class="contents">
 <a href="BST_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// BST.hpp</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="BST_8h.html">BST.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">typename</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::TreeNode</a>*&amp; <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_find</a>(TreeNode*&amp; root, <span class="keyword">const</span> K&amp; key) {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// if the root&#39;s pointer is null, return the root or</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="comment">// if the root&#39;s key equals the given key, return the root</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">if</span>(root == <span class="keyword">nullptr</span> || root-&gt;key == key) { <span class="keywordflow">return</span> root; }</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">// if the root&#39;s key is greater than the given key, call find on the left subtree</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">if</span>(root-&gt;key &gt; key) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">return</span> _find(root-&gt;left, key);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="BST_8h.html">BST.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">typename</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::TreeNode</a>*&amp; <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_find</a>(TreeNode*&amp; root, <span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">K</a>&amp; key) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// if the root&#39;s pointer is null, return the root or</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// if the root&#39;s key equals the given key, return the root</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">if</span>(root == <span class="keyword">nullptr</span> || root-&gt;key == key) { <span class="keywordflow">return</span> root; }</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// if the root&#39;s key is less than the given key, call find on the right subtree</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> _find(root-&gt;right, key);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classBST.html#a404184622fb9591163ad9a3e598e2bbb">   21</a></span><span class="keyword">typename</span> <a class="code hl_typedef" href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST&lt;K, V&gt;::TreeIterator</a> <a class="code hl_function" href="classBST.html#a404184622fb9591163ad9a3e598e2bbb">BST&lt;K, V&gt;::find</a>(<span class="keyword">const</span> K&amp; key)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// use `node_map` to quickly find the value without traversing the tree</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> node_map.find(key);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// if the root&#39;s key is greater than the given key, call find on the left subtree</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span>(root-&gt;key &gt; key) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> _find(root-&gt;left, key);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// if the root&#39;s key is less than the given key, call find on the right subtree</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> _find(root-&gt;right, key);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classBST.html#a9efd43cb12222c319d7f92140ecdfceb">   29</a></span><span class="keyword">typename</span> <a class="code hl_typedef" href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST&lt;K, V&gt;::TreeIterator</a> <a class="code hl_function" href="classBST.html#a9efd43cb12222c319d7f92140ecdfceb">BST&lt;K, V&gt;::find</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">K</a>&amp; key) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// use `node_map` to quickly find the value without traversing the tree</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> node_map.find(key);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_insert</a>(TreeNode*&amp; root, <span class="keyword">const</span> K&amp; key, <span class="keyword">const</span> V&amp; value) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// grab the reference/location to the pointer where `key` should be inserted</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TreeNode*&amp; loc = _find(root, key);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// assign `loc` to point to a new `TreeNode` with the given `key` and `value`</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    loc = <span class="keyword">new</span> TreeNode(key, value);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classBST.html#a66d8fc009544c9e0508bfe7911ce8710">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBST.html#a66d8fc009544c9e0508bfe7911ce8710">BST&lt;K, V&gt;::insert</a>(K key, V value) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    _insert(root, key, value);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// also insert the key-value pair into the hashmap for fast lookup and iterator support</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    node_map[key] = value;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
-</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">typename</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::TreeNode</a>*&amp; <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_iop</a>(TreeNode*&amp; node) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// grab the left subtree of the root</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    TreeNode*&amp; curr = node-&gt;left;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// iterate through each right child of the left subtree to find the rightmost node</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// return the rightmost node (since that always contains the greatest value)</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">while</span>(curr-&gt;right != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        curr = curr-&gt;right;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> curr;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> K, <span class="keyword">class</span> V&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_insert</a>(TreeNode*&amp; root, <span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">K</a>&amp; key, <span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">V</a>&amp; value) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// grab the reference/location to the pointer where `key` should be inserted</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TreeNode*&amp; <a class="code hl_struct" href="structListNode.html">loc</a> = _find(root, key);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// the notes assume keys are unique; if `key` is already here, just update its value</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// (overwriting `loc` would throw away the node and both of its subtrees)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">loc</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_struct" href="structListNode.html">loc</a>-&gt;value = value;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// assign `loc` to point to a new `TreeNode` with the given `key` and `value`</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_struct" href="structListNode.html">loc</a> = <span class="keyword">new</span> TreeNode(key, value);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_swap</a>(TreeNode* a, TreeNode* b) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// swap the internal data of nodes `a` and `b`</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::swap(a-&gt;key, b-&gt;key);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::swap(a-&gt;value, b-&gt;value);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_remove</a>(TreeNode*&amp; node, <span class="keyword">const</span> K&amp; key) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span>(node != <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span>; }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span>(key &lt; node-&gt;key) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">// descend down the left subtree because left subtree contains the smaller values</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        _remove(node-&gt;left, key);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(key &gt; node-&gt;key) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="comment">// descend down the right subtree because right subtree contains the larger values</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        _remove(node-&gt;right, key);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">// case 1: the leaf node case - free the node and set it to null</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span>(node-&gt;left != <span class="keyword">nullptr</span> &amp;&amp; node-&gt;right != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keyword">delete</span> node;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            node = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        } </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="comment">// case 2: the one child node case (either left or right child)</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node-&gt;left != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="comment">// remove the node by connecting its parent directly to the node’s only child (the right child)</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            TreeNode* tmp = node;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            node = node-&gt;right;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keyword">delete</span> tmp;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node-&gt;right != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="comment">// remove the node by connecting its parent directly to the node’s only child (the left child)</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            TreeNode* tmp = node;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            node = node-&gt;left;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keyword">delete</span> tmp;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="comment">// case 3: the two child node case (both left and right child)</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">// swap the removed node with the iop and recursively call the function on the left subtree</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            K iop_key = node-&gt;key;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            TreeNode* iop = _iop(node);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            _swap(iop, node);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="comment">// recursively call on the left subtree because the iop (the node to remove) is located there</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            _remove(node-&gt;left, iop_key);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classBST.html#acd086619a0f5a87078f9de52c7f6207b">  108</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBST.html#acd086619a0f5a87078f9de52c7f6207b">BST&lt;K, V&gt;::remove</a>(<span class="keyword">const</span> K&amp; key) {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    _remove(root, key);</div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classBST.html#af4d3fb01f3210f297e93d096c0d0e379">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBST.html#af4d3fb01f3210f297e93d096c0d0e379">BST&lt;K, V&gt;::insert</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">K</a> key, <span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">V</a> value) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    _insert(root, key, value);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// also insert the key-value pair into the hashmap for fast lookup and iterator support</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    node_map[key] = value;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">typename</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::TreeNode</a>*&amp; <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_iop</a>(TreeNode*&amp; root) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// grab a pointer to the left subtree pointer of the root</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// (a pointer to the pointer, so moving `curr` never overwrites a link in the tree)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    TreeNode** <a class="code hl_struct" href="structListNode.html">curr</a> = &amp;root-&gt;left;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// iterate through each right child of the left subtree to find the rightmost node</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// return the rightmost node (since that always contains the greatest value)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">while</span>((*curr)-&gt;right != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <a class="code hl_struct" href="structListNode.html">curr</a> = &amp;(*curr)-&gt;right;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> *<a class="code hl_struct" href="structListNode.html">curr</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_swap</a>(TreeNode* <a class="code hl_struct" href="structListNode.html">a</a>, TreeNode* <a class="code hl_struct" href="structListNode.html">b</a>) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// swap the internal data of nodes `a` and `b`</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::swap(<a class="code hl_struct" href="structListNode.html">a</a>-&gt;key, <a class="code hl_struct" href="structListNode.html">b</a>-&gt;key);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::swap(<a class="code hl_struct" href="structListNode.html">a</a>-&gt;value, <a class="code hl_struct" href="structListNode.html">b</a>-&gt;value);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_remove</a>(TreeNode*&amp; <a class="code hl_struct" href="structListNode.html">node</a>, <span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">K</a>&amp; key) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">node</a> == <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">key &lt; node-&gt;</a>key) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">// descend down the left subtree because left subtree contains the smaller values</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        _remove(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;left, key);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(key &gt; <a class="code hl_struct" href="structListNode.html">node</a>-&gt;key) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">// descend down the right subtree because right subtree contains the larger values</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        _remove(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;right, key);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">// case 1: the leaf node case - free the node and set it to null</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;left == <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_struct" href="structListNode.html">node</a>-&gt;right == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keyword">delete</span> <a class="code hl_struct" href="structListNode.html">node</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <a class="code hl_struct" href="structListNode.html">node</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// remove the key from the map</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    node_map.erase(key);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">// case 2: the one child node case (either left or right child)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;left == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="comment">// remove the node by connecting its parent directly to the node&#39;s only child (the right child)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            TreeNode* <a class="code hl_struct" href="structListNode.html">tmp</a> = <a class="code hl_struct" href="structListNode.html">node</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <a class="code hl_struct" href="structListNode.html">node</a> = <a class="code hl_struct" href="structListNode.html">node</a>-&gt;right;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keyword">delete</span> <a class="code hl_struct" href="structListNode.html">tmp</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;right == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="comment">// remove the node by connecting its parent directly to the node&#39;s only child (the left child)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            TreeNode* <a class="code hl_struct" href="structListNode.html">tmp</a> = <a class="code hl_struct" href="structListNode.html">node</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_struct" href="structListNode.html">node</a> = <a class="code hl_struct" href="structListNode.html">node</a>-&gt;left;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keyword">delete</span> <a class="code hl_struct" href="structListNode.html">tmp</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="comment">// case 3: the two child node case (both left and right child)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">// swap the removed node with the iop and recursively call the function on the left subtree</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <a class="code hl_struct" href="structListNode.html">K</a> <a class="code hl_struct" href="structListNode.html">iop_key</a> = <a class="code hl_struct" href="structListNode.html">node</a>-&gt;key;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            TreeNode* <a class="code hl_struct" href="structListNode.html">iop</a> = _iop(<a class="code hl_struct" href="structListNode.html">node</a>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            _swap(<a class="code hl_struct" href="structListNode.html">iop</a>, <a class="code hl_struct" href="structListNode.html">node</a>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="comment">// recursively call on the left subtree because the iop (the node to remove) is located there</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            _remove(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;left, <a class="code hl_struct" href="structListNode.html">iop_key</a>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classBST.html#acd086619a0f5a87078f9de52c7f6207b">  142</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBST.html#acd086619a0f5a87078f9de52c7f6207b">BST&lt;K, V&gt;::remove</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">K</a>&amp; key) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    _remove(root, key);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="comment">// remove the key from the map</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    node_map.erase(key);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
 </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classBST.html#a0410bc2f5b7416d942168fd022c3bb91">  116</a></span><span class="keyword">typename</span> <a class="code hl_typedef" href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST&lt;K, V&gt;::TreeIterator</a> <a class="code hl_function" href="classBST.html#a0410bc2f5b7416d942168fd022c3bb91">BST&lt;K, V&gt;::begin</a>() {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span> node_map.begin();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classBST.html#a0410bc2f5b7416d942168fd022c3bb91">  153</a></span><span class="keyword">typename</span> <a class="code hl_typedef" href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST&lt;K, V&gt;::TreeIterator</a> <a class="code hl_function" href="classBST.html#a0410bc2f5b7416d942168fd022c3bb91">BST&lt;K, V&gt;::begin</a>() {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">return</span> node_map.begin();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
 </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classBST.html#a97d59293efad2e40f3de47cf096631d5">  121</a></span><span class="keyword">typename</span> <a class="code hl_typedef" href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST&lt;K, V&gt;::TreeIterator</a> <a class="code hl_function" href="classBST.html#a97d59293efad2e40f3de47cf096631d5">BST&lt;K, V&gt;::end</a>() {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> node_map.end();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classBST.html#a97d59293efad2e40f3de47cf096631d5">  161</a></span><span class="keyword">typename</span> <a class="code hl_typedef" href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST&lt;K, V&gt;::TreeIterator</a> <a class="code hl_function" href="classBST.html#a97d59293efad2e40f3de47cf096631d5">BST&lt;K, V&gt;::end</a>() {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> node_map.end();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
 </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classBST.html#ae4b6f05dfb62cbfd20ce15fcf93dd9b4">  169</a></span>std::vector&lt;K&gt; <a class="code hl_function" href="classBST.html#ae4b6f05dfb62cbfd20ce15fcf93dd9b4">BST&lt;K, V&gt;::keys</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    std::vector&lt;K&gt; <a class="code hl_struct" href="structListNode.html">out</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    _keys(root, <a class="code hl_struct" href="structListNode.html">out</a>);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structListNode.html">out</a>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keywordtype">void</span> <a class="code hl_class" href="classBST.html">BST&lt;K, V&gt;::_keys</a>(TreeNode* <a class="code hl_struct" href="structListNode.html">node</a>, std::vector&lt;K&gt;&amp; <a class="code hl_struct" href="structListNode.html">out</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">node</a> == <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="comment">// in-order: left subtree, node, right subtree, which is sorted in a BST</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    _keys(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;left, <a class="code hl_struct" href="structListNode.html">out</a>);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <a class="code hl_struct" href="structListNode.html">out</a>.push_back(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;key);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    _keys(<a class="code hl_struct" href="structListNode.html">node</a>-&gt;right, <a class="code hl_struct" href="structListNode.html">out</a>);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
 <div class="ttc" id="aBST_8h_html"><div class="ttname"><a href="BST_8h.html">BST.h</a></div></div>
-<div class="ttc" id="aclassBST_html"><div class="ttname"><a href="classBST.html">BST</a></div><div class="ttdef"><b>Definition</b> BST.h:7</div></div>
-<div class="ttc" id="aclassBST_html_a0410bc2f5b7416d942168fd022c3bb91"><div class="ttname"><a href="classBST.html#a0410bc2f5b7416d942168fd022c3bb91">BST::begin</a></div><div class="ttdeci">TreeIterator begin()</div><div class="ttdef"><b>Definition</b> BST.hpp:116</div></div>
-<div class="ttc" id="aclassBST_html_a0787ceb5de8277f68916a5135543b19f"><div class="ttname"><a href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST::TreeIterator</a></div><div class="ttdeci">typename std::unordered_map&lt; K, V &gt;::iterator TreeIterator</div><div class="ttdef"><b>Definition</b> BST.h:9</div></div>
-<div class="ttc" id="aclassBST_html_a404184622fb9591163ad9a3e598e2bbb"><div class="ttname"><a href="classBST.html#a404184622fb9591163ad9a3e598e2bbb">BST::find</a></div><div class="ttdeci">TreeIterator find(const K &amp;key) const</div><div class="ttdef"><b>Definition</b> BST.hpp:21</div></div>
-<div class="ttc" id="aclassBST_html_a66d8fc009544c9e0508bfe7911ce8710"><div class="ttname"><a href="classBST.html#a66d8fc009544c9e0508bfe7911ce8710">BST::insert</a></div><div class="ttdeci">void insert(K key, V value)</div><div class="ttdef"><b>Definition</b> BST.hpp:36</div></div>
-<div class="ttc" id="aclassBST_html_a97d59293efad2e40f3de47cf096631d5"><div class="ttname"><a href="classBST.html#a97d59293efad2e40f3de47cf096631d5">BST::end</a></div><div class="ttdeci">TreeIterator end()</div><div class="ttdef"><b>Definition</b> BST.hpp:121</div></div>
-<div class="ttc" id="aclassBST_html_acd086619a0f5a87078f9de52c7f6207b"><div class="ttname"><a href="classBST.html#acd086619a0f5a87078f9de52c7f6207b">BST::remove</a></div><div class="ttdeci">void remove(const K &amp;key)</div><div class="ttdef"><b>Definition</b> BST.hpp:108</div></div>
+<div class="ttc" id="aclassBST_html"><div class="ttname"><a href="classBST.html">BST</a></div><div class="ttdef"><b>Definition</b> BST.h:9</div></div>
+<div class="ttc" id="aclassBST_html_a0410bc2f5b7416d942168fd022c3bb91"><div class="ttname"><a href="classBST.html#a0410bc2f5b7416d942168fd022c3bb91">BST::begin</a></div><div class="ttdeci">TreeIterator begin()</div><div class="ttdef"><b>Definition</b> BST.hpp:153</div></div>
+<div class="ttc" id="aclassBST_html_a0787ceb5de8277f68916a5135543b19f"><div class="ttname"><a href="classBST.html#a0787ceb5de8277f68916a5135543b19f">BST::TreeIterator</a></div><div class="ttdeci">typename std::unordered_map&lt; K, V &gt;::iterator TreeIterator</div><div class="ttdef"><b>Definition</b> BST.h:11</div></div>
+<div class="ttc" id="aclassBST_html_a97d59293efad2e40f3de47cf096631d5"><div class="ttname"><a href="classBST.html#a97d59293efad2e40f3de47cf096631d5">BST::end</a></div><div class="ttdeci">TreeIterator end()</div><div class="ttdef"><b>Definition</b> BST.hpp:161</div></div>
+<div class="ttc" id="aclassBST_html_a9efd43cb12222c319d7f92140ecdfceb"><div class="ttname"><a href="classBST.html#a9efd43cb12222c319d7f92140ecdfceb">BST::find</a></div><div class="ttdeci">TreeIterator find(const K &amp;key)</div><div class="ttdef"><b>Definition</b> BST.hpp:29</div></div>
+<div class="ttc" id="aclassBST_html_acd086619a0f5a87078f9de52c7f6207b"><div class="ttname"><a href="classBST.html#acd086619a0f5a87078f9de52c7f6207b">BST::remove</a></div><div class="ttdeci">void remove(const K &amp;key)</div><div class="ttdef"><b>Definition</b> BST.hpp:142</div></div>
+<div class="ttc" id="aclassBST_html_ae4b6f05dfb62cbfd20ce15fcf93dd9b4"><div class="ttname"><a href="classBST.html#ae4b6f05dfb62cbfd20ce15fcf93dd9b4">BST::keys</a></div><div class="ttdeci">std::vector&lt; K &gt; keys() const</div><div class="ttdef"><b>Definition</b> BST.hpp:169</div></div>
+<div class="ttc" id="aclassBST_html_af4d3fb01f3210f297e93d096c0d0e379"><div class="ttname"><a href="classBST.html#af4d3fb01f3210f297e93d096c0d0e379">BST::insert</a></div><div class="ttdeci">void insert(const K key, const V value)</div><div class="ttdef"><b>Definition</b> BST.hpp:57</div></div>
+<div class="ttc" id="astructListNode_html"><div class="ttname"><a href="structListNode.html">ListNode</a></div><div class="ttdef"><b>Definition</b> LinkedList.h:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_695e581f95cdc076809143410ccebcfb.html">cs225_pg</a></li><li class="navelem"><a class="el" href="dir_f21bb1378b12e43122e406b991433d19.html">include</a></li><li class="navelem"><a class="el" href="BST_8hpp.html">BST.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_695e581f95cdc076809143410ccebcfb.html">cs225_pg</a></li><li class="navelem"><a class="el" href="dir_6c83bf35d3dfdbf65aee048065c95c87.html">11-bst</a></li><li class="navelem"><a class="el" href="BST_8hpp.html">BST.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

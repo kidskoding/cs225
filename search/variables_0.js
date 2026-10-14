@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_0',['data',['../structListNode.html#a935e06f21b246fb3a0987dd3f9d28528',1,'ListNode']]]
+  ['adj_0',['adj',['../structtraversal_1_1Graph.html#a70012d7e3460fb9c5a54e0200540e960',1,'traversal::Graph']]]
 ];

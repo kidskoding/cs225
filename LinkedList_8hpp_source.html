@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS 225: cs225_pg/include/LinkedList.hpp Source File</title>
+<title>CS 225: cs225_pg/03-lists/LinkedList.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,109 +100,111 @@ $(document).ready(function(){initNavTree('LinkedList_8hpp_source.html',''); init
 <div class="contents">
 <a href="LinkedList_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// LinkedList.hpp</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="LinkedList_8h.html">LinkedList.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">LinkedList&lt;T&gt;::insertAtFront</a>(<span class="keyword">const</span> T&amp; data) {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// dynamically allocate the data to the heap</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* newNode = <span class="keyword">new</span> <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>(data);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// reassign the next pointer to the head</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    newNode-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> = head;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// reassign the head pointer to the newly created node</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    head = newNode;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
-</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="LinkedList_8h.html">LinkedList.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">   10</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">LinkedList&lt;T&gt;::insertAtFront</a>(<span class="keyword">const</span> T&amp; data) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">// Dynamically allocate the data to the heap</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* newNode = <span class="keyword">new</span> <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>(data);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">// Reassign the next pointer to the head</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_struct" href="structListNode.html">newNode</a>-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> = head;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32">   18</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32">LinkedList&lt;T&gt;::insert</a>(<span class="keyword">const</span> T&amp; data, <span class="keywordtype">int</span> index) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">// call `find` to find the `ListNode` at the given index</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; nodeAtIndex = find(index);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// dynamically allocate the data to the heap</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* newNode = <span class="keyword">new</span> <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>(data);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// reassign the next node of the newly created node to be the `ListNode` found at the given index</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    newNode-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> = nodeAtIndex;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// reassign the found `ListNode` at the given index&#39;s pointer to the newly created node from the given data</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    nodeAtIndex = newNode;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// Reassign the head pointer to the newly created node</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    head = <a class="code hl_struct" href="structListNode.html">newNode</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32">   25</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32">LinkedList&lt;T&gt;::insert</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structListNode.html">T</a>&amp; data, <span class="keywordtype">int</span> <a class="code hl_struct" href="structListNode.html">index</a>) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// Call `find` to find the `ListNode` at the given index</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; <a class="code hl_struct" href="structListNode.html">nodeAtIndex</a> = find(<a class="code hl_struct" href="structListNode.html">index</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// Dynamically allocate the data to the heap</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* <a class="code hl_struct" href="structListNode.html">newNode</a> = <span class="keyword">new</span> <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>(<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">   33</a></span><a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; <a class="code hl_function" href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">LinkedList&lt;T&gt;::find</a>(<span class="keywordtype">int</span> index) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// return the head if the index is 0</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// we know that the first node in the list is always the head!</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span>(index == 0) { </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> head; </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// create a copy pointer of the head to traverse through the list!</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* curr = head;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// traverse through the list to find the node right before the given index</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">int</span> x = 0;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">while</span>(curr != <span class="keyword">nullptr</span> &amp;&amp; x &lt; index - 1) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        curr = curr-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        x += 1;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// Reassign the next node of the newly created node to be the `ListNode` found at the given index</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structListNode.html">newNode</a>-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> = <a class="code hl_struct" href="structListNode.html">nodeAtIndex</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// Reassign the found `ListNode` at the given index&#39;s pointer to the newly created node from the given data</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_struct" href="structListNode.html">nodeAtIndex</a> = <a class="code hl_struct" href="structListNode.html">newNode</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">   43</a></span><a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; <a class="code hl_function" href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">LinkedList&lt;T&gt;::find</a>(<span class="keywordtype">int</span> <a class="code hl_struct" href="structListNode.html">index</a>) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Return the head if the index is 0</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// We know that the first node in the list is always the head!</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="structListNode.html">index</a> == 0 || head == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> head;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// return the next node in the list, since that matches the node at the given index</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> curr-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// Create a copy pointer of the head to traverse through the list!</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* <a class="code hl_struct" href="structListNode.html">curr</a> = head;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// Traverse through the list to find the node right before the given index</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Stop early at the last node so `curr` never becomes null</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> x = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">while</span>(<a class="code hl_struct" href="structListNode.html">x &lt; index - 1 &amp;&amp; curr-&gt;</a><a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_struct" href="structListNode.html">curr</a> = <a class="code hl_struct" href="structListNode.html">curr</a>-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        x += 1;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// Return the next node in the list, since that matches the node at the given index</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structListNode.html">curr</a>-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classLinkedList.html#a199fff56292949cdec68970cc5197a66">   55</a></span>T&amp; <a class="code hl_function" href="classLinkedList.html#a199fff56292949cdec68970cc5197a66">LinkedList&lt;T&gt;::operator[]</a>(<span class="keywordtype">int</span> index) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// call `find` to find the `ListNode` at the given index    </span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; loc = find(index);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// return the data that the `ListNode` at the given index holds</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> loc-&gt;<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classLinkedList.html#a199fff56292949cdec68970cc5197a66">   69</a></span><a class="code hl_struct" href="structListNode.html">T</a>&amp; <a class="code hl_function" href="classLinkedList.html#a199fff56292949cdec68970cc5197a66">LinkedList&lt;T&gt;::operator[]</a>(<span class="keywordtype">int</span> <a class="code hl_struct" href="structListNode.html">index</a>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Call `find` to find the `ListNode` at the given index</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* <a class="code hl_struct" href="structListNode.html">loc</a> = find(<a class="code hl_struct" href="structListNode.html">index</a>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// Return the data that the `ListNode` at the given index holds</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structListNode.html">loc</a>-&gt;<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">   64</a></span>T <a class="code hl_function" href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">LinkedList&lt;T&gt;::remove</a>(<span class="keywordtype">int</span> index) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// find the `ListNode` to be removed</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; toRemove = find(index);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// create a temporary `ListNode` containing what should be removed</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* temp = toRemove;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// create a `val` variable to store temp&#39;s data</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    T val = temp-&gt;<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// reassign `toRemove` to the next node in the `ListNode`</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    toRemove = toRemove-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// delete `temp` from memory since we no longer need it</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">delete</span> temp;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> val;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">   81</a></span><a class="code hl_struct" href="structListNode.html">T</a> <a class="code hl_function" href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">LinkedList&lt;T&gt;::remove</a>(<span class="keywordtype">int</span> <a class="code hl_struct" href="structListNode.html">index</a>) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Find the `ListNode` to be removed</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>*&amp; <a class="code hl_struct" href="structListNode.html">toRemove</a> = find(<a class="code hl_struct" href="structListNode.html">index</a>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// Create a temporary `ListNode` containing what should be removed</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_struct" href="structListNode.html">ListNode&lt;T&gt;</a>* <a class="code hl_struct" href="structListNode.html">temp</a> = <a class="code hl_struct" href="structListNode.html">toRemove</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">// Create a `val` variable to store temp&#39;s data</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_struct" href="structListNode.html">T</a> <a class="code hl_struct" href="structListNode.html">val</a> = <a class="code hl_struct" href="structListNode.html">temp</a>-&gt;<a class="code hl_variable" href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">data</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Reassign `toRemove` to the next node in the `ListNode`</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_struct" href="structListNode.html">toRemove</a> = <a class="code hl_struct" href="structListNode.html">toRemove</a>-&gt;<a class="code hl_variable" href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">next</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// Delete `temp` from memory since we no longer need it</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">delete</span> <a class="code hl_struct" href="structListNode.html">temp</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structListNode.html">val</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 </div>
 <div class="ttc" id="aLinkedList_8h_html"><div class="ttname"><a href="LinkedList_8h.html">LinkedList.h</a></div></div>
-<div class="ttc" id="aclassLinkedList_html_a199fff56292949cdec68970cc5197a66"><div class="ttname"><a href="classLinkedList.html#a199fff56292949cdec68970cc5197a66">LinkedList::operator[]</a></div><div class="ttdeci">T &amp; operator[](int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:55</div></div>
-<div class="ttc" id="aclassLinkedList_html_aa85fc67f5f7a14fcff5a071317059b32"><div class="ttname"><a href="classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32">LinkedList::insert</a></div><div class="ttdeci">void insert(const T &amp;data, int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:18</div></div>
-<div class="ttc" id="aclassLinkedList_html_abfb6d7945b0d719b1d8ed7a40cce8dde"><div class="ttname"><a href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">LinkedList::find</a></div><div class="ttdeci">ListNode&lt; T &gt; *&amp; find(int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:33</div></div>
-<div class="ttc" id="aclassLinkedList_html_af331637727b3ada2f806c29b9f4cc6fe"><div class="ttname"><a href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">LinkedList::remove</a></div><div class="ttdeci">T remove(int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:64</div></div>
-<div class="ttc" id="aclassLinkedList_html_afe2698a20469566f34c4cfcc92ae6908"><div class="ttname"><a href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">LinkedList::insertAtFront</a></div><div class="ttdeci">void insertAtFront(const T &amp;data)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:6</div></div>
-<div class="ttc" id="astructListNode_html"><div class="ttname"><a href="structListNode.html">ListNode</a></div><div class="ttdef"><b>Definition</b> LinkedList.h:6</div></div>
-<div class="ttc" id="astructListNode_html_a935e06f21b246fb3a0987dd3f9d28528"><div class="ttname"><a href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">ListNode::data</a></div><div class="ttdeci">T data</div><div class="ttdef"><b>Definition</b> LinkedList.h:8</div></div>
-<div class="ttc" id="astructListNode_html_aa5d5cd1078f0342696f4fb713e0d7744"><div class="ttname"><a href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">ListNode::next</a></div><div class="ttdeci">ListNode * next</div><div class="ttdef"><b>Definition</b> LinkedList.h:11</div></div>
+<div class="ttc" id="aclassLinkedList_html_a199fff56292949cdec68970cc5197a66"><div class="ttname"><a href="classLinkedList.html#a199fff56292949cdec68970cc5197a66">LinkedList::operator[]</a></div><div class="ttdeci">T &amp; operator[](int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:69</div></div>
+<div class="ttc" id="aclassLinkedList_html_aa85fc67f5f7a14fcff5a071317059b32"><div class="ttname"><a href="classLinkedList.html#aa85fc67f5f7a14fcff5a071317059b32">LinkedList::insert</a></div><div class="ttdeci">void insert(const T &amp;data, int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:25</div></div>
+<div class="ttc" id="aclassLinkedList_html_abfb6d7945b0d719b1d8ed7a40cce8dde"><div class="ttname"><a href="classLinkedList.html#abfb6d7945b0d719b1d8ed7a40cce8dde">LinkedList::find</a></div><div class="ttdeci">ListNode&lt; T &gt; *&amp; find(int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:43</div></div>
+<div class="ttc" id="aclassLinkedList_html_af331637727b3ada2f806c29b9f4cc6fe"><div class="ttname"><a href="classLinkedList.html#af331637727b3ada2f806c29b9f4cc6fe">LinkedList::remove</a></div><div class="ttdeci">T remove(int index)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:81</div></div>
+<div class="ttc" id="aclassLinkedList_html_afe2698a20469566f34c4cfcc92ae6908"><div class="ttname"><a href="classLinkedList.html#afe2698a20469566f34c4cfcc92ae6908">LinkedList::insertAtFront</a></div><div class="ttdeci">void insertAtFront(const T &amp;data)</div><div class="ttdef"><b>Definition</b> LinkedList.hpp:10</div></div>
+<div class="ttc" id="astructListNode_html"><div class="ttname"><a href="structListNode.html">ListNode</a></div><div class="ttdef"><b>Definition</b> LinkedList.h:7</div></div>
+<div class="ttc" id="astructListNode_html_a935e06f21b246fb3a0987dd3f9d28528"><div class="ttname"><a href="structListNode.html#a935e06f21b246fb3a0987dd3f9d28528">ListNode::data</a></div><div class="ttdeci">T data</div><div class="ttdef"><b>Definition</b> LinkedList.h:9</div></div>
+<div class="ttc" id="astructListNode_html_aa5d5cd1078f0342696f4fb713e0d7744"><div class="ttname"><a href="structListNode.html#aa5d5cd1078f0342696f4fb713e0d7744">ListNode::next</a></div><div class="ttdeci">ListNode * next</div><div class="ttdef"><b>Definition</b> LinkedList.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_695e581f95cdc076809143410ccebcfb.html">cs225_pg</a></li><li class="navelem"><a class="el" href="dir_f21bb1378b12e43122e406b991433d19.html">include</a></li><li class="navelem"><a class="el" href="LinkedList_8hpp.html">LinkedList.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_695e581f95cdc076809143410ccebcfb.html">cs225_pg</a></li><li class="navelem"><a class="el" href="dir_e99deb0123c00b03e5f36cc30ed217a1.html">03-lists</a></li><li class="navelem"><a class="el" href="LinkedList_8hpp.html">LinkedList.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -1,5 +1,26 @@
 var dir_695e581f95cdc076809143410ccebcfb =
 [
-    [ "include", "dir_f21bb1378b12e43122e406b991433d19.html", "dir_f21bb1378b12e43122e406b991433d19" ],
-    [ "src", "dir_e8142c634a31d5109d75cd3f910a63f8.html", "dir_e8142c634a31d5109d75cd3f910a63f8" ]
+    [ "03-lists", "dir_e99deb0123c00b03e5f36cc30ed217a1.html", "dir_e99deb0123c00b03e5f36cc30ed217a1" ],
+    [ "04-arraylist", "dir_416761dbaa2d4fcc4781c4d602b7c1d0.html", "dir_416761dbaa2d4fcc4781c4d602b7c1d0" ],
+    [ "06-stacks-queues", "dir_1bfa376284539019a54d002bd5406f80.html", "dir_1bfa376284539019a54d002bd5406f80" ],
+    [ "07-iterators", "dir_b1b646451ea1c454b2bba967e4fd19ce.html", "dir_b1b646451ea1c454b2bba967e4fd19ce" ],
+    [ "09-tree-traversals", "dir_037cb6200d55fdac688949c4a01b6834.html", "dir_037cb6200d55fdac688949c4a01b6834" ],
+    [ "10-dictionaries", "dir_fba1b7b198d2dd526286cdf4cdd14b0b.html", "dir_fba1b7b198d2dd526286cdf4cdd14b0b" ],
+    [ "11-bst", "dir_6c83bf35d3dfdbf65aee048065c95c87.html", "dir_6c83bf35d3dfdbf65aee048065c95c87" ],
+    [ "14-avl", "dir_549e8d4bd7c1b295effa2630eb7702de.html", "dir_549e8d4bd7c1b295effa2630eb7702de" ],
+    [ "15-lambdas", "dir_1e422696bc29618918d88b193740a7c7.html", "dir_1e422696bc29618918d88b193740a7c7" ],
+    [ "16-range-search", "dir_7df80cf2b7508be45a4455c1fcf20d28.html", "dir_7df80cf2b7508be45a4455c1fcf20d28" ],
+    [ "17-btrees", "dir_9e650935c93420ec6563f84ddce26f5b.html", "dir_9e650935c93420ec6563f84ddce26f5b" ],
+    [ "19-priority-queues", "dir_5ccdc603d7ce8eacf366f6b8e04df43b.html", "dir_5ccdc603d7ce8eacf366f6b8e04df43b" ],
+    [ "20-heaps", "dir_e220aa9c95beb19b2b51e4074bf815c6.html", "dir_e220aa9c95beb19b2b51e4074bf815c6" ],
+    [ "21-disjoint-sets", "dir_c6f32c56187a63a3bdb1656e70a4c4ee.html", "dir_c6f32c56187a63a3bdb1656e70a4c4ee" ],
+    [ "23-graph-implementations", "dir_5b0bd17c8806f74fe459a38abfa10257.html", "dir_5b0bd17c8806f74fe459a38abfa10257" ],
+    [ "24-graph-traversals", "dir_8b8203bc047a54fc82ef98b32f076eb2.html", "dir_8b8203bc047a54fc82ef98b32f076eb2" ],
+    [ "25-kruskal", "dir_0369ca674bc0c8c158ba6db8070f95b5.html", "dir_0369ca674bc0c8c158ba6db8070f95b5" ],
+    [ "26-prim", "dir_9847a7287a61ff2a58ac8ca1515559f0.html", "dir_9847a7287a61ff2a58ac8ca1515559f0" ],
+    [ "27-dijkstra", "dir_ce349f16bb1906f23a4bc1b0c2cd7200.html", "dir_ce349f16bb1906f23a4bc1b0c2cd7200" ],
+    [ "28-floyd-warshall", "dir_4bd9562086f451255a9966956b86b296.html", "dir_4bd9562086f451255a9966956b86b296" ],
+    [ "30-hashing", "dir_097c66297904e74ee49cdbfb80f6bf31.html", "dir_097c66297904e74ee49cdbfb80f6bf31" ],
+    [ "31-bloom-filters", "dir_83692f83efee1a07bec4da8b398f43d8.html", "dir_83692f83efee1a07bec4da8b398f43d8" ],
+    [ "32-cardinality", "dir_95a326a78139cf8d0b81fd56e3fd64d0.html", "dir_95a326a78139cf8d0b81fd56e3fd64d0" ]
 ];
