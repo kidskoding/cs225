@@ -17,7 +17,7 @@ CI rebuilds `cs225.pdf` and the API docs on every push to `master`.
 ## Layout
 
 - `notes/main.typ`: book styling and chapter order
-- `notes/diagrams.typ`: `tree`, `steps`, `linked-list`, and `array-cells` helpers (built on CeTZ)
+- `notes/diagrams.typ`: `tree`, `steps`, `btree`, `linked-list`, `array-cells`, `graph`, `memory`, and `plane` helpers (built on CeTZ)
 - `notes/modules/`: one file per module
 - `notes/midterm-reviews/`: midterm reviews (appendix)
 
