@@ -8,8 +8,9 @@ notes for uiuc cs 225 (Data Structures and Algorithms), written in [Typst](https
 ## Building
 
 ```sh
-typst compile notes/main.typ cs225.pdf
-typst watch notes/main.typ cs225.pdf   # rebuild on save
+just          # build cs225.pdf and open it
+just build    # build only
+just watch    # rebuild on save
 ```
 
 CI rebuilds `cs225.pdf` and the API docs on every push to `master`.

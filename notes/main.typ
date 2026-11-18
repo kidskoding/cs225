@@ -58,16 +58,29 @@
 }
 
 #counter(heading).update(0)
+// Reviews are numbered from 0 so Midterm N is A.N.
 #set heading(numbering: (..n) => if n.pos().len() == 1 {
   "Appendix " + numbering("A:", ..n.pos())
 } else {
-  numbering("A.1", ..n.pos())
+  let (a, m, ..rest) = n.pos()
+  numbering("A.1", a, m - 1, ..rest)
 })
 
-#set figure(numbering: n => numbering("A.1.1", ..counter(heading).get().slice(0, 2), n))
+#set figure(numbering: n => {
+  let (a, m, ..) = counter(heading).get()
+  numbering("A.1.1", a, m - 1, n)
+})
 #show heading.where(level: 2): it => {
   counter(figure.where(kind: image)).update(0)
   it
+}
+
+// A figure that ends a list item loses its `below` spacing to the list's tight item spacing.
+#show list.item: it => {
+  let kids = if it.body.has("children") { it.body.children } else { (it.body,) }
+  let last = kids.filter(c => c != [ ] and c.func() != parbreak).at(-1, default: none)
+  it
+  if last != none and last.func() == figure { v(2.5em, weak: true) }
 }
 
 = Midterm Reviews <appendix>
@@ -77,3 +90,13 @@
 #include "midterm-reviews/midterm-0.typ"
 #pagebreak()
 #include "midterm-reviews/midterm-1.typ"
+#pagebreak()
+#include "midterm-reviews/midterm-2.typ"
+#pagebreak()
+#include "midterm-reviews/midterm-3.typ"
+#pagebreak()
+#include "midterm-reviews/midterm-4.typ"
+#pagebreak()
+#include "midterm-reviews/midterm-5.typ"
+#pagebreak()
+#include "midterm-reviews/final-exam.typ"
