@@ -2,13 +2,13 @@
 
 = Adelson-Velsky Landis (AVL) Trees
 
-Adelson-Velsky Landis trees, or simply *AVL trees* are *self-balancing binary search trees* that automatically keep themselves balanced through rotations after insertions and deletions, ensuring efficient operations
+Adelson-Velsky Landis trees, or simply *AVL trees* are *self-balancing binary search trees* that automatically keep themselves balanced through rotations after insertions and deletions, so operations stay efficient
 
 This means that we have to consider 3 things:
 
 - Rotations
 - Maintaining Height
-- Detecting Imbalance - check subtree height in $O(1)$ time and compute balance in $O(1)$ time
+- Detecting Imbalance: check subtree height in $O(1)$ time and compute balance in $O(1)$ time
 
 We can compute balance by having each subtree store its height, which means that I can retrieve it in constant time
 
@@ -112,7 +112,7 @@ void AVL<K, V>::insert(K key, V value) {
 
 The code above ensures the AVL tree maintains BST properties by descending into the left subtree if the key is smaller and descending into the right subtree if the key is greater
 
-However, we are missing one crucial detail: ensuring that the AVL tree is *balanced*. To do this, we need to calculate the *balance factor* and then based on the balance factor, perform the appropriate rotation
+However, we are still missing one thing: keeping the AVL tree *balanced*. To do this, we need to calculate the *balance factor* and then based on the balance factor, perform the appropriate rotation
 
 The balancing function is outlined below
 
@@ -203,7 +203,7 @@ void AVL<K, V>::_updateHeight(TreeNode* curr) {
 }
 ```
 
-From here, the rest is simple. We just have to simply code each rotation. The rotations intuitively make sense to code if you know what's going on
+From here, the rest is simple. We just have to code each rotation. The rotations intuitively make sense to code if you know what's going on
 
 + *Left Rotation*
   - The right child becomes the new root of the subtree
@@ -523,8 +523,8 @@ $ h equiv O(log n) $
 
 *AVL Trees*
 
-- *Max Height*: $1.44 dot log n$
-- *Rotations*: $O(h)$
+- Max height is $1.44 dot log n$
+- Rotations take $O(h)$
 
 Red-Black trees outperform AVL trees in rotations. They are also laid out well in memory that improves cache performance.
 
@@ -534,12 +534,12 @@ Previously, when we were constructing BST's, we were using `std::unordered_map` 
 
 C++ STL maps in fact provide us with a balanced BST that is in fact a red-black tree. When we use `operator[]` on a map, what we are essentially doing is searching for the key in a tree and
 
-- *If the key exists*, it returns a reference to the corresponding value.
-- *If the key doesn't exist*, it inserts the key with a default-constructed value and then returns a reference to that value.
+- If the key exists, it returns a reference to the corresponding value.
+- If the key doesn't exist, it inserts the key with a default-constructed value and then returns a reference to that value.
 
 But from a big-O standpoint, all operations are $O(log n)$, considering the trees are *balanced*, which is a huge improvement from $O(n)$ of a regular BST
 
-This is great for specific applications when looking for close matches, such as range queries, nearest-neighbor lookups, or finding the next largest or smallest key, all of which benefit from the in-order structure and efficient traversal of balanced binary search trees like red-black trees
+This is great for applications that look for close matches, such as range queries, nearest-neighbor lookups, or finding the next largest or smallest key, since a balanced BST like a red-black tree keeps its keys in order and can be traversed efficiently
 
 == Runtime Analysis for all Data Structures Covered
 

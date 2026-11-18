@@ -22,14 +22,14 @@ Arrays really are the fundamental data structure. Memory is just a bunch of byte
 
 We can represent pretty much anything as a graph. It's not always the best way to do it, but it is a very useful one
 
-- *The internet* - Routers are vertices and connections are edges. We want short paths between routers, but also *redundancy*, so if someone digs up a cable with 10,000 connections in it, traffic can take another route
-- *Control flow graphs* - A compiler breaks code into *basic blocks*: chunks where if the first instruction runs, all of them run. The blocks are vertices, and the edges are where execution can go next (looping back, branching, returning). A *data flow graph* instead has an edge from wherever a value is written to wherever it's read
-- *Literature* - In a graph of a Shakespeare play, characters are vertices, there's an edge whenever two characters talk to each other, and a node's size is how many lines that character has. It shows who's important and how the play flows
-- *Exam scheduling* - Each class is a vertex, with an edge between two classes if some student is taking both. Coloring the graph so no edge connects two vertices of the same color tells us how many exam time slots we need. Graph coloring is hard: the best algorithm we know amounts to trying all the options
-- *Puzzles* - In a sliding car puzzle, every possible configuration is a vertex, with an edge between two configurations if one move turns one into the other. Solving the puzzle is just finding a path from the start to a winning configuration, and a shortest path algorithm finds the fastest solution
-- *Prerequisites* - Classes are vertices, with directed edges for prerequisites
-- *State machines* - A machine that decides whether a number is divisible by 7 is just a graph you walk through one digit at a time
-- *3D meshes* - The triangles covering the surface of a 3D model form a graph, and we can run graph algorithms on the mesh to ask questions about its structure, like whether it has holes
+- *The internet*: Routers are vertices and connections are edges. We want short paths between routers, but also *redundancy*, so if someone digs up a cable with 10,000 connections in it, traffic can take another route
+- *Control flow graphs*: A compiler breaks code into *basic blocks*: chunks where if the first instruction runs, all of them run. The blocks are vertices, and the edges are where execution can go next (looping back, branching, returning). A *data flow graph* instead has an edge from wherever a value is written to wherever it's read
+- *Literature*: In a graph of a Shakespeare play, characters are vertices, there's an edge whenever two characters talk to each other, and a node's size is how many lines that character has. It shows who's important and how the play flows
+- *Exam scheduling*: Each class is a vertex, with an edge between two classes if some student is taking both. Coloring the graph so no edge connects two vertices of the same color tells us how many exam time slots we need. Graph coloring is hard: the best algorithm we know amounts to trying all the options
+- *Puzzles*: In a sliding car puzzle, every possible configuration is a vertex, with an edge between two configurations if one move turns one into the other. Solving the puzzle is just finding a path from the start to a winning configuration, and a shortest path algorithm finds the fastest solution
+- *Prerequisites*: Classes are vertices, with directed edges for prerequisites
+- *State machines*: A machine that decides whether a number is divisible by 7 is just a graph you walk through one digit at a time
+- *3D meshes*: The triangles covering the surface of a 3D model form a graph, and we can run graph algorithms on the mesh to ask questions about its structure, like whether it has holes
 
 Graphs also show up when we never build one explicitly. In MP Traversals, the image *is* the graph: every pixel is a vertex, and two neighboring pixels are connected if the neighbor's color is within the tolerance. Often we'll have data we care about for some other reason, and we'll just *treat* it as a graph
 
@@ -55,9 +55,9 @@ A *graph* $G = (V, E)$ is an ordered pair of a set of *vertices* $V$ and a set o
   caption: [Example: one graph $G$ made of three pieces, $G_1$, $G_2$, and $G_3$],
 ) <graph-example>
 
-- *Incident edges* - The incident edges of a vertex $v$ are the edges that touch it: $I(v) = \{(x, v) in E\}$. In @graph-example, the only edge incident on $d$ is the one between $d$ and $e$, while 4 has six incident edges. Asking for a vertex's incident edges is one of the most common things a graph algorithm does. In MP Traversals, they're just the up, down, left, and right neighbors, if they exist
-- *Degree* - The degree of $v$ is the number of incident edges, $deg(v) = |I(v)|$. So $deg(d) = 1$ and $deg(4) = 6$
-- *Adjacent vertices* - The vertices connected to $v$ by an edge, $A(v) = \{x : (x, v) in E\}$
+- *Incident edges*: The incident edges of a vertex $v$ are the edges that touch it: $I(v) = \{(x, v) in E\}$. In @graph-example, the only edge incident on $d$ is the one between $d$ and $e$, while 4 has six incident edges. Asking for a vertex's incident edges is one of the most common things a graph algorithm does. In MP Traversals, they're just the up, down, left, and right neighbors, if they exist
+- *Degree*: The degree of $v$ is the number of incident edges, $deg(v) = |I(v)|$. So $deg(d) = 1$ and $deg(4) = 6$
+- *Adjacent vertices*: The vertices connected to $v$ by an edge, $A(v) = \{x : (x, v) in E\}$
 
 === Paths and Cycles
 
@@ -80,11 +80,11 @@ A *subgraph* $G' = (V', E')$ of $G$ is a graph where
 
 Some special kinds of subgraphs
 
-- *Complete subgraph* - Every vertex is connected to every other vertex. In @graph-example, $h$, $i$, $j$, and $k$ with all of their edges form a complete subgraph, a $K_4$ hiding inside $G_1$
-- *Connected subgraph* - There's a path between every pair of its vertices. $h$, $i$, $j$, $k$ is connected, and so is the line 8, 9, 0, $a$, $b$
-- *Connected component* - A connected subgraph that is as big as possible, meaning nothing else could be added to it and keep it connected. $G$ has exactly three connected components: $G_1$, $G_2$, and $G_3$. Just $h$, $i$, $j$, $k$ is connected, but it's not a connected component, since $d$ and $e$ are connected to it too
-- *Acyclic subgraph* - A subgraph with no cycles. This is exactly what MP Traversals does: when it reaches a neighbor it has already visited, it doesn't follow that edge, which is the same as removing the edge
-- *Spanning tree* - A subgraph that is *connected* and *acyclic* and includes *every* vertex of the graph. It has just enough edges to keep everything connected without any cycles
+- *Complete subgraph*: Every vertex is connected to every other vertex. In @graph-example, $h$, $i$, $j$, and $k$ with all of their edges form a complete subgraph, a $K_4$ hiding inside $G_1$
+- *Connected subgraph*: There's a path between every pair of its vertices. $h$, $i$, $j$, $k$ is connected, and so is the line 8, 9, 0, $a$, $b$
+- *Connected component*: A connected subgraph that is as big as possible, meaning nothing else could be added to it and keep it connected. $G$ has exactly three connected components: $G_1$, $G_2$, and $G_3$. Just $h$, $i$, $j$, $k$ is connected, but it's not a connected component, since $d$ and $e$ are connected to it too
+- *Acyclic subgraph*: A subgraph with no cycles. This is exactly what MP Traversals does: when it reaches a neighbor it has already visited, it doesn't follow that edge, which is the same as removing the edge
+- *Spanning tree*: A subgraph that is *connected* and *acyclic* and includes *every* vertex of the graph. It has just enough edges to keep everything connected without any cycles
 
 A graph is *connected* if there's a path from every vertex to every other vertex. A connected graph has one connected component, and a graph with more than one has at least two vertices with no path between them
 
@@ -105,10 +105,10 @@ $G$ isn't connected, so it has no spanning tree at all. But $G_3$ is already a s
 
 == How Many Edges?
 
-- *Not connected* - The minimum is 0. A graph of isolated vertices with no edges at all is a perfectly fine graph
-- *Connected* - The minimum is $n - 1$, since the smallest connected graph is a tree
-- *Simple* - The maximum is a *complete graph*, where every vertex is connected to every other vertex. Counting the edges one vertex at a time (without counting any edge twice), the first vertex has $n - 1$ edges, the next has $n - 2$ new ones, and so on, giving $(n - 1) + (n - 2) + ... + 1 + 0 = n(n - 1) / 2$. @graph-complete shows $K_5$ with $(5 dot 4) / 2 = 10$ edges
-- *Not simple* - There's no maximum, since we can add as many edges as we want between the same two vertices
+- *Not connected*: The minimum is 0. A graph of isolated vertices with no edges at all is a perfectly fine graph
+- *Connected*: The minimum is $n - 1$, since the smallest connected graph is a tree
+- *Simple*: The maximum is a *complete graph*, where every vertex is connected to every other vertex. Counting the edges one vertex at a time (without counting any edge twice), the first vertex has $n - 1$ edges, the next has $n - 2$ new ones, and so on, giving $(n - 1) + (n - 2) + ... + 1 + 0 = n(n - 1) / 2$. @graph-complete shows $K_5$ with $(5 dot 4) / 2 = 10$ edges
+- *Not simple*: There's no maximum, since we can add as many edges as we want between the same two vertices
 
 #figure(
   graph(

@@ -179,7 +179,7 @@ $ abs(A) approx abs(B) approx 800 / 23 - 1 approx 33.8 $
 $ abs(A inter B) approx 33.8 + 33.8 - 52.3 = 15.2 $
 $ J(A, B) approx 15.2 / 52.3 approx 0.29 $
 
-So from a k-min sketch of each set, we can compute two potentially valuable things: the *cardinality* of each set, and the *Jaccard similarity* between any two of them. And if $k$ is around 100, working with just $k$ values per set takes almost no time compared to comparing the full sets
+So from a k-min sketch of each set, we can compute two useful things: the *cardinality* of each set, and the *Jaccard similarity* between any two of them. And if $k$ is around 100, working with just $k$ values per set takes almost no time compared to comparing the full sets
 
 Notice the three estimates we've seen for this example (0.40, 0.29, and the $3 / 8 = 0.375$ we'd get from the shared fraction of the union's sketch, as in @minhash-sketches) don't agree. That's not a mistake: $k = 8$ is a tiny sketch, and every one of these is only an estimate
 
@@ -196,13 +196,13 @@ Just like with cardinality, the answer depends on $k$. The statistical analysis 
   [500], [0.013], [0.029],
 )
 
-Both estimates get better as $k$ grows, and just like with cardinality, the improvement slows down: going from 10 to 100 helps a lot more than going from 100 to 500. Going through the union has a weakness worth knowing about: it *subtracts* estimates, and subtracting doesn't cancel their errors, it adds them. With $k = 10$, it estimated a *negative* intersection in 35 of the 500 trials
+Both estimates get better as $k$ grows, and just like with cardinality, the improvement slows down: going from 10 to 100 helps a lot more than going from 100 to 500. Going through the union has one weakness: it *subtracts* estimates, and their errors add up instead of cancelling. With $k = 10$, it estimated a *negative* intersection in 35 of the 500 trials
 
 == MinHash in Practice
 
-Here's a real use of this. Researchers estimated the size and similarity of all the reference microbial genomes, where each genome is treated as the set of its *k-mers* (short, fixed-length pieces of its DNA sequence). There are tens of thousands of genomes, and comparing every pair of them directly would be an enormous amount of work. But once someone generated the sketches, estimating the similarity of every pair, which is really the valuable part (which organisms are related to which), could be done on a desktop
+Here's a real use of this. Researchers estimated the size and similarity of all the reference microbial genomes, where each genome is treated as the set of its *k-mers* (short, fixed-length pieces of its DNA sequence). There are tens of thousands of genomes, and comparing every pair of them directly would be an enormous amount of work. But once someone generated the sketches, estimating the similarity of every pair (the part researchers actually wanted: which organisms are related to which) could be done on a desktop
 
-Storing a small sketch for each of tens of thousands of genomes is easy, while working with hundreds of thousands of k-mers for each of them starts to get really hard. Even as computers keep getting faster, this kind of estimation is an important tool for doing real science
+Storing a small sketch for each of tens of thousands of genomes is easy, while working with hundreds of thousands of k-mers for each of them starts to get really hard. Computers keep getting faster, but this kind of estimation is still an important tool in real science
 
 == Sets of Very Different Sizes
 

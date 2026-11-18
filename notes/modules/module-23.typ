@@ -18,9 +18,9 @@ What does a graph data structure need to do? Its operations fall into two groups
 
 *Asking about the graph*
 
-- `incidentEdges(v)` - The edges that touch `v`. This is basically the same as asking for `v`'s *adjacent vertices*, since from one we can get the other, so which one we use depends on the algorithm
-- `areAdjacent(v1, v2)` - Is there an edge between `v1` and `v2`? This is exactly what MP Traversals asks when it checks whether a neighbor is within the tolerance: if it's not, there is no edge, so the traversal doesn't go there
-- `origin(e)` and `destination(e)` - Only for *directed* graphs, where an edge from $u$ to $v$ is different from an edge from $v$ to $u$. A simple directed graph can have both, since there's still at most one edge from the same place to the same place
+- `incidentEdges(v)`: The edges that touch `v`. This is basically the same as asking for `v`'s *adjacent vertices*, since from one we can get the other, so which one we use depends on the algorithm
+- `areAdjacent(v1, v2)`: Is there an edge between `v1` and `v2`? This is exactly what MP Traversals asks when it checks whether a neighbor is within the tolerance: if it's not, there is no edge, so the traversal doesn't go there
+- `origin(e)` and `destination(e)`: Only for *directed* graphs, where an edge from $u$ to $v$ is different from an edge from $v$ to $u$. A simple directed graph can have both, since there's still at most one edge from the same place to the same place
 
 In practice, applications often don't use a general graph data structure through these operations. Our other data structures (like an AVL tree mid-rotation) are allowed to be invalid in the *middle* of an operation, but if `insertVertex` and friends are an exposed interface, the graph has to be valid after every single one, which controls their runtime. Real code often makes a huge batch of changes at once, where the graph might be nonsense in the middle, as long as it's a proper graph again by the end
 
@@ -71,12 +71,12 @@ std::list<Edge> edges;
 
 It clearly holds all of the information about the graph, since it's exactly the theoretical definition. So how fast is it?
 
-- `insertVertex` - Just `push_back` onto the vertex vector, which is $O(1)$
-- `removeVertex` - First, we have to deal with the vertex itself. Shifting everything in the vector over would be a mess, so instead we use *tombstoning*: mark the vertex as gone and add its number to a list of available numbers, which `insertVertex` reuses before pushing back. That's $O(1)$, and the only cost is that the vector never shrinks below the most vertices we've ever had. But we're not done: an edge must have both endpoints in the graph, so we also have to remove every edge incident on the vertex. The only way to find them is to check every edge, so `removeVertex` is $O(m)$
-- `insertEdge` - Add the edge to the front (or back) of the edge list. The list has no order, so this is $O(1)$
-- `removeEdge(v1, v2)` - If all we know is the endpoints, we have to check every edge until we find it, which is $O(m)$. Tombstoning the edge wouldn't help, since *finding* it is the slow part
-- `incidentEdges(v)` - Walk through the whole edge list and return every edge that touches `v`, which is $O(m)$
-- `areAdjacent(v1, v2)` - Walk through the edge list looking for an edge with both endpoints, which is $O(m)$
+- `insertVertex`: Just `push_back` onto the vertex vector, which is $O(1)$
+- `removeVertex`: First, we have to deal with the vertex itself. Shifting everything in the vector over would be a mess, so instead we use *tombstoning*: mark the vertex as gone and add its number to a list of available numbers, which `insertVertex` reuses before pushing back. That's $O(1)$, and the only cost is that the vector never shrinks below the most vertices we've ever had. But we're not done: an edge must have both endpoints in the graph, so we also have to remove every edge incident on the vertex. The only way to find them is to check every edge, so `removeVertex` is $O(m)$
+- `insertEdge`: Add the edge to the front (or back) of the edge list. The list has no order, so this is $O(1)$
+- `removeEdge(v1, v2)`: If all we know is the endpoints, we have to check every edge until we find it, which is $O(m)$. Tombstoning the edge wouldn't help, since *finding* it is the slow part
+- `incidentEdges(v)`: Walk through the whole edge list and return every edge that touches `v`, which is $O(m)$
+- `areAdjacent(v1, v2)`: Walk through the edge list looking for an edge with both endpoints, which is $O(m)$
 
 So we can build a graph in $O(1)$ per operation, but everything else is $O(m)$, which is terrible. Remember that exploring a graph means looking at the incident edges of every vertex, which here takes $O(n m)$ time even if we do nothing else. That could be $O(n^3)$!
 
@@ -127,12 +127,12 @@ Two improvements make the matrix more useful
 
 Now our operations are
 
-- `incidentEdges(v)` - Check every entry in `v`'s row (or, if we only store half the matrix, the bent row and column that belong to `v`). That's $O(n)$ instead of $O(m)$. $m$ can be smaller than $n$, but in a connected graph, which is what we usually work with, $m$ is at least $n - 1$, so moving from $O(m)$ to $O(n)$ is generally an improvement
-- `areAdjacent(v1, v2)` - Check one entry, which is $O(1)$. If we only store the upper half, make sure the smaller index comes first, swapping them if needed
-- `insertEdge` - Add the edge to the edge list, then store a pointer to it in the matrix, which is $O(1)$
-- `removeEdge(v1, v2)` - Now we can find the edge in $O(1)$ by its endpoints and follow the pointer to remove it, so this is $O(1)$
-- `insertVertex` - Every row of the matrix needs a new entry, and we need a whole new row. Even with array doubling, that's $O(n)$ (without doubling, it's $O(n^2)$, so you'll see both runtimes depending on what's assumed)
-- `removeVertex` - We still have to go through `v`'s whole row and column to remove its edges, which is $O(n)$
+- `incidentEdges(v)`: Check every entry in `v`'s row (or, if we only store half the matrix, the bent row and column that belong to `v`). That's $O(n)$ instead of $O(m)$. $m$ can be smaller than $n$, but in a connected graph, which is what we usually work with, $m$ is at least $n - 1$, so moving from $O(m)$ to $O(n)$ is generally an improvement
+- `areAdjacent(v1, v2)`: Check one entry, which is $O(1)$. If we only store the upper half, make sure the smaller index comes first, swapping them if needed
+- `insertEdge`: Add the edge to the edge list, then store a pointer to it in the matrix, which is $O(1)$
+- `removeEdge(v1, v2)`: Now we can find the edge in $O(1)$ by its endpoints and follow the pointer to remove it, so this is $O(1)$
+- `insertVertex`: Every row of the matrix needs a new entry, and we need a whole new row. Even with array doubling, that's $O(n)$ (without doubling, it's $O(n^2)$, so you'll see both runtimes depending on what's assumed)
+- `removeVertex`: We still have to go through `v`'s whole row and column to remove its edges, which is $O(n)$
 
 So the matrix makes `areAdjacent` and `removeEdge` constant, but building a graph one vertex at a time is now slow, since we keep resizing the matrix. In practice, an adjacency matrix gets used for *static* sets of vertices: count the vertices, create a matrix that size once, then fill it in. There are real graphs with a fixed set of vertices but very dynamic edges, and the matrix is very effective for those. It's also really easy to write, so it gets used a lot, and the few algorithms that only ever ask `areAdjacent` are very fast with it
 
@@ -210,8 +210,8 @@ How much space did this cost? Every edge adds two entries to adjacency lists and
 
 === Inserting
 
-- `insertVertex` - Push the vertex onto the vector along with an empty adjacency list, since a new vertex has no edges yet. That's $O(1)$
-- `insertEdge(u, v)` - Add the edge to the edge list, then add an entry for it to the end of both $u$'s and $v$'s adjacency lists, and hook up the four pointers. That's a fixed amount of work no matter how big the graph is, so it's $O(1)$
+- `insertVertex`: Push the vertex onto the vector along with an empty adjacency list, since a new vertex has no edges yet. That's $O(1)$
+- `insertEdge(u, v)`: Add the edge to the edge list, then add an entry for it to the end of both $u$'s and $v$'s adjacency lists, and hook up the four pointers. That's a fixed amount of work no matter how big the graph is, so it's $O(1)$
 
 ```cpp
 // Graph.cpp
@@ -348,9 +348,9 @@ The adjacency list is the gold standard general graph format, but in practice it
 
 These are the three classic graph implementations. There are fancier variations, and once we've seen randomized data structures, we could revisit them to make some of these operations faster. Each of the three has its place
 
-- *Edge list* - Great for storing graphs on disk, since reading and writing it is as fast as reading and writing the file
-- *Adjacency matrix* - Great when we mostly care about `areAdjacent`, and pretty good as long as the set of vertices doesn't change
-- *Adjacency list* - The best choice in almost every case, with really only one weakness: `areAdjacent`
+- *Edge list*: Great for storing graphs on disk, since reading and writing it is as fast as reading and writing the file
+- *Adjacency matrix*: Great when we mostly care about `areAdjacent`, and pretty good as long as the set of vertices doesn't change
+- *Adjacency list*: The best choice in almost every case, with really only one weakness: `areAdjacent`
 
 From now on, unless we say otherwise, we'll assume a graph is stored as an adjacency list
 

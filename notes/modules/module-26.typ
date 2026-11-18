@@ -227,11 +227,11 @@ This is the same `_heapifyUp` from the heaps chapter, except the heap stores ver
 
 Let's break `prim` into pieces and see how each one depends on how we store the priority queue and the graph
 
-+ *Initialization* - Setting up `d`, `p`, and `inTree` touches every vertex once, which is $O(n)$
-+ *Building the priority queue* - With a heap, `buildHeap` is $O(n)$. With a sorted array, we'd have to sort, which is $O(n log n)$. With an unsorted array, we just copy the vertices in, which is $O(n)$
-+ *Removing the minimum* - This happens exactly $n$ times. Each `removeMin` is $O(log n)$ with a heap, so that's $O(n log n)$. With an unsorted array, we have to look through the whole array for the smallest cost, which is $O(n)$ each and $O(n^2)$ total
-+ *Looping over the neighbors* - Over the whole algorithm, we take every vertex out of the queue once and look at all of its neighbors, which is $sum_(v in V) deg(v) = 2m$ neighbor checks. The question is how long it takes to *find* the neighbors
-+ *Updating a cost* - This can happen at most once per neighbor check, so $O(m)$ times. Each update is $O(log n)$ with a heap, $O(n)$ with a sorted array, and $O(1)$ with an unsorted array, where we just change the cost and leave the vertex where it is
++ *Initialization*: Setting up `d`, `p`, and `inTree` touches every vertex once, which is $O(n)$
++ *Building the priority queue*: With a heap, `buildHeap` is $O(n)$. With a sorted array, we'd have to sort, which is $O(n log n)$. With an unsorted array, we just copy the vertices in, which is $O(n)$
++ *Removing the minimum*: This happens exactly $n$ times. Each `removeMin` is $O(log n)$ with a heap, so that's $O(n log n)$. With an unsorted array, we have to look through the whole array for the smallest cost, which is $O(n)$ each and $O(n^2)$ total
++ *Looping over the neighbors*: Over the whole algorithm, we take every vertex out of the queue once and look at all of its neighbors, which is $sum_(v in V) deg(v) = 2m$ neighbor checks. The question is how long it takes to *find* the neighbors
++ *Updating a cost*: This can happen at most once per neighbor check, so $O(m)$ times. Each update is $O(log n)$ with a heap, $O(n)$ with a sorted array, and $O(1)$ with an unsorted array, where we just change the cost and leave the vertex where it is
 
 === Adjacency List vs. Adjacency Matrix
 
@@ -241,9 +241,9 @@ With an *adjacency matrix*, finding the neighbors of $m$ means checking its whol
 
 Adding up the pieces for each combination (the initialization and building the queue never dominate)
 
-- *Heap and adjacency list* - $O(n log n)$ to remove, $O(m)$ to find neighbors, and $O(m log n)$ to update, so $O(n log n + m log n)$
-- *Heap and adjacency matrix* - $O(n log n)$ to remove, $O(n^2)$ to find neighbors, and $O(m log n)$ to update, so $O(n^2 + m log n)$
-- *Unsorted array and either graph* - $O(n^2)$ to remove, at most $O(n^2)$ to find neighbors, and only $O(m) = O(n^2)$ to update, since updating is free, so $O(n^2)$
+- *Heap and adjacency list*: $O(n log n)$ to remove, $O(m)$ to find neighbors, and $O(m log n)$ to update, so $O(n log n + m log n)$
+- *Heap and adjacency matrix*: $O(n log n)$ to remove, $O(n^2)$ to find neighbors, and $O(m log n)$ to update, so $O(n^2 + m log n)$
+- *Unsorted array and either graph*: $O(n^2)$ to remove, at most $O(n^2)$ to find neighbors, and only $O(m) = O(n^2)$ to update, since updating is free, so $O(n^2)$
 
 #table(
   columns: 3,
@@ -274,7 +274,7 @@ Notice that on a dense graph, the adjacency matrix stops mattering. The only pro
 
 === Fibonacci Heaps
 
-If you look up Prim's algorithm on Wikipedia, you'll see a different bound: $O(m + n log n)$. That comes from a different heap, the *Fibonacci heap*, invented by Fredman and Tarjan in 1984. We won't cover how it works: it's complicated to code, and it has bad enough constant factors that it doesn't really help until the graph is very large. What matters is that it's a priority queue with a special operation, *decrease key*, which increases a key's priority (makes it smaller, in our case) in amortized $O(1)$ time, while `removeMin` is still amortized $O(log n)$
+If you look up Prim's algorithm on Wikipedia, you'll see a different bound: $O(m + n log n)$. That comes from a different heap, the *Fibonacci heap*, invented by Fredman and Tarjan in 1984. We won't cover how it works: it's complicated to code, and it has bad enough constant factors that it doesn't really help until the graph is very large. For our purposes, it's a priority queue with a special operation, *decrease key*, which increases a key's priority (makes it smaller, in our case) in amortized $O(1)$ time, while `removeMin` is still amortized $O(log n)$
 
 With a Fibonacci heap and an adjacency list, every update becomes constant time, so the $O(m log n)$ updates turn into $O(m)$, and the total is $O(n log n + m)$. That's the bound Wikipedia gives, and it assumes both a Fibonacci heap and an adjacency list
 
@@ -300,4 +300,4 @@ Prim's bound has an extra $n log n$ term, so it looks like it should be worse, b
 
 So which should you choose? There isn't really a right answer: pick whichever one you'd rather code. The two algorithms approach the problem completely differently (one sorts all the edges and merges a forest, the other grows a single tree outward), so they'll behave differently on particular graphs, but their running times end up about the same. That suggests there might be something fundamental about how much work finding a minimum spanning tree takes, though nobody has proven a lower bound like the one for comparison sorting
 
-#quote(block: true)[In fact, $O(m log n)$ isn't the best possible. Chazelle's *soft heap* is a priority queue that is allowed to be *wrong* sometimes: it can "corrupt" (raise) the keys of a limited fraction of its items, and in exchange, for a fixed error rate, its operations run in amortized constant time. An algorithm that knows how many errors it could have gotten can then correct for them, and this leads to an MST algorithm that runs in $O(m dot alpha(m, n))$, the same inverse Ackermann function from disjoint sets. We won't cover it in this class, but it's a good reminder that algorithms are never really done]
+#quote(block: true)[In fact, $O(m log n)$ isn't the best possible. Chazelle's *soft heap* is a priority queue that is allowed to be *wrong* sometimes: it can "corrupt" (raise) the keys of a limited fraction of its items, and in exchange, for a fixed error rate, its operations run in amortized constant time. An algorithm that knows how many errors it could have gotten can then correct for them, and this leads to an MST algorithm that runs in $O(m dot alpha(m, n))$, the same inverse Ackermann function from disjoint sets. We won't cover it in this class]

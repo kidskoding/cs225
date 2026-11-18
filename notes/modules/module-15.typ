@@ -35,9 +35,9 @@ Lambda functions are so useful because they allow us to use functions as *data*.
 
 *Lambdas consist of 3 things*
 
-+ Capture, notated in `[ ]` - specifies which variables from the surrounding scope the lambda can access and whether it captures them by value (copy) or by reference
-+ Parameter, notated in `( )` - The list of parameters with a type and name specified and separated with commas
-+ Body, notated in `{ }` - The body of the lambda
++ Capture, notated in `[ ]`: specifies which variables from the surrounding scope the lambda can access and whether it captures them by value (copy) or by reference
++ Parameter, notated in `( )`: The list of parameters with a type and name specified and separated with commas
++ Body, notated in `{ }`: The body of the lambda
 
 For example,
 
@@ -71,7 +71,7 @@ In @lambda-count-if-trace, for example, `count_if` calls `lessThan5` on every va
   caption: [Example: `count_if` walks from `begin()` up to, but not including, `end()` and counts the highlighted values less than 5, returning 3],
 ) <lambda-count-if-trace>
 
-However, `lessThan5` is an unnecessary function when you can achieve the same result more concisely and directly using a lambda expression inline, avoiding extra named functions and keeping the code simpler and easier to read.
+However, `lessThan5` doesn't need to be its own named function. A lambda written inline does the same thing in less code and is easier to read.
 
 To solve this problem, we can use a *lambda*, like the one below
 

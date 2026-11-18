@@ -131,9 +131,9 @@ This looks great, it shows the exact functionalities we need for our BST
 
 Notice how we added an `std::unordered_map`, `node_map`. This helps us use the unordered map's iterator for fast access of our tree nodes, without having to constantly traverse the tree. It's a fast access cache alongside our BST
 
-- `find` - Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library. This is because we want to return the iterator's `.end()` behavior when not found.
-- `insert` - Will be used to insert a node into a BST
-- `remove` - Will be used to remove a node from a BST
+- `find`: Will be used to find a node in a BST. Returns a custom implemented `TreeIterator` that behaves like the STL iterator of a template library. This is because we want to return the iterator's `.end()` behavior when not found.
+- `insert`: Will be used to insert a node into a BST
+- `remove`: Will be used to remove a node from a BST
 
 Let's first start with the simplest implementation, `find`
 
@@ -272,7 +272,7 @@ void BST<K, V>::_insert(TreeNode*& root, const K& key, const V& value) {
 
 There is a bug if you don't add the ampersand to the `TreeNode*` type when creating `loc`, since that then creates a copy pointer which changing it only changes the copy
 
-It's a preference as to which method is better for writing `_insert`; the first one is slightly more clear as it expresses the entire insertion action in a single, direct statement without introducing intermediate variables or extra steps.
+It's a preference as to which method is better for writing `_insert`; the first one is slightly clearer because it does the whole insertion in one statement, with no intermediate variable.
 
 To then code the external `insert`, we just have to simply call the internal insert, `_insert` and then add the key to our `node_map`, which is an `std::unordered_map` that contains our `TreeNode`s
 
@@ -297,11 +297,11 @@ The final step is to implement `remove` for a BST. This seems simple since I jus
 
 However, this actually will only work if the node is a *leaf node*. There are two other cases we have to consider when removing a node, which rely on the node having at least one child
 
-+ *Removing a leaf node* - If the node is a leaf node (has no children), its parent's pointer just becomes null (see @bst-remove-leaf)
-+ *Removing a node with one child (left or right)* - If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes. In @bst-remove-one-child, for example, removing 8 lets 15 point straight at 4.
-+ *Removing a node with two children* - If the node has two children, meaning it has both a left and right child, we need to instead find a replacement node to take the removed node's place in order to maintain the property of a BST. This is either:
-  - The *inorder predecessor* (IOP) - the largest node in the left subtree
-  - The *inorder successor* (IOS) - the smallest node in the right subtree
++ *Removing a leaf node*: If the node is a leaf node (has no children), its parent's pointer just becomes null (see @bst-remove-leaf)
++ *Removing a node with one child (left or right)*: If the node has exactly either one left or right child, you remove the node by connecting its parent directly to that child. This bypasses the node being removed, preserving the BST structure without losing any nodes. In @bst-remove-one-child, for example, removing 8 lets 15 point straight at 4.
++ *Removing a node with two children*: If the node has two children, meaning it has both a left and right child, we need to instead find a replacement node to take the removed node's place in order to maintain the property of a BST. This is either:
+  - The *inorder predecessor* (IOP): the largest node in the left subtree
+  - The *inorder successor* (IOS): the smallest node in the right subtree
   - Swap the target node's key and value with the replacement node's, then recursively remove the replacement node, which then falls into the simpler cases of leaf or single child. You can see this in @bst-remove-two-children, where the IOP of 15 is 12 (highlighted), so the two swap and 15 is then removed with the one child case
 
 #figure(
@@ -393,7 +393,7 @@ void BST<K, V>::_swap(TreeNode* a, TreeNode* b) {
 
 Finally, we can top it off by coding the functionality of `remove`. We first need a helper to handle `remove`, `_remove`, for all kinds of nodes, and then we can call the external remove with `root`.
 
-Recall that `_remove` involves handling the cases that vary based on the number of children (leaf node - no children, either a left or right child, both a left or right child). The code for `_remove` is shown below
+Recall that `_remove` involves handling the cases that vary based on the number of children (leaf node with no children, either a left or right child, both a left or right child). The code for `_remove` is shown below
 
 ```cpp
 // BST.hpp

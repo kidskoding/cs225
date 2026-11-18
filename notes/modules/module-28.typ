@@ -38,8 +38,8 @@ The Floyd-Warshall algorithm is our last graph algorithm in lecture, and it's an
 
 The classic answer is that Floyd-Warshall works with *negative weight edges*. That's true, but recall from the previous chapter that *modified* Dijkstra's (which puts a vertex back into the priority queue whenever it finds a cheaper path to it) also handles negative edges. So Floyd-Warshall has two other things going for it
 
-- *It detects negative weight cycles* - Modified Dijkstra's just loops forever on a negative weight cycle, saying "hey, I can make it better" every time it goes around. Floyd-Warshall finishes, and its answer tells us there's a negative weight cycle, and even which pairs of vertices have no shortest path because of it
-- *It finds every shortest path* - Dijkstra's is a *single source* shortest path algorithm: when it finishes, we know the shortest path from one starting vertex to every other vertex. Floyd-Warshall solves *all pairs* shortest paths: when it finishes, we know the shortest path from *every* vertex to *every* vertex
+- *It detects negative weight cycles*: Modified Dijkstra's just loops forever on a negative weight cycle, saying "hey, I can make it better" every time it goes around. Floyd-Warshall finishes, and its answer tells us there's a negative weight cycle, and even which pairs of vertices have no shortest path because of it
+- *It finds every shortest path*: Dijkstra's is a *single source* shortest path algorithm, so when it finishes, we know the shortest path from one starting vertex to every other vertex. Floyd-Warshall solves *all pairs* shortest paths, so when it finishes, we know the shortest path from *every* vertex to *every* vertex
 
 That second point is why Floyd-Warshall shows up so much. Just like a lot of algorithms start with Dijkstra's and build on it, there's a large family of graph analysis algorithms that start by running Floyd-Warshall, since analyzing the structure of a graph often needs every shortest path, and Floyd-Warshall gets us all of them directly
 

@@ -43,8 +43,8 @@ Previously, we discussed how C++'s STL map is implemented via a red-black tree u
 
 `std::map` includes a `lower_bound` and an `upper_bound` function, which allow efficient logarithmic-time range queries by returning iterators
 
-- `lower_bound` - The smallest element greater than or equal to (not less than) the argument
-- `upper_bound` - The smallest element strictly greater than the argument
+- `lower_bound`: the smallest element greater than or equal to (not less than) the argument
+- `upper_bound`: the smallest element strictly greater than the argument
 
 For the keys in @kd-bst-range, `lower_bound(11)` returns 11, since 11 is the smallest key not less than 11. `lower_bound(10)` also returns 11, because the next smallest key, 6, is less than 10
 
@@ -84,9 +84,9 @@ If we sort the points by $x$, we can tell whether a point is between the left an
 
 This kind of query happens all the time in real code
 
-- *Computer graphics* - We only want to draw the things in front, but to skip drawing what's hidden, we first have to detect what's behind
-- *Collision detection* - Only check objects that are near each other
-- *Computer vision* and *sensor data* - Only process the points in a region of interest
+- *Computer graphics*: We only want to draw the things in front, but to skip drawing what's hidden, we first have to detect what's behind
+- *Collision detection*: Only check objects that are near each other
+- *Computer vision* and *sensor data*: Only process the points in a region of interest
 
 The other common question is *nearest neighbor*: given some point, which point in our data set is closest to it? The naive way is to check every point, because a point can be farther away in one dimension but so much closer in the other that it more than makes up for it
 
@@ -123,7 +123,7 @@ Quickselect takes a comparison function, so we call it with one that compares po
   caption: [Example: the KD tree built from (2,3), (5,4), (9,6), (4,7), (8,1), (7,2), (9,8). The root splits on $x$ and its children split on $y$],
 ) <kd-tree-build>
 
-A KD tree stays balanced simply because of the median: at each step we split the data set using the median point along the current dimension, ensuring that half the points go to the left subtree and half go to the right subtree
+A KD tree stays balanced simply because of the median: at each step we split the data set using the median point along the current dimension, so half the points go to the left subtree and half go to the right subtree
 
 The same idea works in any number of dimensions. That might seem ridiculous for physical space, but machine learning often describes data points with hundreds or thousands of *features* (color, shape, size, ...), and each feature is just another dimension
 
@@ -212,9 +212,9 @@ Even so, it is the best data structure and algorithm we know for nearest neighbo
 
 *$k$-Nearest Neighbors (k-NN)* is a simple algorithm used in machine learning and data analysis to find the $k$ closest points to a given query point in a dataset
 
-It is used very often in *Machine Learning*, specifically classification and regression
+It is used very often in machine learning, specifically for classification and regression
 
-- *Classification* - Assign the query point the most common class among its k nearest neighbors.
-- *Regression* - Predict the query point’s value as the average of its k nearest neighbors’ values.
+- *Classification*: Assign the query point the most common class among its k nearest neighbors.
+- *Regression*: Predict the query point’s value as the average of its k nearest neighbors’ values.
 
-It becomes very efficient with a constructed KD Tree because it avoids brute force checking each point. Instead, it narrows the search by recursively exploring only those regions of space that could contain points closer than the current best candidates, ignoring irrelevant subtrees, to make nearest neighbor searches much faster
+With a KD tree already built, k-NN no longer has to brute force check every point. It recursively explores only the regions of space that could contain points closer than the current best candidates and skips every other subtree, which makes nearest neighbor searches much faster

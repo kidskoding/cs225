@@ -2,19 +2,19 @@
 
 = C++ Review
 
-Contacting the CS 225 course - #link("mailto:cs225admin@lists.cs.illinois.edu")
+Contacting the CS 225 course: #link("mailto:cs225admin@lists.cs.illinois.edu")
 
 == Encapsulation
 
 Encapsulation in C++ is primarily distinguished via two things: *header* and *code*. In C/C++, code is separated into two files, one which we call the *header* and one which we call the *code segment*
-- *header files* - Describes how the code is used, or how people should use this specific data structure
+- *header files*: Describes how the code is used, or how people should use this specific data structure
   - has a `.h` or `.hpp` extension. Mostly `.h`, but `.hpp` is used for *templates*, which help write *generic* code that supports any data type
-- *code files* - Describes how the code works, or how the data structure is implemented!
+- *code files*: Describes how the code works, or how the data structure is implemented!
   - has a `.cpp` file extension
 
-Object Oriented languages also provide with two main things, a *constructor*, which initializes the necessary data for us in a object and a *destructor* which gets rid of any necessary data for us in an object
+Object oriented languages also give us two main things: a *constructor*, which initializes the necessary data for us in an object, and a *destructor*, which gets rid of any necessary data for us in an object
 
-== Memory Management - Ownership
+== Memory Management: Ownership
 
 Someone or some code owns everything, which simply means that *one part of the program is responsible* for
 - Creating an object in memory (*Constructor*)
@@ -42,14 +42,14 @@ When your class manages resources (*dynamic memory*, file handles, etc.), you ne
 
 The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class
 
-*Rule of Zero* - If your class doesn't manage resources directly, do not define the *big five*
+*Rule of Zero*: If your class doesn't manage resources directly, do not define the *big five*
 - Destructor
 - Copy Constructor
 - Copy Assignment
 - Move Constructor
 - Move Assignment
 
-*Rule of Three* - If you define one of a *destructor*, *copy constructor*, or *copy assignment operator*, *you should define ALL three of them!*
+*Rule of Three*: If you define one of a *destructor*, *copy constructor*, or *copy assignment operator*, *you should define ALL three of them!*
 
 - This is because handling one implies your class is managing a resource that needs careful copying and cleanup
 - Notice in @cpp-rule-of-three-double-delete what goes wrong when only the destructor is defined: `a` and `b` point to the same block, so it gets deleted twice
@@ -59,7 +59,7 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
   caption: [Example: with a destructor but the implicit copy constructor, `Foo b = a;` copies only the `data` pointer, so both destructors delete the same block],
 ) <cpp-rule-of-three-double-delete>
 
-*Rule of Five* - Applies to modern C++, where if you plan on managing resources with move semantics, define *all 5* (this is the opposite of the *rule of zero*)
+*Rule of Five*: Applies to modern C++, where if you plan on managing resources with move semantics, define *all 5* (this is the opposite of the *rule of zero*)
 
 - Destructor
 - Copy Constructor

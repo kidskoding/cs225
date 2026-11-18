@@ -271,10 +271,10 @@ For example, if we added an edge between $A$ and $G$ to the graph and ran BFS ag
 
 === Spanning Trees, Components, and Cycles
 
-- *Spanning trees* - The vertices with just the discovery edges form a tree, like in @gtraversal-bfs-tree: every vertex other than the start was discovered exactly once, by one edge. If the graph is connected, that tree reaches every vertex, so it's a *spanning tree*. Our graph has 8 vertices and 7 discovery edges, which is exactly $n - 1$
-- *Connected components* - The wrapper starts a new BFS once for every connected component, so counting how many times it starts one counts the components
-- *Cycles* - If there's a cross edge, the graph has a cycle. A cross edge connects two vertices that were already connected through the tree, so adding it closes a loop. For example, cross edge $B C$ closes the cycle $A$, $B$, $C$, $A$. If the graph is a tree, BFS never finds a cross edge, no matter where it starts
-- *Distances* - $d$ is the length of the shortest path from the start to every vertex
+- *Spanning trees*: The vertices with just the discovery edges form a tree, like in @gtraversal-bfs-tree, since every vertex other than the start was discovered exactly once, by one edge. If the graph is connected, that tree reaches every vertex, so it's a *spanning tree*. Our graph has 8 vertices and 7 discovery edges, which is exactly $n - 1$
+- *Connected components*: The wrapper starts a new BFS once for every connected component, so counting how many times it starts one counts the components
+- *Cycles*: If there's a cross edge, the graph has a cycle. A cross edge connects two vertices that were already connected through the tree, so adding it closes a loop. For example, cross edge $B C$ closes the cycle $A$, $B$, $C$, $A$. If the graph is a tree, BFS never finds a cross edge, no matter where it starts
+- *Distances*: $d$ is the length of the shortest path from the start to every vertex
 
 That's a lot of information from one algorithm!
 
@@ -287,7 +287,7 @@ How long does BFS take? Let's start with the obvious analysis of the code
 - In the helper, the `while` loop runs once per dequeue. Every vertex has to come out of the queue at least once, and some come out more than once, so let's say $O(n)$
 - Inside it, the `for` loop runs once per incident edge, and a vertex can have up to $n - 1$ of those, so that's $O(n)$ too
 
-Three nested loops that each run $O(n)$ times gives $O(n^3)$. That would be a terrible algorithm! Everything we said is true, but it misses something: this isn't some arbitrary data structure, it's a graph, and the loops limit each other
+Three nested loops that each run $O(n)$ times gives $O(n^3)$. That would be a terrible algorithm! Everything we said is true, but it misses something: in a graph, the loops limit each other
 
 - The body of the `if` runs exactly *once per vertex* over the whole traversal, no matter how many times the wrapper calls the helper, since once a vertex is visited, it never becomes unexplored again
 - So the `for` loop runs $deg(v)$ times for each vertex $v$, and only once per vertex. In total, it runs $sum_(v in V) deg(v) = 2m$ times
@@ -408,7 +408,7 @@ void DFS(const Graph& g, int start) {
 }
 ```
 
-How could we possibly understand such a massive change? The queue became a stack, `front` became `top`, and cross edges became back edges. That's it! The wrapper is the same too, just calling `DFS` instead of `BFS`. This is the heart of MP Traversals: you're really writing one algorithm, and plugging in either a stack or a queue
+How could we possibly understand such a massive change? The queue became a stack, `front` became `top`, and cross edges became back edges. That's it! The wrapper is the same too, just calling `DFS` instead of `BFS`. That's the idea behind MP Traversals: you're really writing one algorithm, and plugging in either a stack or a queue
 
 There's one small difference from the example. A stack pops whatever was pushed *last*, so this version tries a vertex's neighbors in reverse order. From $A$, it goes to $D$ first, and visits $A$, $D$, $H$, $G$, $F$, $C$, $E$, $B$. That's still a depth-first search, it just tries neighbors in the opposite order from the run in @gtraversal-dfs-result. If we wanted the same order as the example, we'd push the neighbors in reverse
 
@@ -449,5 +449,3 @@ Going in this direction makes it look easy. Going the other way, from a recursiv
 === Running Time of DFS
 
 We don't need a new analysis. Every operation on a stack is $O(1)$, just like on a queue, and we put exactly the same number of things in and take the same number out. Every vertex gets visited once, and every edge gets looked at once from each end. So DFS is also $O(n + m)$, with an adjacency list
-
-And that's how we traverse a graph: with either breadth-first or depth-first search, both in $O(n + m)$ time

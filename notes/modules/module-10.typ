@@ -35,7 +35,7 @@ In contrast, DFS typically uses less memory, since it only needs to store the cu
 
 Therefore, in any practical application, memory is going to be the forefront problem. Since DFS uses less memory, that will often be the best approach. But, if there are infinite trees, DFS wouldn't work. There is a solution that solves this problem and it is known as *iterative deepening*
 
-*Iterative Deepening* runs DFS with a *maximum depth limit* of $k$, meaning it will not explore any nodes beyond depth $k$ (starting at $k = 0$). When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum memory used when doing DFS is proportional to $k$ (simply the overhead cost - $O(k)$). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k + 1$, and this process repeats until a solution is found.
+*Iterative Deepening* runs DFS with a *maximum depth limit* of $k$, meaning it will not explore any nodes beyond depth $k$ (starting at $k = 0$). When DFS reaches that depth, it stops descending and backtracks up the tree. This approach is useful because the maximum memory used when doing DFS is proportional to $k$ (simply the overhead cost, $O(k)$). If no solution is found at depth $k$, the algorithm restarts DFS with a new depth limit $k + 1$, and this process repeats until a solution is found.
 
 This effectively simulates BFS for DFS and will always find the solution because it explores each node at every level by using bounded memory (as deep as depth $k$ with overhead cost of $O(k)$).
 
@@ -51,13 +51,13 @@ In fact, an array really is just a dictionary, because we use an index (*key*) t
 
 === Dictionary Interface (ADT)
 
-- `insert(key, value)` - insert a key and value into the dictionary
-- `remove(key)` - remove a key value mapping from the dictionary via passing in the key
-- `std::optional<value> find(key)` - return the value associated with the key (C++ has an `std::optional` type that you could use to return nothing if no value is found for the key!)
+- `insert(key, value)`: insert a key and value into the dictionary
+- `remove(key)`: remove a key value mapping from the dictionary via passing in the key
+- `std::optional<value> find(key)`: return the value associated with the key (C++ has an `std::optional` type that you could use to return nothing if no value is found for the key!)
 
 And then there's the obvious things like a constructor, destructor, and an iterator, but at the end of the day, this is what we want with a dictionary.
 
-And with this, we solve our problems with searching in Computer Science. A lot of other data structures, like Hash Tables and Tries, will rely on dictionaries to provide fast and efficient key-based access, which is essential for everything from caching to autocomplete and spell checking
+And with this, we solve our problems with searching in Computer Science. A lot of other data structures, like Hash Tables and Tries, rely on dictionaries for fast key-based access, which shows up in caching, autocomplete, and spell checking
 
 The code below is a sample header file for our dictionary, backed by a `std::unordered_map`
 
@@ -103,7 +103,7 @@ private:
 };
 ```
 
-Our custom dictionary implements an iterator by leveraging C++'s standard library iterator from the underlying data structure of `std::unordered_map`. This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like `begin()`, `end()`, and `find()`.
+Our custom dictionary implements an iterator by reusing the standard library iterator from the underlying data structure of `std::unordered_map`. This allows us to avoid writing a custom iterator from scratch, while still providing full iterator functionality like `begin()`, `end()`, and `find()`.
 
 == Using Binary Trees as a Search Structure
 

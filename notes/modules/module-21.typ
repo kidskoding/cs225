@@ -21,9 +21,9 @@ This makes membership easy to check. If 3 says "I belong to the set represented 
 
 == The Disjoint Sets ADT
 
-- `find(k)` - Returns the representative of the subset that contains `k`
-- `union(k1, k2)` - Merges the subsets containing `k1` and `k2` into one subset
-- `addElements(num)` - Adds `num` new elements, each in a brand new subset all by itself
+- `find(k)`: Returns the representative of the subset that contains `k`
+- `union(k1, k2)`: Merges the subsets containing `k1` and `k2` into one subset
+- `addElements(num)`: Adds `num` new elements, each in a brand new subset all by itself
 
 In @ds-partition, `find(4)` returns 4 and `find(8)` also returns 4. So `find(4) == find(8)` tells us that 4 and 8 are in the same subset, which is the basic question this data structure answers
 
@@ -198,8 +198,8 @@ When we union two trees, which one should point at the other? Consider the two s
 
 There are two reasonable rules
 
-- *Union by size* - Point the root of the set with *fewer nodes* at the root of the set with more nodes
-- *Union by height* - Point the root of the *shorter* tree at the root of the taller tree
+- *Union by size*: Point the root of the set with *fewer nodes* at the root of the set with more nodes
+- *Union by height*: Point the root of the *shorter* tree at the root of the taller tree
 
 Both make the obvious choice in cases like unioning a single node into a big tree, but they disagree in @ds-smart-before. Union by size points 4 at 7, and union by height points 7 at 4. You can see both results in @ds-smart-after
 

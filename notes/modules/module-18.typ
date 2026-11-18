@@ -38,11 +38,11 @@ Just like with AVL trees, we can't directly figure out the height from the numbe
 
 We find the minimum number of keys by first finding the minimum number of *nodes*, which is defined by the minimum branching. Let $b = ceil(m / 2)$, the minimum number of children of a non-root internal node
 
-- *Level 0* - The root, which is just 1 node
-- *Level 1* - The root only needs 1 key, so it can have as few as *2* children
-- *Level 2* - Each of the 2 nodes at level 1 is a non-root internal node, so each has at least $b$ children, for $2b$ nodes
-- *Level 3* - Each of those $2b$ nodes has at least $b$ children, for $2b^2$ nodes
-- *Level $k$* - In general, $2b^(k - 1)$ nodes
+- *Level 0*: The root, which is just 1 node
+- *Level 1*: The root only needs 1 key, so it can have as few as *2* children
+- *Level 2*: Each of the 2 nodes at level 1 is a non-root internal node, so each has at least $b$ children, for $2b$ nodes
+- *Level 3*: Each of those $2b$ nodes has at least $b$ children, for $2b^2$ nodes
+- *Level $k$*: In general, $2b^(k - 1)$ nodes
 
 @btree-min-tree shows the smallest possible B-tree of order 5 with height 2: the root has one key and two children, and every other node has the minimum $b = 3$ children and $b - 1 = 2$ keys
 

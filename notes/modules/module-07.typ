@@ -2,11 +2,11 @@
 
 = Iterators
 
-One concept that is often in the scope of DSA is the *iterator*. An iterator is an object that traverses through all the elements/items in a data structure.
+A common concept in DSA is the *iterator*. An iterator is an object that traverses through all the elements/items in a data structure.
 
 Suppose we had 3 data structures, `Array`, `LinkedList`, and a `Hypercube` (also known as a tesseract and is a 4D cube). How would we be able to traverse through every element in this data structure?
 
-The solution is simply an iterator, which provides encapsulated access to our data in a data structure. Each data structure, `Array`, `LinkedList`, and `Hypercube` has its own way of iterating through its data
+The answer is an iterator, which provides encapsulated access to our data in a data structure. Each data structure, `Array`, `LinkedList`, and `Hypercube` has its own way of iterating through its data
 
 - For example, an `Array` typically uses an index to iterate, where `index++` traverses through each element in an array
 - Similarly, a `LinkedList` uses a pointer to iterate, where `cur->next` represents a pointer to the next `ListNode` in a `LinkedList`. This is shown in the table below
@@ -21,7 +21,7 @@ The solution is simply an iterator, which provides encapsulated access to our da
   [`Hypercube`], [`(x, y, z)` (a list or tuple of dimensions)], [?? (cannot be determined)], [?? (cannot be determined)],
 )
 
-These intuitively make sense because we know how these data structures work. With an array, we can use its index to access an element, a `LinkedList` we can hold a pointer to the next node, etc.
+These intuitively make sense because we know how these data structures work. With an array, we can use its index to access an element, with a `LinkedList` we can hold a pointer to the next node, etc.
 
 But if we don't know how the data structure works, it will be very difficult to implement an iterator for it because we wouldn't know how to iterate through its elements.
 
@@ -30,11 +30,11 @@ But if we don't know how the data structure works, it will be very difficult to 
 Every class that implements an iterator must have the following *two pieces*.
 
 + Have two methods
-  - `begin()` - Return iterator to the start item in a container (index 0)
-  - `end()` - Returns iterator to one past the end item in a container
+  - `begin()`: returns iterator to the start item in a container (index 0)
+  - `end()`: returns iterator to one past the end item in a container
     - `end()` can come in handy a lot to check if an item exists in an iterator.
-    - If I want to find string `milk` in a `std::vector<std::string>` named `groceries`, I can write `milk != groceries.end()` to see if `groceries` contains milk.
-    - If `milk` is found, `end()` will return an iterator to what it found (in this case is `milk`) or will return an iterator to `end()` saying that there is no milk in the list.
+    - If I want to find string `milk` in a `std::vector<std::string>` named `groceries`, I can write `std::find(groceries.begin(), groceries.end(), "milk") != groceries.end()` to see if `groceries` contains milk.
+    - If `milk` is found, `std::find` returns an iterator to it. Otherwise it returns `end()`, meaning there is no milk in the list.
     - This is a useful tool because we get an extra feature in our data structures to say that an element does/does not exist
 + Must have the base class `std::iterator`, which requires us to minimally implement
   - `operator*()` to get the data, where `*it` is the data at iterator `it`
@@ -63,9 +63,9 @@ Let's explain the table above for an `Array` and `LinkedList`
 
 - `LinkedList`
   - We would implement `begin()` by having our `Iterator` constructor take in the head of the `LinkedList`, which is `this->head_`, or simply `head_`
-    - The reason why this intuitively makes sense is because the beginning of our `LinkedList` is a pointer to the first element of the `LinkedList`, which is simply `head_`
+    - This makes sense because the beginning of our `LinkedList` is a pointer to the first element of the `LinkedList`, which is simply `head_`
   - We would implement `end()` by returning our `Iterator` object, where it takes in a `nullptr`
-    - This also intuitively makes sense because the end of a `LinkedList` occurs when a node no longer holds a pointer to its next node, when this happens its pointer is set to `nullptr` (see @iterator-list-begin-end)
+    - This also makes sense because the end of a `LinkedList` occurs when a node no longer holds a pointer to its next node; at that point its pointer is set to `nullptr` (see @iterator-list-begin-end)
 - `Array`
   - We would implement begin by having our constructor set our `index` instance variable to `0`. This makes sense because the $0^"th"$ index is always the first element in an array
     - You could also have the `Iterator` constructor take in a $0$
@@ -115,7 +115,7 @@ int main()  {
 + `Animal` stores 3 things, `name`, `food`, which describe the animal's name, food, and a boolean `big` that determines whether an `Animal` is big or not.
 + The `main` function creates 3 `Animal` objects and stores them in a `std::vector`. We then use an iterator to loop through the objects in the `std::vector`.
 
-However, take a look at a snippet of the code above, specifically the part that utilizes an iterator
+Now look at the part of the code above that uses an iterator
 
 ```cpp
 for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
@@ -123,7 +123,7 @@ for(std::vector<Animal>::iterator it = zoo.begin();  it != zoo.end(); it++)  {
 }
 ```
 
-one of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, `std::vector` implements this operator to work for its iterator, so this isn't an issue in our example code.
+One of the problems with this code is using the post-increment operator over the pre-increment operator. Luckily, `std::vector` implements this operator to work for its iterator, so this isn't an issue in our example code.
 
 However, if we wanted to implement an iterator minimally, we would use the pre-increment operator (`++it`)
 
@@ -132,7 +132,7 @@ However, if we wanted to implement an iterator minimally, we would use the pre-i
 The rest of the code in our `for` loop prints the fields of the objects being traversed by the iterator.
 
 - Notice that we access the members of `it` by dereferencing it and then calling a member via `(*it).name`. Recall that in C++, `(*it).name` is equivalent to `it->name`. Couldn't we use the arrow operator (`->`) instead as a shorthand of calling a member on a pointer?
-  - To simply answer this question, `->` is typically implemented manually by several containers, but it is *not required*.
+  - Short answer: many containers implement `->` manually, but it is *not required*.
   - `std::vector` and many other containers do implement the `->`, so we could replace that snippet with `->`, as in the loop below, but the code snippet assumes that `->` is not implemented by the container
 
     ```cpp
@@ -141,15 +141,15 @@ The rest of the code in our `for` loop prints the fields of the objects being tr
     }
     ```
 
-This code is now great, we utilize a `std::iterator` with a `std::vector`. We don't worry about how `std::vector` implemented the iterator.
+Now the code uses a `std::iterator` with a `std::vector`, and we don't have to worry about how `std::vector` implements the iterator.
 
-We could add some other changes to this code. One is by using the `auto` keyword to define the iterator
+We could add some other changes to this code. One is using the `auto` keyword to define the iterator
 
 ```cpp
 auto it = zoo.begin();
 ```
 
-`auto` is nice because the compiler infers the type of our iterator. This is good when we don't have to really remember what container we are working with. Whether to use `auto` is in fact debatable among the community.
+`auto` is nice because the compiler infers the type of our iterator. That way we don't have to remember what container we are working with. Whether to use `auto` is debated in the community.
 
 Another way to write the code is by using a range based for loop to loop through constant `Animal` references, `Animal&`, in a `std::vector`
 
@@ -164,7 +164,7 @@ In this for loop, I am introducing a constant `Animal` reference, `Animal&`, and
 - The `animal` variable is the dereferenced iterator, so I would have to use `.` instead of `->`
 - This approach completely abstracts/hides the fact I am even using an iterator. This code assumes that all the minimum iterator requirements are implemented.
 
-And this brings us to the two approaches to use iterators
+That gives us two ways to use iterators
 
 + Using a for each loop, like the range-based `for` loop above
 

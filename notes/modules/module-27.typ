@@ -16,9 +16,9 @@ From a purely theoretical point of view, a *weight* is just a number attached to
 
 Picture a map of Illinois: the towns (Champaign-Urbana, Kankakee, Bloomington, Joliet, Naperville, Chicago) are vertices, and the roads between them are edges. What could the weights be?
 
-- *Distance* - The obvious choice: how many miles long each road is
-- *Travel time* - What map apps actually use. It's distance divided by speed, adjusted for traffic, since an interstate and a one-lane dirt road of the same length shouldn't be weighted the same
-- *Cost* - If we're taking an Uber, the weight could be what each leg costs, so the shortest path is the cheapest trip
+- *Distance*: the obvious choice, how many miles long each road is
+- *Travel time*: What map apps actually use. It's distance divided by speed, adjusted for traffic, since an interstate and a one-lane dirt road of the same length shouldn't be weighted the same
+- *Cost*: If we're taking an Uber, the weight could be what each leg costs, so the shortest path is the cheapest trip
 
 Costs can even be *negative*. Airlines are required to run a certain number of flights a day out of a small airport like Champaign-Urbana to keep flying there, so when hardly anyone is traveling, they sometimes price the flight from Champaign-Urbana to Chicago so that flying CU to Chicago to Europe is cheaper than flying straight from Chicago to Europe. The leg out of CU effectively has a negative cost. Negative weights are a special case, but they can make real-world sense, and we'll see that they matter a lot to our algorithms
 
@@ -36,8 +36,8 @@ The answer is a *shortest path tree*. Just like a spanning tree, every vertex $v
 
 Recall Prim's algorithm: we keep a priority queue of vertices keyed on $d[v]$, start with $d[s] = 0$ and every other $d[v] = infinity$, and repeatedly remove the vertex with the smallest $d$, add it to the tree, and update its neighbors. Dijkstra's algorithm is *exactly the same algorithm*. The only thing that changes is what $d[v]$ means
 
-- *Prim's* - $d[v]$ is the weight of the cheapest single *edge* from the tree to $v$
-- *Dijkstra's* - $d[v]$ is the length of the cheapest *path* we know of from $s$ to $v$
+- *Prim's*: $d[v]$ is the weight of the cheapest single *edge* from the tree to $v$
+- *Dijkstra's*: $d[v]$ is the length of the cheapest *path* we know of from $s$ to $v$
 
 So when we remove a vertex $u$ and look at an edge from $u$ to $v$ with weight $w(u, v)$, Prim's compares $w(u, v)$ with $d[v]$, but Dijkstra's compares $d[u] + w(u, v)$ with $d[v]$. Getting to $v$ through $u$ means first getting to $u$, which costs $d[u]$, and then taking the edge
 
@@ -64,14 +64,14 @@ To see why the change matters, imagine treating the edges as undirected and runn
 
 We start with $d[A] = 0$ and every other vertex at $infinity$ with no predecessor. Every round, we remove the vertex $u$ with the smallest $d$ from the priority queue. That vertex is now *finished*: $d[u]$ is its true shortest distance, and the edge from its predecessor joins the tree. Then for every neighbor $v$ of $u$ that isn't finished yet, we check whether going through $u$ is better, and if $d[u] + w(u, v) < d[v]$, we lower $d[v]$ to that and set $p[v] = u$
 
-+ *Remove $A$ (0)* - $B$ becomes 10 and $F$ becomes 7, both through $A$
-+ *Remove $F$ (7)* - $F$ is the smallest. Going through $F$ to $B$ costs $7 + 2 = 9$, which beats 10, so $d[B]$ drops to 9 and its predecessor changes to $F$. Notice that the direct edge from $A$ to $B$ lost to a path with *more* edges. $G$ becomes $7 + 4 = 11$
-+ *Remove $B$ (9)* - $C$ becomes 12 and $D$ becomes 17, both through $B$
-+ *Remove $G$ (11)* - Going through $G$ to $D$ costs $11 + 4 = 15$, which beats 17, so $D$'s predecessor changes to $G$
-+ *Remove $C$ (12)* - Going through $C$ to $D$ costs $12 + 5 = 17$, which is *not* better than 15, so $D$ doesn't change. $E$ becomes 17
-+ *Remove $D$ (15)* - $H$ becomes 19
-+ *Remove $E$ (17)* - Going through $E$ to $H$ costs $17 + 1 = 18$, which beats 19, so $H$'s predecessor changes to $E$
-+ *Remove $H$ (18)* - $H$'s only neighbor is $G$, which is already finished, so there's nothing to do
++ *Remove $A$ (0)*: $B$ becomes 10 and $F$ becomes 7, both through $A$
++ *Remove $F$ (7)*: $F$ is the smallest. Going through $F$ to $B$ costs $7 + 2 = 9$, which beats 10, so $d[B]$ drops to 9 and its predecessor changes to $F$. Notice that the direct edge from $A$ to $B$ lost to a path with *more* edges. $G$ becomes $7 + 4 = 11$
++ *Remove $B$ (9)*: $C$ becomes 12 and $D$ becomes 17, both through $B$
++ *Remove $G$ (11)*: Going through $G$ to $D$ costs $11 + 4 = 15$, which beats 17, so $D$'s predecessor changes to $G$
++ *Remove $C$ (12)*: Going through $C$ to $D$ costs $12 + 5 = 17$, which is *not* better than 15, so $D$ doesn't change. $E$ becomes 17
++ *Remove $D$ (15)*: $H$ becomes 19
++ *Remove $E$ (17)*: Going through $E$ to $H$ costs $17 + 1 = 18$, which beats 19, so $H$'s predecessor changes to $E$
++ *Remove $H$ (18)*: $H$'s only neighbor is $G$, which is already finished, so there's nothing to do
 
 @dijkstra-steps draws each round: finished vertices are shaded, bold edges are in the shortest path tree, and dashed edges are each unfinished vertex's current best predecessor. @dijkstra-table lists $d$ and $p$ for every vertex after each round
 
@@ -226,12 +226,12 @@ So shortest paths simply aren't defined when a *negative weight cycle* can be re
 
 == Implementing Dijkstra's
 
-The pseudocode quietly assumes our priority queue can *update* a vertex's priority when $d[v]$ goes down (*decrease key*). Our heap can do it with the same extra bookkeeping as Prim's (the `pos_` array that tracks where each vertex is in the heap), but the STL's `std::priority_queue` can't do it at all. There are two easy ways around this
+The pseudocode assumes our priority queue can *update* a vertex's priority when $d[v]$ goes down (*decrease key*). Our heap can do it with the same extra bookkeeping as Prim's (the `pos_` array that tracks where each vertex is in the heap), but the STL's `std::priority_queue` can't do it at all. There are two easy ways around this
 
 - *Use an unsorted array as the priority queue*, just like we did for Prim's. Updating $d[v]$ is just changing a number, and `removeMin` scans every unfinished vertex. The scan takes time, but we only ever remove $n$ things, and we save all the work of building and maintaining a heap
 - *Always do modified Dijkstra's*. Instead of updating a vertex in the heap, just push a *new* entry with the better distance. When an entry comes out that's worse than the vertex's current $d$, it's stale, so we throw it out. The heap can now hold up to $m$ entries instead of $n$, since every update adds one
 
-If you had to implement Dijkstra's yourself, the unsorted array version is probably the simplest, but sticking entries back into the STL heap is a perfectly good and reasonable approach. Both versions here use an adjacency list, where `adj[u]` holds the edges leaving `u`
+If you had to implement Dijkstra's yourself, the unsorted array version is probably the simplest, but sticking entries back into the STL heap is a perfectly good approach. Both versions here use an adjacency list, where `adj[u]` holds the edges leaving `u`
 
 ```cpp
 struct Edge {
@@ -313,11 +313,11 @@ This one is standard Dijkstra's, with `done` playing the role of $T$: it removes
 
 Since Dijkstra's is Prim's with one extra addition, the analysis of Prim's carries over directly. We remove each of the $n$ vertices once, and when we remove $u$, we look at every edge leaving it. Over the whole algorithm, that's every edge exactly once (handshaking again), so we do at most $m$ updates
 
-- *Binary heap and adjacency list* - `buildHeap` is $O(n)$, the $n$ calls to `removeMin` are $O(n log n)$, and the up to $m$ priority updates are $O(m log n)$. That's $O((n + m) log n)$. If every vertex can be reached from $s$, then $m >= n - 1$, so this is $O(m log n)$
-- *Binary heap and adjacency matrix* - Finding $u$'s neighbors means scanning its whole row, which is $O(n)$ per vertex and $O(n^2)$ total, so we get $O(n^2 + m log n)$
-- *Unsorted array* - Each `removeMin` is an $O(n)$ scan, so that's $O(n^2)$, and each update is $O(1)$, so the total is $O(n^2 + m) = O(n^2)$, with either graph implementation. For a *dense* graph, where $m$ is close to $n^2$, that's actually better than the heap's $O(n^2 log n)$
-- *Lazy binary heap (modified Dijkstra's)* - Up to $m$ pushes and pops, each $O(log m)$. Since $m < n^2$, $log m < 2 log n$, so this is still $O(m log n)$, it just uses $O(m)$ space for the heap
-- *Fibonacci heap* - A fancier heap where updating a priority is $O(1)$ (amortized), which brings the total down to $O(m + n log n)$. It's the best on paper, but a Fibonacci heap is a giant mess to implement, and it's not in the STL
+- *Binary heap and adjacency list*: `buildHeap` is $O(n)$, the $n$ calls to `removeMin` are $O(n log n)$, and the up to $m$ priority updates are $O(m log n)$. That's $O((n + m) log n)$. If every vertex can be reached from $s$, then $m >= n - 1$, so this is $O(m log n)$
+- *Binary heap and adjacency matrix*: Finding $u$'s neighbors means scanning its whole row, which is $O(n)$ per vertex and $O(n^2)$ total, so we get $O(n^2 + m log n)$
+- *Unsorted array*: Each `removeMin` is an $O(n)$ scan, so that's $O(n^2)$, and each update is $O(1)$, so the total is $O(n^2 + m) = O(n^2)$, with either graph implementation. For a *dense* graph, where $m$ is close to $n^2$, that's actually better than the heap's $O(n^2 log n)$
+- *Lazy binary heap (modified Dijkstra's)*: Up to $m$ pushes and pops, each $O(log m)$. Since $m < n^2$, $log m < 2 log n$, so this is still $O(m log n)$, it just uses $O(m)$ space for the heap
+- *Fibonacci heap*: A fancier heap where updating a priority is $O(1)$ (amortized), which brings the total down to $O(m + n log n)$. It's the best on paper, but a Fibonacci heap is a giant mess to implement, and it's not in the STL
 
 #table(
   columns: 3,

@@ -17,10 +17,10 @@ Let's start by asking what a bloom filter, exactly as we've studied it, can and 
   [Count the number of unique items in a data set?], [Kind of],
 )
 
-- *Closest match: no.* A bloom filter never finds anything. It only says "probably here" or "definitely not here". Worse, a good hash function sends two very similar keys to completely unrelated places (we've been using `mod` because it's easy to compute by hand, but a real hash function scrambles its keys), so similar hashes tell us nothing about similar keys
-- *Membership: yes.* That's exactly what it's built for: either the item is definitely not in the set, or it probably is
-- *Similarity: kind of.* If two filters use the same $m$ and the same hash functions and have exactly the same bits set, they were very likely built from the same data, since every query would give the same answer. But that's not really a measure of *how* similar two sets are
-- *Unique items: kind of.* With $k = 1$, counting the ones in the filter is close to the number of unique items, but every collision makes two items look like one, so the count comes up short
+- Closest match: no. A bloom filter never finds anything. It only says "probably here" or "definitely not here". Worse, a good hash function sends two very similar keys to completely unrelated places (we've been using `mod` because it's easy to compute by hand, but a real hash function scrambles its keys), so similar hashes tell us nothing about similar keys
+- Membership: yes. That's exactly what it's built for: either the item is definitely not in the set, or it probably is
+- Similarity: kind of. If two filters use the same $m$ and the same hash functions and have exactly the same bits set, they were very likely built from the same data, since every query would give the same answer. But that's not really a measure of *how* similar two sets are
+- Unique items: kind of. With $k = 1$, counting the ones in the filter is close to the number of unique items, but every collision makes two items look like one, so the count comes up short
 
 The last two aren't what a bloom filter does, but the same probabilistic idea (hash everything, then reason about where the hashes land) leads to data structures that do solve them efficiently. This chapter is about the last one, which is exactly what we needed to size our bloom filter
 
@@ -58,7 +58,7 @@ Our estimate is 9.5 unique cards. It's not an integer, but it's an estimate, not
 
 == From Cards to Hashes
 
-Real data isn't a hat of uniformly random numbers. Photos, genomes, and URLs are anything but uniform, and if we just looked at the smallest photo, we'd learn nothing. This is where hashing comes in. Under *SUHA*, a hash function sends every key to a uniformly random value in its range, independently of every other key. So hashing an item is the same as putting a card with a random number into the hat, and the minimum hash value we've seen plays the role of the minimum card
+Real data isn't a hat of uniformly random numbers. Photos, genomes, and URLs are anything but uniform, and if we just looked at the smallest photo, we'd learn nothing. Hashing fixes that. Under *SUHA*, a hash function sends every key to a uniformly random value in its range, independently of every other key. So hashing an item is the same as putting a card with a random number into the hat, and the minimum hash value we've seen plays the role of the minimum card
 
 Hashing also handles the "unique" part for free. If the same item shows up twice, it hashes to the same value twice, which can't change the minimum. So the minimum hash depends only on the *set* of unique items, no matter how many duplicates are mixed in
 
@@ -167,7 +167,7 @@ With $k = 1$, this is exactly the estimator from before. The difference is that 
   [3], [0.492], [$3 / 0.492 - 1 approx 5.10$],
 )
 
-Just going from $k = 1$ to $k = 2$ took us from 2.95 to 5.1, almost exactly the right answer, and $k = 3$ stays at 5.1. Using all of the values doesn't magically make the estimate perfect: $k$ is about getting enough samples, not about looking at everything
+Just going from $k = 1$ to $k = 2$ took us from 2.95 to 5.1, almost exactly the right answer, and $k = 3$ stays at 5.1. A bigger $k$ won't make the estimate perfect, and we don't need to keep every hash. We just need enough samples to average out one bad gap
 
 === Building the Sketch
 
@@ -254,9 +254,9 @@ How much does a bigger $k$ actually help? The full statistical analysis is well 
 
 A few things stand out
 
-- *With $k = 1$, the estimate is close to useless.* Typically it's off by two thirds, and in one trial out of ten it's off by a factor of 7 or more. Most of those huge errors are overestimates: one hash that happens to land very close to 0 makes $1 / M$ enormous. If the hash range is small, like 10,000 values, a single unlucky stream can be estimated at nearly 10,000 items, as many as the hash range can even tell apart
-- *$k = 10$ is already a lot better*, and *$k = 100$ is good*: typically within about 6%, and 9 times out of 10 within about 17%. In our streams of 1000 items, $k = 100$ is a tenth of the set, but in the streams of 100,000 items it's a thousandth, and it does just as well. We don't need $k$ to be any particular fraction of $n$
-- *The returns diminish.* Making $k$ 10 times bigger made the typical error only about 3 times smaller (roughly $sqrt(10)$), so the jump from $k = 1$ to $k = 10$ is much bigger than the jump from $k = 10$ to $k = 100$
-- *It's $k$ that matters, not $n$.* It's tempting to think a bigger stream would make the estimate better on its own, but with $k$ fixed, $n = "100,000"$ is no more accurate than $n = 1000$. Since $n$ is so much bigger than $k$, the error depends on how many gaps we average, which is $k$. To get a better estimate, we keep more hashes
+- With $k = 1$, the estimate is close to useless. Typically it's off by two thirds, and in one trial out of ten it's off by a factor of 7 or more. Most of those huge errors are overestimates: one hash that happens to land very close to 0 makes $1 / M$ enormous. If the hash range is small, like 10,000 values, a single unlucky stream can be estimated at nearly 10,000 items, as many as the hash range can even tell apart
+- $k = 10$ is already a lot better, and $k = 100$ is good: typically within about 6%, and 9 times out of 10 within about 17%. In our streams of 1000 items, $k = 100$ is a tenth of the set, but in the streams of 100,000 items it's a thousandth, and it does just as well. We don't need $k$ to be any particular fraction of $n$
+- The returns diminish. Making $k$ 10 times bigger made the typical error only about 3 times smaller (roughly $sqrt(10)$), so the jump from $k = 1$ to $k = 10$ is much bigger than the jump from $k = 10$ to $k = 100$
+- It's $k$ that matters, not $n$. It's tempting to think a bigger stream would make the estimate better on its own, but with $k$ fixed, $n = "100,000"$ is no more accurate than $n = 1000$. Since $n$ is so much bigger than $k$, the error depends on how many gaps we average, which is $k$. To get a better estimate, we keep more hashes
 
 So we choose $k$ for the accuracy we want, the same way we chose $m$ and the number of hash functions for a bloom filter. Every estimate here depends on the hash function behaving like SUHA, though: if real hashes aren't close to uniform, none of these numbers hold
