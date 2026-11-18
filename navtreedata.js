@@ -61,9 +61,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "03-lists_2main_8cpp.html",
-"classBinaryTree.html#ac66a13ed9ec2289afd024a7485766b20",
-"structprim_1_1Edge.html#a029d8661aa6f4465684b64a1c2199b7c"
+"classGraph.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

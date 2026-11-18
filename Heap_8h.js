@@ -1,4 +1,4 @@
 var Heap_8h =
 [
-    [ "Heap< T >", "classHeap.html", "classHeap" ]
+    [ "Heap&lt; T &gt;", "classHeap.html", "classHeap" ]
 ];

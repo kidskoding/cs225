@@ -1,4 +1,4 @@
 var LLQueue_8h =
 [
-    [ "LLQueue< T >", "classLLQueue.html", "classLLQueue" ]
+    [ "LLQueue&lt; T &gt;", "classLLQueue.html", "classLLQueue" ]
 ];

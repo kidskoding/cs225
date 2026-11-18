@@ -1,4 +1,4 @@
 var AVL_8h =
 [
-    [ "AVL< K, V >", "classAVL.html", "classAVL" ]
+    [ "AVL&lt; K, V &gt;", "classAVL.html", "classAVL" ]
 ];

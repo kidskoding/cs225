@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graph_0',['Graph',['../namespaceprim.html#af0246cf0c43124817f47f0373ad663b7',1,'prim']]]
+  ['graph_0',['Graph',['../namespaceprim.html#a0eeff3c6f461623e28c2fd3e4da0547a',1,'prim']]]
 ];

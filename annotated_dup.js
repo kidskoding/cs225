@@ -14,7 +14,7 @@ var annotated_dup =
       [ "Edge", "structprim_1_1Edge.html", "structprim_1_1Edge" ]
     ] ],
     [ "std", "namespacestd.html", [
-      [ "hash< Point >", "structstd_1_1hash_3_01Point_01_4.html", "structstd_1_1hash_3_01Point_01_4" ]
+      [ "hash&lt; Point &gt;", "structstd_1_1hash_3_01Point_01_4.html", "structstd_1_1hash_3_01Point_01_4" ]
     ] ],
     [ "traversal", "namespacetraversal.html", [
       [ "Edge", "structtraversal_1_1Edge.html", "structtraversal_1_1Edge" ],

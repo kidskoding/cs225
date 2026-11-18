@@ -1,4 +1,4 @@
 var CircularQueue_8h =
 [
-    [ "CircularQueue< T >", "classCircularQueue.html", "classCircularQueue" ]
+    [ "CircularQueue&lt; T &gt;", "classCircularQueue.html", "classCircularQueue" ]
 ];

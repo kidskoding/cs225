@@ -1,6 +1,6 @@
 var Prim_8h =
 [
     [ "prim::Edge", "structprim_1_1Edge.html", "structprim_1_1Edge" ],
-    [ "Graph", "Prim_8h.html#af0246cf0c43124817f47f0373ad663b7", null ],
-    [ "prim", "Prim_8h.html#a895c7f7446519adaaf3b7787583495b9", null ]
+    [ "prim::Graph", "namespaceprim.html#a0eeff3c6f461623e28c2fd3e4da0547a", null ],
+    [ "prim::prim", "namespaceprim.html#a895c7f7446519adaaf3b7787583495b9", null ]
 ];

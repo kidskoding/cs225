@@ -1,5 +1,5 @@
 var BTree_8h =
 [
-    [ "BTree< K >", "classBTree.html", "classBTree" ],
-    [ "BTree< K >::BTreeNode", "structBTree_1_1BTreeNode.html", "structBTree_1_1BTreeNode" ]
+    [ "BTree&lt; K &gt;", "classBTree.html", "classBTree" ],
+    [ "BTree&lt; K &gt;::BTreeNode", "structBTree_1_1BTreeNode.html", "structBTree_1_1BTreeNode" ]
 ];

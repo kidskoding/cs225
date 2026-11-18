@@ -1,4 +1,4 @@
 var ArrayList_8h =
 [
-    [ "ArrayList< T >", "classArrayList.html", "classArrayList" ]
+    [ "ArrayList&lt; T &gt;", "classArrayList.html", "classArrayList" ]
 ];
