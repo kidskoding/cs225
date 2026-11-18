@@ -126,9 +126,9 @@ therefore making the closed form for function $T$, $2^(n + 1) - 3$
 
 *Induction* is a technique used to prove recursive definitions/formulas, indicating that it does match its respective closed form solution
 - Includes a *base case*, *inductive hypothesis*, and *inductive step*
-  - *Base Case* - The starting point, where you prove that it holds true for the smallest value, typically $n = 0$ or $n = 1$
-  - *Inductive Hypothesis* - An assumption that the statement being proven is true for some value $k$
-  - *Inductive Step* - Prove the inductive hypothesis with the next step $k + 1$
+  - *Base Case*: The starting point, where you prove that it holds true for the smallest value, typically $n = 0$ or $n = 1$
+  - *Inductive Hypothesis*: An assumption that the statement being proven is true for some value $k$
+  - *Inductive Step*: Prove the inductive hypothesis with the next step $k + 1$
 
 + Prove that $1 + 2 + 3 + dots + n = (n(n + 1))/2$ for $n >= 1$
 
@@ -258,15 +258,15 @@ Edges can have direction, where graphs with these edges are known as *directed g
 
 === Additional Graph terminology
 
-- *Loops* - a node where an edge connects to itself
-- *Multiple Edges* - two nodes are connected by multiple edges
-- *Complete Graphs* - Graphs where each node is connected to every other node. They have $(n(n - 1))/2$ edges
-- *Walks* - A sequence of nodes and edges, where each edge connects the node before and after it and nodes and edges can repeat
-- *Paths* - Walks that *cannot repeat nodes and edges*
-- *Cycles* - A path that *starts* and *ends* at the same node
+- *Loops*: a node where an edge connects to itself
+- *Multiple Edges*: two nodes are connected by multiple edges
+- *Complete Graphs*: Graphs where each node is connected to every other node. They have $(n(n - 1))/2$ edges
+- *Walks*: A sequence of nodes and edges, where each edge connects the node before and after it and nodes and edges can repeat
+- *Paths*: Walks that *cannot repeat nodes and edges*
+- *Cycles*: A path that *starts* and *ends* at the same node
   - *Cyclic Graphs* consist of graphs where nodes are connected in a cycle (non cyclic graphs are called *acyclic*)
-- *Wheels* - Cycle Graphs where there exists a *single central node* that connects to every other node in the cycle graph
-- *Subgraphs* - A smaller graph made from a subset of vertices and edges of a bigger graph
+- *Wheels*: Cycle Graphs where there exists a *single central node* that connects to every other node in the cycle graph
+- *Subgraphs*: A smaller graph made from a subset of vertices and edges of a bigger graph
 
 You can see a complete graph, a cycle, and a wheel side by side in @m0-complete-cycle-wheel. Notice how the wheel is just the cycle plus a center `h` connected to every node
 
@@ -404,15 +404,15 @@ They are also *acyclic*, *connected*, and have $n$ *vertices* with $n - 1$ *edge
 
 === Tree Vocabulary
 
-- *Parent* - A node that is directly above another node in a tree
-- *Child* - A node that is directly below another node in a tree
-- *Sibling* - Nodes that *share the same parent*
-- *Leaf* - A node that has no children
-- *Internal* - A node that has at least one child
-- *Level* - The number of edges from the *root* to the node (the root has a level of $0$)
-- *Height* - The longest path from a node to a leaf (in terms of edges)
-- *Ancestor* - The ancestor of a node is one that lies on the path from the root to such node
-- *Descendant* - The descendant of a node is one that lies on the path from such node to a leaf node
+- *Parent*: A node that is directly above another node in a tree
+- *Child*: A node that is directly below another node in a tree
+- *Sibling*: Nodes that *share the same parent*
+- *Leaf*: A node that has no children
+- *Internal*: A node that has at least one child
+- *Level*: The number of edges from the *root* to the node (the root has a level of $0$)
+- *Height*: The longest path from a node to a leaf (in terms of edges)
+- *Ancestor*: The ancestor of a node is one that lies on the path from the root to such node
+- *Descendant*: The descendant of a node is one that lies on the path from such node to a leaf node
 
 Try matching these terms to the small tree in @m0-tree-vocabulary. For example, `B` is an internal node at level 1, and `A` is an ancestor of every other node
 
@@ -473,9 +473,9 @@ However, there are some patterns *(assuming that a given tree is binary)*
 Each member of a class in C++ has a specific *access level* that determines how that member can be accessed
 
 A member can be one of three types: *public*, *private*, or *protected*
-- `private` - Members declared as private can only be accessed from *within the same class*
-- `protected` - Members declared as protected can only be accessed by derived classes (subclasses)
-- `public` - Members declared as public can be accessed *anywhere* (inside the class, from other classes, or even outside the class)
+- `private`: Members declared as private can only be accessed from *within the same class*
+- `protected`: Members declared as protected can only be accessed by derived classes (subclasses)
+- `public`: Members declared as public can be accessed *anywhere* (inside the class, from other classes, or even outside the class)
 
 #table(
   columns: 4,
@@ -667,10 +667,10 @@ However, there may be situations where declaring a fixed size memory may lead to
 
 To fix this problem, memory can be manually managed dynamically, which is known as *dynamic memory allocation*. This is done using two keywords `new` and `delete`
 
-`new` - *Dynamically allocate memory at runtime on the heap for an object/array*. Also calls the *constructor* to initialize the object and returns a typed pointer to the allocated memory
+`new`: *Dynamically allocate memory at runtime on the heap for an object/array*. Also calls the *constructor* to initialize the object and returns a typed pointer to the allocated memory
 - This is very similar to `malloc` in C (both allocate memory on the heap), but `malloc` does not call a constructor. Also, `malloc` returns a void pointer (`void*`) and needs to be casted to the appropriate pointer type. Therefore in modern C++, `new` is highly recommended.
 
-`delete` - *Frees memory allocated by* `new`. Also calls the *destructor* to clean up the object. Must match the type of allocation (`delete` for single objects and `delete[]` for arrays)
+`delete`: *Frees memory allocated by* `new`. Also calls the *destructor* to clean up the object. Must match the type of allocation (`delete` for single objects and `delete[]` for arrays)
 - Ensure that the pointer points to a valid object (has a valid address of memory!). Otherwise, unpredictable behavior can happen!
 - Similar to `free` in C, but since there are no destructors, `free` won't call the destructor if there is any
 - *Ends the lifetime of the object the pointer points to!*
@@ -731,7 +731,7 @@ Suppose `Foo` is a class with a default constructor (`Foo() = default;`). The de
 
 *Resource Acquisition Is Initialization*, or RAII, is a C++ programming design pattern that explains how to manage resources safely in a class through a constructor and a destructor. RAII is used heavily in the C++ STL (standard template library) for efficient resource management in objects.
 
-#quote(block: true)[*RAII* - You acquire a resource (memory, file, lock, etc.) via an object's *constructor* and you automatically release that resource via the object's *destructor*]
+#quote(block: true)[*RAII*: You acquire a resource (memory, file, lock, etc.) via an object's *constructor* and you automatically release that resource via the object's *destructor*]
 
 In other words, an object *acquires* a resource in its *constructor* and *releases* it in its *destructor*
 
@@ -767,8 +767,8 @@ This dynamic memory allocation behavior is all managed via the heap. This means 
 The *stack*, formally referred to as the *call stack*, keeps track of all active functions (ones that have been called and not terminated) from the start of the program to the current point of execution. It also handles allocation of all function parameters and local variables
 
 It stores
-- *Local Variables* - function parameters and variables declared inside functions
-- *Function call information* - where to return after a function finishes
+- *Local Variables*: function parameters and variables declared inside functions
+- *Function call information*: where to return after a function finishes
 
 When a function is called, a stack frame is created on top of the call stack that holds the function's local data. When the function ends, its stack frame is removed, and the memory is automatically reclaimed
 
@@ -795,7 +795,7 @@ Looking at @m0-stack-heap, notice that the pointer `p` itself is stack data, and
 
 There are three ways to pass arguments into a function
 
-+ *By Value* - A copy of the argument is made; changes inside the function do *not* affect the original
++ *By Value*: A copy of the argument is made; changes inside the function do *not* affect the original
 
   ```cpp
   void foo(int x) {
@@ -810,7 +810,7 @@ There are three ways to pass arguments into a function
     caption: [Example: after `foo(n)` with `n = 5`, only the copy `x` holds 10],
   ) <m0-pass-by-value-memory>
 
-+ *By Reference* - The function receives an alias to the original argument; changes affect the caller's variable
++ *By Reference*: The function receives an alias to the original argument; changes affect the caller's variable
 
   ```cpp
   void foo(int& x) {
@@ -825,7 +825,7 @@ There are three ways to pass arguments into a function
     caption: [Example: inside `foo(n)`, `x` is another name for the caller's `n`, so `n` becomes 10],
   ) <m0-pass-by-reference-memory>
 
-+ *By Pointer* - The function receives a pointer to the original variable, where you must dereference to modify
++ *By Pointer*: The function receives a pointer to the original variable, where you must dereference to modify
 
   ```cpp
   void foo(int* x) {
@@ -844,7 +844,7 @@ There are three ways to pass arguments into a function
 
 Same three ways variables are passed into a function, are the same three ways variables are returned in a function
 
-+ *By Value* - Returns a copy of the object
++ *By Value*: Returns a copy of the object
 
   ```cpp
   int foo() {
@@ -855,7 +855,7 @@ Same three ways variables are passed into a function, are the same three ways va
 
   In the example above, `x` is returned as a copy of the original `x` variable
 
-+ *By Reference* - Returns a reference (alias) to an existing variable, but doesn't refer to a local variable that goes out of scope!
++ *By Reference*: Returns a reference (alias) to an existing variable, but doesn't refer to a local variable that goes out of scope!
 
   ```cpp
   int& foo(int& x) {
@@ -865,7 +865,7 @@ Same three ways variables are passed into a function, are the same three ways va
 
   In the example above, `x` is simply returned as a reference to an existing variable. Be careful! Referencing a local variable that goes out of scope can lead to undefined behaviors!
 
-+ *By Pointer* - Returns a pointer to an object (can be null). The caller can modify the object via the pointer
++ *By Pointer*: Returns a pointer to an object (can be null). The caller can modify the object via the pointer
 
   ```cpp
   int* foo(int* x) {
@@ -881,7 +881,7 @@ Same three ways variables are passed into a function, are the same three ways va
 
 A *copy constructor* is used to initialize an object with an existing object of the same type. After the copy constructor executes, the newly created object becomes a copy of the object passed in the initializer
 
-- *Implicit Copy Constructor* - If a copy constructor is not provided for a class, the compiler will create a public *implicit copy constructor* for you
+- *Implicit Copy Constructor*: If a copy constructor is not provided for a class, the compiler will create a public *implicit copy constructor* for you
 
 An explicit copy constructor can also be created, by taking in an referenced object type of that class
 
@@ -977,7 +977,7 @@ An rvalue is a temporary object or value that *does not* have a persistent memor
 `int x = 1`
 
 In the code snippet above, `x` is an lvalue (left value) because it is stored in memory with a persistent memory address
-- Recall that a pointer will store this memory address and an lvalue reference - sometimes simply called a reference - is a reference or alias to an existing value in memory
+- Recall that a pointer will store this memory address and an lvalue reference (sometimes simply called a reference) is a reference or alias to an existing value in memory
 
 In contrast, `1` is an rvalue. It is a temporary value used to initialize `x`
 
@@ -1011,10 +1011,10 @@ The *move assignment operator* defines how objects should be moved after being i
 
 The code below defines a move assignment operator, but typical operations that are implemented include
 
-- *Self-assignment check* (`this != &other`) - ensures that an object is not moving into itself
+- *Self-assignment check* (`this != &other`): ensures that an object is not moving into itself
 - Free or clean up any resources that the current object owns (like deleting dynamically allocated memory)
-- *Stealing resources from the source* - transfer the ownership of the resources from the `other` rvalue object to the current object by copying pointers or handles
-- *Leave the source in a valid, but empty state* - Set the `other` object pointers or resource handles to `nullptr` or equivalent so that destructor won't free the resources again (double free - free what has already been freed)!
+- *Stealing resources from the source*: transfer the ownership of the resources from the `other` rvalue object to the current object by copying pointers or handles
+- *Leave the source in a valid, but empty state*: Set the `other` object pointers or resource handles to `nullptr` or equivalent so that destructor won't free the resources again (a double free, which frees what has already been freed)!
 - Return `*this`, a reference to the current object!
 
 ```cpp
@@ -1064,7 +1064,7 @@ When a class manages resources (*dynamic memory*, file handles, etc.), it *must*
 
 The rule of zero/three/five are rules widely adopted in C++ related to memory/resource management and ownership, specifically about when and how you should define or avoid defining special member functions in a class
 
-*Rule of Zero* - If your class doesn't manage resources directly, *DO NOT* define the *big five*
+*Rule of Zero*: If your class doesn't manage resources directly, *DO NOT* define the *big five*
 
 - Destructor
 - Copy Constructor
@@ -1072,11 +1072,11 @@ The rule of zero/three/five are rules widely adopted in C++ related to memory/re
 - Move Constructor
 - Move Assignment
 
-*Rule of Three* - If you define one of a *destructor*, *copy constructor*, or *copy assignment operator*, *you should define ALL three of them!*
+*Rule of Three*: If you define one of a *destructor*, *copy constructor*, or *copy assignment operator*, *you should define ALL three of them!*
 
 - This is because handling one implies your class is managing a resource that needs careful copying and cleanup
 
-*Rule of Five* - Applies to modern C++, where if you plan on managing resources with move semantics, define *all 5 of the following* (this is the opposite of the *rule of zero*)
+*Rule of Five*: Applies to modern C++, where if you plan on managing resources with move semantics, define *all 5 of the following* (this is the opposite of the *rule of zero*)
 - Destructor
 - Copy Constructor
 - Copy Assignment

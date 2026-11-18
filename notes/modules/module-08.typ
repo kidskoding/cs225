@@ -2,7 +2,7 @@
 
 = Trees
 
-A *tree* comprises of two things:
+A *tree* has two properties:
 
 + It's an acyclic graph (has no cycles)
 + It is connected, meaning that there is a unique path from the root to every other node
@@ -12,11 +12,11 @@ A *binary tree*, $T$, is either
 + A tree composed of a tuple containing the *root*, *left subtree*, and *right subtree*, $T = (r, T_L, T_R)$, where $r$, $T_L$, and $T_R$ represent the root, left subtree, and right subtree respectively
 + A *null* tree (there are no nodes in the tree)
 
-A data structure should be able to contain nothing because that is how we tend to start evolving and adding elements/nodes into it. In the context of a tree, we would like to be able to start it off with nothing. Therefore, it makes sense to define a binary tree as a *null* tree, where it has no vertices
+A data structure should be able to hold nothing, because that's how it starts before we add elements/nodes to it. In the context of a tree, we would like to be able to start it off with nothing. Therefore, it makes sense to define a binary tree as a *null* tree, where it has no vertices
 
 A tree's *height*, height($T$), is the longest path from the root to a leaf. However, this changes a little bit for a binary tree
 
-In a binary tree, it is equal to maximum subtree of the left and right plus 1, or simply
+In a binary tree, it is the maximum height of the left and right subtrees plus 1, or
 
 $ "height"(T) = max("height"(T_L), "height"(T_R)) + 1 $
 
@@ -36,7 +36,7 @@ This makes sense because if $T_L = 5$ and $T_R = 3$, then the whole tree can go 
   caption: [Example: the leaves (no children) are highlighted. The longest path from $A$ is $A, B, D, G$, so $"height"(T) = max(2, 1) + 1 = 3$],
 ) <tree-height-example>
 
-The height of a null tree is simply -1, because all the math and recursion will work out. Most of the time, the base case in tree recursion occurs when there are no nodes to choose from
+The height of a null tree is simply -1, because that makes the math and recursion work out. Most of the time, the base case in tree recursion occurs when there are no nodes to choose from
 
 A tree is *full* if and only if
 
@@ -55,7 +55,7 @@ However, if I wanted to build a perfect tree with only 4 nodes, that wouldn't be
 
 A *complete* tree is a binary tree where all levels are completely filled except for the last level, which is filled from left to right
 
-More specially, complete trees
+More specifically, complete trees are
 
 + A perfect tree for every level except the last, where the last level is "pushed to the left"
 + For all levels $k$ in $[0, h - 1]$, $k$ has $2^k$ nodes. For level $h$, all nodes are "pushed to the left"
@@ -64,10 +64,10 @@ A complete tree of height $h$, $C_h$
 
 + $C_(-1) = {}$
 + $C_h$ (where $h >= 0$) $= {r, T_L, T_R}$ and either:
-  - $T_L$ is $C_(h - 1)$ and $T_R$ is $P_(h - 2)$ - given a complete tree with a height $h$, its left subtree must be complete with height $h - 1$ and its right subtree must be perfect with height $h - 2$
-  - $T_L$ is $P_(h - 1)$ and $T_R$ is $C_(h - 1)$ - given a complete tree with a height $h$, its left subtree must be perfect with height $h - 1$ and its right subtree must be complete with height $h - 1$
+  - $T_L$ is $C_(h - 1)$ and $T_R$ is $P_(h - 2)$: given a complete tree with a height $h$, its left subtree must be complete with height $h - 1$ and its right subtree must be perfect with height $h - 2$
+  - $T_L$ is $P_(h - 1)$ and $T_R$ is $C_(h - 1)$: given a complete tree with a height $h$, its left subtree must be perfect with height $h - 1$ and its right subtree must be complete with height $h - 1$
 
-This just mathematically explains the definition of a complete tree, which is simply a perfect tree where every level is filled except the last, which is filled with nodes towards its left subtree
+This is the formal version of the definition of a complete tree: a perfect tree where every level is filled except the last, which is filled with nodes towards its left subtree
 
 If you compare the three trees in @tree-full-perfect-complete, the complete tree is just the perfect tree with its rightmost leaf (7) missing.
 
@@ -86,15 +86,15 @@ If you compare the three trees in @tree-full-perfect-complete, the complete tree
 
 == Tree ADT
 
-Tree ADT involves 3 primary functionalities
+The Tree ADT has 3 main operations
 
-+ `insert`, inserts an element to the tree - into a location in structure
-+ `remove`, removes an element from a tree - from a location in structure
-+ `access`, access elements from a tree - from a location in structure
++ `insert`: inserts an element into a location in the tree's structure
++ `remove`: removes an element from a location in the tree's structure
++ `access`: accesses an element at a location in the tree's structure
 
 A list has a fixed structure and order, but a tree has varied structure depending on how it is used. The tree's structure may not matter because many algorithms may still work the same regardless of the tree's shape, as long as the structure still preserves the necessary relationships.
 
-Therefore, let's think about how we code a `BinaryTree`. An example header file that defines a `BinaryTree` is shown below
+Let's think about how to code a `BinaryTree`. An example header file that defines a `BinaryTree` is shown below
 
 ```cpp
 // BinaryTree.h
@@ -113,11 +113,11 @@ The first thing we need is a way to store the tree's root. In a `LinkedList`, th
 
 Therefore, we will also want to use a `struct` here to store each individual `TreeNode`, which will have 3 fields
 
-+ `data` - the data the `TreeNode` holds
-+ `left` - a *pointer* to another `TreeNode` that represents the left child (or `nullptr` if no left child)
-+ `right` - a *pointer* to another `TreeNode` that represents the right child (or `nullptr` if no right child)
++ `data`: the data the `TreeNode` holds
++ `left`: a *pointer* to another `TreeNode` that represents the left child (or `nullptr` if no left child)
++ `right`: a *pointer* to another `TreeNode` that represents the right child (or `nullptr` if no right child)
 
-The code for a `TreeNode` is reflected below
+The code for a `TreeNode` is shown below
 
 ```cpp
 struct TreeNode {
@@ -132,7 +132,7 @@ struct TreeNode {
 };
 ```
 
-With this, it makes sense for our root to also be a *pointer* to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access and avoids copying data unnecessarily, allowing the tree to grow dynamically in memory without using too much overhead. The `BinaryTree` class is reflected below
+With this, it makes sense for our root to also be a *pointer* to a `TreeNode` as well. By making the left/right children nodes and root nodes pointers, it allows for efficient memory access and avoids copying data unnecessarily, allowing the tree to grow dynamically in memory without using too much overhead. The `BinaryTree` class is shown below
 
 ```cpp
 // BinaryTree.h
@@ -172,7 +172,7 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
 + *Base Case(s)*
   - $n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) (the tree is empty so the `root` pointer is null)
   - $n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) (there is only the root node and both `left` and `right` child pointers are null)
-  - $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) (One node has two children - one child node and one null child - and the child node has two null pointers, totaling 3)
+  - $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) (the root's two child pointers hold one child node and one null, and the child node has two null pointers, totaling 3)
 + *Induction Hypothesis*: Suppose $"NULLS"(n) = n + 1$ for all $0 <= n < k$
 + *Inductive Step*: Prove for $n = k + 1$ nodes
   - Consider any binary tree with $k + 1$ nodes

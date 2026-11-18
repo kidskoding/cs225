@@ -71,7 +71,7 @@ Ignoring constants, the best case scenario of a BST occurs at a runtime of $O(lo
 
 Therefore, BSTs can run faster, only if their height remains close to $O(log n)$
 
-As discussed earlier, a BST's height depends on the number of nodes inserted into it.
+As discussed earlier, a BST's height depends on the order in which nodes are inserted into it.
 
 If we assume that we have random numbers being inserted into our BST, and choose those random numbers, how many different ways are there?
 
@@ -81,7 +81,7 @@ If we looked at every possible sequence and computed its height, its average is 
 
 This is because inserting keys in a random order splits the tree roughly in half at each step, where the tree's height grows the number of times you can halve the keys, which is about $log_2(n) equiv log(n)$
 
-This is delving into the average case runtime of a BST because the time complexity depends on the tree's height, and since the average height of a BST built from random insertions is about $O(log n)$, the average case runtime for these operations is also $O(log n)$
+This is the average case runtime of a BST. The time complexity depends on the tree's height, and since the average height of a BST built from random insertions is about $O(log n)$, the average case runtime for these operations is also $O(log n)$
 
 The table below summarizes BST analysis with the average case
 
@@ -98,8 +98,8 @@ We discussed the BST average cases, which make sense when thinking about it in c
 
 Some other things to note
 
-+ `find` - Sorted List `find` is $O(log n)$. This is basically performing binary search, since binary search is a more optimal search when a list is sorted. Similarly, unsorted list `find` is $O(n)$, which is simply linear search, which the worst case occurs when the element is found after traversing $n$ times
-+ `insert` - Unsorted is $O(1)$, since we can just append an element to the back of a list without maintaining an order, while sorted is $O(n)$ since we have to first insert the element to the back and then shift elements up to $n$ times to make space for the new element
++ `find`: Sorted List `find` is $O(log n)$. This is basically performing binary search, since binary search is a more optimal search when a list is sorted. Similarly, unsorted list `find` is $O(n)$, which is simply linear search, which the worst case occurs when the element is found after traversing $n$ times
++ `insert`: Unsorted is $O(1)$, since we can just append an element to the back of a list without maintaining an order, while sorted is $O(n)$ since we have to first insert the element to the back and then shift elements up to $n$ times to make space for the new element
 + `remove` and `traverse` are $O(n)$ for both sorted and unsorted lists since the worst case scenario occurs when having to traverse a maximum of $n$ times
 
 This explains the notion of *balancing* a BST. We want to balance a BST so that its operations come with a cheaper cost of $O(log n)$

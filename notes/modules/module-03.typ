@@ -2,16 +2,16 @@
 
 = List ADT and Linked List Implementation
 
-*ADT* - Abstract Data Type
+*ADT*: Abstract Data Type
 - ADTs are conceptual models that define a set of operations and behaviors for a data structure
 
 *List ADT Goals*
-- `insert` - Done via front/back, at index, or at pointer
-- `delete` - Done via front/back, at index, or at pointer
-- `getData` - Done via front/back, at index or at pointer
+- `insert`: done via front/back, at index, or at pointer
+- `delete`: done via front/back, at index, or at pointer
+- `getData`: done via front/back, at index or at pointer
 - `isEmpty`
 - `size`
-- *Store any necessary constructor, destructors, copy constructors, etc. so that it behaves like any basic variable*
+- Store any necessary constructor, destructors, copy constructors, etc. so that it behaves like any basic variable
 
 The goal is to have every data structure behave like a fancy interface, but at a fundamental level act exactly the same as a basic data type! They should also behave like *templates* so that they can store anything (integers, pictures, imaginary numbers, etc.). We just want one generic data structure!
 
@@ -33,14 +33,14 @@ Looking at @list-example, the *head* is the *first node* in the linked list, and
 Similarly, the *tail* is the *last node* in the linked list and it points to *nothing* (null pointer)!
 
 This means that our List ADT must contain
-- `head` - a pointer to a `ListNode`
+- `head`: a pointer to a `ListNode`
 
-Intuitively, this also shows that the linked list that contains several nodes, which begin with the value `10`, where then points to the next node of the linked list with value `20`, and so on
-- From a C++ standpoint, this means that our List ADT must chain nodes together via *pointers* - Each node contains its own data along with a *pointer* that points to the next node in the List!
+The figure also shows a linked list of several nodes: the first holds `10` and points to the next node, which holds `20`, and so on
+- From a C++ standpoint, this means that our List ADT must chain nodes together via *pointers*. Each node contains its own data along with a *pointer* that points to the next node in the List!
 
 This is shown in the code below, which represents a generic `ListNode`, `ListNode<T>`. In this `ListNode` representation, each `ListNode` holds a generic type of data notated as `T`
 
-Additionally, there is a pointer to the next `ListNode` in the List along with a copy constructor that can be used to copy data into the List!
+There is also a pointer to the next `ListNode` in the List along with a copy constructor that can be used to copy data into the List!
 
 ```cpp
 #pragma once
@@ -109,7 +109,7 @@ void List<T>::insertAtFront(const T& data) {
 
 This algorithm has a runtime of $O(1)$, due to three simple operations and doesn't loop or scale through a list size!
 
-Recall what `->` (arrow operator) does in C++. It's a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! `newNode->next` is the mere equivalent of `(*newNode).next`
+Recall what `->` (arrow operator) does in C++. It's a nice operator that dereferences the pointer and then calls an attribute/method on that pointer! `newNode->next` is equivalent to `(*newNode).next`
 
 == `insert`
 
@@ -157,7 +157,7 @@ When the index is 0, `insert` would behave exactly how `insertAtFront` works
 
 To understand this much trickier algorithm, we can use the same concrete List example from `insertAtFront`, with example function call `insert(3, 1)`
 
-To make this call take place, we need to find the node at the first index and insert the newly created node before that. To do this, our insert algorithm must do two following steps
+To make this call take place, we need to find the node at the first index and insert the newly created node before that. To do this, our insert algorithm must do the following two steps
 
 + Allocate the given data onto the heap
 + Find the place to insert the newly created node (typically the code semantics are before)
@@ -217,13 +217,13 @@ public:
   + Implement this *iteratively*. Implementing *recursively* will cause a *Stack Overflow Error*, where no more stack frames can be placed on the call stack, resulting in *stack memory overflow*
     + Regardless, thinking about the recursive solution can still be a good thing to do
       + When `index == 0`, we know that this is the `head` of the List, or simply the first node, otherwise we return a recursive function call, which subtracts the index by 1, and then passes in the next node of the List. This recursive algorithm is shown in the first code snippet below
-    + To implement find iteratively, we can follow a fixed algorithmic step
+    + To implement find iteratively, we follow these steps
       + Return the `head` ListNode if the index is `0`. We can do this because we know the `head` is always at index `0`. We also return `head` if the List is empty, since there's nothing to walk through
         + Recall that this method returns a `ListNode*&`, which is a *pointer reference*. `head` is in fact a *reference to a pointer*!
       + Create a temporary `ListNode`, `curr` that is assigned to head. This represents the current node being referenced in the `LinkedList`
       + Otherwise, loop while `x` is less than `index - 1`, and reassign `curr` to the next node in the `LinkedList`
         + We also stop early if `curr->next` is null, so `curr` never walks off the end of the List and becomes null. An index past the end just lands at the end of the List
-      + Then return `curr->next` because we know that once `x` becomes `index - 1`, we can stop and just return the a reference to the next node in the `LinkedList`, hence `curr->next`
+      + Then return `curr->next` because we know that once `x` becomes `index - 1`, we can stop and just return a reference to the next node in the `LinkedList`, hence `curr->next`
         + Recall that `curr` is a *copy* of head! We don't want to return a copy `ListNode*`, but rather a reference `ListNode*`, which is simply a type `ListNode*&`
         + Therefore, we return `curr->next` and loop from `x` to `index - 1`, instead of looping from `x` to `index` and returning just `curr`
       + This process is shown in the second code snippet below. You can trace it for `find(2)` on the List from @list-before-insert-at-front in @list-find-traversal, where `curr` stops at the shaded node and returns its `next`
@@ -441,7 +441,7 @@ public:
 };
 ```
 
-This algorithm, therefore, works very simple
+The algorithm is simple
 
 + Find the `ListNode` at the given index (we already did this with the `find` function!)
 + Return that `ListNode`'s data (Every `ListNode` instance holds its own data!)
@@ -498,7 +498,7 @@ public:
 };
 ```
 
-The algorithm for this is once again simple
+The algorithm is once again simple
 
 + Find the `ListNode` at the given index, with our helper `find` function, let's call it `toRemove`
 + Create a `temp` `ListNode` containing the `ListNode` to be removed, let's call it `temp`
@@ -559,6 +559,6 @@ If we call `remove(1)` on that same List from @list-before-insert-at-front, we g
 - Creates a copy pointer to the node being removed called `temp`. We keep a separate reference so that we can return its data in the function
   - Without `temp`, once `toRemove = toRemove->next`, the previous node that `toRemove` stored is now lost
   - We need the original node that was stored in `toRemove` in order to be able to return the data that was removed from the `LinkedList`, which is why we store it in `temp`!
-- `delete temp`, ensures the memory allocated to `temp` is freed. We do this call because we know that the `LinkedList` no longer needs this `temp` `ListNode` (*`LinkedList` no longer needs to track it!*)
+- `delete temp` ensures the memory allocated to `temp` is freed. We do this call because we know that the `LinkedList` no longer needs this `temp` `ListNode` (*`LinkedList` no longer needs to track it!*)
 
 This wraps up the first implementation of a List, often referred to as a `LinkedList`

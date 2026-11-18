@@ -8,20 +8,20 @@ Here, we will continue discussing Trees and the Tree ADT. Previously, we failed 
 
 Recall that previously we discussed that every data structure should be able to have its own way of getting everything it contains, which was done through an iterator. This means that if we want to achieve this functionality, we would need to implement an iterator interface. But *how*?
 
-We need to know how to find everything in our tree. Otherwise, how would we know that we found everything. The simple answer to these questions is by implementing *tree traversals*.
+We need to know how to find everything in our tree. Otherwise, how would we know that we found everything? The answer is to implement *tree traversals*.
 
 *Tree traversals* are algorithms that will follow the structure of a tree in some fixed order that *visits* every node. They access *all the nodes* in a tree. So every data point is stored in some sort, and we are going to visit all of the nodes.
 
 - By visit, we typically mean whatever the algorithm wants to do with the data, which for demonstration purposes, we just simplify to printing the data because that is an easy way to test what is going on
 - So when a node is visited, it will then be printed and then at the end check whether we went through every node in the tree
 
-While it makes sense that the goal of a tree traversal is to visit every node, but *how*? Should a tree visit a node *before* I traverse into the subtree, *in between* the subtree, or *after* the subtree?
+The goal of a tree traversal is to visit every node, but *how*? Should a tree visit a node *before* I traverse into the subtree, *in between* the subtree, or *after* the subtree?
 
 The simple answer is that *it's up to you*. It depends on *when* you choose to visit a node in relation to its children. These three choices correspond to the three well-known tree traversal techniques:
 
-- *Pre-order traversal* — visit the node *before* its subtrees
-- *In-order traversal* — visit the node *between* its subtrees
-- *Post-order traversal* — visit the node *after* its subtrees
+- *Pre-order traversal*: visit the node *before* its subtrees
+- *In-order traversal*: visit the node *between* its subtrees
+- *Post-order traversal*: visit the node *after* its subtrees
 
 By understanding how these traversals work, it makes coding them much more simple and straightforward.
 
@@ -33,9 +33,9 @@ By understanding how these traversals work, it makes coding them much more simpl
 
 The order in which you do the three options above depends on the traversal type
 
-- *Preorder* - visit, descend left, descend right
-- *Inorder* - descend left, visit, descend right
-- *Postorder* - descend left, descend right, visit
+- *Preorder*: visit, descend left, descend right
+- *Inorder*: descend left, visit, descend right
+- *Postorder*: descend left, descend right, visit
 
 We'll run every traversal in this section on the tree in @traversal-example-tree.
 
@@ -44,7 +44,7 @@ We'll run every traversal in this section on the tree in @traversal-example-tree
   caption: [Example tree used for every traversal below],
 ) <traversal-example-tree>
 
-Traversals are *recursive* by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, making recursion the best way to mimic this behavior.
+Traversals are *recursive* by nature because trees are recursive data structures. When we visit a node, we then descend into its left and right subtrees, and for each of those, we repeat the same process: visiting the node and then exploring its subtrees. This pattern continues until we reach nodes with no children, so recursion is the natural way to mimic this behavior.
 
 === Pre Order traversal
 
@@ -80,9 +80,9 @@ Our *base case* occurs when the current node pointer (`curr`) is `nullptr`. This
 
 If the node is not `nullptr`, we proceed with the pre-order traversal steps:
 
-+ *Visit the current node* — we get its data (e.g., print it).
-+ *Traverse the left subtree* — recursively call `preOrderTraversal` on `curr->left`.
-+ *Traverse the right subtree* — recursively call `preOrderTraversal` on `curr->right`.
++ *Visit the current node*: we get its data (e.g., print it).
++ *Traverse the left subtree*: recursively call `preOrderTraversal` on `curr->left`.
++ *Traverse the right subtree*: recursively call `preOrderTraversal` on `curr->right`.
 
 Each of these recursive calls follows the same pattern: check if the node is `nullptr`, visit it, and recurse on its children. This process naturally continues until all nodes have been visited, and both left and right child pointers are `nullptr`, causing the recursion to unwind.
 
@@ -122,9 +122,9 @@ Our *base case* is the same as pre order, when the current node pointer (`curr`)
 
 If the node is not `nullptr`, we proceed with the in-order traversal steps:
 
-+ *Traverse the left subtree* — recursively call `inOrderTraversal` on `curr->left`.
-+ *Visit the current node* — we get its data (e.g., print it).
-+ *Traverse the right subtree* — recursively call `inOrderTraversal` on `curr->right`.
++ *Traverse the left subtree*: recursively call `inOrderTraversal` on `curr->left`.
++ *Visit the current node*: we get its data (e.g., print it).
++ *Traverse the right subtree*: recursively call `inOrderTraversal` on `curr->right`.
 
 If we apply in-order traversal to the tree in @traversal-example-tree, we get 1, 2, 3, 4, 5, 6, 7 (sorted, because the example is a BST).
 
@@ -162,9 +162,9 @@ The base case is equivalent to pre and in order traversals.
 
 If the node is not `nullptr`, we proceed with the post-order traversal steps:
 
-+ *Traverse the left subtree* — recursively call `postOrderTraversal` on `curr->left`.
-+ *Traverse the right subtree* — recursively call `postOrderTraversal` on `curr->right`.
-+ *Visit the current node* — we get its data (e.g., print it).
++ *Traverse the left subtree*: recursively call `postOrderTraversal` on `curr->left`.
++ *Traverse the right subtree*: recursively call `postOrderTraversal` on `curr->right`.
++ *Visit the current node*: we get its data (e.g., print it).
 
 Back on @traversal-example-tree, post-order visits 1, 3, 2, 5, 7, 6, 4, so the root 4 comes last.
 
@@ -172,13 +172,13 @@ The ideas behind these traversals are very similar. It's just that the order a `
 
 A good way to remember the traversals are the three mnemonics
 
-- *NLR* - pre order traversal (node, left, right)
-- *LNR* - in order traversal (left, node, right)
-- *LRN* - post order traversal (left, right, node)
+- *NLR*: pre order traversal (node, left, right)
+- *LNR*: in order traversal (left, node, right)
+- *LRN*: post order traversal (left, right, node)
 
 More specifically, these tree traversals fall under a broader category known as *depth first search (DFS)*. In DFS, we start at the root and recursively descend as far down each branch as possible before backtracking, where nodes are then visited in a way that explores one entire path before moving to another.
 
-== A different type of traversal - Level Order Traversal
+== A different type of traversal: Level Order Traversal
 
 There is another type of tree traversal that behaves differently than the three DFS traversals and it is known as a *Level Order Traversal*.
 
@@ -246,4 +246,4 @@ A clean way to support all three orders is *inheritance*
 - `InorderTraversal`, `PreorderTraversal`, and `PostorderTraversal` inherit from it and provide only the part that differs between them, which is *when* a node is visited relative to its children, the same way the recursive versions only differ in where the print goes
 - Code that takes a `TreeTraversal*` works with any of the three. If the pointer is concretely an `InorderTraversal`, we get an in-order traversal, and so on
 
-Try to put almost all of the work in the base class and only the order-specific step in the derived classes. Working through this carefully matters, since this way of reasoning about recursion done iteratively comes back in later MPs and exams
+Try to put almost all of the work in the base class and only the order-specific step in the derived classes. Work through this carefully, since reasoning about recursion done iteratively comes back in later MPs and exams

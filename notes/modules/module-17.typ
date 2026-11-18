@@ -46,7 +46,7 @@ A *B-Tree* is a self-balancing search tree designed for efficient storage and re
 - The keys inside a node are kept in *sorted order*, and the children split the key ranges between them
 - All leaves appear at the same depth, so the tree remains balanced
 - Because each node can hold many keys (often filling a disk block), the tree height is very small, which reduces disk accesses
-- Operations like search, insertion, and deletion still take *$O(log n)$* time, but with a much smaller constant factor, making B-Trees ideal for databases and file systems
+- Search, insertion, and deletion still take $O(log n)$ time, but with a much smaller constant factor, which is why databases and file systems use B-Trees
 
 A *B-tree of order $m$* is an *$m$-way* (or *$m$-ary*) tree, meaning every node has between 0 and $m$ children
 
@@ -67,8 +67,8 @@ Searching or inserting inside a single node takes up to $O(m)$ time, since the k
 
 $m$ is a design choice: we pick it so that one node fits exactly in whatever we get back from a single seek
 
-- *Network* - Data is sent in packets of up to the *MTU* (maximum transmission unit), which is 1,500 bytes on basically everything modern. So we choose $m$ so that a node's keys fit in 1,500 bytes
-- *Disk* - Disks read and write whole *blocks*, traditionally 512 bytes and nowadays often 4,096 bytes. Writing even 2 bytes uses up a whole block, so we choose $m$ so that a node fills one block
+- *Network*: Data is sent in packets of up to the *MTU* (maximum transmission unit), which is 1,500 bytes on basically everything modern. So we choose $m$ so that a node's keys fit in 1,500 bytes
+- *Disk*: Disks read and write whole *blocks*, traditionally 512 bytes and nowadays often 4,096 bytes. Writing even 2 bytes uses up a whole block, so we choose $m$ so that a node fills one block
 
 This works because almost all the time of a seek is spent *finding* the start of the data (something like 100 times longer than actually reading it). Once we've paid for the seek, reading a whole node full of keys costs almost nothing extra
 

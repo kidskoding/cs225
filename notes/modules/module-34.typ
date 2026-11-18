@@ -63,8 +63,8 @@ An array is just a mathematical offset from its start, so indexing is $O(1)$, bu
 
 === Stacks and Queues
 
-- *Stack* - Last in, first out (LIFO). Every operation is $O(1)$ with a linked list, and amortized $O(1)$ with an array
-- *Queue* - First in, first out (FIFO). Also $O(1)$ (amortized for an array). With an array, the natural implementation is a *circular queue* (like in @queue-circular-wrap)
+- *Stack*: Last in, first out (LIFO). Every operation is $O(1)$ with a linked list, and amortized $O(1)$ with an array
+- *Queue*: First in, first out (FIFO). Also $O(1)$ (amortized for an array). With an array, the natural implementation is a *circular queue* (like in @queue-circular-wrap)
 
 A circular buffer between two pieces of a program that run at different or uneven speeds is one of the most common data structures in real code. It can even be built in hardware for incredibly fast performance
 
@@ -89,14 +89,14 @@ We spent almost half of the course on trees, and we've still only scratched the 
 
 A plain BST is only as good as its height, and a tree with only right children is perfectly legal. An AVL tree uses rotations to keep itself balanced, which is like pretending the keys were inserted in a better order. A B-tree makes the base of the log bigger, so the tree is very short (@btree-shorter), which matters when following a pointer is slow, like on a disk or over a network (a disk is roughly a million times slower than cache, and a network can be tens to hundreds of millions of instructions)
 
-That idea goes way beyond B-trees: lots of performance models say "if it's smaller than $X$, it's basically free, and if it's bigger, it's slow". If we can reduce how often we go outside of that small, fast space, we make a huge impact
+That idea goes way beyond B-trees: lots of performance models say "if it's smaller than $X$, it's basically free, and if it's bigger, it's slow". If we can reduce how often we go outside of that small, fast space, things get a lot faster
 
 === Special Trees
 
-- *KD trees* - Every balanced BST can do approximate searches: if a key isn't in the tree, the nearest key is its in-order predecessor or successor, and we can find every key in a range efficiently. A KD tree does this in $k$ dimensions by splitting the data evenly in a different dimension at every level (@kd-tree-build)
-- *Huffman trees* - If we know how often each character appears (either predicted, like for English, or counted from the data), we can build a binary tree with the *least* frequent characters deepest. Each character's code is its path from the root (left is 0, right is 1), which is the most efficient way to encode the data, so it's used for *compression*. In @huffman-tree, the frequent `A` gets a 1-bit code, so the 12 characters take 21 bits instead of 24 with fixed 2-bit codes
-- *Heaps* - A complete tree, usually stored as an array (@pq-heap-array), that implements a *priority queue*. `insert` adds at the bottom and heapifies up, and `removeMin` swaps the last value to the root and heapifies down. Theoreticians all say a min-heap is the default, but `std::priority_queue` is a max-heap by default
-- *Disjoint sets* - A forest of uptrees supporting add, `union`, and `find`. With smart union and path compression (@ds-path-compression), operations are amortized $O(alpha(m, n))$: the inverse Ackermann function, which is single digits for anything that could fit in the universe, so effectively constant
+- *KD trees*: Every balanced BST can do approximate searches. If a key isn't in the tree, the nearest key is its in-order predecessor or successor, and we can find every key in a range efficiently. A KD tree does this in $k$ dimensions by splitting the data evenly in a different dimension at every level (@kd-tree-build)
+- *Huffman trees*: If we know how often each character appears (either predicted, like for English, or counted from the data), we can build a binary tree with the *least* frequent characters deepest. Each character's code is its path from the root (left is 0, right is 1), which is the most efficient way to encode the data, so it's used for *compression*. In @huffman-tree, the frequent `A` gets a 1-bit code, so the 12 characters take 21 bits instead of 24 with fixed 2-bit codes
+- *Heaps*: A complete tree, usually stored as an array (@pq-heap-array), that implements a *priority queue*. `insert` adds at the bottom and heapifies up, and `removeMin` swaps the last value to the root and heapifies down. Theoreticians all say a min-heap is the default, but `std::priority_queue` is a max-heap by default
+- *Disjoint sets*: A forest of uptrees supporting add, `union`, and `find`. With smart union and path compression (@ds-path-compression), operations are amortized $O(alpha(m, n))$, where $alpha$ is the inverse Ackermann function. It's single digits for anything that could fit in the universe, so effectively constant
 
 #figure(
   tree((12, "A:6", (6, "B:3", ("3", "C:2", "D:1")))),
@@ -107,9 +107,9 @@ That idea goes way beyond B-trees: lots of performance models say "if it's small
 
 There are three ways to represent a graph
 
-- *Edge list* - Super simple, with no overhead for saving or loading, so it's the standard file format, but slow for almost everything else
-- *Adjacency matrix* - Easy to write, with $O(1)$ `areAdjacent`, but it uses $O(n^2)$ space and usually isn't the best choice. It shows up a lot because it takes no time to think about
-- *Adjacency list* - Pointers everywhere, so it's harder to code, but it's essentially optimal for everything except `areAdjacent`, and it matches how almost every real graph algorithm works
+- *Edge list*: Super simple, with no overhead for saving or loading, so it's the standard file format, but slow for almost everything else
+- *Adjacency matrix*: Easy to write, with $O(1)$ `areAdjacent`, but it uses $O(n^2)$ space and usually isn't the best choice. It shows up a lot because it takes no time to think about
+- *Adjacency list*: Pointers everywhere, so it's harder to code, but it's essentially optimal for everything except `areAdjacent`, and it matches how almost every real graph algorithm works
 
 === Traversals
 
@@ -117,10 +117,10 @@ BFS and DFS on a graph work like they do on a tree, except we *don't visit a ver
 
 === Graph Algorithms
 
-- *Kruskal's algorithm* (minimum spanning tree) - Put every edge in a priority queue by weight and every vertex in its own disjoint set. Repeatedly take the cheapest edge, and if it connects two different sets, keep it and union them, until we have $n - 1$ edges
-- *Prim's algorithm* (minimum spanning tree) - Start from one vertex and repeatedly add the cheapest edge from the tree to a vertex not yet in it, until every vertex is reached
-- *Dijkstra's algorithm* (shortest paths from one vertex to all others) - Exactly like Prim's, except the cost of reaching a new vertex is the cost to get to the vertex we're coming from *plus* the edge. Since that's the only change, the analysis is the same as Prim's
-- *Floyd-Warshall* (shortest paths between all pairs) - A dynamic programming algorithm: first the shortest paths using no intermediate vertices, then allowing one more vertex at a time. The code is just a triple nested loop, so it's $O(n^3)$
+- *Kruskal's algorithm* (minimum spanning tree): Put every edge in a priority queue by weight and every vertex in its own disjoint set. Repeatedly take the cheapest edge, and if it connects two different sets, keep it and union them, until we have $n - 1$ edges
+- *Prim's algorithm* (minimum spanning tree): Start from one vertex and repeatedly add the cheapest edge from the tree to a vertex not yet in it, until every vertex is reached
+- *Dijkstra's algorithm* (shortest paths from one vertex to all others): Exactly like Prim's, except the cost of reaching a new vertex is the cost to get to the vertex we're coming from *plus* the edge. Since that's the only change, the analysis is the same as Prim's
+- *Floyd-Warshall* (shortest paths between all pairs): A dynamic programming algorithm. It starts with the shortest paths using no intermediate vertices, then allows one more vertex at a time. The code is just a triple nested loop, so it's $O(n^3)$
 
 Kruskal's and Prim's runtimes look different on paper, but for connected graphs both come out to $O(m log n)$ with a binary heap, and analyzing them on sparse versus dense graphs shows they're about the same. There's no clear winner, though Prim's leads directly into Dijkstra's
 

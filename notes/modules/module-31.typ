@@ -88,7 +88,7 @@ Finding is where things get interesting. In @bloom-find, we query three keys on 
 
 A 0 means *nothing* in the whole set ever hashed there, so a "no" is always correct. A 1 only means *something* hashed there, and we have no idea what. In @bloom-find, `find(2)` would also say yes, for the same reason as 20
 
-That's the key thing to understand about `find` on a Bloom filter: a "yes" really means "*maybe*". From the point of view of someone using the filter, a true positive and a false positive look *identical*. Both are just a 1, and the filter has literally no data to tell them apart, since we threw out the keys. So the filter is 100% right when it says no, and right with some probability when it says yes
+So on a Bloom filter, a "yes" from `find` really means "*maybe*". From the point of view of someone using the filter, a true positive and a false positive look *identical*. Both are just a 1, and the filter has literally no data to tell them apart, since we threw out the keys. So the filter is 100% right when it says no, and right with some probability when it says yes
 
 - If the bit is 0, the key is *definitely not* in the set
 - If the bit is 1, the key *might* be in the set
@@ -280,7 +280,7 @@ The table shows the approximate false positive rate for a filter with 10 bits pe
   [10], [1.02%],
 )
 
-Notice that $m / n$ is the *inverse* of the load factor from hash tables: it's bits per key, not keys per slot. And notice how small these numbers are. Our early examples assumed a filter that's wrong half the time, but with 10 bits per key and 7 hash functions, a Bloom filter is wrong less than 1% of the time. That's still an error, but it's a very small one
+Notice that $m / n$ is the *inverse* of the load factor from hash tables: it's bits per key, not keys per slot. And notice how small these numbers are. Our early examples assumed a filter that's wrong half the time, but with 10 bits per key and 7 hash functions, a Bloom filter is wrong less than 1% of the time
 
 We can solve the same equation for whichever variable we don't know
 
@@ -290,7 +290,7 @@ We can solve the same equation for whichever variable we don't know
 
 == Using Bloom Filters
 
-Here's an important catch: for the optimal error rate, $m = (k n) / (ln 2)$, which is still *linear in $n$*. We get a big constant factor improvement (a few bits per key instead of the whole key), but it's still $O(n)$ space. There are two ways to think about that
+There's a catch, though. For the optimal error rate, $m = (k n) / (ln 2)$, which is still *linear in $n$*. We get a big constant factor improvement (a few bits per key instead of the whole key), but it's still $O(n)$ space. There are two ways to think about that
 
 - We can combine it with other tricks, like first reducing the data in other ways, so the Bloom filter is a constant factor improvement on top of another one
 - We can just pick a budget. "You get one megabyte, how accurate can you be?" A 100,000-bit filter might have a fairly high error rate for our data, but still filter out most of what we don't need
@@ -406,7 +406,7 @@ class BloomFilter {
 
 == Union and Intersection
 
-Here's where working with bits really pays off. Suppose we have two Bloom filters with the same size $m$ and the *same* hash functions (not just the same number of them, the exact same functions). One holds the set $S_1$ and the other holds $S_2$. What do we get if we bitwise or them?
+Working with whole words of bits also gives us cheap set operations. Suppose we have two Bloom filters with the same size $m$ and the *same* hash functions (not just the same number of them, the exact same functions). One holds the set $S_1$ and the other holds $S_2$. What do we get if we bitwise or them?
 
 A bit is 1 in the result exactly when some key from $S_1$ or $S_2$ set it, which is exactly the filter we'd get by inserting every key of $S_1 union S_2$. So *bitwise or is union*, and it's exact. In @bloom-set-ops, $S_1 = \{6, 4\}$ and $S_2 = \{8, 4\}$, and their or is the same filter we built for $\{6, 8, 4\}$ in @bloom-shared-insert
 

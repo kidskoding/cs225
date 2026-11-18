@@ -20,7 +20,7 @@ A BST runs in the height of the tree, since there's only one place a key can go 
 
 But $O(log n)$ isn't constant. For any one lookup, $log n$ is fast enough and I don't care. But what if my program's main loop is "look this up, look this up, look this up" millions of times? Then those $log n$s add up, and we'd like to do better
 
-Here's the plan: instead of a guarantee that *every* operation is fast, we'll settle for operations that are *usually* fast. Just like amortization let us charge an expensive resize across many cheap inserts, if we do a huge number of operations whose *expected* runtime is constant, the law of large numbers makes it very likely that the total really is about (expected runtime) $times$ (number of operations)
+So instead of a guarantee that *every* operation is fast, we'll settle for operations that are *usually* fast. Just like amortization let us charge an expensive resize across many cheap inserts, if we do a huge number of operations whose *expected* runtime is constant, the law of large numbers makes it very likely that the total really is about (expected runtime) $times$ (number of operations)
 
 == Hash Functions
 
@@ -498,7 +498,7 @@ If our hash function acts like a fair 10-sided die, what's the chance the *next*
 
 Even starting from a single key, any later key that collides with it extends it, and every collision makes the clump bigger and easier to hit. A cluster never really goes away either: even after removing keys from it, `find` still has to probe through the tombstones. Analyzing this formally takes more probability than we're going to do here, but it's clear that big clusters get bigger. This is called *primary clustering*
 
-The fix: instead of always trying the very next slot, let's *pick better*
+So instead of always trying the very next slot, let's pick the next slot more carefully
 
 == Double Hashing
 
@@ -641,7 +641,7 @@ So far that only gets us $O(n)$, since $alpha$ grows with $n$ if $m$ is fixed. B
 
 $ E[text("find")] = O(1 + alpha) = O(1) $
 
-That's it: under SUHA, with a bounded load factor, hash tables really do give expected $O(1)$ operations, and you can push this further to show they're fast with high probability
+So under SUHA, with a bounded load factor, hash tables really do give expected $O(1)$ operations, and you can push this further to show they're fast with high probability
 
 === Why SUHA Is Suspicious
 

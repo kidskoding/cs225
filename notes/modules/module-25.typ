@@ -21,8 +21,8 @@ This is a really useful question to be able to answer. It's the same as a networ
 
 There are a couple of greedy approaches
 
-- *Start from my house* - I live at $A$, and I'm greedy, so I start paving roads that make it easier for *me* to get places. Every time, I pave the cheapest road that reaches a house I can't drive to yet. That's $A D$ for 2, then $A B$ for 5, then $D E$ for 12 (the cheapest way out of $\{A, B, D\}$), and so on, growing a paved area outwards from my house
-- *Cheapest road anywhere* - Someone less selfish ignores where they live. Every time, they pave the cheapest road *anywhere in town* that connects two places that weren't connected yet. That's $A D$ for 2, $E H$ for 3, $F G$ for 4, and so on, with little paved patches all over town that slowly join together
+- *Start from my house*: I live at $A$, and I'm greedy, so I start paving roads that make it easier for *me* to get places. Every time, I pave the cheapest road that reaches a house I can't drive to yet. That's $A D$ for 2, then $A B$ for 5, then $D E$ for 12 (the cheapest way out of $\{A, B, D\}$), and so on, growing a paved area outwards from my house
+- *Cheapest road anywhere*: Someone less selfish ignores where they live. Every time, they pave the cheapest road *anywhere in town* that connects two places that weren't connected yet. That's $A D$ for 2, $E H$ for 3, $F G$ for 4, and so on, with little paved patches all over town that slowly join together
 
 If we carry both of them out, they end up paving exactly the same roads, the 7 bold edges on the left of @mst-two-trees, for a total of $2 + 3 + 4 + 5 + 7 + 9 + 12 = 42$ million either way. These two strategies are the two algorithms we'll study for this problem. We didn't come up with them, of course: the first is *Prim's algorithm* (next chapter), and the second is *Kruskal's algorithm*, which is this chapter
 
@@ -75,7 +75,7 @@ When we pull an edge $(u, v)$ out of the priority queue, we need to know whether
 We keep a disjoint set of the *vertices*, where each set is one connected piece of the tree we're building. At the start, no edges have been picked, so every vertex is in a set by itself. For every edge $(u, v)$
 
 - If `find(u) != find(v)`, then $u$ and $v$ are in different pieces, so the edge connects two things that weren't connected. We add it to the tree and `union` the two sets, since those two pieces are now one
-- If `find(u) == find(v)`, then $u$ and $v$ are already connected. The edge isn't just useless, it's actively *bad*: there's already a path from $u$ to $v$ in the tree, so adding the edge would make a cycle, and then we wouldn't have a tree anymore. We skip it
+- If `find(u) == find(v)`, then $u$ and $v$ are already connected. The edge is actively *bad*: there's already a path from $u$ to $v$ in the tree, so adding the edge would make a cycle, and then we wouldn't have a tree anymore. We skip it
 
 This is the "really cool" algorithm we were promised back when we built disjoint sets. Each check is just two `find`s, so with smart union and path compression, it's effectively $O(1)$
 
@@ -186,7 +186,7 @@ We could just keep going until the priority queue is empty, since every remainin
 
 The last one is the simplest, and it's what our code will do
 
-All of this works because of data structures we already have, and the disjoint set in particular is super fast. Honestly, that's why Kruskal's algorithm is considered efficient and is used so often: without the disjoint set, keeping track of which vertices are already connected would be really hard, and nobody would use it. The disjoint set is what fundamentally enables this algorithm
+All of this works because of data structures we already have, and the disjoint set in particular is super fast. Honestly, that's why Kruskal's algorithm is considered efficient and is used so often: without the disjoint set, keeping track of which vertices are already connected would be really hard, and nobody would use it
 
 == The Algorithm
 
@@ -265,11 +265,11 @@ Then, instead of `edges[next++]`, each step of the loop takes `pq.top()` and cal
 
 Let's go through the algorithm one piece at a time
 
-- *Making the disjoint set* - We put $n$ things into the disjoint set, so we have to touch $n$ things in memory no matter what: $O(n)$
-- *Building the priority queue* - This depends on our choice. `buildHeap` (heapify down, starting from the last non-leaf and working back to the root) is $O(m)$, and sorting is $O(m log m)$. Remember, these are *edges*, so it's $m$, not $n$
-- *Making $T$* - A graph with $n$ vertices and no edges is $O(n)$
-- *Each `find` and `union`* - Technically this is $O(alpha(m, n))$, the inverse Ackermann function, but we'll just call it constant because it makes our lives easier
-- *Each `removeMin`* - Also depends on our choice. In a heap, we swap the last element to the root and heapify down, which is $O(log m)$. In the sorted list, we just move `next` forward, which is $O(1)$
+- *Making the disjoint set*: We put $n$ things into the disjoint set, so we have to touch $n$ things in memory no matter what: $O(n)$
+- *Building the priority queue*: This depends on our choice. `buildHeap` (heapify down, starting from the last non-leaf and working back to the root) is $O(m)$, and sorting is $O(m log m)$. Remember, these are *edges*, so it's $m$, not $n$
+- *Making $T$*: A graph with $n$ vertices and no edges is $O(n)$
+- *Each `find` and `union`*: Technically this is $O(alpha(m, n))$, the inverse Ackermann function, but we'll just call it constant because it makes our lives easier
+- *Each `removeMin`*: Also depends on our choice. In a heap, we swap the last element to the root and heapify down, which is $O(log m)$. In the sorted list, we just move `next` forward, which is $O(1)$
 
 === How Many Times Does the Loop Run?
 
@@ -315,7 +315,7 @@ That's a real design decision
 - If we're writing Kruskal's algorithm as a *library*, separate from the rest of the program, we'd probably use a heap
 - If we're building a *whole program* that analyzes one big graph, like loading a million-vertex social network graph and running all sorts of analyses and visualizations on it, we might just store the graph's edges in sorted order all the time. We aren't changing the edges, just analyzing them, so the sort only has to happen once
 
-This is where we, as programmers, can do much better than something that can't step back and look at the bigger picture. Graph algorithms aren't particularly fast, and the graphs we want to analyze can be huge, so getting the answer in three hours instead of nine actually matters. These design opportunities are where we can really use our deeper understanding of the data structures to make a difference
+This is where we, as programmers, can do much better than something that can't step back and look at the bigger picture. Graph algorithms aren't particularly fast, and the graphs we want to analyze can be huge, so getting the answer in three hours instead of nine actually matters
 
 == The Partition Property
 

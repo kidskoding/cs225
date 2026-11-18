@@ -59,9 +59,9 @@ making the total amortized cost $O(n)$ (since constants are dropped)
 
 == Resizing by doubling the elements every time
 
-Now suppose, we resized the `ArrayList` by doubling the capacity every time. Each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large.
+Now suppose we resized the `ArrayList` by doubling the capacity every time. Each time we resize, the time it takes to do so doubles from 1, 2, 4, 8, 16, etc. This is because each resize involves copying all the elements from the old array into a new array that is twice as large.
 
-Let $r$ represent the number of resizes, where a resize occurs when the `ArrayList` is full (or simply every time two elements are added)
+Let $r$ represent the number of resizes, where a resize occurs when the `ArrayList` is full
 
 When the `ArrayList` is full, its capacity will resize by double the original capacity.
 
@@ -104,7 +104,7 @@ where $2n - 1$ represents the total copies with $n$ inserts, meaning that the am
 
 $ frac(2n - 1, n) $
 
-which simplifies to $2 - 1/n$. When analyzing this behavior's function, the
+which simplifies to $2 - 1/n$. As $n$ grows,
 
 $ lim_(n -> infinity) (2 - 1/n) = 2 $
 
@@ -112,7 +112,7 @@ which means that it approaches a constant value of $2$. Therefore, its amortized
 
 Since the amortized cost when doubling the capacity each resize is $O(1)$, it makes more sense to implement the `addSpace()` function using this resizing method
 
-Now to implement our `addSpace()` function into our data buffer, we need to do a series of steps following our resize approach
+Now to implement our `addSpace()` function into our data buffer, we follow these steps
 
 + Reallocate the data buffer, typically done by doubling its capacity (the current capacity is `capacity - data`, since both are pointers)
 + Check if the original capacity is 0. If so, set the new capacity to 1. This is to ensure memory efficiency
@@ -122,7 +122,7 @@ Now to implement our `addSpace()` function into our data buffer, we need to do a
 + Free all the contents from the old data buffer and update the pointer of the new data buffer
 + Update the `capacity` pointer to point to the end of the new buffer and update the size pointer to point to the correct position in the new buffer
 
-The code for this algorithm that reflects these series of steps is shown below,
+The code for these steps is shown below
 
 ```cpp
 // ArrayList.hpp
@@ -169,7 +169,7 @@ void ArrayList<T>::addSpace() {
 }
 ```
 
-This will effectively add more space to our buffer (double that the original) when its capacity is full
+This will effectively add more space to our buffer (double the original) when its capacity is full
 
 == Amortized Costs of various operations on various `List` implementations
 
@@ -183,4 +183,4 @@ This will effectively add more space to our buffer (double that the original) wh
   [Find a value in a sorted list], [`O(n)`], [`O(log n)`],
 )
 
-The `*` represents *amortized* cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis isn't ideal for explaining the cost of a single, individual operation, but rather useful for understanding the average cost spread across many operations.
+The `*` represents *amortized* cost, which means the average cost per operation over a sequence of operations. Whether to use the amortized case depends on the application you are building. Amortized analysis describes the average cost spread across many operations, so it says little about the cost of any single operation.

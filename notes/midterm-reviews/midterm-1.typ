@@ -20,8 +20,8 @@ Use these assignments to reference when studying as well
 #strong[ADT]s, or Abstract Data Types, are templates/descriptions used to explain how a data structure works and how any user should use it.
 
 In a *`LinkedList`*, each node is stored independently in memory and contains
-+ Data - the actual value stored in the node
-+ Pointer - a pointer to the next node in the list (or previous in a doubly linked list)
++ Data: the actual value stored in the node
++ Pointer: a pointer to the next node in the list (or previous in a doubly linked list)
 
 From a visual standpoint a `LinkedList` looks like the one in @m1-linked-list
 
@@ -29,8 +29,6 @@ From a visual standpoint a `LinkedList` looks like the one in @m1-linked-list
   linked-list(4, 8, 15),
   caption: [A singly linked list: each node holds data and a pointer to the next node],
 ) <m1-linked-list>
-
-Each node holds data and then a pointer to the next node!
 
 The table below shows the core functionalities of a `LinkedList` and their runtimes
 
@@ -45,7 +43,7 @@ The table below shows the core functionalities of a `LinkedList` and their runti
   [Find a value in a sorted list], [`O(n)`],
 )
 
-- Inserting at the front of a `LinkedList` is `O(1)`. This is because we only have to do 3 steps. Create a new node with its given data, point its next to the original head, set the new node as `head`
+- Inserting at the front of a `LinkedList` is `O(1)`. This is because we only have to do 3 steps: create a new node with its given data, point its next to the original head, and set the new node as `head`
 
   You can see these steps in @m1-insert-front, where the new node 2 (shaded) points to the old head 4
 

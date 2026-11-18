@@ -6,9 +6,9 @@
 
 We finally get a new abstract data type! Besides creating an empty one, it only has three operations
 
-- `insert` - Adds a value (takes a `const T&`)
-- `remove` - Takes no arguments, and removes and returns a value
-- `isEmpty` - Checks whether there is anything left to remove
+- `insert`: Adds a value (takes a `const T&`)
+- `remove`: Takes no arguments, and removes and returns a value
+- `isEmpty`: Checks whether there is anything left to remove
 
 So far, that sounds like a queue or a stack. What makes this one special is *which* value `remove` returns
 
@@ -46,10 +46,10 @@ public:
 
 With the data structures we already know, there are four ways we could implement a priority queue
 
-- *Unsorted array* - `insert` just adds the value to the end in $O(1)$ time, but `remove` has to look through the whole array for the minimum and then shift everything back together, which is $O(n)$
-- *Unsorted list* - `insert` is $O(1)$, but `remove` still has to look through the whole list for the minimum, which is $O(n)$
-- *Sorted array* - If we sort it from largest to smallest, the minimum is always at the end, so `remove` is $O(1)$. But `insert` has to find the right place and shift everything over to make space for it, which is $O(n)$
-- *Sorted list* - The same trade-off: `insert` is $O(n)$ and `remove` is $O(1)$
+- *Unsorted array*: `insert` just adds the value to the end in $O(1)$ time, but `remove` has to look through the whole array for the minimum and then shift everything back together, which is $O(n)$
+- *Unsorted list*: `insert` is $O(1)$, but `remove` still has to look through the whole list for the minimum, which is $O(n)$
+- *Sorted array*: If we sort it from largest to smallest, the minimum is always at the end, so `remove` is $O(1)$. But `insert` has to find the right place and shift everything over to make space for it, which is $O(n)$
+- *Sorted list*: The same trade-off, with `insert` at $O(n)$ and `remove` at $O(1)$
 
 @pq-arrays compares the two array versions holding the values from our example
 
@@ -122,10 +122,10 @@ We leave index 0 empty (or store the number of nodes there), so the root is alwa
 
 With the root at index 1, for a node at index $i$
 
-- *Left child* - $2i$
-- *Right child* - $2i + 1$
-- *Parent* - $floor(i / 2)$, which is just integer division in code
-- *Last node* - If the heap has $n$ nodes, the last one is at index $n$
+- *Left child*: $2i$
+- *Right child*: $2i + 1$
+- *Parent*: $floor(i / 2)$, which is just integer division in code
+- *Last node*: If the heap has $n$ nodes, the last one is at index $n$
 
 For example, in @pq-index-math, 5 is at index 2: its left child is at index 4 (15), its right child is at index 5 (9), and its parent is at index 1 (4). 20 is at index 7, so its parent is at index $floor(7 / 2) = 3$, which is 6
 

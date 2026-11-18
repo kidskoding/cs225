@@ -6,11 +6,11 @@ Recall the priority queue ADT: `insert`, `removeMin`, and `isEmpty`. Our impleme
 
 A priority queue doesn't have to put the smallest value first. A *max-heap* keeps the largest value at the root, with every node at least as *large* as its children. In fact, we can build a heap around any comparison we want, and whatever comes first under that comparison comes out first
 
-So far, a heap isn't much better than a balanced BST, which can also `insert` in $O(log n)$ and find the minimum as its leftmost node. We'd still pick the heap, since storing it in an array is much more compact, but the real advantage is *building* one
+So far, a heap isn't much better than a balanced BST, which can also `insert` in $O(log n)$ and find the minimum as its leftmost node. We'd still pick the heap, since storing it in an array is much more compact, but the main advantage is *building* one
 
 == Building a Heap
 
-Given an array of $n$ values, how do we turn it into a heap? The algorithm we'll call `buildHeap` is specifically the *best* way we know to do this, so if you're asked to write `buildHeap`, it needs to be as good as the one we find here. Let's look at three options
+Given an array of $n$ values, how do we turn it into a heap? The algorithm we'll call `buildHeap` is the *best* way we know to do this, so if you're asked to write `buildHeap`, it needs to be as good as the one we find here. Let's look at three options
 
 === Option 1: Sort the Array
 
@@ -124,4 +124,4 @@ The intuition: when there are only a few subtrees (near the root), each one does
   [Heapify down from the bottom up (`buildHeap`)], [$O(n)$],
 )
 
-That's the real advantage of a heap over a BST: building a BST out of $n$ values takes $O(n log n)$, but we can turn any array into a heap in $O(n)$
+That's the main advantage of a heap over a BST: building a BST out of $n$ values takes $O(n log n)$, but we can turn any array into a heap in $O(n)$
