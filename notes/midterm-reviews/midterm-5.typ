@@ -37,10 +37,10 @@ This one covers the back half of graphs (how to store a graph, BFS and DFS, mini
 
 *Key ideas*
 
-- *Handshaking* - $sum deg(v) = 2m$, since each edge touches two vertices. A simple graph has $m <= n(n - 1) / 2$, a connected one has $m >= n - 1$. *Sparse* means $m approx n$, *dense* means $m approx n^2$
-- *Edge list* - a vector of vertices plus a linked list of edges, each edge storing its two endpoints. Any question about edges means scanning all $m$ of them
-- *Adjacency matrix* - edge list plus an $n times n$ matrix whose entry $(i, j)$ points to the edge between $i$ and $j$, or `nullptr`. Fast `areAdjacent`, but a whole row to scan for `incidentEdges` and $O(n^2)$ space no matter what
-- *Adjacency list* - edge list plus a doubly linked list of incident edges for each vertex. `incidentEdges(v)` costs $O(deg(v))$, which is the size of the answer. Its one weak spot is `areAdjacent`
+- *Handshaking*: $sum deg(v) = 2m$, since each edge touches two vertices. A simple graph has $m <= n(n - 1) / 2$, a connected one has $m >= n - 1$. *Sparse* means $m approx n$, *dense* means $m approx n^2$
+- *Edge list*: a vector of vertices plus a linked list of edges, each edge storing its two endpoints. Any question about edges means scanning all $m$ of them
+- *Adjacency matrix*: edge list plus an $n times n$ matrix whose entry $(i, j)$ points to the edge between $i$ and $j$, or `nullptr`. Fast `areAdjacent`, but a whole row to scan for `incidentEdges` and $O(n^2)$ space no matter what
+- *Adjacency list*: edge list plus a doubly linked list of incident edges for each vertex. `incidentEdges(v)` costs $O(deg(v))$, which is the size of the answer. Its one weak spot is `areAdjacent`
 - The edge list suits files, the matrix suits a fixed vertex set queried with `areAdjacent`, and the adjacency list is the default everywhere else
 
 *Runtimes*
@@ -123,9 +123,9 @@ The nested loops look like $O(n^3)$, but each vertex's `if` body runs once, so t
 *Key ideas*
 
 - Input: a *connected, undirected, weighted* graph. Output: a spanning tree ($n - 1$ edges, no cycles, reaches everything) with the smallest total weight. Distinct weights mean exactly one MST, and ties can allow several
-- *Partition property* - split the vertices into $U$ and $V - U$. The cheapest edge with one end on each side belongs to *some* MST. (If a tree skips it, adding it makes a cycle that crosses back on a different crossing edge, and swapping that one out costs no more)
-- *Kruskal's* - go through edges cheapest first and keep one only if its endpoints are in different disjoint sets, then `union` them. Grows a *forest* that merges into one tree. The PQ holds *edges* whose weights never change
-- *Prim's* - grow *one* tree from a start vertex $s$. Every vertex sits in a min PQ keyed on $d[v]$, the weight of the cheapest single edge from the tree to $v$, and $p[v]$ is the tree end of that edge. Remove the min, then for each neighbor $v$ outside the tree, if $w(m, v) < d[v]$, lower $d[v]$, set $p[v]$, and `decreaseKey`
+- *Partition property*: split the vertices into $U$ and $V - U$. The cheapest edge with one end on each side belongs to *some* MST. (If a tree skips it, adding it makes a cycle that crosses back on a different crossing edge, and swapping that one out costs no more)
+- *Kruskal's*: go through edges cheapest first and keep one only if its endpoints are in different disjoint sets, then `union` them. Grows a *forest* that merges into one tree. The PQ holds *edges* whose weights never change
+- *Prim's*: grow *one* tree from a start vertex $s$. Every vertex sits in a min PQ keyed on $d[v]$, the weight of the cheapest single edge from the tree to $v$, and $p[v]$ is the tree end of that edge. Remove the min, then for each neighbor $v$ outside the tree, if $w(m, v) < d[v]$, lower $d[v]$, set $p[v]$, and `decreaseKey`
 - `decreaseKey` only makes a key smaller, so it *heapifies up* in $O(log n)$, with a `pos_` array to find the vertex in the heap
 
 #figure(
@@ -186,7 +186,7 @@ std::vector<int> prim(const Graph& g, int s) {
 
 - A path's *length* is the sum of its weights, so BFS no longer works
 - *Dijkstra's* (single source) - Prim's with one change. $d[v]$ is now the best *path* from $s$ to $v$ seen so far, so the test is $d[u] + w(u, v) < d[v]$. Returns a *shortest path tree* of predecessors, and works on *directed* graphs
-- Why it's right - when $u$ comes out, any other route from $s$ to $u$ leaves the finished set at some $x$ with $d[x] >= d[u]$, and the rest of that route can only add weight. That reasoning needs *non-negative* weights
+- Why it's right: when $u$ comes out, any other route from $s$ to $u$ leaves the finished set at some $x$ with $d[x] >= d[u]$, and the rest of that route can only add weight. That reasoning needs *non-negative* weights
 - With a negative edge, a vertex can be finished too early with the wrong $d$. *Modified Dijkstra's* re-queues any vertex whose $d$ improves and runs until the PQ is empty. It's correct with negative edges, but can take exponential time, and never stops on a *negative weight cycle* (shortest paths don't exist there)
 - *Floyd-Warshall* (all pairs) - an $n times n$ matrix with 0 on the diagonal, the weight for each edge, and $infinity$ elsewhere. Then allow each vertex $k$ as a middle vertex in turn: if $d[u][k] + d[k][v] < d[u][v]$, update. This is *dynamic programming*:
 $ d_k (u, v) = min(d_(k - 1) (u, v), d_(k - 1) (u, k) + d_(k - 1) (k, v)) $
@@ -243,13 +243,13 @@ Every runtime before hashing was a worst case (or amortized worst case). A hash 
 
 *Key ideas*
 
-- *Average case* - the randomness comes from the *data*. Anyone who knows how the structure works can feed it keys that all collide, and people really have done this
-- *Expected case* - the randomness comes from the *algorithm*, like choosing the hash function at random each time we build or resize. Then the bound holds for any input
-- *Law of large numbers* - if we run lots of operations with constant expected time, the total is very likely close to (expected time) $times$ (number of operations). Same spirit as amortization, which charged one expensive resize to many cheap inserts
-- *Uniform and independent* - SUHA treats each key's index as its own roll of a fair $m$-sided die, so a given index gets hit with probability $1 / m$, and two different keys collide with probability $1 / m$
-- *Independent trials multiply* - if each of $k$ independent trials is wrong with probability $p$, all $k$ are wrong with probability $p^k$
-- *Complement* - when $P(A)$ is awkward, find $P("not" A)$ and use $P(A) = 1 - P("not" A)$
-- *Linearity of expectation* - the expected value of a sum is the sum of the expected values, so an expected count is just the sum of each item's probability of being counted
+- *Average case*: the randomness comes from the *data*. Anyone who knows how the structure works can feed it keys that all collide, and people really have done this
+- *Expected case*: the randomness comes from the *algorithm*, like choosing the hash function at random each time we build or resize. Then the bound holds for any input
+- *Law of large numbers*: if we run lots of operations with constant expected time, the total is very likely close to (expected time) $times$ (number of operations). Same spirit as amortization, which charged one expensive resize to many cheap inserts
+- *Uniform and independent*: SUHA treats each key's index as its own roll of a fair $m$-sided die, so a given index gets hit with probability $1 / m$, and two different keys collide with probability $1 / m$
+- *Independent trials multiply*: if each of $k$ independent trials is wrong with probability $p$, all $k$ are wrong with probability $p^k$
+- *Complement*: when $P(A)$ is awkward, find $P("not" A)$ and use $P(A) = 1 - P("not" A)$
+- *Linearity of expectation*: the expected value of a sum is the sum of the expected values, so an expected count is just the sum of each item's probability of being counted
 
 Worked example: pick a key $k$ in a chaining table with $n$ keys. The $n - 1$ other keys each have a $1 / m$ chance of hashing into $k$'s bucket, so adding those up gives
 
@@ -274,9 +274,9 @@ and any fixed bucket expects $n / m$ keys, the *load factor* $alpha$
 
 - A *hash table* implements the dictionary ADT (`insert`, `remove`, `find`) with expected $O(1)$ operations. Its three parts are a *hash function*, a *storage array* of size $m$, and a *collision strategy*
 - A hash function $h : K -> {0, dots, m - 1}$ must be
-  + *Deterministic* - equal keys get equal indices (different keys are still allowed to collide), so `rand()` is out
-  + *Efficient* - $O(1)$. If it costs $O(log n)$, just use an AVL tree
-  + *Defined with respect to $m$* - the output fits the table
+  + *Deterministic*: equal keys get equal indices (different keys are still allowed to collide), so `rand()` is out
+  + *Efficient*: $O(1)$. If it costs $O(log n)$, just use an AVL tree
+  + *Defined with respect to $m$*: the output fits the table
 - In practice it's a *hash* to a big integer, then *compression*, almost always `% m`
 - A *collision* is two different keys at one index. The keyspace is far bigger than $m$, so the *pigeonhole principle* makes collisions unavoidable. A *perfect* (one-to-one) hash only exists when the table is at least as big as the keyspace
 - *SUHA*: $forall k_1 != k_2, P(h(k_1) = h(k_2)) = 1 / m$. It assumes keys are independent and every index equally likely. Load factor $alpha = n / m$, and $E["find"] = O(1 + alpha)$, which is $O(1)$ if we resize to keep $alpha$ bounded
@@ -284,13 +284,13 @@ and any fixed bucket expects $n / m$ keys, the *load factor* $alpha$
 
 === Types of Hashing
 
-- *Open hashing* - the array holds pointers and the data lives elsewhere. *Separate chaining*: each bucket is a linked list, and `insert` pushes onto the front
-- *Closed hashing*, a.k.a. *open addressing* - the data sits in the array itself, one pair per slot, and a full slot means probing elsewhere
-  - *Linear probing* - $h(k, i) = (h(k) + i) mod m$
-  - *Double hashing* - $h(k, i) = (h_1 (k) + i dot h_2 (k)) mod m$. The step $h_2 (k)$ can't be 0, and it has to be *relatively prime* to $m$ (no common divisor but 1). Otherwise the probes loop over just some of the slots. A prime $m$ guarantees this. The notes use $h_2 (k) = 5 - (k mod 5)$, which is always 1 to 5
+- *Open hashing*: the array holds pointers and the data lives elsewhere. *Separate chaining*: each bucket is a linked list, and `insert` pushes onto the front
+- *Closed hashing*, a.k.a. *open addressing*: the data sits in the array itself, one pair per slot, and a full slot means probing elsewhere
+  - *Linear probing*: $h(k, i) = (h(k) + i) mod m$
+  - *Double hashing*: $h(k, i) = (h_1 (k) + i dot h_2 (k)) mod m$. The step $h_2 (k)$ can't be 0, and it has to be *relatively prime* to $m$ (no common divisor but 1). Otherwise the probes loop over just some of the slots. A prime $m$ guarantees this. The notes use $h_2 (k) = 5 - (k mod 5)$, which is always 1 to 5
 - Linear probing `find` stops at an *empty* slot, since every key sits in an unbroken run of full slots starting at its hash
 - `remove` in closed hashing leaves a *tombstone*. `find` probes past it like a full slot, and `insert` reuses it like an empty one
-- *Primary clustering* - in linear probing, a key that hashes anywhere into a run lands at its end and makes it longer, so big clusters keep growing. Double hashing spreads colliding keys out with different step sizes
+- *Primary clustering*: in linear probing, a key that hashes anywhere into a run lands at its end and makes it longer, so big clusters keep growing. Double hashing spreads colliding keys out with different step sizes
 
 #figure(
   grid(

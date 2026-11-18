@@ -37,10 +37,10 @@ Midterm 2 covers modules 1-11. Expect pointers and references, the two list impl
 
 - *Reference* (`int& r = x;`) - another name for `x`. Same box in memory, so writing to `r` writes to `x`
 - *Pointer* (`int* p = &x;`) - its own variable whose value is the address of `x`
-- `&x` - the address of `x`. `*p` - follow the address and get the value there
-- `nullptr` - a pointer to nothing. Dereferencing it is undefined behavior (usually a segfault)
-- *Dangling pointer* - still holds the address of memory that was `delete`d. Set it to `nullptr` after `delete`
-- `TreeNode*& node` - a *reference to a pointer*. Assigning to `node` changes the actual pointer stored in the parent (or `root`), not a copy. Every list and BST helper that rewires links uses this
+- `&x`: the address of `x`. `*p`: follow the address and get the value there
+- `nullptr`: a pointer to nothing. Dereferencing it is undefined behavior (usually a segfault)
+- *Dangling pointer*: still holds the address of memory that was `delete`d. Set it to `nullptr` after `delete`
+- `TreeNode*& node`: a *reference to a pointer*. Assigning to `node` changes the actual pointer stored in the parent (or `root`), not a copy. Every list and BST helper that rewires links uses this
 
 #table(
   columns: 3,
@@ -71,14 +71,14 @@ Midterm 2 covers modules 1-11. Expect pointers and references, the two list impl
 
 === Key ideas
 
-- *List ADT* - an ordered collection with `insertAtFront`, `insert(data, index)`, `remove(index)`, `find`/`operator[]`, `size`, `isEmpty`. The ADT says *what*, not *how*
-- *Linked list* - each `ListNode` holds `data` and a `next` pointer, with `head` pointing at the first node and the last node's `next` set to `nullptr`
-- *Array list* - elements sit next to each other in one buffer, tracked by `size` (elements used) and `capacity` (buffer length)
+- *List ADT*: an ordered collection with `insertAtFront`, `insert(data, index)`, `remove(index)`, `find`/`operator[]`, `size`, `isEmpty`. The ADT says *what*, not *how*
+- *Linked list*: each `ListNode` holds `data` and a `next` pointer, with `head` pointing at the first node and the last node's `next` set to `nullptr`
+- *Array list*: elements sit next to each other in one buffer, tracked by `size` (elements used) and `capacity` (buffer length)
 - `find(index)` returns `ListNode*&`, the pointer that points *at* the node at that index. `insert` and `remove` reassign that pointer
 - When the buffer is full, `pushBack` copies everything into a bigger buffer, $O(n)$ for that one call
   - *Doubling* the capacity - total copying over $n$ pushes is about $2n$, so `pushBack` is $O(1)$ amortized
   - *Adding 2* to the capacity - total copying grows like $n^2/4$, so the amortized cost is $O(n)$ per push
-- *Amortized* - the average cost per operation over a long sequence, not the cost of one call
+- *Amortized*: the average cost per operation over a long sequence, not the cost of one call
 
 === Runtimes
 
@@ -120,8 +120,8 @@ T List<T>::remove(int index) {
 
 === Key ideas
 
-- *Queue* - FIFO. `enqueue` adds at the back, `dequeue` removes from the front. Both $O(1)$
-- *Stack* - LIFO. `push` and `pop` both work at the top. Both $O(1)$
+- *Queue*: FIFO. `enqueue` adds at the back, `dequeue` removes from the front. Both $O(1)$
+- *Stack*: LIFO. `push` and `pop` both work at the top. Both $O(1)$
 - *Circular queue* (array) - keeps `items`, `start`, `size`, `capacity`
   - `enqueue` writes `items[(start + size) % capacity]`, then `size++`
   - `dequeue` reads `items[start]`, then `start = (start + 1) % capacity` and `size--`
@@ -150,17 +150,17 @@ T List<T>::remove(int index) {
 
 === Terminology (CS 173)
 
-- *Tree* - connected and acyclic, so $n$ nodes have $n - 1$ edges and any two nodes have exactly one path between them
-- *Leaf* - no children. *Internal node* - at least one child. *Siblings* share a parent
-- *Ancestors* sit on the path up to the root, *descendants* anywhere below. *Depth* - edges from the root (root is level 0)
+- *Tree*: connected and acyclic, so $n$ nodes have $n - 1$ edges and any two nodes have exactly one path between them
+- *Leaf*: no children. *Internal node*: at least one child. *Siblings* share a parent
+- *Ancestors* sit on the path up to the root, *descendants* anywhere below. *Depth*: edges from the root (root is level 0)
 
 === Tree properties
 
-- *Binary* - $T = emptyset$, or $T = (r, T_L, T_R)$ with $T_L$, $T_R$ binary trees. At most 2 children per node, and the empty tree is the recursion's base case (`nullptr`)
-- *Height* - edges on the longest root to leaf path
+- *Binary*: $T = emptyset$, or $T = (r, T_L, T_R)$ with $T_L$, $T_R$ binary trees. At most 2 children per node, and the empty tree is the recursion's base case (`nullptr`)
+- *Height*: edges on the longest root to leaf path
   - $"height"(emptyset) = -1$, $"height"(T) = max("height"(T_L), "height"(T_R)) + 1$. A single node has height 0
-- *Full* - every node has 0 or 2 children. In code, `left` and `right` are both null or both non-null
-- *Perfect* - $P_(-1) = emptyset$, $P_h = (r, P_(h-1), P_(h-1))$. Every level is packed, all leaves on the same level, $2^(h+1) - 1$ nodes
+- *Full*: every node has 0 or 2 children. In code, `left` and `right` are both null or both non-null
+- *Perfect*: $P_(-1) = emptyset$, $P_h = (r, P_(h-1), P_(h-1))$. Every level is packed, all leaves on the same level, $2^(h+1) - 1$ nodes
 - *Complete* (data structures version) - every level full except possibly the last, and the last level is pushed left
   - $C_(-1) = emptyset$, and $C_h = (r, T_L, T_R)$ where either $T_L = C_(h-1)$, $T_R = P_(h-2)$ or $T_L = P_(h-1)$, $T_R = C_(h-1)$
 - Perfect implies full and complete. Full and complete do not imply each other
@@ -187,13 +187,13 @@ int height(TreeNode* curr) {
 
 === `NULL` pointers: $n$ nodes give $n + 1$ null pointers
 
-*Claim* - a binary tree with $n >= 0$ nodes has exactly $n + 1$ `NULL` pointers (when $n = 0$, the null `root` pointer counts)
+*Claim*: a binary tree with $n >= 0$ nodes has exactly $n + 1$ `NULL` pointers (when $n = 0$, the null `root` pointer counts)
 
 *Proof* (induction on $n$, the way the notes do it). Let $"NULLS"(n)$ be the number of null pointers in a binary tree with $n$ nodes
 
-+ *Base case* - $n = 0$. The only pointer is `root`, and it is null, so $"NULLS"(0) = 1 = 0 + 1$
-+ *Inductive hypothesis* - suppose $"NULLS"(j) = j + 1$ for every $0 <= j <= k$
-+ *Inductive step* - take any binary tree with $k + 1$ nodes
++ *Base case*: $n = 0$. The only pointer is `root`, and it is null, so $"NULLS"(0) = 1 = 0 + 1$
++ *Inductive hypothesis*: suppose $"NULLS"(j) = j + 1$ for every $0 <= j <= k$
++ *Inductive step*: take any binary tree with $k + 1$ nodes
   - Remove a leaf. What is left is a binary tree with $k$ nodes, which has $k + 1$ null pointers by the IH
   - Put the leaf back. The pointer it hangs from was null and now is not ($-1$), and the leaf brings two null child pointers ($+2$)
   - Net change is $+1$, so the count is $(k + 1) + 1$, which is $n + 1$ for $n = k + 1$
@@ -211,9 +211,9 @@ int height(TreeNode* curr) {
 
 - A *traversal* visits every node, so it is always $O(n)$
 - *Pre-order* (node, left, right), *in-order* (left, node, right), *post-order* (left, right, node) - all DFS, all recursive with base case `curr == nullptr`
-- *Level-order* - one level at a time, left to right, using a *queue*. This is BFS
+- *Level-order*: one level at a time, left to right, using a *queue*. This is BFS
 - Pre-order lists the root first and post-order lists it last. In-order on a BST is sorted
-- *Search* - look for one value. Worst case (value missing) still touches all $n$ nodes, $O(n)$
+- *Search*: look for one value. Worst case (value missing) still touches all $n$ nodes, $O(n)$
 - *DFS* memory is the height, $O(h)$. *BFS* memory is the widest level. BFS finds the shallowest match first and works even on infinitely deep trees, while DFS can wander down a bad branch
 
 #figure(
@@ -271,16 +271,16 @@ void BinaryTree<T>::levelOrder() {
 
 === Key ideas
 
-- *Tree vs. BST* - a plain binary tree puts values anywhere. A BST requires every key in $T_L$ to be smaller than $r$ and every key in $T_R$ to be larger, recursively. No duplicate keys
+- *Tree vs. BST*: a plain binary tree puts values anywhere. A BST requires every key in $T_L$ to be smaller than $r$ and every key in $T_R$ to be larger, recursively. No duplicate keys
 - The rule is about the *whole subtree*, not just the two children (see Problem 10)
 - One comparison per node picks a side, so `find`, `insert`, and `remove` each walk a single root to leaf path - $O(h)$
-- *Height bounds* - $log_2 n - 1 < h <= n - 1$. Best case (complete) $h = O(log n)$. Worst case (keys inserted in sorted order, so the tree is a linked list) $h = n - 1$
-- `_find` returns `TreeNode*&` - the pointer to the key's node, *or* the null pointer where the key would go
-- `insert` - assign a new node into the null pointer `_find` stops on. New nodes are *always leaves*
+- *Height bounds*: $log_2 n - 1 < h <= n - 1$. Best case (complete) $h = O(log n)$. Worst case (keys inserted in sorted order, so the tree is a linked list) $h = n - 1$
+- `_find` returns `TreeNode*&`: the pointer to the key's node, *or* the null pointer where the key would go
+- `insert`: assign a new node into the null pointer `_find` stops on. New nodes are *always leaves*
 - `remove`, by number of children
-  + *Leaf* - delete it, set the parent's pointer to `nullptr`
-  + *One child* - point the parent at that child, then delete the node. The child's whole subtree moves up
-  + *Two children* - find the *IOP* (in-order predecessor, the largest key in the left subtree: go left once, then right until you can't). Swap keys/values, then remove the key from the *left subtree*. The IOP has no right child, so this second remove is always the leaf or one-child case. The IOS (smallest key on the right) works too, but the notes use the IOP
+  + *Leaf*: delete it, set the parent's pointer to `nullptr`
+  + *One child*: point the parent at that child, then delete the node. The child's whole subtree moves up
+  + *Two children*: find the *IOP* (in-order predecessor, the largest key in the left subtree: go left once, then right until you can't). Swap keys/values, then remove the key from the *left subtree*. The IOP has no right child, so this second remove is always the leaf or one-child case. The IOS (smallest key on the right) works too, but the notes use the IOP
 
 === Runtimes
 
@@ -414,8 +414,8 @@ void BST<K, V>::_remove(TreeNode*& node, const K& key) {
 + Starting from the tree in Problem 5, remove 30, then remove 50, using the IOP. Draw the tree after each removal
 
   *Answer:* Both are two-child removals, shown in @m2-practice-bst.
-  - Remove 30 - its left subtree is just 20, which has no right child, so the IOP is 20. Swap, and 30 now sits in 20's old spot as a leaf, so it is deleted. 20 is now the left child of 50 with only a right child, 40
-  - Remove 50 - go left to 20, then right to 40, then right to 45. The IOP is 45. Swap, and 50 is now a leaf where 45 was, so it is deleted. The root is 45
+  - Remove 30: its left subtree is just 20, which has no right child, so the IOP is 20. Swap, and 30 now sits in 20's old spot as a leaf, so it is deleted. 20 is now the left child of 50 with only a right child, 40
+  - Remove 50: go left to 20, then right to 40, then right to 45. The IOP is 45. Swap, and 50 is now a leaf where 45 was, so it is deleted. The root is 45
 
   #figure(
     grid(

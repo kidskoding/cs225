@@ -17,14 +17,14 @@ This review covers the List ADT and its two implementations from modules 3 to 5:
 
 - *ADT* (Abstract Data Type) - a description of what a data structure can do (its operations and behavior), with no promise about how it's built
 - The List ADT keeps elements in a fixed *order* and supports
-  - `insert` and `remove` - at the front/back, at an index, or at a pointer you already have
-  - `getData` - at the front/back, at an index (`operator[]`), or at a pointer
+  - `insert` and `remove`: at the front/back, at an index, or at a pointer you already have
+  - `getData`: at the front/back, at an index (`operator[]`), or at a pointer
   - `find`, `isEmpty`, `size`
 - A List should be a *template* (`template <typename T>`), so one class can hold integers, pictures, imaginary numbers, anything
 - It should act like a plain variable too, so it needs its constructors, destructor and copy constructor
 - Two implementations
-  + *Linked list* - every element is its own heap allocation, chained together by pointers
-  + *Array list* - every element sits in one contiguous buffer (this is `std::vector`)
+  + *Linked list*: every element is its own heap allocation, chained together by pointers
+  + *Array list*: every element sits in one contiguous buffer (this is `std::vector`)
 
 === Common Mistakes
 
@@ -155,9 +155,9 @@ T& List<T>::operator[](int index) {
 === Key Ideas
 
 - Elements sit side by side in one heap buffer. The class keeps three `T*` pointers
-  - `data` - start of the buffer
-  - `size` - one past the last element in use, so the element count is `size - data`
-  - `capacity` - one past the end of the buffer, so the capacity is `capacity - data`
+  - `data`: start of the buffer
+  - `size`: one past the last element in use, so the element count is `size - data`
+  - `capacity`: one past the end of the buffer, so the capacity is `capacity - data`
 - The buffer is full exactly when `size == capacity`
 - `data[i]` is just an offset from the start, which makes indexing $O(1)$
 - Keeping elements contiguous means an insert or remove in the middle has to shift everything after it
@@ -230,7 +230,7 @@ void ArrayList<T>::addSpace() {
 
 === Amortized Analysis of Resizing
 
-- *Amortized cost* - total cost of a long run of operations, divided by how many operations there were. Because it averages over a sequence, any single call can still be slow
+- *Amortized cost*: total cost of a long run of operations, divided by how many operations there were. Because it averages over a sequence, any single call can still be slow
 - One `pushBack` that resizes costs $O(n)$. The question is what $n$ pushes cost *together*
 
 #table(
@@ -242,8 +242,8 @@ void ArrayList<T>::addSpace() {
   [Amortized cost per push], [$(n + 2)/4 = O(n)$], [$(2n - 1)/n = 2 - 1/n = O(1)$],
 )
 
-- Grow by a constant - every resize copies more than the last, but only buys 2 free slots. The total is $O(n^2)$, so a push is $O(n)$ amortized
-- Double - every resize buys as many free slots as it just copied, so the cheap pushes that fill those slots pay off the copy. The total is about $2n$, so a push is $O(1)$ amortized, which is why `addSpace` doubles
+- Grow by a constant: every resize copies more than the last, but only buys 2 free slots. The total is $O(n^2)$, so a push is $O(n)$ amortized
+- Double: every resize buys as many free slots as it just copied, so the cheap pushes that fill those slots pay off the copy. The total is about $2n$, so a push is $O(1)$ amortized, which is why `addSpace` doubles
 
 === Common Mistakes
 
@@ -276,7 +276,7 @@ void ArrayList<T>::addSpace() {
 
 + *Trace.* A linked list holds `4 -> 8 -> 15`. Draw it after each call: `insert(7, 0)`, `insert(9, 2)`, `remove(1)`. What does `remove` return?
 
-  *Answer:* `insert(7, 0)` - `find(0)` returns `head`, so 7 goes in front: `7 -> 4 -> 8 -> 15`. `insert(9, 2)` - `curr` starts at 7, takes one step to 4 and stops (`x = 1 = index - 1`), and `find` returns the `next` inside 4. Now 9 sits between 4 and 8: `7 -> 4 -> 9 -> 8 -> 15`. `remove(1)` - the loop never runs (`0 < 0` is false), so `find` returns the `next` inside 7, which points at 4. That pointer moves on to 9, 4 is deleted and returned. Final list `7 -> 9 -> 8 -> 15`, return value 4
+  *Answer:* `insert(7, 0)`: `find(0)` returns `head`, so 7 goes in front: `7 -> 4 -> 8 -> 15`. `insert(9, 2)` - `curr` starts at 7, takes one step to 4 and stops (`x = 1 = index - 1`), and `find` returns the `next` inside 4. Now 9 sits between 4 and 8: `7 -> 4 -> 9 -> 8 -> 15`. `remove(1)`: the loop never runs (`0 < 0` is false), so `find` returns the `next` inside 7, which points at 4. That pointer moves on to 9, 4 is deleted and returned. Final list `7 -> 9 -> 8 -> 15`, return value 4
 
 + *Short answer.* Suppose `find` returned `ListNode<T>*` instead of `ListNode<T>*&`. What goes wrong in `insert`? In `remove`?
 

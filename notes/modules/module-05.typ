@@ -176,7 +176,9 @@ This will effectively add more space to our buffer (double the original) when it
 #table(
   columns: 3,
   table.header([Operation], [*Singly Linked List*], [*Array*]),
-  [Insert/Remove at front/back], [`O(1)`], [`O(1)`\* (amortized)],
+  [Insert/Remove at front], [`O(1)`], [`O(n)`],
+  [Insert at back], [`O(1)` (with a `tail`)], [`O(1)`\* (amortized)],
+  [Remove at back], [`O(n)`], [`O(1)`],
   [Insert/Remove given a pointer], [`O(1)`], [`O(n)`],
   [Insert/Remove at a given index], [`O(n)`], [`O(n)`],
   [Find a value in a list], [`O(n)`], [`O(n)`],

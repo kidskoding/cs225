@@ -173,10 +173,10 @@ Prove that if there are $n$ data items in our representation of a binary tree, t
   - $n = 0: 1$ null pointer; ($n + 1 = 0 + 1 = 1$) (the tree is empty so the `root` pointer is null)
   - $n = 1: 2$ null pointers; ($n + 1 = 1 + 1 = 2$) (there is only the root node and both `left` and `right` child pointers are null)
   - $n = 2: 3$ null pointers; ($n + 1 = 2 + 1 = 3$) (the root's two child pointers hold one child node and one null, and the child node has two null pointers, totaling 3)
-+ *Induction Hypothesis*: Suppose $"NULLS"(n) = n + 1$ for all $0 <= n < k$
++ *Induction Hypothesis*: Suppose $"NULLS"(n) = n + 1$ for all $0 <= n <= k$
 + *Inductive Step*: Prove for $n = k + 1$ nodes
   - Consider any binary tree with $k + 1$ nodes
-  - Remove a leaf node (or any node that can be removed while keeping a valid binary tree structure), resulting in a tree with $k$ nodes
+  - Remove a leaf node (every non-empty tree has one), resulting in a tree with $k$ nodes
   - By the inductive hypothesis, this smaller tree has $k + 1$ null pointers
   - When adding back the removed node:
     - One null pointer (where the node was attached) is replaced by a new node, so we lose 1 null pointer

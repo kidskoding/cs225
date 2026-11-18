@@ -43,13 +43,13 @@ Midterm 3 covers modules 8-14, 17, and 18. It goes back over trees and BSTs from
 
 === Key Ideas
 
-- *Tree* - a connected graph with no cycles. $n$ nodes means $n - 1$ edges, and there's exactly one path between any two nodes
+- *Tree*: a connected graph with no cycles. $n$ nodes means $n - 1$ edges, and there's exactly one path between any two nodes
 - *Root*, *parent* and *child*, *sibling* (same parent), *leaf* (no children), *internal node* (at least one child), *ancestor* and *descendant*, *subtree* (a node plus everything below it), *level* or *depth* (edges from the root, so the root is level 0)
-- *Binary tree* - either empty ($T = emptyset$) or $T = (r, T_L, T_R)$ where both subtrees are binary trees. At most 2 children per node
-- *Height* - edges on the longest root-to-leaf path. $"height"(emptyset) = -1$ and $"height"(T) = 1 + max("height"(T_L), "height"(T_R))$, so a single node has height 0
-- *Full* - every node has 0 or 2 children (never exactly 1)
-- *Perfect* - $P_(-1) = emptyset$, $P_h = (r, P_(h - 1), P_(h - 1))$. Every level is full, so it has $2^(h + 1) - 1$ nodes
-- *Complete* - every level is full except possibly the last, and the last level is pushed left. Formally $C_h = (r, T_L, T_R)$ with either $T_L = C_(h - 1), T_R = P_(h - 2)$ or $T_L = P_(h - 1), T_R = C_(h - 1)$
+- *Binary tree*: either empty ($T = emptyset$) or $T = (r, T_L, T_R)$ where both subtrees are binary trees. At most 2 children per node
+- *Height*: edges on the longest root-to-leaf path. $"height"(emptyset) = -1$ and $"height"(T) = 1 + max("height"(T_L), "height"(T_R))$, so a single node has height 0
+- *Full*: every node has 0 or 2 children (never exactly 1)
+- *Perfect*: $P_(-1) = emptyset$, $P_h = (r, P_(h - 1), P_(h - 1))$. Every level is full, so it has $2^(h + 1) - 1$ nodes
+- *Complete*: every level is full except possibly the last, and the last level is pushed left. Formally $C_h = (r, T_L, T_R)$ with either $T_L = C_(h - 1), T_R = P_(h - 2)$ or $T_L = P_(h - 1), T_R = C_(h - 1)$
 - Every perfect tree is full and complete. The reverse isn't true (see @m3-full-perfect-complete)
 
 #figure(
@@ -97,8 +97,8 @@ A traversal visits every node, so it's always $O(n)$. The three depth-first ones
   caption: [Example: all four traversals on the same tree. Mnemonics: NLR, LNR, LRN],
 ) <m3-traversals>
 
-- *DFS* - pre/in/post-order. Goes down one path fully before backing up. Uses recursion (a stack), extra memory is about the height
-- *BFS* - level-order. Uses a *queue*, extra memory is the widest level. It always finds a node that exists, even in an infinitely deep tree, where DFS can get stuck down one branch
+- *DFS*: pre/in/post-order. Goes down one path fully before backing up. Uses recursion (a stack), extra memory is about the height
+- *BFS*: level-order. Uses a *queue*, extra memory is the widest level. It always finds a node that exists, even in an infinitely deep tree, where DFS can get stuck down one branch
 
 *Code you should be able to write*
 
@@ -138,17 +138,17 @@ void BinaryTree<T>::levelOrderTraversal() {
 
 === Key Ideas
 
-- *BST* - a binary tree where every key in the left subtree is smaller than the node and every key in the right subtree is larger. It has to hold for the *whole* subtree, not just the direct children. We assume no duplicates
+- *BST*: a binary tree where every key in the left subtree is smaller than the node and every key in the right subtree is larger. It has to hold for the *whole* subtree, not just the direct children. We assume no duplicates
 - A plain binary tree gives you no clue where a key is, so `find` checks every node. A BST lets you follow one path down
 - In-order on a BST gives the keys in sorted order
 - `_find` returns a *reference to the pointer* (`TreeNode*&`) at the key, or the null pointer where the key would go. `insert` assigns a new node into that null pointer, so new nodes are always leaves
 - `remove` has three cases once the node is found
-  + *Leaf* - delete it, and the parent's pointer becomes null
-  + *One child* - the parent points at the only child instead
-  + *Two children* - swap with the *in-order predecessor* (IOP), the largest key in the left subtree (go left once, then right until you can't). Then remove from the left subtree. The IOP has no right child, so that second remove is always case 1 or 2
+  + *Leaf*: delete it, and the parent's pointer becomes null
+  + *One child*: the parent points at the only child instead
+  + *Two children*: swap with the *in-order predecessor* (IOP), the largest key in the left subtree (go left once, then right until you can't). Then remove from the left subtree. The IOP has no right child, so that second remove is always case 1 or 2
 - *Height bounds* for $n$ nodes - fewest nodes for height $h$ is $h + 1$ (a stick), most is $2^(h + 1) - 1$ (perfect). Flip those around and $log_2(n + 1) - 1 <= h <= n - 1$
 - Height depends on *insertion order*. Sorted inserts make a stick of height $n - 1$, and random inserts average $O(log n)$
-- *Balance factor* - $b = "height"(T_R) - "height"(T_L)$. $b < 0$ means left-heavy, $b > 0$ means right-heavy. A tree is *height balanced* when $abs(b) <= 1$ at *every* node
+- *Balance factor*: $b = "height"(T_R) - "height"(T_L)$. $b < 0$ means left-heavy, $b > 0$ means right-heavy. A tree is *height balanced* when $abs(b) <= 1$ at *every* node
 
 === Runtimes
 
@@ -231,10 +231,10 @@ void BST<K, V>::_remove(TreeNode*& node, const K& key) {
 
 === Key Ideas
 
-- *Tree vs. BST vs. AVL* - a BST adds the ordering rule to a binary tree. An AVL tree is a BST that also keeps $abs(b) <= 1$ at every node, so its height is always $O(log n)$
+- *Tree vs. BST vs. AVL*: a BST adds the ordering rule to a binary tree. An AVL tree is a BST that also keeps $abs(b) <= 1$ at every node, so its height is always $O(log n)$
 - Each node stores its own `height` so $b$ can be found in $O(1)$. A null child counts as height $-1$
 - A *rotation* reshapes a subtree without breaking the BST property. It only rewires a few pointers, so it's $O(1)$, and nothing outside that subtree changes
-- *L rotation* - the right child moves up and its old left subtree becomes the old root's right subtree. *R* is the mirror. Update the old root's height first, then the new root's
+- *L rotation*: the right child moves up and its old left subtree becomes the old root's right subtree. *R* is the mirror. Update the old root's height first, then the new root's
 - *LR* = L about the left child, then R about the node. *RL* = R about the right child, then L about the node
 
 #table(
@@ -255,10 +255,10 @@ The child can only have $b = 0$ after a `remove`. It gets a single rotation, whi
 
 === Operations
 
-- `find` - exactly BST `find`. It never changes the tree
-- `insert` - BST insert, then on the way back up the recursion call `_ensureBalance` on every node of the path. That checks $b$, rotates when $abs(b) = 2$, and updates the height. An insert needs *at most one* rotation (single or double)
-- `delete` - BST `remove` first. Then, just like `_insert`, `_remove` calls `_ensureBalance` on each node as the recursion unwinds, because removing a node can unbalance *every* ancestor up to the root. So one delete may rotate at several of those nodes, up to $O(log n)$ rotations
-- *2-child delete* - same strategy as the BST: swap with the IOP, remove from the left subtree (now an easy case), then rebalance every node on the path back up. The child $b = 0$ case from the table can show up here
+- `find`: exactly BST `find`. It never changes the tree
+- `insert`: BST insert, then on the way back up the recursion call `_ensureBalance` on every node of the path. That checks $b$, rotates when $abs(b) = 2$, and updates the height. An insert needs *at most one* rotation (single or double)
+- `delete`: BST `remove` first. Then, just like `_insert`, `_remove` calls `_ensureBalance` on each node as the recursion unwinds, because removing a node can unbalance *every* ancestor up to the root. So one delete may rotate at several of those nodes, up to $O(log n)$ rotations
+- *2-child delete*: same strategy as the BST: swap with the IOP, remove from the left subtree (now an easy case), then rebalance every node on the path back up. The child $b = 0$ case from the table can show up here
 
 *Runtimes*: `find`, `insert`, and `delete` are all $O(h)$, since each walks one path down and back up with $O(1)$ work per node. An AVL tree always has $h = O(log n)$, so all three are $O(log n)$
 
@@ -322,17 +322,17 @@ $ N(h) = 1 + N(h - 1) + N(h - 2), quad N(-1) = 0, quad N(0) = 1 $
 
 === Key Ideas
 
-- *Why* - when following a pointer is a disk *seek* or a network trip, each one costs millions of instructions. A BTree packs many keys into each node so the tree is very short. We only count seeks
-- *Key vs. node* - a *key* is one value. A *node* is one block fetched with a single seek, holding several sorted keys plus child pointers. If an internal node holds $k$ keys, it has $k + 1$ children
-- *Order $m$* - an $m$-way tree. Each node has at most $m$ children and at most $m - 1$ keys (a preallocated array). A node with $m$ keys is *overfilled* and splits. $m$ is chosen so a node fills one disk block or network packet
+- *Why*: when following a pointer is a disk *seek* or a network trip, each one costs millions of instructions. A BTree packs many keys into each node so the tree is very short. We only count seeks
+- *Key vs. node*: a *key* is one value. A *node* is one block fetched with a single seek, holding several sorted keys plus child pointers. If an internal node holds $k$ keys, it has $k + 1$ children
+- *Order $m$*: an $m$-way tree. Each node has at most $m$ children and at most $m - 1$ keys (a preallocated array). A node with $m$ keys is *overfilled* and splits. $m$ is chosen so a node fills one disk block or network packet
 - *Structural properties*
   - Keys in a node are sorted
   - All leaves are on the same level. The tree only grows when the root splits
   - The root can have just 1 key, so it's a leaf or has 2 to $m$ children
   - A non-root internal node needs $ceil(m / 2)$ or more children, which means any non-root node holds $ceil(m / 2) - 1$ or more keys
-- *Height* - with $b = ceil(m / 2)$, the fewest keys a tree of height $h$ can have is $2 b^h - 1$. So $n >= 2 ceil(m / 2)^h - 1$ and $h = O(log_m n)$
-- `find` - in each node, find the first key not smaller than the target. If it matches, done. If the node is a leaf, it isn't there. Otherwise fetch that child (left of that key) and repeat
-- `insert` - always goes into a *leaf*. If the leaf hits $m$ keys, the *middle* key goes up to the parent (or becomes a new root) and the rest split into a left and right node. Splits can cascade up. Even $m$ has two middle keys and either works, which is why odd $m$ is usual
+- *Height*: with $b = ceil(m / 2)$, the fewest keys a tree of height $h$ can have is $2 b^h - 1$. So $n >= 2 ceil(m / 2)^h - 1$ and $h = O(log_m n)$
+- `find`: in each node, find the first key not smaller than the target. If it matches, done. If the node is a leaf, it isn't there. Otherwise fetch that child (left of that key) and repeat
+- `insert`: always goes into a *leaf*. If the leaf hits $m$ keys, the *middle* key goes up to the parent (or becomes a new root) and the rest split into a left and right node. Splits can cascade up. Even $m$ has two middle keys and either works, which is why odd $m$ is usual
 - `remove` isn't covered
 
 *Runtimes*: `find` and `insert` both take $O(log_m n)$ seeks, plus $O(m)$ work inside each node they touch

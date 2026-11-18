@@ -29,14 +29,14 @@ This exam covers priority queues and heaps (modules 19 and 20), disjoint sets (m
 
 === Key Ideas
 
-- *Priority queue ADT* - `insert(const T&)`, `removeMin()` (removes and returns the smallest value), and `isEmpty()`. A *min* priority queue is the default. Whatever we store needs a `<`, so pointers and nodes are out
-- *Min-heap* - A *complete* binary tree where every node is $<=$ both of its children. The minimum is always the root, and every subtree is a heap too
+- *Priority queue ADT*: `insert(const T&)`, `removeMin()` (removes and returns the smallest value), and `isEmpty()`. A *min* priority queue is the default. Whatever we store needs a `<`, so pointers and nodes are out
+- *Min-heap*: A *complete* binary tree where every node is $<=$ both of its children. The minimum is always the root, and every subtree is a heap too
 - A heap is *not* a BST. Siblings and cousins are in no particular order, so you can't search a heap in $O(log n)$
-- *Array storage* - Store the tree level by level, with index 0 left empty (or holding the size) so the *root sits at index 1*. For a node at index $i$
-  - *Left child* - $2i$
-  - *Right child* - $2i + 1$
-  - *Parent* - $floor(i / 2)$
-  - *Last node* - index $n$, and the leaves are indices $floor(n / 2) + 1$ through $n$
+- *Array storage*: Store the tree level by level, with index 0 left empty (or holding the size) so the *root sits at index 1*. For a node at index $i$
+  - *Left child*: $2i$
+  - *Right child*: $2i + 1$
+  - *Parent*: $floor(i / 2)$
+  - *Last node*: index $n$, and the leaves are indices $floor(n / 2) + 1$ through $n$
 - When the array fills up, double it. That allocates room for exactly one more level
 
 #figure(
@@ -52,8 +52,8 @@ This exam covers priority queues and heaps (modules 19 and 20), disjoint sets (m
 
 === HeapifyUp and HeapifyDown
 
-- *`insert`* - The tree has to stay complete, so the new value goes at index $n + 1$ (`item_[++size_] = key`, growing the array first if it's full). Then *heapify up*: while it's smaller than its parent, swap with the parent. One swap per level, so $O(log n)$
-- *`removeMin`* - Save the root, move the *last* value (index $n$) into the root, shrink the size, then *heapify down*: while it's larger than its *smaller* child, swap with that child. Also $O(log n)$
+- *`insert`*: The tree has to stay complete, so the new value goes at index $n + 1$ (`item_[++size_] = key`, growing the array first if it's full). Then *heapify up*: while it's smaller than its parent, swap with the parent. One swap per level, so $O(log n)$
+- *`removeMin`*: Save the root, move the *last* value (index $n$) into the root, shrink the size, then *heapify down*: while it's larger than its *smaller* child, swap with that child. Also $O(log n)$
 - Swapping with the smaller child is what keeps it correct, since the value moving up is $<=$ both children
 - `_isLeaf(i)` is just `2 * i > size_`. In a complete tree, no left child means no right child either
 
@@ -93,9 +93,9 @@ void Heap<T>::_heapifyDown(size_t index) {
 
 Three ways to turn $n$ values into a heap
 
-+ *Sort the array* - A sorted array already is a heap, but sorting costs $O(n log n)$
-+ *Insert $n$ times* - Heapify up indices 2 through $n$, $O(n log n)$
-+ *`buildHeap`* - Heapify down from index $floor(n / 2)$ back to 1. This is $O(n)$, and it's the answer when an exam says "build a heap"
++ *Sort the array*: A sorted array already is a heap, but sorting costs $O(n log n)$
++ *Insert $n$ times*: Heapify up indices 2 through $n$, $O(n log n)$
++ *`buildHeap`*: Heapify down from index $floor(n / 2)$ back to 1. This is $O(n)$, and it's the answer when an exam says "build a heap"
 
 Heapify down on a node whose two subtrees are already heaps makes the whole subtree a heap. Leaves are heaps for free, so starting at the last parent and working backwards to the root means both subtrees are always ready
 
@@ -141,10 +141,10 @@ For comparison, as a priority queue an unsorted array or list is $O(1)$ `insert`
 === Key Ideas
 
 - A disjoint set keeps a *partition* of the elements $0$ to $n - 1$: every element sits in exactly one set, and each set is named by its *representative*
-- `find(k)` - Returns the representative of `k`'s set. Two elements are in the same set exactly when `find(a) == find(b)`
-- `union(k1, k2)` - Merges the two sets. Call it on *roots*, so in general `union(find(k1), find(k2))`
-- `addElements(num)` - Adds `num` new elements, each alone in its own set
-- *Naive array* - Store each element's representative. `find` is $O(1)$, but `union` has to relabel a whole set, $O(n)$
+- `find(k)`: Returns the representative of `k`'s set. Two elements are in the same set exactly when `find(a) == find(b)`
+- `union(k1, k2)`: Merges the two sets. Call it on *roots*, so in general `union(find(k1), find(k2))`
+- `addElements(num)`: Adds `num` new elements, each alone in its own set
+- *Naive array*: Store each element's representative. `find` is $O(1)$, but `union` has to relabel a whole set, $O(n)$
 
 === Construction (UpTrees)
 
@@ -174,12 +174,12 @@ For comparison, as a priority queue an unsorted array or list is $O(1)$ `insert`
 
 Without a rule, `union(0, 1)`, `union(1, 2)`, `union(2, 3)`, ... builds a straight line and `find(0)` is $O(n)$. *Smart union* picks which root goes on top
 
-- *Union by size* - The root of the set with *fewer nodes* points at the bigger one. The root stores $-"size"$, and the new root stores the sum
-- *Union by height* - The root of the *shorter* tree points at the taller one. The root stores $-("height" + 1)$, because $-0$ would read as "my parent is 0". The height only grows, by 1, when the two heights tie
+- *Union by size*: The root of the set with *fewer nodes* points at the bigger one. The root stores $-"size"$, and the new root stores the sum
+- *Union by height*: The root of the *shorter* tree points at the taller one. The root stores $-("height" + 1)$, because $-0$ would read as "my parent is 0". The height only grows, by 1, when the two heights tie
 - Either way the *more negative* root wins, and `find` now checks `data_[k] < 0`
 - The two rules can disagree: a tall skinny set against a short wide one goes one way by size and the other way by height
 - *Both keep $h <= log n$* since a tree of height $h$ has at least $2^h$ nodes. For height, a tree only reaches height $k$ by linking two trees of height $k - 1$, each with $>= 2^(k - 1)$ nodes. For size, hanging $S$ under a root with at least as many nodes either keeps the height or makes it $h(S) + 1$ with $>= 2 dot 2^(h(S))$ nodes
-- *Path compression* - On the way back out of `find`, point every node on the path straight at the root. With it, union by height becomes *union by rank* (same code, but the stored rank never shrinks)
+- *Path compression*: On the way back out of `find`, point every node on the path straight at the root. With it, union by height becomes *union by rank* (same code, but the stored rank never shrinks)
 
 ```cpp
 int DisjointSets::find(int k) {
@@ -278,14 +278,14 @@ for(const Animal& animal : zoo) {
 
 - $G = (V, E)$, with $n = |V|$ vertices and $m = |E|$ edges
 - *Incident edges* $I(v)$ - The edges touching $v$. *Degree* $deg(v) = |I(v)|$. *Adjacent vertices* $A(v)$ - The vertices one edge away from $v$
-- *Path* - A sequence of vertices joined by edges. In this class a path *may* repeat vertices. A *simple path* never does
-- *Cycle* - A path of at least three vertices that starts and ends at the same vertex, with no other repeats
-- *Simple graph* - No self-loops and at most one edge per pair. Assume simple unless told otherwise
-- *Subgraph* - $V' subset.eq V$, $E' subset.eq E$, and both ends of every edge in $E'$ are in $V'$
-- *Complete* - Every vertex joined to every other. *Connected* - A path between every pair. *Acyclic* - No cycles
-- *Connected component* - A connected subgraph that can't be made any bigger. A smaller connected piece inside one doesn't count
-- *Spanning tree* - Connected, acyclic, and touching *every* vertex. It has exactly $n - 1$ edges, and only a connected graph has one
-- *Handshaking Theorem* - $sum_(v in V) deg(v) = 2m$, since each edge adds 1 to the degree of each end. Visiting every vertex's neighbors costs this sum, which is where most graph runtimes come from
+- *Path*: A sequence of vertices joined by edges. In this class a path *may* repeat vertices. A *simple path* never does
+- *Cycle*: A path of at least three vertices that starts and ends at the same vertex, with no other repeats
+- *Simple graph*: No self-loops and at most one edge per pair. Assume simple unless told otherwise
+- *Subgraph*: $V' subset.eq V$, $E' subset.eq E$, and both ends of every edge in $E'$ are in $V'$
+- *Complete*: Every vertex joined to every other. *Connected*: A path between every pair. *Acyclic*: No cycles
+- *Connected component*: A connected subgraph that can't be made any bigger. A smaller connected piece inside one doesn't count
+- *Spanning tree*: Connected, acyclic, and touching *every* vertex. It has exactly $n - 1$ edges, and only a connected graph has one
+- *Handshaking Theorem*: $sum_(v in V) deg(v) = 2m$, since each edge adds 1 to the degree of each end. Visiting every vertex's neighbors costs this sum, which is where most graph runtimes come from
 
 #table(
   columns: 2,
@@ -305,9 +305,9 @@ The ADT has `insertVertex`, `removeVertex`, `insertEdge`, `removeEdge`, `inciden
   caption: [A graph with vertices $u, v, w, z$ (numbered 0 to 3) and edges $a, b, c, d$],
 ) <m4-impl-graph>
 
-- *Edge list* - A vector of vertices plus a linked list of edges, each edge storing both endpoints. Inserting is $O(1)$, but any lookup scans all $m$ edges. Removed vertices are tombstoned instead of shifting the vector. It's the go-to *file format*. For @m4-impl-graph the edges are $a = (0, 1)$, $b = (0, 2)$, $c = (1, 2)$, $d = (2, 3)$
-- *Adjacency matrix* - The edge list plus an $n times n$ matrix whose entry $(i, j)$ is a *pointer* to that edge or `nullptr` (undirected graphs only need $i < j$). `areAdjacent` and `removeEdge` are $O(1)$, `incidentEdges` scans a row in $O(n)$, adding or removing a vertex is $O(n)$ with doubling. $O(n^2)$ space, so it's best when the vertex set doesn't change
-- *Adjacency list* - The edge list plus a *doubly linked* list of incident edges per vertex, with each edge pointing back into both lists. For @m4-impl-graph, $u: a, b$, $v: a, c$, $w: b, c, d$, $z: d$. `incidentEdges` is $O(deg(v))$, which is optimal. `areAdjacent` scans the *shorter* list, $O(min(deg(v_1), deg(v_2)))$. This is the default for graph algorithms
+- *Edge list*: A vector of vertices plus a linked list of edges, each edge storing both endpoints. Inserting is $O(1)$, but any lookup scans all $m$ edges. Removed vertices are tombstoned instead of shifting the vector. It's the go-to *file format*. For @m4-impl-graph the edges are $a = (0, 1)$, $b = (0, 2)$, $c = (1, 2)$, $d = (2, 3)$
+- *Adjacency matrix*: The edge list plus an $n times n$ matrix whose entry $(i, j)$ is a *pointer* to that edge or `nullptr` (undirected graphs only need $i < j$). `areAdjacent` and `removeEdge` are $O(1)$, `incidentEdges` scans a row in $O(n)$, adding or removing a vertex is $O(n)$ with doubling. $O(n^2)$ space, so it's best when the vertex set doesn't change
+- *Adjacency list*: The edge list plus a *doubly linked* list of incident edges per vertex, with each edge pointing back into both lists. For @m4-impl-graph, $u: a, b$, $v: a, c$, $w: b, c, d$, $z: d$. `incidentEdges` is $O(deg(v))$, which is optimal. `areAdjacent` scans the *shorter* list, $O(min(deg(v_1), deg(v_2)))$. This is the default for graph algorithms
 
 #table(
   columns: 4,

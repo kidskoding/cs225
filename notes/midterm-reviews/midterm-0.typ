@@ -46,16 +46,16 @@ Midterm 0 is your first CBTF exam in CS 225. It checks the prerequisite material
 
 == Course Policies
 
-- *Prereqs* - credit in CS 173/MATH 213 and CS 128 (ECE students can use ECE 220 instead of CS 128)
-- *Grade split* - 36% MPs (6% each), 12% labs, 36% midterms (6% each), 16% final. Every exam runs in the CBTF
+- *Prereqs*: credit in CS 173/MATH 213 and CS 128 (ECE students can use ECE 220 instead of CS 128)
+- *Grade split*: 36% MPs (6% each), 12% labs, 36% midterms (6% each), 16% final. Every exam runs in the CBTF
 
 == Recurrences
 
 *Key ideas*
 
-- *Recurrence* - a formula where each term is built from earlier terms, plus a base case like $T(0)$ or $T(1)$
-- *Closed form* - an expression for $T(n)$ that doesn't need the earlier terms
-- *Unrolling* - plug the recurrence into itself a few times, spot the pattern after $k$ steps, then pick $k$ so the argument hits the base case
+- *Recurrence*: a formula where each term is built from earlier terms, plus a base case like $T(0)$ or $T(1)$
+- *Closed form*: an expression for $T(n)$ that doesn't need the earlier terms
+- *Unrolling*: plug the recurrence into itself a few times, spot the pattern after $k$ steps, then pick $k$ so the argument hits the base case
 - Two sums that keep showing up: $sum_(i = 1)^n i = (n(n + 1))/2$ and $sum_(i = 0)^(k - 1) 2^i = 2^k - 1$
 
 *Recurrences to recognize*
@@ -89,9 +89,9 @@ The base case shows up when $n - k = 1$, so $k = n - 1$ and $T(n) = 2^(n - 1) + 
 
 *Key ideas*
 
-- *Base case* - show the claim for the smallest $n$ (usually $0$ or $1$)
-- *Inductive hypothesis* - assume the claim holds for $n = k$ (strong induction assumes it for every value below $k + 1$)
-- *Inductive step* - use the hypothesis to prove the claim for $n = k + 1$
+- *Base case*: show the claim for the smallest $n$ (usually $0$ or $1$)
+- *Inductive hypothesis*: assume the claim holds for $n = k$ (strong induction assumes it for every value below $k + 1$)
+- *Inductive step*: use the hypothesis to prove the claim for $n = k + 1$
 - Write the $k + 1$ case as the $k$ case plus one more piece, so the hypothesis can replace the $k$ part
 
 *Example*: $1 + 2 + dots + n = (n(n + 1))/2$ for $n >= 1$. The base case $n = 1$ gives $1 = (1 dot 2)/2$. Assume $1 + 2 + dots + k = (k(k + 1))/2$. Then $(1 + dots + k) + (k + 1) = (k(k + 1))/2 + (k + 1) = ((k + 1)(k + 2))/2$, which is the formula at $n = k + 1$
@@ -136,16 +136,16 @@ The base case shows up when $n - k = 1$, so $k = n - 1$ and $T(n) = 2^(n - 1) + 
 
 - *Graph* $G = (V, E)$ - a set of vertices and a set of edges, each edge joining two vertices. Joined vertices are *adjacent* (neighbors)
 - *Directed* edges go one way (arrows); *undirected* edges go both ways
-- *Loop* - an edge from a vertex to itself. *Multiple edges* - more than one edge between the same pair. *Simple* graph - neither
+- *Loop*: an edge from a vertex to itself. *Multiple edges*: more than one edge between the same pair. *Simple* graph - neither
 - *Complete graph* on $n$ vertices - every pair is joined, so it has $(n(n - 1))/2$ edges
-- *Walk* - sequence of vertices joined by edges, repeats allowed. *Path* - a walk with no repeated vertices. *Cycle* - closes back on its start without repeating anything else
-- *Wheel* - a cycle plus one center vertex joined to every cycle vertex. *Subgraph* - pick some of the vertices and edges
+- *Walk*: sequence of vertices joined by edges, repeats allowed. *Path*: a walk with no repeated vertices. *Cycle*: closes back on its start without repeating anything else
+- *Wheel*: a cycle plus one center vertex joined to every cycle vertex. *Subgraph*: pick some of the vertices and edges
 - *Degree* $deg(v)$ - number of edges touching $v$; a loop adds 2
-- *Handshaking theorem* - $sum_(v in V) deg(v) = 2|E|$, so the number of odd-degree vertices is always even
-- *Isomorphic* - there is a bijection $f: V_1 -> V_2$ with $u v$ an edge exactly when $f(u) f(v)$ is an edge. Same vertex count, edge count and degree list are necessary, not enough on their own
-- *Connected* - a walk exists between every pair of vertices. *Cut edge* - removing it disconnects the graph
-- *Euler circuit* - closed walk using every edge exactly once. A connected graph has one exactly when every degree is even
-- *Bipartite* - vertices split into $V_1$ and $V_2$ with every edge going across; same as being 2-colorable, so an odd cycle rules it out
+- *Handshaking theorem*: $sum_(v in V) deg(v) = 2|E|$, so the number of odd-degree vertices is always even
+- *Isomorphic*: there is a bijection $f: V_1 -> V_2$ with $u v$ an edge exactly when $f(u) f(v)$ is an edge. Same vertex count, edge count and degree list are necessary, not enough on their own
+- *Connected*: a walk exists between every pair of vertices. *Cut edge*: removing it disconnects the graph
+- *Euler circuit*: closed walk using every edge exactly once. A connected graph has one exactly when every degree is even
+- *Bipartite*: vertices split into $V_1$ and $V_2$ with every edge going across; same as being 2-colorable, so an odd cycle rules it out
 
 *Common mistakes*
 
@@ -157,15 +157,15 @@ The base case shows up when $n - k = 1$, so $k = n - 1$ and $T(n) = 2^(n - 1) + 
 
 *Key ideas*
 
-- *Tree* - connected and acyclic; $n$ vertices means $n - 1$ edges, and there is exactly one path between any two vertices
-- *Vocabulary* - parent, child, sibling (same parent), leaf (no children), internal (at least one child), ancestor (on the path up to the root), descendant
+- *Tree*: connected and acyclic; $n$ vertices means $n - 1$ edges, and there is exactly one path between any two vertices
+- *Vocabulary*: parent, child, sibling (same parent), leaf (no children), internal (at least one child), ancestor (on the path up to the root), descendant
 - *Level* (depth) - edges from the root; the root is level 0
-- *Height* - edges on the longest root-to-leaf path. One node has height 0 and the empty tree has height $-1$, so $"height"(T) = max("height"(T_L), "height"(T_R)) + 1$
+- *Height*: edges on the longest root-to-leaf path. One node has height 0 and the empty tree has height $-1$, so $"height"(T) = max("height"(T_L), "height"(T_R)) + 1$
 - *$m$-ary* tree - every node has at most $m$ children (binary means $m = 2$)
-- *Full* - every node has 0 or $m$ children. A full $m$-ary tree with $i$ internal nodes has $m i + 1$ nodes
-- *Perfect* - every level is completely filled, so the tree is both full and complete
-- *Complete* - every level is full except maybe the last, which is filled from the left
-- *Balanced* - at *every* node, the left and right subtree heights differ by at most 1
+- *Full*: every node has 0 or $m$ children. A full $m$-ary tree with $i$ internal nodes has $m i + 1$ nodes
+- *Perfect*: every level is completely filled, so the tree is both full and complete
+- *Complete*: every level is full except maybe the last, which is filled from the left
+- *Balanced*: at *every* node, the left and right subtree heights differ by at most 1
 - Binary tree of height $h$: at most $2^L$ nodes on level $L$, at most $2^(h + 1) - 1$ nodes total (perfect), at least $h + 1$ nodes (a single chain)
 
 *Common mistakes*
@@ -178,18 +178,18 @@ The base case shows up when $n - k = 1$, so $k = n - 1$ and $T(n) = 2^(n - 1) + 
 
 *Key ideas*
 
-- *Public member functions* - the interface anyone can call. *Private variables* and *private helper functions* - only the class's own code can use them
+- *Public member functions*: the interface anyone can call. *Private variables* and *private helper functions*: only the class's own code can use them
 - `class` members default to `private`; `struct` members default to `public`. That is the only difference
-- `protected` - like private, but derived classes can see it too
-- *Constructor* - same name as the class, no return type. Initialize members in the *initializer list* (`: m_x{ x }`), not by assigning in the body
+- `protected`: like private, but derived classes can see it too
+- *Constructor*: same name as the class, no return type. Initialize members in the *initializer list* (`: m_x{ x }`), not by assigning in the body
 - *Default constructor* takes no arguments; a *non-default* one takes some. Constructors can be overloaded
-- *Automatic default constructor* - the compiler writes `Foo()` for you *only if you declare no constructors at all*. Declare any constructor (even a copy constructor) and it is gone unless you write `Foo() = default;`
-- *Copy constructor* `Foo(const Foo& other)` - builds a new object from an existing one, as in `Foo b = a;` or when an object is passed by value
-- *Automatic copy constructor* - copies each member. For a pointer member that copies the address only (a *shallow copy*), so both objects share one heap block
+- *Automatic default constructor*: the compiler writes `Foo()` for you *only if you declare no constructors at all*. Declare any constructor (even a copy constructor) and it is gone unless you write `Foo() = default;`
+- *Copy constructor* `Foo(const Foo& other)`: builds a new object from an existing one, as in `Foo b = a;` or when an object is passed by value
+- *Automatic copy constructor*: copies each member. For a pointer member that copies the address only (a *shallow copy*), so both objects share one heap block
 - A *custom copy constructor* does a *deep copy*: allocate new memory and copy the pointed-to data
-- *Destructor* `~Foo()` - no return type, no arguments, runs when the object goes out of scope or is `delete`d. Use it to free what the class owns
-- *Rule of three* - define a destructor, copy constructor or copy assignment operator, and you should define all three
-- *Inheritance* - `class Derived : public Base` gets Base's public and protected members (private ones exist but Derived can't touch them). The base constructor runs first, and you can pick which one in the initializer list
+- *Destructor* `~Foo()`: no return type, no arguments, runs when the object goes out of scope or is `delete`d. Use it to free what the class owns
+- *Rule of three*: define a destructor, copy constructor or copy assignment operator, and you should define all three
+- *Inheritance*: `class Derived : public Base` gets Base's public and protected members (private ones exist but Derived can't touch them). The base constructor runs first, and you can pick which one in the initializer list
 
 *Code you should be able to write*
 
@@ -273,16 +273,16 @@ Foo(const Foo& other) : size{ other.size } {
 
 *Key ideas*
 
-- Every variable has four properties - *name*, *type*, *location* in memory, and *value*
+- Every variable has four properties: *name*, *type*, *location* in memory, and *value*
 - *Primitive* types are built in (`int`, `char`, `double`, `bool`, pointers). *User-defined* types are classes and structs you (or a library) write, like `Cube`
-- *Reference* `int& r = x;` - another name for `x`. Must be initialized, can never be null, can never be reseated to a different variable
-- *Pointer* `int* p = &x;` - its own variable holding an address. `*p` dereferences it; it can be `nullptr` and can be pointed elsewhere
+- *Reference* `int& r = x;`: another name for `x`. Must be initialized, can never be null, can never be reseated to a different variable
+- *Pointer* `int* p = &x;`: its own variable holding an address. `*p` dereferences it; it can be `nullptr` and can be pointed elsewhere
 - Prefer references when something always exists; use pointers when it might be missing or you need to change what you point at
-- *Stack* - local variables and parameters, one frame per active call. Freed automatically when the function returns. Fast, but small
-- *Heap* - memory from `new`, which lives until you `delete` it. Slower and only reachable through a pointer, but it outlives the function and fits large data
+- *Stack*: local variables and parameters, one frame per active call. Freed automatically when the function returns. Fast, but small
+- *Heap*: memory from `new`, which lives until you `delete` it. Slower and only reachable through a pointer, but it outlives the function and fits large data
 - `new` allocates and runs the constructor; `delete` runs the destructor and frees. Match `new[]` with `delete[]`
-- *Memory leak* - heap memory nothing points to anymore, so it can never be freed
-- *Dangling pointer or reference* - still refers to memory that was freed or went out of scope. Using it is undefined behavior. Set pointers to `nullptr` after `delete`
+- *Memory leak*: heap memory nothing points to anymore, so it can never be freed
+- *Dangling pointer or reference*: still refers to memory that was freed or went out of scope. Using it is undefined behavior. Set pointers to `nullptr` after `delete`
 
 #figure(
   memory(stack: (p: "->h", a: 3), heap: (h: 4)),

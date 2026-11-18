@@ -30,16 +30,16 @@ From the wrap-up chapter: *everyone* gets multiple choice or short answer on ske
 
 === Key Ideas
 
-- *Bloom filter* - a hash table that keeps one bit per slot and no keys. It is $m$ bits, all 0 at the start, plus $k$ hash functions that share that one bit vector
-- *insert($x$)* - set bits $h_1(x), ..., h_k (x)$ to 1. A bit that is already 1 stays 1
-- *find($x$)* - check those same $k$ bits. Any 0 means *definitely not* in the set (stop at the first 0). All 1s means *maybe*
-- *One-sided error* - false negatives are impossible, since an inserted key's bits were set and bits never go back to 0. False positives happen when other keys happened to set all $k$ bits
+- *Bloom filter*: a hash table that keeps one bit per slot and no keys. It is $m$ bits, all 0 at the start, plus $k$ hash functions that share that one bit vector
+- *insert($x$)*: set bits $h_1(x), ..., h_k (x)$ to 1. A bit that is already 1 stays 1
+- *find($x$)*: check those same $k$ bits. Any 0 means *definitely not* in the set (stop at the first 0). All 1s means *maybe*
+- *One-sided error*: false negatives are impossible, since an inserted key's bits were set and bits never go back to 0. False positives happen when other keys happened to set all $k$ bits
 - A true positive and a false positive look identical to the filter. It threw away the keys, so it can't tell them apart
-- *Good use* - when a false positive is cheap. Malicious URL check: "no" means safe with zero network traffic, "maybe" costs one request to the real service. Browser cache: cache a resource only on its second visit
-- *No remove* - clearing a key's bits can clear bits another key needs, which creates a false negative
-- *No resize* - there are no keys left to rehash, so changing $m$ or $k$ means rebuilding from the original data
-- *Union* - bitwise or of two filters with the same $m$ and the *same* hash functions is *exactly* the filter of $S_1 union S_2$
-- *Intersection* - bitwise and still has no false negatives for $S_1 inter S_2$, but it can keep extra 1s, so it is *not* the same as the filter of $S_1 inter S_2$
+- *Good use*: when a false positive is cheap. Malicious URL check: "no" means safe with zero network traffic, "maybe" costs one request to the real service. Browser cache: cache a resource only on its second visit
+- *No remove*: clearing a key's bits can clear bits another key needs, which creates a false negative
+- *No resize*: there are no keys left to rehash, so changing $m$ or $k$ means rebuilding from the original data
+- *Union*: bitwise or of two filters with the same $m$ and the *same* hash functions is *exactly* the filter of $S_1 union S_2$
+- *Intersection*: bitwise and still has no false negatives for $S_1 inter S_2$, but it can keep extra 1s, so it is *not* the same as the filter of $S_1 inter S_2$
 
 The running example from module 31 uses $m = 10$ and
 
@@ -61,9 +61,9 @@ $ h_1(x) = x mod 10 #h(2em) h_2(x) = 2x mod 10 #h(2em) h_3(x) = (3x + 5) mod 10 
 
 On the finished filter, only bits 0, 1, and 5 are 0
 
-- `find(6)` - bits 6, 2, 3 are all 1, so yes (true positive)
-- `find(1)` - bit $h_1(1) = 1$ is 0, so no right away (true negative)
-- `find(9)` - bits 9, 8, 2 are all 1, so yes, but 9 was never inserted (false positive). Bit 9 came from $h_3(8)$, which is the cost of sharing one vector between all $k$ functions
+- `find(6)`: bits 6, 2, 3 are all 1, so yes (true positive)
+- `find(1)`: bit $h_1(1) = 1$ is 0, so no right away (true negative)
+- `find(9)`: bits 9, 8, 2 are all 1, so yes, but 9 was never inserted (false positive). Bit 9 came from $h_3(8)$, which is the cost of sharing one vector between all $k$ functions
 - Removing 8 would clear bit 6, and then `find(6)` says no. That's a false negative, which is why there's no remove
 
 === Formulas
@@ -138,19 +138,19 @@ void BloomFilter::unionWith(const BloomFilter& other) {
 
 === Key Ideas
 
-- *Cardinality* - the number of *unique* items in a set. An exact count means storing everything seen so far, which is impossible for huge streams
-- *Cardinality estimate* - a one-pass guess at that count that keeps only a tiny summary of the stream
-- *Hat problem* - $n$ values spread uniformly over a range cut it into $n + 1$ gaps of about equal average length. The first gap ends at the minimum, so a small minimum means many values
-- *Hashing* - turns real data into uniform values (under SUHA). Divide each hash by the size of the hash range to land in $[0, 1)$
-- *Duplicates are free* - a repeated item hashes to the same value, so it can't move the minimum. The minimum depends only on the unique items
-- *Expected minimum* - for $n$ uniform values in $[0, 1)$, $E[M] = 1 / (n + 1)$
-- *Why* - add one more value $X_(n + 1)$. The chance it lands below $M$ is $E[M]$ (it's uniform), and it is also $1 / (n + 1)$ (each of the $n + 1$ values is equally likely to be smallest)
-- *$k$ smallest* - $M_k$, the $k$-th smallest value, marks where gap number $k$ ends, so $E[M_k] = k / (n + 1)$. Averaging $k$ gaps smooths out one lucky hash
+- *Cardinality*: the number of *unique* items in a set. An exact count means storing everything seen so far, which is impossible for huge streams
+- *Cardinality estimate*: a one-pass guess at that count that keeps only a tiny summary of the stream
+- *Hat problem*: $n$ values spread uniformly over a range cut it into $n + 1$ gaps of about equal average length. The first gap ends at the minimum, so a small minimum means many values
+- *Hashing*: turns real data into uniform values (under SUHA). Divide each hash by the size of the hash range to land in $[0, 1)$
+- *Duplicates are free*: a repeated item hashes to the same value, so it can't move the minimum. The minimum depends only on the unique items
+- *Expected minimum*: for $n$ uniform values in $[0, 1)$, $E[M] = 1 / (n + 1)$
+- *Why*: add one more value $X_(n + 1)$. The chance it lands below $M$ is $E[M]$ (it's uniform), and it is also $1 / (n + 1)$ (each of the $n + 1$ values is equally likely to be smallest)
+- *$k$ smallest*: $M_k$, the $k$-th smallest value, marks where gap number $k$ ends, so $E[M_k] = k / (n + 1)$. Averaging $k$ gaps smooths out one lucky hash
 
 $ n approx 1 / M - 1 #h(4em) n approx k / M_k - 1 $
 
-- *Fewer than $k$ values at the end* - the stream had fewer than $k$ unique items, and the sketch size is the exact count
-- *Accuracy* - $k = 1$ is typically off by about two thirds, $k = 10$ by about 21%, $k = 100$ by about 6%. Error depends on $k$, *not* on $n$, and the returns shrink: $10 times$ the $k$ gives about $sqrt(10) approx 3 times$ less error
+- *Fewer than $k$ values at the end*: the stream had fewer than $k$ unique items, and the sketch size is the exact count
+- *Accuracy*: $k = 1$ is typically off by about two thirds, $k = 10$ by about 21%, $k = 100$ by about 6%. Error depends on $k$, *not* on $n$, and the returns shrink: $10 times$ the $k$ gives about $sqrt(10) approx 3 times$ less error
 
 === Runtimes
 
@@ -212,19 +212,19 @@ double CardinalitySketch::estimate() const {
 
 === Key Ideas
 
-- *Jaccard similarity* - $J(A, B) = abs(A inter B) / abs(A union B)$. It is 0 for disjoint sets, 1 for equal sets, and always in $[0, 1]$ with no units. Unlike a raw count of shared items, it also charges for what the sets *don't* share
-- *MinHash fact* - under SUHA, every item of $A union B$ is equally likely to have the smallest hash. The two sets have the same minimum hash exactly when that item is shared, so $P(min h(A) = min h(B)) = J(A, B)$
+- *Jaccard similarity*: $J(A, B) = abs(A inter B) / abs(A union B)$. It is 0 for disjoint sets, 1 for equal sets, and always in $[0, 1]$ with no units. Unlike a raw count of shared items, it also charges for what the sets *don't* share
+- *MinHash fact*: under SUHA, every item of $A union B$ is equally likely to have the smallest hash. The two sets have the same minimum hash exactly when that item is shared, so $P(min h(A) = min h(B)) = J(A, B)$
 - One minimum is a single coin flip (always 0 or 1), so we keep $k$ samples instead
-- *k-min sketch* - the $k$ smallest hash values of a set. It is the same structure as the cardinality sketch, so one pass gives both the set's size and its sketch for similarity
-- *Union sketch* - merge the two sorted sketches like merge sort, writing a shared value once, and stop after $k$ values. The result is *exactly* the k-min sketch of $A union B$
-- *Membership from sketches* - if a value is below the largest value in $B$'s sketch but not in $B$'s sketch, it is not in $B$. Above $B$'s largest value, we can't tell
-- *Intersection sketch* - the values in *both* sketches. It usually has fewer than $k$ values, since a shared item with a large hash never made it into either sketch. It keeps all $k$ only when the two sketches are identical
+- *k-min sketch*: the $k$ smallest hash values of a set. It is the same structure as the cardinality sketch, so one pass gives both the set's size and its sketch for similarity
+- *Union sketch*: merge the two sorted sketches like merge sort, writing a shared value once, and stop after $k$ values. The result is *exactly* the k-min sketch of $A union B$
+- *Membership from sketches*: if a value is below the largest value in $B$'s sketch but not in $B$'s sketch, it is not in $B$. Above $B$'s largest value, we can't tell
+- *Intersection sketch*: the values in *both* sketches. It usually has fewer than $k$ values, since a shared item with a large hash never made it into either sketch. It keeps all $k$ only when the two sketches are identical
 
 Three ways to estimate $J$ from two sketches
 
-+ *Shared fraction of the union sketch* - the number of union-sketch values found in both sketches, divided by $k$
-+ *Smaller intersection sketch* - treat it as a $k'$-value sketch, estimate $abs(A inter B) approx k' / M_(k') - 1$, then divide by the union estimate. Less accurate, since it uses fewer values
-+ *Through the union* - $abs(A inter B) = abs(A) + abs(B) - abs(A union B)$, all three from full $k$ sketches. Subtracting estimates *adds* their errors, so with small $k$ it can even go negative
++ *Shared fraction of the union sketch*: the number of union-sketch values found in both sketches, divided by $k$
++ *Smaller intersection sketch*: treat it as a $k'$-value sketch, estimate $abs(A inter B) approx k' / M_(k') - 1$, then divide by the union estimate. Less accurate, since it uses fewer values
++ *Through the union*: $abs(A inter B) = abs(A) + abs(B) - abs(A union B)$, all three from full $k$ sketches. Subtracting estimates *adds* their errors, so with small $k$ it can even go negative
 
 === Runtimes
 
@@ -255,9 +255,9 @@ Three ways to estimate $J$ from two sketches
 The three estimates for @fe-minhash-merge
 
 - $abs(A union B) approx 8 / 0.15 - 1 approx 52.3$ and $abs(A) approx abs(B) approx 8 / 0.23 - 1 approx 33.8$
-- Shared fraction - 3, 7, and 11 of the union's 8 values are shared, so $J approx 3 / 8 = 0.375$
-- Intersection sketch - $5 / 0.23 - 1 approx 20.7$, so $J approx 20.7 / 52.3 approx 0.40$
-- Through the union - $33.8 + 33.8 - 52.3 = 15.2$, so $J approx 15.2 / 52.3 approx 0.29$
+- Shared fraction: 3, 7, and 11 of the union's 8 values are shared, so $J approx 3 / 8 = 0.375$
+- Intersection sketch: $5 / 0.23 - 1 approx 20.7$, so $J approx 20.7 / 52.3 approx 0.40$
+- Through the union: $33.8 + 33.8 - 52.3 = 15.2$, so $J approx 15.2 / 52.3 approx 0.29$
 
 They disagree because $k = 8$ is tiny, so none of the three is reliable on its own
 
@@ -265,7 +265,7 @@ They disagree because $k = 8$ is tiny, so none of the three is reliable on its o
 
 - *Accuracy grows with $k$* with diminishing returns, just like cardinality. In the module's experiment, the shared fraction beat going through the union at every $k$
 - *Very different set sizes break it.* If $L$ is much bigger than $S$, the shared items can sit past the end of $L$'s sketch, so the union sketch is all $L$'s values and the overlap is never seen. There's no nice error bound, and it gets worse as the sizes drift apart
-- *$k$-partitions* - split the hash range by the most significant bits (`00`, `01`, `10`, `11`) and keep the $k$ smallest in *each* part, so samples spread over the whole range. Compare part by part and combine. An empty part counts as zero similarity for its share. It only helps a little, so compare sets of similar size when you can
+- *$k$-partitions*: split the hash range by the most significant bits (`00`, `01`, `10`, `11`) and keep the $k$ smallest in *each* part, so samples spread over the whole range. Compare part by part and combine. An empty part counts as zero similarity for its share. It only helps a little, so compare sets of similar size when you can
 
 === Common Mistakes
 
