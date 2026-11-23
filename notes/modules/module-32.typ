@@ -22,7 +22,7 @@ Let's start by asking what a bloom filter, exactly as we've studied it, can and 
 - Similarity: kind of. If two filters use the same $m$ and the same hash functions and have exactly the same bits set, they were very likely built from the same data, since every query would give the same answer. But that's not really a measure of *how* similar two sets are
 - Unique items: kind of. With $k = 1$, counting the ones in the filter is close to the number of unique items, but every collision makes two items look like one, so the count comes up short
 
-The last two aren't what a bloom filter does, but the same probabilistic idea (hash everything, then reason about where the hashes land) leads to data structures that do solve them efficiently. This chapter is about the last one, which is exactly what we needed to size our bloom filter
+The last two aren't what a bloom filter does, but the same probabilistic idea (hash everything, then reason about where the hashes land) leads to data structures that do solve them efficiently. Here we'll tackle the last one, since that's what we needed to size our bloom filter
 
 The size of a set is called its *cardinality*, and the key word is *unique*. If we stream every picture we can find on the internet, we don't want to know how many pictures went by (a single counter would do that); we want to know how many *different* cat photos there are, no matter how many times each one shows up. To count that exactly, we'd have to store every unique photo we've seen so far and check each new one against all of them. With something like 130 billion photos, we can't store them all, so we'll settle for a *cardinality estimate*: a good guess at the number of unique items, made in one pass over the data while storing almost nothing
 
@@ -45,7 +45,7 @@ So if the minimum is 95, our best guess is that the first gap is average, and we
 
 $ 95 approx (1000) / (n + 1) quad => quad n + 1 approx (1000) / 95 approx 10.5 quad => quad n approx 9.5 $
 
-Our estimate is 9.5 unique cards. It's not an integer, but it's an estimate, not a count. The same reasoning ranks any number of hats by their minimums: the smaller the minimum, the more cards we expect
+Our estimate is 9.5 unique cards. That's not an integer, which is fine for an estimate. The same reasoning ranks any number of hats by their minimums: the smaller the minimum, the more cards we expect
 
 #table(
   columns: 2,
@@ -142,7 +142,7 @@ Let's try it. To keep the numbers small, say our hash function produces values 0
   [3], [0.134], [6.46], [5],
 )
 
-The repeated 920 in stream 1 didn't matter at all, which is exactly what we want. But honestly, these guesses aren't great: 2.05 for 4 items, 2.95 for 5, then 6.46 for 5. A single minimum is a single sample, and one lucky (or unlucky) hash throws the whole estimate off. A small minimum suggests lots of items and a big minimum suggests few, but one number is a pretty noisy way to tell those apart
+The repeated 920 in stream 1 didn't matter at all, which is what we want. But honestly, these guesses aren't great: 2.05 for 4 items, 2.95 for 5, then 6.46 for 5. A single minimum is a single sample, and one lucky (or unlucky) hash throws the whole estimate off. A small minimum suggests lots of items and a big minimum suggests few, but one number is a pretty noisy way to tell those apart
 
 == Keeping the $k$ Smallest
 
@@ -252,11 +252,11 @@ How much does a bigger $k$ actually help? The full statistical analysis is well 
   [100], [6%], [7%], [16%], [17%],
 )
 
-A few things stand out
+From the table
 
 - With $k = 1$, the estimate is close to useless. Typically it's off by two thirds, and in one trial out of ten it's off by a factor of 7 or more. Most of those huge errors are overestimates: one hash that happens to land very close to 0 makes $1 / M$ enormous. If the hash range is small, like 10,000 values, a single unlucky stream can be estimated at nearly 10,000 items, as many as the hash range can even tell apart
 - $k = 10$ is already a lot better, and $k = 100$ is good: typically within about 6%, and 9 times out of 10 within about 17%. In our streams of 1000 items, $k = 100$ is a tenth of the set, but in the streams of 100,000 items it's a thousandth, and it does just as well. We don't need $k$ to be any particular fraction of $n$
 - The returns diminish. Making $k$ 10 times bigger made the typical error only about 3 times smaller (roughly $sqrt(10)$), so the jump from $k = 1$ to $k = 10$ is much bigger than the jump from $k = 10$ to $k = 100$
-- It's $k$ that matters, not $n$. It's tempting to think a bigger stream would make the estimate better on its own, but with $k$ fixed, $n = "100,000"$ is no more accurate than $n = 1000$. Since $n$ is so much bigger than $k$, the error depends on how many gaps we average, which is $k$. To get a better estimate, we keep more hashes
+- A bigger stream doesn't make the estimate better on its own. With $k$ fixed, $n = "100,000"$ is no more accurate than $n = 1000$. Since $n$ is so much bigger than $k$, the error depends on how many gaps we average, which is $k$, so to get a better estimate we keep more hashes
 
 So we choose $k$ for the accuracy we want, the same way we chose $m$ and the number of hash functions for a bloom filter. Every estimate here depends on the hash function behaving like SUHA, though: if real hashes aren't close to uniform, none of these numbers hold

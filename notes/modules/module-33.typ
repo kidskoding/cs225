@@ -79,7 +79,7 @@ This is where the name *MinHash* comes from. But one sample is a coin flip: it a
 
 == Building a k-Min Sketch
 
-Let's slow down and work through this more carefully, starting with how we compute the sketch in the first place. As we stream through the data, we keep the smallest hash values we've seen so far in a sorted array of size $k$
+Now let's go back to how we compute the sketch in the first place. As we stream through the data, we keep the smallest hash values we've seen so far in a sorted array of size $k$
 
 + Hash the next item
 + If its hash is already in the sketch, we've seen this item before, so skip it (we only care about *unique* items)
@@ -132,7 +132,7 @@ We could build the sketch of $A union B$ by feeding $A$'s values and then $B$'s 
   caption: [Example: merging two $k = 8$ sketches. Taking the smallest remaining front value each time gives 2, 3, 6, 7, 8, 9, 11, 15, the 8 smallest hash values in $A union B$],
 ) <minhash-merge>
 
-If we kept merging past $k$, we'd get 17, 22, and 23 too, but we only need 8. The result is *exactly* the sketch we would have gotten by streaming through all of $A union B$: each of the $k$ smallest values of the union is in $A$ or in $B$, so by the same argument as before, it's among the $k$ smallest of whichever set it came from. So from just the two sketches, we get a full-accuracy sketch of the union
+If we kept merging past $k$, we'd get 17, 22, and 23 too, but we only need 8. The result is *exactly* the sketch we would have gotten by streaming through all of $A union B$: each of the $k$ smallest values of the union is in $A$ or in $B$, so by the same argument as before, it's among the $k$ smallest of whichever set it came from
 
 Now we can estimate the size of the union exactly like we did for any other set. Recall from the previous chapter that the $k$-th smallest hash value $M_k$ (as a fraction of the hash range) has expected value $k / (n + 1)$. The 8th smallest value is 15 out of 100, so
 
@@ -181,7 +181,7 @@ $ J(A, B) approx 15.2 / 52.3 approx 0.29 $
 
 So from a k-min sketch of each set, we can compute two useful things: the *cardinality* of each set, and the *Jaccard similarity* between any two of them. And if $k$ is around 100, working with just $k$ values per set takes almost no time compared to comparing the full sets
 
-Notice the three estimates we've seen for this example (0.40, 0.29, and the $3 / 8 = 0.375$ we'd get from the shared fraction of the union's sketch, as in @minhash-sketches) don't agree. That's not a mistake: $k = 8$ is a tiny sketch, and every one of these is only an estimate
+Notice the three estimates we've seen for this example (0.40, 0.29, and the $3 / 8 = 0.375$ we'd get from the shared fraction of the union's sketch, as in @minhash-sketches) don't agree. They don't have to: $k = 8$ is a tiny sketch, and every one of these is only an estimate
 
 == How Accurate Is It?
 
@@ -202,7 +202,7 @@ Both estimates get better as $k$ grows, and just like with cardinality, the impr
 
 Here's a real use of this. Researchers estimated the size and similarity of all the reference microbial genomes, where each genome is treated as the set of its *k-mers* (short, fixed-length pieces of its DNA sequence). There are tens of thousands of genomes, and comparing every pair of them directly would be an enormous amount of work. But once someone generated the sketches, estimating the similarity of every pair (the part researchers actually wanted: which organisms are related to which) could be done on a desktop
 
-Storing a small sketch for each of tens of thousands of genomes is easy, while working with hundreds of thousands of k-mers for each of them starts to get really hard. Computers keep getting faster, but this kind of estimation is still an important tool in real science
+Storing a small sketch for each of tens of thousands of genomes is easy, while working with hundreds of thousands of k-mers for each of them starts to get really hard. Computers keep getting faster, but real science still uses this kind of estimation
 
 == Sets of Very Different Sizes
 
@@ -254,4 +254,4 @@ What if a partition is empty for one of the sets? That's okay: it just says the 
 
 Partitioning softens the size problem, but it doesn't remove it. In the experiment from the previous section, 50 partitions of 2 values each did only a little better than a single $k = 100$ sketch (off by 78% on average instead of 87%), so the safest approach is still to compare sets of similar sizes
 
-And all of this depends on having magic SUHA hash functions. That's the biggest fundamental flaw in this whole family of techniques: every estimate in this chapter is only as good as our hash function
+And all of this depends on having magic SUHA hash functions. That's the biggest flaw in this whole family of techniques: every estimate in this chapter is only as good as our hash function

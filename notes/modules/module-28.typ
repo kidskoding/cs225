@@ -135,7 +135,7 @@ Now @floyd-step-b allows $B$, so paths can go through $A$, $B$, or both. This is
 
 === Through C and D
 
-The last two steps work exactly the same way. Allowing $C$ in @floyd-step-c, the only edge out of $C$ is the $-2$ edge to $D$, and it improves two paths that we *already* had: $A -> D$ drops from 2 to $3 + (-2) = 1$, and $B -> D$ drops from 3 to $4 + (-2) = 2$. Notice how finding a path isn't the end of the story: a longer path with a negative edge can beat a shorter one
+The last two steps work exactly the same way. Allowing $C$ in @floyd-step-c, the only edge out of $C$ is the $-2$ edge to $D$, and it improves two paths that we *already* had: $A -> D$ drops from 2 to $3 + (-2) = 1$, and $B -> D$ drops from 3 to $4 + (-2) = 2$. Notice that even after we've found a path, a longer path with a negative edge can still beat it
 
 #figure(
   fw-step(
@@ -394,17 +394,17 @@ Is that good? To get all pairs from Dijkstra's, we'd run it once from every vert
   [Floyd-Warshall], [$O(n^3)$], [$O(n^3)$], [$O(n^3)$],
 )
 
-So in pure theory, running Dijkstra's from everywhere wins on sparse graphs, and with a Fibonacci heap, it ties on dense ones. But in practice, it's not that simple
+So in pure theory, running Dijkstra's from everywhere wins on sparse graphs, and with a Fibonacci heap, it ties on dense ones. But in practice, a few other things matter
 
 - *Fibonacci heaps have bad constants*, which is part of why nobody spends much time on them (and they're not in the standard template library)
-- *Floyd-Warshall is very cache friendly*. Your computer's hardware tries to guess what memory you'll want next, and its biggest guess is that if you just used something in memory, you'll want the thing right after it. The inner loop walks straight across rows of a matrix, which is exactly that. Cache is somewhere around 100 to 1,000 times faster than main memory, so an algorithm that keeps hitting cache has a tremendous real-world advantage. Dijkstra's jumps all over memory following edges and heap entries
+- *Floyd-Warshall is very cache friendly*. Your computer's hardware tries to guess what memory you'll want next, and its biggest guess is that if you just used something in memory, you'll want the thing right after it. The inner loop walks straight across rows of a matrix, which is exactly that. Cache is somewhere around 100 to 1,000 times faster than main memory, so an algorithm that keeps hitting cache runs a lot faster in practice. Dijkstra's jumps all over memory following edges and heap entries
 - *Negative edges*. Plain Dijkstra's doesn't work at all with negative edges, and modified Dijkstra's loses the guarantee that each vertex comes out of the priority queue only once, so it can end up redoing a lot of work for every source. Floyd-Warshall is $O(n^3)$ no matter what the weights are
 
 So if we need every shortest path, especially with negative edges, Floyd-Warshall is a very good solution, and in practice it'll usually win
 
 == Dynamic Programming
 
-The bigger reason to see Floyd-Warshall is to start thinking about *dynamic programming*, one of the most powerful techniques for designing fast algorithms. The idea is
+The bigger reason to see Floyd-Warshall is to start thinking about *dynamic programming*, a technique behind a lot of fast algorithms. The idea is
 
 + Describe the problem in terms of *recursive subproblems*. Here, a subproblem is "the shortest path from $u$ to $v$ using only the first $k$ vertices in between", and the recurrence shows it only needs subproblems with $k - 1$
 + Figure out an order where every subproblem's pieces are solved before we need them. Here, that's the outer loop over $k$

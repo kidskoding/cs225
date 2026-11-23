@@ -17,7 +17,7 @@ Here's a town where every road is a dirt road. The town just got some money, and
   caption: [Example: a town with 8 houses and 13 dirt roads. Each edge's weight is the cost (in millions) of paving that road],
 ) <mst-example>
 
-This is a really useful question to be able to answer. It's the same as a networking question: which network links have to be working for me to get a message to every place on my network?
+The same question comes up in networking: which network links have to be working for me to get a message to every place on my network?
 
 There are a couple of greedy approaches
 
@@ -310,12 +310,12 @@ If we're going to run the algorithm once, return the tree, and keep nothing else
 
 So why would we ever pick the sorted list? A heap gets *destroyed* as we use it, since every `removeMin` takes an edge out. A sorted list doesn't change at all: our priority queue is just a position in the list, and we move it along. So if we're going to do a lot of things with this graph, a list of the edges sorted by weight is a really useful thing to keep around, and we can use it again and again
 
-That's a real design decision
+So the choice depends on the program around it
 
 - If we're writing Kruskal's algorithm as a *library*, separate from the rest of the program, we'd probably use a heap
 - If we're building a *whole program* that analyzes one big graph, like loading a million-vertex social network graph and running all sorts of analyses and visualizations on it, we might just store the graph's edges in sorted order all the time. We aren't changing the edges, just analyzing them, so the sort only has to happen once
 
-This is where we, as programmers, can do much better than something that can't step back and look at the bigger picture. Graph algorithms aren't particularly fast, and the graphs we want to analyze can be huge, so getting the answer in three hours instead of nine actually matters
+A general-purpose library can't make this call for us, since it doesn't know how the rest of the program uses the graph. Graph algorithms aren't particularly fast, and the graphs we want to analyze can be huge, so getting the answer in three hours instead of nine actually matters
 
 == The Partition Property
 

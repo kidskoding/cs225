@@ -206,7 +206,7 @@ std::vector<std::list<EdgeIt>> adj; // adj[i] is the adjacency list of vertex i
 std::list<Edge> edges;
 ```
 
-How much space did this cost? Every edge adds two entries to adjacency lists and four pointers, which is a constant amount per edge, and every vertex adds one (possibly empty) list. So the total space is $O(n + m)$, which is as good as it gets, since that's what it takes just to store the vertices and edges at all. Unlike the adjacency matrix, space isn't a concern here
+How much space did this cost? Every edge adds two entries to adjacency lists and four pointers, which is a constant amount per edge, and every vertex adds one (possibly empty) list. So the total space is $O(n + m)$, which is as good as it gets, since that's what it takes just to store the vertices and edges at all. So space isn't a concern here like it was for the adjacency matrix
 
 === Inserting
 
@@ -307,7 +307,7 @@ This is the operation we built the whole thing for, and it's exactly as fast as 
 
 === Are Adjacent
 
-Here's where the adjacency list loses. To check whether `v1` and `v2` are adjacent
+`areAdjacent` is where the adjacency list loses. To check whether `v1` and `v2` are adjacent
 
 + Go to whichever of `v1` and `v2` has the smaller degree
 + Check every edge in its adjacency list, and if one of them has the other vertex as its other end, they're adjacent
@@ -342,7 +342,7 @@ An array is great when we want a block of data. A linked list shines when we kee
 
 === The Adjacency List in Practice
 
-The adjacency list is the gold standard general graph format, but in practice it doesn't get used as often as you might expect, because it's a lot of pointer code to get right. The C++ standard library doesn't even have a general graph, for much the same reason. Real programs usually already have their data stored in a structure that makes sense for everything else they're doing, and that data already has connections. A compiler, for example, links instructions and basic blocks to each other in exactly this way, but with structures built for its own data, not a general graph library. So instead of building a graph, we usually treat the data we already have *as* a graph
+The adjacency list is the best general graph format, but in practice it doesn't get used as often as you might expect, because it's a lot of pointer code to get right. The C++ standard library doesn't even have a general graph, for much the same reason. Real programs usually already have their data stored in a structure that makes sense for everything else they're doing, and that data already has connections. A compiler, for example, links instructions and basic blocks to each other in exactly this way, but with structures built for its own data, not a general graph library. So instead of building a graph, we usually treat the data we already have *as* a graph
 
 == Comparing the Implementations
 

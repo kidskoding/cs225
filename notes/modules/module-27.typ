@@ -154,7 +154,7 @@ DijkstraSSSP(G, s):
 
 A very reasonable worry is: what if there's some other path we didn't consider? What if a path through lots of light edges beats one heavy edge that we saw early on? @dijkstra-steps already shows what happens for $B$: the direct edge of weight 10 sat in the queue, and before it was ever the smallest thing in there, we found the cheaper path through $F$. The number of edges on a path doesn't matter, only its total weight
 
-Here's the intuition for why it always works. Just like Prim's grows a tree outwards, Dijkstra's grows a *frontier* of finished vertices around $s$, and every round it adds whichever vertex is the shortest distance away from $s$ across that frontier. Suppose we're about to remove $u$, and imagine any path from $s$ to $u$. It starts inside the frontier at $s$, so at some point it has to *cross* the frontier, at some first unfinished vertex $x$. The part of the path up to $x$ is already accounted for in $d[x]$, since $x$'s predecessor on it is finished and updated $x$ when it was removed. And $u$ is the smallest thing in the queue, so $d[u] <= d[x]$. The rest of the path from $x$ to $u$ can only *add* weight, so the whole path is at least $d[x] >= d[u]$. No path can beat $d[u]$, so it's safe to finish $u$
+Intuitively, just like Prim's grows a tree outwards, Dijkstra's grows a *frontier* of finished vertices around $s$, and every round it adds whichever vertex is the shortest distance away from $s$ across that frontier. Suppose we're about to remove $u$, and imagine any path from $s$ to $u$. It starts inside the frontier at $s$, so at some point it has to *cross* the frontier, at some first unfinished vertex $x$. The part of the path up to $x$ is already accounted for in $d[x]$, since $x$'s predecessor on it is finished and updated $x$ when it was removed. And $u$ is the smallest thing in the queue, so $d[u] <= d[x]$. The rest of the path from $x$ to $u$ can only *add* weight, so the whole path is at least $d[x] >= d[u]$. No path can beat $d[u]$, so it's safe to finish $u$
 
 === Ties
 
@@ -178,8 +178,6 @@ Let's change the weight of the edge from $H$ to $G$ from 1 to $-8$. There is no 
   ),
   caption: [With the edge from $H$ to $G$ changed to $-8$, Dijkstra's (left) gets the shaded vertices wrong. The true shortest path tree (right) reaches $G$ through $H$],
 ) <dijkstra-negative>
-
-So standard Dijkstra's works by always choosing the shortest thing, knowing that any shorter path would already have been found, and with negative edges that's just not true anymore
 
 === Modified Dijkstra's
 
@@ -329,4 +327,4 @@ Since Dijkstra's is Prim's with one extra addition, the analysis of Prim's carri
   [Fibonacci heap], [Adjacency list], [$O(m + n log n)$],
 )
 
-Dijkstra's is a great example of reusing the entire structure of an algorithm to do something honestly quite different, and a huge number of graph algorithms turn out to be "Dijkstra's, but then we do something else." Both Prim's and Dijkstra's explore a graph the way a person standing *on* the graph would: start somewhere and walk around, one neighbor at a time. Next, we'll look at an *all-pairs* shortest path algorithm, which can't give an answer for a graph like @dijkstra-negative-cycle (there isn't one), but can at least tell us right away that there isn't one
+Dijkstra's reuses the entire structure of Prim's to do something quite different, and a huge number of graph algorithms turn out to be "Dijkstra's, but then we do something else." Both Prim's and Dijkstra's explore a graph the way a person standing *on* the graph would: start somewhere and walk around, one neighbor at a time. Next, we'll look at an *all-pairs* shortest path algorithm, which can't give an answer for a graph like @dijkstra-negative-cycle (there isn't one), but can at least tell us right away that there isn't one

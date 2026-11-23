@@ -233,8 +233,6 @@ d[v] = (e == -1) ? 0 : d[p[v]] + 1;
 
 == What BFS Tells Us
 
-The labeled graph we get from BFS tells us a lot about the graph
-
 === Shortest Paths
 
 What's the shortest path from $A$ to $H$? BFS already found it. Starting at $H$, its predecessor is $D$, and $D$'s predecessor is $A$. Reading that backwards, the path is $A$, $D$, $H$, which takes 2 edges, exactly $H$'s distance $d$
@@ -276,8 +274,6 @@ For example, if we added an edge between $A$ and $G$ to the graph and ran BFS ag
 - *Cycles*: If there's a cross edge, the graph has a cycle. A cross edge connects two vertices that were already connected through the tree, so adding it closes a loop. For example, cross edge $B C$ closes the cycle $A$, $B$, $C$, $A$. If the graph is a tree, BFS never finds a cross edge, no matter where it starts
 - *Distances*: $d$ is the length of the shortest path from the start to every vertex
 
-That's a lot of information from one algorithm!
-
 == Running Time of BFS
 
 How long does BFS take? Let's start with the obvious analysis of the code
@@ -295,7 +291,7 @@ Three nested loops that each run $O(n)$ times gives $O(n^3)$. That would be a te
 
 So the total is $O(n) + O(m) + O(n) + O(n + 2m) + O(2m) = O(n + m)$, not $O(n^3)$. In the worst case, a graph where every vertex is connected to every other vertex has $m approx n^2 / 2$, so that's $O(n^2)$. But $O(n + m)$ is optimal: a traversal wants to visit every vertex and every edge, and that's exactly how much work it does
 
-The trick is to step back from the code and think about what the algorithm does. It goes to every vertex once and looks at every edge incident on it. Even if we could teleport straight to every vertex, that's $n$ vertices plus every edge twice (once from each end), $n + 2m$. The number of times one loop runs affects how many times the other loops can run, even though they're nested, because the structure of the graph doesn't change
+If we step back from the code, the algorithm goes to every vertex once and looks at every edge incident on it. Even if we could teleport straight to every vertex, that's $n$ vertices plus every edge twice (once from each end), $n + 2m$. The number of times one loop runs affects how many times the other loops can run, even though they're nested, because the structure of the graph doesn't change
 
 This also answers what graph implementation BFS wants. The analysis assumes `incidentEdges(v)` takes $O(deg(v))$, which is what an adjacency list gives us. With an adjacency matrix, finding the neighbors of each vertex means checking its whole row, which is $O(n)$ per vertex and $O(n^2)$ in total, no matter how few edges there are. With an edge list, it's $O(m)$ per vertex, or $O(n m)$ in total
 

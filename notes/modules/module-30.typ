@@ -82,7 +82,7 @@ The first four go in beautifully, like in @hash-professors. It looks like an ama
   caption: [Example: storing courses in a table of size 8 with $h(k) = (k[0] - #raw("'A'")) mod 8$. Angrave, Beckman, Challen, and Evans each get their own index, but Alawini also hashes to 0, which Angrave already holds],
 ) <hash-professors>
 
-Notice that doubling the table to 16 and switching to `mod 16` doesn't help at all: both names still start with `'A'`, so they'd still both go to 0. The real problem is that this hash only looks at one character, and the first letters of names aren't evenly spread out. It's like an early version of Java's string hash, which only looked at a handful of a string's characters. On the web, most strings were addresses that all start with the same `https://`, so huge numbers of them hashed to the same value. The hash depends entirely on what the user gives it, and users don't give us random data
+Notice that doubling the table to 16 and switching to `mod 16` doesn't help at all: both names still start with `'A'`, so they'd still both go to 0. The problem is that this hash only looks at one character, and the first letters of names aren't evenly spread out. It's like an early version of Java's string hash, which only looked at a handful of a string's characters. On the web, most strings were addresses that all start with the same `https://`, so huge numbers of them hashed to the same value. The hash depends entirely on what the user gives it, and users don't give us random data
 
 === Good and Bad Hash Functions
 
@@ -132,7 +132,7 @@ There are two families of collision handling, and they're named after where the 
 - *Open hashing*: the array holds *pointers*, and the key-value pairs themselves live somewhere else in memory
 - *Closed hashing*: the key-value pairs are stored *directly in the array*
 
-Watch out for the confusing names: closed hashing is also called *open addressing* (the address is "open", since a key might end up at an index other than its hash), so open addressing is closed hashing. People are also a bit sloppy in practice, since a closed hashing table sometimes stores pointers to the data anyway. What really matters is the collision algorithm: if it conceptually stores each item *in* the table, we call it closed hashing
+Watch out for the confusing names: closed hashing is also called *open addressing* (the address is "open", since a key might end up at an index other than its hash), so open addressing is closed hashing. People are also a bit sloppy in practice, since a closed hashing table sometimes stores pointers to the data anyway. The name follows the collision algorithm: if it conceptually stores each item *in* the table, we call it closed hashing
 
 That sloppiness has a reason. A closed hashing table needs a way to say "there's nothing in this slot", so the stored type needs a value that can never be real data. A pointer gets that for free with `nullptr`, but for an arbitrary key-value type, the easiest way to guarantee it is often to store a pointer. The fastest closed hashing tables really do reserve some never-valid value of the data type instead
 
@@ -502,7 +502,7 @@ So instead of always trying the very next slot, let's pick the next slot more ca
 
 == Double Hashing
 
-Every closed hashing scheme has collisions, and the only thing it can do is choose another slot to try. The trick is to choose it in a way that doesn't feed clusters, while staying cheap: whatever work we do to pick the next slot gets charged to every insert
+Every closed hashing scheme has collisions, and the only thing it can do is choose another slot to try. We want to choose it so it doesn't feed clusters, and it has to be cheap, since whatever work we do to pick the next slot gets charged to every insert
 
 *Double hashing* uses *two* hash functions: $h_1$ picks the starting slot, and $h_2$ picks the *step size*, how far to jump on each probe
 
@@ -744,6 +744,6 @@ Third, a hash table can't do *range* or *nearest* searches. It can tell us wheth
   [Range find], [No], [Yes], [No],
 )
 
-The hash table numbers assume SUHA, a bounded load factor, and amortized resizing (the `*`). Its storage is still $O(n)$, since the load factor is a constant ratio. An unsorted linked list only makes sense as a dictionary if `insert` is most of what we do, since it's just an insert at the front. We can also add B-trees next to AVL trees: they have the same $O(log n)$ guarantees, but are shorter and do more work per level, which is perfect when the data doesn't fit in memory and every seek to disk (or another machine) is slow. Every one of these is the right dictionary in some situation, depending on which operations we do most and which guarantees we need
+The hash table numbers assume SUHA, a bounded load factor, and amortized resizing (the `*`). Its storage is still $O(n)$, since the load factor is a constant ratio. An unsorted linked list only makes sense as a dictionary if `insert` is most of what we do, since it's just an insert at the front. We can also add B-trees next to AVL trees: they have the same $O(log n)$ guarantees, but are shorter and do more work per level, which is perfect when the data doesn't fit in memory and every seek to disk (or another machine) is slow. Which one is right depends on which operations we do most and which guarantees we need
 
 Honestly, hash tables are one of the most frustrating data structures, because there isn't a simple rule for when they'll work. Most of the time they're great, and they've made slow, cumbersome projects fast. But sometimes they bite, and they've taken entire server infrastructures down for weeks. So use them when you can't think of something better (which happens a lot), but know that a hash table can't give you a real worst-case guarantee. They're also an active research area right now: since SUHA is basically always a lie, people are designing hash tables that need weaker guarantees from their hash functions, and they're making progress, though the analysis is well beyond this course

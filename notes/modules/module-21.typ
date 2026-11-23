@@ -64,11 +64,11 @@ That's clearly correct, but it's $O(n)$! We're back to the same problem we start
 
 $O(n)$ is almost always terrible for a data structure, since you can do almost anything in $O(n)$. At this point, we're really just writing down which set every element belongs to, which hardly seems like a data structure. But it *is* correct, and it implements the whole ADT. Anything we build has to be right before it's fast, since otherwise the fastest algorithm is just `return 0;`. It's constant time, and the compiler might even remove it entirely, but it's completely useless
 
-As for why we'd want this at all: it answers "are 3 and 5 in the same set?" with `find(3) == find(5)`. There are a number of algorithms that fundamentally depend on that question, and we'll see a really cool one soon, but they only work because a good disjoint set is a lot better than $O(n)$
+As for why we'd want this at all: it answers "are 3 and 5 in the same set?" with `find(3) == find(5)`. There are a number of algorithms that depend on that question, and we'll see a really cool one soon, but they only work because a good disjoint set is a lot better than $O(n)$
 
 == UpTrees
 
-Our new data structure is a *forest of trees*, one tree per subset. The twist is that the trees point *upwards*: every node points to its *parent*, and the *root* of each tree is the representative of the subset. To `find` an element's representative, we just follow parent pointers up until we reach the root
+Our new data structure is a *forest of trees*, one tree per subset, but these trees point *upwards*: every node points to its *parent*, and the *root* of each tree is the representative of the subset. To `find` an element's representative, we just follow parent pointers up until we reach the root
 
 We don't want actual pointers, though. Just like with heaps, we can avoid them, since every element is already named by an index $0$ to $n - 1$. Instead of storing each element's representative, we store its *parent's index*. A root has no parent, so it stores $-1$, which is never a valid index. When we add elements, every new element starts as its own root, so we initialize it to $-1$ (setting a big block of memory to the same value is also very fast for hardware)
 
@@ -92,7 +92,7 @@ We don't want actual pointers, though. Just like with heaps, we can avoid them, 
   caption: [Example: the subsets $\{0, 1, 4\}$, $\{2, 7\}$, and $\{3, 5, 6\}$ as uptrees. Every node points up to its parent, and the roots (highlighted) store $-1$],
 ) <ds-uptrees>
 
-Which tree we build for a subset (like whether 0 points to 1 or straight to 4) depends on the order of the unions. We're not claiming this is the best set of trees for this data, just that this memory represents these trees. Also notice nothing here requires a *binary* tree: a node can have as many children as point to it
+Which tree we build for a subset (like whether 0 points to 1 or straight to 4) depends on the order of the unions. This memory represents these trees, but they aren't necessarily the best trees for this data. Also notice nothing here requires a *binary* tree: a node can have as many children as point to it
 
 === Find
 
@@ -390,7 +390,7 @@ $ log^* n = cases(0 & "if" n <= 1, 1 + log^*(log n) & "otherwise") $
   [$2^(65536)$], [5],
 )
 
-$2^(65536)$ is way more than the number of atoms in the universe, and $log^*$ is only 5. It's a really slow-growing function
+$2^(65536)$ is way more than the number of atoms in the universe, and $log^*$ of it is only 5, so $log^*$ grows really slowly
 
 === Analysis Sketch
 

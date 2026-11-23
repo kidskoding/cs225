@@ -12,7 +12,7 @@
 
 = MST: Minimum Spanning Tree (Prim's Algorithm)
 
-In the previous chapter, we built a minimum spanning tree with Kruskal's algorithm, which looks at the edges from cheapest to most expensive and keeps every edge that doesn't make a cycle. Along the way it grows a whole *forest* of little trees that slowly merge into one. Prim's algorithm takes a different approach: it grows *one* tree, starting from a single vertex, and adds one vertex to it at a time
+In the previous chapter, we built a minimum spanning tree with Kruskal's algorithm, which looks at the edges from cheapest to most expensive and keeps every edge that doesn't make a cycle. Along the way it grows a whole *forest* of little trees that slowly merge into one. Prim's algorithm instead grows *one* tree, starting from a single vertex, and adds one vertex to it at a time
 
 Both algorithms rely on the same fact, the *partition property* from the end of the previous chapter (@mst-partition): if we split the vertices of a graph into two groups, the minimum weight edge crossing between the two groups is part of some minimum spanning tree. Kruskal's uses it indirectly, but Prim's is basically the partition property turned directly into an algorithm
 
@@ -86,13 +86,13 @@ Step by step, the crossing edges and the edge we pick are
 + $\{a, b, d, e, f, g\}$: crossing 7, 8, 9, 10, 15. Add $(c, e)$ with weight 7
 + $\{a, b, c, d, e, f, g\}$: crossing 1, 8, 9. Add $(c, h)$ with weight 1
 
-The final tree is $(a, d)$, $(d, e)$, $(b, d)$, $(e, g)$, $(f, g)$, $(c, e)$, and $(c, h)$, with total weight $3 + 4 + 5 + 6 + 2 + 7 + 1 = 28$. Since every weight in @prim-example is different, this is the *only* minimum spanning tree, so Kruskal's algorithm finds exactly the same tree. It just adds the edges in a different order: Kruskal's takes $(c, h)$ first and $(f, g)$ second, while Prim's can't take either one until the tree reaches them. Notice how Prim's adds 2 after 6 and ends with 1: it doesn't add edges in sorted order, it only ever picks the cheapest edge that touches the tree
+The final tree is $(a, d)$, $(d, e)$, $(b, d)$, $(e, g)$, $(f, g)$, $(c, e)$, and $(c, h)$, with total weight $3 + 4 + 5 + 6 + 2 + 7 + 1 = 28$. Since every weight in @prim-example is different, this is the *only* minimum spanning tree, so Kruskal's algorithm finds exactly the same tree. It just adds the edges in a different order: Kruskal's takes $(c, h)$ first and $(f, g)$ second, while Prim's can't take either one until the tree reaches them. Notice how Prim's adds 2 after 6 and ends with 1, since it only ever picks the cheapest edge that touches the tree, and those edges don't show up in sorted order
 
 === Only the Cheapest Edge to Each Vertex Matters
 
 Running this on paper is pretty easy: you just walk along the boundary and look at what crosses it. But it's not at all clear how a program keeps track of this, since every time we repartition the graph, some edges stop crossing and new ones start
 
-The key observation is that for any vertex outside the tree, the cheapest crossing edge *to that vertex* only ever goes down. The tree only grows, so an edge from the tree to $v$ keeps crossing the partition until $v$ itself joins the tree, and then it never crosses again. In the meantime, new edges to $v$ can show up as their other endpoints join the tree, and each one can only make $v$'s cheapest option cheaper
+The trick is that for any vertex outside the tree, the cheapest crossing edge *to that vertex* only ever goes down. The tree only grows, so an edge from the tree to $v$ keeps crossing the partition until $v$ itself joins the tree, and then it never crosses again. In the meantime, new edges to $v$ can show up as their other endpoints join the tree, and each one can only make $v$'s cheapest option cheaper
 
 Look at $h$ in @prim-steps. At first there's no edge from the tree to $h$ at all, so its cost is $infinity$. When $e$ joins, the edge $(e, h)$ gives it a cost of 9. When $g$ joins, $(g, h)$ drops it to 8. When $c$ joins, $(c, h)$ drops it to 1, and now it's the cheapest crossing edge in the whole graph, so we pick it. Every vertex follows the same pattern: it starts at $infinity$ (or with some edge from the start vertex), its cost goes down over time, and then it's chosen
 
@@ -278,7 +278,7 @@ If you look up Prim's algorithm on Wikipedia, you'll see a different bound: $O(m
 
 With a Fibonacci heap and an adjacency list, every update becomes constant time, so the $O(m log n)$ updates turn into $O(m)$, and the total is $O(n log n + m)$. That's the bound Wikipedia gives, and it assumes both a Fibonacci heap and an adjacency list
 
-Why can't we get rid of the $n log n$ too? It comes from calling `removeMin` $n$ times, and the best heaps we know still take $O(log n)$ per `removeMin`. That isn't just a gap in our knowledge. Prim's builds a priority queue of $n$ vertices and then takes them all out in sorted order, so if a priority queue that only compares keys could do that in less than $O(n log n)$ total, we could use it to sort $n$ values faster than $O(n log n)$, which is impossible for a comparison sort
+Why can't we get rid of the $n log n$ too? It comes from calling `removeMin` $n$ times, and the best heaps we know still take $O(log n)$ per `removeMin`, and we can prove no priority queue does better. Prim's builds a priority queue of $n$ vertices and then takes them all out in sorted order, so if a priority queue that only compares keys could do that in less than $O(n log n)$ total, we could use it to sort $n$ values faster than $O(n log n)$, which is impossible for a comparison sort
 
 == Prim's vs. Kruskal's
 

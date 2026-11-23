@@ -2,14 +2,14 @@
 
 = Wrapping up CS 225!
 
-This last chapter is a tour back through the whole course: the C++ ideas we leaned on, and every data structure and algorithm we built, with how they compare. It's a good place to start reviewing for the final
+This last chapter goes back through the whole course: the C++ ideas we leaned on, and every data structure and algorithm we built, with how they compare. It's a good place to start reviewing for the final
 
 == C++ as a Vehicle
 
-This course is *in* C++, but it isn't *about* C++. We chose C++ because it puts two ideas front and center that matter for data structures in any language
+We wrote everything in C++, but the course is about data structures, not the language. We chose C++ because it puts two ideas front and center that matter for data structures in any language
 
-- *Templates* separate the *kind of data* from the *data structure* that stores it, which is exactly how we want to think about data structures. Almost every MP abstracted the stored type with templates
-- *Memory management* is fundamental to how a data structure performs, and C++ makes us handle it ourselves. Almost every assignment had tests checking that memory was handled correctly
+- *Templates* separate the *kind of data* from the *data structure* that stores it, which is how we want to think about data structures. Almost every MP abstracted the stored type with templates
+- *Memory management* has a big effect on how a data structure performs, and C++ makes us handle it ourselves. Almost every assignment had tests checking that memory was handled correctly
 
 === Iterators
 
@@ -66,7 +66,7 @@ An array is just a mathematical offset from its start, so indexing is $O(1)$, bu
 - *Stack*: Last in, first out (LIFO). Every operation is $O(1)$ with a linked list, and amortized $O(1)$ with an array
 - *Queue*: First in, first out (FIFO). Also $O(1)$ (amortized for an array). With an array, the natural implementation is a *circular queue* (like in @queue-circular-wrap)
 
-A circular buffer between two pieces of a program that run at different or uneven speeds is one of the most common data structures in real code. It can even be built in hardware for incredibly fast performance
+A circular buffer between two pieces of a program that run at different or uneven speeds is one of the most common data structures in real code. It can even be built in hardware, which makes it very fast
 
 == Trees
 
@@ -128,7 +128,7 @@ Kruskal's and Prim's runtimes look different on paper, but for connected graphs 
 
 Hashing is really cool, but it has requirements and downsides
 
-- *A good hash function.* For our analysis, it has to satisfy *SUHA*, the simple uniform hashing assumption: the chance that any particular key hashes to any particular slot is exactly $1 / N$, where $N$ is the number of slots. The only real way to get that is to pick the hash function at random from a family of hash functions. That one fact is the trick behind all of our analysis. In practice, hash functions often aren't truly uniform, which is why hash tables usually perform great but sometimes perform terribly
+- *A good hash function.* For our analysis, it has to satisfy *SUHA*, the simple uniform hashing assumption: the chance that any particular key hashes to any particular slot is exactly $1 / N$, where $N$ is the number of slots. The only real way to get that is to pick the hash function at random from a family of hash functions, and all of our analysis rests on that one fact. In practice, hash functions often aren't truly uniform, which is why hash tables usually perform great but sometimes perform terribly
 - *Storage*, which is an array
 - *A way to handle collisions.* The universe of keys is bigger than the number of slots, so collisions will happen
   - *Separate chaining* (open hashing) stores a list at every slot
@@ -145,7 +145,7 @@ Altogether, a hash table gets *expected amortized $O(1)$* `insert` and `find` wi
   [Unsorted list], [$O(n)$], [$O(1)$],
 )
 
-The big takeaway: hash tables are really useful, but for a *specific* problem, there's usually a better solution, because we usually know something about the data that lets us organize it more efficiently. Think of a hash table as "I don't have a good solution yet, so let's put this here for now". If nothing better exists, hash tables are pretty good, but sometimes they'll slow down (when rehashing, or when the hash function turns out to be bad)
+Hash tables are really useful, but for a *specific* problem, there's usually a better solution, because we usually know something about the data that lets us organize it more efficiently. Think of a hash table as "I don't have a good solution yet, so let's put this here for now". If nothing better exists, hash tables are pretty good, but sometimes they'll slow down (when rehashing, or when the hash function turns out to be bad)
 
 == Bloom Filters
 

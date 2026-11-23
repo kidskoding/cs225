@@ -6,7 +6,7 @@ In the last chapter, we saw how a B-tree works: we insert more than one key into
 
 Search is a direct extension of a BST. Every key in a non-leaf node has a child before it and a child after it, so if the key we want isn't in the current node, it has to be before all of its keys, between two of them, or after all of them, and there is a child there to go down into. A BST does exactly the same thing with one key and two children; a B-tree just has up to $m - 1$ keys and $m$ children
 
-The choice to grow the tree by kicking keys *up* is a little unobvious, but it means all of the leaves are always at the same level. So in a sense, a B-tree is always approaching a *perfect* $m$-ary tree. That suggests a B-tree is pretty good at staying short, and this chapter shows exactly how short
+The choice to grow the tree by kicking keys *up* is a little unobvious, but it means all of the leaves are always at the same level. So in a sense, a B-tree is always approaching a *perfect* $m$-ary tree. That suggests a B-tree is pretty good at staying short, so now we'll figure out exactly how short
 
 == Properties of a B-Tree
 
@@ -28,7 +28,7 @@ The whole reason to use a B-tree is that fetching a node (a *seek*) is somewhere
 
 Our goal is to show that the height is about $log_m n$, where $n$ is the number of keys
 
-How good is that? If $m = 10$, then $log_(10) n$ is just the number of digits in $n$. A million keys means a height of about 6. In practice $m$ is often around 1000, and then the height is the number of *commas* in $n$. Storing a trillion records (1,000,000,000,000) gives a tree of height 4! Four seeks to find anything in a trillion records is an enormous improvement over a binary tree's 40
+How good is that? If $m = 10$, then $log_(10) n$ is just the number of digits in $n$. A million keys means a height of about 6. In practice $m$ is often around 1000, and then the height is the number of *commas* in $n$. Storing a trillion records (1,000,000,000,000) gives a tree of height 4! That's four seeks to find anything in a trillion records, compared to about 40 for a binary tree
 
 The work *inside* each node isn't free, but it's cheap: we binary search the node's sorted keys in $O(log m)$ time at each of the $O(log_m n)$ levels. As $m$ gets bigger, the tree gets shorter but each node takes longer to search, so that is the trade-off. In practice, $n$ is millions of times bigger than $m$, and a seek costs millions of times more than a comparison, so the number of seeks dominates
 

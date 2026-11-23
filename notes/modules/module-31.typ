@@ -75,7 +75,7 @@ Seven `int`s take $7 dot 4 = 28$ bytes, and our filter takes 7 *bits*, less than
 
 === Find
 
-Finding is where things get interesting. In @bloom-find, we query three keys on the finished filter from @bloom-insert
+Finding is where the filter can be wrong. In @bloom-find, we query three keys on the finished filter from @bloom-insert
 
 - `find(16)`: $16 mod 7 = 2$, and bit 2 is 1, so we say *yes*. 16 really is in the set, so this is a *true positive*
 - `find(20)`: $20 mod 7 = 6$, and bit 6 is 1, so we say *yes*. But 20 was never inserted! Bit 6 is 1 because of 13. This is a *false positive*
@@ -108,7 +108,7 @@ Any yes-or-no test, like a disease test, has four possible outcomes, depending o
 
 Most real tests can get any of the four. A Bloom filter can *never* give a false negative: if a key was inserted, its bit was set to 1, and bits never go back to 0. This is *one-sided error*, just like the primality test we saw when we talked about probability
 
-Here's a concrete use: a *malicious website detector* in a browser. Checking every URL with an authoritative server would double the network traffic. Instead, the browser occasionally downloads a small Bloom filter with every known malicious site inserted into it, and checks each URL against the filter first
+One use is a *malicious website detector* in a browser. Checking every URL with an authoritative server would double the network traffic. Instead, the browser occasionally downloads a small Bloom filter with every known malicious site inserted into it, and checks each URL against the filter first
 
 - If the filter says *safe* (no), the site is definitely not on the list, and we never had to ask anyone
 - If the filter says *malicious* (maybe), we ask the real service whether the site is actually malicious
@@ -208,7 +208,7 @@ This still never gives a false negative: if a key was inserted, *all* of its bit
   caption: [Example: four queries on the filter from @bloom-shared-insert. 6 is a true positive, 1 is a true negative, and 16 and 9 are false positives],
 ) <bloom-shared-find>
 
-Two things are worth noticing here. First, 16 checks *exactly* the same bits as 6. That's because all three of our toy hash functions only depend on the last digit of the key, so they aren't independent at all, and no number of them could ever tell 6 and 16 apart. Real hash functions need to be independent for repeated trials to help
+Notice two things here. First, 16 checks *exactly* the same bits as 6. That's because all three of our toy hash functions only depend on the last digit of the key, so they aren't independent at all, and no number of them could ever tell 6 and 16 apart. Real hash functions need to be independent for repeated trials to help
 
 Second, look at 9. In @bloom-k-tables, the separate filters said no to 9, because bit 9 of the $h_1$ filter was 0. In the shared vector, bit 9 is 1, but it was set by $h_3(8)$, not by any $h_1$. That's the price of sharing: when $h_2$ looks at a bit, it might see a 1 that was put there by $h_1$ of a *different* key. So the number of 1s in the filter isn't just the number of keys we inserted, and a shared filter fills up faster than $k$ separate ones. Our simple $p^k$ analysis doesn't work anymore
 
@@ -220,7 +220,7 @@ We can also take this to the extreme. A "Bloom filter" whose only hash function 
 
 Both `insert` and `find` compute $k$ hash functions and touch $k$ bits, so they're $O(k)$. But $k$ is fixed when we create the filter and never changes for that filter, so it's also fair to call them $O(1)$, the same way $O(100000)$ is still $O(1)$. $O(k)$ is just the more precise answer
 
-The filter stores a bit vector of $m$ bits and the $k$ hash functions, so its space is $O(m)$, or $O(m + k)$ if we count the functions as data too, since we need to know them to use the filter. Interestingly, that doesn't depend on $n$ at all: no matter how much we insert, the filter never gets bigger. But that's a little bit of a lie, since a filter that's too small for its $n$ fills up with 1s and becomes useless. To pick $m$, we need to know how often we're wrong
+The filter stores a bit vector of $m$ bits and the $k$ hash functions, so its space is $O(m)$, or $O(m + k)$ if we count the functions as data too, since we need to know them to use the filter. That doesn't depend on $n$ at all: no matter how much we insert, the filter never gets bigger. But that's a little bit of a lie, since a filter that's too small for its $n$ fills up with 1s and becomes useless. To pick $m$, we need to know how often we're wrong
 
 The size has to be fixed at creation for another reason too. A hash table can resize by rehashing, because it still has all of its keys. A Bloom filter threw its keys away, so there's nothing to rehash: to make it bigger, or to change $k$, we'd have to rebuild it from the original data
 
@@ -410,7 +410,7 @@ Working with whole words of bits also gives us cheap set operations. Suppose we 
 
 A bit is 1 in the result exactly when some key from $S_1$ or $S_2$ set it, which is exactly the filter we'd get by inserting every key of $S_1 union S_2$. So *bitwise or is union*, and it's exact. In @bloom-set-ops, $S_1 = \{6, 4\}$ and $S_2 = \{8, 4\}$, and their or is the same filter we built for $\{6, 8, 4\}$ in @bloom-shared-insert
 
-That's a big deal for huge data sets. Every computer holding part of the data can build a Bloom filter for its own part, and then we or them all together to get the filter for everything, which gives us massive parallelism
+This helps a lot with huge data sets. Every computer holding part of the data can build a Bloom filter for its own part, and then we or them all together to get the filter for everything, so the work runs in parallel across all the computers
 
 ```cpp
 // BloomFilter.cpp

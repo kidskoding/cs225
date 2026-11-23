@@ -9,7 +9,7 @@ A probabilistic bound needs randomness from somewhere, and there are two places 
 - *Average case*: the randomness is in the *data*. We assume the inputs are random and average over them. The catch is that users don't hand us random data, and anyone who knows how our structure works can pick the worst inputs on purpose
 - *Expected case*: the randomness is in the *algorithm*. The algorithm makes its own random choices (like picking a random hash function when it builds a table), so the bound holds for *every* input, since the user can't control the coin flips
 
-These sound alike but they're not interchangeable. An average-case bound can be beaten by a bad input, and an expected-case bound can't
+These sound alike, but an average-case bound can be beaten by a bad input, and an expected-case bound can't
 
 == The Tools
 

@@ -20,7 +20,7 @@ But what if following a pointer was really, really slow? For example, what if th
 
 Following one of these slow pointers is called a *seek*. The name comes from when B-trees were first designed for spinning hard drives: the read head had to physically move to the right spot on the disk, and that time was called the *seek time*
 
-Technically, Big-O still says this is $O(1)$ per node, since 40 million is a constant. But instead of 6 or 7, our constant is now 40 million! $log n$ is really small, until every one of those $log n$ steps costs 40 milliseconds. The height of the tree starts to cost a lot
+Technically, Big-O still says this is $O(1)$ per node, since 40 million is a constant. But instead of 6 or 7, our constant is now 40 million! $log n$ is really small, until every one of those $log n$ steps costs 40 milliseconds, and then the height of the tree costs a lot
 
 So we want the tree to be *really* short, but we still want the best part of a BST: when we search, we only go down, so we only ever look at the relevant parts of the tree
 
@@ -41,7 +41,7 @@ A binary tree divides the data we're looking at in half at every step. But you k
 
 == B-Trees
 
-A *B-Tree* is a self-balancing search tree designed for efficient storage and retrieval on disks. Unlike a binary search tree that stores only one key per node, each B-Tree node can hold multiple keys and have multiple children
+A *B-Tree* is a self-balancing search tree built for storing and finding data on disks. A binary search tree stores one key per node, but each B-Tree node can hold multiple keys and have multiple children
 
 - The keys inside a node are kept in *sorted order*, and the children split the key ranges between them
 - All leaves appear at the same depth, so the tree remains balanced
@@ -159,7 +159,7 @@ Searching works the same way as finding where to insert
 
 For example, to find 101 in the tree from @btree-second-split, we stop at index 1 of the root, since 102 is the first key not smaller than 101. 101 isn't 102, and the root isn't a leaf, so we fetch child 1, the leaf with 57 and 101, and find it there
 
-The code for `_exists` is shown below. It is intentionally written tersely, so it's worth working through carefully
+The code for `_exists` is below. It's written tersely on purpose, so go through it slowly
 
 ```cpp
 // BTree.hpp

@@ -14,7 +14,7 @@ So far, that sounds like a queue or a stack. What makes this one special is *whi
 
 == What Can We Store?
 
-Unlike most of the data structures we've seen, we can't store just any kind of data in this one. Strings and integers work fine, but a general node, or a pointer, does not
+Most of the data structures we've seen can store any kind of data, but this one can't. Strings and integers work fine, but a general node, or a pointer, does not
 
 The reason is that everything we store must be *comparable*: given two values, we have to be able to tell which one is smaller. Strings and integers have a `<`, but there's no meaningful way to say whether one node is smaller than another
 
